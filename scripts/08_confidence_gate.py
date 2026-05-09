@@ -1,0 +1,215 @@
+"""
+08_confidence_gate.py
+
+Combine evidence-based scores (05) and reviewer agreement (07) into a final
+GO / NARROW / DROP / NEEDS_MORE_EVIDENCE decision per topic.
+
+Decision rules (from PHASE 6 spec):
+
+GO if:
+  - Overall priority high (>=14)
+  - citation_signal_0to5 >= 3
+  - artifact_opportunity_0to5 >= 3
+  - venue_signal_0to5 >= 2 (path exists/likely)
+  - ip_risk_0to5 <= 1
+  - saturation_0to5 <= 4 (not extreme)
+  - reviewer plurality decision GO and decision_score_mean >= 2.0
+  - >=2 evidence sources contributed papers
+
+DROP if:
+  - citation_signal_0to5 == 0
+  - artifact_opportunity_0to5 <= 1
+  - saturation_0to5 == 5 with no differentiator (artifact <= 2)
+  - venue_signal_0to5 == 0 after rounds
+  - ip_risk_0to5 >= 4
+  - reviewer plurality DROP with high confidence drops >= 2
+
+NARROW if:
+  - saturation high (>=4) but artifact_opportunity_0to5 >= 3
+  - audience good (citation_signal >=3) but novelty weak (P high)
+  - venue path exists but topic too broad
+
+NEEDS_MORE_EVIDENCE otherwise (or on disagreement / unclear venues).
+If NEEDS_MORE_EVIDENCE and rounds_remaining > 0, the orchestrator (10) will
+re-run extra evidence with expanded queries.
+
+Outputs:
+- data/decisions/<topic_id>.json
+- data/decisions/decisions.csv
+"""
+from __future__ import annotations
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from common.io_utils import read_csv, read_json, write_json, write_csv, log  # noqa: E402
+
+QUERIES_DIR = ROOT / "data" / "queries"
+DEDUP_DIR = ROOT / "data" / "papers_dedup"
+SCORES_DIR = ROOT / "data" / "scores"
+AGREE_DIR = ROOT / "data" / "agreement"
+DECISIONS_DIR = ROOT / "data" / "decisions"
+DECISIONS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def n_sources(topic_id: str) -> int:
+    rows = read_csv(DEDUP_DIR / f"{topic_id}.csv") if (DEDUP_DIR / f"{topic_id}.csv").exists() else []
+    src = set()
+    for r in rows:
+        for s in (r.get("sources", "") or "").split("|"):
+            if s.strip():
+                src.add(s.strip())
+    return len(src)
+
+
+def gate_topic(topic_id: str) -> dict[str, Any]:
+    score = read_json(SCORES_DIR / f"{topic_id}.json", {})
+    agree = read_json(AGREE_DIR / f"{topic_id}.json", {})
+    overall = score.get("rubric", {}).get("composites", {}).get("Overall", 0)
+    cit = score.get("citation_signal_0to5", 0)
+    art = score.get("artifact", {}).get("artifact_opportunity_0to5", 0)
+    sat = score.get("saturation", {}).get("saturation_score_0to5", 0)
+    ven = score.get("venue", {}).get("venue_signal_0to5", 0)
+    ip_risk = score.get("risk", {}).get("ip_risk_0to5", 0)
+
+    plurality = agree.get("plurality_decision", "NEEDS_MORE_EVIDENCE")
+    dscore = agree.get("decision_score_mean_0to3", 0)
+    high_drops = agree.get("high_confidence_drops", 0)
+    disagree = agree.get("high_disagreement_flag", False)
+    n_revs = agree.get("n_reviews", 0)
+
+    sources = n_sources(topic_id)
+
+    reasons: list[str] = []
+    extra_needed: list[str] = []
+    manual_checks: list[str] = []
+
+    decision = "NEEDS_MORE_EVIDENCE"
+
+    # DROP rules (highest priority)
+    if cit == 0 and score.get("paper", {}).get("n_papers", 0) < 5:
+        decision = "DROP"
+        reasons.append("Citation signal 0 with <5 papers found.")
+    elif art <= 1 and cit <= 2:
+        decision = "DROP"
+        reasons.append("Low artifact opportunity and weak citation audience.")
+    elif sat == 5 and art <= 2:
+        decision = "DROP"
+        reasons.append("Topic saturated (sat=5) with no differentiator (art<=2).")
+    elif ip_risk >= 4:
+        decision = "DROP"
+        reasons.append("High IP/employer risk flags.")
+    elif n_revs >= 4 and plurality == "DROP" and high_drops >= 2:
+        decision = "DROP"
+        reasons.append("Reviewer panel plurality DROP with multiple high-confidence drops.")
+
+    # GO rules
+    if decision != "DROP":
+        go_conditions = [
+            overall >= 14,
+            cit >= 3,
+            art >= 3,
+            ven >= 2,
+            ip_risk <= 1,
+            sat <= 4,
+            sources >= 2,
+        ]
+        reviewer_go = (plurality == "GO" and dscore >= 2.0) or (n_revs == 0)  # if no reviewers, allow rules-only GO if all else passes
+        if all(go_conditions) and reviewer_go and not disagree:
+            decision = "GO"
+            reasons.append(f"Overall={overall} and signals meet GO thresholds.")
+
+    # NARROW rules (if not GO/DROP)
+    if decision not in ("GO", "DROP"):
+        if sat >= 4 and art >= 3:
+            decision = "NARROW"
+            reasons.append("Crowded broad topic, but artifact opportunity exists in a sub-gap.")
+        elif cit >= 3 and overall < 14 and ven >= 2:
+            decision = "NARROW"
+            reasons.append("Audience exists; framing too broad for current venue path.")
+
+    # If still NEEDS_MORE_EVIDENCE, decide what extra to fetch
+    if decision == "NEEDS_MORE_EVIDENCE":
+        if sources < 2:
+            extra_needed.append("Re-run 02_collect_topic_evidence with expanded synonyms/year-range.")
+        if ven == 0:
+            extra_needed.append("Re-run 04_collect_venue_evidence with expanded venue candidates.")
+            manual_checks.append("Visit candidate venue official site to confirm APC + indexing.")
+        if disagree:
+            extra_needed.append("Re-run 06_llm_review with refreshed packet (more papers, more venue evidence).")
+        if score.get("paper", {}).get("n_papers", 0) < 10:
+            extra_needed.append("Expand keyword set; consider broadening axis terms.")
+
+    payload = {
+        "topic_id": topic_id,
+        "final_decision": decision,
+        "final_confidence": (
+            "HIGH" if (decision in ("GO", "DROP") and not disagree and n_revs >= 6)
+            else "MEDIUM" if (decision in ("GO", "DROP", "NARROW") and not disagree)
+            else "LOW"
+        ),
+        "reasoning_summary": "; ".join(reasons) or "Insufficient evidence to commit.",
+        "manual_checks_required": manual_checks,
+        "extra_verification_needed": extra_needed,
+        "signals": {
+            "Overall": overall,
+            "citation_signal_0to5": cit,
+            "artifact_0to5": art,
+            "saturation_0to5": sat,
+            "venue_signal_0to5": ven,
+            "ip_risk_0to5": ip_risk,
+            "plurality": plurality,
+            "decision_score_mean_0to3": dscore,
+            "high_confidence_drops": high_drops,
+            "high_disagreement_flag": disagree,
+            "evidence_sources": sources,
+            "n_reviews": n_revs,
+        },
+    }
+    log("08_gate", f"{topic_id} decision={decision} conf={payload['final_confidence']}")
+    return payload
+
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("--topic", default=None)
+    args = p.parse_args(argv)
+
+    files = sorted(QUERIES_DIR.glob("*.json"))
+    if args.topic:
+        files = [f for f in files if f.stem == args.topic]
+    rows = []
+    for f in files:
+        q = read_json(f)
+        if not q:
+            continue
+        d = gate_topic(q["topic"]["topic_id"])
+        write_json(DECISIONS_DIR / f"{d['topic_id']}.json", d)
+        flat = {
+            "topic_id": d["topic_id"],
+            "final_decision": d["final_decision"],
+            "final_confidence": d["final_confidence"],
+            "Overall": d["signals"]["Overall"],
+            "citation_signal": d["signals"]["citation_signal_0to5"],
+            "artifact": d["signals"]["artifact_0to5"],
+            "saturation": d["signals"]["saturation_0to5"],
+            "venue_signal": d["signals"]["venue_signal_0to5"],
+            "ip_risk": d["signals"]["ip_risk_0to5"],
+            "evidence_sources": d["signals"]["evidence_sources"],
+            "n_reviews": d["signals"]["n_reviews"],
+            "high_disagreement": d["signals"]["high_disagreement_flag"],
+            "reasoning_summary": d["reasoning_summary"],
+        }
+        rows.append(flat)
+    rows.sort(key=lambda r: ({"GO": 0, "NARROW": 1, "NEEDS_MORE_EVIDENCE": 2, "DROP": 3}[r["final_decision"]], -r["Overall"]))
+    write_csv(DECISIONS_DIR / "decisions.csv", rows)
+    print(json.dumps(rows, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

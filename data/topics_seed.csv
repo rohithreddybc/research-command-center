@@ -1,0 +1,11 @@
+topic_id,title,category,keywords,synonyms,negative_keywords,target_artifact,prelim_priority
+T10,Reproducibility audit of LLM-judge papers,meta,"LLM-as-a-judge|reproducibility|methodology disclosure|evaluation","LLM judge;automatic evaluator;LLM evaluator;model-based evaluation","tutorial;workshop summary",database+paper,5
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,eval,"LLM judge|prompt template sensitivity|clinical NLP|robustness","clinical question answering;medical QA;judge prompt;evaluator prompt","general chatbot",benchmark+tool,5
+T53,Test-set contamination audit of healthcare LLM benchmarks,methodology,"data contamination|benchmark leakage|MedQA|PubMedQA|MMLU clinical","training data leakage;memorization;n-gram overlap","unrelated NLP",empirical+database,5
+T74,Open structured-metadata dataset of LLM-eval papers,meta,"LLM evaluation methodology|metadata|systematic mapping","evaluation survey;benchmarking practices","tutorial",dataset,5
+T37,Clinical-guideline consistency across LLM versions over time,healthcare,"clinical guideline|model drift|LLM versioning|longitudinal evaluation","USPSTF;CDC guidelines;NICE;medical advice consistency","drug discovery",empirical,5
+T07,Judge robustness to candidate-side prompt injection,eval+safety,"prompt injection|LLM judge|adversarial robustness","jailbreak;evaluator manipulation","general red teaming",benchmark,5
+T11,Format sensitivity benchmark on LLM evaluations,prompt,"format sensitivity|JSON YAML prose|benchmark variance","output format;structured output","unrelated UI",benchmark,4
+T17,Tokenization-induced leaderboard variance,eval,"tokenizer|BPE|leaderboard variance|evaluation noise","subword;encoding effects","compiler tokenizers",empirical,4
+T25,Hallucination taxonomy: RAG vs no-RAG,rag,"retrieval augmented generation|hallucination taxonomy|faithfulness","grounded generation;citation correctness","unrelated retrieval",taxonomy+paper,4
+T43,Reproducibility audit of clinical LLM papers,meta+healthcare,"clinical LLM|reproducibility|methodology disclosure","medical NLP;clinical NLP","drug docking",database+paper,5

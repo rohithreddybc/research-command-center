@@ -1,0 +1,36 @@
+# secrets
+.env
+*.key
+*.pem
+
+# bulky pipeline artifacts (all reproducible from seed CSV)
+data/cache/
+data/evidence/
+data/reviews/
+data/papers_dedup/
+data/queries/
+data/scores/
+data/agreement/
+data/decisions/
+data/round_log/
+
+# logs
+logs/
+
+# python
+*.sqlite
+*.db
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# test artifacts
+reports/_test_report.md

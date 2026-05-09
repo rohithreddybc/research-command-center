@@ -1,0 +1,12 @@
+venue,type,credibility_prelim,apc_status_VERIFY,timeline_VERIFY,fit,notes,source_url
+TMLR,journal,high,no_APC_VERIFY,rolling_VERIFY,excellent,primary,https://jmlr.org/tmlr/
+ACL Findings,conf,high,free,cycle_bound,excellent,,https://www.aclweb.org/
+EMNLP Findings,conf,high,free,cycle_bound,excellent,,https://2024.emnlp.org/
+NeurIPS Datasets and Benchmarks,conf_track,high,free,annual_VERIFY,excellent,,https://neurips.cc/
+ML4H,workshop,high,free,annual_VERIFY,excellent,healthcare workshop,https://ml4health.github.io/
+MLHC,conf,high,reg_fee_VERIFY,annual_VERIFY,excellent,,https://www.mlforhc.org/
+JAMIA Open,journal,high,APC_VERIFY,months_VERIFY,good,,https://academic.oup.com/jamiaopen
+JMIR,journal,high,APC_VERIFY,weeks_VERIFY,good,not free,https://www.jmir.org/
+PLOS Digital Health,journal,med-high,APC_VERIFY,months_VERIFY,good,,https://journals.plos.org/digitalhealth/
+npj Digital Medicine,journal,high,APC_VERIFY,months_VERIFY,good,,https://www.nature.com/npjdigitalmed/
+ACM Computing Surveys,journal,very_high,APC_VERIFY,slow_VERIFY,survey only,,https://csur.acm.org/

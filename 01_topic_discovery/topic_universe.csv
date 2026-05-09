@@ -1,0 +1,18 @@
+topic_id,title,category,artifact_type,public_data,coding,feasibility_days,saturation_risk,citation_audience,ip_risk,prelim_priority
+T01,Cross-judge agreement on long-context QA,Eval,benchmark,Y,Y,60,High,Lg,L,3
+T02,Position-bias quantification across judge models,Eval,empirical+harness,Y,Y,30,High,Lg,L,3
+T03,Self-preference bias in same-family judges,Eval,empirical,Y,Y,30,High,Lg,L,3
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,Eval,bench+tool,Y,Y,60,Med,Lg,L,5
+T05,Judge confidence calibration vs human gold,Eval,empirical,Y,Y,60,Med,Md,L,4
+T06,Pairwise vs pointwise judge agreement under perturbation,Eval,empirical,Y,Y,30,High,Md,L,3
+T07,Judge robustness to candidate-side prompt injection,Eval/Safety,empirical+bench,Y,Y,60,Low-Med,Lg,L,5
+T08,Cost-quality Pareto small open judges vs frontier,Eval,empirical,Y,Y,30,Med,Lg,L,4
+T09,Judge consistency under temperature/seed variation,Eval,empirical,Y,Y,30,High,Md,L,3
+T10,Reproducibility audit / meta-analysis of LLM-judge papers,Meta,database+paper,Y,Light,45,Low,Lg,L,5
+T11,Format sensitivity (JSON/YAML/prose) on benchmark scores,Prompt,bench,Y,Y,30,Med,Lg,L,4
+T17,Tokenization-induced leaderboard variance,Eval,empirical,Y,Y,45,Low,Lg,L,4
+T25,Hallucination taxonomy: RAG vs no-RAG,RAG,taxonomy+paper,Y,Light,60,Med,Lg,L,4
+T37,Clinical-guideline consistency across LLM versions over time,HC AI,empirical,Y,Y,60,Low,Md,L,5
+T43,Reproducibility audit of clinical LLM papers,Meta/HC,database+paper,Y,Light,60,Low,Md,L,5
+T53,Test-set contamination audit of healthcare LLM benchmarks,Methodology,database+paper,Y,Y,60,Low,Md,L,5
+T74,Open structured-metadata dataset of LLM-eval papers,Meta,dataset,Y,Light,60,Low,Lg,L,5
