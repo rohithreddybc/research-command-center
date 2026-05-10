@@ -49,11 +49,12 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json, write_json, write_csv, log  # noqa: E402
 from common.config import CFG  # noqa: E402
 
-QUERIES_DIR = ROOT / "data" / "queries"
-DEDUP_DIR = ROOT / "data" / "papers_dedup"
-SCORES_DIR = ROOT / "data" / "scores"
-AGREE_DIR = ROOT / "data" / "agreement"
-DECISIONS_DIR = ROOT / "data" / "decisions"
+QUERIES_DIR    = ROOT / "data" / "queries"
+DEDUP_DIR      = ROOT / "data" / "papers_dedup"
+SCORES_DIR     = ROOT / "data" / "scores"
+AGREE_DIR      = ROOT / "data" / "agreement"
+DECISIONS_DIR  = ROOT / "data" / "decisions"
+EW_DIR         = ROOT / "data" / "existing_work"   # from 12_detect_existing_work
 DECISIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -123,9 +124,32 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
     comp = completeness(topic_id, n_revs)
     eq = evidence_quality_0to5(topic_id, sources)
 
+    # ---- Existing-work signals (from 12_detect_existing_work, if run) ----------
+    ew = read_json(EW_DIR / f"{topic_id}.json", {}) or {}
+    ew_go_blocked          = bool(ew.get("go_blocked", False))
+    ew_requires_diff       = bool(ew.get("requires_differentiator", False))
+    ew_diff_strength       = ew.get("differentiator_strength", "strong")   # default: assume clear
+    ew_n_direct            = int(ew.get("n_direct", 0))
+    ew_n_partial           = int(ew.get("n_partial", 0))
+    ew_available           = bool(ew)
+
     reasons: list[str] = []
     extra_needed: list[str] = []
     manual_checks: list[str] = []
+
+    # Propagate existing-work manual checks
+    if ew_available and ew_go_blocked:
+        manual_checks.append(
+            f"Existing-work detection blocked GO: {ew_n_direct} direct overlap(s), "
+            f"differentiator_strength={ew_diff_strength}. "
+            f"See reports/topic_reports/{topic_id}_existing_work.md"
+        )
+    elif ew_available and ew_requires_diff:
+        manual_checks.append(
+            f"Existing-work: {ew_n_direct} direct + {ew_n_partial} partial overlaps — "
+            f"articulate differentiator before GO. "
+            f"See reports/topic_reports/{topic_id}_existing_work.md"
+        )
 
     decision = "NEEDS_MORE_EVIDENCE"
 
@@ -154,6 +178,7 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
             sources >= int(CFG["gate_min_evidence_sources"]),
             relevance_purity >= 0.4,
             eq >= 3,
+            not ew_go_blocked,   # existing-work gate: block if DIRECT_OVERLAP + weak diff
         ]
         reviewer_go = (n_revs > 0 and plurality == "GO" and dscore >= float(CFG["gate_min_review_decision_score"]))
         llm_ok = (n_revs > 0) or not require_llm
@@ -216,6 +241,14 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
         "relevance_purity": relevance_purity,
         "differentiator_required": differentiator_required,
         "existing_artifact_density": art_density,
+        "existing_work": {
+            "available": ew_available,
+            "n_direct": ew_n_direct,
+            "n_partial": ew_n_partial,
+            "differentiator_strength": ew_diff_strength,
+            "go_blocked": ew_go_blocked,
+            "requires_differentiator": ew_requires_diff,
+        },
         "signals": {
             "Overall": overall,
             "citation_signal_0to5": cit,

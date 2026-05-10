@@ -129,6 +129,10 @@ def main(argv: list[str] | None = None) -> int:
         print("[5/9] score topics")
         run_full_collection("05_score_topics")
 
+        # 5.5: detect existing work (uses pre-collected evidence; always runs)
+        print("[5.5/9] detect existing work")
+        run_full_collection("12_detect_existing_work")
+
         if not args.no_llm:
             print("[6/9] llm review panel")
             run_full_collection("06_llm_review_topics")

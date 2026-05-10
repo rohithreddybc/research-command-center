@@ -627,5 +627,277 @@ class TestNarrowingScript(unittest.TestCase):
                 self.mod.REPORTS_DIR = orig_reports_dir
 
 
+class TestExistingWorkDetection(unittest.TestCase):
+    """Tests for 12_detect_existing_work.py"""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.mod = _load("12_detect_existing_work")
+
+    # ---- helper function tests ----
+
+    def test_contribution_type_benchmark(self):
+        ct = self.mod._contribution_type("A benchmark for LLM evaluation robustness")
+        self.assertEqual(ct, "benchmark")
+
+    def test_contribution_type_dataset(self):
+        ct = self.mod._contribution_type("A dataset for clinical NLP", "We release a corpus of 10k annotations.")
+        self.assertEqual(ct, "dataset")
+
+    def test_contribution_type_survey(self):
+        ct = self.mod._contribution_type("A systematic review of LLM judges")
+        self.assertEqual(ct, "survey")
+
+    def test_contribution_type_tool(self):
+        ct = self.mod._contribution_type("An evaluation framework and toolkit for LLM safety")
+        self.assertEqual(ct, "tool")
+
+    def test_contribution_type_empirical(self):
+        ct = self.mod._contribution_type("Empirical analysis of tokenizer variance across LLMs")
+        self.assertEqual(ct, "empirical")
+
+    def test_contribution_type_paper_fallback(self):
+        ct = self.mod._contribution_type("Understanding LLM behavior in clinical settings")
+        self.assertEqual(ct, "paper")
+
+    def test_artifact_matches_direct(self):
+        """Same type → always matches."""
+        self.assertTrue(self.mod._artifact_matches("benchmark", {"benchmark"}))
+        self.assertTrue(self.mod._artifact_matches("dataset", {"dataset"}))
+
+    def test_artifact_matches_via_alias(self):
+        """tool matches benchmark target (via alias)."""
+        self.assertTrue(self.mod._artifact_matches("tool", {"benchmark"}))
+
+    def test_artifact_matches_no_cross(self):
+        """survey should NOT match benchmark target."""
+        self.assertFalse(self.mod._artifact_matches("survey", {"benchmark"}))
+
+    def test_differentiator_strength(self):
+        self.assertEqual(self.mod._differentiator_strength(0), "strong")
+        self.assertEqual(self.mod._differentiator_strength(1), "moderate")
+        self.assertEqual(self.mod._differentiator_strength(2), "weak")
+        self.assertEqual(self.mod._differentiator_strength(5), "none")
+
+    # ---- paper classification tests ----
+
+    def test_classify_papers_empty_when_no_csv(self):
+        """classify_papers returns [] when the dedup CSV does not exist."""
+        import tempfile, os
+        # Override DEDUP_DIR to a temp dir where no CSVs exist
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            topic = {"topic_id": "T_FAKE", "keywords": "foo|bar", "synonyms": "",
+                     "negative_keywords": "", "target_artifact": "benchmark",
+                     "title": "fake topic"}
+            result = self.mod.classify_papers(topic)
+            self.assertEqual(result, [])
+        self.mod.DEDUP_DIR = orig
+
+    def test_classify_papers_direct_overlap(self):
+        """High-relevance paper with matching artifact type and year ≥ 2022 → DIRECT_OVERLAP."""
+        import tempfile, csv as _csv
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            # Write a fake CSV with one high-relevance paper
+            csv_path = Path(td) / "TZ.csv"
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "abstract", "year", "venue", "doi", "relevance_score",
+                    "matched_keywords", "citations", "sources"
+                ])
+                w.writeheader()
+                w.writerow({
+                    "title": "A benchmark for prompt injection detection in LLM judges",
+                    "abstract": "We build a benchmark to evaluate prompt injection robustness.",
+                    "year": "2024",
+                    "venue": "NeurIPS",
+                    "doi": "10.1234/test",
+                    "relevance_score": "0.75",
+                    "matched_keywords": "primary:title:prompt injection",
+                    "citations": "42",
+                    "sources": "semantic_scholar",
+                })
+            topic = {
+                "topic_id": "TZ",
+                "keywords": "prompt injection|LLM judge",
+                "synonyms": "jailbreak",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "Prompt injection benchmark",
+                "narrowing_note": "",
+            }
+            results = self.mod.classify_papers(topic)
+        self.mod.DEDUP_DIR = orig
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["overlap_class"], "DIRECT_OVERLAP")
+        self.assertEqual(results[0]["contribution_type"], "benchmark")
+
+    def test_classify_papers_adjacent_low_score(self):
+        """Low-relevance paper → ADJACENT."""
+        import tempfile, csv as _csv
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            csv_path = Path(td) / "TZ2.csv"
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "abstract", "year", "venue", "doi", "relevance_score",
+                    "matched_keywords", "citations", "sources"
+                ])
+                w.writeheader()
+                w.writerow({
+                    "title": "A study on robustness of railway systems",
+                    "abstract": "Railway IoT robustness analysis.",
+                    "year": "2024",
+                    "venue": "ICRA",
+                    "doi": "10.1234/rail",
+                    "relevance_score": "0.25",
+                    "matched_keywords": "kw:title:robustness",
+                    "citations": "3",
+                    "sources": "semantic_scholar",
+                })
+            topic = {
+                "topic_id": "TZ2",
+                "keywords": "prompt injection|robustness",
+                "synonyms": "",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "Prompt injection benchmark",
+                "narrowing_note": "",
+            }
+            results = self.mod.classify_papers(topic)
+        self.mod.DEDUP_DIR = orig
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["overlap_class"], "ADJACENT")
+
+    # ---- GitHub classification tests ----
+
+    def test_classify_github_direct_overlap(self):
+        """High-stars repo with primary keyword and artifact term → DIRECT_OVERLAP."""
+        import tempfile, json as _json
+        orig = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.EVIDENCE_DIR = Path(td)
+            topic_dir = Path(td) / "TG"
+            topic_dir.mkdir()
+            (topic_dir / "github.json").write_text(_json.dumps([{
+                "query": "prompt injection benchmark in:name,description",
+                "results": [{
+                    "name": "org/prompt-injection-benchmark",
+                    "stars": 500,
+                    "forks": 50,
+                    "description": "A benchmark for evaluating LLM judge robustness to prompt injection",
+                    "url": "https://github.com/org/prompt-injection-benchmark",
+                    "topics": ["benchmark", "llm", "prompt-injection"],
+                    "pushed_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                }]
+            }]), encoding="utf-8")
+            topic = {
+                "topic_id": "TG",
+                "keywords": "prompt injection|LLM judge",
+                "synonyms": "jailbreak",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "Prompt injection benchmark",
+                "narrowing_note": "",
+            }
+            results = self.mod.classify_github(topic)
+        self.mod.EVIDENCE_DIR = orig
+        self.assertGreater(len(results), 0)
+        self.assertEqual(results[0]["overlap_class"], "DIRECT_OVERLAP")
+        self.assertEqual(results[0]["venue"], "GitHub")
+
+    def test_classify_github_skips_awesome_repos(self):
+        """Awesome-list repos are filtered out (always ADJACENT, then skipped)."""
+        import tempfile, json as _json
+        orig = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.EVIDENCE_DIR = Path(td)
+            topic_dir = Path(td) / "TG2"
+            topic_dir.mkdir()
+            (topic_dir / "github.json").write_text(_json.dumps([{
+                "query": "prompt injection in:readme,description",
+                "results": [{
+                    "name": "sindresorhus/awesome",
+                    "stars": 464235,
+                    "forks": 34828,
+                    "description": "Awesome lists about prompt injection and other topics",
+                    "url": "https://github.com/sindresorhus/awesome",
+                    "topics": ["awesome", "awesome-list"],
+                    "pushed_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                }]
+            }]), encoding="utf-8")
+            topic = {
+                "topic_id": "TG2",
+                "keywords": "prompt injection|LLM judge",
+                "synonyms": "",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "Prompt injection benchmark",
+                "narrowing_note": "",
+            }
+            results = self.mod.classify_github(topic)
+        self.mod.EVIDENCE_DIR = orig
+        # Awesome-list repos should not appear in DIRECT/PARTIAL
+        self.assertEqual(len(results), 0)
+
+    # ---- full topic analysis test ----
+
+    def test_analyze_topic_summary_structure(self):
+        """analyze_topic must return summary with all required keys."""
+        import tempfile
+        orig_ded = self.mod.DEDUP_DIR
+        orig_ev = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td) / "dedup"
+            self.mod.EVIDENCE_DIR = Path(td) / "evidence"
+            (self.mod.DEDUP_DIR).mkdir()
+            topic = {
+                "topic_id": "TAN",
+                "keywords": "LLM judge|benchmark",
+                "synonyms": "",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "LLM judge benchmark",
+                "narrowing_note": "",
+            }
+            result = self.mod.analyze_topic(topic)
+        self.mod.DEDUP_DIR = orig_ded
+        self.mod.EVIDENCE_DIR = orig_ev
+        summary = result["summary"]
+        for key in ("topic_id", "n_direct", "n_partial", "n_adjacent",
+                    "differentiator_strength", "go_blocked", "requires_differentiator"):
+            self.assertIn(key, summary, f"Missing key '{key}' in summary")
+        # With no data, expect 0 findings and "strong" differentiator
+        self.assertEqual(summary["n_direct"], 0)
+        self.assertEqual(summary["differentiator_strength"], "strong")
+        self.assertFalse(summary["go_blocked"])
+
+    # ---- integration test (runs on real data if present) ----
+
+    def test_main_runs_on_real_data(self):
+        """main() must exit 0 when real dedup CSVs + evidence exist."""
+        decisions_csv = ROOT / "data" / "decisions" / "decisions.csv"
+        if not decisions_csv.exists():
+            self.skipTest("Pipeline not yet run; skipping integration test.")
+        import tempfile, os
+        orig_out = self.mod.OUT_DIR
+        orig_rep = self.mod.REPORTS_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.OUT_DIR = Path(td) / "ew"
+            self.mod.REPORTS_DIR = Path(td) / "reports"
+            self.mod.OUT_DIR.mkdir()
+            self.mod.REPORTS_DIR.mkdir()
+            rc = self.mod.main(["--no-report"])
+        self.mod.OUT_DIR = orig_out
+        self.mod.REPORTS_DIR = orig_rep
+        self.assertEqual(rc, 0)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

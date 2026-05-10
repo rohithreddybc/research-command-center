@@ -20,11 +20,12 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json  # noqa: E402
 
 DECISIONS_DIR = ROOT / "data" / "decisions"
-SCORES_DIR = ROOT / "data" / "scores"
-AGREE_DIR = ROOT / "data" / "agreement"
-QUERIES_DIR = ROOT / "data" / "queries"
-DEDUP_DIR = ROOT / "data" / "papers_dedup"
-REPORT_PATH = ROOT / "reports" / "final_decision_report.md"
+SCORES_DIR    = ROOT / "data" / "scores"
+AGREE_DIR     = ROOT / "data" / "agreement"
+QUERIES_DIR   = ROOT / "data" / "queries"
+DEDUP_DIR     = ROOT / "data" / "papers_dedup"
+EW_DIR        = ROOT / "data" / "existing_work"   # from 12_detect_existing_work
+REPORT_PATH   = ROOT / "reports" / "final_decision_report.md"
 LLM_ERRORS_PATH = ROOT / "reports" / "llm_review_errors.md"
 
 
@@ -47,6 +48,11 @@ def _score(tid: str) -> dict[str, Any]:
 
 def _agree(tid: str) -> dict[str, Any]:
     return read_json(AGREE_DIR / f"{tid}.json", {}) or {}
+
+
+def _ew(tid: str) -> dict[str, Any]:
+    """Load existing-work summary for topic (from 12_detect_existing_work)."""
+    return read_json(EW_DIR / f"{tid}.json", {}) or {}
 
 
 def _section_top_papers(tid: str, k: int = 5) -> str:
@@ -289,8 +295,80 @@ def main(argv: list[str] | None = None) -> int:
                   f"{'Y' if a.get('high_disagreement_flag') else 'N'} | {roles} |")
     md.append("")
 
-    # ---- 18 Manual checks remaining
-    md.append("## 18. Remaining manual checks\n")
+    # ---- 18. Existing Work Summary (from 12_detect_existing_work, if run)
+    ew_summary_path = EW_DIR / "_summary.json"
+    ew_summary = read_json(ew_summary_path, {}) or {}
+    ew_by_topic: dict[str, Any] = ew_summary.get("by_topic", {})
+    ew_ran = bool(ew_summary)
+
+    md.append("## 18. Existing Work Detection\n")
+    if not ew_ran:
+        md.append(
+            "> ℹ️ **Existing Work Detection not run** — `data/existing_work/_summary.json` missing. "
+            "Run `python scripts/12_detect_existing_work.py` to populate this section.\n"
+        )
+    else:
+        md.append("| Topic | Direct | Partial | Adjacent | Diff-Strength | GO Blocked | Req. Diff |")
+        md.append("|---|---|---|---|---|---|---|")
+        for t, _ in decisions:
+            ew_t = ew_by_topic.get(t["topic_id"], {})
+            if not ew_t:
+                md.append(f"| {t['topic_id']} | — | — | — | — | — | — |")
+                continue
+            blocked_disp = "⛔ YES" if ew_t.get("go_blocked") else "No"
+            req_diff_disp = "⚠️ Yes" if ew_t.get("requires_differentiator") else "No"
+            md.append(
+                f"| {t['topic_id']} | {ew_t.get('n_direct', 0)} | {ew_t.get('n_partial', 0)} | "
+                f"{ew_summary.get('by_topic', {}).get(t['topic_id'], {}).get('n_adjacent', '—')} | "
+                f"`{ew_t.get('differentiator_strength', '—')}` | {blocked_disp} | {req_diff_disp} |"
+            )
+        md.append("")
+
+        # §18a — Direct Overlap Risks
+        blocked = ew_summary.get("go_blocked_topics", [])
+        md.append("### 18a. Direct Overlap Risks (GO-blocked topics)\n")
+        if not blocked:
+            md.append("_No topics blocked by existing-work gate._\n")
+        else:
+            for tid in blocked:
+                ew_t = ew_by_topic.get(tid, {})
+                report_link = f"reports/topic_reports/{tid}_existing_work.md"
+                md.append(
+                    f"- **{tid}** — {ew_t.get('n_direct', '?')} direct overlap(s), "
+                    f"differentiator_strength=`{ew_t.get('differentiator_strength', '?')}`. "
+                    f"Details: `{report_link}`"
+                )
+            md.append("")
+
+        # §18b — Differentiator Required
+        need_diff = ew_summary.get("requires_differentiator_topics", [])
+        md.append("### 18b. Differentiator Required Topics\n")
+        if not need_diff:
+            md.append("_No additional topics require a differentiator._\n")
+        else:
+            for tid in need_diff:
+                ew_t = ew_by_topic.get(tid, {})
+                md.append(
+                    f"- **{tid}** — {ew_t.get('n_direct', 0)} direct + "
+                    f"{ew_t.get('n_partial', 0)} partial overlap(s). "
+                    f"Articulate gap before GO."
+                )
+            md.append("")
+
+        # §18c — Topics to DROP / NARROW based on existing work
+        md.append("### 18c. Recommended action based on existing-work findings\n")
+        drop_candidates = [tid for tid in blocked if ew_by_topic.get(tid, {}).get("differentiator_strength") == "none"]
+        narrow_candidates = [tid for tid in (blocked + need_diff) if tid not in drop_candidates]
+        if drop_candidates:
+            md.append(f"**Consider DROP** (differentiator_strength=`none`): {', '.join(drop_candidates)}")
+        if narrow_candidates:
+            md.append(f"**Consider additional NARROW** (overlaps found, but may be salvageable): {', '.join(narrow_candidates)}")
+        if not drop_candidates and not narrow_candidates:
+            md.append("_No DROP/NARROW recommendations from existing-work analysis._")
+        md.append("")
+
+    # ---- 19 Manual checks remaining
+    md.append("## 19. Remaining manual checks\n")
     manual: dict[str, list[str]] = {}
     for t, d in decisions:
         if d.get("manual_checks_required"):
@@ -308,8 +386,8 @@ def main(argv: list[str] | None = None) -> int:
                 md.append(f"- {m}")
     md.append("")
 
-    # ---- 19 Final recommendation
-    md.append("## 19. Final recommendation\n")
+    # ---- 20 Final recommendation
+    md.append("## 20. Final recommendation\n")
     if not llm_ran_anywhere:
         md.append("**Do not promote any topic to GO yet.** Run `claude auth login` once from PowerShell, then:\n")
         md.append("```\npython scripts/06_llm_review_topics.py\npython scripts/07_compare_reviewers.py\npython scripts/08_confidence_gate.py\npython scripts/09_generate_final_report.py\n```\n")

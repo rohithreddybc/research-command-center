@@ -1,0 +1,30 @@
+{
+  "topic_id": "T11",
+  "topic_title": "Format sensitivity benchmark on LLM evaluations",
+  "target_artifact": "benchmark",
+  "n_direct": 0,
+  "n_partial": 1,
+  "n_adjacent": 2,
+  "n_total": 3,
+  "differentiator_strength": "strong",
+  "go_blocked": false,
+  "requires_differentiator": false,
+  "top_findings": [
+    {
+      "topic_id": "T11",
+      "source": "paper",
+      "name": "Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlled Prompt Structure",
+      "url": "",
+      "doi": "",
+      "year": 2026,
+      "venue": "",
+      "contribution_type": "paper",
+      "overlap_class": "PARTIAL_OVERLAP",
+      "relevance_score": 0.5,
+      "stars_or_downloads": "",
+      "why_overlaps": "Relevance 0.50: paper titled 'Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlle' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:format sensitivity.",
+      "how_we_differ": "Our proposed work focuses specifically on 'Format sensitivity benchmark on LLM evaluations'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
+      "differentiator_strength": "moderate"
+    }
+  ]
+}

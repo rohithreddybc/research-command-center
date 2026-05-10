@@ -1,0 +1,123 @@
+{
+  "topics_analyzed": 14,
+  "go_blocked_topics": [
+    "T04",
+    "T07",
+    "T07_N1",
+    "T10",
+    "T17",
+    "T25",
+    "T37",
+    "T37_N1",
+    "T43",
+    "T53",
+    "T53_N4",
+    "T74"
+  ],
+  "requires_differentiator_topics": [
+    "T74_N1"
+  ],
+  "clean_topics": [
+    "T11"
+  ],
+  "by_topic": {
+    "T04": {
+      "n_direct": 3,
+      "n_partial": 12,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T07": {
+      "n_direct": 17,
+      "n_partial": 17,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T07_N1": {
+      "n_direct": 26,
+      "n_partial": 23,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T10": {
+      "n_direct": 14,
+      "n_partial": 16,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T11": {
+      "n_direct": 0,
+      "n_partial": 1,
+      "differentiator_strength": "strong",
+      "go_blocked": false,
+      "requires_differentiator": false
+    },
+    "T17": {
+      "n_direct": 37,
+      "n_partial": 16,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T25": {
+      "n_direct": 7,
+      "n_partial": 12,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T37": {
+      "n_direct": 9,
+      "n_partial": 7,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T37_N1": {
+      "n_direct": 10,
+      "n_partial": 7,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T43": {
+      "n_direct": 2,
+      "n_partial": 3,
+      "differentiator_strength": "weak",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T53": {
+      "n_direct": 33,
+      "n_partial": 23,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T53_N4": {
+      "n_direct": 26,
+      "n_partial": 18,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T74": {
+      "n_direct": 13,
+      "n_partial": 8,
+      "differentiator_strength": "none",
+      "go_blocked": true,
+      "requires_differentiator": true
+    },
+    "T74_N1": {
+      "n_direct": 0,
+      "n_partial": 2,
+      "differentiator_strength": "strong",
+      "go_blocked": false,
+      "requires_differentiator": true
+    }
+  }
+}

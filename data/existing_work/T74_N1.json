@@ -1,0 +1,46 @@
+{
+  "topic_id": "T74_N1",
+  "topic_title": "Open structured-metadata dataset of LLM-eval papers — noise-pruned",
+  "target_artifact": "dataset",
+  "n_direct": 0,
+  "n_partial": 2,
+  "n_adjacent": 0,
+  "n_total": 2,
+  "differentiator_strength": "strong",
+  "go_blocked": false,
+  "requires_differentiator": true,
+  "top_findings": [
+    {
+      "topic_id": "T74_N1",
+      "source": "paper",
+      "name": "Magic Sequence: LLM evaluation methodology of logical problem solving for sequence manipulation. Application to mathematical magic tricks",
+      "url": "https://doi.org/10.1109/GACLM67198.2025.11232232",
+      "doi": "10.1109/GACLM67198.2025.11232232",
+      "year": 2025,
+      "venue": "2025 2nd International Generative AI and Computational Language Modelling Conference (GACLM)",
+      "contribution_type": "paper",
+      "overlap_class": "PARTIAL_OVERLAP",
+      "relevance_score": 0.5,
+      "stars_or_downloads": "",
+      "why_overlaps": "Relevance 0.50: paper titled 'Magic Sequence: LLM evaluation methodology of logical problem solving for sequence manipulation. App' contributes a 'paper' matching target artifact 'dataset'. Matched keywords: primary:title:llm evaluation methodology.",
+      "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers — noise-pruned'. Narrowing note: removed noisy secondaries=['metadata', 'systematic mapping']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
+      "differentiator_strength": "moderate"
+    },
+    {
+      "topic_id": "T74_N1",
+      "source": "github",
+      "name": "aws-samples/llm-evaluation-methodology",
+      "url": "https://github.com/aws-samples/llm-evaluation-methodology",
+      "doi": "",
+      "year": "",
+      "venue": "GitHub",
+      "contribution_type": "tool",
+      "overlap_class": "PARTIAL_OVERLAP",
+      "relevance_score": "",
+      "stars_or_downloads": 47,
+      "why_overlaps": "GitHub repo 'aws-samples/llm-evaluation-methodology' (47 stars) provides an implementation of 'llm evaluation methodology'. Description: n/a.",
+      "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers — noise-pruned'. Narrowing note: removed noisy secondaries=['metadata', 'systematic mapping']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
+      "differentiator_strength": "moderate"
+    }
+  ]
+}
