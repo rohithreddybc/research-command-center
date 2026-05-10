@@ -1,0 +1,117 @@
+{
+  "audits": [
+    {
+      "path": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\data\\topics_seed.csv",
+      "n_topics": 10,
+      "n_healthcare": 2,
+      "healthcare_pct": 20.0,
+      "n_llm_eval": 5,
+      "llm_eval_pct": 50.0,
+      "n_artifact": 7,
+      "artifact_pct": 70.0,
+      "n_negative_control": 0,
+      "repeated_keywords": [],
+      "warnings": []
+    },
+    {
+      "path": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\data\\topics_seed_full_75.csv",
+      "n_topics": 75,
+      "n_healthcare": 25,
+      "healthcare_pct": 33.3,
+      "n_llm_eval": 15,
+      "llm_eval_pct": 20.0,
+      "n_artifact": 27,
+      "artifact_pct": 36.0,
+      "n_negative_control": 0,
+      "repeated_keywords": [
+        {
+          "keyword": "llm judge",
+          "count": 9,
+          "topic_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07",
+            "T08",
+            "T09"
+          ],
+          "risk": "LLM-eval anchoring",
+          "recommendation": "Reduce occurrences of 'llm judge' to <= 3; diversify by replacing duplicates with related but distinct keywords."
+        }
+      ],
+      "warnings": [
+        {
+          "keyword": "llm judge",
+          "count": 9,
+          "topic_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07",
+            "T08",
+            "T09"
+          ],
+          "risk": "LLM-eval anchoring",
+          "recommendation": "Reduce occurrences of 'llm judge' to <= 3; diversify by replacing duplicates with related but distinct keywords."
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\data\\topics_seed_balanced.csv",
+      "n_topics": 36,
+      "n_healthcare": 7,
+      "healthcare_pct": 19.4,
+      "n_llm_eval": 10,
+      "llm_eval_pct": 27.8,
+      "n_artifact": 19,
+      "artifact_pct": 52.8,
+      "n_negative_control": 7,
+      "repeated_keywords": [
+        {
+          "keyword": "llm judge",
+          "count": 9,
+          "topic_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07",
+            "T08",
+            "T09"
+          ],
+          "risk": "LLM-eval anchoring",
+          "recommendation": "Reduce occurrences of 'llm judge' to <= 3; diversify by replacing duplicates with related but distinct keywords."
+        }
+      ],
+      "warnings": [
+        {
+          "keyword": "llm judge",
+          "count": 9,
+          "topic_ids": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07",
+            "T08",
+            "T09"
+          ],
+          "risk": "LLM-eval anchoring",
+          "recommendation": "Reduce occurrences of 'llm judge' to <= 3; diversify by replacing duplicates with related but distinct keywords."
+        }
+      ]
+    }
+  ],
+  "warnings_file": "reports/seed_bias_warnings.md",
+  "any_warnings": true
+}

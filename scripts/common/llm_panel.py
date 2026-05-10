@@ -108,30 +108,69 @@ def have_openai_key() -> bool:
 
 
 # ---------- reviewer roles ----------
+# DEFAULT panel: 8 academic-neutral reviewers. The two personal-goal reviewers
+# (niw_eb1a, career_faang) are EXCLUDED by default. To include them, the
+# orchestrator must call get_reviewer_roles(include_personal_goals=True),
+# which is gated behind the --include-personal-goals CLI flag.
 
-REVIEWER_ROLES: list[dict[str, str]] = [
+NEUTRAL_REVIEWER_ROLES: list[dict[str, str]] = [
     {"role": "citation_potential",
-     "focus": "Will this paper attract citations? Audience size, gap clarity, reusability."},
+     "focus": "Will this paper attract citations? Audience size, gap clarity, reusability. Do not favor any field."},
     {"role": "novelty_saturation",
-     "focus": "Is the gap real? Is the area saturated? Is differentiation specific?"},
+     "focus": "Is the gap real? Is the area saturated? Is differentiation specific? Do not infer novelty from absence of search results — absence may be query bias."},
     {"role": "venue_publication",
-     "focus": "Is there a credible venue path? Is no-APC realistic? Is timeline realistic?"},
+     "focus": "Is there a credible venue path? Venue must be peer-reviewed and indexed (DBLP, PubMed, Scopus). Do not favor open-access or no-APC venues over high-prestige closed venues."},
     {"role": "artifact_reproducibility",
-     "focus": "Will the artifact be reusable? Reproducibility risk?"},
+     "focus": "Will the artifact be reusable? Reproducibility risk? Do not require an artifact contribution — pure-paper contributions can be equally valuable."},
+    {"role": "methodological_rigor",
+     "focus": "Methodological soundness, statistical design, evaluation protocol. Reject methodologically weak topics regardless of field."},
+    {"role": "feasibility_resources",
+     "focus": "Resource feasibility (data access, compute, time, IRB). Realistic scope for a single author within 12 months."},
+    {"role": "existing_work_overlap",
+     "focus": "Are there peer-reviewed papers, GitHub repos, or HuggingFace artifacts that already deliver this contribution? Be specific."},
+    {"role": "brutal_skeptic",
+     "focus": "What is the strongest reason this topic will fail or be rejected? Do not favor topics in any specific field, methodology, or artifact type."},
+]
+
+# Optional, included only with --include-personal-goals
+PERSONAL_GOAL_REVIEWERS: list[dict[str, str]] = [
     {"role": "niw_eb1a",
      "focus": "Does this build NIW prong-2/3 evidence and EB-1A scholarly-articles + original-contributions evidence?"},
     {"role": "career_faang",
      "focus": "Does this build evidence for high-paying ML/data-science roles?"},
-    {"role": "risk_ip",
-     "focus": "Employer IP risk, dataset license risk, ethical risk, dual-use risk."},
-    {"role": "brutal_skeptic",
-     "focus": "What is the strongest reason this topic will fail or be rejected?"},
 ]
+
+
+def get_reviewer_roles(include_personal_goals: bool = False) -> list[dict[str, str]]:
+    """Return the active reviewer-role list.
+
+    Default: 8 academic-neutral reviewers (NEUTRAL_REVIEWER_ROLES).
+    With include_personal_goals=True: appends the 2 personal-goal reviewers.
+
+    The 8 neutral default and the 10-reviewer extended set are both valid;
+    callers that don't pass the flag will not include personal-goal reviewers.
+    """
+    roles = list(NEUTRAL_REVIEWER_ROLES)
+    if include_personal_goals:
+        roles.extend(PERSONAL_GOAL_REVIEWERS)
+    return roles
+
+
+# Backward-compat alias. NEW CODE SHOULD USE get_reviewer_roles().
+# This alias preserves the *neutral* default panel — it does NOT include
+# personal-goal reviewers. Callers that want the legacy 8-reviewer panel
+# (with niw_eb1a and career_faang) must explicitly call
+# get_reviewer_roles(include_personal_goals=True).
+REVIEWER_ROLES = list(NEUTRAL_REVIEWER_ROLES)
+
 
 SYSTEM_PROMPT = """You are a skeptical research reviewer.
 
 Rules:
 - Use ONLY the evidence packet provided. Do NOT use any prior knowledge of specific papers, citation counts, venue APCs, or deadlines from your memory.
+- Do not favor healthcare, LLM evaluation, JudgeSense, NIW, EB1A, FAANG, or the user's background unless the retrieved evidence itself supports relevance. Judge only from the evidence packet.
+- Do not favor any specific contribution type (no preference for benchmarks over theory papers, datasets over surveys).
+- Do not favor open-access or no-APC venues over peer-reviewed closed-access venues.
 - If the evidence packet does not support a claim, say so in `evidence_missing`.
 - Output STRICT JSON matching the schema. No prose outside JSON.
 - decision must be one of: GO, NARROW, DROP, NEEDS_MORE_EVIDENCE.

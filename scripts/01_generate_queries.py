@@ -27,12 +27,38 @@ from common.io_utils import read_csv, write_json, log  # noqa: E402
 
 QUERIES_DIR = ROOT / "data" / "queries"
 
-# Cross-cutting axes that often differentiate or bound research topics
+# Cross-cutting axes that often differentiate or bound research topics.
+# Kept as documentation only — the generator no longer injects every axis term
+# into every query. Use _conditional_axis_terms() to derive a topic-appropriate
+# subset based on target_artifact.
 AXIS_TERMS = [
     "benchmark", "dataset", "evaluation", "reproducibility",
     "survey", "taxonomy", "robustness", "calibration",
     "limitations", "future work",
 ]
+
+
+def _conditional_axis_terms(target_artifact: str) -> list[str]:
+    """Pick axis-term injection set based on the topic's stated artifact target.
+
+    A pure 'paper' or empty target gets NO injection. This prevents the
+    pipeline from forcing benchmark/eval framing on topics that aren't
+    benchmarks. See reports/BIAS_AUDIT_REPORT.md §D for the rationale.
+    """
+    t = (target_artifact or "").lower()
+    if not t or t == "paper":
+        return []
+    if "benchmark" in t:
+        return ["benchmark", "evaluation"]
+    if "dataset" in t:
+        return ["dataset", "evaluation"]
+    if "tool" in t or "software" in t or "framework" in t:
+        return ["framework", "implementation"]
+    if "survey" in t or "review" in t or "taxonomy" in t:
+        return ["survey", "taxonomy"]
+    if "audit" in t or "reproducibility" in t or "database" in t:
+        return ["reproducibility", "audit"]
+    return []  # default: no injection
 
 
 def _expand(keywords: str, synonyms: str) -> list[str]:
@@ -61,11 +87,18 @@ def build_queries(topic: dict[str, str]) -> dict[str, list[str] | list[dict[str,
         arxiv_cats += ["cs.AI"]
     arxiv_cats = arxiv_cats or ["cs.CL", "cs.LG"]
 
-    # Generate primary phrase queries; pair top-3 keywords with axis terms
+    # Generate primary phrase queries.
+    # Axis-term pairing is now CONDITIONAL on target_artifact — see
+    # _conditional_axis_terms(). For target_artifact='paper' or empty, no axis
+    # terms are injected, so the search isn't pushed toward benchmark/eval
+    # framings.
+    target_artifact = topic.get("target_artifact", "")
+    axis_terms_to_inject = _conditional_axis_terms(target_artifact)
+
     primary = [keys[0]] if keys else []
-    paired = []
+    paired: list[str] = []
     for k in keys[:3]:
-        for axis in ["benchmark", "evaluation", "robustness", "reproducibility"]:
+        for axis in axis_terms_to_inject:
             paired.append(f"{k} {axis}")
 
     s2_queries = list(dict.fromkeys(primary + keys[:5] + paired[:6]))
@@ -77,13 +110,18 @@ def build_queries(topic: dict[str, str]) -> dict[str, list[str] | list[dict[str,
     if keys:
         arxiv_queries.append("all:" + urllib.parse.quote(keys[0]))
 
-    github_queries = []
+    github_queries: list[str] = []
     for k in keys[:3]:
         github_queries.append(f"{k} in:readme,description")
-        github_queries.append(f"{k} benchmark in:name,description")
-        github_queries.append(f"{k} evaluation in:name,description")
+        # Only append axis-specific GitHub queries if the topic's target
+        # artifact justifies them.
+        for axis in axis_terms_to_inject[:2]:
+            github_queries.append(f"{k} {axis} in:name,description")
 
-    hf_queries = list(dict.fromkeys(keys[:5] + [f"{k} benchmark" for k in keys[:2]]))
+    hf_queries_extra = []
+    if "benchmark" in axis_terms_to_inject or "dataset" in axis_terms_to_inject:
+        hf_queries_extra = [f"{k} benchmark" for k in keys[:2]]
+    hf_queries = list(dict.fromkeys(keys[:5] + hf_queries_extra))
     doaj_queries = list(dict.fromkeys(keys[:3]))
     pwc_queries = list(dict.fromkeys(keys[:3]))
 

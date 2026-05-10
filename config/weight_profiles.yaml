@@ -1,0 +1,382 @@
+# =============================================================================
+# weight_profiles.yaml
+# =============================================================================
+# Profile-based weighting for topic ranking.
+#
+# Default profile: blind_citation
+#   Default ranking answers:
+#     "What is the strongest research topic based on evidence, citation merit,
+#      novelty, gap clarity, and scholarly value?"
+#
+# Optional profiles answer:
+#     "Among academically strong topics, which also help NIW, EB1A, FAANG/career,
+#      healthcare/high-stakes positioning, speed, and publication strategy?"
+#
+# Hard rule (enforced in 08_confidence_gate.py):
+#   A topic CANNOT be promoted to GO under a personal-goal profile unless it
+#   is also "acceptable under blind_citation" (not in the bottom half, not
+#   blocked by existing-work, not failed by negative-control sentinel).
+#
+# All 18 weight components must be defined per profile; missing components
+# default to 0 (with a warning).
+# =============================================================================
+
+# ---- WEIGHT COMPONENTS (all profiles use this same list) -------------------
+# - citation_potential        evidence-based citation forecast (academic merit)
+# - topic_momentum            yoy growth, recent papers (academic momentum)
+# - gap_clarity               clarity of the gap statement, future-work signals
+# - novelty                   inverse of saturation_density (novelty signal)
+# - saturation_penalty        applied as subtraction; high saturation hurts
+# - existing_work_penalty     applied as subtraction; direct overlap hurts
+# - artifact_value            artifact opportunity / dataset/benchmark value
+# - venue_credibility         indexing, venue strength, peer-review weight
+# - free_publication          no-APC bias (personal goal — 0 in blind_citation)
+# - publication_speed         time-to-publish bias (personal goal)
+# - methodological_rigor      reproducibility / methodology disclosure (academic)
+# - healthcare_relevance      personal goal — 0 in blind_citation
+# - high_stakes_relevance     personal goal — 0 in blind_citation
+# - niw_value                 personal goal — 0 in blind_citation
+# - eb1a_value                personal goal — 0 in blind_citation
+# - faang_career_value        personal goal — 0 in blind_citation
+# - execution_feasibility     resource/time-feasibility (personal goal)
+# - ip_risk_penalty           applied as subtraction; always non-negative
+
+# =============================================================================
+# 1. blind_citation  (DEFAULT)
+# =============================================================================
+blind_citation:
+  description: "Pure academic merit. Personal goals zeroed out. Default profile."
+  is_personal_goal: false
+  weights:
+    citation_potential:    1.50
+    topic_momentum:        1.00
+    gap_clarity:           1.20
+    novelty:               1.30
+    saturation_penalty:   -0.80
+    existing_work_penalty: -1.20
+    artifact_value:        0.40
+    venue_credibility:     1.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.80
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 2. academic_long_term
+# =============================================================================
+academic_long_term:
+  description: "Long-term academic citations. Ignores speed, personal goals."
+  is_personal_goal: false
+  weights:
+    citation_potential:    1.80
+    topic_momentum:        0.60
+    gap_clarity:           1.50
+    novelty:               1.50
+    saturation_penalty:   -1.20
+    existing_work_penalty: -1.20
+    artifact_value:        0.40
+    venue_credibility:     1.40
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  1.00
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.00
+    ip_risk_penalty:      -0.50
+
+# =============================================================================
+# 3. artifact_neutral
+# =============================================================================
+artifact_neutral:
+  description: "Treats artifact contributions and pure-paper contributions equally."
+  is_personal_goal: false
+  weights:
+    citation_potential:    1.50
+    topic_momentum:        1.00
+    gap_clarity:           1.20
+    novelty:               1.30
+    saturation_penalty:   -0.80
+    existing_work_penalty: -1.20
+    artifact_value:        0.00
+    venue_credibility:     1.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.80
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 4. healthcare_neutral
+# =============================================================================
+healthcare_neutral:
+  description: "Replicates blind_citation but explicitly removes any healthcare boost."
+  is_personal_goal: false
+  weights:
+    citation_potential:    1.50
+    topic_momentum:        1.00
+    gap_clarity:           1.20
+    novelty:               1.30
+    saturation_penalty:   -0.80
+    existing_work_penalty: -1.20
+    artifact_value:        0.40
+    venue_credibility:     1.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.80
+    healthcare_relevance: -0.50
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 5. llm_eval_neutral
+# =============================================================================
+llm_eval_neutral:
+  description: "Strips LLM/evaluation/judge keyword bias. See LLM_EVAL_DOWNWEIGHT_TERMS in profiles.py."
+  is_personal_goal: false
+  weights:
+    citation_potential:    1.50
+    topic_momentum:        1.00
+    gap_clarity:           1.20
+    novelty:               1.30
+    saturation_penalty:   -0.80
+    existing_work_penalty: -1.20
+    artifact_value:        0.40
+    venue_credibility:     1.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.80
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:   -0.50
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.80
+  modifiers:
+    llm_eval_downweight: 0.30   # 30% score reduction per LLM-eval keyword hit
+
+# =============================================================================
+# 6. niw_optimized   (personal goal)
+# =============================================================================
+niw_optimized:
+  description: "Boosts NIW national-importance signal. Subject to blind_citation gate."
+  is_personal_goal: true
+  weights:
+    citation_potential:    0.80
+    topic_momentum:        0.40
+    gap_clarity:           0.60
+    novelty:               0.40
+    saturation_penalty:   -0.40
+    existing_work_penalty: -0.80
+    artifact_value:        0.30
+    venue_credibility:     0.60
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.40
+    healthcare_relevance:  0.80
+    high_stakes_relevance: 1.00
+    niw_value:             2.00
+    eb1a_value:            0.50
+    faang_career_value:    0.00
+    execution_feasibility: 0.30
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 7. eb1a_optimized   (personal goal)
+# =============================================================================
+eb1a_optimized:
+  description: "Boosts EB-1A scholarly-articles + original-contributions evidence."
+  is_personal_goal: true
+  weights:
+    citation_potential:    1.20
+    topic_momentum:        0.60
+    gap_clarity:           0.80
+    novelty:               1.00
+    saturation_penalty:   -0.50
+    existing_work_penalty: -1.00
+    artifact_value:        1.00
+    venue_credibility:     1.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.60
+    healthcare_relevance:  0.30
+    high_stakes_relevance: 0.40
+    niw_value:             0.50
+    eb1a_value:            2.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 8. faang_career    (personal goal)
+# =============================================================================
+faang_career:
+  description: "Boosts ML/AI/DS career value, public portfolio, technical depth."
+  is_personal_goal: true
+  weights:
+    citation_potential:    0.80
+    topic_momentum:        1.00
+    gap_clarity:           0.60
+    novelty:               0.80
+    saturation_penalty:   -0.40
+    existing_work_penalty: -0.80
+    artifact_value:        1.20
+    venue_credibility:     0.60
+    free_publication:      0.00
+    publication_speed:     0.30
+    methodological_rigor:  0.40
+    healthcare_relevance: -0.20
+    high_stakes_relevance: 0.20
+    niw_value:             0.00
+    eb1a_value:            0.30
+    faang_career_value:    2.00
+    execution_feasibility: 0.40
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 9. balanced_personal_strategy   (personal goal)
+# =============================================================================
+balanced_personal_strategy:
+  description: "Balances academic merit with NIW + EB-1A + FAANG. Subject to gate."
+  is_personal_goal: true
+  weights:
+    citation_potential:    1.20
+    topic_momentum:        0.80
+    gap_clarity:           0.80
+    novelty:               1.00
+    saturation_penalty:   -0.60
+    existing_work_penalty: -1.00
+    artifact_value:        0.60
+    venue_credibility:     0.80
+    free_publication:      0.20
+    publication_speed:     0.20
+    methodological_rigor:  0.60
+    healthcare_relevance:  0.30
+    high_stakes_relevance: 0.40
+    niw_value:             0.80
+    eb1a_value:            0.80
+    faang_career_value:    0.60
+    execution_feasibility: 0.30
+    ip_risk_penalty:      -0.80
+
+# =============================================================================
+# 10. immigration_only   (personal goal — extreme)
+# =============================================================================
+immigration_only:
+  description: "EXTREME profile: NIW+EB-1A only. Ignores academic merit. For audit comparison."
+  is_personal_goal: true
+  weights:
+    citation_potential:    0.00
+    topic_momentum:        0.00
+    gap_clarity:           0.00
+    novelty:               0.00
+    saturation_penalty:    0.00
+    existing_work_penalty: -0.40
+    artifact_value:        0.00
+    venue_credibility:     0.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.00
+    healthcare_relevance:  1.00
+    high_stakes_relevance: 1.00
+    niw_value:             2.50
+    eb1a_value:            2.50
+    faang_career_value:    0.00
+    execution_feasibility: 0.00
+    ip_risk_penalty:      -0.40
+
+# =============================================================================
+# 11. career_only   (personal goal — extreme)
+# =============================================================================
+career_only:
+  description: "EXTREME profile: career value only. For audit comparison."
+  is_personal_goal: true
+  weights:
+    citation_potential:    0.00
+    topic_momentum:        0.00
+    gap_clarity:           0.00
+    novelty:               0.00
+    saturation_penalty:    0.00
+    existing_work_penalty: -0.40
+    artifact_value:        0.50
+    venue_credibility:     0.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.00
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    3.00
+    execution_feasibility: 0.20
+    ip_risk_penalty:      -0.40
+
+# =============================================================================
+# 12. current_strategy   (legacy — replicates pre-fix scoring)
+# =============================================================================
+current_strategy:
+  description: "Legacy profile: replicates the pre-fix Overall formula. Kept for audit only."
+  is_personal_goal: true
+  weights:
+    citation_potential:    1.00
+    topic_momentum:        0.50
+    gap_clarity:           0.50
+    novelty:               0.80
+    saturation_penalty:   -0.40
+    existing_work_penalty: -0.60
+    artifact_value:        0.80
+    venue_credibility:     0.60
+    free_publication:      0.30
+    publication_speed:     0.30
+    methodological_rigor:  0.40
+    healthcare_relevance:  0.40
+    high_stakes_relevance: 0.30
+    niw_value:             0.80
+    eb1a_value:            0.80
+    faang_career_value:    0.40
+    execution_feasibility: 0.30
+    ip_risk_penalty:      -0.40
+
+# =============================================================================
+# 13. custom   (placeholder; CLI overrides populate this)
+# =============================================================================
+custom:
+  description: "User-defined via CLI --weight-* flags. Missing weights default to 0 with warning."
+  is_personal_goal: false
+  weights:
+    citation_potential:    0.00
+    topic_momentum:        0.00
+    gap_clarity:           0.00
+    novelty:               0.00
+    saturation_penalty:    0.00
+    existing_work_penalty: 0.00
+    artifact_value:        0.00
+    venue_credibility:     0.00
+    free_publication:      0.00
+    publication_speed:     0.00
+    methodological_rigor:  0.00
+    healthcare_relevance:  0.00
+    high_stakes_relevance: 0.00
+    niw_value:             0.00
+    eb1a_value:            0.00
+    faang_career_value:    0.00
+    execution_feasibility: 0.00
+    ip_risk_penalty:       0.00

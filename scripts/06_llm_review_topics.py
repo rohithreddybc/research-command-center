@@ -32,7 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json, write_json, log, evidence_dir, topic_dir  # noqa: E402
 from common.llm_panel import (  # noqa: E402
-    REVIEWER_ROLES, review_claude_cli, review_openai,
+    get_reviewer_roles, review_claude_cli, review_openai,
     have_claude_cli, have_openai_key, write_inbox_prompt,
     read_inbox_reply, reset_openai_budget, openai_budget_status,
     ERRORS as PANEL_ERRORS,
@@ -149,7 +149,9 @@ def claude_disagreement(reviews: list[dict[str, Any]]) -> bool:
 def review_one_topic(
     topic_id: str, topic: dict[str, Any],
     use_openai_tiebreaker: bool, is_top_n: bool,
+    include_personal_goals: bool = False,
 ) -> dict[str, Any]:
+    active_roles = get_reviewer_roles(include_personal_goals=include_personal_goals)
     out_dir = topic_dir("data/reviews", topic_id)
     packet = assemble_packet(topic_id, topic)
     write_json(out_dir / "_packet.json", packet)
@@ -161,7 +163,7 @@ def review_one_topic(
     # Pass 1: Claude CLI for all 8 roles
     cli_failed = False
     if primary_provider == "claude_cli":
-        for role in REVIEWER_ROLES:
+        for role in active_roles:
             r = review_claude_cli(role, topic, packet)
             if r is None:
                 cli_failed = True
@@ -171,7 +173,7 @@ def review_one_topic(
         if cli_failed and not reviews:
             # Auth or transport failure: drop inbox prompts so user can run reviews via
             # `claude auth login` then rerun, or paste into another Claude/ChatGPT session.
-            for role in REVIEWER_ROLES:
+            for role in active_roles:
                 p = write_inbox_prompt(role, topic, packet)
                 stub = {
                     "reviewer_role": role["role"], "score": 0,
@@ -186,7 +188,7 @@ def review_one_topic(
                 write_json(out_dir / f"inbox_pending_{role['role']}.json", stub)
     else:
         # Inbox fallback: drop prompts for manual paste
-        for role in REVIEWER_ROLES:
+        for role in active_roles:
             existing = read_inbox_reply(role, topic, packet)
             if existing:
                 existing["provider"] = "inbox_manual"
@@ -211,7 +213,7 @@ def review_one_topic(
     # Pass 2: OpenAI tiebreaker, strictly bounded
     if use_openai_tiebreaker and is_top_n and have_openai_key():
         if claude_disagreement(reviews):
-            for role in REVIEWER_ROLES:
+            for role in active_roles:
                 if role["role"] not in TIEBREAKER_ROLES:
                     continue
                 r = review_openai(role, topic, packet)
@@ -233,6 +235,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--tiebreaker-top-n", type=int, default=4)
     ap.add_argument("--reset-openai-budget", action="store_true")
     ap.add_argument("--openai-budget", type=int, default=8)
+    ap.add_argument("--include-personal-goals", action="store_true",
+                    help=("Include the niw_eb1a and career_faang reviewers in the panel. "
+                          "By default the panel is academic-neutral (8 reviewers)."))
     args = ap.parse_args(argv)
 
     if args.reset_openai_budget:
@@ -256,7 +261,8 @@ def main(argv: list[str] | None = None) -> int:
         is_top_n = topic["topic_id"] in top_n_set
         s = review_one_topic(topic["topic_id"], topic,
                               use_openai_tiebreaker=args.use_openai_tiebreaker,
-                              is_top_n=is_top_n)
+                              is_top_n=is_top_n,
+                              include_personal_goals=args.include_personal_goals)
         summary.append({"topic_id": s["topic_id"], "n_reviews": len(s["reviews"]),
                         "is_top_n": is_top_n})
     wrote_err = _flush_errors()
@@ -265,6 +271,8 @@ def main(argv: list[str] | None = None) -> int:
         "openai_budget": openai_budget_status(),
         "errors_recorded": len(PANEL_ERRORS),
         "errors_file": str(REPORTS / "llm_review_errors.md") if wrote_err else None,
+        "personal_goal_reviewers_included": bool(args.include_personal_goals),
+        "active_reviewer_count": len(get_reviewer_roles(args.include_personal_goals)),
     }, indent=2))
     return 0
 

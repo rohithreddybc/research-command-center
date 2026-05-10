@@ -4,6 +4,65 @@
 
 ---
 
+## POST-TIER-1-FIX VERIFICATION (added 2026-05-10)
+
+The Tier 1 architecture fixes from §K have been implemented in commit (this
+commit). The audit was rerun against the fixed codebase. Key verifications:
+
+| Tier-1 Item | Implemented | Verification |
+|---|---|---|
+| Default reviewer panel academically neutral (8 roles) | ✅ | `scripts/common/llm_panel.py` `NEUTRAL_REVIEWER_ROLES`; `niw_eb1a` and `career_faang` removed from default. Test `TestNeutralReviewerPanel.test_default_panel_excludes_personal_goal_reviewers` passes. |
+| `--include-personal-goals` adds personal-goal reviewers | ✅ | `scripts/06_llm_review_topics.py --include-personal-goals` flag wired. Test `test_include_personal_goals_adds_them` passes. |
+| Default scoring profile = `blind_citation` | ✅ | `scripts/common/profiles.py` `DEFAULT_PROFILE = "blind_citation"`; `05_score_topics.py` and `08_confidence_gate.py` both use this default. Test `test_default_profile_is_blind_citation` passes. |
+| Personal-goal weights = 0 in `blind_citation` | ✅ | `config/weight_profiles.yaml` `blind_citation` block has `niw_value=0, eb1a_value=0, faang_career_value=0, healthcare_relevance=0, high_stakes_relevance=0, free_publication=0, publication_speed=0`. Test `test_blind_citation_zeros_personal_goals` passes. |
+| Forced query-axis injection removed | ✅ | `scripts/01_generate_queries.py:_conditional_axis_terms()` returns `[]` for `target_artifact='paper'` or empty. Tests `test_paper_target_gets_no_axis_injection` and `test_benchmark_target_gets_benchmark_axis` pass. |
+| Seed keyword cap warning | ✅ | `scripts/common/seed_audit.py` (KEYWORD_CAP=3); writes `reports/seed_bias_warnings.md`. Test `test_keyword_cap_warning_fires` passes. |
+| Negative-control sentinel blocks GO | ✅ | `scripts/08_confidence_gate.py:_negative_control_sentinel()` reads `data/bias_audit/negative_control_results.json`; sets `negative_control_blocked_go=True` if active profile is in `leaky_profiles`. Test `test_nc_top_half_blocks_go` passes. |
+| Personal-goal-only weak topic flag | ✅ | `08_confidence_gate.py` checks `bc_acceptable` against blind_citation gate; sets `personal_goal_only_weak_topic=True` and prepends `PERSONAL_GOAL_ONLY_WEAK_TOPIC` reason. Tests `test_personal_goal_only_warning` and `test_blind_citation_failure_blocks_go` pass. |
+
+### Post-fix top-5 ranking shift (validates the fix)
+
+Under the new default profile `blind_citation`:
+
+| Old rank (current_strategy) | New rank (blind_citation) | Topic |
+|---|---|---|
+| #1 | **#9** | T11 (Format sensitivity benchmark) — was the previous favorite; correctly demoted because it relied on artifact-target boost + LLM-eval anchoring |
+| #2 | #5 | T74_N1 — drops slightly; honest given thin corpus |
+| #6 | **#10** | T07 (Judge prompt injection) — drops because LLM-eval anchor is removed |
+| not in top-5 | **#1** | T10 — paper-merit driven; *but* `go_blocked=True` from existing-work overlap, so cannot become GO |
+| not in top-5 | #2 | T43 — most cross-profile-stable topic now correctly recognised |
+
+### Post-fix negative-control sentinel result
+
+All 12 real profiles return `verdict=TIGHT` (no NC topic in top half).
+The sole `LEAKY` verdict is the `custom` profile because its weights
+default to 0 — this is by design (warns user that custom requires
+explicit weights).
+
+### Outstanding (not Tier 1)
+
+- Seed-bias warning still fires for `topics_seed_full_75.csv` and
+  `topics_seed_balanced.csv` (`llm judge` × 9). These are warnings,
+  not errors. Reduce by curating the seeds before next pipeline run.
+- The Tier-2 fixes (decouple NIW from healthcare keywords, decouple
+  Career from LLM keywords, decouple EB-1A from artifact-type strings)
+  are NOT yet implemented. The keyword-based scoring in
+  `05_score_topics.py:niw_score(), career_score(), eb1a_score()` still
+  uses the original heuristics. The new `weight_profiles.yaml` system
+  *applies different weights* to those signals, but the underlying 0–5
+  signals themselves are unchanged.
+
+### Recommended next steps
+
+1. Decide whether to curate the balanced seed further to drop `llm judge`
+   to ≤ 3 occurrences before the next pipeline run.
+2. With Tier 1 in place, the system is now safe to run `06_llm_review_topics`
+   on the balanced seed under the default `blind_citation` profile.
+3. After that re-run, regenerate `BIAS_AUDIT_REPORT.md` and `GO_READINESS_DOSSIERS.md`
+   based on the new neutral evidence.
+
+---
+
 ## A. Executive Summary
 
 **Verdict: NEEDS MAJOR REDESIGN.** The current pipeline's top-ranked topics

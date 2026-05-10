@@ -30,6 +30,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json, write_json, write_csv, log, evidence_dir  # noqa: E402
 from common.config import CFG  # noqa: E402
 from common.relevance import median_relevance  # noqa: E402
+from common.profiles import (  # noqa: E402
+    add_profile_args, resolve_profile, load_profiles, score_under_profile,
+    DEFAULT_PROFILE, WEIGHT_COMPONENTS,
+)
 
 QUERIES_DIR = ROOT / "data" / "queries"
 DEDUP_DIR = ROOT / "data" / "papers_dedup"
@@ -462,7 +466,13 @@ def score_topic(topic_id: str, topic_meta: dict[str, Any]) -> dict[str, Any]:
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--topic", default=None)
+    add_profile_args(p)
     args = p.parse_args(argv)
+
+    # Resolve scoring profile (default: blind_citation)
+    all_profiles = load_profiles()
+    active_profile_name, active_profile = resolve_profile(args, all_profiles)
+    log("05_score", f"Active scoring profile: {active_profile_name}")
 
     files = sorted(QUERIES_DIR.glob("*.json"))
     if args.topic:
@@ -474,8 +484,23 @@ def main(argv: list[str] | None = None) -> int:
             continue
         topic_id = q["topic"]["topic_id"]
         m = score_topic(topic_id, q["topic"])
+
+        # Compute per-profile scores (every profile, every topic — cheap)
+        m["profile_scores"] = {}
+        for prof_name, prof_def in all_profiles.items():
+            res = score_under_profile(m, prof_def, q["topic"])
+            m["profile_scores"][prof_name] = {
+                "score":         res["score"],
+                "is_personal_goal": bool(prof_def.get("is_personal_goal", False)),
+            }
+        m["active_profile"]       = active_profile_name
+        m["active_profile_score"] = m["profile_scores"][active_profile_name]["score"]
+        m["active_profile_is_personal_goal"] = bool(active_profile.get("is_personal_goal", False))
+
         write_json(SCORES_DIR / f"{topic_id}.json", m)
-        log("05_score", f"{topic_id} Overall={m['rubric']['composites']['Overall']}")
+        log("05_score",
+            f"{topic_id} legacy_Overall={m['rubric']['composites']['Overall']} "
+            f"profile={active_profile_name} score={m['active_profile_score']}")
         summary_rows.append({
             "topic_id": topic_id,
             "title": m["topic_title"],
@@ -503,8 +528,11 @@ def main(argv: list[str] | None = None) -> int:
             "CareerValue": m["rubric"]["composites"]["CareerValue"],
             "PublicationPath": m["rubric"]["composites"]["PublicationPath"],
             "RiskPenalty": m["rubric"]["composites"]["RiskPenalty"],
+            f"score_{active_profile_name}": m["active_profile_score"],
+            "active_profile": active_profile_name,
         })
-    summary_rows.sort(key=lambda r: r["Overall"], reverse=True)
+    # Sort by ACTIVE profile score (default: blind_citation), not legacy Overall.
+    summary_rows.sort(key=lambda r: r.get(f"score_{active_profile_name}", 0), reverse=True)
     write_csv(SCORES_DIR / "scores.csv", summary_rows)
     print(json.dumps(summary_rows, indent=2))
     return 0

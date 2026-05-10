@@ -1,6 +1,6 @@
 # Final decision report
 
-Generated: 2026-05-10T07:54:20.624779Z
+Generated: 2026-05-10T20:25:46.339218Z
 
 **Report status: `FULL_REVIEW_COMPLETE`**
 
@@ -30,6 +30,103 @@ Generated: 2026-05-10T07:54:20.624779Z
 | 12 | T25: Hallucination taxonomy: RAG vs no-RAG | **NARROW** | MEDIUM | FULL REVIEW  | 10.38 | 5 | 2 | 3 | 2 | 0 | 2 | 4 | 3 | 4 | 0.25 | 2 | 8 | N |
 | 13 | T53: Test-set contamination audit of healthcare LLM benchmarks | **NARROW** | MEDIUM | FULL REVIEW  | 10.28 | 4 | 2 | 4 | 2 | 0 | 5 | 4 | 3 | 5 | 0.5 | 2 | 8 | N |
 | 14 | T07_N1: Judge robustness to candidate-side prompt injection — noise-pruned | **NARROW** | MEDIUM | FULL REVIEW  | 9.39 | 5 | 1 | 4 | 2 | 0 | 4 | 4 | 5 | 5 | 0.5 | 2 | 8 | N |
+
+## 2.5 Scoring Configuration
+
+- **Active scoring profile**: `blind_citation`
+- **Personal-goal LLM reviewers (niw_eb1a, career_faang) included**: YES
+- **Profile config**: `config\weight_profiles.yaml`
+- **Negative-control sentinel**: ✅ TIGHT under `blind_citation` (no NC topic in top half)
+
+#### Active profile weights
+
+| Component | Weight | Status |
+|---|---|---|
+| `citation_potential` | 1.5 | 🟢 active |
+| `topic_momentum` | 1.0 | 🟢 active |
+| `gap_clarity` | 1.2 | 🟢 active |
+| `novelty` | 1.3 | 🟢 active |
+| `saturation_penalty` | -0.8 | 🟢 active |
+| `existing_work_penalty` | -1.2 | 🟢 active |
+| `artifact_value` | 0.4 | 🟢 active |
+| `venue_credibility` | 1.0 | 🟢 active |
+| `free_publication` | 0.0 | ⚪ disabled |
+| `publication_speed` | 0.0 | ⚪ disabled |
+| `methodological_rigor` | 0.8 | 🟢 active |
+| `healthcare_relevance` | 0.0 | ⚪ disabled |
+| `high_stakes_relevance` | 0.0 | ⚪ disabled |
+| `niw_value` | 0.0 | ⚪ disabled |
+| `eb1a_value` | 0.0 | ⚪ disabled |
+| `faang_career_value` | 0.0 | ⚪ disabled |
+| `execution_feasibility` | 0.2 | 🟢 active |
+| `ip_risk_penalty` | -0.8 | 🟢 active |
+
+
+## 2.6 Profile Comparison Table
+
+Each topic's rank under each weighting profile. `rank_range` = max-min across profiles (high values = bias-sensitive ranking).
+
+| Topic | blind_ci | academic | artifact | healthca | llm_eval | niw_opti | eb1a_opt | faang_ca | balanced | immigrat | career_o | current_ | custom | min | max | range |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| T04 | 3 | 3 | 3 | 6 | 12 | 5 | 2 | 3 | 1 | 3 | 3 | 2 | 1 | 1 | 12 | 11 |
+| T43 | 2 | 2 | 2 | 5 | 1 | 1 | 1 | 11 | 2 | 1 | 14 | 1 | 10 | 1 | 14 | 13 |
+| T10 | 1 | 1 | 1 | 1 | 9 | 8 | 4 | 5 | 5 | 9 | 6 | 7 | 4 | 1 | 9 | 8 |
+| T53_N4 | 6 | 6 | 5 | 10 | 4 | 3 | 3 | 10 | 3 | 2 | 10 | 3 | 12 | 2 | 12 | 10 |
+| T74_N1 | 5 | 5 | 6 | 3 | 5 | 10 | 5 | 1 | 9 | 11 | 1 | 9 | 14 | 1 | 14 | 13 |
+| T37 | 8 | 7 | 8 | 11 | 3 | 2 | 6 | 13 | 4 | 4 | 12 | 4 | 8 | 2 | 13 | 11 |
+| T07 | 10 | 10 | 9 | 8 | 13 | 7 | 9 | 4 | 8 | 7 | 4 | 8 | 2 | 2 | 13 | 11 |
+| T25 | 4 | 4 | 4 | 2 | 2 | 11 | 11 | 7 | 12 | 13 | 11 | 12 | 7 | 2 | 13 | 11 |
+| T11 | 9 | 9 | 12 | 7 | 11 | 13 | 8 | 2 | 10 | 10 | 2 | 10 | 5 | 2 | 13 | 11 |
+| T37_N1 | 11 | 11 | 10 | 13 | 7 | 4 | 7 | 14 | 6 | 5 | 13 | 5 | 9 | 4 | 14 | 10 |
+| T17 | 7 | 8 | 7 | 4 | 6 | 12 | 12 | 9 | 13 | 12 | 8 | 13 | 6 | 4 | 13 | 9 |
+| T53 | 12 | 12 | 11 | 14 | 8 | 6 | 10 | 12 | 7 | 6 | 9 | 6 | 11 | 6 | 14 | 8 |
+| T07_N1 | 13 | 13 | 13 | 9 | 14 | 9 | 13 | 6 | 11 | 8 | 5 | 11 | 3 | 3 | 14 | 11 |
+| T74 | 14 | 14 | 14 | 12 | 10 | 14 | 14 | 8 | 14 | 14 | 7 | 14 | 13 | 7 | 14 | 7 |
+
+### 2.6a Topics robust across profiles (rank ≤ 6 in all profiles)
+
+_None._
+
+### 2.6b Topics that rank high only under personal-goal profiles
+
+T37, T07, T11, T37_N1
+
+### 2.6c Topics that collapse under blind_citation
+
+T37, T07, T11, T37_N1, T53, T07_N1, T74
+
+### 2.6d Topics strong academically AND useful for personal goals
+
+T04, T43, T10, T74_N1, T25
+
+### 2.6e Topics to ignore (only win under biased weighting)
+
+T37, T07, T11, T37_N1
+
+
+## 2.7 Personal-goal Overlay
+
+This section applies AFTER the neutral blind_citation ranking. Personal-goal overlays do NOT change the academic ranking — they help select among already-academically-acceptable topics.
+
+### Best neutral topics (2 acceptable under blind_citation)
+
+- **T74_N1**: Open structured-metadata dataset of LLM-eval papers — noise-pruned  (BC score: 23.18)
+- **T53_N4**: Test-set contamination audit of healthcare LLM benchmarks — noise-pruned  (BC score: 22.40)
+
+#### Among those, helpful for NIW
+- T53_N4: NIW=5.0
+
+#### Among those, helpful for EB1A
+- T74_N1: EB1A=5.0
+- T53_N4: EB1A=5.0
+
+#### Among those, helpful for FAANG/career
+- T74_N1: career=5.0
+
+#### Among those, fit healthcare/high-stakes domains
+
+#### Among those, with strong artifact potential
+- T74_N1: artifact=4.0
 
 ## 3. GO topics
 

@@ -14,12 +14,6 @@
       "explanation": "Top-3 keywords \u00d7 4 axis terms = 12 forced 'X benchmark', 'X evaluation', 'X robustness', 'X reproducibility' searches per topic. This biases retrieval toward benchmark/eval framings regardless of whether the topic is genuinely about a benchmark."
     },
     {
-      "issue": "github_queries_assume_benchmark",
-      "evidence": "\"{k} benchmark in:name,description\"",
-      "severity": "MEDIUM",
-      "explanation": "GitHub search auto-appends 'benchmark' and 'evaluation'. Repos that aren't benchmarks won't surface even when relevant."
-    },
-    {
       "issue": "axis_term_contamination_in_actual_queries",
       "evidence": "344/567 (60.7%) of queries across 14 topics contain benchmark/evaluation/reproducibility/robustness",
       "severity": "HIGH",

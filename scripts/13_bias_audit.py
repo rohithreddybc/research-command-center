@@ -40,7 +40,10 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
-CONFIG_FILE     = ROOT / "config" / "bias_profiles.yaml"
+# Prefer the new weight_profiles.yaml (canonical) but fall back to
+# bias_profiles.yaml for backward compatibility with the first audit run.
+CONFIG_FILE     = ROOT / "config" / "weight_profiles.yaml"
+LEGACY_CONFIG   = ROOT / "config" / "bias_profiles.yaml"
 SCORES_DIR      = ROOT / "data" / "scores"
 QUERIES_DIR     = ROOT / "data" / "queries"
 DECISIONS_DIR   = ROOT / "data" / "decisions"
@@ -60,7 +63,9 @@ BALANCED_SEED   = ROOT / "data" / "topics_seed_balanced.csv"
 # ---------------------------------------------------------------------------
 
 def load_yaml(path: Path) -> dict[str, Any]:
-    """Best-effort YAML loader for the simple structure used in bias_profiles.yaml."""
+    """Best-effort YAML loader for the simple structure used in profiles YAML files."""
+    if not path.exists() and LEGACY_CONFIG.exists():
+        path = LEGACY_CONFIG
     try:
         import yaml  # type: ignore
         return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -209,8 +214,32 @@ def _has_artifact_target(sc: dict) -> bool:
 
 
 def score_under_profile(sc: dict, profile: dict[str, Any]) -> dict[str, float]:
-    """Compute one topic's score under one profile. Returns {raw, adjusted, components}."""
-    weights   = profile.get("weights", {}) or {}
+    """Compute one topic's score under one profile.
+
+    NEW (canonical): if the profile follows the weight_profiles.yaml schema
+    (has 'weights' with the 18 canonical component names), use the shared
+    common.profiles.score_under_profile() so audit and pipeline are consistent.
+    LEGACY (bias_profiles.yaml): fall back to the inline logic below.
+    """
+    weights = profile.get("weights", {}) or {}
+    canonical_keys = {"citation_potential", "topic_momentum", "gap_clarity",
+                      "novelty", "saturation_penalty", "existing_work_penalty"}
+    if any(k in weights for k in canonical_keys):
+        # Use the canonical scorer
+        from common.profiles import score_under_profile as _canonical_score  # noqa
+        # Re-load full metrics from data/scores/<id>.json for richer signal data
+        full = json.loads((SCORES_DIR / f"{sc['topic_id']}.json").read_text(
+            encoding="utf-8")) if (SCORES_DIR / f"{sc['topic_id']}.json").exists() else {}
+        topic = {
+            "category":        sc.get("category", ""),
+            "title":           sc.get("title", ""),
+            "keywords":        sc.get("keywords", ""),
+            "synonyms":        sc.get("synonyms", ""),
+            "target_artifact": sc.get("target_artifact", ""),
+        }
+        res = _canonical_score(full, profile, topic)
+        return {"score": res["score"], "components": res["contributions"]}
+
     penalties = profile.get("penalties", {}) or {}
     signal_w  = profile.get("signal_weights", {}) or {}
     cat_filt  = profile.get("category_filters", {}) or {}
@@ -891,6 +920,20 @@ def write_outputs(seed_audit, query_audit, prompt_audit,
 # Main
 # ---------------------------------------------------------------------------
 
+def run_seed_audit() -> dict[str, Any]:
+    """Use scripts/common/seed_audit.py to validate keyword caps, write warnings."""
+    try:
+        from common.seed_audit import audit_all_default_seeds
+        audits = audit_all_default_seeds()
+        return {
+            "audits": audits,
+            "warnings_file": "reports/seed_bias_warnings.md",
+            "any_warnings": any(a.get("repeated_keywords") for a in audits),
+        }
+    except Exception as e:
+        return {"error": f"seed_audit failed: {e}"}
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--profiles", default=None,
@@ -925,13 +968,36 @@ def main(argv: list[str] | None = None) -> int:
     print("[13_bias_audit] 5/6 Running negative-control test...")
     negative_control = negative_control_test(profiles)
 
-    print("[13_bias_audit] 6/6 Generating balanced seed...")
-    balanced_info = generate_balanced_seed()
+    print("[13_bias_audit] 6/8 Running seed-bias keyword cap audit...")
+    seed_warning_audit = run_seed_audit()
 
-    print("[13_bias_audit] Writing outputs...")
+    print("[13_bias_audit] 7/8 Generating balanced seed (skipping if exists)...")
+    if BALANCED_SEED.exists():
+        # Don't overwrite the user-curated balanced seed; just summarize it
+        try:
+            existing_rows = list(csv.DictReader(BALANCED_SEED.open(encoding="utf-8")))
+            cats = Counter(r.get("category", "?") for r in existing_rows)
+            balanced_info = {
+                "path":                str(BALANCED_SEED),
+                "n_topics":            len(existing_rows),
+                "categories":          dict(cats.most_common()),
+                "n_negative_control":  sum(1 for r in existing_rows
+                                          if r.get("is_negative_control", "").lower() in ("true","1","yes")
+                                          or "_NC" in r.get("topic_id", "")),
+                "regenerated":         False,
+            }
+        except Exception:
+            balanced_info = generate_balanced_seed()
+    else:
+        balanced_info = generate_balanced_seed()
+
+    print("[13_bias_audit] 8/8 Writing outputs...")
     write_outputs(seed_audit, query_audit, prompt_audit,
                   profile_rankings, rank_table, robust_biased,
                   negative_control, balanced_info)
+    # Persist the seed-warning audit
+    (OUT_DIR / "seed_warnings_audit.json").write_text(
+        json.dumps(seed_warning_audit, indent=2), encoding="utf-8")
 
     print(f"[13_bias_audit] Done. Outputs in {OUT_DIR}")
     print(f"  - {len(rank_table)} topics scored across {len(profile_rankings)} profiles")

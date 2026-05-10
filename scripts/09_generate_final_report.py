@@ -146,6 +146,157 @@ def main(argv: list[str] | None = None) -> int:
         )
     md.append("")
 
+    # ---- 2.5 Active scoring profile + negative-control sentinel banner
+    active_profile_name = "blind_citation"
+    personal_goals_included = False
+    nc_sentinel_status = {"available": False}
+    if decisions:
+        first_d = decisions[0][1]
+        active_profile_name = first_d.get("active_profile", "blind_citation")
+        nc_sentinel_status = first_d.get("negative_control_sentinel", {"available": False})
+    # Detect personal-goal reviewer inclusion by inspecting one packet
+    packets_dir = ROOT / "data" / "reviews"
+    if packets_dir.exists():
+        for sub in packets_dir.iterdir():
+            if sub.is_dir() and (sub / "claude_cli_niw_eb1a.json").exists():
+                personal_goals_included = True
+                break
+
+    md.append("## 2.5 Scoring Configuration\n")
+    profile_yaml = ROOT / "config" / "weight_profiles.yaml"
+    md.append(f"- **Active scoring profile**: `{active_profile_name}`")
+    md.append(f"- **Personal-goal LLM reviewers (niw_eb1a, career_faang) included**: "
+              f"{'YES' if personal_goals_included else 'NO (default)'}")
+    md.append(f"- **Profile config**: `{profile_yaml.relative_to(ROOT)}`")
+    if nc_sentinel_status.get("available"):
+        leaky = nc_sentinel_status.get("leaky_profiles") or []
+        if active_profile_name in leaky:
+            md.append(f"- **Negative-control sentinel**: ⚠️ **SCORING_LEAK_DETECTED** "
+                      f"(NC topics rank in top half under `{active_profile_name}`)")
+        else:
+            md.append(f"- **Negative-control sentinel**: ✅ TIGHT under `{active_profile_name}` "
+                      f"(no NC topic in top half)")
+    else:
+        md.append(f"- **Negative-control sentinel**: not yet computed "
+                  f"(run `python scripts/13_bias_audit.py`)")
+
+    # Active-profile weights table
+    try:
+        from common.profiles import load_profiles
+        all_profiles = load_profiles()
+        active_weights = (all_profiles.get(active_profile_name) or {}).get("weights") or {}
+        if active_weights:
+            md.append("\n#### Active profile weights\n")
+            md.append("| Component | Weight | Status |")
+            md.append("|---|---|---|")
+            for c, w in active_weights.items():
+                status_label = "🟢 active" if abs(float(w)) > 0.001 else "⚪ disabled"
+                md.append(f"| `{c}` | {w} | {status_label} |")
+            md.append("")
+    except Exception:
+        pass
+
+    # ---- 2.6 Profile Comparison Table (across all 13 profiles)
+    pr_csv = ROOT / "data" / "bias_audit" / "profile_rankings.csv"
+    if pr_csv.exists():
+        import csv as _csv
+        rows = list(_csv.DictReader(pr_csv.open(encoding="utf-8")))
+        if rows:
+            md.append("\n## 2.6 Profile Comparison Table\n")
+            md.append("Each topic's rank under each weighting profile. "
+                      "`rank_range` = max-min across profiles "
+                      "(high values = bias-sensitive ranking).\n")
+            profile_cols = [k for k in rows[0].keys() if k.startswith("rank_") and not k in ("rank_min","rank_max","rank_range","rank_mean")]
+            short = {p: p.replace("rank_", "")[:8] for p in profile_cols}
+            header = ["Topic"] + [short[p] for p in profile_cols] + ["min","max","range"]
+            md.append("| " + " | ".join(header) + " |")
+            md.append("|" + "|".join(["---"] * len(header)) + "|")
+            rows.sort(key=lambda r: float(r.get("rank_mean") or 99))
+            for r in rows:
+                vals = [r["topic_id"]]
+                for p in profile_cols:
+                    vals.append(str(r.get(p, "-")))
+                vals.append(str(r.get("rank_min", "-")))
+                vals.append(str(r.get("rank_max", "-")))
+                vals.append(str(r.get("rank_range", "-")))
+                md.append("| " + " | ".join(vals) + " |")
+            md.append("")
+
+            # Robustness sub-sections
+            robust = [r for r in rows
+                      if int(r.get("rank_max", 99)) <= 6 and int(r.get("rank_range", 99)) <= 6]
+            collapse_bc = [r for r in rows
+                           if int(r.get("rank_blind_citation", 99)) > len(rows) // 2]
+            personal_only = [r for r in rows
+                             if int(r.get("rank_blind_citation", 99)) > len(rows) // 2
+                             and (int(r.get("rank_niw_optimized", 99)) <= 5
+                                  or int(r.get("rank_eb1a_optimized", 99)) <= 5
+                                  or int(r.get("rank_faang_career", 99)) <= 5)]
+            strong_both = [r for r in rows
+                           if int(r.get("rank_blind_citation", 99)) <= 5
+                           and (int(r.get("rank_niw_optimized", 99)) <= 8
+                                or int(r.get("rank_eb1a_optimized", 99)) <= 8
+                                or int(r.get("rank_faang_career", 99)) <= 8)]
+
+            md.append("### 2.6a Topics robust across profiles (rank ≤ 6 in all profiles)\n")
+            md.append(", ".join(r["topic_id"] for r in robust) or "_None._")
+            md.append("\n### 2.6b Topics that rank high only under personal-goal profiles\n")
+            md.append(", ".join(r["topic_id"] for r in personal_only) or "_None._")
+            md.append("\n### 2.6c Topics that collapse under blind_citation\n")
+            md.append(", ".join(r["topic_id"] for r in collapse_bc) or "_None._")
+            md.append("\n### 2.6d Topics strong academically AND useful for personal goals\n")
+            md.append(", ".join(r["topic_id"] for r in strong_both) or "_None._")
+            md.append("\n### 2.6e Topics to ignore (only win under biased weighting)\n")
+            md.append(", ".join(r["topic_id"] for r in personal_only) or "_None._")
+            md.append("")
+
+    # ---- 2.7 Personal-goal overlay (after neutral ranking; does not change rank)
+    md.append("\n## 2.7 Personal-goal Overlay\n")
+    md.append("This section applies AFTER the neutral blind_citation ranking. "
+              "Personal-goal overlays do NOT change the academic ranking — they "
+              "help select among already-academically-acceptable topics.\n")
+    # Get topics acceptable under blind_citation
+    bc_acceptable_topics = []
+    for t, d in decisions:
+        if d.get("blind_citation_acceptable", False):
+            bc_acceptable_topics.append((t, d))
+
+    md.append(f"### Best neutral topics ({len(bc_acceptable_topics)} acceptable under blind_citation)\n")
+    if not bc_acceptable_topics:
+        md.append("_No topic is currently acceptable under blind_citation._\n")
+    else:
+        # Sort by blind_citation score
+        bc_acceptable_topics.sort(key=lambda td: -float(td[1].get("blind_citation_score", 0)))
+        for t, d in bc_acceptable_topics[:8]:
+            md.append(f"- **{t['topic_id']}**: {t['title']}  (BC score: {d.get('blind_citation_score', 0):.2f})")
+
+        md.append("\n#### Among those, helpful for NIW")
+        for t, d in bc_acceptable_topics:
+            niw = float(d.get("signals", {}).get("niw_0to5", 0) or 0)
+            if niw >= 4:
+                md.append(f"- {t['topic_id']}: NIW={niw}")
+        md.append("\n#### Among those, helpful for EB1A")
+        for t, d in bc_acceptable_topics:
+            eb1a = float(d.get("signals", {}).get("eb1a_0to5", 0) or 0)
+            if eb1a >= 4:
+                md.append(f"- {t['topic_id']}: EB1A={eb1a}")
+        md.append("\n#### Among those, helpful for FAANG/career")
+        for t, d in bc_acceptable_topics:
+            cv = float(d.get("signals", {}).get("career_0to5", 0) or 0)
+            if cv >= 4:
+                md.append(f"- {t['topic_id']}: career={cv}")
+        md.append("\n#### Among those, fit healthcare/high-stakes domains")
+        for t, d in bc_acceptable_topics:
+            cat = (t.get("category", "") or "").lower()
+            if "health" in cat or "clinical" in cat:
+                md.append(f"- {t['topic_id']}: category={cat}")
+        md.append("\n#### Among those, with strong artifact potential")
+        for t, d in bc_acceptable_topics:
+            art = float(d.get("signals", {}).get("artifact_0to5", 0) or 0)
+            if art >= 4:
+                md.append(f"- {t['topic_id']}: artifact={art}")
+        md.append("")
+
     # ---- 3-6 buckets
     for label in ("GO", "NARROW", "DROP", "NEEDS_MORE_EVIDENCE"):
         md.append(f"## {3 + ['GO','NARROW','DROP','NEEDS_MORE_EVIDENCE'].index(label)}. {label} topics\n")

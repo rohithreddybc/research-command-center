@@ -22,7 +22,6 @@
     "rag+healthcare": 1,
     "rag": 1
   },
-  "n_healthcare": 7,
-  "n_llm_eval": 11,
-  "n_negative_control": 7
+  "n_negative_control": 7,
+  "regenerated": false
 }

@@ -48,6 +48,9 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json, write_json, write_csv, log  # noqa: E402
 from common.config import CFG  # noqa: E402
+from common.profiles import (  # noqa: E402
+    add_profile_args, resolve_profile, load_profiles, DEFAULT_PROFILE,
+)
 
 QUERIES_DIR    = ROOT / "data" / "queries"
 DEDUP_DIR      = ROOT / "data" / "papers_dedup"
@@ -100,7 +103,54 @@ def evidence_quality_0to5(topic_id: str, sources: int) -> int:
     return min(5, score)
 
 
-def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, Any]:
+def _blind_citation_acceptable(topic_id: str, score: dict[str, Any],
+                               ew: dict[str, Any], ranking_below_median: bool) -> tuple[bool, list[str]]:
+    """Check whether a topic is "acceptable under blind_citation".
+
+    Required for GO when active profile is a personal-goal profile.
+    Returns (acceptable: bool, reasons_failed: [str])."""
+    failed: list[str] = []
+    if ranking_below_median:
+        failed.append("topic ranks in the bottom half under blind_citation")
+    if bool(ew.get("go_blocked", False)):
+        failed.append("blocked by existing-work direct overlap")
+    bc_score = float(score.get("profile_scores", {}).get(DEFAULT_PROFILE, {}).get("score", 0))
+    if bc_score <= 0:
+        failed.append(f"blind_citation score is non-positive ({bc_score})")
+    rel_purity = float(score.get("relevance_purity", 0))
+    if rel_purity < 0.3:
+        failed.append(f"evidence quality too low (relevance_purity={rel_purity:.2f} < 0.30)")
+    return (len(failed) == 0, failed)
+
+
+def _negative_control_sentinel() -> dict[str, Any]:
+    """Returns negative-control sentinel status from data/bias_audit/."""
+    nc_file = ROOT / "data" / "bias_audit" / "negative_control_results.json"
+    if not nc_file.exists():
+        return {"available": False, "leak_detected": False, "leaky_profiles": []}
+    try:
+        data = json.loads(nc_file.read_text(encoding="utf-8"))
+    except Exception:
+        return {"available": False, "leak_detected": False, "leaky_profiles": []}
+    leaky = []
+    for prof_name, prof_result in (data.get("profiles") or {}).items():
+        if prof_result.get("verdict") == "LEAKY":
+            leaky.append(prof_name)
+        elif prof_result.get("n_fail", 0) > 0:
+            leaky.append(prof_name)
+    return {
+        "available":      True,
+        "leak_detected":  bool(leaky),
+        "leaky_profiles": leaky,
+    }
+
+
+def gate_topic(topic_id: str,
+               allow_go_without_llm: bool = False,
+               active_profile_name: str = DEFAULT_PROFILE,
+               active_profile_is_personal_goal: bool = False,
+               blind_citation_median: float | None = None,
+               nc_sentinel: dict[str, Any] | None = None) -> dict[str, Any]:
     score = read_json(SCORES_DIR / f"{topic_id}.json", {})
     agree = read_json(AGREE_DIR / f"{topic_id}.json", {})
     overall = score.get("rubric", {}).get("composites", {}).get("Overall", 0)
@@ -202,6 +252,56 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
             decision = "GO"
             reasons.append(f"Overall={overall} and signals meet GO thresholds; LLM={'panel-go' if reviewer_go else 'override'}.")
 
+    # ---- BLIND-CITATION GATE: a personal-goal profile cannot promote to GO
+    # unless the topic is also acceptable under blind_citation.
+    nc = nc_sentinel or _negative_control_sentinel()
+    bc_score_for_topic = float(score.get("profile_scores", {}).get(
+        DEFAULT_PROFILE, {}).get("score", 0))
+
+    ranking_below_median = False
+    if blind_citation_median is not None:
+        ranking_below_median = bc_score_for_topic < float(blind_citation_median)
+
+    bc_acceptable, bc_failed = _blind_citation_acceptable(
+        topic_id, score, ew, ranking_below_median,
+    )
+
+    personal_goal_only_weak = False
+    nc_block_go = False
+
+    # Flag "personal-goal-only-weak" if the active profile is a personal-goal
+    # profile, the topic's personal-profile score is well above blind_citation
+    # score, AND the blind_citation gate fails. This flag is set INDEPENDENTLY
+    # of the current decision so a topic flagged here cannot later be promoted
+    # to GO.
+    if active_profile_is_personal_goal and not bc_acceptable:
+        # Compare personal vs blind_citation score
+        ps = float(score.get("profile_scores", {}).get(
+            active_profile_name, {}).get("score", 0))
+        if ps > bc_score_for_topic + 1.0:  # personal score notably higher
+            personal_goal_only_weak = True
+            if decision == "GO":
+                decision = "NARROW"
+            reasons.append(
+                "PERSONAL_GOAL_ONLY_WEAK_TOPIC: rank under personal-goal profile "
+                f"({active_profile_name}, score={ps:.2f}) is high but "
+                f"blind_citation gate failed (BC score={bc_score_for_topic:.2f}): "
+                + "; ".join(bc_failed)
+            )
+
+    # Negative-control sentinel: no GO if NC topics ranked in the top half
+    # under the active profile.
+    if (nc.get("available")
+            and active_profile_name in (nc.get("leaky_profiles") or [])):
+        nc_block_go = True
+        if decision == "GO":
+            decision = "NARROW"
+            reasons.append(
+                f"SCORING_LEAK_DETECTED: negative-control topics rank in top half "
+                f"under profile '{active_profile_name}'. GO is blocked. See "
+                f"data/bias_audit/negative_control_results.json"
+            )
+
     # ---- NARROW rules
     if decision not in ("GO", "DROP"):
         if sat >= 4 and art >= 3:
@@ -266,6 +366,15 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
         "relevance_purity": relevance_purity,
         "differentiator_required": differentiator_required,
         "existing_artifact_density": art_density,
+        "active_profile":                 active_profile_name,
+        "active_profile_is_personal_goal": active_profile_is_personal_goal,
+        "blind_citation_acceptable":      bc_acceptable,
+        "blind_citation_failed_reasons":  bc_failed,
+        "blind_citation_score":           bc_score_for_topic,
+        "personal_goal_only_weak_topic":  personal_goal_only_weak,
+        "negative_control_sentinel":      nc,
+        "negative_control_blocked_go":    nc_block_go,
+        "profile_scores":                 score.get("profile_scores", {}),
         "existing_work": {
             "available":                   ew_available,
             "n_direct":                    ew_n_direct,
@@ -309,17 +418,41 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--topic", default=None)
     p.add_argument("--allow-go-without-llm", action="store_true",
                     help="Override: permit GO when the LLM panel did not run.")
+    add_profile_args(p)
     args = p.parse_args(argv)
+
+    all_profiles = load_profiles()
+    active_profile_name, active_profile = resolve_profile(args, all_profiles)
+    is_personal = bool(active_profile.get("is_personal_goal", False))
+    log("08_gate", f"Active profile: {active_profile_name} "
+                   f"(personal_goal={is_personal})")
 
     files = sorted(QUERIES_DIR.glob("*.json"))
     if args.topic:
         files = [f for f in files if f.stem == args.topic]
+
+    # Compute blind_citation median across all topics for the gate rule
+    bc_scores: list[float] = []
+    for f in files:
+        s = read_json(SCORES_DIR / f"{f.stem}.json", {})
+        bc = s.get("profile_scores", {}).get(DEFAULT_PROFILE, {}).get("score")
+        if bc is not None:
+            bc_scores.append(float(bc))
+    bc_scores.sort()
+    bc_median = bc_scores[len(bc_scores) // 2] if bc_scores else None
+    nc_sentinel = _negative_control_sentinel()
+
     rows = []
     for f in files:
         q = read_json(f)
         if not q:
             continue
-        d = gate_topic(q["topic"]["topic_id"], allow_go_without_llm=args.allow_go_without_llm)
+        d = gate_topic(q["topic"]["topic_id"],
+                       allow_go_without_llm=args.allow_go_without_llm,
+                       active_profile_name=active_profile_name,
+                       active_profile_is_personal_goal=is_personal,
+                       blind_citation_median=bc_median,
+                       nc_sentinel=nc_sentinel)
         write_json(DECISIONS_DIR / f"{d['topic_id']}.json", d)
         flat = {
             "topic_id": d["topic_id"],

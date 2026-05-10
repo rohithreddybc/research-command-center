@@ -1168,5 +1168,358 @@ class TestExistingWorkDetection(unittest.TestCase):
         self.assertEqual(rc, 0)
 
 
+# ============================================================================
+# Tier-1 bias-fix tests (16 tests)
+# ============================================================================
+
+class TestNeutralReviewerPanel(unittest.TestCase):
+    """Default reviewer panel must be academically neutral."""
+
+    def setUp(self):
+        from common import llm_panel
+        self.lp = llm_panel
+
+    def test_default_panel_excludes_personal_goal_reviewers(self):
+        """[#1] Default REVIEWER_ROLES (and get_reviewer_roles()) must exclude
+        niw_eb1a and career_faang."""
+        roles = self.lp.get_reviewer_roles(include_personal_goals=False)
+        names = {r["role"] for r in roles}
+        self.assertNotIn("niw_eb1a", names)
+        self.assertNotIn("career_faang", names)
+        # Same check for legacy alias
+        legacy = {r["role"] for r in self.lp.REVIEWER_ROLES}
+        self.assertNotIn("niw_eb1a", legacy)
+        self.assertNotIn("career_faang", legacy)
+
+    def test_include_personal_goals_adds_them(self):
+        """[#2] --include-personal-goals (i.e., include_personal_goals=True)
+        must add the niw_eb1a and career_faang reviewers."""
+        roles = self.lp.get_reviewer_roles(include_personal_goals=True)
+        names = {r["role"] for r in roles}
+        self.assertIn("niw_eb1a", names)
+        self.assertIn("career_faang", names)
+        # And the count should be exactly len(neutral) + 2
+        n_neutral = len(self.lp.NEUTRAL_REVIEWER_ROLES)
+        self.assertEqual(len(roles), n_neutral + 2)
+
+
+class TestProfileSystem(unittest.TestCase):
+    """Default profile is blind_citation; weights & overrides work."""
+
+    def setUp(self):
+        from common import profiles
+        self.p = profiles
+        self.profiles = profiles.load_profiles()
+
+    def test_default_profile_is_blind_citation(self):
+        """[#3] DEFAULT_PROFILE constant must be blind_citation."""
+        self.assertEqual(self.p.DEFAULT_PROFILE, "blind_citation")
+        self.assertIn("blind_citation", self.profiles)
+
+    def test_blind_citation_zeros_personal_goals(self):
+        """[#4] In blind_citation, all personal-goal weights must be exactly 0."""
+        weights = self.profiles["blind_citation"]["weights"]
+        for c in self.p.PERSONAL_GOAL_COMPONENTS:
+            self.assertEqual(
+                float(weights.get(c, 0)), 0.0,
+                f"blind_citation has non-zero weight for personal-goal '{c}': "
+                f"{weights.get(c)}",
+            )
+
+    def test_niw_optimized_increases_niw_weight(self):
+        """[#5] niw_optimized must boost niw_value vs blind_citation."""
+        bc = float(self.profiles["blind_citation"]["weights"]["niw_value"])
+        nw = float(self.profiles["niw_optimized"]["weights"]["niw_value"])
+        self.assertGreater(nw, bc + 1.0,
+                           f"niw_optimized niw_value ({nw}) should >> blind_citation ({bc})")
+
+    def test_eb1a_optimized_increases_eb1a_weight(self):
+        """[#6] eb1a_optimized must boost eb1a_value vs blind_citation."""
+        bc = float(self.profiles["blind_citation"]["weights"]["eb1a_value"])
+        eb = float(self.profiles["eb1a_optimized"]["weights"]["eb1a_value"])
+        self.assertGreater(eb, bc + 1.0)
+
+    def test_faang_career_increases_career_weight(self):
+        """[#7] faang_career must boost faang_career_value vs blind_citation."""
+        bc = float(self.profiles["blind_citation"]["weights"]["faang_career_value"])
+        fc = float(self.profiles["faang_career"]["weights"]["faang_career_value"])
+        self.assertGreater(fc, bc + 1.0)
+
+    def test_custom_weights_override_defaults(self):
+        """[#8] --profile custom with --weight-* flags must populate the profile."""
+        import argparse
+        parser = argparse.ArgumentParser()
+        self.p.add_profile_args(parser)
+        args = parser.parse_args(["--profile", "custom", "--weight-citation", "9.0"])
+        name, profile = self.p.resolve_profile(args, self.profiles)
+        self.assertEqual(name, "custom")
+        self.assertEqual(float(profile["weights"]["citation_potential"]), 9.0)
+        # Unspecified weights default to 0
+        self.assertEqual(float(profile["weights"]["niw_value"]), 0.0)
+
+
+class TestQueryGenerationConditional(unittest.TestCase):
+    """Forced artifact-axis terms must NOT be added unless artifact type requires them."""
+
+    def setUp(self):
+        self.gen = _load("01_generate_queries")
+
+    def test_paper_target_gets_no_axis_injection(self):
+        """[#9a] target_artifact='paper' must NOT inject benchmark/eval/repro."""
+        topic = {
+            "topic_id": "TX",
+            "title": "Theoretical analysis of Transformer attention",
+            "category": "theory",
+            "keywords": "transformer|attention",
+            "synonyms": "self-attention",
+            "negative_keywords": "",
+            "target_artifact": "paper",
+            "prelim_priority": "3",
+        }
+        q = self.gen.build_queries(topic)
+        all_text = " ".join(q["semantic_scholar"] + q["github"] + q["huggingface"]).lower()
+        for forced in ("benchmark", "evaluation", "robustness", "reproducibility"):
+            self.assertNotIn(forced, all_text,
+                             f"target_artifact=paper but query contains '{forced}': {all_text[:200]}")
+
+    def test_benchmark_target_gets_benchmark_axis(self):
+        """[#9b] target_artifact='benchmark' SHOULD inject benchmark/evaluation."""
+        topic = {
+            "topic_id": "TX",
+            "title": "Format sensitivity",
+            "category": "eval",
+            "keywords": "format sensitivity",
+            "synonyms": "structured output",
+            "negative_keywords": "",
+            "target_artifact": "benchmark",
+            "prelim_priority": "4",
+        }
+        q = self.gen.build_queries(topic)
+        all_text = " ".join(q["semantic_scholar"]).lower()
+        self.assertTrue("benchmark" in all_text or "evaluation" in all_text,
+                        f"benchmark target should inject benchmark/eval terms: {all_text[:200]}")
+
+
+class TestSeedKeywordCap(unittest.TestCase):
+    """[#10] Seed keyword cap warning fires when a keyword exceeds 3 occurrences."""
+
+    def test_keyword_cap_warning_fires(self):
+        from common import seed_audit
+        import tempfile, csv as _csv
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td) / "test_seed.csv"
+            with tmp.open("w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "topic_id", "title", "category", "keywords", "synonyms",
+                    "negative_keywords", "target_artifact", "prelim_priority",
+                ])
+                w.writeheader()
+                # 4× "llm judge" → exceeds cap (3)
+                for i in range(4):
+                    w.writerow({"topic_id": f"X{i}", "title": f"Topic {i}",
+                                "category": "eval", "keywords": "llm judge",
+                                "synonyms": "", "negative_keywords": "",
+                                "target_artifact": "benchmark", "prelim_priority": "3"})
+            audit = seed_audit.audit_seed_file(tmp)
+            self.assertGreater(len(audit["repeated_keywords"]), 0)
+            kws = [r["keyword"] for r in audit["repeated_keywords"]]
+            self.assertIn("llm judge", kws)
+
+
+class TestNegativeControlSentinel(unittest.TestCase):
+    """[#11] If NC topics in top half under active profile, GO is blocked."""
+
+    def test_nc_top_half_blocks_go(self):
+        # Synthetic NC sentinel result with one leaky profile
+        nc_sentinel = {
+            "available": True,
+            "leak_detected": True,
+            "leaky_profiles": ["niw_optimized"],
+        }
+        # Build a fake topic that would otherwise be GO
+        gate_mod = _load("08_confidence_gate")
+        # Patch in-memory readers to simulate signals that would cause GO
+        scores_data = {
+            "rubric": {"composites": {"Overall": 20}},
+            "citation_signal_0to5": 5,
+            "artifact": {"artifact_opportunity_0to5": 4, "existing_artifact_density": 0.1,
+                         "differentiator_required": False},
+            "saturation": {"saturation_score_0to5": 1},
+            "venue": {"venue_signal_0to5": 3},
+            "risk": {"ip_risk_0to5": 0},
+            "relevance_purity": 0.6,
+            "kept_papers": 30,
+            "niw_0to5": 4,
+            "eb1a_0to5": 4,
+            "career_0to5": 3,
+            "profile_scores": {
+                "blind_citation":  {"score": 18.0, "is_personal_goal": False},
+                "niw_optimized":   {"score": 22.0, "is_personal_goal": True},
+            },
+        }
+        agree_data = {
+            "plurality_decision": "GO", "decision_score_mean_0to3": 2.5,
+            "high_confidence_drops": 0, "high_disagreement_flag": False,
+            "n_reviews": 8,
+        }
+        # Stub readers
+        orig_read = gate_mod.read_json
+        def fake_read(path, default=None):
+            sp = str(path)
+            if sp.endswith("scores"+os.sep+"NCTOPIC.json") or "NCTOPIC.json" in sp and "scores" in sp:
+                return scores_data
+            if sp.endswith("agreement"+os.sep+"NCTOPIC.json") or ("NCTOPIC.json" in sp and "agreement" in sp):
+                return agree_data
+            return default if default is not None else {}
+        gate_mod.read_json = fake_read
+        try:
+            d = gate_mod.gate_topic("NCTOPIC",
+                                    active_profile_name="niw_optimized",
+                                    active_profile_is_personal_goal=True,
+                                    blind_citation_median=10.0,
+                                    nc_sentinel=nc_sentinel)
+            # Per spec: NC-leaky profile must set negative_control_blocked_go
+            # (the flag persists regardless of whether the GO branch was reached
+            # — the flag prevents GO from ever happening downstream).
+            self.assertTrue(d["negative_control_blocked_go"],
+                            "NC-leaky profile must set negative_control_blocked_go=True")
+            self.assertNotEqual(d["final_decision"], "GO")
+        finally:
+            gate_mod.read_json = orig_read
+
+
+class TestReportShowsProfileAndSentinel(unittest.TestCase):
+    """[#12] Final report must include scoring profile + negative-control status."""
+
+    def test_report_contains_profile_and_sentinel(self):
+        rep_path = ROOT / "reports" / "final_decision_report.md"
+        if not rep_path.exists():
+            self.skipTest("Final report not generated yet")
+        text = rep_path.read_text(encoding="utf-8")
+        self.assertIn("## 2.5 Scoring Configuration", text)
+        self.assertIn("Active scoring profile", text)
+        self.assertIn("Negative-control sentinel", text)
+
+
+class TestPersonalGoalOnlyWeak(unittest.TestCase):
+    """[#13] Topic high only under personal-goal profile must be flagged."""
+
+    def test_personal_goal_only_warning(self):
+        gate_mod = _load("08_confidence_gate")
+        scores_data = {
+            "rubric": {"composites": {"Overall": 20}},
+            "citation_signal_0to5": 5,
+            "artifact": {"artifact_opportunity_0to5": 4, "existing_artifact_density": 0.1,
+                         "differentiator_required": False},
+            "saturation": {"saturation_score_0to5": 1},
+            "venue": {"venue_signal_0to5": 3},
+            "risk": {"ip_risk_0to5": 0},
+            "relevance_purity": 0.15,         # below 0.30 → blind_citation gate fails
+            "kept_papers": 30,
+            "niw_0to5": 5, "eb1a_0to5": 5, "career_0to5": 2,
+            "profile_scores": {
+                "blind_citation":  {"score": 5.0, "is_personal_goal": False},
+                "niw_optimized":   {"score": 25.0, "is_personal_goal": True},
+            },
+        }
+        agree_data = {
+            "plurality_decision": "GO", "decision_score_mean_0to3": 2.5,
+            "high_confidence_drops": 0, "high_disagreement_flag": False, "n_reviews": 8,
+        }
+        orig_read = gate_mod.read_json
+        def fake_read(path, default=None):
+            sp = str(path)
+            if "PGT.json" in sp and "scores" in sp:
+                return scores_data
+            if "PGT.json" in sp and "agreement" in sp:
+                return agree_data
+            return default if default is not None else {}
+        gate_mod.read_json = fake_read
+        try:
+            d = gate_mod.gate_topic("PGT",
+                                    active_profile_name="niw_optimized",
+                                    active_profile_is_personal_goal=True,
+                                    blind_citation_median=10.0,
+                                    nc_sentinel={"available": True, "leak_detected": False,
+                                                 "leaky_profiles": []})
+            self.assertTrue(d["personal_goal_only_weak_topic"])
+            self.assertNotEqual(d["final_decision"], "GO")
+        finally:
+            gate_mod.read_json = orig_read
+
+
+class TestGoBlockedIfBlindCitationFails(unittest.TestCase):
+    """[#14] GO blocked if topic fails blind_citation but wins under niw_optimized."""
+
+    def test_blind_citation_failure_blocks_go(self):
+        # This is structurally the same path as test_personal_goal_only_warning
+        # but checks the explicit reasoning string.
+        gate_mod = _load("08_confidence_gate")
+        scores_data = {
+            "rubric": {"composites": {"Overall": 20}},
+            "citation_signal_0to5": 5,
+            "artifact": {"artifact_opportunity_0to5": 4, "existing_artifact_density": 0.1,
+                         "differentiator_required": False},
+            "saturation": {"saturation_score_0to5": 1},
+            "venue": {"venue_signal_0to5": 3},
+            "risk": {"ip_risk_0to5": 0},
+            "relevance_purity": 0.15,
+            "kept_papers": 30, "niw_0to5": 5, "eb1a_0to5": 5, "career_0to5": 2,
+            "profile_scores": {
+                "blind_citation": {"score": -2.0, "is_personal_goal": False},
+                "niw_optimized":  {"score": 28.0, "is_personal_goal": True},
+            },
+        }
+        agree_data = {
+            "plurality_decision": "GO", "decision_score_mean_0to3": 2.5,
+            "high_confidence_drops": 0, "high_disagreement_flag": False, "n_reviews": 8,
+        }
+        orig_read = gate_mod.read_json
+        def fake_read(path, default=None):
+            sp = str(path)
+            if "BCFAIL.json" in sp and "scores" in sp:
+                return scores_data
+            if "BCFAIL.json" in sp and "agreement" in sp:
+                return agree_data
+            return default if default is not None else {}
+        gate_mod.read_json = fake_read
+        try:
+            d = gate_mod.gate_topic("BCFAIL",
+                                    active_profile_name="niw_optimized",
+                                    active_profile_is_personal_goal=True,
+                                    blind_citation_median=10.0,
+                                    nc_sentinel={"available": True, "leak_detected": False,
+                                                 "leaky_profiles": []})
+            self.assertNotEqual(d["final_decision"], "GO")
+            self.assertIn("PERSONAL_GOAL_ONLY_WEAK_TOPIC", d["reasoning_summary"])
+        finally:
+            gate_mod.read_json = orig_read
+
+
+class TestBiasAuditOutputs(unittest.TestCase):
+    """[#15][#16] Bias audit report and profile comparison table must be generated."""
+
+    def test_bias_audit_report_exists(self):
+        rep = ROOT / "reports" / "BIAS_AUDIT_REPORT.md"
+        if not rep.exists():
+            self.skipTest("BIAS_AUDIT_REPORT.md not yet generated; "
+                          "run python scripts/13_bias_audit.py first")
+        text = rep.read_text(encoding="utf-8")
+        self.assertIn("Bias Audit Report", text)
+
+    def test_profile_comparison_table_in_audit_outputs(self):
+        pr = ROOT / "data" / "bias_audit" / "profile_rankings.csv"
+        if not pr.exists():
+            self.skipTest("profile_rankings.csv not generated")
+        import csv as _csv
+        rows = list(_csv.DictReader(pr.open(encoding="utf-8")))
+        self.assertGreater(len(rows), 0)
+        # Must contain rank columns for the canonical default profile
+        first = rows[0]
+        self.assertTrue(any(k.startswith("rank_blind_citation") for k in first.keys())
+                        or any(k.startswith("rank_current_strategy") for k in first.keys()),
+                        f"profile_rankings.csv missing expected rank_* columns; got {list(first.keys())[:6]}")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
