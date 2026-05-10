@@ -1,0 +1,28 @@
+{
+  "path": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\data\\topics_seed_balanced.csv",
+  "n_topics": 36,
+  "categories": {
+    "eval": 10,
+    "applied": 4,
+    "healthcare": 3,
+    "agents": 2,
+    "data-centric": 2,
+    "ml-systems": 2,
+    "causal": 1,
+    "public-health": 1,
+    "hci": 1,
+    "fairness": 1,
+    "litmining": 1,
+    "safety": 1,
+    "healthcare+meta": 1,
+    "methodology": 1,
+    "eval+safety": 1,
+    "meta": 1,
+    "prompt+healthcare": 1,
+    "rag+healthcare": 1,
+    "rag": 1
+  },
+  "n_healthcare": 7,
+  "n_llm_eval": 11,
+  "n_negative_control": 7
+}

@@ -1,0 +1,175 @@
+# Bias-audit weighting profiles
+# Each profile re-aggregates the existing per-topic signals (data/scores/<id>.json)
+# under a different weighting. No new LLM calls; pure recomputation.
+#
+# All weights are floats. The score is computed as:
+#   score = sum(weight[component] * raw_signal[component]) - sum(penalty * raw_signal)
+# Components are pulled from data/scores/<topic_id>.json composites and signals:
+#   - CitationPotential
+#   - ExecFeasibility
+#   - ImmigrationValue
+#   - CareerValue
+#   - PublicationPath
+#   - RiskPenalty (always subtracted)
+# Plus raw signal components for finer-grained profiles:
+#   - citation_signal_0to5
+#   - artifact_0to5            (artifact opportunity, post density-penalty)
+#   - saturation_0to5          (subtracted as risk)
+#   - venue_signal_0to5
+#   - niw_0to5
+#   - eb1a_0to5
+#   - career_0to5
+#   - relevance_purity         (multiplied 0-1)
+#   - kept_papers              (capped, log-scaled)
+# Plus categorical filters:
+#   - exclude_categories_containing: [healthcare, clinical]   # remove healthcare-tagged topics
+#   - downweight_keywords:           {llm judge: 0.7}         # 30% penalty on each occurrence
+
+# ============================================================================
+# A. CURRENT STRATEGY  — exact replication of pipeline's Overall score
+# ============================================================================
+current_strategy:
+  description: "Replicates the existing pipeline scoring exactly (verifies reproducibility)."
+  weights:
+    CitationPotential: 0.30
+    ExecFeasibility:   0.20
+    ImmigrationValue:  0.20
+    CareerValue:       0.10
+    PublicationPath:   0.20
+  penalties:
+    RiskPenalty: 0.40
+  signal_weights: {}
+  category_filters: {}
+  notes: "If recomputed scores differ from data/scores/scores.csv Overall, the audit math is wrong."
+
+# ============================================================================
+# B. BLIND CITATION  — only academic citation potential matters
+# ============================================================================
+blind_citation:
+  description: "Removes immigration, career, FAANG, healthcare-favorability. Only citation/audience/gap/venue."
+  weights:
+    CitationPotential: 0.45
+    PublicationPath:   0.25
+    ExecFeasibility:   0.10
+  penalties:
+    RiskPenalty: 0.10
+  signal_weights:
+    venue_signal_0to5: 0.5
+    relevance_purity:  4.0      # purity matters more than raw counts
+    kept_papers_log:   0.6
+  category_filters:
+    healthcare_neutral: true     # do not boost OR penalize healthcare
+    llm_eval_neutral:   true
+    artifact_neutral:   true
+  ignore: [ImmigrationValue, CareerValue, niw_0to5, eb1a_0to5, career_0to5]
+
+# ============================================================================
+# C. ACADEMIC LONG-TERM  — credible academic paper, long-term citations
+# ============================================================================
+academic_long_term:
+  description: "Strong long-term citation potential. Ignores speed, fit, immigration, career."
+  weights:
+    CitationPotential: 0.50
+    PublicationPath:   0.30
+  penalties:
+    RiskPenalty: 0.10
+  signal_weights:
+    citation_signal_0to5: 1.0
+    relevance_purity:     5.0
+    venue_signal_0to5:    0.6
+    saturation_0to5:     -0.4    # penalize crowded fields
+  category_filters:
+    healthcare_neutral: true
+    llm_eval_neutral:   true
+  ignore: [ImmigrationValue, CareerValue, ExecFeasibility, niw_0to5, eb1a_0to5, career_0to5]
+
+# ============================================================================
+# D. CAREER ONLY  — AI/ML/DS career value, public portfolio, technical depth
+# ============================================================================
+career_only:
+  description: "Maximize FAANG/tech-co value. Public-portfolio, deep-tech, ignore immigration/health-NIW."
+  weights:
+    CareerValue:       0.50
+    CitationPotential: 0.20
+    ExecFeasibility:   0.15
+  penalties:
+    RiskPenalty: 0.20
+  signal_weights:
+    career_0to5:       1.5
+    artifact_0to5:     0.8
+    venue_signal_0to5: 0.3
+  category_filters:
+    healthcare_neutral: true     # do not penalize but do not boost
+  ignore: [ImmigrationValue, niw_0to5, eb1a_0to5]
+
+# ============================================================================
+# E. IMMIGRATION ONLY  — NIW + EB-1A only
+# ============================================================================
+immigration_only:
+  description: "NIW + EB-1A only. Ignore career/citation/exec_feasibility framing."
+  weights:
+    ImmigrationValue: 0.70
+  penalties:
+    RiskPenalty: 0.20
+  signal_weights:
+    niw_0to5:  1.5
+    eb1a_0to5: 1.5
+  ignore: [CareerValue, ExecFeasibility, career_0to5]
+
+# ============================================================================
+# F. ARTIFACT NEUTRAL  — strip the dataset/benchmark/tool boost
+# ============================================================================
+artifact_neutral:
+  description: "Treats artifact-style and pure-paper contributions equally; tests artifact-preference bias."
+  weights:
+    CitationPotential: 0.40
+    PublicationPath:   0.25
+    ExecFeasibility:   0.15
+    ImmigrationValue:  0.10
+    CareerValue:       0.10
+  penalties:
+    RiskPenalty: 0.20
+  signal_weights:
+    artifact_0to5: 0.0           # zero out artifact opportunity weight
+  category_filters:
+    artifact_neutral: true        # do not boost dataset/benchmark/tool target_artifact
+
+# ============================================================================
+# G. HEALTHCARE NEUTRAL  — strip the NIW healthcare boost
+# ============================================================================
+healthcare_neutral:
+  description: "Replicates current weighting but disables clinical/health/medical NIW boost."
+  weights:
+    CitationPotential: 0.30
+    ExecFeasibility:   0.20
+    ImmigrationValue:  0.20
+    CareerValue:       0.10
+    PublicationPath:   0.20
+  penalties:
+    RiskPenalty: 0.40
+  signal_weights:
+    niw_healthcare_strip: 1.0    # subtract 1.5 per healthcare-keyword hit from niw
+  category_filters:
+    healthcare_neutral: true
+
+# ============================================================================
+# H. LLM-EVAL NEUTRAL  — strip the LLM/eval/judge keyword boost
+# ============================================================================
+llm_eval_neutral:
+  description: "Replicates current weighting but disables LLM/eval/RAG/judge career boost."
+  weights:
+    CitationPotential: 0.30
+    ExecFeasibility:   0.20
+    ImmigrationValue:  0.20
+    CareerValue:       0.10
+    PublicationPath:   0.20
+  penalties:
+    RiskPenalty: 0.40
+  signal_weights:
+    career_llm_strip: 1.0        # remove +0.6 per LLM-keyword hit from career_0to5
+  category_filters:
+    llm_eval_neutral: true
+  downweight_keywords:
+    "llm judge":      0.5
+    "llm-as-a-judge": 0.5
+    "llm evaluation": 0.7

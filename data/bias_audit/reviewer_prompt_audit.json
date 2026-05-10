@@ -1,0 +1,36 @@
+{
+  "code_inspected": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\scripts\\common\\llm_panel.py",
+  "n_reviewers": 11,
+  "findings": [
+    {
+      "issue": "explicit_immigration_reviewer_role",
+      "evidence": "{\"role\": \"niw_eb1a\", \"focus\": \"Does this build NIW prong-2/3 evidence ...\"}",
+      "severity": "HIGH",
+      "explanation": "One of 8 reviewers is explicitly framed around NIW/EB-1A immigration evidence. This contributes 1/8 = 12.5% of reviewer plurality voting with an immigration-biased lens. Healthcare/clinical topics will get systematic upvotes from this reviewer."
+    },
+    {
+      "issue": "explicit_faang_reviewer_role",
+      "evidence": "{\"role\": \"career_faang\", \"focus\": \"high-paying ML/data-science roles\"}",
+      "severity": "HIGH",
+      "explanation": "One of 8 reviewers explicitly framed around FAANG hiring. LLM/eval topics will get systematic upvotes; healthcare/clinical will be downvoted by this reviewer regardless of academic merit."
+    },
+    {
+      "issue": "reviewer_count_and_balance",
+      "evidence": "11 reviewer roles defined in REVIEWER_ROLES",
+      "severity": "INFO",
+      "explanation": "8 reviewers means each has 12.5% voting weight on plurality. If 2 are explicitly biased (niw_eb1a, career_faang), 25% of the panel's vote is structurally non-neutral."
+    },
+    {
+      "issue": "system_prompt_has_evidence_only_clause",
+      "evidence": "\"Use ONLY the evidence packet provided. Do NOT use any prior knowledge...\"",
+      "severity": "INFO",
+      "explanation": "Mitigation present: the system prompt forces evidence-only reasoning. But the per-role focus strings still inject bias (see niw_eb1a and career_faang above)."
+    },
+    {
+      "issue": "anchor_language_in_prompts",
+      "evidence": "Found anchor terms: ['NIW', 'EB-1A', 'high-paying']",
+      "severity": "MEDIUM",
+      "explanation": "These terms in reviewer prompts prime the model toward user-specific career/immigration objectives rather than academic merit."
+    }
+  ]
+}

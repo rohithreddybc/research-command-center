@@ -1,0 +1,15 @@
+topic_id,title,rank_current_strategy,score_current_strategy,rank_blind_citation,score_blind_citation,rank_academic_long_term,score_academic_long_term,rank_career_only,score_career_only,rank_immigration_only,score_immigration_only,rank_artifact_neutral,score_artifact_neutral,rank_healthcare_neutral,score_healthcare_neutral,rank_llm_eval_neutral,score_llm_eval_neutral,rank_min,rank_max,rank_range,rank_mean
+T74_N1,Open structured-metadata dataset of LLM-eval papers — noise-pruned,2,12.46,9,16.741,1,20.75,2,24.2,10,20.41,2,14.805,2,12.46,8,7.336,1,10,9,4.5
+T43,Reproducibility audit of clinical LLM papers,3,12.03,2,17.941,3,20.25,12,14.1,2,25.68,4,14.265,10,7.53,1,11.37,1,12,11,4.62
+T10,Reproducibility audit of LLM-judge papers,5,11.73,1,18.537,2,20.25,5,18.6,8,20.58,3,14.265,3,11.73,11,4.875,1,11,10,4.75
+T11,Format sensitivity benchmark on LLM evaluations,1,12.51,13,16.157,10,18.5,1,24.45,9,20.41,1,14.855,1,12.51,9,6.909,1,13,12,5.62
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,4,11.93,8,16.748,5,18.75,3,20.8,1,25.68,5,14.015,9,8.93,13,4.645,1,13,12,6.0
+T07,Judge robustness to candidate-side prompt injection,6,11.63,10,16.729,6,18.75,4,20.8,4,23.13,6,13.865,4,11.63,12,4.825,4,12,8,6.5
+T17,Tokenization-induced leaderboard variance,11,10.38,3,17.907,4,20.0,8,16.05,12,15.48,10,13.215,6,10.38,6,9.06,3,12,9,7.5
+T37,Clinical-guideline consistency across LLM versions over time,7,11.13,6,16.921,8,18.75,13,13.8,5,23.13,7,13.515,11,5.13,3,9.81,3,13,10,7.5
+T37_N1,Clinical-guideline consistency across LLM versions over time — noise-pruned,8,11.13,11,16.628,9,18.75,14,13.8,6,23.13,8,13.515,12,5.13,2,10.47,2,14,12,8.75
+T53_N4,Test-set contamination audit of healthcare LLM benchmarks — noise-pruned,9,10.58,7,16.783,11,18.5,11,15.45,3,25.48,12,12.665,13,4.58,5,9.26,3,13,10,8.88
+T74,Open structured-metadata dataset of LLM-eval papers,10,10.48,4,17.25,13,17.65,7,17.95,14,15.28,9,13.315,5,10.48,10,5.95,4,14,10,9.0
+T25,Hallucination taxonomy: RAG vs no-RAG,12,10.38,12,16.605,7,18.75,9,16.05,13,15.48,11,13.215,7,10.38,4,9.72,4,13,9,9.38
+T53,Test-set contamination audit of healthcare LLM benchmarks,13,10.28,5,17.009,14,17.5,10,15.45,7,22.93,13,12.515,14,4.28,7,8.96,5,14,9,10.38
+T07_N1,Judge robustness to candidate-side prompt injection — noise-pruned,14,9.39,14,15.93,12,17.75,6,18.35,11,19.19,14,11.795,8,9.39,14,3.705,6,14,8,11.62

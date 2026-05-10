@@ -1,0 +1,31 @@
+{
+  "code_inspected": "C:\\Users\\rohit\\Documents\\Research Papers\\research-command-center\\scripts\\01_generate_queries.py",
+  "findings": [
+    {
+      "issue": "axis_terms_baked_in",
+      "evidence": "AXIS_TERMS = ['benchmark', 'dataset', 'evaluation', 'reproducibility', 'survey', 'taxonomy', 'robustness', 'calibration', 'limitations', 'future work']",
+      "severity": "MEDIUM",
+      "explanation": "Every topic is implicitly framed against this fixed axis list. If the topic isn't a benchmark/eval/repro paper, the search still steers toward those framings."
+    },
+    {
+      "issue": "auto_appended_benchmark_evaluation",
+      "evidence": "paired.append(f\"{k} {axis}\") with axis in [\"benchmark\",\"evaluation\",\"robustness\",\"reproducibility\"]",
+      "severity": "HIGH",
+      "explanation": "Top-3 keywords \u00d7 4 axis terms = 12 forced 'X benchmark', 'X evaluation', 'X robustness', 'X reproducibility' searches per topic. This biases retrieval toward benchmark/eval framings regardless of whether the topic is genuinely about a benchmark."
+    },
+    {
+      "issue": "github_queries_assume_benchmark",
+      "evidence": "\"{k} benchmark in:name,description\"",
+      "severity": "MEDIUM",
+      "explanation": "GitHub search auto-appends 'benchmark' and 'evaluation'. Repos that aren't benchmarks won't surface even when relevant."
+    },
+    {
+      "issue": "axis_term_contamination_in_actual_queries",
+      "evidence": "344/567 (60.7%) of queries across 14 topics contain benchmark/evaluation/reproducibility/robustness",
+      "severity": "HIGH",
+      "explanation": "This is the empirical impact of the axis-term injection. If above 40%, evidence retrieval is systematically biased toward benchmark/eval papers."
+    }
+  ],
+  "n_queries_sampled": 567,
+  "n_topics_sampled": 14
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "topic_id": "T11",
+    "title": "Format sensitivity benchmark on LLM evaluations",
+    "category": "prompt",
+    "score": 24.45,
+    "components": {
+      "CareerValue": 7.75,
+      "CitationPotential": 5.2,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 7.5,
+      "artifact_0to5": 3.2,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 1
+  },
+  {
+    "topic_id": "T74_N1",
+    "title": "Open structured-metadata dataset of LLM-eval papers \u2014 noise-pruned",
+    "category": "meta",
+    "score": 24.2,
+    "components": {
+      "CareerValue": 7.5,
+      "CitationPotential": 5.2,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 7.5,
+      "artifact_0to5": 3.2,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 2
+  },
+  {
+    "topic_id": "T04",
+    "title": "Prompt-template sensitivity benchmark for clinical-domain LLM judges",
+    "category": "eval",
+    "score": 20.8,
+    "components": {
+      "CareerValue": 6.0,
+      "CitationPotential": 4.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 7.5,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 3
+  },
+  {
+    "topic_id": "T07",
+    "title": "Judge robustness to candidate-side prompt injection",
+    "category": "eval+safety",
+    "score": 20.8,
+    "components": {
+      "CareerValue": 6.0,
+      "CitationPotential": 4.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 7.5,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 4
+  },
+  {
+    "topic_id": "T10",
+    "title": "Reproducibility audit of LLM-judge papers",
+    "category": "meta",
+    "score": 18.6,
+    "components": {
+      "CareerValue": 5.0,
+      "CitationPotential": 4.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 6.0,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.9
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 5
+  },
+  {
+    "topic_id": "T07_N1",
+    "title": "Judge robustness to candidate-side prompt injection \u2014 noise-pruned",
+    "category": "eval+safety",
+    "score": 18.35,
+    "components": {
+      "CareerValue": 5.25,
+      "CitationPotential": 4.2,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.4,
+      "career_0to5": 7.5,
+      "artifact_0to5": 0.8,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 6
+  },
+  {
+    "topic_id": "T74",
+    "title": "Open structured-metadata dataset of LLM-eval papers",
+    "category": "meta",
+    "score": 17.95,
+    "components": {
+      "CareerValue": 5.25,
+      "CitationPotential": 3.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.4,
+      "career_0to5": 6.0,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 1.2
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 7
+  },
+  {
+    "topic_id": "T17",
+    "title": "Tokenization-induced leaderboard variance",
+    "category": "eval",
+    "score": 16.05,
+    "components": {
+      "CareerValue": 4.25,
+      "CitationPotential": 4.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 4.5,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 8
+  },
+  {
+    "topic_id": "T25",
+    "title": "Hallucination taxonomy: RAG vs no-RAG",
+    "category": "rag",
+    "score": 16.05,
+    "components": {
+      "CareerValue": 4.25,
+      "CitationPotential": 4.9,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.2,
+      "career_0to5": 4.5,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 9
+  },
+  {
+    "topic_id": "T53",
+    "title": "Test-set contamination audit of healthcare LLM benchmarks",
+    "category": "methodology",
+    "score": 15.45,
+    "components": {
+      "CareerValue": 4.25,
+      "CitationPotential": 4.5,
+      "ExecFeasibility": 2.4,
+      "-RiskPenalty": -2.4,
+      "career_0to5": 4.5,
+      "artifact_0to5": 1.6,
+      "venue_signal_0to5": 0.6
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 10
+  }
+]

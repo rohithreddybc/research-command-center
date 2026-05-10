@@ -1,0 +1,468 @@
+{
+  "profiles": {
+    "current_strategy": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 5.8,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 5.8,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 5.0,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 5.0,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 4.6,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 9.39,
+      "real_median": 11.13,
+      "real_max": 12.51,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "blind_citation": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 7.575,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 15.93,
+      "real_median": 16.78,
+      "real_max": 18.54,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "academic_long_term": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 7.3,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 17.5,
+      "real_median": 18.75,
+      "real_max": 20.75,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "career_only": {
+      "negative_controls": [
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 15.5,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 14.7,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 10.5,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 10.5,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 9.7,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 9.7,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 9.7,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 13.8,
+      "real_median": 17.95,
+      "real_max": 24.45,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "immigration_only": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 20.8,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 20.8,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 12.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 12.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 12.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 12.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 12.1,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 15.28,
+      "real_median": 22.93,
+      "real_max": 25.68,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "artifact_neutral": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 6.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 6.1,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 5.9,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 5.75,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 5.5,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 5.35,
+          "verdict": "PASS_below_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 5.35,
+          "verdict": "PASS_below_real_range"
+        }
+      ],
+      "real_min": 11.79,
+      "real_median": 13.52,
+      "real_max": 14.86,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "healthcare_neutral": {
+      "negative_controls": [
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 5.0,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 5.0,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 4.3,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 4.3,
+          "verdict": "WEAK_within_real_range"
+        }
+      ],
+      "real_min": 4.28,
+      "real_median": 10.38,
+      "real_max": 12.51,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    },
+    "llm_eval_neutral": {
+      "negative_controls": [
+        {
+          "topic_id": "NC01",
+          "title": "Machine learning for healthcare",
+          "type": "vague_broad",
+          "score": 5.8,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC06",
+          "title": "Predictive modeling in healthcare",
+          "type": "vague_broad",
+          "score": 5.8,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC02",
+          "title": "AI in finance",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC04",
+          "title": "Data science dashboards",
+          "type": "implementation_only",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC05",
+          "title": "AI for business analytics",
+          "type": "vague_broad",
+          "score": 4.6,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC03",
+          "title": "LLMs for education",
+          "type": "vague_broad",
+          "score": 4.34,
+          "verdict": "WEAK_within_real_range"
+        },
+        {
+          "topic_id": "NC07",
+          "title": "RAG for question answering",
+          "type": "saturated_generic",
+          "score": 4.34,
+          "verdict": "WEAK_within_real_range"
+        }
+      ],
+      "real_min": 3.71,
+      "real_median": 8.96,
+      "real_max": 11.37,
+      "n_fail": 0,
+      "verdict": "TIGHT"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+[
+  {
+    "topic_id": "T43",
+    "title": "Reproducibility audit of clinical LLM papers",
+    "category": "meta+healthcare",
+    "score": 11.37,
+    "components": {
+      "CitationPotential": 7.35,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.68,
+      "CareerValue": 0.7,
+      "PublicationPath": 1.5,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -0.6,
+      "llm_neutral_adj": -0.06
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 1
+  },
+  {
+    "topic_id": "T37_N1",
+    "title": "Clinical-guideline consistency across LLM versions over time \u2014 noise-pruned",
+    "category": "healthcare",
+    "score": 10.47,
+    "components": {
+      "CitationPotential": 7.35,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.38,
+      "CareerValue": 0.7,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -0.6,
+      "llm_neutral_adj": -0.06
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 2
+  },
+  {
+    "topic_id": "T37",
+    "title": "Clinical-guideline consistency across LLM versions over time",
+    "category": "healthcare",
+    "score": 9.81,
+    "components": {
+      "CitationPotential": 7.35,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.38,
+      "CareerValue": 0.7,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -1.2,
+      "llm_neutral_adj": -0.12
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 3
+  },
+  {
+    "topic_id": "T25",
+    "title": "Hallucination taxonomy: RAG vs no-RAG",
+    "category": "rag",
+    "score": 9.72,
+    "components": {
+      "CitationPotential": 7.35,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 2.48,
+      "CareerValue": 0.85,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -0.6,
+      "llm_neutral_adj": -0.06
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 4
+  },
+  {
+    "topic_id": "T53_N4",
+    "title": "Test-set contamination audit of healthcare LLM benchmarks \u2014 noise-pruned",
+    "category": "methodology",
+    "score": 9.26,
+    "components": {
+      "CitationPotential": 6.75,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.68,
+      "CareerValue": 0.85,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.8,
+      "llm_strip": -1.2,
+      "llm_neutral_adj": -0.12
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 5
+  },
+  {
+    "topic_id": "T17",
+    "title": "Tokenization-induced leaderboard variance",
+    "category": "eval",
+    "score": 9.06,
+    "components": {
+      "CitationPotential": 7.35,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 2.48,
+      "CareerValue": 0.85,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -1.2,
+      "llm_neutral_adj": -0.12
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": false,
+    "rank": 6
+  },
+  {
+    "topic_id": "T53",
+    "title": "Test-set contamination audit of healthcare LLM benchmarks",
+    "category": "methodology",
+    "score": 8.96,
+    "components": {
+      "CitationPotential": 6.75,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.38,
+      "CareerValue": 0.85,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.8,
+      "llm_strip": -1.2,
+      "llm_neutral_adj": -0.12
+    },
+    "is_healthcare": true,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 7
+  },
+  {
+    "topic_id": "T74_N1",
+    "title": "Open structured-metadata dataset of LLM-eval papers \u2014 noise-pruned",
+    "category": "meta",
+    "score": 7.336,
+    "components": {
+      "CitationPotential": 7.8,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.46,
+      "CareerValue": 1.5,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -1.8,
+      "llm_neutral_adj": -0.18,
+      "downwt_llm evaluation": 0.7
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 8
+  },
+  {
+    "topic_id": "T11",
+    "title": "Format sensitivity benchmark on LLM evaluations",
+    "category": "prompt",
+    "score": 6.909,
+    "components": {
+      "CitationPotential": 7.8,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 3.46,
+      "CareerValue": 1.55,
+      "PublicationPath": 0.9,
+      "-RiskPenalty": -4.4,
+      "llm_strip": -2.4,
+      "llm_neutral_adj": -0.24,
+      "downwt_llm evaluation": 0.7
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 9
+  },
+  {
+    "topic_id": "T74",
+    "title": "Open structured-metadata dataset of LLM-eval papers",
+    "category": "meta",
+    "score": 5.95,
+    "components": {
+      "CitationPotential": 5.85,
+      "ExecFeasibility": 3.2,
+      "ImmigrationValue": 2.48,
+      "CareerValue": 1.05,
+      "PublicationPath": 2.7,
+      "-RiskPenalty": -4.8,
+      "llm_strip": -1.8,
+      "llm_neutral_adj": -0.18,
+      "downwt_llm evaluation": 0.7
+    },
+    "is_healthcare": false,
+    "is_llm_eval": true,
+    "is_artifact": true,
+    "rank": 10
+  }
+]

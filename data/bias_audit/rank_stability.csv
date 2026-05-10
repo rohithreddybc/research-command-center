@@ -1,0 +1,15 @@
+topic_id,title,rank_min,rank_max,rank_range,rank_mean
+T74_N1,Open structured-metadata dataset of LLM-eval papers — noise-pruned,1,10,9,4.5
+T43,Reproducibility audit of clinical LLM papers,1,12,11,4.62
+T10,Reproducibility audit of LLM-judge papers,1,11,10,4.75
+T11,Format sensitivity benchmark on LLM evaluations,1,13,12,5.62
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,1,13,12,6.0
+T07,Judge robustness to candidate-side prompt injection,4,12,8,6.5
+T17,Tokenization-induced leaderboard variance,3,12,9,7.5
+T37,Clinical-guideline consistency across LLM versions over time,3,13,10,7.5
+T37_N1,Clinical-guideline consistency across LLM versions over time — noise-pruned,2,14,12,8.75
+T53_N4,Test-set contamination audit of healthcare LLM benchmarks — noise-pruned,3,13,10,8.88
+T74,Open structured-metadata dataset of LLM-eval papers,4,14,10,9.0
+T25,Hallucination taxonomy: RAG vs no-RAG,4,13,9,9.38
+T53,Test-set contamination audit of healthcare LLM benchmarks,5,14,9,10.38
+T07_N1,Judge robustness to candidate-side prompt injection — noise-pruned,6,14,8,11.62

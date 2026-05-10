@@ -1,0 +1,37 @@
+topic_id,title,category,keywords,synonyms,negative_keywords,target_artifact,prelim_priority
+B01,Tool-calling reliability benchmark for autonomous agents,agents,tool calling|reliability|autonomous agents,function calling;agent benchmark,robotics,benchmark,4
+B02,Long-horizon agent planning failure modes,agents,long-horizon planning|agent failure|task decomposition,multi-step agent;planner errors,robotics,paper,3
+B03,Data-centric AI: dataset auditing methodology,data-centric,dataset audit|data quality|data-centric,data cards;datasheet,image only,framework,4
+B04,Causal inference benchmarks for ML evaluation,causal,causal inference|benchmark|ATE estimation,causal benchmark;treatment effect,epidemiology only,benchmark,4
+B05,Synthetic data quality evaluation metrics,data-centric,synthetic data|quality evaluation|fidelity,data synthesis;tabular synthesis,image only,framework,4
+B06,Cross-task contamination in foundation model benchmarks,eval,benchmark contamination|data leakage|test set overlap,training-test overlap,drug docking,paper,4
+B07,ML serving system latency-quality tradeoff benchmark,ml-systems,ML serving|latency|quality tradeoff,model serving;production ML,training only,benchmark,3
+B08,Public health informatics: outbreak signal detection,public-health,outbreak detection|public health|surveillance,syndromic surveillance,individual diagnosis,framework,3
+B09,Human-AI decision support: confidence calibration in interfaces,hci,human-AI|decision support|confidence calibration,AI explanations;decision aid,robotics,paper,3
+B10,Responsible AI: counterfactual fairness audit toolkit,fairness,counterfactual fairness|audit|bias,algorithmic fairness,philosophy only,tool,4
+B11,Distribution-shift detection methods for production ML,ml-systems,distribution shift|monitoring|production ML,drift detection;data drift,anomaly only,framework,4
+B12,Multi-lingual factuality benchmark for low-resource languages,eval,multilingual|factuality|low-resource,low-resource NLP,translation only,benchmark,4
+B13,Citation-context mining for scientific literature,litmining,citation context|literature mining|scholarly NLP,scientific NLP,patents,dataset,3
+B14,Refusal behavior consistency across LLM updates,safety,refusal|safety|model updates,alignment drift,general red teaming,paper,4
+B15,Clinical decision support: alert fatigue measurement,healthcare,alert fatigue|clinical decision support,CDS;clinical workflow,general usability,paper,3
+B16,Reproducibility in healthcare AI deployment studies,healthcare+meta,healthcare AI|deployment|reproducibility,real-world ML,drug docking,database,4
+B17,Reproducibility of LLM training: hyperparameter sensitivity,methodology,training reproducibility|hyperparameter|seed sensitivity,ML reproducibility,tutorial,paper,4
+T01,Cross-judge agreement on long-context QA,eval,LLM judge|long context QA|inter-judge agreement,evaluator agreement;automatic evaluator,unrelated chatbot,benchmark,3
+T02,Position-bias quantification across judge models,eval,position bias|LLM judge|preference order,order bias;ordering effect,unrelated UI,empirical+harness,3
+T03,Self-preference bias in same-family judges,eval,self-preference bias|LLM judge|same family,model family preference;self bias,unrelated retrieval,empirical,3
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,eval,LLM judge|prompt template sensitivity|clinical NLP|robustness,clinical question answering;medical QA;judge prompt;evaluator prompt,general chatbot,benchmark+tool,5
+T05,Judge confidence calibration vs human gold,eval,LLM judge|calibration|human gold|reliability,judge confidence;reliability of judges,unrelated calibration,empirical,4
+T06,Pairwise vs pointwise judge agreement under perturbation,eval,LLM judge|pairwise|pointwise|perturbation,pairwise comparison;pointwise scoring,unrelated retrieval,empirical,3
+T07,Judge robustness to candidate-side prompt injection,eval+safety,LLM judge|prompt injection|adversarial robustness,evaluator manipulation;injection attack,general red teaming,benchmark,5
+T08,Cost-quality Pareto small open judges vs frontier,eval,LLM judge|cost quality|open model|frontier,small judge model;efficient evaluator,unrelated cost,empirical,4
+T09,Judge consistency under temperature/seed variation,eval,LLM judge|temperature|seed|variance,sampling variance;judge stochasticity,unrelated tuning,empirical,3
+T10,Reproducibility audit of LLM-judge papers,meta,LLM-as-a-judge|reproducibility|methodology disclosure|evaluation,LLM judge;automatic evaluator;LLM evaluator;model-based evaluation,tutorial;workshop summary,database+paper,5
+T14,Few-shot order effects on healthcare-domain prompts,prompt+healthcare,few-shot order|healthcare prompt|in-context examples,clinical few-shot;medical prompting,unrelated few-shot,empirical,4
+T22,Clinical-guideline RAG eval benchmark,rag+healthcare,clinical guideline RAG|medical retrieval|guideline,USPSTF;CDC guidelines;NICE retrieval,unrelated guideline,benchmark,4
+NC01_NC,Machine learning for healthcare [NEGATIVE_CONTROL],healthcare,machine learning|healthcare,ml medicine,,paper,1
+NC02_NC,AI in finance [NEGATIVE_CONTROL],applied,AI|finance,fintech,,paper,1
+NC03_NC,LLMs for education [NEGATIVE_CONTROL],applied,LLM|education,edtech,,paper,1
+NC04_NC,Data science dashboards [NEGATIVE_CONTROL],applied,data science|dashboard,BI,,tool,1
+NC05_NC,AI for business analytics [NEGATIVE_CONTROL],applied,AI|business analytics,BI,,framework,1
+NC06_NC,Predictive modeling in healthcare [NEGATIVE_CONTROL],healthcare,predictive|healthcare,risk score,,paper,1
+NC07_NC,RAG for question answering [NEGATIVE_CONTROL],rag,RAG|question answering,retrieval QA,,framework,1
