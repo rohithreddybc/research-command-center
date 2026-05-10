@@ -585,31 +585,46 @@ class TestNarrowingScript(unittest.TestCase):
     # ---- full dry-run integration ----
 
     def test_main_no_autorun_produces_csv_and_report(self):
-        """11_generate_narrowed_topics main() --no-autorun should produce output files."""
+        """11_generate_narrowed_topics main() --no-autorun should produce output files.
+        Uses temporary output paths so it does NOT overwrite production data.
+        """
+        import csv as _csv
+        import tempfile
         import os
         # Only run if real decisions exist (i.e., pipeline has been run)
         decisions_csv = ROOT / "data" / "decisions" / "decisions.csv"
         if not decisions_csv.exists():
             self.skipTest("decisions.csv not found; pipeline not yet run")
-        # Run with --no-autorun so we don't trigger a full pipeline during tests
-        rc = self.mod.main(["--no-autorun", "--top-n", "4", "--max-per-parent", "1"])
-        self.assertEqual(rc, 0)
-        narrowed_csv = ROOT / "data" / "topics_seed_narrowed.csv"
-        report = ROOT / "reports" / "narrowing_report.md"
-        self.assertTrue(narrowed_csv.exists())
-        self.assertTrue(report.exists())
-        # Check CSV has correct header
-        import csv as _csv
-        with open(narrowed_csv, newline="", encoding="utf-8") as f:
-            reader = _csv.DictReader(f)
-            headers = reader.fieldnames or []
-        for col in ("topic_id", "title", "keywords", "parent_topic_id", "narrowing_type"):
-            self.assertIn(col, headers)
-        # Check report has expected sections
-        text = report.read_text(encoding="utf-8")
-        self.assertIn("# Narrowing Report", text)
-        self.assertIn("## Selected Variants", text)
-        self.assertIn("## Per-Parent Analysis", text)
+        # Write to temp files so production CSV/report are not overwritten
+        with tempfile.TemporaryDirectory() as td:
+            tmp_csv = Path(td) / "narrowed_test.csv"
+            tmp_report = Path(td) / "narrowing_test.md"
+            # Monkey-patch the module's output paths for this test
+            orig_out_csv = self.mod.OUT_CSV
+            orig_reports_dir = self.mod.REPORTS_DIR
+            try:
+                self.mod.OUT_CSV = tmp_csv
+                self.mod.REPORTS_DIR = Path(td)
+                rc = self.mod.main(["--no-autorun", "--top-n", "4", "--max-per-parent", "1"])
+                self.assertEqual(rc, 0)
+                self.assertTrue(tmp_csv.exists(), "Narrowed CSV not written")
+                report_file = Path(td) / "narrowing_report.md"
+                self.assertTrue(report_file.exists(), "Narrowing report not written")
+                # Check CSV has correct header
+                with open(tmp_csv, newline="", encoding="utf-8") as f:
+                    reader = _csv.DictReader(f)
+                    headers = reader.fieldnames or []
+                for col in ("topic_id", "title", "keywords", "parent_topic_id", "narrowing_type"):
+                    self.assertIn(col, headers, f"Missing CSV column: {col}")
+                # Check report has expected sections
+                text = report_file.read_text(encoding="utf-8")
+                self.assertIn("# Narrowing Report", text)
+                self.assertIn("## Selected Variants", text)
+                self.assertIn("## Per-Parent Analysis", text)
+            finally:
+                # Restore module-level paths
+                self.mod.OUT_CSV = orig_out_csv
+                self.mod.REPORTS_DIR = orig_reports_dir
 
 
 if __name__ == "__main__":
