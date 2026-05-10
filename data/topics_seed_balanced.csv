@@ -17,14 +17,14 @@ B15,Clinical decision support: alert fatigue measurement,healthcare,alert fatigu
 B16,Reproducibility in healthcare AI deployment studies,healthcare+meta,healthcare AI|deployment|reproducibility,real-world ML,drug docking,database,4,false
 B17,Reproducibility of LLM training: hyperparameter sensitivity,methodology,training reproducibility|hyperparameter|seed sensitivity,ML reproducibility,tutorial,paper,4,false
 T01,Cross-judge agreement on long-context QA,eval,LLM judge|long context QA|inter-judge agreement,evaluator agreement;automatic evaluator,unrelated chatbot,benchmark,3,false
-T02,Position-bias quantification across judge models,eval,position bias|LLM judge|preference order,order bias;ordering effect,unrelated UI,empirical+harness,3,false
-T03,Self-preference bias in same-family judges,eval,self-preference bias|LLM judge|same family,model family preference;self bias,unrelated retrieval,empirical,3,false
-T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,eval,LLM judge|prompt template sensitivity|clinical NLP|robustness,clinical question answering;medical QA;judge prompt;evaluator prompt,general chatbot,benchmark+tool,5,false
+T02,Position-bias quantification across judge models,eval,position bias|judge model|preference order,LLM judge;order bias;ordering effect,unrelated UI,empirical+harness,3,false
+T03,Self-preference bias in same-family judges,eval,self-preference bias|judge model|same family,LLM judge;model family preference;self bias,unrelated retrieval,empirical,3,false
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,eval,prompt template sensitivity|automatic evaluator|clinical NLP|robustness,LLM judge;clinical question answering;medical QA;judge prompt;evaluator prompt,general chatbot,benchmark+tool,5,false
 T05,Judge confidence calibration vs human gold,eval,LLM judge|calibration|human gold|reliability,judge confidence;reliability of judges,unrelated calibration,empirical,4,false
-T06,Pairwise vs pointwise judge agreement under perturbation,eval,LLM judge|pairwise|pointwise|perturbation,pairwise comparison;pointwise scoring,unrelated retrieval,empirical,3,false
+T06,Pairwise vs pointwise judge agreement under perturbation,eval,automatic evaluator|pairwise|pointwise|perturbation,LLM judge;pairwise comparison;pointwise scoring,unrelated retrieval,empirical,3,false
 T07,Judge robustness to candidate-side prompt injection,eval+safety,LLM judge|prompt injection|adversarial robustness,evaluator manipulation;injection attack,general red teaming,benchmark,5,false
-T08,Cost-quality Pareto small open judges vs frontier,eval,LLM judge|cost quality|open model|frontier,small judge model;efficient evaluator,unrelated cost,empirical,4,false
-T09,Judge consistency under temperature/seed variation,eval,LLM judge|temperature|seed|variance,sampling variance;judge stochasticity,unrelated tuning,empirical,3,false
+T08,Cost-quality Pareto small open judges vs frontier,eval,automatic evaluator|cost quality|open model|frontier,LLM judge;small judge model;efficient evaluator,unrelated cost,empirical,4,false
+T09,Judge consistency under temperature/seed variation,eval,judge model|temperature|seed|variance,LLM judge;sampling variance;judge stochasticity,unrelated tuning,empirical,3,false
 T10,Reproducibility audit of LLM-judge papers,meta,LLM-as-a-judge|reproducibility|methodology disclosure|evaluation,LLM judge;automatic evaluator;LLM evaluator;model-based evaluation,tutorial;workshop summary,database+paper,5,false
 T14,Few-shot order effects on healthcare-domain prompts,prompt+healthcare,few-shot order|healthcare prompt|in-context examples,clinical few-shot;medical prompting,unrelated few-shot,empirical,4,false
 T22,Clinical-guideline RAG eval benchmark,rag+healthcare,clinical guideline RAG|medical retrieval|guideline,USPSTF;CDC guidelines;NICE retrieval,unrelated guideline,benchmark,4,false

@@ -30,12 +30,8 @@ _No keywords exceed the cap._
 
 - topics: **36**
 - healthcare-tagged: 7 (19.4%)
-- LLM-eval-keyword-tagged: 10 (27.8%)
+- LLM-eval-keyword-tagged: 4 (11.1%)
 - artifact-target tagged: 19 (52.8%)
 - negative-control topics: 7
 
-### WARNING: 1 keyword(s) exceed cap (3)
-
-| keyword | count | topic_ids | risk | recommendation |
-|---|---|---|---|---|
-| `llm judge` | 9 | T01, T02, T03, T04, T05, T06 ... | LLM-eval anchoring | Reduce occurrences of 'llm judge' to <= 3; diversify by replacing duplicates with related but distinct keywords. |
+_No keywords exceed the cap._
