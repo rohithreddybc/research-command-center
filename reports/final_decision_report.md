@@ -1,10 +1,11 @@
 # Final decision report
 
-Generated: 2026-05-10T00:17:10.577501Z
+Generated: 2026-05-10T01:38:22.479313Z
 
-**Report status: `PRELIMINARY_HEURISTIC_ONLY`**
+**Report status: `FULL_REVIEW_COMPLETE`**
 
-> ⚠️ **WARNING — LLM REVIEW NOT RUN.** All decisions in this report come from heuristic / evidence-only signals. No topic can be promoted to GO until the Claude CLI panel runs (or `--allow-go-without-llm` is passed). See `reports/llm_review_errors.md` (exists: True).
+- Topics with full LLM review: **10** / 10
+- Topics still PRELIMINARY: **0** / 10
 
 ## 1. Executive summary
 
@@ -15,16 +16,16 @@ Generated: 2026-05-10T00:17:10.577501Z
 
 | Rank | Topic | Decision | Conf | Status | Overall | Cit | Art | Sat | Ven | IP | NIW | EB1A | Carr | EvQ | RelP | Sources | n_reviews | Disagree |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | T04: Prompt-template sensitivity benchmark for clinical-domain LLM judges | **NARROW** | LOW | PRELIMINARY  | 12.63 | 4 | 2 | 2 | 2 | 0 | 5 | 4 | 5 | 3 | 0.25 | 2 | 0 | N |
-| 2 | T11: Format sensitivity benchmark on LLM evaluations | **NARROW** | LOW | PRELIMINARY  | 12.21 | 3 | 4 | 3 | 2 | 0 | 2 | 4 | 5 | 2 | 0.25 | 2 | 0 | N |
-| 3 | T07: Judge robustness to candidate-side prompt injection | **NARROW** | LOW | PRELIMINARY  | 11.73 | 4 | 2 | 2 | 2 | 0 | 4 | 4 | 5 | 3 | 0.5 | 1 | 0 | N |
-| 4 | T43: Reproducibility audit of clinical LLM papers | **NARROW** | LOW | PRELIMINARY  | 11.73 | 4 | 2 | 3 | 3 | 0 | 5 | 4 | 2 | 4 | 0.25 | 2 | 0 | N |
-| 5 | T74: Open structured-metadata dataset of LLM-eval papers | **NARROW** | LOW | PRELIMINARY  | 11.68 | 5 | 2 | 4 | 4 | 0 | 2 | 5 | 4 | 4 | 0.25 | 2 | 0 | N |
-| 6 | T37: Clinical-guideline consistency across LLM versions over time | **NARROW** | LOW | PRELIMINARY  | 11.13 | 5 | 2 | 3 | 2 | 0 | 5 | 4 | 2 | 1 | 0.25 | 1 | 0 | N |
-| 7 | T10: Reproducibility audit of LLM-judge papers | **NARROW** | LOW | PRELIMINARY  | 10.98 | 3 | 2 | 3 | 3 | 0 | 3 | 4 | 4 | 4 | 0.25 | 2 | 0 | N |
-| 8 | T53: Test-set contamination audit of healthcare LLM benchmarks | **NARROW** | LOW | PRELIMINARY  | 10.83 | 4 | 2 | 3 | 2 | 0 | 5 | 4 | 3 | 5 | 0.5 | 2 | 0 | N |
-| 9 | T17: Tokenization-induced leaderboard variance | **NARROW** | LOW | PRELIMINARY  | 10.38 | 5 | 2 | 3 | 2 | 0 | 2 | 4 | 3 | 5 | 0.5 | 2 | 0 | N |
-| 10 | T25: Hallucination taxonomy: RAG vs no-RAG | **NARROW** | LOW | PRELIMINARY  | 10.38 | 5 | 2 | 3 | 2 | 0 | 2 | 4 | 3 | 3 | 0.25 | 2 | 0 | N |
+| 1 | T04: Prompt-template sensitivity benchmark for clinical-domain LLM judges | **NARROW** | MEDIUM | FULL REVIEW  | 12.63 | 4 | 2 | 2 | 2 | 0 | 5 | 4 | 5 | 3 | 0.25 | 2 | 8 | N |
+| 2 | T11: Format sensitivity benchmark on LLM evaluations | **NARROW** | MEDIUM | FULL REVIEW  | 12.21 | 3 | 4 | 3 | 2 | 0 | 2 | 4 | 5 | 2 | 0.25 | 2 | 8 | N |
+| 3 | T07: Judge robustness to candidate-side prompt injection | **NARROW** | MEDIUM | FULL REVIEW  | 11.73 | 4 | 2 | 2 | 2 | 0 | 4 | 4 | 5 | 3 | 0.5 | 1 | 8 | N |
+| 4 | T43: Reproducibility audit of clinical LLM papers | **NARROW** | MEDIUM | FULL REVIEW  | 11.73 | 4 | 2 | 3 | 3 | 0 | 5 | 4 | 2 | 4 | 0.25 | 2 | 8 | N |
+| 5 | T74: Open structured-metadata dataset of LLM-eval papers | **NARROW** | MEDIUM | FULL REVIEW  | 11.68 | 5 | 2 | 4 | 4 | 0 | 2 | 5 | 4 | 4 | 0.25 | 2 | 8 | N |
+| 6 | T37: Clinical-guideline consistency across LLM versions over time | **NARROW** | MEDIUM | FULL REVIEW  | 11.13 | 5 | 2 | 3 | 2 | 0 | 5 | 4 | 2 | 1 | 0.25 | 1 | 8 | N |
+| 7 | T10: Reproducibility audit of LLM-judge papers | **NARROW** | MEDIUM | FULL REVIEW  | 10.98 | 3 | 2 | 3 | 3 | 0 | 3 | 4 | 4 | 4 | 0.25 | 2 | 8 | N |
+| 8 | T53: Test-set contamination audit of healthcare LLM benchmarks | **NARROW** | MEDIUM | FULL REVIEW  | 10.83 | 4 | 2 | 3 | 2 | 0 | 5 | 4 | 3 | 5 | 0.5 | 2 | 8 | N |
+| 9 | T17: Tokenization-induced leaderboard variance | **NARROW** | MEDIUM | FULL REVIEW  | 10.38 | 5 | 2 | 3 | 2 | 0 | 2 | 4 | 3 | 5 | 0.5 | 2 | 8 | N |
+| 10 | T25: Hallucination taxonomy: RAG vs no-RAG | **NARROW** | MEDIUM | FULL REVIEW  | 10.38 | 5 | 2 | 3 | 2 | 0 | 2 | 4 | 3 | 3 | 0.25 | 2 | 8 | N |
 
 ## 3. GO topics
 
@@ -33,54 +34,54 @@ _None._
 ## 4. NARROW topics
 
 ### T04 — Prompt-template sensitivity benchmark for clinical-domain LLM judges
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T11 — Format sensitivity benchmark on LLM evaluations
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T07 — Judge robustness to candidate-side prompt injection
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T43 — Reproducibility audit of clinical LLM papers
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T74 — Open structured-metadata dataset of LLM-eval papers
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T37 — Clinical-guideline consistency across LLM versions over time
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T10 — Reproducibility audit of LLM-judge papers
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T53 — Test-set contamination audit of healthcare LLM benchmarks
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T17 — Tokenization-induced leaderboard variance
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ### T25 — Hallucination taxonomy: RAG vs no-RAG
-- Confidence: **LOW**  ·  Status: **PRELIMINARY_HEURISTIC_ONLY**
+- Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
-- Completeness: evidence=True, extra=True, venue=True, llm=False, gate=True
+- Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 
 ## 5. DROP topics
 
@@ -94,9 +95,9 @@ _None._
 
 | # | Topic | Decision | Conf | Status | EvQ | RelP | Manual checks remaining |
 |---|---|---|---|---|---|---|---|
-| 1 | T04: Prompt-template sensitivity benchmark for clinical-domain LLM judges | **NARROW** | LOW | PRELIMINARY_HEURISTIC_ONLY | 3 | 0.25 | - |
-| 2 | T11: Format sensitivity benchmark on LLM evaluations | **NARROW** | LOW | PRELIMINARY_HEURISTIC_ONLY | 2 | 0.25 | - |
-| 3 | T07: Judge robustness to candidate-side prompt injection | **NARROW** | LOW | PRELIMINARY_HEURISTIC_ONLY | 3 | 0.5 | - |
+| 1 | T04: Prompt-template sensitivity benchmark for clinical-domain LLM judges | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 3 | 0.25 | - |
+| 2 | T11: Format sensitivity benchmark on LLM evaluations | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 2 | 0.25 | - |
+| 3 | T07: Judge robustness to candidate-side prompt injection | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 3 | 0.5 | - |
 
 ## 9. Evidence table for top 3 (top 5 papers per topic, by relevance)
 
@@ -234,16 +235,16 @@ _None._
 
 | Topic | n_reviews | plurality | dec_score | high_drops | disagree | per-role disagreements |
 |---|---|---|---|---|---|---|
-| T04 | - | - | - | - | N | - |
-| T11 | - | - | - | - | N | - |
-| T07 | - | - | - | - | N | - |
-| T43 | - | - | - | - | N | - |
-| T74 | - | - | - | - | N | - |
-| T37 | - | - | - | - | N | - |
-| T10 | - | - | - | - | N | - |
-| T53 | - | - | - | - | N | - |
-| T17 | - | - | - | - | N | - |
-| T25 | - | - | - | - | N | - |
+| T04 | 8 | NARROW | 1.38 | 2 | N | - |
+| T11 | 8 | NARROW | 1.62 | 1 | N | - |
+| T07 | 8 | NARROW | 1.75 | 0 | N | - |
+| T43 | 8 | NARROW | 1.75 | 1 | N | - |
+| T74 | 8 | NARROW | 1.38 | 2 | N | - |
+| T37 | 8 | NARROW | 1.88 | 1 | N | - |
+| T10 | 8 | NARROW | 1.88 | 1 | N | - |
+| T53 | 8 | NARROW | 1.75 | 1 | N | - |
+| T17 | 8 | NARROW | 1.75 | 1 | N | - |
+| T25 | 8 | NARROW | 1.75 | 1 | N | - |
 
 ## 18. Remaining manual checks
 
@@ -255,14 +256,6 @@ _None per-topic. Universal manual items remain:_
 
 ## 19. Final recommendation
 
-**Do not promote any topic to GO yet.** Run `claude auth login` once from PowerShell, then:
-
-```
-python scripts/06_llm_review_topics.py
-python scripts/07_compare_reviewers.py
-python scripts/08_confidence_gate.py
-python scripts/09_generate_final_report.py
-```
-
-If you must commit before LLM review (not recommended), pass `--allow-go-without-llm` to `08_confidence_gate.py` and document the override in `DECISIONS.md`.
-
+**Today**: open `data/decisions/T04.json` and `data/papers_dedup/T04.csv`; write a one-paragraph differentiator vs the 5 top-cited prior works (templates/08_proposal_one_pager.md).
+**This week**: complete §6 verification log for the top 3 topics; commit primary + secondary in `DECISIONS.md` with kill criteria.
+**Mode**: paper-first; minimal scripts only.
