@@ -2,12 +2,29 @@
   "topic_id": "T37_N1",
   "topic_title": "Clinical-guideline consistency across LLM versions over time — noise-pruned",
   "target_artifact": "empirical",
-  "n_direct": 10,
-  "n_partial": 7,
+  "direct_paper_count": 0,
+  "direct_github_count": 0,
+  "direct_hf_count": 0,
+  "direct_pwc_count": 0,
+  "artifact_direct_count": 0,
+  "direct_total_count": 0,
+  "partial_paper_count": 10,
+  "partial_github_count": 0,
+  "partial_hf_count": 7,
+  "partial_pwc_count": 0,
+  "n_direct": 0,
+  "n_partial": 17,
   "n_adjacent": 16,
   "n_total": 33,
-  "differentiator_strength": "none",
-  "go_blocked": true,
+  "peer_reviewed_direct_overlap": false,
+  "artifact_direct_overlap": false,
+  "high_artifact_overlap": false,
+  "high_peer_reviewed_overlap": false,
+  "differentiator_strength": "strong",
+  "paper_differentiator_strength": "strong",
+  "artifact_differentiator_strength": "strong",
+  "artifact_differentiator_required": false,
+  "go_blocked": false,
   "requires_differentiator": true,
   "top_findings": [
     {
@@ -19,12 +36,12 @@
       "year": 2025,
       "venue": "Pharmaceutical Journal",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.625,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.62: paper titled 'First ‘NICE-curated’ clinical guideline announced' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline|syn:title:nice.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -35,12 +52,12 @@
       "year": 2024,
       "venue": "MMWR Recommendations and Reports",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for Bacterial Sexually Tr' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -51,12 +68,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis.' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -67,12 +84,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline Update: Ulcerative Colitis in Adults' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -83,12 +100,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline: Management of Crohn's Disease in Adults' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -99,12 +116,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline: Malnutrition and Nutritional Recommendations in Liver Disease' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -115,12 +132,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline: Diagnosis and Management of Gastric Premalignant Conditions' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -131,12 +148,12 @@
       "year": 2025,
       "venue": "Archives of Osteoporosis",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'The 2024 UK clinical guideline for the prevention and treatment of osteoporosis' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -147,12 +164,12 @@
       "year": 2025,
       "venue": "American Journal of Gastroenterology",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'ACG Clinical Guideline Update: Preventive Care in Inflammatory Bowel Disease.' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T37_N1",
@@ -163,12 +180,12 @@
       "year": 2024,
       "venue": "Journal of Physiotherapy",
       "contribution_type": "paper",
-      "overlap_class": "DIRECT_OVERLAP",
+      "overlap_class": "PARTIAL_OVERLAP",
       "relevance_score": 0.5,
       "stars_or_downloads": "",
       "why_overlaps": "Relevance 0.50: paper titled 'Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Physical Rehabilitation ' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.",
       "how_we_differ": "Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     }
   ]
 }

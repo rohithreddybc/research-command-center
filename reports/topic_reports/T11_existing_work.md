@@ -1,24 +1,36 @@
 # Existing Work Report — T11: Format sensitivity benchmark on LLM evaluations
 
-> ✅ **Clear to proceed** — no blocking overlaps (direct=0, partial=1).
+> ✅ **Clear to proceed** — no blocking overlaps (paper_direct=0, artifact_direct=0).
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 0 |
-| Partial overlaps | 1 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 0 |
+| HuggingFace direct artifacts | 0 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 0 |
+| Artifact diff strength | `strong` |
+| Partial overlaps (total) | 1 |
 | Adjacent | 2 |
 | Total findings | 3 |
-| Differentiator strength | `strong` |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | No |
 | GO blocked | No |
 | Differentiator required | No |
+| Artifact differentiator required | No |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
 
 _None._
 
-## Partial Overlaps (differentiator required)
+## Artifact Direct Overlaps (GitHub / HF / PWC)
+
+_None._
+
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
@@ -57,5 +69,5 @@ _None._
 
 ## Recommended Actions
 
-1. No blocking overlaps found. Proceed with normal GO gate checks.
-2. Review 2 adjacent work item(s) for citation and framing purposes.
+1. No blocking overlaps. Proceed with normal GO gate checks.
+2. Review 2 adjacent item(s) for citation and framing.

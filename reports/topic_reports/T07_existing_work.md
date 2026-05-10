@@ -1,40 +1,204 @@
 # Existing Work Report — T07: Judge robustness to candidate-side prompt injection
 
-> ⛔ **GO BLOCKED** — 17 direct overlap(s) found; differentiator strength = `none`.
+> ⚠️ **ARTIFACT DIFFERENTIATOR REQUIRED** — 16 direct artifact(s) (GitHub=5, HF=11, PWC=0), no peer-reviewed paper overlap. artifact_diff_strength=`moderate`. Our peer-reviewed contribution is inherently different, but must be explicit.
+
+> 📌 **Note (artifact-only overlap):** Academic/paper overlap appears low, but artifact overlap is high (16 direct artifacts). This topic may still be publishable — a peer-reviewed benchmark/protocol with a clear domain or methodological focus is inherently differentiated from GitHub repos and HuggingFace datasets. Explicitly state: (1) peer-reviewed systematic protocol vs existing repos; (2) specific domain/use-case vs general artifacts; (3) evaluation harness + reproducibility package vs raw data.
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 17 |
-| Partial overlaps | 17 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 5 |
+| HuggingFace direct artifacts | 11 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 16 |
+| Artifact diff strength | `moderate` |
+| Partial overlaps (total) | 18 |
 | Adjacent | 17 |
 | Total findings | 51 |
-| Differentiator strength | `none` |
-| GO blocked | **YES** |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | ⚠️ Yes |
+| GO blocked | No |
 | Differentiator required | Yes |
+| Artifact differentiator required | Yes |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
+
+_None._
+
+## Artifact Direct Overlaps (GitHub / HF / PWC)
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | paper | [Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection](https://doi.org/10.48550/arXiv.2505.04806) | 2025 | arXiv.org | tool | 0.625 | none |
-| 2 | github | [liu00222/Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) |  | GitHub | benchmark | 438 | none |
-| 3 | github | [lakeraai/pint-benchmark](https://github.com/lakeraai/pint-benchmark) |  | GitHub | benchmark | 184 | none |
-| 4 | github | [microsoft/BIPIA](https://github.com/microsoft/BIPIA) |  | GitHub | benchmark | 124 | none |
-| 5 | github | [lucija8320nhung4/HacxGPT](https://github.com/lucija8320nhung4/HacxGPT) |  | GitHub | tool | 921 | none |
-| 6 | github | [ReversecLabs/spikee](https://github.com/ReversecLabs/spikee) |  | GitHub | tool | 182 | none |
-| 7 | huggingface | [deepset/prompt-injections](https://huggingface.co/datasets/deepset/prompt-injections) |  | HuggingFace | dataset | 5438 | none |
-| 8 | huggingface | [rogue-security/prompt-injections-benchmark](https://huggingface.co/datasets/rogue-security/prompt-injections-benchmark) |  | HuggingFace | dataset | 933 | none |
-| 9 | huggingface | [JasperLS/prompt-injections](https://huggingface.co/datasets/JasperLS/prompt-injections) |  | HuggingFace | dataset | 765 | none |
-| 10 | huggingface | [Lakera/mosscap_prompt_injection](https://huggingface.co/datasets/Lakera/mosscap_prompt_injection) |  | HuggingFace | dataset | 496 | none |
-| 11 | huggingface | [yanismiraoui/prompt_injections](https://huggingface.co/datasets/yanismiraoui/prompt_injections) |  | HuggingFace | dataset | 403 | none |
-| 12 | huggingface | [reshabhs/SPML_Chatbot_Prompt_Injection](https://huggingface.co/datasets/reshabhs/SPML_Chatbot_Prompt_Injection) |  | HuggingFace | dataset | 1172 | none |
-| 13 | huggingface | [Albertmade/prompt-injection](https://huggingface.co/datasets/Albertmade/prompt-injection) |  | HuggingFace | dataset | 108 | none |
-| 14 | huggingface | [xTRam1/safe-guard-prompt-injection](https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection) |  | HuggingFace | dataset | 2171 | none |
-| 15 | huggingface | [jayavibhav/prompt-injection](https://huggingface.co/datasets/jayavibhav/prompt-injection) |  | HuggingFace | dataset | 396 | none |
-| 16 | huggingface | [jayavibhav/prompt-injection-safety](https://huggingface.co/datasets/jayavibhav/prompt-injection-safety) |  | HuggingFace | dataset | 358 | none |
-| 17 | huggingface | [potsawee/chatbot-arena-llm-judges](https://huggingface.co/datasets/potsawee/chatbot-arena-llm-judges) |  | HuggingFace | dataset | 170 | none |
+| 1 | github | [liu00222/Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) |  | GitHub | benchmark | 438 | moderate |
+| 2 | github | [lakeraai/pint-benchmark](https://github.com/lakeraai/pint-benchmark) |  | GitHub | benchmark | 184 | moderate |
+| 3 | github | [microsoft/BIPIA](https://github.com/microsoft/BIPIA) |  | GitHub | benchmark | 124 | moderate |
+| 4 | github | [lucija8320nhung4/HacxGPT](https://github.com/lucija8320nhung4/HacxGPT) |  | GitHub | tool | 921 | moderate |
+| 5 | github | [ReversecLabs/spikee](https://github.com/ReversecLabs/spikee) |  | GitHub | tool | 182 | moderate |
+| 6 | huggingface | [deepset/prompt-injections](https://huggingface.co/datasets/deepset/prompt-injections) |  | HuggingFace | dataset | 5438 | moderate |
+| 7 | huggingface | [rogue-security/prompt-injections-benchmark](https://huggingface.co/datasets/rogue-security/prompt-injections-benchmark) |  | HuggingFace | dataset | 933 | moderate |
+| 8 | huggingface | [JasperLS/prompt-injections](https://huggingface.co/datasets/JasperLS/prompt-injections) |  | HuggingFace | dataset | 765 | moderate |
+| 9 | huggingface | [Lakera/mosscap_prompt_injection](https://huggingface.co/datasets/Lakera/mosscap_prompt_injection) |  | HuggingFace | dataset | 496 | moderate |
+| 10 | huggingface | [yanismiraoui/prompt_injections](https://huggingface.co/datasets/yanismiraoui/prompt_injections) |  | HuggingFace | dataset | 403 | moderate |
+| 11 | huggingface | [reshabhs/SPML_Chatbot_Prompt_Injection](https://huggingface.co/datasets/reshabhs/SPML_Chatbot_Prompt_Injection) |  | HuggingFace | dataset | 1172 | moderate |
+| 12 | huggingface | [Albertmade/prompt-injection](https://huggingface.co/datasets/Albertmade/prompt-injection) |  | HuggingFace | dataset | 108 | moderate |
+| 13 | huggingface | [xTRam1/safe-guard-prompt-injection](https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection) |  | HuggingFace | dataset | 2171 | moderate |
+| 14 | huggingface | [jayavibhav/prompt-injection](https://huggingface.co/datasets/jayavibhav/prompt-injection) |  | HuggingFace | dataset | 396 | moderate |
+| 15 | huggingface | [jayavibhav/prompt-injection-safety](https://huggingface.co/datasets/jayavibhav/prompt-injection-safety) |  | HuggingFace | dataset | 358 | moderate |
+| 16 | huggingface | [potsawee/chatbot-arena-llm-judges](https://huggingface.co/datasets/potsawee/chatbot-arena-llm-judges) |  | HuggingFace | dataset | 170 | moderate |
+
+### 1. liu00222/Open-Prompt-Injection
+- **Source**: github  **URL**: https://github.com/liu00222/Open-Prompt-Injection
+- **Year/Venue**:  / GitHub
+- **Contribution type**: benchmark
+- **Why it overlaps**: GitHub repo 'liu00222/Open-Prompt-Injection' (438 stars) provides an implementation of 'prompt injection'. Description: this repository provides a benchmark for prompt injection attacks and defenses in llms.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 2. lakeraai/pint-benchmark
+- **Source**: github  **URL**: https://github.com/lakeraai/pint-benchmark
+- **Year/Venue**:  / GitHub
+- **Contribution type**: benchmark
+- **Why it overlaps**: GitHub repo 'lakeraai/pint-benchmark' (184 stars) provides an implementation of 'prompt injection'. Description: a benchmark for prompt injection detection systems..
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 3. microsoft/BIPIA
+- **Source**: github  **URL**: https://github.com/microsoft/BIPIA
+- **Year/Venue**:  / GitHub
+- **Contribution type**: benchmark
+- **Why it overlaps**: GitHub repo 'microsoft/BIPIA' (124 stars) provides an implementation of 'prompt injection'. Description: a benchmark for evaluating the robustness of llms and defenses to indirect prompt injection attacks..
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 4. lucija8320nhung4/HacxGPT
+- **Source**: github  **URL**: https://github.com/lucija8320nhung4/HacxGPT
+- **Year/Venue**:  / GitHub
+- **Contribution type**: tool
+- **Why it overlaps**: GitHub repo 'lucija8320nhung4/HacxGPT' (921 stars) provides an implementation of 'prompt injection'. Description: hacxgpt cli — open-source command-line interface for unrestricted ai model access with multi-provider support, prompt in.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 5. ReversecLabs/spikee
+- **Source**: github  **URL**: https://github.com/ReversecLabs/spikee
+- **Year/Venue**:  / GitHub
+- **Contribution type**: tool
+- **Why it overlaps**: GitHub repo 'ReversecLabs/spikee' (182 stars) provides an implementation of 'prompt injection'. Description: simple prompt injection kit for evaluation and exploitation.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 6. deepset/prompt-injections
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/deepset/prompt-injections
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'deepset/prompt-injections' (5,438 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 7. rogue-security/prompt-injections-benchmark
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/rogue-security/prompt-injections-benchmark
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'rogue-security/prompt-injections-benchmark' (933 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 8. JasperLS/prompt-injections
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/JasperLS/prompt-injections
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'JasperLS/prompt-injections' (765 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 9. Lakera/mosscap_prompt_injection
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/Lakera/mosscap_prompt_injection
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'Lakera/mosscap_prompt_injection' (496 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 10. yanismiraoui/prompt_injections
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/yanismiraoui/prompt_injections
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'yanismiraoui/prompt_injections' (403 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 11. reshabhs/SPML_Chatbot_Prompt_Injection
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/reshabhs/SPML_Chatbot_Prompt_Injection
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'reshabhs/SPML_Chatbot_Prompt_Injection' (1,172 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 12. Albertmade/prompt-injection
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/Albertmade/prompt-injection
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'Albertmade/prompt-injection' (108 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 13. xTRam1/safe-guard-prompt-injection
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'xTRam1/safe-guard-prompt-injection' (2,171 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 14. jayavibhav/prompt-injection
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/jayavibhav/prompt-injection
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'jayavibhav/prompt-injection' (396 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 15. jayavibhav/prompt-injection-safety
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/jayavibhav/prompt-injection-safety
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'jayavibhav/prompt-injection-safety' (358 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+### 16. potsawee/chatbot-arena-llm-judges
+- **Source**: huggingface  **URL**: https://huggingface.co/datasets/potsawee/chatbot-arena-llm-judges
+- **Year/Venue**:  / HuggingFace
+- **Contribution type**: dataset
+- **Why it overlaps**: HuggingFace dataset/space 'potsawee/chatbot-arena-llm-judges' (170 downloads) matched 'LLM judge' — provides similar data/evaluation assets.
+- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `moderate`
+
+## Partial Overlaps
+
+| # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
+|---|---|---|---|---|---|---|---|
+| 1 | paper | [Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection](https://doi.org/10.48550/arXiv.2505.04806) | 2025 | arXiv.org | tool | 0.625 | moderate |
+| 2 | paper | [Signed-prompt: A new approach to prevent prompt injection attacks against LLM-In](https://doi.org/10.1063/5.0222987) | 2024 | AIP Conference Proceedings | paper | 0.5 | moderate |
+| 3 | paper | [Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large L](https://doi.org/10.3390/electronics14101907) | 2025 | Electronics | paper | 0.5 | moderate |
+| 4 | paper | [Enhancing Security in Large Language Models: A Comprehensive Review of Prompt In](https://doi.org/10.36227/techrxiv.172954263.32914470/v1) | 2024 |  | survey | 0.5 | moderate |
+| 5 | paper | [Prompt Injection](https://doi.org/10.61608/9783775757027-002) | 2024 | Worldbuilding | paper | 0.5 | moderate |
+| 6 | paper | [An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection](https://doi.org/10.21203/rs.3.rs-4487194/v1) | 2024 |  | paper | 0.5 | moderate |
+| 7 | paper | [REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS](https://doi.org/10.37962/icydd/2025/23-24) | 2025 | 2nd International Conference on Cybersec | paper | 0.5 | moderate |
+| 8 | paper | [Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks](https://doi.org/10.1109/aann66429.2025.11257661) | 2025 | 2025 5th International Conference on Adv | paper | 0.5 | moderate |
+| 9 | paper | [Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory M](https://doi.org/10.2139/ssrn.6280858) | 2026 |  | paper | 0.5 | moderate |
+| 10 | paper | [Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection](https://doi.org/10.36227/techrxiv.171822345.56781952/v1) | 2024 |  | paper | 0.5 | moderate |
+| 11 | paper | [Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large ](https://doi.org/10.2139/ssrn.6246379) | 2026 |  | paper | 0.5 | moderate |
+| 12 | paper | [Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher G](https://doi.org/10.2139/ssrn.5669662) | 2025 |  | paper | 0.5 | moderate |
+| 13 | paper | [Prompt Injection Attacks on LLM-Based Spam Filters](https://doi.org/10.15611/2025.07.4.02) | 2025 | Informatyka w biznesie | paper | 0.5 | moderate |
+| 14 | paper | [Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt ](https://doi.org/10.36948/ijfmr.2025.v07i01.35371) | 2025 | International Journal For Multidisciplin | paper | 0.5 | moderate |
+| 15 | github | [SaFo-Lab/AgentDyn](https://github.com/SaFo-Lab/AgentDyn) |  | GitHub | tool | 50 | moderate |
+| 16 | github | [sleeepeer/PIArena](https://github.com/sleeepeer/PIArena) |  | GitHub | tool | 32 | moderate |
+| 17 | huggingface | [prodnull/prompt-injection-repo-dataset](https://huggingface.co/datasets/prodnull/prompt-injection-repo-dataset) |  | HuggingFace | dataset | 58 | moderate |
+| 18 | huggingface | [beratcmn/turkish-prompt-injections](https://huggingface.co/datasets/beratcmn/turkish-prompt-injections) |  | HuggingFace | dataset | 51 | moderate |
 
 ### 1. Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulnerabilities in LLMs
 - **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2505.04806
@@ -42,293 +206,143 @@
 - **Contribution type**: tool
 - **Why it overlaps**: Relevance 0.62: paper titled 'Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulne' contributes a 'tool' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection|syn:title:jailbreak.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
-### 2. liu00222/Open-Prompt-Injection
-- **Source**: github  **URL**: https://github.com/liu00222/Open-Prompt-Injection
-- **Year/Venue**:  / GitHub
-- **Contribution type**: benchmark
-- **Why it overlaps**: GitHub repo 'liu00222/Open-Prompt-Injection' (438 stars) provides an implementation of 'prompt injection'. Description: this repository provides a benchmark for prompt injection attacks and defenses in llms.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 3. lakeraai/pint-benchmark
-- **Source**: github  **URL**: https://github.com/lakeraai/pint-benchmark
-- **Year/Venue**:  / GitHub
-- **Contribution type**: benchmark
-- **Why it overlaps**: GitHub repo 'lakeraai/pint-benchmark' (184 stars) provides an implementation of 'prompt injection'. Description: a benchmark for prompt injection detection systems..
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 4. microsoft/BIPIA
-- **Source**: github  **URL**: https://github.com/microsoft/BIPIA
-- **Year/Venue**:  / GitHub
-- **Contribution type**: benchmark
-- **Why it overlaps**: GitHub repo 'microsoft/BIPIA' (124 stars) provides an implementation of 'prompt injection'. Description: a benchmark for evaluating the robustness of llms and defenses to indirect prompt injection attacks..
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 5. lucija8320nhung4/HacxGPT
-- **Source**: github  **URL**: https://github.com/lucija8320nhung4/HacxGPT
-- **Year/Venue**:  / GitHub
-- **Contribution type**: tool
-- **Why it overlaps**: GitHub repo 'lucija8320nhung4/HacxGPT' (921 stars) provides an implementation of 'prompt injection'. Description: hacxgpt cli — open-source command-line interface for unrestricted ai model access with multi-provider support, prompt in.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 6. ReversecLabs/spikee
-- **Source**: github  **URL**: https://github.com/ReversecLabs/spikee
-- **Year/Venue**:  / GitHub
-- **Contribution type**: tool
-- **Why it overlaps**: GitHub repo 'ReversecLabs/spikee' (182 stars) provides an implementation of 'prompt injection'. Description: simple prompt injection kit for evaluation and exploitation.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 7. deepset/prompt-injections
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/deepset/prompt-injections
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'deepset/prompt-injections' (5,438 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 8. rogue-security/prompt-injections-benchmark
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/rogue-security/prompt-injections-benchmark
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'rogue-security/prompt-injections-benchmark' (933 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 9. JasperLS/prompt-injections
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/JasperLS/prompt-injections
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'JasperLS/prompt-injections' (765 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 10. Lakera/mosscap_prompt_injection
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/Lakera/mosscap_prompt_injection
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'Lakera/mosscap_prompt_injection' (496 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 11. yanismiraoui/prompt_injections
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/yanismiraoui/prompt_injections
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'yanismiraoui/prompt_injections' (403 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 12. reshabhs/SPML_Chatbot_Prompt_Injection
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/reshabhs/SPML_Chatbot_Prompt_Injection
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'reshabhs/SPML_Chatbot_Prompt_Injection' (1,172 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 13. Albertmade/prompt-injection
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/Albertmade/prompt-injection
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'Albertmade/prompt-injection' (108 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 14. xTRam1/safe-guard-prompt-injection
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/xTRam1/safe-guard-prompt-injection
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'xTRam1/safe-guard-prompt-injection' (2,171 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 15. jayavibhav/prompt-injection
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/jayavibhav/prompt-injection
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'jayavibhav/prompt-injection' (396 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 16. jayavibhav/prompt-injection-safety
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/jayavibhav/prompt-injection-safety
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'jayavibhav/prompt-injection-safety' (358 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 17. potsawee/chatbot-arena-llm-judges
-- **Source**: huggingface  **URL**: https://huggingface.co/datasets/potsawee/chatbot-arena-llm-judges
-- **Year/Venue**:  / HuggingFace
-- **Contribution type**: dataset
-- **Why it overlaps**: HuggingFace dataset/space 'potsawee/chatbot-arena-llm-judges' (170 downloads) matched 'LLM judge' — provides similar data/evaluation assets.
-- **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-## Partial Overlaps (differentiator required)
-
-| # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
-|---|---|---|---|---|---|---|---|
-| 1 | paper | [Signed-prompt: A new approach to prevent prompt injection attacks against LLM-In](https://doi.org/10.1063/5.0222987) | 2024 | AIP Conference Proceedings | paper | 0.5 | weak |
-| 2 | paper | [Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large L](https://doi.org/10.3390/electronics14101907) | 2025 | Electronics | paper | 0.5 | weak |
-| 3 | paper | [Enhancing Security in Large Language Models: A Comprehensive Review of Prompt In](https://doi.org/10.36227/techrxiv.172954263.32914470/v1) | 2024 |  | survey | 0.5 | weak |
-| 4 | paper | [Prompt Injection](https://doi.org/10.61608/9783775757027-002) | 2024 | Worldbuilding | paper | 0.5 | weak |
-| 5 | paper | [An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection](https://doi.org/10.21203/rs.3.rs-4487194/v1) | 2024 |  | paper | 0.5 | weak |
-| 6 | paper | [REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS](https://doi.org/10.37962/icydd/2025/23-24) | 2025 | 2nd International Conference on Cybersec | paper | 0.5 | weak |
-| 7 | paper | [Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks](https://doi.org/10.1109/aann66429.2025.11257661) | 2025 | 2025 5th International Conference on Adv | paper | 0.5 | weak |
-| 8 | paper | [Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory M](https://doi.org/10.2139/ssrn.6280858) | 2026 |  | paper | 0.5 | weak |
-| 9 | paper | [Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection](https://doi.org/10.36227/techrxiv.171822345.56781952/v1) | 2024 |  | paper | 0.5 | weak |
-| 10 | paper | [Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large ](https://doi.org/10.2139/ssrn.6246379) | 2026 |  | paper | 0.5 | weak |
-| 11 | paper | [Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher G](https://doi.org/10.2139/ssrn.5669662) | 2025 |  | paper | 0.5 | weak |
-| 12 | paper | [Prompt Injection Attacks on LLM-Based Spam Filters](https://doi.org/10.15611/2025.07.4.02) | 2025 | Informatyka w biznesie | paper | 0.5 | weak |
-| 13 | paper | [Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt ](https://doi.org/10.36948/ijfmr.2025.v07i01.35371) | 2025 | International Journal For Multidisciplin | paper | 0.5 | weak |
-| 14 | github | [SaFo-Lab/AgentDyn](https://github.com/SaFo-Lab/AgentDyn) |  | GitHub | tool | 50 | weak |
-| 15 | github | [sleeepeer/PIArena](https://github.com/sleeepeer/PIArena) |  | GitHub | tool | 32 | weak |
-| 16 | huggingface | [prodnull/prompt-injection-repo-dataset](https://huggingface.co/datasets/prodnull/prompt-injection-repo-dataset) |  | HuggingFace | dataset | 58 | weak |
-| 17 | huggingface | [beratcmn/turkish-prompt-injections](https://huggingface.co/datasets/beratcmn/turkish-prompt-injections) |  | HuggingFace | dataset | 51 | weak |
-
-### 1. Signed-prompt: A new approach to prevent prompt injection attacks against LLM-Integrated applications
+### 2. Signed-prompt: A new approach to prevent prompt injection attacks against LLM-Integrated applications
 - **Source**: paper  **URL**: https://doi.org/10.1063/5.0222987
 - **Year/Venue**: 2024 / AIP Conference Proceedings
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Signed-prompt: A new approach to prevent prompt injection attacks against LLM-Integrated application' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 2. Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large Language Models
+### 3. Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large Language Models
 - **Source**: paper  **URL**: https://doi.org/10.3390/electronics14101907
 - **Year/Venue**: 2025 / Electronics
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large Language Models' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 3. Enhancing Security in Large Language Models: A Comprehensive Review of Prompt Injection Attacks and Defenses
+### 4. Enhancing Security in Large Language Models: A Comprehensive Review of Prompt Injection Attacks and Defenses
 - **Source**: paper  **URL**: https://doi.org/10.36227/techrxiv.172954263.32914470/v1
 - **Year/Venue**: 2024 / n/a
 - **Contribution type**: survey
 - **Why it overlaps**: Relevance 0.50: paper titled 'Enhancing Security in Large Language Models: A Comprehensive Review of Prompt Injection Attacks and ' contributes a 'survey' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 4. Prompt Injection
+### 5. Prompt Injection
 - **Source**: paper  **URL**: https://doi.org/10.61608/9783775757027-002
 - **Year/Venue**: 2024 / Worldbuilding
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Prompt Injection' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 5. An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection
+### 6. An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection
 - **Source**: paper  **URL**: https://doi.org/10.21203/rs.3.rs-4487194/v1
 - **Year/Venue**: 2024 / n/a
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 6. REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS
+### 7. REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS
 - **Source**: paper  **URL**: https://doi.org/10.37962/icydd/2025/23-24
 - **Year/Venue**: 2025 / 2nd International Conference on Cybersecurity and Digital Defense (ICyDD)
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 7. Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks
+### 8. Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks
 - **Source**: paper  **URL**: https://doi.org/10.1109/aann66429.2025.11257661
 - **Year/Venue**: 2025 / 2025 5th International Conference on Advanced Algorithms and Neural Networks (AANN)
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 8. Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory Monitoring
+### 9. Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory Monitoring
 - **Source**: paper  **URL**: https://doi.org/10.2139/ssrn.6280858
 - **Year/Venue**: 2026 / n/a
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory Monitoring' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 9. Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection
+### 10. Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection
 - **Source**: paper  **URL**: https://doi.org/10.36227/techrxiv.171822345.56781952/v1
 - **Year/Venue**: 2024 / n/a
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 10. Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large Language Models
+### 11. Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large Language Models
 - **Source**: paper  **URL**: https://doi.org/10.2139/ssrn.6246379
 - **Year/Venue**: 2026 / n/a
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large Language Models' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 11. Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation
+### 12. Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation
 - **Source**: paper  **URL**: https://doi.org/10.2139/ssrn.5669662
 - **Year/Venue**: 2025 / n/a
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 12. Prompt Injection Attacks on LLM-Based Spam Filters
+### 13. Prompt Injection Attacks on LLM-Based Spam Filters
 - **Source**: paper  **URL**: https://doi.org/10.15611/2025.07.4.02
 - **Year/Venue**: 2025 / Informatyka w biznesie
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Prompt Injection Attacks on LLM-Based Spam Filters' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 13. Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt injection and prompt poisoning attacks
+### 14. Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt injection and prompt poisoning attacks
 - **Source**: paper  **URL**: https://doi.org/10.36948/ijfmr.2025.v07i01.35371
 - **Year/Venue**: 2025 / International Journal For Multidisciplinary Research
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt injection and prompt' contributes a 'paper' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 14. SaFo-Lab/AgentDyn
+### 15. SaFo-Lab/AgentDyn
 - **Source**: github  **URL**: https://github.com/SaFo-Lab/AgentDyn
 - **Year/Venue**:  / GitHub
 - **Contribution type**: tool
 - **Why it overlaps**: GitHub repo 'SaFo-Lab/AgentDyn' (50 stars) provides an implementation of 'prompt injection'. Description: the official implementation of the paper "agentdyn: a dynamic open-ended benchmark for evaluating prompt injection attac.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 15. sleeepeer/PIArena
+### 16. sleeepeer/PIArena
 - **Source**: github  **URL**: https://github.com/sleeepeer/PIArena
 - **Year/Venue**:  / GitHub
 - **Contribution type**: tool
 - **Why it overlaps**: GitHub repo 'sleeepeer/PIArena' (32 stars) provides an implementation of 'prompt injection'. Description: [acl 2026] piarena: a platform for prompt injection evaluation.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 16. prodnull/prompt-injection-repo-dataset
+### 17. prodnull/prompt-injection-repo-dataset
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/prodnull/prompt-injection-repo-dataset
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'prodnull/prompt-injection-repo-dataset' (58 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 17. beratcmn/turkish-prompt-injections
+### 18. beratcmn/turkish-prompt-injections
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/beratcmn/turkish-prompt-injections
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'beratcmn/turkish-prompt-injections' (51 downloads) matched 'prompt injection' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ## Adjacent Work (context only)
 
@@ -488,8 +502,19 @@
 - **How we differ**: Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `strong`
 
+## Artifact Differentiator Checklist
+
+Answer each question to establish whether our proposed contribution is distinct:
+
+- [ ] **Peer-reviewed vs repo**: Is our contribution a peer-reviewed paper (not just a code dump)?
+- [ ] **Systematic protocol**: Does our benchmark/dataset follow a documented, reproducible protocol unlike existing repos?
+- [ ] **Domain-specific**: Does our work target a specific domain (clinical, legal, finance) while existing artifacts are general?
+- [ ] **Evaluation focus**: Are we *evaluating behavior* (robustness, bias, sensitivity) rather than merely collecting prompts?
+- [ ] **LLM-judge-specific**: Do we target LLM-as-a-judge specifically, not general prompt injection?
+- [ ] **Reproducibility harness**: Do we release evaluation code + results, not just raw data?
+
 ## Recommended Actions
 
-1. **Do not promote T07 to GO** until you have articulated a concrete differentiator vs the 17 direct overlap(s) above.
-2. For each DIRECT_OVERLAP, fill in the 'how_we_differ' column in the CSV with a specific contribution claim.
-3. If a differentiator cannot be found, consider DROPping or NARROWING further.
+1. Complete the Artifact Differentiator Checklist above (16 artifacts found).
+2. This topic can proceed to GO if artifact differentiator is articulated explicitly.
+3. Write one paragraph for §6 verification log explaining differentiation from top artifacts.

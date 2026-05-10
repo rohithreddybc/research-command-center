@@ -1,37 +1,34 @@
 # Existing Work Report — T10: Reproducibility audit of LLM-judge papers
 
-> ⛔ **GO BLOCKED** — 14 direct overlap(s) found; differentiator strength = `none`.
+> ⛔ **GO BLOCKED (peer-reviewed overlap)** — 3 peer-reviewed DIRECT overlap(s); paper_diff_strength=`none`. Must articulate a clear differentiator before proceeding.
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 14 |
-| Partial overlaps | 16 |
+| **Paper direct overlaps** | 3 |
+| Paper diff strength | `none` |
+| GitHub direct artifacts | 1 |
+| HuggingFace direct artifacts | 2 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 3 |
+| Artifact diff strength | `none` |
+| Partial overlaps (total) | 24 |
 | Adjacent | 59 |
 | Total findings | 89 |
-| Differentiator strength | `none` |
+| peer_reviewed_direct | ✅ Yes |
+| high_artifact_overlap | No |
 | GO blocked | **YES** |
 | Differentiator required | Yes |
+| Artifact differentiator required | Yes |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
 | 1 | paper | [An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model ](https://doi.org/10.18653/v1/2025.findings-acl.306) | 2025 | Findings of the Association for Computat | empirical | 0.75 | none |
 | 2 | paper | [Automated LLM Deployment and Evaluation: A Cloud-Native Approach Using LLM-as-a-](https://doi.org/10.1109/cloud67622.2025.00053) | 2025 | 2025 IEEE 18th International Conference  | paper | 0.75 | none |
 | 3 | paper | [Uncovering the Risk of Evaluation Formalism: A Debiased LLM-as-a-Judge Study in ](https://doi.org/10.2139/ssrn.5249953) | 2025 |  | survey | 0.75 | none |
-| 4 | paper | [A Survey on LLM-as-a-Judge](https://doi.org/10.48550/arXiv.2411.15594) | 2024 | arXiv.org | survey | 0.6 | none |
-| 5 | paper | [Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Softw](https://doi.org/10.1145/3728963) | 2025 | Proc. ACM Softw. Eng. | empirical | 0.6 | none |
-| 6 | paper | [Preference Leakage: A Contamination Problem in LLM-as-a-judge](https://doi.org/10.48550/arXiv.2502.01534) | 2025 | arXiv.org | paper | 0.6 | none |
-| 7 | paper | [Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations](https://doi.org/10.48550/arXiv.2510.11822) | 2025 | arXiv.org | paper | 0.562 | none |
-| 8 | paper | [Judging LLM-as-a-judge with MT-Bench and Chatbot Arena](https://doi.org/10.52202/075280-2020) | 2023 | Neural Information Processing Systems | paper | 0.55 | none |
-| 9 | paper | [Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-sh](https://doi.org/10.18653/v1/2024.emnlp-main.427) | 2024 | Proceedings of the 2024 Conference on Em | paper | 0.5 | none |
-| 10 | paper | [The Impact of Likert Scale Design on Judgment Reliability in Korean and English ](https://doi.org/10.5626/ktcp.2026.32.3.126) | 2026 | KIISE Transactions on Computing Practice | paper | 0.5 | none |
-| 11 | paper | [How Reliable is Multilingual LLM-as-a-Judge?](https://doi.org/10.18653/v1/2025.findings-emnlp.587) | 2025 | Findings of the Association for Computat | paper | 0.5 | none |
-| 12 | github | [IBM/eval-assist](https://github.com/IBM/eval-assist) |  | GitHub | tool | 100 | none |
-| 13 | huggingface | [AI-EcoNet/HUGO-Bench-Paper-Reproducibility](https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility) |  | HuggingFace | dataset | 261 | none |
-| 14 | huggingface | [zyzhou110/Squidiff_reproducibility](https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility) |  | HuggingFace | dataset | 106 | none |
 
 ### 1. An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4
 - **Source**: paper  **URL**: https://doi.org/10.18653/v1/2025.findings-acl.306
@@ -57,71 +54,15 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `none`
 
-### 4. A Survey on LLM-as-a-Judge
-- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2411.15594
-- **Year/Venue**: 2024 / arXiv.org
-- **Contribution type**: survey
-- **Why it overlaps**: Relevance 0.60: paper titled 'A Survey on LLM-as-a-Judge' contributes a 'survey' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+## Artifact Direct Overlaps (GitHub / HF / PWC)
 
-### 5. Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering
-- **Source**: paper  **URL**: https://doi.org/10.1145/3728963
-- **Year/Venue**: 2025 / Proc. ACM Softw. Eng.
-- **Contribution type**: empirical
-- **Why it overlaps**: Relevance 0.60: paper titled 'Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering' contributes a 'empirical' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+| # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
+|---|---|---|---|---|---|---|---|
+| 1 | github | [IBM/eval-assist](https://github.com/IBM/eval-assist) |  | GitHub | tool | 100 | none |
+| 2 | huggingface | [AI-EcoNet/HUGO-Bench-Paper-Reproducibility](https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility) |  | HuggingFace | dataset | 261 | none |
+| 3 | huggingface | [zyzhou110/Squidiff_reproducibility](https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility) |  | HuggingFace | dataset | 106 | none |
 
-### 6. Preference Leakage: A Contamination Problem in LLM-as-a-judge
-- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2502.01534
-- **Year/Venue**: 2025 / arXiv.org
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.60: paper titled 'Preference Leakage: A Contamination Problem in LLM-as-a-judge' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 7. Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations
-- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2510.11822
-- **Year/Venue**: 2025 / arXiv.org
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.56: paper titled 'Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:abstract:llm-as-a-judge|kw:title:evaluation|syn:title:llm judge.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 8. Judging LLM-as-a-judge with MT-Bench and Chatbot Arena
-- **Source**: paper  **URL**: https://doi.org/10.52202/075280-2020
-- **Year/Venue**: 2023 / Neural Information Processing Systems
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.55: paper titled 'Judging LLM-as-a-judge with MT-Bench and Chatbot Arena' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|syn:abstract:llm judge.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 9. Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment
-- **Source**: paper  **URL**: https://doi.org/10.18653/v1/2024.emnlp-main.427
-- **Year/Venue**: 2024 / Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.50: paper titled 'Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 10. The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge
-- **Source**: paper  **URL**: https://doi.org/10.5626/ktcp.2026.32.3.126
-- **Year/Venue**: 2026 / KIISE Transactions on Computing Practices
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.50: paper titled 'The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 11. How Reliable is Multilingual LLM-as-a-Judge?
-- **Source**: paper  **URL**: https://doi.org/10.18653/v1/2025.findings-emnlp.587
-- **Year/Venue**: 2025 / Findings of the Association for Computational Linguistics: EMNLP 2025
-- **Contribution type**: paper
-- **Why it overlaps**: Relevance 0.50: paper titled 'How Reliable is Multilingual LLM-as-a-Judge?' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
-- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
-
-### 12. IBM/eval-assist
+### 1. IBM/eval-assist
 - **Source**: github  **URL**: https://github.com/IBM/eval-assist
 - **Year/Venue**:  / GitHub
 - **Contribution type**: tool
@@ -129,7 +70,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `none`
 
-### 13. AI-EcoNet/HUGO-Bench-Paper-Reproducibility
+### 2. AI-EcoNet/HUGO-Bench-Paper-Reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -137,7 +78,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `none`
 
-### 14. zyzhou110/Squidiff_reproducibility
+### 3. zyzhou110/Squidiff_reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -145,26 +86,34 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `none`
 
-## Partial Overlaps (differentiator required)
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
 | 1 | paper | [LLM Evaluations for Emotional Expressiveness and Factual Consistency in Medical ](https://doi.org/10.1109/resgenxai64788.2025.11344029) | 2025 | 2025 International Conference on Respons | tool | 0.75 | weak |
-| 2 | paper | MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchm | 2024 | International Conference on Machine Lear | benchmark | 0.6 | weak |
-| 3 | paper | [LLM Evaluations: A Survey of Programmatic, Human, and LLM-as-Judge Approaches](https://doi.org/10.15680/ijirset.2025.1406011) | 2025 | International Journal of Innovative Rese | survey | 0.438 | weak |
-| 4 | paper | Adaptive Rigor in AI System Evaluation using Temperature-Controlled Verdict Aggr | 2026 |  | tool | 0.438 | weak |
-| 5 | paper | [Multi-Agent LLM Judge: automatic personalized LLM judge design for evaluating na](https://doi.org/10.48550/arXiv.2504.02867) | 2025 | arXiv.org | paper | 0.412 | weak |
-| 6 | paper | [DAJ: Data-Reweighted LLM Judge for Test-Time Scaling in Code Generation](https://doi.org/10.48550/arXiv.2601.22230) | 2026 | arXiv.org | paper | 0.412 | weak |
-| 7 | paper | [Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Usin](http://arxiv.org/abs/2605.05739v1) | 2026 | arXiv | tool | 0.375 | weak |
-| 8 | paper | [A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Repr](https://doi.org/10.48550/arXiv.2504.07086) | 2025 | arXiv.org | paper | 0.35 | weak |
-| 9 | paper | [Radiomics and Deep Features: Robust Classification of Brain Hemorrhages and Repr](https://doi.org/10.3390/bioengineering11070643) | 2024 | Bioengineering | empirical | 0.35 | weak |
-| 10 | paper | [CORE-Bench: Fostering the Credibility of Published Research Through a Computatio](https://doi.org/10.48550/arXiv.2409.11363) | 2024 | Trans. Mach. Learn. Res. | benchmark | 0.35 | weak |
-| 11 | github | [UW-Madison-Lee-Lab/LLM-judge-reporting](https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting) |  | GitHub | tool | 77 | weak |
-| 12 | github | [ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge](https://github.com/ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge) |  | GitHub | tool | 35 | weak |
-| 13 | huggingface | [team-dentaku/dentaku-llm-as-a-judge](https://huggingface.co/datasets/team-dentaku/dentaku-llm-as-a-judge) |  | HuggingFace | dataset | 30 | weak |
-| 14 | huggingface | [bird-of-paradise/muon-distributed-reproducibility](https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility) |  | HuggingFace | dataset | 40 | weak |
-| 15 | huggingface | [throwaway-reproducibility-354364563/FinTrain](https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain) |  | HuggingFace | dataset | 21 | weak |
-| 16 | huggingface | [anon7f3k2026/neurips_reproducibility_bundle](https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle) |  | HuggingFace | dataset | 22 | weak |
+| 2 | paper | [A Survey on LLM-as-a-Judge](https://doi.org/10.48550/arXiv.2411.15594) | 2024 | arXiv.org | survey | 0.6 | weak |
+| 3 | paper | MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchm | 2024 | International Conference on Machine Lear | benchmark | 0.6 | weak |
+| 4 | paper | [Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Softw](https://doi.org/10.1145/3728963) | 2025 | Proc. ACM Softw. Eng. | empirical | 0.6 | weak |
+| 5 | paper | [Preference Leakage: A Contamination Problem in LLM-as-a-judge](https://doi.org/10.48550/arXiv.2502.01534) | 2025 | arXiv.org | paper | 0.6 | weak |
+| 6 | paper | [Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations](https://doi.org/10.48550/arXiv.2510.11822) | 2025 | arXiv.org | paper | 0.562 | weak |
+| 7 | paper | [Judging LLM-as-a-judge with MT-Bench and Chatbot Arena](https://doi.org/10.52202/075280-2020) | 2023 | Neural Information Processing Systems | paper | 0.55 | weak |
+| 8 | paper | [Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-sh](https://doi.org/10.18653/v1/2024.emnlp-main.427) | 2024 | Proceedings of the 2024 Conference on Em | paper | 0.5 | weak |
+| 9 | paper | [The Impact of Likert Scale Design on Judgment Reliability in Korean and English ](https://doi.org/10.5626/ktcp.2026.32.3.126) | 2026 | KIISE Transactions on Computing Practice | paper | 0.5 | weak |
+| 10 | paper | [How Reliable is Multilingual LLM-as-a-Judge?](https://doi.org/10.18653/v1/2025.findings-emnlp.587) | 2025 | Findings of the Association for Computat | paper | 0.5 | weak |
+| 11 | paper | [LLM Evaluations: A Survey of Programmatic, Human, and LLM-as-Judge Approaches](https://doi.org/10.15680/ijirset.2025.1406011) | 2025 | International Journal of Innovative Rese | survey | 0.438 | weak |
+| 12 | paper | Adaptive Rigor in AI System Evaluation using Temperature-Controlled Verdict Aggr | 2026 |  | tool | 0.438 | weak |
+| 13 | paper | [Multi-Agent LLM Judge: automatic personalized LLM judge design for evaluating na](https://doi.org/10.48550/arXiv.2504.02867) | 2025 | arXiv.org | paper | 0.412 | weak |
+| 14 | paper | [DAJ: Data-Reweighted LLM Judge for Test-Time Scaling in Code Generation](https://doi.org/10.48550/arXiv.2601.22230) | 2026 | arXiv.org | paper | 0.412 | weak |
+| 15 | paper | [Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Usin](http://arxiv.org/abs/2605.05739v1) | 2026 | arXiv | tool | 0.375 | weak |
+| 16 | paper | [A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Repr](https://doi.org/10.48550/arXiv.2504.07086) | 2025 | arXiv.org | paper | 0.35 | weak |
+| 17 | paper | [Radiomics and Deep Features: Robust Classification of Brain Hemorrhages and Repr](https://doi.org/10.3390/bioengineering11070643) | 2024 | Bioengineering | empirical | 0.35 | weak |
+| 18 | paper | [CORE-Bench: Fostering the Credibility of Published Research Through a Computatio](https://doi.org/10.48550/arXiv.2409.11363) | 2024 | Trans. Mach. Learn. Res. | benchmark | 0.35 | weak |
+| 19 | github | [UW-Madison-Lee-Lab/LLM-judge-reporting](https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting) |  | GitHub | tool | 77 | weak |
+| 20 | github | [ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge](https://github.com/ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge) |  | GitHub | tool | 35 | weak |
+| 21 | huggingface | [team-dentaku/dentaku-llm-as-a-judge](https://huggingface.co/datasets/team-dentaku/dentaku-llm-as-a-judge) |  | HuggingFace | dataset | 30 | weak |
+| 22 | huggingface | [bird-of-paradise/muon-distributed-reproducibility](https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility) |  | HuggingFace | dataset | 40 | weak |
+| 23 | huggingface | [throwaway-reproducibility-354364563/FinTrain](https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain) |  | HuggingFace | dataset | 21 | weak |
+| 24 | huggingface | [anon7f3k2026/neurips_reproducibility_bundle](https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle) |  | HuggingFace | dataset | 22 | weak |
 
 ### 1. LLM Evaluations for Emotional Expressiveness and Factual Consistency in Medical Dialogue Systems Using LLM-as-a-Judge
 - **Source**: paper  **URL**: https://doi.org/10.1109/resgenxai64788.2025.11344029
@@ -174,7 +123,15 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 2. MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark
+### 2. A Survey on LLM-as-a-Judge
+- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2411.15594
+- **Year/Venue**: 2024 / arXiv.org
+- **Contribution type**: survey
+- **Why it overlaps**: Relevance 0.60: paper titled 'A Survey on LLM-as-a-Judge' contributes a 'survey' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 3. MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark
 - **Source**: paper  **URL**: n/a
 - **Year/Venue**: 2024 / International Conference on Machine Learning
 - **Contribution type**: benchmark
@@ -182,7 +139,63 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 3. LLM Evaluations: A Survey of Programmatic, Human, and LLM-as-Judge Approaches
+### 4. Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering
+- **Source**: paper  **URL**: https://doi.org/10.1145/3728963
+- **Year/Venue**: 2025 / Proc. ACM Softw. Eng.
+- **Contribution type**: empirical
+- **Why it overlaps**: Relevance 0.60: paper titled 'Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering' contributes a 'empirical' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 5. Preference Leakage: A Contamination Problem in LLM-as-a-judge
+- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2502.01534
+- **Year/Venue**: 2025 / arXiv.org
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.60: paper titled 'Preference Leakage: A Contamination Problem in LLM-as-a-judge' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|kw:abstract:evaluation.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 6. Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations
+- **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2510.11822
+- **Year/Venue**: 2025 / arXiv.org
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.56: paper titled 'Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:abstract:llm-as-a-judge|kw:title:evaluation|syn:title:llm judge.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 7. Judging LLM-as-a-judge with MT-Bench and Chatbot Arena
+- **Source**: paper  **URL**: https://doi.org/10.52202/075280-2020
+- **Year/Venue**: 2023 / Neural Information Processing Systems
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.55: paper titled 'Judging LLM-as-a-judge with MT-Bench and Chatbot Arena' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge|syn:abstract:llm judge.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 8. Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment
+- **Source**: paper  **URL**: https://doi.org/10.18653/v1/2024.emnlp-main.427
+- **Year/Venue**: 2024 / Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.50: paper titled 'Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 9. The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge
+- **Source**: paper  **URL**: https://doi.org/10.5626/ktcp.2026.32.3.126
+- **Year/Venue**: 2026 / KIISE Transactions on Computing Practices
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.50: paper titled 'The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 10. How Reliable is Multilingual LLM-as-a-Judge?
+- **Source**: paper  **URL**: https://doi.org/10.18653/v1/2025.findings-emnlp.587
+- **Year/Venue**: 2025 / Findings of the Association for Computational Linguistics: EMNLP 2025
+- **Contribution type**: paper
+- **Why it overlaps**: Relevance 0.50: paper titled 'How Reliable is Multilingual LLM-as-a-Judge?' contributes a 'paper' matching target artifact 'database+paper'. Matched keywords: primary:title:llm-as-a-judge.
+- **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
+- **Differentiator strength**: `weak`
+
+### 11. LLM Evaluations: A Survey of Programmatic, Human, and LLM-as-Judge Approaches
 - **Source**: paper  **URL**: https://doi.org/10.15680/ijirset.2025.1406011
 - **Year/Venue**: 2025 / International Journal of Innovative Research in Science, Engineering and Technology
 - **Contribution type**: survey
@@ -190,7 +203,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 4. Adaptive Rigor in AI System Evaluation using Temperature-Controlled Verdict Aggregation via Generalized Power Mean
+### 12. Adaptive Rigor in AI System Evaluation using Temperature-Controlled Verdict Aggregation via Generalized Power Mean
 - **Source**: paper  **URL**: n/a
 - **Year/Venue**: 2026 / n/a
 - **Contribution type**: tool
@@ -198,7 +211,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 5. Multi-Agent LLM Judge: automatic personalized LLM judge design for evaluating natural language generation applications
+### 13. Multi-Agent LLM Judge: automatic personalized LLM judge design for evaluating natural language generation applications
 - **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2504.02867
 - **Year/Venue**: 2025 / arXiv.org
 - **Contribution type**: paper
@@ -206,7 +219,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 6. DAJ: Data-Reweighted LLM Judge for Test-Time Scaling in Code Generation
+### 14. DAJ: Data-Reweighted LLM Judge for Test-Time Scaling in Code Generation
 - **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2601.22230
 - **Year/Venue**: 2026 / arXiv.org
 - **Contribution type**: paper
@@ -214,7 +227,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 7. Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Using LLM Judges with Closed-Loop Reinforcem
+### 15. Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Using LLM Judges with Closed-Loop Reinforcem
 - **Source**: paper  **URL**: http://arxiv.org/abs/2605.05739v1
 - **Year/Venue**: 2026 / arXiv
 - **Contribution type**: tool
@@ -222,7 +235,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 8. A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility
+### 16. A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility
 - **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2504.07086
 - **Year/Venue**: 2025 / arXiv.org
 - **Contribution type**: paper
@@ -230,7 +243,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 9. Radiomics and Deep Features: Robust Classification of Brain Hemorrhages and Reproducibility Analysis Using a 3D Autoenco
+### 17. Radiomics and Deep Features: Robust Classification of Brain Hemorrhages and Reproducibility Analysis Using a 3D Autoenco
 - **Source**: paper  **URL**: https://doi.org/10.3390/bioengineering11070643
 - **Year/Venue**: 2024 / Bioengineering
 - **Contribution type**: empirical
@@ -238,7 +251,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 10. CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark
+### 18. CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark
 - **Source**: paper  **URL**: https://doi.org/10.48550/arXiv.2409.11363
 - **Year/Venue**: 2024 / Trans. Mach. Learn. Res.
 - **Contribution type**: benchmark
@@ -246,7 +259,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 11. UW-Madison-Lee-Lab/LLM-judge-reporting
+### 19. UW-Madison-Lee-Lab/LLM-judge-reporting
 - **Source**: github  **URL**: https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting
 - **Year/Venue**:  / GitHub
 - **Contribution type**: tool
@@ -254,7 +267,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 12. ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge
+### 20. ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge
 - **Source**: github  **URL**: https://github.com/ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge
 - **Year/Venue**:  / GitHub
 - **Contribution type**: tool
@@ -262,7 +275,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 13. team-dentaku/dentaku-llm-as-a-judge
+### 21. team-dentaku/dentaku-llm-as-a-judge
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/team-dentaku/dentaku-llm-as-a-judge
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -270,7 +283,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 14. bird-of-paradise/muon-distributed-reproducibility
+### 22. bird-of-paradise/muon-distributed-reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -278,7 +291,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 15. throwaway-reproducibility-354364563/FinTrain
+### 23. throwaway-reproducibility-354364563/FinTrain
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -286,7 +299,7 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `weak`
 
-### 16. anon7f3k2026/neurips_reproducibility_bundle
+### 24. anon7f3k2026/neurips_reproducibility_bundle
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
@@ -833,8 +846,19 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of LLM-judge papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `strong`
 
+## Artifact Differentiator Checklist
+
+Answer each question to establish whether our proposed contribution is distinct:
+
+- [ ] **Peer-reviewed vs repo**: Is our contribution a peer-reviewed paper (not just a code dump)?
+- [ ] **Systematic protocol**: Does our benchmark/dataset follow a documented, reproducible protocol unlike existing repos?
+- [ ] **Domain-specific**: Does our work target a specific domain (clinical, legal, finance) while existing artifacts are general?
+- [ ] **Evaluation focus**: Are we *evaluating behavior* (robustness, bias, sensitivity) rather than merely collecting prompts?
+- [ ] **LLM-judge-specific**: Do we target LLM-as-a-judge specifically, not general prompt injection?
+- [ ] **Reproducibility harness**: Do we release evaluation code + results, not just raw data?
+
 ## Recommended Actions
 
-1. **Do not promote T10 to GO** until you have articulated a concrete differentiator vs the 14 direct overlap(s) above.
-2. For each DIRECT_OVERLAP, fill in the 'how_we_differ' column in the CSV with a specific contribution claim.
-3. If a differentiator cannot be found, consider DROPping or NARROWING further.
+1. **Do not promote T10 to GO** — 3 peer-reviewed paper(s) directly cover this.
+2. For each DIRECT paper, fill 'how_we_differ' in the CSV with a specific contribution claim.
+3. If no differentiator: consider DROP or further narrowing.

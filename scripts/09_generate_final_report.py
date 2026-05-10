@@ -308,19 +308,33 @@ def main(argv: list[str] | None = None) -> int:
             "Run `python scripts/12_detect_existing_work.py` to populate this section.\n"
         )
     else:
-        md.append("| Topic | Direct | Partial | Adjacent | Diff-Strength | GO Blocked | Req. Diff |")
-        md.append("|---|---|---|---|---|---|---|")
+        # Source-type breakdown table
+        md.append("| Topic | Paper Direct | Artifact Direct | (GH / HF / PWC) | Peer-Rev? | High-Art? | Art-Diff-Req | Art-Diff | Paper-Diff | GO Blocked |")
+        md.append("|---|---|---|---|---|---|---|---|---|---|")
         for t, _ in decisions:
-            ew_t = ew_by_topic.get(t["topic_id"], {})
+            tid = t["topic_id"]
+            ew_t = ew_by_topic.get(tid, {})
             if not ew_t:
-                md.append(f"| {t['topic_id']} | — | — | — | — | — | — |")
+                md.append(f"| {tid} | — | — | — | — | — | — | — | — | — |")
                 continue
+            peer_rev  = "✅" if ew_t.get("peer_reviewed_direct_overlap") else "—"
+            high_art  = "⚠️" if ew_t.get("high_artifact_overlap") else "—"
+            art_diff_req = "Yes" if ew_t.get("artifact_differentiator_required") else "—"
             blocked_disp = "⛔ YES" if ew_t.get("go_blocked") else "No"
-            req_diff_disp = "⚠️ Yes" if ew_t.get("requires_differentiator") else "No"
+            gh  = ew_t.get("direct_github_count", "—")
+            hf  = ew_t.get("direct_hf_count", "—")
+            pwc = ew_t.get("direct_pwc_count", "—")
             md.append(
-                f"| {t['topic_id']} | {ew_t.get('n_direct', 0)} | {ew_t.get('n_partial', 0)} | "
-                f"{ew_summary.get('by_topic', {}).get(t['topic_id'], {}).get('n_adjacent', '—')} | "
-                f"`{ew_t.get('differentiator_strength', '—')}` | {blocked_disp} | {req_diff_disp} |"
+                f"| {tid} "
+                f"| {ew_t.get('direct_paper_count', '—')} "
+                f"| {ew_t.get('artifact_direct_count', '—')} "
+                f"| {gh}/{hf}/{pwc} "
+                f"| {peer_rev} "
+                f"| {high_art} "
+                f"| {art_diff_req} "
+                f"| `{ew_t.get('artifact_differentiator_strength', '—')}` "
+                f"| `{ew_t.get('paper_differentiator_strength', ew_t.get('differentiator_strength', '—'))}` "
+                f"| {blocked_disp} |"
             )
         md.append("")
 
@@ -332,12 +346,21 @@ def main(argv: list[str] | None = None) -> int:
         else:
             for tid in blocked:
                 ew_t = ew_by_topic.get(tid, {})
+                peer_rev_direct = ew_t.get("direct_paper_count", 0)
+                art_direct      = ew_t.get("artifact_direct_count", 0)
                 report_link = f"reports/topic_reports/{tid}_existing_work.md"
-                md.append(
-                    f"- **{tid}** — {ew_t.get('n_direct', '?')} direct overlap(s), "
-                    f"differentiator_strength=`{ew_t.get('differentiator_strength', '?')}`. "
-                    f"Details: `{report_link}`"
-                )
+                if peer_rev_direct > 0:
+                    md.append(
+                        f"- **{tid}** — {peer_rev_direct} peer-reviewed DIRECT paper(s), "
+                        f"paper_diff=`{ew_t.get('paper_differentiator_strength', '?')}`. "
+                        f"Details: `{report_link}`"
+                    )
+                else:
+                    md.append(
+                        f"- **{tid}** — 0 peer-reviewed papers, {art_direct} direct artifacts, "
+                        f"artifact_diff=`{ew_t.get('artifact_differentiator_strength', '?')}`. "
+                        f"Details: `{report_link}`"
+                    )
             md.append("")
 
         # §18b — Differentiator Required
@@ -349,23 +372,54 @@ def main(argv: list[str] | None = None) -> int:
             for tid in need_diff:
                 ew_t = ew_by_topic.get(tid, {})
                 md.append(
-                    f"- **{tid}** — {ew_t.get('n_direct', 0)} direct + "
-                    f"{ew_t.get('n_partial', 0)} partial overlap(s). "
+                    f"- **{tid}** — paper_direct={ew_t.get('direct_paper_count', 0)}, "
+                    f"artifact_direct={ew_t.get('artifact_direct_count', 0)}. "
                     f"Articulate gap before GO."
                 )
             md.append("")
 
-        # §18c — Topics to DROP / NARROW based on existing work
+        # §18c — Recommended DROP / NARROW from paper overlap
         md.append("### 18c. Recommended action based on existing-work findings\n")
-        drop_candidates = [tid for tid in blocked if ew_by_topic.get(tid, {}).get("differentiator_strength") == "none"]
+        drop_candidates = [
+            tid for tid in blocked
+            if ew_by_topic.get(tid, {}).get("paper_differentiator_strength",
+               ew_by_topic.get(tid, {}).get("differentiator_strength", "strong")) == "none"
+            and ew_by_topic.get(tid, {}).get("peer_reviewed_direct_overlap", False)
+        ]
         narrow_candidates = [tid for tid in (blocked + need_diff) if tid not in drop_candidates]
         if drop_candidates:
-            md.append(f"**Consider DROP** (differentiator_strength=`none`): {', '.join(drop_candidates)}")
+            md.append(f"**Consider DROP** (peer-reviewed overlap, paper_diff=`none`): {', '.join(drop_candidates)}")
         if narrow_candidates:
             md.append(f"**Consider additional NARROW** (overlaps found, but may be salvageable): {', '.join(narrow_candidates)}")
         if not drop_candidates and not narrow_candidates:
             md.append("_No DROP/NARROW recommendations from existing-work analysis._")
         md.append("")
+
+        # §18d — Artifact-only high-overlap topics
+        art_only_topics = ew_summary.get("artifact_only_high_overlap_topics", [])
+        md.append("### 18d. Artifact-Only High-Overlap Topics\n")
+        if not art_only_topics:
+            md.append("_No topics with high artifact overlap and zero peer-reviewed paper overlap._\n")
+        else:
+            md.append(
+                "> 📌 **For these topics:** Academic/paper overlap is absent, but GitHub/HF artifact "
+                "overlap is high. They may still be publishable — a peer-reviewed benchmark/protocol "
+                "with a clear domain or methodological focus is inherently different from repos/datasets. "
+                "Each topic must explicitly state: (1) peer-reviewed systematic protocol vs existing repos; "
+                "(2) specific domain/use-case vs general artifacts; (3) evaluation harness + paper.\n"
+            )
+            md.append("| Topic | Artifact Direct | Art-Diff | Artifact Differentiator Required |")
+            md.append("|---|---|---|---|")
+            for tid in art_only_topics:
+                ew_t = ew_by_topic.get(tid, {})
+                ew_full = _ew(tid)   # read full per-topic JSON for richer data
+                md.append(
+                    f"| **{tid}** "
+                    f"| {ew_t.get('artifact_direct_count', '?')} "
+                    f"| `{ew_t.get('artifact_differentiator_strength', '?')}` "
+                    f"| {'Yes — see checklist in per-topic report' if ew_t.get('artifact_differentiator_required') else 'No'} |"
+                )
+            md.append("")
 
     # ---- 19 Manual checks remaining
     md.append("## 19. Remaining manual checks\n")

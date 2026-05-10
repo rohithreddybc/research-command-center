@@ -1,24 +1,36 @@
 # Existing Work Report — T74_N1: Open structured-metadata dataset of LLM-eval papers — noise-pruned
 
-> ⚠️ **DIFFERENTIATOR REQUIRED** — 0 direct + 2 partial overlap(s); strength = `strong`.
+> ✅ **Clear to proceed** — no blocking overlaps (paper_direct=0, artifact_direct=0).
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 0 |
-| Partial overlaps | 2 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 0 |
+| HuggingFace direct artifacts | 0 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 0 |
+| Artifact diff strength | `strong` |
+| Partial overlaps (total) | 2 |
 | Adjacent | 0 |
 | Total findings | 2 |
-| Differentiator strength | `strong` |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | No |
 | GO blocked | No |
-| Differentiator required | Yes |
+| Differentiator required | No |
+| Artifact differentiator required | No |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
 
 _None._
 
-## Partial Overlaps (differentiator required)
+## Artifact Direct Overlaps (GitHub / HF / PWC)
+
+_None._
+
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
@@ -47,5 +59,4 @@ _None._
 
 ## Recommended Actions
 
-1. Document a clear differentiator before promoting to GO (partial overlaps: 2).
-2. Update `data/existing_work/T74_N1.json` → `requires_differentiator: true` acknowledged.
+1. No blocking overlaps. Proceed with normal GO gate checks.

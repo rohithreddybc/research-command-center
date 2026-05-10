@@ -126,29 +126,45 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
 
     # ---- Existing-work signals (from 12_detect_existing_work, if run) ----------
     ew = read_json(EW_DIR / f"{topic_id}.json", {}) or {}
-    ew_go_blocked          = bool(ew.get("go_blocked", False))
-    ew_requires_diff       = bool(ew.get("requires_differentiator", False))
-    ew_diff_strength       = ew.get("differentiator_strength", "strong")   # default: assume clear
-    ew_n_direct            = int(ew.get("n_direct", 0))
-    ew_n_partial           = int(ew.get("n_partial", 0))
-    ew_available           = bool(ew)
+    ew_go_blocked             = bool(ew.get("go_blocked", False))
+    ew_requires_diff          = bool(ew.get("requires_differentiator", False))
+    ew_diff_strength          = ew.get("differentiator_strength", "strong")   # paper diff (backward compat)
+    ew_n_direct               = int(ew.get("n_direct", 0))
+    ew_n_partial              = int(ew.get("n_partial", 0))
+    ew_available              = bool(ew)
+    # per-source fields (populated by updated 12_detect_existing_work)
+    ew_peer_reviewed_direct   = bool(ew.get("peer_reviewed_direct_overlap", False))
+    ew_artifact_direct        = bool(ew.get("artifact_direct_overlap", False))
+    ew_high_artifact          = bool(ew.get("high_artifact_overlap", False))
+    ew_artifact_diff_req      = bool(ew.get("artifact_differentiator_required", False))
+    ew_artifact_diff_strength = ew.get("artifact_differentiator_strength", "strong")
+    ew_direct_paper_count     = int(ew.get("direct_paper_count", 0))
+    ew_artifact_direct_count  = int(ew.get("artifact_direct_count", 0))
 
     reasons: list[str] = []
     extra_needed: list[str] = []
     manual_checks: list[str] = []
 
-    # Propagate existing-work manual checks
-    if ew_available and ew_go_blocked:
+    # Propagate existing-work manual checks — distinguish paper vs artifact overlap
+    if ew_available and ew_go_blocked and ew_peer_reviewed_direct:
         manual_checks.append(
-            f"Existing-work detection blocked GO: {ew_n_direct} direct overlap(s), "
-            f"differentiator_strength={ew_diff_strength}. "
+            f"Existing-work: {ew_direct_paper_count} peer-reviewed DIRECT overlap(s), "
+            f"paper_diff_strength={ew_diff_strength}. "
             f"See reports/topic_reports/{topic_id}_existing_work.md"
         )
-    elif ew_available and ew_requires_diff:
+    elif ew_available and ew_go_blocked and not ew_peer_reviewed_direct:
         manual_checks.append(
-            f"Existing-work: {ew_n_direct} direct + {ew_n_partial} partial overlaps — "
-            f"articulate differentiator before GO. "
-            f"See reports/topic_reports/{topic_id}_existing_work.md"
+            f"Existing-work: GO blocked by artifact overlap only "
+            f"({ew_artifact_direct_count} direct artifacts, artifact_diff={ew_artifact_diff_strength}). "
+            f"Complete artifact differentiator checklist — "
+            f"see reports/topic_reports/{topic_id}_existing_work.md"
+        )
+    elif ew_available and ew_artifact_diff_req and not ew_peer_reviewed_direct:
+        manual_checks.append(
+            f"Existing-work: {ew_artifact_direct_count} direct artifacts "
+            f"(no peer-reviewed paper overlap). "
+            f"Complete artifact differentiator checklist — "
+            f"see reports/topic_reports/{topic_id}_existing_work.md"
         )
 
     decision = "NEEDS_MORE_EVIDENCE"
@@ -197,6 +213,15 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
         elif differentiator_required and art >= 3:
             decision = "NARROW"
             reasons.append("Existing artifact density is high; topic must commit to a clear differentiator.")
+        elif (ew_available and ew_artifact_diff_req
+              and not ew_peer_reviewed_direct
+              and ew_high_artifact
+              and ew_artifact_diff_strength not in ("weak", "none")):
+            decision = "NARROW"
+            reasons.append(
+                f"High artifact overlap ({ew_artifact_direct_count} direct GitHub/HF/PWC artifacts), "
+                "no peer-reviewed paper directly covers this — publishable with explicit artifact differentiator."
+            )
 
     # ---- NEEDS_MORE_EVIDENCE: emit specific extra steps
     if decision == "NEEDS_MORE_EVIDENCE":
@@ -242,12 +267,19 @@ def gate_topic(topic_id: str, allow_go_without_llm: bool = False) -> dict[str, A
         "differentiator_required": differentiator_required,
         "existing_artifact_density": art_density,
         "existing_work": {
-            "available": ew_available,
-            "n_direct": ew_n_direct,
-            "n_partial": ew_n_partial,
-            "differentiator_strength": ew_diff_strength,
-            "go_blocked": ew_go_blocked,
-            "requires_differentiator": ew_requires_diff,
+            "available":                   ew_available,
+            "n_direct":                    ew_n_direct,
+            "n_partial":                   ew_n_partial,
+            "direct_paper_count":          ew_direct_paper_count,
+            "artifact_direct_count":       ew_artifact_direct_count,
+            "peer_reviewed_direct_overlap": ew_peer_reviewed_direct,
+            "artifact_direct_overlap":     ew_artifact_direct,
+            "high_artifact_overlap":       ew_high_artifact,
+            "differentiator_strength":     ew_diff_strength,
+            "artifact_differentiator_strength": ew_artifact_diff_strength,
+            "artifact_differentiator_required": ew_artifact_diff_req,
+            "go_blocked":                  ew_go_blocked,
+            "requires_differentiator":     ew_requires_diff,
         },
         "signals": {
             "Overall": overall,

@@ -1,6 +1,6 @@
 # Final decision report
 
-Generated: 2026-05-10T05:12:37.120535Z
+Generated: 2026-05-10T07:54:20.624779Z
 
 **Report status: `FULL_REVIEW_COMPLETE`**
 
@@ -46,92 +46,84 @@ _None._
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
-- Manual checks required:
-  - Existing-work: 0 direct + 2 partial overlaps — articulate differentiator before GO. See reports/topic_reports/T74_N1_existing_work.md
 
 ### T43 — Reproducibility audit of clinical LLM papers
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 2 direct overlap(s), differentiator_strength=weak. See reports/topic_reports/T43_existing_work.md
+  - Existing-work: 2 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T43_existing_work.md
 
 ### T04 — Prompt-template sensitivity benchmark for clinical-domain LLM judges
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 3 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T04_existing_work.md
+  - Existing-work: 2 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T04_existing_work.md
 
 ### T10 — Reproducibility audit of LLM-judge papers
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 14 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T10_existing_work.md
+  - Existing-work: 3 peer-reviewed DIRECT overlap(s), paper_diff_strength=none. See reports/topic_reports/T10_existing_work.md
 
 ### T07 — Judge robustness to candidate-side prompt injection
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 17 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T07_existing_work.md
+  - Existing-work: 16 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T07_existing_work.md
 
 ### T37 — Clinical-guideline consistency across LLM versions over time
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
-- Manual checks required:
-  - Existing-work detection blocked GO: 9 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T37_existing_work.md
 
 ### T37_N1 — Clinical-guideline consistency across LLM versions over time — noise-pruned
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
-- Manual checks required:
-  - Existing-work detection blocked GO: 10 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T37_N1_existing_work.md
 
 ### T53_N4 — Test-set contamination audit of healthcare LLM benchmarks — noise-pruned
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 26 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T53_N4_existing_work.md
+  - Existing-work: 6 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T53_N4_existing_work.md
 
 ### T74 — Open structured-metadata dataset of LLM-eval papers
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 13 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T74_existing_work.md
+  - Existing-work: 13 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T74_existing_work.md
 
 ### T17 — Tokenization-induced leaderboard variance
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 37 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T17_existing_work.md
+  - Existing-work: 2 peer-reviewed DIRECT overlap(s), paper_diff_strength=weak. See reports/topic_reports/T17_existing_work.md
 
 ### T25 — Hallucination taxonomy: RAG vs no-RAG
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
-- Manual checks required:
-  - Existing-work detection blocked GO: 7 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T25_existing_work.md
 
 ### T53 — Test-set contamination audit of healthcare LLM benchmarks
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 33 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T53_existing_work.md
+  - Existing-work: 11 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T53_existing_work.md
 
 ### T07_N1 — Judge robustness to candidate-side prompt injection — noise-pruned
 - Confidence: **MEDIUM**  ·  Status: **FULL_REVIEW_COMPLETE**
 - Reasoning: Audience exists; framing too broad for current venue path.
 - Completeness: evidence=True, extra=True, venue=True, llm=True, gate=True
 - Manual checks required:
-  - Existing-work detection blocked GO: 26 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T07_N1_existing_work.md
+  - Existing-work: 25 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T07_N1_existing_work.md
 
 ## 5. DROP topics
 
@@ -146,8 +138,8 @@ _None._
 | # | Topic | Decision | Conf | Status | EvQ | RelP | Manual checks remaining |
 |---|---|---|---|---|---|---|---|
 | 1 | T11: Format sensitivity benchmark on LLM evaluations | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 2 | 0.25 | - |
-| 2 | T74_N1: Open structured-metadata dataset of LLM-eval papers — noise-pruned | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 3 | 0.5 | Existing-work: 0 direct + 2 partial overlaps — articulate differentiator before GO. See reports/topic_reports/T74_N1_existing_work.md |
-| 3 | T43: Reproducibility audit of clinical LLM papers | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 4 | 0.25 | Existing-work detection blocked GO: 2 direct overlap(s), differentiator_strength=weak. See reports/topic_reports/T43_existing_work.md |
+| 2 | T74_N1: Open structured-metadata dataset of LLM-eval papers — noise-pruned | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 3 | 0.5 | - |
+| 3 | T43: Reproducibility audit of clinical LLM papers | **NARROW** | MEDIUM | FULL_REVIEW_COMPLETE | 4 | 0.25 | Existing-work: 2 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T |
 
 ## 9. Evidence table for top 3 (top 5 papers per topic, by relevance)
 
@@ -326,75 +318,77 @@ _None._
 
 ## 18. Existing Work Detection
 
-| Topic | Direct | Partial | Adjacent | Diff-Strength | GO Blocked | Req. Diff |
-|---|---|---|---|---|---|---|
-| T11 | 0 | 1 | — | `strong` | No | No |
-| T74_N1 | 0 | 2 | — | `strong` | No | ⚠️ Yes |
-| T43 | 2 | 3 | — | `weak` | ⛔ YES | ⚠️ Yes |
-| T04 | 3 | 12 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T10 | 14 | 16 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T07 | 17 | 17 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T37 | 9 | 7 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T37_N1 | 10 | 7 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T53_N4 | 26 | 18 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T74 | 13 | 8 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T17 | 37 | 16 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T25 | 7 | 12 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T53 | 33 | 23 | — | `none` | ⛔ YES | ⚠️ Yes |
-| T07_N1 | 26 | 23 | — | `none` | ⛔ YES | ⚠️ Yes |
+| Topic | Paper Direct | Artifact Direct | (GH / HF / PWC) | Peer-Rev? | High-Art? | Art-Diff-Req | Art-Diff | Paper-Diff | GO Blocked |
+|---|---|---|---|---|---|---|---|---|---|
+| T11 | 0 | 0 | 0/0/0 | — | — | — | `strong` | `strong` | No |
+| T74_N1 | 0 | 0 | 0/0/0 | — | — | — | `strong` | `strong` | No |
+| T43 | 0 | 2 | 0/2/0 | — | — | Yes | `strong` | `strong` | No |
+| T04 | 0 | 2 | 1/1/0 | — | — | Yes | `strong` | `strong` | No |
+| T10 | 3 | 3 | 1/2/0 | ✅ | — | Yes | `none` | `none` | ⛔ YES |
+| T07 | 0 | 16 | 5/11/0 | — | ⚠️ | Yes | `moderate` | `strong` | No |
+| T37 | 0 | 0 | 0/0/0 | — | — | — | `strong` | `strong` | No |
+| T37_N1 | 0 | 0 | 0/0/0 | — | — | — | `strong` | `strong` | No |
+| T53_N4 | 0 | 6 | 2/4/0 | — | — | Yes | `strong` | `strong` | No |
+| T74 | 0 | 13 | 0/13/0 | — | ⚠️ | Yes | `strong` | `strong` | No |
+| T17 | 2 | 6 | 2/4/0 | ✅ | — | Yes | `moderate` | `weak` | ⛔ YES |
+| T25 | 1 | 2 | 2/0/0 | ✅ | — | Yes | `weak` | `moderate` | No |
+| T53 | 0 | 11 | 2/9/0 | — | ⚠️ | Yes | `strong` | `strong` | No |
+| T07_N1 | 0 | 25 | 5/20/0 | — | ⚠️ | Yes | `moderate` | `strong` | No |
 
 ### 18a. Direct Overlap Risks (GO-blocked topics)
 
-- **T04** — 3 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T04_existing_work.md`
-- **T07** — 17 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T07_existing_work.md`
-- **T07_N1** — 26 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T07_N1_existing_work.md`
-- **T10** — 14 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T10_existing_work.md`
-- **T17** — 37 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T17_existing_work.md`
-- **T25** — 7 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T25_existing_work.md`
-- **T37** — 9 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T37_existing_work.md`
-- **T37_N1** — 10 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T37_N1_existing_work.md`
-- **T43** — 2 direct overlap(s), differentiator_strength=`weak`. Details: `reports/topic_reports/T43_existing_work.md`
-- **T53** — 33 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T53_existing_work.md`
-- **T53_N4** — 26 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T53_N4_existing_work.md`
-- **T74** — 13 direct overlap(s), differentiator_strength=`none`. Details: `reports/topic_reports/T74_existing_work.md`
+- **T10** — 3 peer-reviewed DIRECT paper(s), paper_diff=`none`. Details: `reports/topic_reports/T10_existing_work.md`
+- **T17** — 2 peer-reviewed DIRECT paper(s), paper_diff=`weak`. Details: `reports/topic_reports/T17_existing_work.md`
 
 ### 18b. Differentiator Required Topics
 
-- **T74_N1** — 0 direct + 2 partial overlap(s). Articulate gap before GO.
+- **T04** — paper_direct=0, artifact_direct=2. Articulate gap before GO.
+- **T07** — paper_direct=0, artifact_direct=16. Articulate gap before GO.
+- **T07_N1** — paper_direct=0, artifact_direct=25. Articulate gap before GO.
+- **T25** — paper_direct=1, artifact_direct=2. Articulate gap before GO.
+- **T37** — paper_direct=0, artifact_direct=0. Articulate gap before GO.
+- **T37_N1** — paper_direct=0, artifact_direct=0. Articulate gap before GO.
+- **T43** — paper_direct=0, artifact_direct=2. Articulate gap before GO.
+- **T53** — paper_direct=0, artifact_direct=11. Articulate gap before GO.
+- **T53_N4** — paper_direct=0, artifact_direct=6. Articulate gap before GO.
+- **T74** — paper_direct=0, artifact_direct=13. Articulate gap before GO.
 
 ### 18c. Recommended action based on existing-work findings
 
-**Consider DROP** (differentiator_strength=`none`): T04, T07, T07_N1, T10, T17, T25, T37, T37_N1, T53, T53_N4, T74
-**Consider additional NARROW** (overlaps found, but may be salvageable): T43, T74_N1
+**Consider DROP** (peer-reviewed overlap, paper_diff=`none`): T10
+**Consider additional NARROW** (overlaps found, but may be salvageable): T17, T04, T07, T07_N1, T25, T37, T37_N1, T43, T53, T53_N4, T74
+
+### 18d. Artifact-Only High-Overlap Topics
+
+> 📌 **For these topics:** Academic/paper overlap is absent, but GitHub/HF artifact overlap is high. They may still be publishable — a peer-reviewed benchmark/protocol with a clear domain or methodological focus is inherently different from repos/datasets. Each topic must explicitly state: (1) peer-reviewed systematic protocol vs existing repos; (2) specific domain/use-case vs general artifacts; (3) evaluation harness + paper.
+
+| Topic | Artifact Direct | Art-Diff | Artifact Differentiator Required |
+|---|---|---|---|
+| **T07** | 16 | `moderate` | Yes — see checklist in per-topic report |
+| **T07_N1** | 25 | `moderate` | Yes — see checklist in per-topic report |
+| **T53** | 11 | `strong` | Yes — see checklist in per-topic report |
+| **T74** | 13 | `strong` | Yes — see checklist in per-topic report |
 
 ## 19. Remaining manual checks
 
-### T74_N1
-- Existing-work: 0 direct + 2 partial overlaps — articulate differentiator before GO. See reports/topic_reports/T74_N1_existing_work.md
 ### T43
-- Existing-work detection blocked GO: 2 direct overlap(s), differentiator_strength=weak. See reports/topic_reports/T43_existing_work.md
+- Existing-work: 2 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T43_existing_work.md
 ### T04
-- Existing-work detection blocked GO: 3 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T04_existing_work.md
+- Existing-work: 2 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T04_existing_work.md
 ### T10
-- Existing-work detection blocked GO: 14 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T10_existing_work.md
+- Existing-work: 3 peer-reviewed DIRECT overlap(s), paper_diff_strength=none. See reports/topic_reports/T10_existing_work.md
 ### T07
-- Existing-work detection blocked GO: 17 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T07_existing_work.md
-### T37
-- Existing-work detection blocked GO: 9 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T37_existing_work.md
-### T37_N1
-- Existing-work detection blocked GO: 10 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T37_N1_existing_work.md
+- Existing-work: 16 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T07_existing_work.md
 ### T53_N4
-- Existing-work detection blocked GO: 26 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T53_N4_existing_work.md
+- Existing-work: 6 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T53_N4_existing_work.md
 ### T74
-- Existing-work detection blocked GO: 13 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T74_existing_work.md
+- Existing-work: 13 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T74_existing_work.md
 ### T17
-- Existing-work detection blocked GO: 37 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T17_existing_work.md
-### T25
-- Existing-work detection blocked GO: 7 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T25_existing_work.md
+- Existing-work: 2 peer-reviewed DIRECT overlap(s), paper_diff_strength=weak. See reports/topic_reports/T17_existing_work.md
 ### T53
-- Existing-work detection blocked GO: 33 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T53_existing_work.md
+- Existing-work: 11 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T53_existing_work.md
 ### T07_N1
-- Existing-work detection blocked GO: 26 direct overlap(s), differentiator_strength=none. See reports/topic_reports/T07_N1_existing_work.md
+- Existing-work: 25 direct artifacts (no peer-reviewed paper overlap). Complete artifact differentiator checklist — see reports/topic_reports/T07_N1_existing_work.md
 
 ## 20. Final recommendation
 

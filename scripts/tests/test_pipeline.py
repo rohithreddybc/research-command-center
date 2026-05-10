@@ -878,6 +878,275 @@ class TestExistingWorkDetection(unittest.TestCase):
         self.assertEqual(summary["differentiator_strength"], "strong")
         self.assertFalse(summary["go_blocked"])
 
+    # ---- paper threshold tests ----
+
+    def test_classify_papers_partial_at_0_50(self):
+        """Paper with relevance=0.50 → PARTIAL_OVERLAP at default threshold (0.65)."""
+        import tempfile, csv as _csv
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            csv_path = Path(td) / "TP1.csv"
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "abstract", "year", "venue", "doi",
+                    "relevance_score", "matched_keywords", "citations", "sources",
+                ])
+                w.writeheader()
+                w.writerow({
+                    "title": "A benchmark for LLM judge evaluation",
+                    "abstract": "We propose a benchmark to evaluate judges.",
+                    "year": "2024", "venue": "ACL", "doi": "10.1234/tp1",
+                    "relevance_score": "0.50",   # below default 0.65 threshold
+                    "matched_keywords": "primary:title:LLM judge",
+                    "citations": "10", "sources": "semantic_scholar",
+                })
+            topic = {
+                "topic_id": "TP1", "keywords": "LLM judge|benchmark", "synonyms": "",
+                "negative_keywords": "", "target_artifact": "benchmark",
+                "title": "LLM judge benchmark", "narrowing_note": "",
+            }
+            results = self.mod.classify_papers(topic)   # uses default DIRECT_REL_THRESHOLD=0.65
+        self.mod.DEDUP_DIR = orig
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["overlap_class"], "PARTIAL_OVERLAP",
+                         "Score 0.50 must be PARTIAL, not DIRECT, at default threshold 0.65")
+
+    def test_classify_papers_direct_at_0_70(self):
+        """Paper with relevance=0.70 AND artifact match AND year≥2022 → DIRECT_OVERLAP."""
+        import tempfile, csv as _csv
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            csv_path = Path(td) / "TP2.csv"
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "abstract", "year", "venue", "doi",
+                    "relevance_score", "matched_keywords", "citations", "sources",
+                ])
+                w.writeheader()
+                w.writerow({
+                    "title": "LLM judge benchmark for prompt injection robustness",
+                    "abstract": "A benchmark evaluating LLM judge robustness to injection attacks.",
+                    "year": "2024", "venue": "NeurIPS", "doi": "10.1234/tp2",
+                    "relevance_score": "0.70",
+                    "matched_keywords": "primary:title:llm judge",
+                    "citations": "55", "sources": "semantic_scholar",
+                })
+            topic = {
+                "topic_id": "TP2", "keywords": "LLM judge|benchmark", "synonyms": "",
+                "negative_keywords": "", "target_artifact": "benchmark",
+                "title": "LLM judge benchmark", "narrowing_note": "",
+            }
+            results = self.mod.classify_papers(topic)
+        self.mod.DEDUP_DIR = orig
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["overlap_class"], "DIRECT_OVERLAP",
+                         "Score 0.70 with artifact match must be DIRECT_OVERLAP")
+
+    # ── source-count tests ──────────────────────────────────────────────────────
+
+    def test_analyze_topic_source_counts_github(self):
+        """GitHub DIRECT_OVERLAP increments direct_github_count, not direct_paper_count."""
+        import tempfile, json as _json
+        orig_ded = self.mod.DEDUP_DIR
+        orig_ev  = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            ded_dir = Path(td) / "dedup"
+            ev_dir  = Path(td) / "evidence"
+            ded_dir.mkdir(); ev_dir.mkdir()
+            self.mod.DEDUP_DIR    = ded_dir
+            self.mod.EVIDENCE_DIR = ev_dir
+            # No papers CSV → zero paper findings
+            gh_dir = ev_dir / "TSC"
+            gh_dir.mkdir()
+            (gh_dir / "github.json").write_text(_json.dumps([{
+                "query": "prompt injection benchmark",
+                "results": [{
+                    "name": "acme/prompt-injection-benchmark",
+                    "stars": 200,
+                    "description": "A benchmark for evaluation of prompt injection in LLM judges",
+                    "url": "https://github.com/acme/prompt-injection-benchmark",
+                    "topics": ["benchmark", "prompt-injection"],
+                    "pushed_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                }],
+            }]), encoding="utf-8")
+            topic = {
+                "topic_id": "TSC", "keywords": "prompt injection|LLM judge", "synonyms": "",
+                "negative_keywords": "", "target_artifact": "benchmark",
+                "title": "Prompt injection benchmark", "narrowing_note": "",
+            }
+            result = self.mod.analyze_topic(topic)
+        self.mod.DEDUP_DIR    = orig_ded
+        self.mod.EVIDENCE_DIR = orig_ev
+        s = result["summary"]
+        self.assertEqual(s["direct_paper_count"], 0, "No papers → direct_paper_count must be 0")
+        self.assertGreater(s["direct_github_count"], 0, "GitHub DIRECT must increment direct_github_count")
+        self.assertFalse(s["peer_reviewed_direct_overlap"], "No paper overlap → peer_reviewed_direct must be False")
+        self.assertTrue(s["artifact_direct_overlap"], "GitHub DIRECT → artifact_direct_overlap must be True")
+
+    def test_analyze_topic_source_counts_hf(self):
+        """HuggingFace DIRECT_OVERLAP increments direct_hf_count, not direct_paper_count."""
+        import tempfile, json as _json
+        orig_ded = self.mod.DEDUP_DIR
+        orig_ev  = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            ded_dir = Path(td) / "dedup"
+            ev_dir  = Path(td) / "evidence"
+            ded_dir.mkdir(); ev_dir.mkdir()
+            self.mod.DEDUP_DIR    = ded_dir
+            self.mod.EVIDENCE_DIR = ev_dir
+            hf_dir = ev_dir / "THF"
+            hf_dir.mkdir()
+            (hf_dir / "huggingface.json").write_text(_json.dumps([{
+                "query": "prompt injection",
+                "results": [{
+                    "id": "acme/prompt-injection-benchmark-dataset",
+                    "downloads": 5000,   # well above HF_DIRECT_DOWNLOADS=100
+                    "likes": 80,
+                    "tags": ["text-classification", "prompt-injection"],
+                    "description": "Dataset for prompt injection detection benchmarks",
+                }],
+            }]), encoding="utf-8")
+            topic = {
+                "topic_id": "THF", "keywords": "prompt injection|LLM judge", "synonyms": "",
+                "negative_keywords": "", "target_artifact": "dataset",
+                "title": "Prompt injection dataset", "narrowing_note": "",
+            }
+            result = self.mod.analyze_topic(topic)
+        self.mod.DEDUP_DIR    = orig_ded
+        self.mod.EVIDENCE_DIR = orig_ev
+        s = result["summary"]
+        self.assertEqual(s["direct_paper_count"], 0, "No papers → direct_paper_count must be 0")
+        self.assertGreater(s["direct_hf_count"], 0, "HF DIRECT must increment direct_hf_count")
+        self.assertFalse(s["peer_reviewed_direct_overlap"])
+        self.assertTrue(s["artifact_direct_overlap"])
+
+    # ── _artifact_differentiator_strength tests ────────────────────────────────
+
+    def test_artifact_differentiator_strength_domain_topic(self):
+        """Clinical topic with no peer-reviewed paper overlap → 'strong' artifact diff."""
+        topic = {
+            "topic_id": "TADS",
+            "keywords": "clinical LLM|benchmark|reproducibility",
+            "synonyms": "",
+            "negative_keywords": "",
+            "target_artifact": "benchmark",
+            "title": "Clinical LLM benchmark",
+            "category": "eval",
+        }
+        strength = self.mod._artifact_differentiator_strength(topic, peer_reviewed_direct=0, artifact_direct_count=5)
+        self.assertEqual(strength, "strong",
+                         "Domain-specific (clinical) + systematic (benchmark/reproducib) → strong")
+
+    def test_artifact_differentiator_strength_generic_high(self):
+        """Generic topic with many artifacts and no paper overlap → 'weak' or 'moderate'."""
+        topic = {
+            "topic_id": "TADG",
+            "keywords": "language model|NLP",
+            "synonyms": "",
+            "negative_keywords": "",
+            "target_artifact": "paper",
+            "title": "Language model study",
+            "category": "general",
+        }
+        strength = self.mod._artifact_differentiator_strength(
+            topic, peer_reviewed_direct=0,
+            artifact_direct_count=self.mod.HIGH_ARTIFACT_OVERLAP_THRESHOLD + 2
+        )
+        self.assertIn(strength, ("weak", "moderate"),
+                      "Generic topic + many artifacts → weak or moderate, not strong")
+
+    # ── go_blocked logic tests ─────────────────────────────────────────────────
+
+    def test_go_blocked_high_paper_overlap(self):
+        """3+ peer-reviewed DIRECT papers → go_blocked must be True."""
+        import tempfile, csv as _csv
+        orig = self.mod.DEDUP_DIR
+        with tempfile.TemporaryDirectory() as td:
+            self.mod.DEDUP_DIR = Path(td)
+            csv_path = Path(td) / "TGB.csv"
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "abstract", "year", "venue", "doi",
+                    "relevance_score", "matched_keywords", "citations", "sources",
+                ])
+                w.writeheader()
+                for i in range(4):   # 4 direct-quality papers
+                    w.writerow({
+                        "title": f"LLM judge benchmark paper {i} for prompt injection",
+                        "abstract": "A benchmark for LLM judge robustness.",
+                        "year": "2024", "venue": "ACL", "doi": f"10.1234/tgb{i}",
+                        "relevance_score": "0.75",
+                        "matched_keywords": "primary:title:llm judge",
+                        "citations": "30", "sources": "semantic_scholar",
+                    })
+            topic = {
+                "topic_id": "TGB", "keywords": "LLM judge|benchmark", "synonyms": "",
+                "negative_keywords": "", "target_artifact": "benchmark",
+                "title": "LLM judge benchmark", "narrowing_note": "",
+            }
+            result = self.mod.analyze_topic(topic)
+        self.mod.DEDUP_DIR = orig
+        s = result["summary"]
+        self.assertGreaterEqual(s["direct_paper_count"], 3)
+        self.assertTrue(s["high_peer_reviewed_overlap"])
+        self.assertTrue(s["go_blocked"], "high_peer_reviewed_overlap + weak/none paper_diff → go_blocked")
+
+    def test_no_go_blocked_artifact_only_strong_diff(self):
+        """0 direct papers + high artifact overlap + strong artifact diff → go_blocked False."""
+        import tempfile, json as _json
+        orig_ded = self.mod.DEDUP_DIR
+        orig_ev  = self.mod.EVIDENCE_DIR
+        with tempfile.TemporaryDirectory() as td:
+            ded_dir = Path(td) / "dedup"
+            ev_dir  = Path(td) / "evidence"
+            ded_dir.mkdir(); ev_dir.mkdir()
+            self.mod.DEDUP_DIR    = ded_dir
+            self.mod.EVIDENCE_DIR = ev_dir
+            gh_dir = ev_dir / "TNGB"
+            gh_dir.mkdir()
+            # Create 10 direct GitHub artifact overlaps (above HIGH_ARTIFACT_OVERLAP_THRESHOLD=8)
+            repos = [
+                {
+                    "name": f"org/prompt-injection-bench-{i}",
+                    "stars": 150,
+                    "description": f"Benchmark for evaluating prompt injection in LLM judge {i}",
+                    "url": f"https://github.com/org/prompt-injection-bench-{i}",
+                    "topics": ["benchmark", "prompt-injection"],
+                    "pushed_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                }
+                for i in range(10)
+            ]
+            (gh_dir / "github.json").write_text(
+                _json.dumps([{"query": "prompt injection benchmark", "results": repos}]),
+                encoding="utf-8"
+            )
+            # Topic has clear domain + evaluation differentiators → artifact_diff = strong
+            topic = {
+                "topic_id": "TNGB",
+                "keywords": "prompt injection|LLM judge|benchmark",
+                "synonyms": "evaluator robustness",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "title": "Clinical LLM judge robustness benchmark",
+                "category": "eval+safety",
+                "narrowing_note": "",
+            }
+            result = self.mod.analyze_topic(topic)
+        self.mod.DEDUP_DIR    = orig_ded
+        self.mod.EVIDENCE_DIR = orig_ev
+        s = result["summary"]
+        self.assertEqual(s["direct_paper_count"], 0)
+        self.assertTrue(s["high_artifact_overlap"], "10 GitHub repos must trigger high_artifact_overlap")
+        self.assertFalse(s["peer_reviewed_direct_overlap"])
+        # artifact_diff should be strong (topic has benchmark/robustness keywords → systematic + eval_focused)
+        self.assertIn(s["artifact_differentiator_strength"], ("strong", "moderate"))
+        self.assertFalse(s["go_blocked"],
+                         "Strong/moderate artifact diff with no paper overlap must NOT block GO")
+
     # ---- integration test (runs on real data if present) ----
 
     def test_main_runs_on_real_data(self):

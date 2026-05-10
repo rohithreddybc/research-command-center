@@ -1,33 +1,56 @@
 # Existing Work Report — T37_N1: Clinical-guideline consistency across LLM versions over time — noise-pruned
 
-> ⛔ **GO BLOCKED** — 10 direct overlap(s) found; differentiator strength = `none`.
+> ⚠️ **DIFFERENTIATOR REQUIRED** — paper_direct=0, artifact_direct=0; paper_strength=`strong`, artifact_strength=`strong`.
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 10 |
-| Partial overlaps | 7 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 0 |
+| HuggingFace direct artifacts | 0 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 0 |
+| Artifact diff strength | `strong` |
+| Partial overlaps (total) | 17 |
 | Adjacent | 16 |
 | Total findings | 33 |
-| Differentiator strength | `none` |
-| GO blocked | **YES** |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | No |
+| GO blocked | No |
 | Differentiator required | Yes |
+| Artifact differentiator required | No |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
+
+_None._
+
+## Artifact Direct Overlaps (GitHub / HF / PWC)
+
+_None._
+
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | paper | [First ‘NICE-curated’ clinical guideline announced](https://doi.org/10.1211/pj.2025.1.372584) | 2025 | Pharmaceutical Journal | paper | 0.625 | none |
-| 2 | paper | [CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for B](https://doi.org/10.15585/mmwr.rr7302a1) | 2024 | MMWR Recommendations and Reports | paper | 0.5 | none |
-| 3 | paper | [ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis.](https://doi.org/10.14309/ajg.0000000000003194) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 4 | paper | [ACG Clinical Guideline Update: Ulcerative Colitis in Adults](https://doi.org/10.14309/ajg.0000000000003463) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 5 | paper | [ACG Clinical Guideline: Management of Crohn's Disease in Adults](https://doi.org/10.14309/ajg.0000000000003465) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 6 | paper | [ACG Clinical Guideline: Malnutrition and Nutritional Recommendations in Liver Di](https://doi.org/10.14309/ajg.0000000000003379) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 7 | paper | [ACG Clinical Guideline: Diagnosis and Management of Gastric Premalignant Conditi](https://doi.org/10.14309/ajg.0000000000003350) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 8 | paper | [The 2024 UK clinical guideline for the prevention and treatment of osteoporosis](https://doi.org/10.1007/s11657-025-01588-3) | 2025 | Archives of Osteoporosis | paper | 0.5 | none |
-| 9 | paper | [ACG Clinical Guideline Update: Preventive Care in Inflammatory Bowel Disease.](https://doi.org/10.14309/ajg.0000000000003541) | 2025 | American Journal of Gastroenterology | paper | 0.5 | none |
-| 10 | paper | [Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Phys](https://doi.org/10.1016/j.jphys.2024.05.009) | 2024 | Journal of Physiotherapy | paper | 0.5 | none |
+| 1 | paper | [First ‘NICE-curated’ clinical guideline announced](https://doi.org/10.1211/pj.2025.1.372584) | 2025 | Pharmaceutical Journal | paper | 0.625 | moderate |
+| 2 | paper | [CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for B](https://doi.org/10.15585/mmwr.rr7302a1) | 2024 | MMWR Recommendations and Reports | paper | 0.5 | moderate |
+| 3 | paper | [ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis.](https://doi.org/10.14309/ajg.0000000000003194) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 4 | paper | [ACG Clinical Guideline Update: Ulcerative Colitis in Adults](https://doi.org/10.14309/ajg.0000000000003463) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 5 | paper | [ACG Clinical Guideline: Management of Crohn's Disease in Adults](https://doi.org/10.14309/ajg.0000000000003465) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 6 | paper | [ACG Clinical Guideline: Malnutrition and Nutritional Recommendations in Liver Di](https://doi.org/10.14309/ajg.0000000000003379) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 7 | paper | [ACG Clinical Guideline: Diagnosis and Management of Gastric Premalignant Conditi](https://doi.org/10.14309/ajg.0000000000003350) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 8 | paper | [The 2024 UK clinical guideline for the prevention and treatment of osteoporosis](https://doi.org/10.1007/s11657-025-01588-3) | 2025 | Archives of Osteoporosis | paper | 0.5 | moderate |
+| 9 | paper | [ACG Clinical Guideline Update: Preventive Care in Inflammatory Bowel Disease.](https://doi.org/10.14309/ajg.0000000000003541) | 2025 | American Journal of Gastroenterology | paper | 0.5 | moderate |
+| 10 | paper | [Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Phys](https://doi.org/10.1016/j.jphys.2024.05.009) | 2024 | Journal of Physiotherapy | paper | 0.5 | moderate |
+| 11 | huggingface | [rubanza/uganda-clinical-guidelines](https://huggingface.co/datasets/rubanza/uganda-clinical-guidelines) |  | HuggingFace | dataset | 60 | moderate |
+| 12 | huggingface | [ClarusC64/clinical-guideline-strength-correspondence-v0.1](https://huggingface.co/datasets/ClarusC64/clinical-guideline-strength-correspondence-v0.1) |  | HuggingFace | dataset | 24 | moderate |
+| 13 | huggingface | [chisomrutherford/nigeria-clinical-guidelines-dataset](https://huggingface.co/datasets/chisomrutherford/nigeria-clinical-guidelines-dataset) |  | HuggingFace | dataset | 81 | moderate |
+| 14 | huggingface | [Khyatimirani/pcos-clinical-guideline-101](https://huggingface.co/datasets/Khyatimirani/pcos-clinical-guideline-101) |  | HuggingFace | dataset | 52 | moderate |
+| 15 | huggingface | [Khyatimirani/peri-menopause-clinical-guideline](https://huggingface.co/datasets/Khyatimirani/peri-menopause-clinical-guideline) |  | HuggingFace | dataset | 32 | moderate |
+| 16 | huggingface | [Khyatimirani/pcos-lean-clinical-guideline](https://huggingface.co/datasets/Khyatimirani/pcos-lean-clinical-guideline) |  | HuggingFace | dataset | 22 | moderate |
+| 17 | huggingface | [ClarusC64/clinical-team-mental-model-drift-detection-v0.1](https://huggingface.co/datasets/ClarusC64/clinical-team-mental-model-drift-detection-v0.1) |  | HuggingFace | dataset | 20 | moderate |
 
 ### 1. First ‘NICE-curated’ clinical guideline announced
 - **Source**: paper  **URL**: https://doi.org/10.1211/pj.2025.1.372584
@@ -35,7 +58,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.62: paper titled 'First ‘NICE-curated’ clinical guideline announced' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline|syn:title:nice.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 2. CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for Bacterial Sexually Transmitted Infection 
 - **Source**: paper  **URL**: https://doi.org/10.15585/mmwr.rr7302a1
@@ -43,7 +66,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis for Bacterial Sexually Tr' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 3. ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis.
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003194
@@ -51,7 +74,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline: Diagnosis and Management of Eosinophilic Esophagitis.' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 4. ACG Clinical Guideline Update: Ulcerative Colitis in Adults
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003463
@@ -59,7 +82,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline Update: Ulcerative Colitis in Adults' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 5. ACG Clinical Guideline: Management of Crohn's Disease in Adults
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003465
@@ -67,7 +90,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline: Management of Crohn's Disease in Adults' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 6. ACG Clinical Guideline: Malnutrition and Nutritional Recommendations in Liver Disease
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003379
@@ -75,7 +98,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline: Malnutrition and Nutritional Recommendations in Liver Disease' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 7. ACG Clinical Guideline: Diagnosis and Management of Gastric Premalignant Conditions
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003350
@@ -83,7 +106,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline: Diagnosis and Management of Gastric Premalignant Conditions' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 8. The 2024 UK clinical guideline for the prevention and treatment of osteoporosis
 - **Source**: paper  **URL**: https://doi.org/10.1007/s11657-025-01588-3
@@ -91,7 +114,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'The 2024 UK clinical guideline for the prevention and treatment of osteoporosis' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 9. ACG Clinical Guideline Update: Preventive Care in Inflammatory Bowel Disease.
 - **Source**: paper  **URL**: https://doi.org/10.14309/ajg.0000000000003541
@@ -99,7 +122,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'ACG Clinical Guideline Update: Preventive Care in Inflammatory Bowel Disease.' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
 ### 10. Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Physical Rehabilitation and Mobilisation in 
 - **Source**: paper  **URL**: https://doi.org/10.1016/j.jphys.2024.05.009
@@ -107,75 +130,63 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Physical Rehabilitation ' contributes a 'paper' matching target artifact 'empirical'. Matched keywords: primary:title:clinical guideline.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `moderate`
 
-## Partial Overlaps (differentiator required)
-
-| # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
-|---|---|---|---|---|---|---|---|
-| 1 | huggingface | [rubanza/uganda-clinical-guidelines](https://huggingface.co/datasets/rubanza/uganda-clinical-guidelines) |  | HuggingFace | dataset | 60 | weak |
-| 2 | huggingface | [ClarusC64/clinical-guideline-strength-correspondence-v0.1](https://huggingface.co/datasets/ClarusC64/clinical-guideline-strength-correspondence-v0.1) |  | HuggingFace | dataset | 24 | weak |
-| 3 | huggingface | [chisomrutherford/nigeria-clinical-guidelines-dataset](https://huggingface.co/datasets/chisomrutherford/nigeria-clinical-guidelines-dataset) |  | HuggingFace | dataset | 81 | weak |
-| 4 | huggingface | [Khyatimirani/pcos-clinical-guideline-101](https://huggingface.co/datasets/Khyatimirani/pcos-clinical-guideline-101) |  | HuggingFace | dataset | 52 | weak |
-| 5 | huggingface | [Khyatimirani/peri-menopause-clinical-guideline](https://huggingface.co/datasets/Khyatimirani/peri-menopause-clinical-guideline) |  | HuggingFace | dataset | 32 | weak |
-| 6 | huggingface | [Khyatimirani/pcos-lean-clinical-guideline](https://huggingface.co/datasets/Khyatimirani/pcos-lean-clinical-guideline) |  | HuggingFace | dataset | 22 | weak |
-| 7 | huggingface | [ClarusC64/clinical-team-mental-model-drift-detection-v0.1](https://huggingface.co/datasets/ClarusC64/clinical-team-mental-model-drift-detection-v0.1) |  | HuggingFace | dataset | 20 | weak |
-
-### 1. rubanza/uganda-clinical-guidelines
+### 11. rubanza/uganda-clinical-guidelines
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/rubanza/uganda-clinical-guidelines
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'rubanza/uganda-clinical-guidelines' (60 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 2. ClarusC64/clinical-guideline-strength-correspondence-v0.1
+### 12. ClarusC64/clinical-guideline-strength-correspondence-v0.1
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/ClarusC64/clinical-guideline-strength-correspondence-v0.1
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'ClarusC64/clinical-guideline-strength-correspondence-v0.1' (24 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 3. chisomrutherford/nigeria-clinical-guidelines-dataset
+### 13. chisomrutherford/nigeria-clinical-guidelines-dataset
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/chisomrutherford/nigeria-clinical-guidelines-dataset
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'chisomrutherford/nigeria-clinical-guidelines-dataset' (81 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 4. Khyatimirani/pcos-clinical-guideline-101
+### 14. Khyatimirani/pcos-clinical-guideline-101
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/Khyatimirani/pcos-clinical-guideline-101
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'Khyatimirani/pcos-clinical-guideline-101' (52 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 5. Khyatimirani/peri-menopause-clinical-guideline
+### 15. Khyatimirani/peri-menopause-clinical-guideline
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/Khyatimirani/peri-menopause-clinical-guideline
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'Khyatimirani/peri-menopause-clinical-guideline' (32 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 6. Khyatimirani/pcos-lean-clinical-guideline
+### 16. Khyatimirani/pcos-lean-clinical-guideline
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/Khyatimirani/pcos-lean-clinical-guideline
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'Khyatimirani/pcos-lean-clinical-guideline' (22 downloads) matched 'clinical guideline' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
-### 7. ClarusC64/clinical-team-mental-model-drift-detection-v0.1
+### 17. ClarusC64/clinical-team-mental-model-drift-detection-v0.1
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/ClarusC64/clinical-team-mental-model-drift-detection-v0.1
 - **Year/Venue**:  / HuggingFace
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'ClarusC64/clinical-team-mental-model-drift-detection-v0.1' (20 downloads) matched 'model drift' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Clinical-guideline consistency across LLM versions over time — noise-pruned'. Narrowing note: removed noisy secondaries=['longitudinal evaluation']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ## Adjacent Work (context only)
 
@@ -328,6 +339,4 @@
 
 ## Recommended Actions
 
-1. **Do not promote T37_N1 to GO** until you have articulated a concrete differentiator vs the 10 direct overlap(s) above.
-2. For each DIRECT_OVERLAP, fill in the 'how_we_differ' column in the CSV with a specific contribution claim.
-3. If a differentiator cannot be found, consider DROPping or NARROWING further.
+1. Document a clear differentiator before GO (partial overlaps: 17).

@@ -2,30 +2,31 @@
   "topic_id": "T07_N1",
   "topic_title": "Judge robustness to candidate-side prompt injection — noise-pruned",
   "target_artifact": "benchmark",
-  "n_direct": 26,
-  "n_partial": 23,
+  "direct_paper_count": 0,
+  "direct_github_count": 5,
+  "direct_hf_count": 20,
+  "direct_pwc_count": 0,
+  "artifact_direct_count": 25,
+  "direct_total_count": 25,
+  "partial_paper_count": 14,
+  "partial_github_count": 2,
+  "partial_hf_count": 8,
+  "partial_pwc_count": 0,
+  "n_direct": 25,
+  "n_partial": 24,
   "n_adjacent": 11,
   "n_total": 60,
-  "differentiator_strength": "none",
-  "go_blocked": true,
+  "peer_reviewed_direct_overlap": false,
+  "artifact_direct_overlap": true,
+  "high_artifact_overlap": true,
+  "high_peer_reviewed_overlap": false,
+  "differentiator_strength": "strong",
+  "paper_differentiator_strength": "strong",
+  "artifact_differentiator_strength": "moderate",
+  "artifact_differentiator_required": true,
+  "go_blocked": false,
   "requires_differentiator": true,
   "top_findings": [
-    {
-      "topic_id": "T07_N1",
-      "source": "paper",
-      "name": "Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulnerabilities in LLMs",
-      "url": "https://doi.org/10.48550/arXiv.2505.04806",
-      "doi": "10.48550/arXiv.2505.04806",
-      "year": 2025,
-      "venue": "arXiv.org",
-      "contribution_type": "tool",
-      "overlap_class": "DIRECT_OVERLAP",
-      "relevance_score": 0.625,
-      "stars_or_downloads": "",
-      "why_overlaps": "Relevance 0.62: paper titled 'Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulne' contributes a 'tool' matching target artifact 'benchmark'. Matched keywords: primary:title:prompt injection|syn:title:jailbreak.",
-      "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
-    },
     {
       "topic_id": "T07_N1",
       "source": "github",
@@ -40,7 +41,7 @@
       "stars_or_downloads": 438,
       "why_overlaps": "GitHub repo 'liu00222/Open-Prompt-Injection' (438 stars) provides an implementation of 'prompt injection'. Description: this repository provides a benchmark for prompt injection attacks and defenses in llms.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -56,7 +57,7 @@
       "stars_or_downloads": 184,
       "why_overlaps": "GitHub repo 'lakeraai/pint-benchmark' (184 stars) provides an implementation of 'prompt injection'. Description: a benchmark for prompt injection detection systems..",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -72,7 +73,7 @@
       "stars_or_downloads": 124,
       "why_overlaps": "GitHub repo 'microsoft/BIPIA' (124 stars) provides an implementation of 'prompt injection'. Description: a benchmark for evaluating the robustness of llms and defenses to indirect prompt injection attacks..",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -88,7 +89,7 @@
       "stars_or_downloads": 921,
       "why_overlaps": "GitHub repo 'lucija8320nhung4/HacxGPT' (921 stars) provides an implementation of 'prompt injection'. Description: hacxgpt cli — open-source command-line interface for unrestricted ai model access with multi-provider support, prompt in.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -104,7 +105,7 @@
       "stars_or_downloads": 182,
       "why_overlaps": "GitHub repo 'ReversecLabs/spikee' (182 stars) provides an implementation of 'prompt injection'. Description: simple prompt injection kit for evaluation and exploitation.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -120,7 +121,7 @@
       "stars_or_downloads": 5438,
       "why_overlaps": "HuggingFace dataset/space 'deepset/prompt-injections' (5,438 downloads) matched 'prompt injection' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -136,7 +137,7 @@
       "stars_or_downloads": 933,
       "why_overlaps": "HuggingFace dataset/space 'rogue-security/prompt-injections-benchmark' (933 downloads) matched 'prompt injection' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -152,7 +153,7 @@
       "stars_or_downloads": 765,
       "why_overlaps": "HuggingFace dataset/space 'JasperLS/prompt-injections' (765 downloads) matched 'prompt injection' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
     },
     {
       "topic_id": "T07_N1",
@@ -168,7 +169,23 @@
       "stars_or_downloads": 496,
       "why_overlaps": "HuggingFace dataset/space 'Lakera/mosscap_prompt_injection' (496 downloads) matched 'prompt injection' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "moderate"
+    },
+    {
+      "topic_id": "T07_N1",
+      "source": "huggingface",
+      "name": "yanismiraoui/prompt_injections",
+      "url": "https://huggingface.co/datasets/yanismiraoui/prompt_injections",
+      "doi": "",
+      "year": "",
+      "venue": "HuggingFace",
+      "contribution_type": "dataset",
+      "overlap_class": "DIRECT_OVERLAP",
+      "relevance_score": "",
+      "stars_or_downloads": 403,
+      "why_overlaps": "HuggingFace dataset/space 'yanismiraoui/prompt_injections' (403 downloads) matched 'prompt injection' — provides similar data/evaluation assets.",
+      "how_we_differ": "Our proposed work focuses specifically on 'Judge robustness to candidate-side prompt injection — noise-pruned'. Narrowing note: removed noisy secondaries=['adversarial robustness']; added to negatives. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
+      "differentiator_strength": "moderate"
     }
   ]
 }

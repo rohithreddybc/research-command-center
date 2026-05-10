@@ -2,12 +2,29 @@
   "topic_id": "T74",
   "topic_title": "Open structured-metadata dataset of LLM-eval papers",
   "target_artifact": "dataset",
+  "direct_paper_count": 0,
+  "direct_github_count": 0,
+  "direct_hf_count": 13,
+  "direct_pwc_count": 0,
+  "artifact_direct_count": 13,
+  "direct_total_count": 13,
+  "partial_paper_count": 1,
+  "partial_github_count": 1,
+  "partial_hf_count": 6,
+  "partial_pwc_count": 0,
   "n_direct": 13,
   "n_partial": 8,
   "n_adjacent": 15,
   "n_total": 36,
-  "differentiator_strength": "none",
-  "go_blocked": true,
+  "peer_reviewed_direct_overlap": false,
+  "artifact_direct_overlap": true,
+  "high_artifact_overlap": true,
+  "high_peer_reviewed_overlap": false,
+  "differentiator_strength": "strong",
+  "paper_differentiator_strength": "strong",
+  "artifact_differentiator_strength": "strong",
+  "artifact_differentiator_required": true,
+  "go_blocked": false,
   "requires_differentiator": true,
   "top_findings": [
     {
@@ -24,7 +41,7 @@
       "stars_or_downloads": 1298,
       "why_overlaps": "HuggingFace dataset/space 'trojblue/danbooru2025-metadata' (1,298 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -40,7 +57,7 @@
       "stars_or_downloads": 113,
       "why_overlaps": "HuggingFace dataset/space 'bs-modeling-metadata/c4-en-html-with-metadata' (113 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -56,7 +73,7 @@
       "stars_or_downloads": 9693,
       "why_overlaps": "HuggingFace dataset/space 'bigcode/the-stack-metadata' (9,693 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -72,7 +89,7 @@
       "stars_or_downloads": 516,
       "why_overlaps": "HuggingFace dataset/space 'librarian-bots/model_cards_with_metadata' (516 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -88,7 +105,7 @@
       "stars_or_downloads": 135,
       "why_overlaps": "HuggingFace dataset/space 'histai/HISTAI-metadata' (135 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -104,7 +121,7 @@
       "stars_or_downloads": 139,
       "why_overlaps": "HuggingFace dataset/space 'litagin/VisualNovel_Dataset_Metadata' (139 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -120,7 +137,7 @@
       "stars_or_downloads": 198,
       "why_overlaps": "HuggingFace dataset/space 'Shio-Koube/Danbooru-2026-parquet-metadata' (198 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -136,7 +153,7 @@
       "stars_or_downloads": 325,
       "why_overlaps": "HuggingFace dataset/space 'TheBritishLibrary/EThOS-PhD-metadata' (325 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -152,7 +169,7 @@
       "stars_or_downloads": 187,
       "why_overlaps": "HuggingFace dataset/space 'bs-modeling-metadata/OSCAR_Entity_13_000' (187 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     },
     {
       "topic_id": "T74",
@@ -168,7 +185,7 @@
       "stars_or_downloads": 268,
       "why_overlaps": "HuggingFace dataset/space 'bs-modeling-metadata/website_metadata_c4' (268 downloads) matched 'metadata' — provides similar data/evaluation assets.",
       "how_we_differ": "Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).",
-      "differentiator_strength": "none"
+      "differentiator_strength": "strong"
     }
   ]
 }

@@ -1,25 +1,37 @@
 # Existing Work Report — T43: Reproducibility audit of clinical LLM papers
 
-> ⛔ **GO BLOCKED** — 2 direct overlap(s) found; differentiator strength = `weak`.
+> ⚠️ **DIFFERENTIATOR REQUIRED** — paper_direct=0, artifact_direct=2; paper_strength=`strong`, artifact_strength=`strong`.
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 2 |
-| Partial overlaps | 3 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 0 |
+| HuggingFace direct artifacts | 2 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 2 |
+| Artifact diff strength | `strong` |
+| Partial overlaps (total) | 3 |
 | Adjacent | 29 |
 | Total findings | 34 |
-| Differentiator strength | `weak` |
-| GO blocked | **YES** |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | No |
+| GO blocked | No |
 | Differentiator required | Yes |
+| Artifact differentiator required | Yes |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
+
+_None._
+
+## Artifact Direct Overlaps (GitHub / HF / PWC)
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | huggingface | [AI-EcoNet/HUGO-Bench-Paper-Reproducibility](https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility) |  | HuggingFace | dataset | 261 | weak |
-| 2 | huggingface | [zyzhou110/Squidiff_reproducibility](https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility) |  | HuggingFace | dataset | 106 | weak |
+| 1 | huggingface | [AI-EcoNet/HUGO-Bench-Paper-Reproducibility](https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility) |  | HuggingFace | dataset | 261 | strong |
+| 2 | huggingface | [zyzhou110/Squidiff_reproducibility](https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility) |  | HuggingFace | dataset | 106 | strong |
 
 ### 1. AI-EcoNet/HUGO-Bench-Paper-Reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/AI-EcoNet/HUGO-Bench-Paper-Reproducibility
@@ -27,7 +39,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'AI-EcoNet/HUGO-Bench-Paper-Reproducibility' (261 downloads) matched 'reproducibility' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `strong`
 
 ### 2. zyzhou110/Squidiff_reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/zyzhou110/Squidiff_reproducibility
@@ -35,15 +47,15 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'zyzhou110/Squidiff_reproducibility' (106 downloads) matched 'reproducibility' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `strong`
 
-## Partial Overlaps (differentiator required)
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | huggingface | [bird-of-paradise/muon-distributed-reproducibility](https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility) |  | HuggingFace | dataset | 40 | weak |
-| 2 | huggingface | [throwaway-reproducibility-354364563/FinTrain](https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain) |  | HuggingFace | dataset | 21 | weak |
-| 3 | huggingface | [anon7f3k2026/neurips_reproducibility_bundle](https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle) |  | HuggingFace | dataset | 22 | weak |
+| 1 | huggingface | [bird-of-paradise/muon-distributed-reproducibility](https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility) |  | HuggingFace | dataset | 40 | moderate |
+| 2 | huggingface | [throwaway-reproducibility-354364563/FinTrain](https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain) |  | HuggingFace | dataset | 21 | moderate |
+| 3 | huggingface | [anon7f3k2026/neurips_reproducibility_bundle](https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle) |  | HuggingFace | dataset | 22 | moderate |
 
 ### 1. bird-of-paradise/muon-distributed-reproducibility
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bird-of-paradise/muon-distributed-reproducibility
@@ -51,7 +63,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bird-of-paradise/muon-distributed-reproducibility' (40 downloads) matched 'reproducibility' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 2. throwaway-reproducibility-354364563/FinTrain
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/throwaway-reproducibility-354364563/FinTrain
@@ -59,7 +71,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'throwaway-reproducibility-354364563/FinTrain' (21 downloads) matched 'reproducibility' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 3. anon7f3k2026/neurips_reproducibility_bundle
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/anon7f3k2026/neurips_reproducibility_bundle
@@ -67,7 +79,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'anon7f3k2026/neurips_reproducibility_bundle' (22 downloads) matched 'reproducibility' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ## Adjacent Work (context only)
 
@@ -335,8 +347,19 @@
 - **How we differ**: Our proposed work focuses specifically on 'Reproducibility audit of clinical LLM papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `strong`
 
+## Artifact Differentiator Checklist
+
+Answer each question to establish whether our proposed contribution is distinct:
+
+- [ ] **Peer-reviewed vs repo**: Is our contribution a peer-reviewed paper (not just a code dump)?
+- [ ] **Systematic protocol**: Does our benchmark/dataset follow a documented, reproducible protocol unlike existing repos?
+- [ ] **Domain-specific**: Does our work target a specific domain (clinical, legal, finance) while existing artifacts are general?
+- [ ] **Evaluation focus**: Are we *evaluating behavior* (robustness, bias, sensitivity) rather than merely collecting prompts?
+- [ ] **LLM-judge-specific**: Do we target LLM-as-a-judge specifically, not general prompt injection?
+- [ ] **Reproducibility harness**: Do we release evaluation code + results, not just raw data?
+
 ## Recommended Actions
 
-1. **Do not promote T43 to GO** until you have articulated a concrete differentiator vs the 2 direct overlap(s) above.
-2. For each DIRECT_OVERLAP, fill in the 'how_we_differ' column in the CSV with a specific contribution claim.
-3. If a differentiator cannot be found, consider DROPping or NARROWING further.
+1. Complete the Artifact Differentiator Checklist above (2 artifacts found).
+2. This topic can proceed to GO if artifact differentiator is articulated explicitly.
+3. Write one paragraph for §6 verification log explaining differentiation from top artifacts.

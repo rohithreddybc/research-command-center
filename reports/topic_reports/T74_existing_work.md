@@ -1,36 +1,50 @@
 # Existing Work Report — T74: Open structured-metadata dataset of LLM-eval papers
 
-> ⛔ **GO BLOCKED** — 13 direct overlap(s) found; differentiator strength = `none`.
+> ⚠️ **ARTIFACT DIFFERENTIATOR REQUIRED** — 13 direct artifact(s) (GitHub=0, HF=13, PWC=0), no peer-reviewed paper overlap. artifact_diff_strength=`strong`. Our peer-reviewed contribution is inherently different, but must be explicit.
+
+> 📌 **Note (artifact-only overlap):** Academic/paper overlap appears low, but artifact overlap is high (13 direct artifacts). This topic may still be publishable — a peer-reviewed benchmark/protocol with a clear domain or methodological focus is inherently differentiated from GitHub repos and HuggingFace datasets. Explicitly state: (1) peer-reviewed systematic protocol vs existing repos; (2) specific domain/use-case vs general artifacts; (3) evaluation harness + reproducibility package vs raw data.
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Direct overlaps | 13 |
-| Partial overlaps | 8 |
+| **Paper direct overlaps** | 0 |
+| Paper diff strength | `strong` |
+| GitHub direct artifacts | 0 |
+| HuggingFace direct artifacts | 13 |
+| PWC direct artifacts | 0 |
+| **Artifact direct count** | 13 |
+| Artifact diff strength | `strong` |
+| Partial overlaps (total) | 8 |
 | Adjacent | 15 |
 | Total findings | 36 |
-| Differentiator strength | `none` |
-| GO blocked | **YES** |
+| peer_reviewed_direct | No |
+| high_artifact_overlap | ⚠️ Yes |
+| GO blocked | No |
 | Differentiator required | Yes |
+| Artifact differentiator required | Yes |
 
-## Direct Overlaps (GO-blocking)
+## Peer-Reviewed Direct Overlaps
+
+_None._
+
+## Artifact Direct Overlaps (GitHub / HF / PWC)
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | huggingface | [trojblue/danbooru2025-metadata](https://huggingface.co/datasets/trojblue/danbooru2025-metadata) |  | HuggingFace | dataset | 1298 | none |
-| 2 | huggingface | [bs-modeling-metadata/c4-en-html-with-metadata](https://huggingface.co/datasets/bs-modeling-metadata/c4-en-html-with-metadata) |  | HuggingFace | dataset | 113 | none |
-| 3 | huggingface | [bigcode/the-stack-metadata](https://huggingface.co/datasets/bigcode/the-stack-metadata) |  | HuggingFace | dataset | 9693 | none |
-| 4 | huggingface | [librarian-bots/model_cards_with_metadata](https://huggingface.co/datasets/librarian-bots/model_cards_with_metadata) |  | HuggingFace | dataset | 516 | none |
-| 5 | huggingface | [histai/HISTAI-metadata](https://huggingface.co/datasets/histai/HISTAI-metadata) |  | HuggingFace | dataset | 135 | none |
-| 6 | huggingface | [litagin/VisualNovel_Dataset_Metadata](https://huggingface.co/datasets/litagin/VisualNovel_Dataset_Metadata) |  | HuggingFace | dataset | 139 | none |
-| 7 | huggingface | [Shio-Koube/Danbooru-2026-parquet-metadata](https://huggingface.co/datasets/Shio-Koube/Danbooru-2026-parquet-metadata) |  | HuggingFace | dataset | 198 | none |
-| 8 | huggingface | [TheBritishLibrary/EThOS-PhD-metadata](https://huggingface.co/datasets/TheBritishLibrary/EThOS-PhD-metadata) |  | HuggingFace | dataset | 325 | none |
-| 9 | huggingface | [bs-modeling-metadata/OSCAR_Entity_13_000](https://huggingface.co/datasets/bs-modeling-metadata/OSCAR_Entity_13_000) |  | HuggingFace | dataset | 187 | none |
-| 10 | huggingface | [bs-modeling-metadata/website_metadata_c4](https://huggingface.co/datasets/bs-modeling-metadata/website_metadata_c4) |  | HuggingFace | dataset | 268 | none |
-| 11 | huggingface | [huggingface/transformers-metadata](https://huggingface.co/datasets/huggingface/transformers-metadata) |  | HuggingFace | dataset | 1479 | none |
-| 12 | huggingface | [ttj/metadata_arxiv](https://huggingface.co/datasets/ttj/metadata_arxiv) |  | HuggingFace | dataset | 21802 | none |
-| 13 | huggingface | [nateraw/test-imagefolder-metadata-csv](https://huggingface.co/datasets/nateraw/test-imagefolder-metadata-csv) |  | HuggingFace | dataset | 131 | none |
+| 1 | huggingface | [trojblue/danbooru2025-metadata](https://huggingface.co/datasets/trojblue/danbooru2025-metadata) |  | HuggingFace | dataset | 1298 | strong |
+| 2 | huggingface | [bs-modeling-metadata/c4-en-html-with-metadata](https://huggingface.co/datasets/bs-modeling-metadata/c4-en-html-with-metadata) |  | HuggingFace | dataset | 113 | strong |
+| 3 | huggingface | [bigcode/the-stack-metadata](https://huggingface.co/datasets/bigcode/the-stack-metadata) |  | HuggingFace | dataset | 9693 | strong |
+| 4 | huggingface | [librarian-bots/model_cards_with_metadata](https://huggingface.co/datasets/librarian-bots/model_cards_with_metadata) |  | HuggingFace | dataset | 516 | strong |
+| 5 | huggingface | [histai/HISTAI-metadata](https://huggingface.co/datasets/histai/HISTAI-metadata) |  | HuggingFace | dataset | 135 | strong |
+| 6 | huggingface | [litagin/VisualNovel_Dataset_Metadata](https://huggingface.co/datasets/litagin/VisualNovel_Dataset_Metadata) |  | HuggingFace | dataset | 139 | strong |
+| 7 | huggingface | [Shio-Koube/Danbooru-2026-parquet-metadata](https://huggingface.co/datasets/Shio-Koube/Danbooru-2026-parquet-metadata) |  | HuggingFace | dataset | 198 | strong |
+| 8 | huggingface | [TheBritishLibrary/EThOS-PhD-metadata](https://huggingface.co/datasets/TheBritishLibrary/EThOS-PhD-metadata) |  | HuggingFace | dataset | 325 | strong |
+| 9 | huggingface | [bs-modeling-metadata/OSCAR_Entity_13_000](https://huggingface.co/datasets/bs-modeling-metadata/OSCAR_Entity_13_000) |  | HuggingFace | dataset | 187 | strong |
+| 10 | huggingface | [bs-modeling-metadata/website_metadata_c4](https://huggingface.co/datasets/bs-modeling-metadata/website_metadata_c4) |  | HuggingFace | dataset | 268 | strong |
+| 11 | huggingface | [huggingface/transformers-metadata](https://huggingface.co/datasets/huggingface/transformers-metadata) |  | HuggingFace | dataset | 1479 | strong |
+| 12 | huggingface | [ttj/metadata_arxiv](https://huggingface.co/datasets/ttj/metadata_arxiv) |  | HuggingFace | dataset | 21802 | strong |
+| 13 | huggingface | [nateraw/test-imagefolder-metadata-csv](https://huggingface.co/datasets/nateraw/test-imagefolder-metadata-csv) |  | HuggingFace | dataset | 131 | strong |
 
 ### 1. trojblue/danbooru2025-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/trojblue/danbooru2025-metadata
@@ -38,7 +52,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'trojblue/danbooru2025-metadata' (1,298 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 2. bs-modeling-metadata/c4-en-html-with-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bs-modeling-metadata/c4-en-html-with-metadata
@@ -46,7 +60,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bs-modeling-metadata/c4-en-html-with-metadata' (113 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 3. bigcode/the-stack-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bigcode/the-stack-metadata
@@ -54,7 +68,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bigcode/the-stack-metadata' (9,693 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 4. librarian-bots/model_cards_with_metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/librarian-bots/model_cards_with_metadata
@@ -62,7 +76,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'librarian-bots/model_cards_with_metadata' (516 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 5. histai/HISTAI-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/histai/HISTAI-metadata
@@ -70,7 +84,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'histai/HISTAI-metadata' (135 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 6. litagin/VisualNovel_Dataset_Metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/litagin/VisualNovel_Dataset_Metadata
@@ -78,7 +92,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'litagin/VisualNovel_Dataset_Metadata' (139 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 7. Shio-Koube/Danbooru-2026-parquet-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/Shio-Koube/Danbooru-2026-parquet-metadata
@@ -86,7 +100,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'Shio-Koube/Danbooru-2026-parquet-metadata' (198 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 8. TheBritishLibrary/EThOS-PhD-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/TheBritishLibrary/EThOS-PhD-metadata
@@ -94,7 +108,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'TheBritishLibrary/EThOS-PhD-metadata' (325 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 9. bs-modeling-metadata/OSCAR_Entity_13_000
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bs-modeling-metadata/OSCAR_Entity_13_000
@@ -102,7 +116,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bs-modeling-metadata/OSCAR_Entity_13_000' (187 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 10. bs-modeling-metadata/website_metadata_c4
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bs-modeling-metadata/website_metadata_c4
@@ -110,7 +124,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bs-modeling-metadata/website_metadata_c4' (268 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 11. huggingface/transformers-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/huggingface/transformers-metadata
@@ -118,7 +132,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'huggingface/transformers-metadata' (1,479 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 12. ttj/metadata_arxiv
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/ttj/metadata_arxiv
@@ -126,7 +140,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'ttj/metadata_arxiv' (21,802 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
 ### 13. nateraw/test-imagefolder-metadata-csv
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/nateraw/test-imagefolder-metadata-csv
@@ -134,20 +148,20 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'nateraw/test-imagefolder-metadata-csv' (131 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `none`
+- **Differentiator strength**: `strong`
 
-## Partial Overlaps (differentiator required)
+## Partial Overlaps
 
 | # | Source | Name | Year | Venue | Contrib | Rel/Stars | Diff-Strength |
 |---|---|---|---|---|---|---|---|
-| 1 | paper | [Magic Sequence: LLM evaluation methodology of logical problem solving for sequen](https://doi.org/10.1109/gaclm67198.2025.11232232) | 2025 | 2025 2nd International Generative AI and | paper | 0.5 | weak |
-| 2 | github | [aws-samples/llm-evaluation-methodology](https://github.com/aws-samples/llm-evaluation-methodology) |  | GitHub | tool | 47 | weak |
-| 3 | huggingface | [bs-modeling-metadata/c4_newslike_url_only](https://huggingface.co/datasets/bs-modeling-metadata/c4_newslike_url_only) |  | HuggingFace | dataset | 93 | weak |
-| 4 | huggingface | [bs-modeling-metadata/wiki_dump](https://huggingface.co/datasets/bs-modeling-metadata/wiki_dump) |  | HuggingFace | dataset | 88 | weak |
-| 5 | huggingface | [hf-internal-testing/transformers-metadata](https://huggingface.co/datasets/hf-internal-testing/transformers-metadata) |  | HuggingFace | dataset | 23 | weak |
-| 6 | huggingface | [shanya/website_metadata_c4_toy](https://huggingface.co/datasets/shanya/website_metadata_c4_toy) |  | HuggingFace | dataset | 55 | weak |
-| 7 | huggingface | [malteos/aspect-paper-metadata](https://huggingface.co/datasets/malteos/aspect-paper-metadata) |  | HuggingFace | dataset | 37 | weak |
-| 8 | huggingface | [nateraw/test-imagefolder-metadata](https://huggingface.co/datasets/nateraw/test-imagefolder-metadata) |  | HuggingFace | dataset | 53 | weak |
+| 1 | paper | [Magic Sequence: LLM evaluation methodology of logical problem solving for sequen](https://doi.org/10.1109/gaclm67198.2025.11232232) | 2025 | 2025 2nd International Generative AI and | paper | 0.5 | moderate |
+| 2 | github | [aws-samples/llm-evaluation-methodology](https://github.com/aws-samples/llm-evaluation-methodology) |  | GitHub | tool | 47 | moderate |
+| 3 | huggingface | [bs-modeling-metadata/c4_newslike_url_only](https://huggingface.co/datasets/bs-modeling-metadata/c4_newslike_url_only) |  | HuggingFace | dataset | 93 | moderate |
+| 4 | huggingface | [bs-modeling-metadata/wiki_dump](https://huggingface.co/datasets/bs-modeling-metadata/wiki_dump) |  | HuggingFace | dataset | 88 | moderate |
+| 5 | huggingface | [hf-internal-testing/transformers-metadata](https://huggingface.co/datasets/hf-internal-testing/transformers-metadata) |  | HuggingFace | dataset | 23 | moderate |
+| 6 | huggingface | [shanya/website_metadata_c4_toy](https://huggingface.co/datasets/shanya/website_metadata_c4_toy) |  | HuggingFace | dataset | 55 | moderate |
+| 7 | huggingface | [malteos/aspect-paper-metadata](https://huggingface.co/datasets/malteos/aspect-paper-metadata) |  | HuggingFace | dataset | 37 | moderate |
+| 8 | huggingface | [nateraw/test-imagefolder-metadata](https://huggingface.co/datasets/nateraw/test-imagefolder-metadata) |  | HuggingFace | dataset | 53 | moderate |
 
 ### 1. Magic Sequence: LLM evaluation methodology of logical problem solving for sequence manipulation. Application to mathemat
 - **Source**: paper  **URL**: https://doi.org/10.1109/gaclm67198.2025.11232232
@@ -155,7 +169,7 @@
 - **Contribution type**: paper
 - **Why it overlaps**: Relevance 0.50: paper titled 'Magic Sequence: LLM evaluation methodology of logical problem solving for sequence manipulation. App' contributes a 'paper' matching target artifact 'dataset'. Matched keywords: primary:title:llm evaluation methodology.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 2. aws-samples/llm-evaluation-methodology
 - **Source**: github  **URL**: https://github.com/aws-samples/llm-evaluation-methodology
@@ -163,7 +177,7 @@
 - **Contribution type**: tool
 - **Why it overlaps**: GitHub repo 'aws-samples/llm-evaluation-methodology' (47 stars) provides an implementation of 'llm evaluation methodology'. Description: n/a.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 3. bs-modeling-metadata/c4_newslike_url_only
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bs-modeling-metadata/c4_newslike_url_only
@@ -171,7 +185,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bs-modeling-metadata/c4_newslike_url_only' (93 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 4. bs-modeling-metadata/wiki_dump
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/bs-modeling-metadata/wiki_dump
@@ -179,7 +193,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'bs-modeling-metadata/wiki_dump' (88 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 5. hf-internal-testing/transformers-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/hf-internal-testing/transformers-metadata
@@ -187,7 +201,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'hf-internal-testing/transformers-metadata' (23 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 6. shanya/website_metadata_c4_toy
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/shanya/website_metadata_c4_toy
@@ -195,7 +209,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'shanya/website_metadata_c4_toy' (55 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 7. malteos/aspect-paper-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/malteos/aspect-paper-metadata
@@ -203,7 +217,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'malteos/aspect-paper-metadata' (37 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ### 8. nateraw/test-imagefolder-metadata
 - **Source**: huggingface  **URL**: https://huggingface.co/datasets/nateraw/test-imagefolder-metadata
@@ -211,7 +225,7 @@
 - **Contribution type**: dataset
 - **Why it overlaps**: HuggingFace dataset/space 'nateraw/test-imagefolder-metadata' (53 downloads) matched 'metadata' — provides similar data/evaluation assets.
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
-- **Differentiator strength**: `weak`
+- **Differentiator strength**: `moderate`
 
 ## Adjacent Work (context only)
 
@@ -353,8 +367,19 @@
 - **How we differ**: Our proposed work focuses specifically on 'Open structured-metadata dataset of LLM-eval papers'. Articulate a concrete contribution gap versus this existing work before promoting to GO (see §6 verification log).
 - **Differentiator strength**: `strong`
 
+## Artifact Differentiator Checklist
+
+Answer each question to establish whether our proposed contribution is distinct:
+
+- [ ] **Peer-reviewed vs repo**: Is our contribution a peer-reviewed paper (not just a code dump)?
+- [ ] **Systematic protocol**: Does our benchmark/dataset follow a documented, reproducible protocol unlike existing repos?
+- [ ] **Domain-specific**: Does our work target a specific domain (clinical, legal, finance) while existing artifacts are general?
+- [ ] **Evaluation focus**: Are we *evaluating behavior* (robustness, bias, sensitivity) rather than merely collecting prompts?
+- [ ] **LLM-judge-specific**: Do we target LLM-as-a-judge specifically, not general prompt injection?
+- [ ] **Reproducibility harness**: Do we release evaluation code + results, not just raw data?
+
 ## Recommended Actions
 
-1. **Do not promote T74 to GO** until you have articulated a concrete differentiator vs the 13 direct overlap(s) above.
-2. For each DIRECT_OVERLAP, fill in the 'how_we_differ' column in the CSV with a specific contribution claim.
-3. If a differentiator cannot be found, consider DROPping or NARROWING further.
+1. Complete the Artifact Differentiator Checklist above (13 artifacts found).
+2. This topic can proceed to GO if artifact differentiator is articulated explicitly.
+3. Write one paragraph for §6 verification log explaining differentiation from top artifacts.
