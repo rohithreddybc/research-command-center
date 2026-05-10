@@ -35,7 +35,45 @@ from common.llm_panel import (  # noqa: E402
     REVIEWER_ROLES, review_claude_cli, review_openai,
     have_claude_cli, have_openai_key, write_inbox_prompt,
     read_inbox_reply, reset_openai_budget, openai_budget_status,
+    ERRORS as PANEL_ERRORS,
 )
+
+REPORTS = ROOT / "reports"
+REPORTS.mkdir(parents=True, exist_ok=True)
+
+
+def _flush_errors() -> bool:
+    """Write reports/llm_review_errors.md if any provider error was recorded.
+    Returns True if file was written."""
+    if not PANEL_ERRORS:
+        # If a previous run left a file but this run was clean, blank it out so the report
+        # banner doesn't keep warning.
+        p = REPORTS / "llm_review_errors.md"
+        if p.exists():
+            p.write_text("# LLM review errors\n\n_None recorded in latest run._\n", encoding="utf-8")
+        return False
+    lines = ["# LLM review errors", "",
+             f"Errors recorded: **{len(PANEL_ERRORS)}**", ""]
+    by_provider: dict[str, list[dict[str, Any]]] = {}
+    for e in PANEL_ERRORS:
+        by_provider.setdefault(e["provider"], []).append(e)
+    for prov, items in by_provider.items():
+        lines.append(f"## {prov} ({len(items)})")
+        lines.append("")
+        lines.append("| Topic | Role | Message |")
+        lines.append("|---|---|---|")
+        for e in items[:200]:
+            msg = e["message"].replace("|", "/")[:200]
+            lines.append(f"| {e['topic_id']} | {e['role']} | {msg} |")
+        lines.append("")
+    if any(("Not logged in" in e["message"]) for e in PANEL_ERRORS):
+        lines.append("## Common fix")
+        lines.append("")
+        lines.append("Run **`claude auth login`** once from PowerShell, then re-run "
+                     "`python scripts/06_llm_review_topics.py` (cached HTTP / packets are reused).")
+        lines.append("")
+    (REPORTS / "llm_review_errors.md").write_text("\n".join(lines), encoding="utf-8")
+    return True
 
 QUERIES_DIR = ROOT / "data" / "queries"
 DEDUP_DIR = ROOT / "data" / "papers_dedup"
@@ -221,7 +259,13 @@ def main(argv: list[str] | None = None) -> int:
                               is_top_n=is_top_n)
         summary.append({"topic_id": s["topic_id"], "n_reviews": len(s["reviews"]),
                         "is_top_n": is_top_n})
-    print(json.dumps({"summary": summary, "openai_budget": openai_budget_status()}, indent=2))
+    wrote_err = _flush_errors()
+    print(json.dumps({
+        "summary": summary,
+        "openai_budget": openai_budget_status(),
+        "errors_recorded": len(PANEL_ERRORS),
+        "errors_file": str(REPORTS / "llm_review_errors.md") if wrote_err else None,
+    }, indent=2))
     return 0
 
 

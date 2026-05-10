@@ -83,25 +83,31 @@ def run_full_collection(stem: str) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--topics", default=str(ROOT / "data" / "topics_seed.csv"),
+                    help="Path to topics seed CSV (default: data/topics_seed.csv)")
+    ap.add_argument("--venues", default=str(ROOT / "data" / "venues_seed.csv"),
+                    help="Path to venues seed CSV (informational; venue_master.csv used by 04)")
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--max-rounds", type=int, default=2)
     ap.add_argument("--year-range", default="2022-2026")
     ap.add_argument("--limit-per-query", type=int, default=15)
     ap.add_argument("--skip-collect", action="store_true",
                     help="Skip 02/03/04 (evidence already collected)")
-    ap.add_argument("--skip-llm", action="store_true",
-                    help="Alias for --no-llm")
+    ap.add_argument("--skip-llm", action="store_true", help="Alias for --no-llm")
+    ap.add_argument("--allow-go-without-llm", action="store_true",
+                    help="Pass through to 08_confidence_gate to permit GO without LLM panel.")
     args = ap.parse_args(argv)
     if args.skip_llm:
         args.no_llm = True
 
     t0 = time.time()
-    log("10_pipe", f"START rounds<= {args.max_rounds}, no_llm={args.no_llm}")
+    log("10_pipe", f"START rounds<= {args.max_rounds}, topics={args.topics}, venues={args.venues}, "
+                   f"no_llm={args.no_llm}, allow_go_without_llm={args.allow_go_without_llm}")
 
     # 01 queries
-    print("[1/9] generate queries")
+    print(f"[1/9] generate queries  (topics={args.topics})")
     mod = _load("01_generate_queries")
-    sys.argv = ["01"]
+    sys.argv = ["01", "--seed", args.topics]
     mod.main()
 
     # initial round 02-04
@@ -133,7 +139,9 @@ def main(argv: list[str] | None = None) -> int:
         run_full_collection("07_compare_reviewers")
 
         print("[8/9] confidence gate")
-        run_full_collection("08_confidence_gate")
+        mod = _load("08_confidence_gate")
+        sys.argv = ["08"] + (["--allow-go-without-llm"] if args.allow_go_without_llm else [])
+        mod.main()
 
         # who needs another round?
         decisions_csv = DECISIONS_DIR / "decisions.csv"

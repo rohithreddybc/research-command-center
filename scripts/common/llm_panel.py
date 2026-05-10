@@ -30,6 +30,16 @@ DEFAULT_OPENAI_BUDGET = 8  # max tiebreaker calls per pipeline run, total
 INBOX_DIR = REPO_ROOT / "data" / "reviews" / "_inbox"
 INBOX_DIR.mkdir(parents=True, exist_ok=True)
 
+# Per-process error accumulator. 06_llm_review_topics flushes this to
+# reports/llm_review_errors.md when the run finishes.
+ERRORS: list[dict[str, Any]] = []
+
+
+def record_error(provider: str, role: str, topic_id: str, message: str) -> None:
+    ERRORS.append({
+        "provider": provider, "role": role, "topic_id": topic_id, "message": message[:500],
+    })
+
 
 def _load_dotenv() -> None:
     repo = REPO_ROOT
@@ -297,17 +307,13 @@ def review_claude_cli(role: dict[str, str], topic: dict[str, Any], evidence: dic
 
         if isinstance(wrapper, dict):
             if wrapper.get("is_error") or not wrapper.get("result"):
-                # Auth failure or other CLI-side error: do NOT cache, return None so caller skips.
                 msg = str(wrapper.get("result", ""))[:300]
-                err = {
-                    "reviewer_role": role["role"],
-                    "provider": "claude_cli",
-                    "error": True,
-                    "message": msg,
-                }
-                # Drop a single _error breadcrumb at top of cache for the user
+                record_error("claude_cli", role["role"], topic_id, msg or "empty result")
                 breadcrumb = LLM_CACHE / "_last_claude_cli_error.json"
-                breadcrumb.write_text(json.dumps(err), encoding="utf-8")
+                breadcrumb.write_text(json.dumps({
+                    "reviewer_role": role["role"], "provider": "claude_cli",
+                    "error": True, "message": msg, "topic_id": topic_id,
+                }), encoding="utf-8")
                 return None
             text = str(wrapper.get("result", ""))
         else:
@@ -321,9 +327,11 @@ def review_claude_cli(role: dict[str, str], topic: dict[str, Any], evidence: dic
         cache_file.write_text(json.dumps(normalized), encoding="utf-8")
         return normalized
     except subprocess.TimeoutExpired:
-        return _normalize({"recommendation": "claude_cli_timeout"}, role["role"])
+        record_error("claude_cli", role["role"], topic_id, "subprocess timeout")
+        return None
     except Exception as e:
-        return _normalize({"recommendation": f"claude_cli_exc: {e}"}, role["role"])
+        record_error("claude_cli", role["role"], topic_id, f"exception: {e}")
+        return None
 
 
 def review_openai(role: dict[str, str], topic: dict[str, Any], evidence: dict[str, Any]) -> dict[str, Any] | None:
@@ -358,7 +366,8 @@ def review_openai(role: dict[str, str], topic: dict[str, Any], evidence: dict[st
         cache_file.write_text(json.dumps(out), encoding="utf-8")
         return out
     except Exception as e:
-        return _normalize({"recommendation": f"openai_exc: {e}"}, role["role"])
+        record_error("openai", role["role"], topic_id, f"exception: {e}")
+        return None
 
 
 # ---------- inbox fallback ----------

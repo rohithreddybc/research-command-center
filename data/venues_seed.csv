@@ -1,0 +1,21 @@
+venue,type,track,no_apc_known,apc_usd_VERIFY,timeline_VERIFY,h5_VERIFY,scope,fit_categories,source_url
+TMLR,journal,main,True,0,rolling-weeks,VERIFY,broad ML; reproducibility-friendly,eval|methodology|repro,https://jmlr.org/tmlr/
+ACL Findings,conf,findings,True,0,cycle-bound,VERIFY,NLP/CL,nlp|eval|prompt|llm,https://www.aclweb.org/
+EMNLP Findings,conf,findings,True,0,cycle-bound,VERIFY,NLP/CL,nlp|eval|prompt|llm,https://2024.emnlp.org/
+NeurIPS D&B,conf,track,True,0,annual-VERIFY,VERIFY,benchmarks/datasets,bench|dataset|methodology,https://neurips.cc/
+ML4H,workshop,workshop,True,0,annual-VERIFY,VERIFY,clinical ML,healthcare|clinical|safety,https://ml4health.github.io/
+MLHC,conf,main,False,VERIFY,annual-VERIFY,VERIFY,clinical ML,healthcare|clinical,https://www.mlforhc.org/
+JAMIA Open,journal,main,False,VERIFY,months-VERIFY,VERIFY,clinical informatics,healthcare|clinical|informatics,https://academic.oup.com/jamiaopen
+JMIR,journal,main,False,VERIFY,weeks-VERIFY,VERIFY,health informatics broad,healthcare|public-health|informatics,https://www.jmir.org/
+PLOS Digital Health,journal,main,False,VERIFY,months-VERIFY,VERIFY,digital health,healthcare|public-health,https://journals.plos.org/digitalhealth/
+npj Digital Medicine,journal,main,False,VERIFY,months-VERIFY,VERIFY,digital health,healthcare|clinical,https://www.nature.com/npjdigitalmed/
+NEJM AI,journal,main,False,VERIFY,months-VERIFY,VERIFY,clinical AI,healthcare|clinical|safety,https://ai.nejm.org/
+ACM Computing Surveys,journal,main,False,VERIFY,year-VERIFY,VERIFY,surveys,survey|taxonomy,https://csur.acm.org/
+arXiv (cs.CL/cs.LG),preprint,preprint,True,0,days,N/A,broad ML/NLP,nlp|llm|eval|methodology,https://arxiv.org/
+ML Reproducibility Challenge,workshop,workshop,True,0,annual-VERIFY,VERIFY,reproducibility,repro|eval|methodology,https://reproml.org/
+ACL/EMNLP/NAACL Workshops,workshop,workshop,True,0,1-3mo-VERIFY,VERIFY,NLP workshops,nlp|eval|prompt,https://aclanthology.org/
+NeurIPS workshops,workshop,workshop,True,0,1-3mo-VERIFY,VERIFY,broad ML workshops,eval|safety|methodology,https://neurips.cc/
+ICLR Workshops,workshop,workshop,True,0,1-3mo-VERIFY,VERIFY,broad ML workshops,eval|safety|methodology,https://iclr.cc/
+AMIA Symposium,conf,main,False,VERIFY,annual-VERIFY,VERIFY,clinical informatics,healthcare|clinical|informatics,https://amia.org/
+Clinical NLP Workshop,workshop,workshop,True,0,annual-VERIFY,VERIFY,clinical NLP,healthcare|nlp|clinical,https://aclanthology.org/
+FAccT,conf,main,False,VERIFY,annual-VERIFY,VERIFY,fairness/accountability,fairness|trustworthy|safety,https://facctconference.org/

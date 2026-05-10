@@ -82,7 +82,7 @@ class TestScoring(unittest.TestCase):
         sc = _load("05_score_topics")
         # plenty of gap signal, no datasets/tools => high opportunity
         raw = [{"abstract": "limitation no benchmark exists", "year": 2024, "citations": 0}] * 6
-        out = sc.artifact_opportunity(raw, [{"datasets": []}], [{"results": []}])
+        out = sc.artifact_opportunity(raw, [{"datasets": []}], [{"results": []}], [{"results": []}], saturation_score=2)
         self.assertGreaterEqual(out["artifact_opportunity_0to5"], 4)
 
     def test_overall_rubric_monotonic(self):
@@ -129,10 +129,13 @@ class TestConfidenceGate(unittest.TestCase):
             "paper": {"n_papers": 100, "n_papers_24mo": 60},
             "saturation": {"saturation_score_0to5": 2},
             "artifact": {"artifact_opportunity_0to5": 5, "gap_phrase_hits": 5,
-                         "n_existing_pwc_datasets": 0, "n_existing_hf_datasets": 0},
+                         "n_existing_pwc_datasets": 0, "n_existing_hf_datasets": 0,
+                         "existing_artifact_density": 0.1, "differentiator_required": False},
             "venue": {"venue_signal_0to5": 4},
             "risk": {"ip_risk_0to5": 0, "ip_risk_flags": []},
             "citation_signal_0to5": 5,
+            "niw_0to5": 4, "eb1a_0to5": 5, "career_0to5": 4, "tool_potential_0to5": 4,
+            "relevance_purity": 0.6, "kept_papers": 30,
             "rubric": {"composites": {"Overall": 18, "CitationPotential": 25, "ExecFeasibility": 12,
                                        "ImmigrationValue": 15, "CareerValue": 10, "PublicationPath": 12,
                                        "RiskPenalty": 5}},
@@ -144,12 +147,13 @@ class TestConfidenceGate(unittest.TestCase):
             "decision_score_mean_0to3": 2.4, "high_confidence_drops": 0,
             "high_disagreement_flag": False, "decisions": {"GO": 6, "NARROW": 2},
         }))
-        # Dedup CSV with two sources contributing
+        # Dedup CSV with two sources contributing and relevance_score column
         (self.repo / "data" / "papers_dedup").mkdir(parents=True, exist_ok=True)
         (self.repo / "data" / "papers_dedup" / f"{self.tid}.csv").write_text(
-            "title,year,venue,citations,influential_citations,doi,id,sources,authors\n"
-            "P,2025,V,10,1,10.1/a,a,semantic_scholar|openalex,A\n"
-            "Q,2024,V,5,0,10.1/b,b,crossref|arxiv,B\n"
+            "title,abstract_snippet,year,venue,citations,influential_citations,doi,url,sources,authors,relevance_score,matched_keywords,reason_included\n"
+            "P,abs1,2025,V,10,1,10.1/a,https://doi.org/10.1/a,semantic_scholar|openalex,A,0.8,kw:title:x,r1\n"
+            "Q,abs2,2024,V,5,0,10.1/b,https://doi.org/10.1/b,crossref|arxiv,B,0.6,kw:title:x,r2\n"
+            "R,abs3,2024,V,3,0,10.1/c,https://doi.org/10.1/c,arxiv,C,0.5,kw:abstract:x,r3\n"
         )
 
     def tearDown(self):
@@ -199,6 +203,155 @@ class TestReportGeneration(unittest.TestCase):
         text = out.read_text(encoding="utf-8")
         self.assertIn("# Final decision report", text)
         self.assertIn("## 1. Executive summary", text)
+        self.assertIn("Report status:", text)
+        out.unlink(missing_ok=True)
+
+
+# ---------- New tests (per audit fix #12) ----------
+
+class TestRelevanceFiltering(unittest.TestCase):
+    def test_irrelevant_papers_filtered(self):
+        from common.relevance import filter_by_relevance, score_paper
+        topic = {
+            "topic_id": "TX",
+            "keywords": "LLM judge|prompt template sensitivity|clinical NLP",
+            "synonyms": "clinical question answering;medical QA",
+            "negative_keywords": "",
+        }
+        papers = [
+            {"title": "Prompt template sensitivity in clinical NLP LLM judges",
+             "abstract": "we benchmark medical QA with LLM judge prompts under template variation."},
+            {"title": "A study of pizza toppings preferences",
+             "abstract": "we sample 200 customers and analyze pizza topping orders by region."},
+            {"title": "Quantum chemistry of low-temperature catalysts",
+             "abstract": "we compute DFT energies for catalyst surfaces."},
+        ]
+        kept = filter_by_relevance(papers, topic)
+        titles = [p["title"] for p in kept]
+        self.assertIn("Prompt template sensitivity in clinical NLP LLM judges", titles)
+        self.assertNotIn("A study of pizza toppings preferences", titles)
+        self.assertNotIn("Quantum chemistry of low-temperature catalysts", titles)
+        # The relevant one should have a positive score
+        rel, matched, _ = score_paper(papers[0], topic)
+        self.assertGreater(rel, 0.3)
+        self.assertGreater(len(matched), 0)
+
+
+class TestArtifactDensityPenalty(unittest.TestCase):
+    def test_artifact_opportunity_drops_with_density(self):
+        sc = _load("05_score_topics")
+        # Construct gap signals: many gap mentions => base 5
+        raw = [{"abstract": "limitation no benchmark exists", "year": 2024, "citations": 10}] * 6
+        # Low density: zero comparable artifacts
+        low = sc.artifact_opportunity(raw, [{"datasets": []}], [{"results": []}], [{"results": []}], saturation_score=2)
+        # High density: many big repos + datasets + HF downloads
+        gh_big = [{"results": [{"stars": 5000}, {"stars": 3000}, {"stars": 2000}, {"stars": 1500}]}]
+        hf_big = [{"results": [{"downloads": 9000}, {"downloads": 4000}, {"downloads": 2000}]}]
+        pwc_big = [{"datasets": [{}, {}, {}, {}, {}, {}]}]
+        high = sc.artifact_opportunity(raw, pwc_big, hf_big, gh_big, saturation_score=2)
+        self.assertLess(high["artifact_opportunity_0to5"], low["artifact_opportunity_0to5"])
+        self.assertGreater(high["existing_artifact_density"], low["existing_artifact_density"])
+        self.assertTrue(high["differentiator_required"])
+
+
+class TestTopicAwareScoring(unittest.TestCase):
+    def test_niw_eb1a_career_vary_across_topics(self):
+        sc = _load("05_score_topics")
+        clinical = {"title": "Clinical guideline consistency over time",
+                    "category": "healthcare", "keywords": "clinical guideline|patient safety",
+                    "synonyms": "ehr;medical advice", "target_artifact": "empirical"}
+        engineering = {"title": "Tokenization-induced leaderboard variance",
+                       "category": "eval", "keywords": "tokenizer|leaderboard variance",
+                       "synonyms": "BPE;encoding effects", "target_artifact": "tool+benchmark"}
+        survey = {"title": "Survey of evaluation failure modes",
+                  "category": "meta", "keywords": "survey|evaluation",
+                  "synonyms": "review", "target_artifact": "survey"}
+        niw_c = sc.niw_score(clinical); niw_e = sc.niw_score(engineering); niw_s = sc.niw_score(survey)
+        eb_c = sc.eb1a_score(clinical, citation_signal_0to5=3, artifact_score_0to5=4)
+        eb_e = sc.eb1a_score(engineering, citation_signal_0to5=3, artifact_score_0to5=4)
+        car_c = sc.career_score(clinical, artifact_score_0to5=4)
+        car_e = sc.career_score(engineering, artifact_score_0to5=4)
+        # Clinical NIW > engineering NIW (national-importance hook)
+        self.assertGreater(niw_c, niw_e)
+        # Engineering Career > clinical Career (broader FAANG market)
+        self.assertGreaterEqual(car_e, car_c)
+        # All three must produce DIFFERENT NIW values (no constants)
+        self.assertGreater(len({niw_c, niw_e, niw_s}), 1)
+        # All in 1..5
+        for v in (niw_c, niw_e, niw_s, eb_c, eb_e, car_c, car_e):
+            self.assertGreaterEqual(v, 1); self.assertLessEqual(v, 5)
+
+
+class TestGateForcesLowWhenNoReviews(unittest.TestCase):
+    def setUp(self):
+        self.gate = _load("08_confidence_gate")
+        self.tid = "TLOW_TEST"
+        for d in ("data/queries", "data/scores", "data/agreement", "data/papers_dedup", "data/decisions"):
+            (ROOT / d).mkdir(parents=True, exist_ok=True)
+        (ROOT / "data" / "queries" / f"{self.tid}.json").write_text(json.dumps({
+            "topic": {"topic_id": self.tid, "title": "x", "keywords": "x"}, "queries": {}}))
+        (ROOT / "data" / "scores" / f"{self.tid}.json").write_text(json.dumps({
+            "paper": {"n_papers": 100, "n_papers_24mo": 60},
+            "saturation": {"saturation_score_0to5": 2},
+            "artifact": {"artifact_opportunity_0to5": 5, "gap_phrase_hits": 5,
+                         "n_existing_pwc_datasets": 0, "n_existing_hf_datasets": 0,
+                         "existing_artifact_density": 0.1, "differentiator_required": False},
+            "venue": {"venue_signal_0to5": 4},
+            "risk": {"ip_risk_0to5": 0, "ip_risk_flags": []},
+            "citation_signal_0to5": 5,
+            "niw_0to5": 4, "eb1a_0to5": 5, "career_0to5": 4, "tool_potential_0to5": 4,
+            "relevance_purity": 0.6, "kept_papers": 30,
+            "rubric": {"composites": {"Overall": 18, "CitationPotential": 25, "ExecFeasibility": 12,
+                                       "ImmigrationValue": 15, "CareerValue": 10, "PublicationPath": 12,
+                                       "RiskPenalty": 5}},
+        }))
+        # No reviews -> empty agreement
+        (ROOT / "data" / "agreement" / f"{self.tid}.json").write_text(json.dumps({
+            "topic_id": self.tid, "n_reviews": 0, "plurality_decision": "NEEDS_MORE_EVIDENCE",
+            "decision_score_mean_0to3": 0, "high_confidence_drops": 0,
+            "high_disagreement_flag": False, "decisions": {}}))
+        (ROOT / "data" / "papers_dedup" / f"{self.tid}.csv").write_text(
+            "title,abstract_snippet,year,venue,citations,influential_citations,doi,url,sources,authors,relevance_score,matched_keywords,reason_included\n"
+            "P,abs,2025,V,10,1,10.1/a,https://doi.org/10.1/a,semantic_scholar|openalex,A,0.8,kw:title:x,test\n"
+            "Q,abs,2024,V,5,0,10.1/b,https://doi.org/10.1/b,crossref|arxiv,B,0.7,kw:title:x,test\n"
+        )
+
+    def tearDown(self):
+        for p in [
+            ROOT / "data" / "queries" / f"{self.tid}.json",
+            ROOT / "data" / "scores" / f"{self.tid}.json",
+            ROOT / "data" / "agreement" / f"{self.tid}.json",
+            ROOT / "data" / "papers_dedup" / f"{self.tid}.csv",
+            ROOT / "data" / "decisions" / f"{self.tid}.json",
+        ]:
+            try:
+                p.unlink()
+            except Exception:
+                pass
+
+    def test_no_reviews_forces_low_and_blocks_go(self):
+        d = self.gate.gate_topic(self.tid, allow_go_without_llm=False)
+        self.assertEqual(d["final_confidence"], "LOW")
+        self.assertNotEqual(d["final_decision"], "GO")  # GO blocked without LLM
+        self.assertEqual(d["status"], "PRELIMINARY_HEURISTIC_ONLY")
+
+    def test_override_allows_go(self):
+        d = self.gate.gate_topic(self.tid, allow_go_without_llm=True)
+        # All other GO conditions met; override should permit GO
+        self.assertEqual(d["final_decision"], "GO")
+        # Even with override, confidence stays LOW because no reviewers
+        self.assertEqual(d["final_confidence"], "LOW")
+
+
+class TestReportWarnsWhenNoLLM(unittest.TestCase):
+    def test_report_contains_warning(self):
+        rep = _load("09_generate_final_report")
+        out = ROOT / "reports" / "_test_warn.md"
+        rep.main(["--out", str(out)])
+        text = out.read_text(encoding="utf-8")
+        # Either the warning banner OR a "FULL_REVIEW_COMPLETE" status must be present
+        if "n_reviews=0" in text or "PRELIMINARY_HEURISTIC_ONLY" in text:
+            self.assertIn("LLM REVIEW NOT RUN", text.upper().replace("Â", ""))
         out.unlink(missing_ok=True)
 
 

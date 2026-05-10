@@ -28,6 +28,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from common.io_utils import read_csv, read_json, write_json, write_csv, log, evidence_dir  # noqa: E402
+from common.config import CFG  # noqa: E402
+from common.relevance import median_relevance  # noqa: E402
 
 QUERIES_DIR = ROOT / "data" / "queries"
 DEDUP_DIR = ROOT / "data" / "papers_dedup"
@@ -94,6 +96,19 @@ def gap_phrase_hits(papers: list[dict[str, Any]]) -> int:
     return hits
 
 
+def existing_artifact_density(gh: list[dict[str, Any]], hf: list[dict[str, Any]],
+                               pwc: list[dict[str, Any]]) -> float:
+    """0.0 = no comparable artifacts found; 1.0 = many high-signal artifacts found."""
+    score = 0.0
+    big_gh = sum(1 for batch in (gh or []) for r in batch.get("results", []) or [] if r.get("stars", 0) >= 1000)
+    score += min(0.4, big_gh * 0.10)
+    big_hf = sum(1 for batch in (hf or []) for r in batch.get("results", []) or [] if r.get("downloads", 0) >= 1000)
+    score += min(0.3, big_hf * 0.05)
+    n_pwc = sum(len((b.get("datasets") or [])) for b in (pwc or []))
+    score += min(0.3, n_pwc * 0.05)
+    return round(min(1.0, score), 3)
+
+
 def saturation(papers: list[dict[str, Any]], gh: list[dict[str, Any]], hf: list[dict[str, Any]]) -> dict[str, Any]:
     n = len(papers)
     dominant_tools = 0
@@ -123,21 +138,40 @@ def saturation(papers: list[dict[str, Any]], gh: list[dict[str, Any]], hf: list[
 
 
 def artifact_opportunity(papers: list[dict[str, Any]], pwc_records: list[dict[str, Any]],
-                         hf_records: list[dict[str, Any]]) -> dict[str, Any]:
+                         hf_records: list[dict[str, Any]], gh_records: list[dict[str, Any]],
+                         saturation_score: int) -> dict[str, Any]:
     n_pwc_datasets = sum(len(r.get("datasets", [])) for r in pwc_records)
     n_hf = sum(len(r.get("results", [])) for r in hf_records)
     gap_signal = gap_phrase_hits(papers)
-    score = 0
+    density = existing_artifact_density(gh_records, hf_records, pwc_records)
+
+    # Base from gap signal
     if gap_signal >= 5 and n_pwc_datasets <= 2 and n_hf <= 5:
-        score = 5
+        base = 5
     elif gap_signal >= 3 and n_pwc_datasets <= 5 and n_hf <= 10:
-        score = 4
+        base = 4
     elif gap_signal >= 1:
-        score = 3
+        base = 3
     else:
-        score = 2
+        base = 2
+
+    # Penalize when many comparable artifacts already exist
+    high = float(CFG["artifact_density_high"])
+    med = float(CFG["artifact_density_med"])
+    if density >= high:
+        base = max(1, base - 2)
+    elif density >= med:
+        base = max(1, base - 1)
+
+    differentiator_required = (
+        density >= float(CFG["differentiator_required_threshold"])
+        or saturation_score >= 4
+    )
+
     return {
-        "artifact_opportunity_0to5": score,
+        "artifact_opportunity_0to5": base,
+        "existing_artifact_density": density,
+        "differentiator_required": differentiator_required,
         "gap_phrase_hits": gap_signal,
         "n_existing_pwc_datasets": n_pwc_datasets,
         "n_existing_hf_datasets": n_hf,
@@ -184,6 +218,59 @@ def risk_signal(topic: dict[str, Any]) -> dict[str, Any]:
     return {"ip_risk_flags": flags, "ip_risk_0to5": min(5, len(flags) * 2)}
 
 
+def _has_any(text: str, terms: list[str]) -> int:
+    t = text.lower()
+    return sum(1 for term in terms if term in t)
+
+
+def niw_score(topic: dict[str, Any]) -> int:
+    """National-importance / public-benefit weighted heuristic."""
+    text = " ".join([
+        str(topic.get("title", "")), str(topic.get("category", "")),
+        str(topic.get("keywords", "")), str(topic.get("synonyms", "")),
+    ]).lower()
+    s = 1.5  # baseline
+    s += 1.5 * _has_any(text, ["clinical", "health", "medical", "patient", "ehr", "guideline", "icu", "discharge"])
+    s += 1.0 * _has_any(text, ["safety", "fairness", "bias", "equity", "disparit", "robust", "trust"])
+    s += 0.5 * _has_any(text, ["public health", "national", "federal", "policy", "regulation", "fda"])
+    s += 0.5 * _has_any(text, ["evaluation", "reproducibility", "methodology"])  # methodological breadth
+    return int(max(1, min(5, round(s))))
+
+
+def eb1a_score(topic: dict[str, Any], citation_signal_0to5: int, artifact_score_0to5: int) -> int:
+    """Citations + original-contribution + artifact-publication potential."""
+    s = 0.5
+    s += 0.45 * citation_signal_0to5
+    s += 0.40 * artifact_score_0to5
+    target = str(topic.get("target_artifact", "")).lower()
+    if any(w in target for w in ["dataset", "benchmark", "tool", "database", "framework"]):
+        s += 1.0
+    if any(w in target for w in ["survey", "taxonomy"]):
+        s += 0.4
+    return int(max(1, min(5, round(s))))
+
+
+def career_score(topic: dict[str, Any], artifact_score_0to5: int) -> int:
+    """ML/AI engineering relevance + portfolio strength."""
+    text = " ".join([
+        str(topic.get("title", "")), str(topic.get("category", "")),
+        str(topic.get("keywords", "")), str(topic.get("synonyms", "")),
+    ]).lower()
+    s = 1.5
+    s += 0.6 * _has_any(text, ["llm", "rag", "agent", "evaluation", "benchmark",
+                                "retrieval", "inference", "tokeniz", "judge",
+                                "multimodal", "efficien", "alignment", "safety"])
+    s += 0.4 * _has_any(text, ["prompt", "tool use", "long context", "deployment"])
+    cat = str(topic.get("category", "")).lower()
+    if "healthcare" in cat or "clinical" in cat:
+        s -= 0.6  # narrower FAANG market
+    target = str(topic.get("target_artifact", "")).lower()
+    if any(w in target for w in ["tool", "benchmark", "dataset", "framework"]):
+        s += 0.7
+    s += 0.2 * artifact_score_0to5
+    return int(max(1, min(5, round(s))))
+
+
 def citation_signal_score(p: dict[str, Any]) -> int:
     """0..5 from paper signals."""
     if p["n_papers_24mo"] == 0:
@@ -202,25 +289,29 @@ def citation_signal_score(p: dict[str, Any]) -> int:
     return min(5, s)
 
 
-def heuristic_overall(metrics: dict[str, Any]) -> float:
+def heuristic_overall(metrics: dict[str, Any]) -> dict[str, Any]:
     """
     Map evidence-derived signals into the rubric A..X (heuristic, transparent).
-    All factors 1..5; missing -> 2 as neutral default.
+    All factors 1..5.
+
+    L (NIW), M (EB-1A), N (Career), F (tool potential) are topic-aware via
+    metrics["niw_0to5"], metrics["eb1a_0to5"], metrics["career_0to5"],
+    metrics["tool_potential_0to5"].
     """
     A = max(1, min(5, 2 + (1 if metrics["paper"]["growth_yoy_proxy"] > 0.0 else 0) + (1 if metrics["paper"]["n_papers_12mo"] > 30 else 0)))
     B = max(1, min(5, 2 + (1 if metrics["paper"]["n_papers"] > 50 else 0) + (1 if metrics["paper"]["top_citation"] >= 100 else 0) + (1 if metrics["paper"]["top_citation"] >= 500 else 0)))
     C = 5 - min(4, metrics["saturation"]["saturation_score_0to5"])
     D = metrics["artifact"]["artifact_opportunity_0to5"]
     E = max(1, min(5, 5 - metrics["artifact"]["n_existing_pwc_datasets"]))
-    F = 3
+    F = max(1, min(5, metrics.get("tool_potential_0to5", 3)))
     G = 3
     H = max(1, metrics["venue"]["venue_signal_0to5"])
     I = 3
     J = max(1, min(5, 1 + metrics["venue"]["doaj_no_apc_journals"]))
     K = 3
-    L = 3
-    M = 3
-    N = 3
+    L = max(1, min(5, metrics.get("niw_0to5", 3)))
+    M = max(1, min(5, metrics.get("eb1a_0to5", 3)))
+    N = max(1, min(5, metrics.get("career_0to5", 3)))
     O = max(1, metrics["saturation"]["saturation_score_0to5"])
     P = max(1, min(5, 3 - (1 if metrics["artifact"]["gap_phrase_hits"] > 3 else 0) + (1 if metrics["saturation"]["dominant_tools"] >= 2 else 0)))
     Q = 1
@@ -325,9 +416,27 @@ def score_topic(topic_id: str, topic_meta: dict[str, Any]) -> dict[str, Any]:
     venues = read_json(edir / "venues.json", {})
 
     sat = saturation(raw, gh, hf)
-    art = artifact_opportunity(raw, pwc, hf)
+    art = artifact_opportunity(raw, pwc, hf, gh, sat["saturation_score_0to5"])
     ven = venue_signal(doaj, venues)
     risk = risk_signal(topic_meta)
+    cit_sig = citation_signal_score(paper_sig)
+
+    niw = niw_score(topic_meta)
+    eb1a = eb1a_score(topic_meta, cit_sig, art["artifact_opportunity_0to5"])
+    career = career_score(topic_meta, art["artifact_opportunity_0to5"])
+
+    # Tool potential: high if target is tool/benchmark/framework AND artifact opportunity high
+    target = str(topic_meta.get("target_artifact", "")).lower()
+    tool_pot = 1
+    if any(w in target for w in ["tool", "benchmark", "framework"]):
+        tool_pot = 4 if art["artifact_opportunity_0to5"] >= 3 else 3
+    elif "dataset" in target:
+        tool_pot = 3
+    else:
+        tool_pot = 2
+
+    # Relevance purity from filtered dedup CSV
+    purity = median_relevance(papers)
 
     metrics = {
         "paper": paper_sig,
@@ -335,7 +444,13 @@ def score_topic(topic_id: str, topic_meta: dict[str, Any]) -> dict[str, Any]:
         "artifact": art,
         "venue": ven,
         "risk": risk,
-        "citation_signal_0to5": citation_signal_score(paper_sig),
+        "citation_signal_0to5": cit_sig,
+        "niw_0to5": niw,
+        "eb1a_0to5": eb1a,
+        "career_0to5": career,
+        "tool_potential_0to5": tool_pot,
+        "relevance_purity": purity,
+        "kept_papers": len(papers),
     }
     rubric = heuristic_overall(metrics)
     metrics["rubric"] = rubric
@@ -371,11 +486,21 @@ def main(argv: list[str] | None = None) -> int:
             "citation_signal_0to5": m["citation_signal_0to5"],
             "saturation_0to5": m["saturation"]["saturation_score_0to5"],
             "artifact_0to5": m["artifact"]["artifact_opportunity_0to5"],
+            "existing_artifact_density": m["artifact"]["existing_artifact_density"],
+            "differentiator_required": m["artifact"]["differentiator_required"],
             "venue_signal_0to5": m["venue"]["venue_signal_0to5"],
             "ip_risk_0to5": m["risk"]["ip_risk_0to5"],
+            "niw_0to5": m["niw_0to5"],
+            "eb1a_0to5": m["eb1a_0to5"],
+            "career_0to5": m["career_0to5"],
+            "tool_potential_0to5": m["tool_potential_0to5"],
+            "relevance_purity": m["relevance_purity"],
+            "kept_papers": m["kept_papers"],
             "Overall": m["rubric"]["composites"]["Overall"],
             "CitationPotential": m["rubric"]["composites"]["CitationPotential"],
             "ExecFeasibility": m["rubric"]["composites"]["ExecFeasibility"],
+            "ImmigrationValue": m["rubric"]["composites"]["ImmigrationValue"],
+            "CareerValue": m["rubric"]["composites"]["CareerValue"],
             "PublicationPath": m["rubric"]["composites"]["PublicationPath"],
             "RiskPenalty": m["rubric"]["composites"]["RiskPenalty"],
         })

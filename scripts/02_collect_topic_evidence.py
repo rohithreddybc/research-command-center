@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from common.http import get_json, get  # noqa: E402
 from common.io_utils import read_json, write_json, write_csv, log, evidence_dir  # noqa: E402
+from common.relevance import filter_by_relevance  # noqa: E402
 
 QUERIES_DIR = ROOT / "data" / "queries"
 DEDUP_DIR = ROOT / "data" / "papers_dedup"
@@ -237,7 +238,21 @@ def deduplicate(papers: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
-def collect_for_topic(topic_id: str, queries: dict[str, Any], year_range: str = "2022-2026", limit_per_query: int = 25) -> dict[str, Any]:
+def _doi_url(doi: str | None) -> str:
+    if not doi:
+        return ""
+    return f"https://doi.org/{doi.strip().lstrip('https://doi.org/').lstrip('http://doi.org/')}"
+
+
+def _abstract_snippet(s: str | None, n: int = 240) -> str:
+    if not s:
+        return ""
+    s = re.sub(r"\s+", " ", s).strip()
+    return (s[:n] + "...") if len(s) > n else s
+
+
+def collect_for_topic(topic_id: str, topic_meta: dict[str, Any], queries: dict[str, Any],
+                      year_range: str = "2022-2026", limit_per_query: int = 25) -> dict[str, Any]:
     edir = evidence_dir(topic_id)
 
     s2_all: list[dict[str, Any]] = []
@@ -280,24 +295,32 @@ def collect_for_topic(topic_id: str, queries: dict[str, Any], year_range: str = 
             papers.append(_arxiv_to_paper(p))
 
     dedup = deduplicate(papers)
+    # Relevance filter against the topic
+    filtered = filter_by_relevance(dedup, topic_meta)
     DEDUP_DIR.mkdir(parents=True, exist_ok=True)
     write_csv(
         DEDUP_DIR / f"{topic_id}.csv",
         [{
             "title": p.get("title", "")[:300],
+            "abstract_snippet": _abstract_snippet(p.get("abstract"), 240),
             "year": p.get("year") or "",
             "venue": p.get("venue", "")[:200],
             "citations": p.get("citations", 0),
             "influential_citations": p.get("influential_citations", 0),
             "doi": p.get("doi") or "",
-            "id": p.get("id") or "",
+            "url": _doi_url(p.get("doi")) or (p.get("id") if isinstance(p.get("id"), str) and p.get("id", "").startswith("http") else ""),
             "sources": "|".join(p.get("sources", [p.get("source", "")])),
             "authors": "|".join(p.get("authors", []) or [])[:300],
-        } for p in dedup],
-        header=["title", "year", "venue", "citations", "influential_citations", "doi", "id", "sources", "authors"],
+            "relevance_score": p.get("relevance_score", 0),
+            "matched_keywords": p.get("matched_keywords", ""),
+            "reason_included": p.get("reason_included", ""),
+        } for p in filtered],
+        header=["title", "abstract_snippet", "year", "venue", "citations", "influential_citations",
+                "doi", "url", "sources", "authors",
+                "relevance_score", "matched_keywords", "reason_included"],
     )
-    log("02_evidence", f"{topic_id}: deduped {len(dedup)} from {len(papers)} raw")
-    return {"topic_id": topic_id, "raw": len(papers), "deduped": len(dedup)}
+    log("02_evidence", f"{topic_id}: deduped {len(dedup)} from {len(papers)} raw; kept {len(filtered)} after relevance filter")
+    return {"topic_id": topic_id, "raw": len(papers), "deduped": len(dedup), "kept": len(filtered)}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -319,7 +342,7 @@ def main(argv: list[str] | None = None) -> int:
         if not q:
             continue
         topic_id = q["topic"]["topic_id"]
-        s = collect_for_topic(topic_id, q["queries"], args.year_range, args.limit_per_query)
+        s = collect_for_topic(topic_id, q["topic"], q["queries"], args.year_range, args.limit_per_query)
         summary.append(s)
     print({"summary": summary})
     return 0

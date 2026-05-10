@@ -1,0 +1,76 @@
+topic_id,title,category,keywords,synonyms,negative_keywords,target_artifact,prelim_priority
+T01,Cross-judge agreement on long-context QA,eval,LLM judge|long context QA|inter-judge agreement,evaluator agreement;automatic evaluator,unrelated chatbot,benchmark,3
+T02,Position-bias quantification across judge models,eval,position bias|LLM judge|preference order,order bias;ordering effect,unrelated UI,empirical+harness,3
+T03,Self-preference bias in same-family judges,eval,self-preference bias|LLM judge|same family,model family preference;self bias,unrelated retrieval,empirical,3
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,eval,LLM judge|prompt template sensitivity|clinical NLP|robustness,clinical question answering;medical QA;judge prompt;evaluator prompt,general chatbot,benchmark+tool,5
+T05,Judge confidence calibration vs human gold,eval,LLM judge|calibration|human gold|reliability,judge confidence;reliability of judges,unrelated calibration,empirical,4
+T06,Pairwise vs pointwise judge agreement under perturbation,eval,LLM judge|pairwise|pointwise|perturbation,pairwise comparison;pointwise scoring,unrelated retrieval,empirical,3
+T07,Judge robustness to candidate-side prompt injection,eval+safety,LLM judge|prompt injection|adversarial robustness,evaluator manipulation;injection attack,general red teaming,benchmark,5
+T08,Cost-quality Pareto small open judges vs frontier,eval,LLM judge|cost quality|open model|frontier,small judge model;efficient evaluator,unrelated cost,empirical,4
+T09,Judge consistency under temperature/seed variation,eval,LLM judge|temperature|seed|variance,sampling variance;judge stochasticity,unrelated tuning,empirical,3
+T10,Reproducibility audit of LLM-judge papers,meta,LLM-as-a-judge|reproducibility|methodology disclosure|evaluation,LLM judge;automatic evaluator;LLM evaluator;model-based evaluation,tutorial;workshop summary,database+paper,5
+T11,Format sensitivity benchmark on LLM evaluations,prompt,format sensitivity|JSON YAML prose|benchmark variance,output format;structured output,unrelated UI,benchmark,4
+T12,Instruction reordering effects on classification,prompt,instruction reordering|prompt order|classification,prompt permutation;instruction sequence,unrelated permutation,empirical,3
+T13,Whitespace and punctuation sensitivity in math reasoning,prompt,whitespace sensitivity|punctuation|math reasoning,formatting sensitivity;tokenization spaces,unrelated tokenization,empirical,2
+T14,Few-shot order effects on healthcare-domain prompts,prompt+healthcare,few-shot order|healthcare prompt|in-context examples,clinical few-shot;medical prompting,unrelated few-shot,empirical,4
+T15,System vs user prompt placement on safety refusals,safety,system prompt|user prompt|safety refusal,prompt role;safety behavior,unrelated alignment,empirical,3
+T16,CoT scratchpad-length sensitivity,prompt,chain of thought|scratchpad length|reasoning length,CoT length;reasoning depth,unrelated decoding,empirical,2
+T17,Tokenization-induced leaderboard variance,eval,tokenizer|BPE|leaderboard variance|evaluation noise,subword;encoding effects,compiler tokenizers,empirical,4
+T18,Multilingual prompt sensitivity asymmetries,prompt,multilingual prompt|cross-lingual sensitivity|language asymmetry,multilingual robustness;cross-lingual evaluation,translation quality unrelated,empirical,3
+T19,RAG faithfulness under retriever-noise injection,rag,retrieval augmented generation|faithfulness|retriever noise,grounded generation;noisy retrieval,unrelated retrieval,benchmark,4
+T20,Citation correctness vs answer correctness decoupling,rag,citation correctness|answer correctness|RAG,grounded citation;citation faithfulness,unrelated citation,empirical,3
+T21,Long- vs short-context RAG empirical limits,rag,long context RAG|short context|context limits,context window;long-context retrieval,unrelated context,empirical,3
+T22,Clinical-guideline RAG eval benchmark,rag+healthcare,clinical guideline RAG|medical retrieval|guideline,USPSTF;CDC guidelines;NICE retrieval,unrelated guideline,benchmark,4
+T23,RAG no-answer / negative retrieval handling,rag,no answer retrieval|negative retrieval|abstention,refusal in RAG;abstention behavior,unrelated abstention,empirical,3
+T24,RAG eval reproducibility across retriever versions,rag+repro,RAG reproducibility|retriever version|evaluation,RAG eval drift;retriever drift,unrelated repro,empirical,4
+T25,Hallucination taxonomy: RAG vs no-RAG,rag,retrieval augmented generation|hallucination taxonomy|faithfulness,grounded generation;citation correctness,unrelated retrieval,taxonomy+paper,4
+T26,Tool-use error taxonomy from agent traces,agents,tool use error|agent trace|taxonomy,agent failure modes;tool calling,unrelated tooling,taxonomy,4
+T27,Cost-success Pareto healthcare-admin agents,agents+healthcare,healthcare administrative agent|cost success Pareto,prior auth agent;clinical admin,clinical decision unrelated,benchmark,3
+T28,Agent self-correction reliability benchmark,agents,agent self correction|reliability|reflection,reflection benchmark;self-refinement,unrelated correction,benchmark,4
+T29,Determinism failure modes in multi-step agents,agents,multi-step agent|determinism|failure modes,non-deterministic agent;agent variance,unrelated determinism,empirical,4
+T30,Inter-rater reliability of human evals on agent trajectories,agents+methodology,human evaluation|agent trajectory|inter rater reliability,agent trace eval;trajectory annotation,unrelated annotation,empirical,3
+T31,Sandbox safety leakage in agent benchmarks,agents+safety,agent sandbox|safety leakage|side effect,sandbox escape;agent safety,unrelated sandbox,empirical,4
+T32,Task taxonomy LLMs on MIMIC discharge summaries,healthcare,MIMIC discharge summary|clinical task taxonomy|LLM,MIMIC-IV LLM;discharge note,unrelated MIMIC,taxonomy+paper,3
+T33,Health-literacy adaptation eval of LLM patient instructions,healthcare,health literacy|patient instruction|LLM adaptation,readability;patient-friendly text,unrelated literacy,benchmark+paper,4
+T34,HEDIS-style measure extraction from synthetic notes,healthcare,HEDIS measure|synthetic clinical note|extraction,quality measure;clinical NLP extraction,unrelated extraction,benchmark,3
+T35,Risk-stratification fairness audit on SynPUF SyntheticMass,healthcare+fairness,risk stratification|fairness audit|SynPUF,disparate impact;risk model fairness,unrelated stratification,empirical,4
+T36,Prior-auth letter LLM eval (public templates),healthcare,prior authorization|LLM letter|payer template,utilization management;authorization letter,unrelated authorization,benchmark,2
+T37,Clinical-guideline consistency across LLM versions over time,healthcare,clinical guideline|model drift|LLM versioning|longitudinal evaluation,USPSTF;CDC guidelines;NICE;medical advice consistency,drug discovery,empirical,5
+T38,Pediatric vs adult clinical-LLM gap,healthcare+fairness,pediatric LLM|adult LLM|age gap clinical,pediatric medicine;child clinical NLP,unrelated pediatric,empirical,4
+T39,Drug-interaction extraction LLM bench (DrugBank/RxNorm),healthcare,drug interaction|DrugBank|RxNorm|extraction,DDI benchmark;drug NLP,unrelated drug discovery,benchmark,3
+T40,SDOH extraction from public notes,healthcare,SDOH|social determinants|extraction|notes,social determinants of health;SDOH NLP,unrelated extraction,benchmark,3
+T41,ICD-10 coding LLM eval with calibrated confidence,healthcare,ICD-10 coding|LLM|calibration|medical coding,medical coding NLP;ICD prediction,unrelated coding,empirical,4
+T42,Survey LLM eval methodology in clinical NLP 2023-2026,survey+healthcare,LLM evaluation|clinical NLP|survey|methodology,clinical LLM eval review;medical NLP survey,unrelated survey,survey,4
+T43,Reproducibility audit of clinical LLM papers,meta+healthcare,clinical LLM|reproducibility|methodology disclosure,medical NLP;clinical NLP,drug docking,database+paper,5
+T44,Patient-facing chatbot safety eval framework,healthcare+safety,patient chatbot|safety evaluation|consumer health,medical chatbot safety;health chatbot,unrelated chatbot,framework+paper,3
+T45,Calibration drift over model updates (longitudinal),trustworthy,calibration drift|longitudinal|model update,model drift calibration;temporal calibration,unrelated drift,empirical,4
+T46,Disparate impact on dual-eligible-like synthetic populations,healthcare+fairness,disparate impact|dual eligible|synthetic population,Medicaid Medicare fairness;risk fairness,unrelated impact,empirical,4
+T47,Refusal consistency across demographic phrasings,safety+fairness,refusal consistency|demographic phrasing|safety,demographic fairness LLM;refusal disparities,unrelated demographic,empirical,3
+T48,Watermark detectability under standard edits,safety,LLM watermark|edit attack|detectability,text watermark;watermark removal,unrelated watermark,empirical,3
+T49,Membership inference on public medical fine-tunes,safety+healthcare,membership inference|medical fine-tune|privacy,clinical model privacy;MI attack,unrelated privacy,empirical,3
+T50,Constitutional vs base prompts on harmful refusals,safety,constitutional prompt|harmful refusal|alignment,base prompt safety;system prompt safety,unrelated constitution,empirical,3
+T51,Red-team prompt taxonomy for clinical LLMs,safety+healthcare,red team|clinical LLM|prompt taxonomy,medical jailbreak;clinical adversarial,unrelated taxonomy,taxonomy,4
+T52,Group-conditional uncertainty calibration bench,trustworthy,group conditional calibration|uncertainty|fairness,subgroup calibration;equal calibration,unrelated calibration,benchmark,4
+T53,Test-set contamination audit of healthcare LLM benchmarks,methodology,data contamination|benchmark leakage|MedQA|PubMedQA|MMLU clinical,training data leakage;memorization;n-gram overlap,unrelated NLP,empirical+database,5
+T54,Evaluation noise-floor estimation methodology,methodology,evaluation noise|noise floor|benchmark variance,benchmark noise;variance estimation,unrelated noise,method,4
+T55,Effective sample-size calculator for LLM benchmarks,methodology,effective sample size|statistical power|LLM benchmark,benchmark sample size;sample size calc,unrelated power,tool+paper,4
+T56,Statistical-significance practices in LLM eval (meta),meta,statistical significance|LLM evaluation|methodology,significance testing NLP;p-value LLM,unrelated significance,survey,4
+T57,Benchmark-version drift study,methodology,benchmark version drift|leaderboard change|dataset versioning,version drift;benchmark update,unrelated drift,empirical,4
+T58,Synthetic clinical-note quality eval framework,healthcare+methodology,synthetic clinical note|quality evaluation|generation,synthetic EHR;clinical generation eval,unrelated synthetic,framework,4
+T59,Weak-supervision label-noise impact on healthcare classifiers,data-centric+healthcare,weak supervision|label noise|healthcare classifier,programmatic labeling;noisy labels clinical,unrelated weak supervision,empirical,3
+T60,Reproducibility checklist adoption across clinical NLP tracks,meta,reproducibility checklist|clinical NLP|adoption,reproducibility report adoption;ml4h checklist,unrelated checklist,survey,4
+T61,ML observability metrics for risk-stratification survey,applied,ML observability|risk stratification|monitoring,model monitoring;production monitoring,unrelated observability,survey,3
+T62,Drift detection on synthetic claims data toolkit,applied,drift detection|claims data|toolkit,covariate drift;concept drift,unrelated drift,tool,3
+T63,Calibration-monitoring methods comparison,applied,calibration monitoring|production calibration|comparison,calibration drift methods;monitoring techniques,unrelated calibration,empirical,3
+T64,Causal eval of care-gap interventions on public data,healthcare+causal,care gap intervention|causal evaluation|public data,gaps in care causal;intervention evaluation,unrelated intervention,empirical,3
+T65,Open benchmark for HEDIS-style measure pipelines,healthcare,HEDIS pipeline|measure benchmark|quality measure,quality reporting benchmark;HEDIS open,unrelated benchmark,benchmark,2
+T66,Survey gaps-in-care ML system architectures (public),survey+healthcare,gaps in care|ML system architecture|public,care gap ML;architecture survey,unrelated architecture,survey,2
+T67,Cost-effectiveness reporting standards in HC ML,meta,cost effectiveness|reporting standard|healthcare ML,ICER reporting;CE reporting clinical AI,unrelated cost,survey,3
+T68,Deployment-gap meta-analysis published vs production,meta,deployment gap|published vs production|clinical AI,research-to-production gap;deployment evaluation,unrelated deployment,survey,4
+T69,LLMs for systematic-review screening benchmark,litmining,systematic review|screening|LLM benchmark,literature screening;abstract screening LLM,unrelated screening,benchmark,4
+T70,Citation-graph novelty scoring for AI papers,litmining,citation graph|novelty score|AI papers,citation network novelty;novelty detection,unrelated novelty,tool,3
+T71,Retraction detection in AI/ML literature using LLMs,litmining,retraction detection|AI literature|LLM,paper retraction;retraction watch LLM,unrelated retraction,empirical+tool,4
+T72,PRISMA-AI compliance audit of clinical AI reviews,meta+healthcare,PRISMA-AI|systematic review|compliance audit,PRISMA compliance;clinical AI review audit,unrelated PRISMA,database+paper,4
+T73,Reviewer-load reduction via LLM triage controlled study,litmining,reviewer load|LLM triage|peer review,peer review load;LLM screening peer,unrelated triage,empirical,3
+T74,Open structured-metadata dataset of LLM-eval papers,meta,LLM evaluation methodology|metadata|systematic mapping,evaluation survey;benchmarking practices,tutorial,dataset,5
+T75,Taxonomy of evaluation failure modes across NLP venues,meta,evaluation failure mode|NLP venues|taxonomy,benchmark failure;evaluation pitfall,unrelated failure,taxonomy,4

@@ -1,0 +1,42 @@
+# research-command-center pipeline configuration
+# Flat key:value YAML subset (no nested mappings) so the loader has no PyYAML dependency.
+
+# --- evidence collection ---
+year_range: "2022-2026"
+limit_per_query: 12
+max_rounds: 3
+
+# --- relevance filtering (02_collect_topic_evidence) ---
+relevance_min: 0.20             # papers below this are dropped from dedup
+relevance_keep_max: 80          # cap dedup size after filtering
+relevance_w_primary_title: 4.0
+relevance_w_primary_abstract: 1.5
+relevance_w_keyword_title: 2.0
+relevance_w_keyword_abstract: 0.8
+relevance_w_synonym_title: 1.0
+relevance_w_synonym_abstract: 0.4
+relevance_normalize_denom: 8.0
+
+# --- artifact opportunity (05_score_topics) ---
+artifact_density_high: 0.7      # >= triggers strong artifact-opportunity penalty (-2)
+artifact_density_med: 0.4       # >= triggers mild penalty (-1)
+differentiator_required_threshold: 0.5
+
+# --- confidence gate (08_confidence_gate) ---
+gate_overall_min_for_go: 14
+gate_citation_min_for_go: 3
+gate_artifact_min_for_go: 3
+gate_venue_min_for_go: 2
+gate_ip_max_for_go: 1
+gate_saturation_max_for_go: 4
+gate_min_evidence_sources: 2
+gate_min_review_decision_score: 2.0
+gate_high_disagreement_score_stdev: 1.2
+gate_force_low_when_no_reviews: true
+gate_require_llm_for_go: true   # set false only with explicit override
+
+# --- LLM panel (06_llm_review_topics) ---
+tiebreaker_top_n: 4
+openai_budget_default: 8
+claude_cli_model: "haiku"
+claude_cli_timeout_sec: 180

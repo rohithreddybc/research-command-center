@@ -1,0 +1,9 @@
+# Core pipeline runs on stdlib only; the deps below are optional.
+# Install with: pip install -r requirements.txt
+
+# Optional: enable OpenAI tiebreaker calls
+openai>=1.30
+
+# Optional: Anthropic SDK (NOT used by default; pipeline calls Claude Code CLI).
+# Listed only so existing tests that import the SDK continue to work.
+anthropic>=0.30
