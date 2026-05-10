@@ -355,5 +355,262 @@ class TestReportWarnsWhenNoLLM(unittest.TestCase):
         out.unlink(missing_ok=True)
 
 
+class TestNarrowingScript(unittest.TestCase):
+    """Tests for 11_generate_narrowed_topics.py"""
+
+    def setUp(self):
+        self.mod = _load("11_generate_narrowed_topics")
+
+    # ---- term extraction ----
+
+    def test_extract_title_ngrams_returns_frequent_terms(self):
+        # Titles where specific phrases repeat across papers (same domain concept)
+        papers = [
+            {"title": "Adversarial prompt injection attacks on LLM judge evaluation"},
+            {"title": "Adversarial prompt injection vulnerabilities in LLM evaluators"},
+            {"title": "Defending against adversarial prompt injection in automated judges"},
+            {"title": "Adversarial prompt injection robustness benchmark for evaluation"},
+        ]
+        grams = self.mod.extract_title_ngrams(papers, n_range=(2, 3), min_count=2)
+        # "adversarial prompt" or "prompt injection" should appear >= 2 times
+        self.assertIsInstance(grams, list)
+        self.assertGreater(len(grams), 0)
+        # At least one gram containing "prompt" or "injection" should be present
+        found_relevant = any("prompt" in g or "injection" in g for g in grams)
+        self.assertTrue(found_relevant, f"Expected prompt/injection grams, got: {grams}")
+
+    def test_extract_title_ngrams_filters_by_min_count(self):
+        papers = [
+            {"title": "Unique phrase only once here xyz"},
+            {"title": "Repeated domain phrase appears twice"},
+            {"title": "Repeated domain phrase again here"},
+        ]
+        grams = self.mod.extract_title_ngrams(papers, n_range=(2, 3), min_count=2)
+        self.assertIn("repeated domain", grams)
+        # "unique phrase" appears only once -> filtered
+        self.assertNotIn("unique phrase", grams)
+
+    # ---- noisy keyword detection ----
+
+    def test_find_noisy_keywords_identifies_noise(self):
+        hi = [
+            {"title": "LLM judge prompt sensitivity", "matched_keywords": "kw:title:llm judge"},
+            {"title": "LLM judge evaluation robustness", "matched_keywords": "kw:title:llm judge"},
+        ]
+        lo = [
+            {"title": "Robustness of IoT networks", "matched_keywords": "kw:title:robustness"},
+            {"title": "Railway robustness indicators", "matched_keywords": "kw:title:robustness"},
+            {"title": "Superconductor robustness model", "matched_keywords": "kw:title:robustness"},
+        ]
+        noisy = self.mod.find_noisy_keywords(hi, lo, ["clinical nlp", "robustness"])
+        self.assertIn("robustness", noisy)
+        # "clinical nlp" doesn't appear in lo → not noisy
+        self.assertNotIn("clinical nlp", noisy)
+
+    def test_find_noisy_keywords_clean_keyword_not_flagged(self):
+        hi = [{"title": "Prompt template for LLM judge evaluation", "matched_keywords": "kw:title:prompt template"}] * 4
+        lo = [{"title": "Unrelated paper about weather", "matched_keywords": "kw:title:other"}] * 2
+        noisy = self.mod.find_noisy_keywords(hi, lo, ["prompt template", "robustness"])
+        # "prompt template" hits hi papers much more → should not be noisy
+        self.assertNotIn("prompt template", noisy)
+
+    # ---- overlap check ----
+
+    def test_anchors_overlap_rejects_overlapping(self):
+        # "contamination language" overlaps "data contamination" by 50% (contamination)
+        self.assertTrue(self.mod._anchors_overlap("contamination language models", "data contamination"))
+
+    def test_anchors_overlap_passes_non_overlapping(self):
+        # "clinical benchmark" shares no words with "data contamination"
+        self.assertFalse(self.mod._anchors_overlap("clinical benchmark", "data contamination"))
+
+    # ---- variant generation ----
+
+    def test_generate_variants_always_produces_at_least_one(self):
+        """Even with 0 hi papers, a fallback variant should be generated."""
+        parent = {
+            "seed": {
+                "topic_id": "TX",
+                "title": "Test topic",
+                "category": "eval",
+                "keywords": "llm judge|robustness",
+                "synonyms": "evaluator;judge",
+                "negative_keywords": "",
+                "target_artifact": "benchmark",
+                "prelim_priority": "5",
+            },
+            "decision_json": {"relevance_purity": 0.25},
+            "score_json": {
+                "artifact": {"artifact_opportunity_0to5": 2},
+                "saturation": {"saturation_score_0to5": 2},
+                "niw_0to5": 3, "eb1a_0to5": 3, "career_0to5": 3,
+                "citation_signal_0to5": 2,
+            },
+            "agree_json": {},
+            "papers": [
+                {"title": "Robustness of robotic arms", "relevance_score": "0.25",
+                 "matched_keywords": "kw:title:robustness", "citations": "0"},
+            ],
+        }
+        hi, mid, lo = self.mod.split_by_tier(parent["papers"], hi_threshold=0.45)
+        variants = self.mod.generate_variants(parent, hi, lo, hi_threshold=0.45)
+        self.assertGreater(len(variants), 0)
+        # All variants must have the required CSV columns
+        for v in variants:
+            for col in ("topic_id", "title", "keywords", "synonyms",
+                        "negative_keywords", "target_artifact", "prelim_priority",
+                        "parent_topic_id", "narrowing_type"):
+                self.assertIn(col, v, f"Missing column '{col}' in variant")
+
+    def test_generate_variants_noise_pruned_removes_noisy_keyword(self):
+        """noise_pruned variant should exclude the noisy secondary keyword."""
+        parent = {
+            "seed": {
+                "topic_id": "TY",
+                "title": "Judge robustness to prompt injection",
+                "category": "eval+safety",
+                "keywords": "prompt injection|LLM judge|adversarial robustness",
+                "synonyms": "jailbreak;evaluator manipulation",
+                "negative_keywords": "general red teaming",
+                "target_artifact": "benchmark",
+                "prelim_priority": "5",
+            },
+            "decision_json": {"relevance_purity": 0.25},
+            "score_json": {
+                "artifact": {"artifact_opportunity_0to5": 2},
+                "saturation": {"saturation_score_0to5": 2},
+                "niw_0to5": 4, "eb1a_0to5": 4, "career_0to5": 5,
+                "citation_signal_0to5": 3,
+            },
+            "agree_json": {},
+            "papers": [
+                {"title": "Prompt injection attacks on LLM judges", "relevance_score": "0.5",
+                 "matched_keywords": "primary:title:prompt injection|kw:title:llm judge",
+                 "citations": "10"},
+                {"title": "Prompt injection in multi-agent systems", "relevance_score": "0.5",
+                 "matched_keywords": "primary:title:prompt injection", "citations": "5"},
+                {"title": "Adversarial robustness of neural network classifiers",
+                 "relevance_score": "0.25",
+                 "matched_keywords": "kw:title:adversarial robustness", "citations": "2"},
+                {"title": "IoT network adversarial robustness survey",
+                 "relevance_score": "0.25",
+                 "matched_keywords": "kw:title:adversarial robustness", "citations": "1"},
+                {"title": "Certified adversarial robustness for deep models",
+                 "relevance_score": "0.25",
+                 "matched_keywords": "kw:title:adversarial robustness", "citations": "0"},
+            ],
+        }
+        hi = [p for p in parent["papers"] if float(p["relevance_score"]) >= 0.45]
+        lo = [p for p in parent["papers"] if float(p["relevance_score"]) < 0.3]
+        variants = self.mod.generate_variants(parent, hi, lo, hi_threshold=0.45)
+        noise_pruned = [v for v in variants if v["narrowing_type"] == "noise_pruned"]
+        self.assertGreater(len(noise_pruned), 0)
+        np_v = noise_pruned[0]
+        # "adversarial robustness" should be moved to negatives
+        self.assertIn("adversarial robustness", np_v["negative_keywords"])
+        # "prompt injection" and "LLM judge" should still be in keywords
+        self.assertIn("prompt injection", np_v["keywords"])
+        self.assertIn("LLM judge", np_v["keywords"])
+
+    # ---- signal estimation ----
+
+    def test_estimate_signals_structure(self):
+        """estimate_signals must return all required keys with valid types."""
+        parent = {
+            "decision_json": {"relevance_purity": 0.25},
+            "score_json": {
+                "artifact": {"artifact_opportunity_0to5": 3},
+                "saturation": {"saturation_score_0to5": 2},
+                "niw_0to5": 4, "eb1a_0to5": 4, "career_0to5": 4,
+                "citation_signal_0to5": 3,
+            },
+            "papers": [],
+        }
+        passing = [
+            {"_sim_relevance": 0.75, "citations": "50"},
+            {"_sim_relevance": 0.5, "citations": "10"},
+            {"_sim_relevance": 0.5, "citations": "5"},
+        ]
+        sig = self.mod.estimate_signals(passing, parent, hi_threshold=0.45)
+        required_keys = (
+            "est_relevance_purity", "est_kept_papers", "est_hi_papers",
+            "est_citation_signal", "est_artifact", "est_saturation",
+            "est_evidence_quality", "est_niw", "est_eb1a", "est_career",
+            "est_novelty_risk", "est_exec_feasibility",
+            "composite_score", "purity_gain_vs_parent",
+        )
+        for k in required_keys:
+            self.assertIn(k, sig, f"Missing key '{k}' in estimated signals")
+        self.assertGreaterEqual(sig["est_relevance_purity"], 0)
+        self.assertLessEqual(sig["est_relevance_purity"], 1)
+        self.assertGreater(sig["composite_score"], 0)
+
+    # ---- top-N selection ----
+
+    def test_select_top_variants_respects_diversity(self):
+        """max_per_parent constraint must be enforced."""
+        base_v = {
+            "topic_id": "?",
+            "parent_topic_id": "?",
+            "narrowing_type": "noise_pruned",
+            "composite_score": 0.5,
+            "est_relevance_purity": 0.5,
+            "est_citation_signal": 3,
+        }
+        # 5 variants from TA, 2 from TB
+        variants = []
+        for i in range(5):
+            v = dict(base_v)
+            v["topic_id"] = f"TA_N{i+1}"
+            v["parent_topic_id"] = "TA"
+            v["composite_score"] = 0.9 - i * 0.01
+            v["narrowing_type"] = ["noise_pruned", "primary_anchor", "compound_pivot",
+                                   "synonym_promoted", "tightened_negatives"][i]
+            variants.append(v)
+        for i in range(2):
+            v = dict(base_v)
+            v["topic_id"] = f"TB_N{i+1}"
+            v["parent_topic_id"] = "TB"
+            v["composite_score"] = 0.6 - i * 0.01
+            v["narrowing_type"] = ["noise_pruned", "primary_anchor"][i]
+            variants.append(v)
+
+        selected = self.mod.select_top_variants(variants, top_n=4, max_per_parent=2)
+        # At most 2 from TA
+        ta_sel = [v for v in selected if v["parent_topic_id"] == "TA"]
+        self.assertLessEqual(len(ta_sel), 2)
+        # Total <= 4
+        self.assertLessEqual(len(selected), 4)
+
+    # ---- full dry-run integration ----
+
+    def test_main_no_autorun_produces_csv_and_report(self):
+        """11_generate_narrowed_topics main() --no-autorun should produce output files."""
+        import os
+        # Only run if real decisions exist (i.e., pipeline has been run)
+        decisions_csv = ROOT / "data" / "decisions" / "decisions.csv"
+        if not decisions_csv.exists():
+            self.skipTest("decisions.csv not found; pipeline not yet run")
+        # Run with --no-autorun so we don't trigger a full pipeline during tests
+        rc = self.mod.main(["--no-autorun", "--top-n", "4", "--max-per-parent", "1"])
+        self.assertEqual(rc, 0)
+        narrowed_csv = ROOT / "data" / "topics_seed_narrowed.csv"
+        report = ROOT / "reports" / "narrowing_report.md"
+        self.assertTrue(narrowed_csv.exists())
+        self.assertTrue(report.exists())
+        # Check CSV has correct header
+        import csv as _csv
+        with open(narrowed_csv, newline="", encoding="utf-8") as f:
+            reader = _csv.DictReader(f)
+            headers = reader.fieldnames or []
+        for col in ("topic_id", "title", "keywords", "parent_topic_id", "narrowing_type"):
+            self.assertIn(col, headers)
+        # Check report has expected sections
+        text = report.read_text(encoding="utf-8")
+        self.assertIn("# Narrowing Report", text)
+        self.assertIn("## Selected Variants", text)
+        self.assertIn("## Per-Parent Analysis", text)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
