@@ -1,0 +1,272 @@
+[
+  {
+    "query": "clinical guideline",
+    "results": [
+      {
+        "id": "zechen-nlp/meditron-clinical-guidelines",
+        "downloads": 10,
+        "likes": 0,
+        "tags": [
+          "license:cc-by-4.0",
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "rubanza/uganda-clinical-guidelines",
+        "downloads": 60,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "TTKhosa/tb_project-guidelines-RR_Clinical_2023-cleaned-split",
+        "downloads": 66,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "introvoyz041/Clinical_Guidelines_APN",
+        "downloads": 39,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ClarusC64/clinical-guideline-strength-correspondence-v0.1",
+        "downloads": 24,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "task_categories:text-generation",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "clarusc64",
+          "clinical",
+          "guidelines",
+          "recommendation-strength",
+          "evidence-calibration"
+        ],
+        "description": "\n\t\n\t\t\n\t\tWhat this dataset tests\n\t\n\nGuideline strength must track evidence strength.\nAuthority must not exceed data.\n\n\t\n\t\t\n\t\tWhy it exists\n\t\n\nGuidelines often harden too early.\nLanguage outruns certainty.\nThis set checks whether recommendation force matches evidence quality.\n\n\t\n\t\t\n\t\tData format\n\t\n\nEach row contains\n\nevidence_profile  \nguideline_recommendation  \nstrength_pressure  \nconstraints  \nfailure_modes_to_avoid  \ntarget_behaviors  \ngold_checklist\n\nFeed the model\n\nevidence_profile… See the f"
+      },
+      {
+        "id": "chisomrutherford/nigeria-clinical-guidelines-dataset",
+        "downloads": 81,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-retrieval",
+          "task_categories:question-answering",
+          "language:en",
+          "license:cc-by-4.0",
+          "size_categories:n<1K",
+          "region:us",
+          "medical",
+          "clinical-guidelines",
+          "nigeria",
+          "nstg"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card: NSTG 2022 Structured Clinical Dataset\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nA machine-readable, schema-unified JSON dataset of 270 clinical conditions derived from the Nigeria Standard Treatment Guidelines (NSTG) 2022. Each condition is represented as a structured JSON object covering clinical presentation, investigations, treatment protocols, differential diagnoses, complications, and prevention measures.\nDesigned for use in clinical AI/ML pipelines, decision support… See the full"
+      },
+      {
+        "id": "Khyatimirani/pcos-clinical-guideline-101",
+        "downloads": 52,
+        "likes": 0,
+        "tags": [
+          "task_categories:question-answering",
+          "language:en",
+          "license:apache-2.0",
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "medical",
+          "fertility",
+          "hormonal-health",
+          "pcos",
+          "women-health"
+        ],
+        "description": "\n\t\n\t\t\n\t\tPCOS Clinical Q&A Dataset (Dr. Thaïs Aliabadi Guideline-Based)\n\t\n\n\n\t\n\t\t\n\t\t📌 Overview\n\t\n\nThis dataset contains 500+ clinically grounded conversational Q&A pairs simulating interactions between a PCOS patient and a clinically informed assistant.\nThe dataset is derived from the following primary source:\nFemale Hormone Health, PCOS, Endometriosis, Fertility & Breast Cancer | Dr. Thaïs Aliabadi\nThis conversation features Dr. Thaïs Aliabadi (board-certified OB/GYN) explaining symptoms… See the"
+      },
+      {
+        "id": "Khyatimirani/birth_control_pill_clinical_guideline",
+        "downloads": 20,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "Khyatimirani/peri-menopause-clinical-guideline",
+        "downloads": 32,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "Khyatimirani/pcos-lean-clinical-guideline",
+        "downloads": 22,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "model drift",
+    "results": [
+      {
+        "id": "ClarusC64/clinical-team-mental-model-drift-detection-v0.1",
+        "downloads": 20,
+        "likes": 0,
+        "tags": [
+          "task_categories:tabular-regression",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "region:us",
+          "clarusc64",
+          "clinical",
+          "patient-safety",
+          "teamwork",
+          "handover",
+          "escalation",
+          "drift"
+        ],
+        "description": "Clinical Team Mental-Model Drift Detection v0.1\nGoal\nDetect whether a clinical team’s shared model is converging or fragmenting over time.\nThis is not “final diagnosis accuracy.”\nIt is about drift in the plan narrative.\nWhat this dataset tests\n\ndrift velocity across shifts and updates\ntriggers that accelerate misalignment\nmarkers of plan fragmentation\nwhether repair attempts occur early or late\n\nRequired model output format\nSingle line with key fields.\nRequired fields\n\ndrift_velocity\nfloat 0… Se"
+      },
+      {
+        "id": "ClarusC64/robotics-world-model-coherence-drift-v0.1",
+        "downloads": 14,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "robotics",
+          "mapping",
+          "localisation",
+          "autonomy"
+        ],
+        "description": "What this repo is for\nYou use it to detect when a robot’s internal world model no longer matches reality.\nIt captures failures like:\nmap outdated after environment change\nlocalisation drift\nobject position mismatch\nrobot navigating into blocked space\nApplies to:\nwarehouse robots\ndelivery robots\ndrones\ninspection robots\nindustrial manipulators\nPrompt format\nReturn exactly one token\ncoherent or incoherent\n"
+      },
+      {
+        "id": "ClarusC64/ai-latent-cross-coupling-model-drift-v0.1",
+        "downloads": 13,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "clarus",
+          "latent-instability",
+          "cross-coupling",
+          "hidden-state",
+          "pre-failure-geometry",
+          "ai",
+          "model-drift"
+        ],
+        "description": "\n\t\n\t\t\n\t\tWhat this repo does\n\t\n\nThis repository introduces a Clarus dataset for detecting latent instability under cross-coupled conditions in AI systems.\nThe goal is to identify models or deployed inference systems that may still appear outwardly stable or only mildly anomalous but already contain hidden internal degradation that may activate into overt model drift once interacting pressures exceed containment.\n\n\t\n\t\t\n\t\tCore structure\n\t\n\nThis dataset models a pre-failure geometry built from:… See"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "LLM versioning",
+    "results": [],
+    "status": 200
+  }
+]

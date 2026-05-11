@@ -1,0 +1,609 @@
+[
+  {
+    "query": "data contamination in:readme,description",
+    "results": [
+      {
+        "name": "mlabonne/llm-course",
+        "stars": 79107,
+        "forks": 9189,
+        "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
+        "url": "https://github.com/mlabonne/llm-course",
+        "topics": [
+          "course",
+          "large-language-models",
+          "llm",
+          "machine-learning",
+          "roadmap"
+        ],
+        "pushed_at": "2026-02-05T13:09:26Z",
+        "updated_at": "2026-05-09T06:05:46Z"
+      },
+      {
+        "name": "hiyouga/LlamaFactory",
+        "stars": 71073,
+        "forks": 8686,
+        "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+        "url": "https://github.com/hiyouga/LlamaFactory",
+        "topics": [
+          "agent",
+          "ai",
+          "deepseek",
+          "fine-tuning",
+          "gemma",
+          "gpt",
+          "instruction-tuning",
+          "large-language-models",
+          "llama",
+          "llama3",
+          "llm",
+          "lora",
+          "moe",
+          "nlp",
+          "peft",
+          "qlora",
+          "quantization",
+          "qwen",
+          "rlhf",
+          "transformers"
+        ],
+        "pushed_at": "2026-05-08T10:14:35Z",
+        "updated_at": "2026-05-09T07:35:15Z"
+      },
+      {
+        "name": "ruvnet/RuView",
+        "stars": 52203,
+        "forks": 6952,
+        "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+        "url": "https://github.com/ruvnet/RuView",
+        "topics": [
+          "agentic-ai",
+          "densepose",
+          "esp32",
+          "firmware",
+          "mcu",
+          "mincut",
+          "monitoring",
+          "pose-estimation",
+          "rf",
+          "self",
+          "self-learning",
+          "spatial-intelligence",
+          "wifi",
+          "wifi-hacking",
+          "wifi-security",
+          "world-model"
+        ],
+        "pushed_at": "2026-05-08T16:42:44Z",
+        "updated_at": "2026-05-09T07:32:56Z"
+      },
+      {
+        "name": "KeygraphHQ/shannon",
+        "stars": 41546,
+        "forks": 4703,
+        "description": "Shannon Lite is an autonomous, white-box AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.",
+        "url": "https://github.com/KeygraphHQ/shannon",
+        "topics": [
+          "penetration-testing",
+          "pentesting",
+          "security-audit",
+          "security-automation",
+          "security-tools"
+        ],
+        "pushed_at": "2026-05-06T13:02:54Z",
+        "updated_at": "2026-05-09T07:18:31Z"
+      },
+      {
+        "name": "academic/awesome-datascience",
+        "stars": 29149,
+        "forks": 6501,
+        "description": ":memo: An awesome Data Science repository to learn and apply for real world problems.",
+        "url": "https://github.com/academic/awesome-datascience",
+        "topics": [
+          "analytics",
+          "awesome-list",
+          "data-mining",
+          "data-science",
+          "data-scientists",
+          "data-visualization",
+          "deep-learning",
+          "hacktoberfest",
+          "machine-learning",
+          "science"
+        ],
+        "pushed_at": "2026-05-08T07:15:51Z",
+        "updated_at": "2026-05-09T06:00:42Z"
+      },
+      {
+        "name": "stanford-oval/storm",
+        "stars": 28179,
+        "forks": 2566,
+        "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
+        "url": "https://github.com/stanford-oval/storm",
+        "topics": [
+          "agentic-rag",
+          "deep-research",
+          "emnlp2024",
+          "knowledge-curation",
+          "large-language-models",
+          "naacl",
+          "nlp",
+          "report-generation",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2025-09-30T18:07:21Z",
+        "updated_at": "2026-05-09T06:36:11Z"
+      },
+      {
+        "name": "Hannibal046/Awesome-LLM",
+        "stars": 26758,
+        "forks": 2497,
+        "description": "Awesome-LLM: a curated list of Large Language Model",
+        "url": "https://github.com/Hannibal046/Awesome-LLM",
+        "topics": [],
+        "pushed_at": "2025-07-31T02:38:24Z",
+        "updated_at": "2026-05-09T05:16:44Z"
+      },
+      {
+        "name": "huggingface/open-r1",
+        "stars": 26021,
+        "forks": 2417,
+        "description": "Fully open reproduction of DeepSeek-R1",
+        "url": "https://github.com/huggingface/open-r1",
+        "topics": [],
+        "pushed_at": "2026-04-02T14:03:15Z",
+        "updated_at": "2026-05-09T07:06:13Z"
+      },
+      {
+        "name": "VoltAgent/awesome-claude-code-subagents",
+        "stars": 19414,
+        "forks": 2245,
+        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+        "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+        "topics": [
+          "ai-agent-framework",
+          "ai-agent-tools",
+          "ai-agents",
+          "awesome",
+          "awesome-list",
+          "claude",
+          "claude-ai",
+          "claude-code-subagents",
+          "claude-subagents",
+          "subagents"
+        ],
+        "pushed_at": "2026-04-20T07:13:01Z",
+        "updated_at": "2026-05-09T07:29:17Z"
+      },
+      {
+        "name": "SesameAILabs/csm",
+        "stars": 14615,
+        "forks": 1479,
+        "description": "A Conversational Speech Generation Model",
+        "url": "https://github.com/SesameAILabs/csm",
+        "topics": [],
+        "pushed_at": "2025-05-27T12:21:52Z",
+        "updated_at": "2026-05-09T04:57:45Z"
+      },
+      {
+        "name": "ShishirPatil/gorilla",
+        "stars": 12861,
+        "forks": 1361,
+        "description": "Gorilla: Training and Evaluating LLMs for Function Calls (Tool Calls)",
+        "url": "https://github.com/ShishirPatil/gorilla",
+        "topics": [
+          "api",
+          "api-documentation",
+          "chatgpt",
+          "claude-api",
+          "gpt-4-api",
+          "llm",
+          "openai-api",
+          "openai-functions"
+        ],
+        "pushed_at": "2026-04-13T03:19:45Z",
+        "updated_at": "2026-05-09T04:19:06Z"
+      },
+      {
+        "name": "KalyanKS-NLP/llm-engineer-toolkit",
+        "stars": 10357,
+        "forks": 1644,
+        "description": "A curated list of  120+ LLM libraries category wise. ",
+        "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
+        "topics": [
+          "ai-engineer",
+          "generative-ai",
+          "large-language-models",
+          "llm-engineer",
+          "llms"
+        ],
+        "pushed_at": "2026-04-10T06:55:17Z",
+        "updated_at": "2026-05-09T00:32:10Z"
+      },
+      {
+        "name": "jason5ng32/MyIP",
+        "stars": 10317,
+        "forks": 1098,
+        "description": "The best IP Toolbox. Easy to check what's your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability, whois search and more!",
+        "url": "https://github.com/jason5ng32/MyIP",
+        "topics": [
+          "awesome",
+          "censorship",
+          "chatgpt",
+          "dns",
+          "ip",
+          "ipinfo",
+          "leaks",
+          "myip",
+          "network",
+          "pingchecker",
+          "proxy",
+          "security",
+          "security-tools",
+          "speedtest",
+          "vercel",
+          "webrtc",
+          "whatismyip",
+          "whatismyipaddress",
+          "whois",
+          "whois-lookup"
+        ],
+        "pushed_at": "2026-05-07T01:27:48Z",
+        "updated_at": "2026-05-09T06:39:25Z"
+      },
+      {
+        "name": "veeral-patel/how-to-secure-anything",
+        "stars": 10219,
+        "forks": 699,
+        "description": "How to systematically secure anything: a repository about security engineering",
+        "url": "https://github.com/veeral-patel/how-to-secure-anything",
+        "topics": [
+          "secure-design",
+          "secure-systems",
+          "security",
+          "security-architecture",
+          "security-assurance",
+          "security-engineering",
+          "threat-modeling"
+        ],
+        "pushed_at": "2023-03-07T19:50:13Z",
+        "updated_at": "2026-05-07T04:41:05Z"
+      },
+      {
+        "name": "facebookresearch/demucs",
+        "stars": 10051,
+        "forks": 1483,
+        "description": "Code for the paper Hybrid Spectrogram and Waveform Source Separation",
+        "url": "https://github.com/facebookresearch/demucs",
+        "topics": [],
+        "pushed_at": "2024-04-24T20:25:19Z",
+        "updated_at": "2026-05-09T00:54:23Z"
+      }
+    ],
+    "status": 200,
+    "total": 27497
+  },
+  {
+    "query": "data contamination benchmark in:name,description",
+    "results": [
+      {
+        "name": "SeekingDream/Static-to-Dynamic-LLMEval",
+        "stars": 503,
+        "forks": 38,
+        "description": "The official GitHub repository of the paper \"Recent advances in large language model benchmarks against data contamination: From static to dynamic evaluation\"",
+        "url": "https://github.com/SeekingDream/Static-to-Dynamic-LLMEval",
+        "topics": [
+          "benchmark",
+          "dynamic-evaluation",
+          "evaluation",
+          "large-language-model",
+          "llm",
+          "llms",
+          "testing"
+        ],
+        "pushed_at": "2026-03-03T15:53:10Z",
+        "updated_at": "2026-05-08T16:52:19Z"
+      },
+      {
+        "name": "SeekingDream/DyCodeEval",
+        "stars": 235,
+        "forks": 20,
+        "description": "Official repository of the ICML2025 paper “Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination”",
+        "url": "https://github.com/SeekingDream/DyCodeEval",
+        "topics": [
+          "benchmark",
+          "code-generation",
+          "code-llms",
+          "dynamic-benchmark",
+          "evaluation",
+          "large-language-model",
+          "llm"
+        ],
+        "pushed_at": "2025-12-23T14:50:22Z",
+        "updated_at": "2026-04-13T02:17:39Z"
+      },
+      {
+        "name": "ASTRAL-Group/BDC-mitigation-assessment",
+        "stars": 15,
+        "forks": 0,
+        "description": "[ICML 2025] Official implementation for \"The Emperor's New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination\"",
+        "url": "https://github.com/ASTRAL-Group/BDC-mitigation-assessment",
+        "topics": [],
+        "pushed_at": "2025-05-23T22:49:07Z",
+        "updated_at": "2026-01-30T06:15:46Z"
+      },
+      {
+        "name": "ujjwalaananth/data-contamination",
+        "stars": 1,
+        "forks": 0,
+        "description": "Codebase for work on using membership inference to identify leaked multimodal test samples from benchmark by masking + inference",
+        "url": "https://github.com/ujjwalaananth/data-contamination",
+        "topics": [],
+        "pushed_at": "2026-03-20T00:48:41Z",
+        "updated_at": "2026-03-20T00:48:53Z"
+      },
+      {
+        "name": "Co-Messi/TrustBench",
+        "stars": 1,
+        "forks": 0,
+        "description": "Open-source adversarial consistency benchmark for LLMs. Procedurally generated tasks, multi-turn pressure testing, zero data contamination.",
+        "url": "https://github.com/Co-Messi/TrustBench",
+        "topics": [
+          "adversarial-testing",
+          "ai-safety",
+          "benchmark",
+          "llm",
+          "python",
+          "trust"
+        ],
+        "pushed_at": "2026-04-01T23:47:02Z",
+        "updated_at": "2026-04-01T23:47:06Z"
+      },
+      {
+        "name": "pietroscik/recursive-tom",
+        "stars": 1,
+        "forks": 0,
+        "description": "Recursive-ToM: Beyond Static Benchmarks The Challenge: Current Social Cognition benchmarks (e.g., Sally-Anne) are static, prone to data contamination, and limited to 1st-order inference. They fail to stress-test the recursive reasoning required for AGI.",
+        "url": "https://github.com/pietroscik/recursive-tom",
+        "topics": [],
+        "pushed_at": "2026-03-19T14:50:51Z",
+        "updated_at": "2026-04-17T16:48:13Z"
+      },
+      {
+        "name": "waycodes/mmeval-lab",
+        "stars": 1,
+        "forks": 0,
+        "description": "Unified multimodal regression harness that runs MMMU + OmniDocBench + Video-MME, and adds contamination scans, slice mining, and data-diff attribution to explain which dataset changes drive which benchmark deltas and failure modes",
+        "url": "https://github.com/waycodes/mmeval-lab",
+        "topics": [],
+        "pushed_at": "2026-01-20T15:58:27Z",
+        "updated_at": "2026-01-20T15:59:14Z"
+      },
+      {
+        "name": "LivePlotBench/LivePlotBench",
+        "stars": 1,
+        "forks": 0,
+        "description": "LivePlotBench is a comprehensive benchmark for evaluating LLMs' ability to generate publication-quality statistical plots from scientific data, focusing on statistical correctness, visual excellence, and contamination-free evaluation using continuously updated problems from recent publications.",
+        "url": "https://github.com/LivePlotBench/LivePlotBench",
+        "topics": [],
+        "pushed_at": "2025-07-16T09:43:47Z",
+        "updated_at": "2025-09-01T03:00:05Z"
+      },
+      {
+        "name": "nish-shankar/situational-awarenes-dataset-2",
+        "stars": 0,
+        "forks": 0,
+        "description": "Second iteration of KDS experiments on situational-awareness benchmarks—applying Kernel Divergence Score to quantify benchmark contamination (per “How Contaminated Is Your Benchmark?”) and build robust, long-term evaluation.",
+        "url": "https://github.com/nish-shankar/situational-awarenes-dataset-2",
+        "topics": [],
+        "pushed_at": "2025-10-22T07:06:54Z",
+        "updated_at": "2025-10-22T07:06:58Z"
+      },
+      {
+        "name": "fadlurrohman/Numenta-Anomaly-Benchmark",
+        "stars": 0,
+        "forks": 0,
+        "description": "Analyzes the NAB machine temperature dataset for anomaly detection. After loading and normalizing the time-series data, it applies an Isolation Forest model (1% contamination) to detect abnormal points. The results are plotted, with red markers highlighting detected anomalies",
+        "url": "https://github.com/fadlurrohman/Numenta-Anomaly-Benchmark",
+        "topics": [],
+        "pushed_at": "2025-09-08T08:11:44Z",
+        "updated_at": "2025-09-29T11:44:22Z"
+      },
+      {
+        "name": "dakshjain-1616/sft-auditor",
+        "stars": 0,
+        "forks": 0,
+        "description": "Audits SFT and RLHF JSONL datasets before training. Flags benchmark contamination, near-duplicates, misaligned pairs, toxic content, and length anomalies so you do not burn GPU hours on bad data.",
+        "url": "https://github.com/dakshjain-1616/sft-auditor",
+        "topics": [
+          "ai",
+          "benchmark",
+          "fine-tuning",
+          "llm",
+          "machine-learning",
+          "nlp",
+          "python",
+          "reinforcement-learning"
+        ],
+        "pushed_at": "2026-04-08T12:56:25Z",
+        "updated_at": "2026-04-30T09:51:37Z"
+      }
+    ],
+    "status": 200,
+    "total": 11
+  },
+  {
+    "query": "data contamination evaluation in:name,description",
+    "results": [
+      {
+        "name": "SeekingDream/Static-to-Dynamic-LLMEval",
+        "stars": 503,
+        "forks": 38,
+        "description": "The official GitHub repository of the paper \"Recent advances in large language model benchmarks against data contamination: From static to dynamic evaluation\"",
+        "url": "https://github.com/SeekingDream/Static-to-Dynamic-LLMEval",
+        "topics": [
+          "benchmark",
+          "dynamic-evaluation",
+          "evaluation",
+          "large-language-model",
+          "llm",
+          "llms",
+          "testing"
+        ],
+        "pushed_at": "2026-03-03T15:53:10Z",
+        "updated_at": "2026-05-08T16:52:19Z"
+      },
+      {
+        "name": "lyy1994/awesome-data-contamination",
+        "stars": 114,
+        "forks": 5,
+        "description": "The Paper List on Data Contamination for Large Language Models Evaluation.",
+        "url": "https://github.com/lyy1994/awesome-data-contamination",
+        "topics": [
+          "awesome-list",
+          "data-contamination",
+          "evaluation",
+          "foundation-models",
+          "large-language-models",
+          "llm",
+          "paper-list",
+          "pre-trained-language-models",
+          "pre-trained-model"
+        ],
+        "pushed_at": "2026-01-29T10:37:22Z",
+        "updated_at": "2026-05-08T20:19:14Z"
+      },
+      {
+        "name": "liyucheng09/Contamination_Detector",
+        "stars": 52,
+        "forks": 0,
+        "description": "Lightweight tool to identify Data Contamination in LLMs evaluation",
+        "url": "https://github.com/liyucheng09/Contamination_Detector",
+        "topics": [],
+        "pushed_at": "2024-03-08T21:05:13Z",
+        "updated_at": "2026-05-08T20:21:23Z"
+      },
+      {
+        "name": "Dogiye12/Heavy-Metal-Prediction-in-Groundwater",
+        "stars": 47,
+        "forks": 1,
+        "description": "Heavy-Metal-Prediction-in-Groundwater generates synthetic groundwater quality data and applies machine learning to predict heavy metal concentrations (Pb, As). It enables modeling, evaluation, and analysis of contamination risks with exportable datasets and models, designed for research, teaching, and demonstration purposes.",
+        "url": "https://github.com/Dogiye12/Heavy-Metal-Prediction-in-Groundwater",
+        "topics": [],
+        "pushed_at": "2025-08-25T11:58:53Z",
+        "updated_at": "2026-02-14T19:35:36Z"
+      },
+      {
+        "name": "wumingqi/LLM-Math-Evaluation",
+        "stars": 22,
+        "forks": 3,
+        "description": "Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to Data Contamination.",
+        "url": "https://github.com/wumingqi/LLM-Math-Evaluation",
+        "topics": [],
+        "pushed_at": "2025-07-18T06:26:05Z",
+        "updated_at": "2026-03-13T08:03:59Z"
+      },
+      {
+        "name": "mnasserimn/FSEB",
+        "stars": 11,
+        "forks": 2,
+        "description": "This repository provides a code to model Land Surface Temperature (LST) as one of the most important environmental factors used to monitor surface processes at local to regional scales. LST is mainly obtained from thermal infrared (TIR) remote sensing data, even though it is often limited by cloud contamination. Given that LST is directly involved in determining Evapotranspiration (ET), TIR remote sensing-based LST retrievals lead to discontinuities in ET calculations. Surface Energy Balance (SEB) modeling can estimate LST continuously; however, it is conducted mainly on a daily or sub-daily temporal resolution. Difficulties in collecting the high temporal resolution data at the watershed scale makes it impossible to implement the energy balance model with daily and sub-daily resolutions. Therefore, the monthly temporal scale has been selected for the current use of the energy balance model to estimate LST. Since it is possible to accumulate the heat fluxes during a month, the modeling has been conducted under unstable conditions, and SEB closure has performed by considering all of the heat storages in the soil-vegetation-atmosphere continuum. The methodology is described and applied in this paper: Taheri, M., Shamsi Anboohi, M., Nasseri, M., Kiavarz, M., Mohammadian, A., (2021). Energy-based Monthly Simulation of Land Surface Temperature and Actual Evapotranspiration: Evaluated by Ground Information, Global Gridded products, and a Water Balance Model, Submitted to Environmental Modelling and Software,",
+        "url": "https://github.com/mnasserimn/FSEB",
+        "topics": [],
+        "pushed_at": "2021-08-11T06:24:13Z",
+        "updated_at": "2025-12-23T07:52:15Z"
+      },
+      {
+        "name": "LivePlotBench/LivePlotBench",
+        "stars": 1,
+        "forks": 0,
+        "description": "LivePlotBench is a comprehensive benchmark for evaluating LLMs' ability to generate publication-quality statistical plots from scientific data, focusing on statistical correctness, visual excellence, and contamination-free evaluation using continuously updated problems from recent publications.",
+        "url": "https://github.com/LivePlotBench/LivePlotBench",
+        "topics": [],
+        "pushed_at": "2025-07-16T09:43:47Z",
+        "updated_at": "2025-09-01T03:00:05Z"
+      },
+      {
+        "name": "llm-pt-ibm/contamination-evaluation",
+        "stars": 0,
+        "forks": 0,
+        "description": "Repository to persist contamination data and explain how to replicate the experiment.",
+        "url": "https://github.com/llm-pt-ibm/contamination-evaluation",
+        "topics": [],
+        "pushed_at": "2025-10-19T04:10:12Z",
+        "updated_at": "2025-10-19T04:10:47Z"
+      },
+      {
+        "name": "martinalupini/Data-Contamination-Evaluation-in-Fine-Tuning",
+        "stars": 0,
+        "forks": 0,
+        "description": "",
+        "url": "https://github.com/martinalupini/Data-Contamination-Evaluation-in-Fine-Tuning",
+        "topics": [],
+        "pushed_at": "2026-02-19T21:25:06Z",
+        "updated_at": "2026-02-19T21:25:10Z"
+      },
+      {
+        "name": "quest-lab-iisc/DataContamination_SLMs",
+        "stars": 0,
+        "forks": 0,
+        "description": "Framework to evaluate the robustness and sensitivity of Small Language Models (SLMs) to fine-tuning data contamination across various transformation patterns.",
+        "url": "https://github.com/quest-lab-iisc/DataContamination_SLMs",
+        "topics": [],
+        "pushed_at": "2026-03-18T05:57:42Z",
+        "updated_at": "2026-03-18T06:01:14Z"
+      },
+      {
+        "name": "holi-lab/psychometric-contamination",
+        "stars": 0,
+        "forks": 0,
+        "description": "Quantifying Data Contamination in Psychometric Evaluations of LLMs (EACL 2026 Findings)",
+        "url": "https://github.com/holi-lab/psychometric-contamination",
+        "topics": [],
+        "pushed_at": "2026-03-23T10:20:32Z",
+        "updated_at": "2026-03-23T10:20:36Z"
+      },
+      {
+        "name": "shamaarzeena/Prediction-and-Prevention-of-Food-Contamination-in-Supply-Chain-using-AI-ML",
+        "stars": 0,
+        "forks": 0,
+        "description": "Machine learning project from my Master's thesis predicting food contamination risk using environmental sensor data with Random Forest and model evaluation using ROC and Precision–Recall analysis.",
+        "url": "https://github.com/shamaarzeena/Prediction-and-Prevention-of-Food-Contamination-in-Supply-Chain-using-AI-ML",
+        "topics": [],
+        "pushed_at": "2026-03-05T22:58:10Z",
+        "updated_at": "2026-03-05T22:58:13Z"
+      },
+      {
+        "name": "MahmoudSamiAbdalla/Heavy-Metal-Contamination-in-Seawater",
+        "stars": 0,
+        "forks": 0,
+        "description": "This project analyzes heavy metal contamination in the Mediterranean Sea's seawater. It aims to quantify toxic metals like lead and mercury to assess pollution levels, evaluate environmental health risks, and provide crucial data for conservation efforts.",
+        "url": "https://github.com/MahmoudSamiAbdalla/Heavy-Metal-Contamination-in-Seawater",
+        "topics": [],
+        "pushed_at": "2025-10-15T07:22:08Z",
+        "updated_at": "2025-10-15T07:22:13Z"
+      },
+      {
+        "name": "nish-shankar/situational-awarenes-dataset-2",
+        "stars": 0,
+        "forks": 0,
+        "description": "Second iteration of KDS experiments on situational-awareness benchmarks—applying Kernel Divergence Score to quantify benchmark contamination (per “How Contaminated Is Your Benchmark?”) and build robust, long-term evaluation.",
+        "url": "https://github.com/nish-shankar/situational-awarenes-dataset-2",
+        "topics": [],
+        "pushed_at": "2025-10-22T07:06:54Z",
+        "updated_at": "2025-10-22T07:06:58Z"
+      },
+      {
+        "name": "velvinnn/LLM_MIA",
+        "stars": 0,
+        "forks": 0,
+        "description": "Papers and case study for the paper, \"Does Data Contamination Detection Work (Well) for LLMs?  A Survey and Evaluation on Detection Assumptions\"",
+        "url": "https://github.com/velvinnn/LLM_MIA",
+        "topics": [],
+        "pushed_at": "2025-05-07T22:07:01Z",
+        "updated_at": "2025-05-07T22:07:05Z"
+      }
+    ],
+    "status": 200,
+    "total": 18
+  }
+]

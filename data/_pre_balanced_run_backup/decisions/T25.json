@@ -1,0 +1,124 @@
+{
+  "topic_id": "T25",
+  "final_decision": "NARROW",
+  "final_confidence": "MEDIUM",
+  "status": "FULL_REVIEW_COMPLETE",
+  "reasoning_summary": "Audience exists; framing too broad for current venue path.",
+  "manual_checks_required": [],
+  "extra_verification_needed": [],
+  "completeness": {
+    "evidence_collected": true,
+    "extra_evidence_collected": true,
+    "venue_checked": true,
+    "llm_review_completed": true,
+    "confidence_gate_completed": true,
+    "final_report_ready": true
+  },
+  "evidence_quality_0to5": 4,
+  "relevance_purity": 0.25,
+  "differentiator_required": false,
+  "existing_artifact_density": 0.4,
+  "active_profile": "blind_citation",
+  "active_profile_is_personal_goal": false,
+  "blind_citation_acceptable": false,
+  "blind_citation_failed_reasons": [
+    "evidence quality too low (relevance_purity=0.25 < 0.30)"
+  ],
+  "blind_citation_score": 23.3,
+  "personal_goal_only_weak_topic": false,
+  "negative_control_sentinel": {
+    "available": true,
+    "leak_detected": true,
+    "leaky_profiles": [
+      "custom"
+    ]
+  },
+  "negative_control_blocked_go": false,
+  "profile_scores": {
+    "blind_citation": {
+      "score": 23.3,
+      "is_personal_goal": false
+    },
+    "academic_long_term": {
+      "score": 23.75,
+      "is_personal_goal": false
+    },
+    "artifact_neutral": {
+      "score": 22.5,
+      "is_personal_goal": false
+    },
+    "healthcare_neutral": {
+      "score": 23.3,
+      "is_personal_goal": false
+    },
+    "llm_eval_neutral": {
+      "score": 19.62,
+      "is_personal_goal": false
+    },
+    "niw_optimized": {
+      "score": 18.1,
+      "is_personal_goal": true
+    },
+    "eb1a_optimized": {
+      "score": 28.05,
+      "is_personal_goal": true
+    },
+    "faang_career": {
+      "score": 26.8,
+      "is_personal_goal": true
+    },
+    "balanced_personal_strategy": {
+      "score": 26.55,
+      "is_personal_goal": true
+    },
+    "immigration_only": {
+      "score": 15.0,
+      "is_personal_goal": true
+    },
+    "career_only": {
+      "score": 10.8,
+      "is_personal_goal": true
+    },
+    "current_strategy": {
+      "score": 22.4,
+      "is_personal_goal": true
+    },
+    "custom": {
+      "score": 0.0,
+      "is_personal_goal": false
+    }
+  },
+  "existing_work": {
+    "available": true,
+    "n_direct": 3,
+    "n_partial": 16,
+    "direct_paper_count": 1,
+    "artifact_direct_count": 2,
+    "peer_reviewed_direct_overlap": true,
+    "artifact_direct_overlap": true,
+    "high_artifact_overlap": false,
+    "differentiator_strength": "moderate",
+    "artifact_differentiator_strength": "weak",
+    "artifact_differentiator_required": true,
+    "go_blocked": false,
+    "requires_differentiator": true
+  },
+  "signals": {
+    "Overall": 10.38,
+    "citation_signal_0to5": 5,
+    "artifact_0to5": 2,
+    "saturation_0to5": 3,
+    "venue_signal_0to5": 2,
+    "ip_risk_0to5": 0,
+    "niw_0to5": 2,
+    "eb1a_0to5": 4,
+    "career_0to5": 3,
+    "plurality": "NARROW",
+    "decision_score_mean_0to3": 1.62,
+    "high_confidence_drops": 1,
+    "high_disagreement_flag": false,
+    "evidence_sources": 2,
+    "kept_papers": 25,
+    "n_reviews": 8
+  }
+}

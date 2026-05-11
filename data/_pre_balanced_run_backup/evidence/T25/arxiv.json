@@ -1,0 +1,12 @@
+[
+  {
+    "query": "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22retrieval%20augmented%20generation%22+AND+all:%22hallucination%20taxonomy%22+AND+all:%22faithfulness%22)",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "all:retrieval%20augmented%20generation",
+    "results": [],
+    "status": 200
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "topic_id": "T37_N1",
+  "n_reviews": 8,
+  "providers": {
+    "claude_cli": 8
+  },
+  "scores": {
+    "mean": 2,
+    "stdev": 0.5,
+    "n": 8
+  },
+  "decisions": {
+    "NARROW": 4,
+    "DROP": 3,
+    "NEEDS_MORE_EVIDENCE": 1
+  },
+  "plurality_decision": "NARROW",
+  "plurality_count": 4,
+  "decision_score_mean_0to3": 1.12,
+  "confidences": {
+    "MEDIUM": 4,
+    "HIGH": 3,
+    "LOW": 1
+  },
+  "high_confidence_drops": 3,
+  "per_role_disagreements": [],
+  "high_disagreement_flag": false
+}

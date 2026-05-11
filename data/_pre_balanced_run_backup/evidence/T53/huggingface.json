@@ -1,0 +1,396 @@
+[
+  {
+    "query": "data contamination",
+    "results": [
+      {
+        "id": "BrianatCambridge/DataContaminationExp",
+        "downloads": 74,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "williamxing1/water-contamination-data",
+        "downloads": 35,
+        "likes": 0,
+        "tags": [
+          "license:cc-by-4.0",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ClarusC64/ai-5node-data-buf-lag-cpl-data-contamination-v0.1",
+        "downloads": 9,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "quad-coupling"
+        ],
+        "description": "\n\t\n\t\t\n\t\tWhat this repo does\n\t\n\nThis dataset models data contamination cascades in AI training and deployment pipelines. It detects when contamination pressure, weakened validation buffer, governance lag in audits and quarantine actions, and tight coupling through shared stores and pipelines cross the five-node cascade threshold into an unrecoverable data contamination cascade.\nThis dataset models a five-node cascade: four interacting instability drivers and one emergent cascade state.The fifth… "
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "MedQA",
+    "results": [
+      {
+        "id": "GBaker/MedQA-USMLE-4-options",
+        "downloads": 17631,
+        "likes": 91,
+        "tags": [
+          "language:en",
+          "license:cc-by-4.0",
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2009.13081",
+          "region:us"
+        ],
+        "description": "Original dataset introduced by Jin et al. in What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams\nCitation information:\n\n@article{jin2020disease,\n  title={What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams},\n  author={Jin, Di and Pan, Eileen and Oufattole, Nassim and Weng, Wei-Hung and Fang, Hanyi and Szolovits, Peter},\n  journal={arXiv preprint arXiv:2009.13081},\n  year={2020}\n}\n\n"
+      },
+      {
+        "id": "GBaker/MedQA-USMLE-4-options-hf",
+        "downloads": 8554,
+        "likes": 24,
+        "tags": [
+          "license:cc-by-sa-4.0",
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2009.13081",
+          "region:us"
+        ],
+        "description": "Original dataset introduced by Jin et al. in What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams\nCitation information:\n\n@article{jin2020disease,\n  title={What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams},\n  author={Jin, Di and Pan, Eileen and Oufattole, Nassim and Weng, Wei-Hung and Fang, Hanyi and Szolovits, Peter},\n  journal={arXiv preprint arXiv:2009.13081},\n  year={2020}\n}\n\n"
+      },
+      {
+        "id": "GBaker/MedQA-USMLE-4-options-hf-MPNet-IR",
+        "downloads": 85,
+        "likes": 5,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"MedQA-USMLE-4-options-hf-MPNet-IR\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "GBaker/MedQA-USMLE-4-options-hf-DBPedia-context",
+        "downloads": 33,
+        "likes": 2,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"MedQA-USMLE-4-options-hf-DBPedia-context\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "katielink/nejm-medqa-diagnostic-reasoning-dataset",
+        "downloads": 224,
+        "likes": 7,
+        "tags": [
+          "license:cc-by-4.0",
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us",
+          "medical"
+        ],
+        "description": "Downloaded from Supplemental Information of the article \"Diagnostic reasoning prompts reveal the potential for large language model interpretability in medicine\n\" [link]\nSavage, T., Nayak, A., Gallo, R. et al. Diagnostic reasoning prompts reveal the potential for large language model interpretability in medicine. npj Digit. Med. 7, 20 (2024). https://doi.org/10.1038/s41746-024-01010-1\n"
+      },
+      {
+        "id": "Williamsanderson/MedQA-Darija-MultiLingual",
+        "downloads": 53285,
+        "likes": 3,
+        "tags": [
+          "task_categories:question-answering",
+          "task_categories:automatic-speech-recognition",
+          "task_categories:text-to-speech",
+          "language:ar",
+          "language:fr",
+          "language:en",
+          "license:cc-by-4.0",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:audio",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "medical",
+          "darija",
+          "multilingual",
+          "medqa",
+          "audio",
+          "speech",
+          "question-answering",
+          "trilingual",
+          "moroccan-arabic",
+          "healthcare"
+        ],
+        "description": "\n\t\n\t\t\n\t\tMedQA-Darija-MultiLingual\n\t\n\nThe largest open trilingual medical Q&A dataset with directly-playable speech audio for English, French, and Moroccan Darija.\nA research dataset for the BRAIN HEALTH initiative, designed for multilingual medical NLP, low-resource speech recognition, healthcare chatbots, and clinical education tools targeting Morocco and the broader Maghreb region.\n\nDataset is currently in scientific validation phase. After programmatic validation (Stage 1 LOF outlier… See the"
+      },
+      {
+        "id": "bigbio/med_qa",
+        "downloads": 3857,
+        "likes": 145,
+        "tags": [
+          "multilinguality:multilingual",
+          "language:en",
+          "language:zh",
+          "license:unknown",
+          "region:us"
+        ],
+        "description": "In this work, we present the first free-form multiple-choice OpenQA dataset for solving medical problems, MedQA,\ncollected from the professional medical board exams. It covers three languages: English, simplified Chinese, and\ntraditional Chinese, and contains 12,723, 34,251, and 14,123 questions for the three languages, respectively. Together\nwith the question data, we also collect and release a large-scale corpus from medical textbooks from which the reading\ncomprehension models can obtain nece"
+      },
+      {
+        "id": "medalpaca/medical_meadow_medqa",
+        "downloads": 3205,
+        "likes": 105,
+        "tags": [
+          "task_categories:question-answering",
+          "language:en",
+          "language:zh",
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2009.13081",
+          "region:us",
+          "medical"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for MedQA\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nThis is the data and baseline source code for the paper: Jin, Di, et al. \"What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams.\" \nFrom https://github.com/jind11/MedQA:\n\nThe data that contains both the QAs and textbooks can be downloaded from this google drive folder. A bit of details of data are explained as below:\nFor QAs, we have three sources: US, Mainland of China, and… See th"
+      },
+      {
+        "id": "truehealth/medqa",
+        "downloads": 348,
+        "likes": 5,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "acolomerpons/MEDQA_MAPHRE_1000",
+        "downloads": 14,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:csv",
+          "modality:tabular",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "Shubham09/medqa",
+        "downloads": 24,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "katielink/med_qa",
+        "downloads": 38,
+        "likes": 1,
+        "tags": [
+          "license:mit",
+          "region:us"
+        ],
+        "description": "In this work, we present the first free-form multiple-choice OpenQA dataset for solving medical problems, MedQA,\ncollected from the professional medical board exams. It covers three languages: English, simplified Chinese, and\ntraditional Chinese, and contains 12,723, 34,251, and 14,123 questions for the three languages, respectively. Together\nwith the question data, we also collect and release a large-scale corpus from medical textbooks from which the reading\ncomprehension models can obtain nece"
+      },
+      {
+        "id": "DreamyP/MedQA",
+        "downloads": 83,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "augtoma/medqa_usmle",
+        "downloads": 178,
+        "likes": 1,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"medqa_usmle\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "Ravi07bec/MedQAUnlabelled",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "prognosis/guidelines_medqa_qa_v1",
+        "downloads": 40,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "maximegmd/medqa_alpaca_format",
+        "downloads": 40,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"medqa_alpaca_format\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "HuggingSara/medqa",
+        "downloads": 83,
+        "likes": 1,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"Med_QA\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "VodLM/medqa",
+        "downloads": 214,
+        "likes": 0,
+        "tags": [
+          "license:mit",
+          "size_categories:10K<n<100K",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "Open domain question answering (OpenQA) tasks have been recently attracting more and more attention\nfrom the natural language processing (NLP) community. In this work, we present the first free-form\nmultiple-choice OpenQA dataset for solving medical problems, MedQA, collected from the professional\nmedical board exams. It covers three languages: English, simplified Chinese, and traditional\nChinese, and contains 12,723, 34,251, and 14,123 questions for the three languages, respectively.\nWe impleme"
+      },
+      {
+        "id": "nicher92/medqa-swe",
+        "downloads": 16,
+        "likes": 6,
+        "tags": [
+          "language:sv",
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:csv",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for Dataset Name\n\t\n\nThis is a novel multiple choice, clinical question & answering (Q&A) dataset in Swedish consisting of\n3,180 questions. The dataset was created from a series of exams aimed at evaluating doctors’ clinical understanding\nand decision making and is the first open-source clinical Q&A dataset in Swedish. The exams – originally in PDF\nformat – were parsed and each question manually checked and curated in order to limit errors in the dataset.\nPlease read the… See"
+      }
+    ],
+    "status": 200
+  }
+]

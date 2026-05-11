@@ -1,0 +1,737 @@
+[
+  {
+    "query": "retrieval augmented generation in:readme,description",
+    "results": [
+      {
+        "name": "sindresorhus/awesome",
+        "stars": 464236,
+        "forks": 34828,
+        "description": "😎 Awesome lists about all kinds of interesting topics",
+        "url": "https://github.com/sindresorhus/awesome",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "lists",
+          "resources",
+          "unicorns"
+        ],
+        "pushed_at": "2026-05-05T14:47:44Z",
+        "updated_at": "2026-05-09T07:35:12Z"
+      },
+      {
+        "name": "jwasham/coding-interview-university",
+        "stars": 346433,
+        "forks": 82854,
+        "description": "A complete computer science study plan to become a software engineer.",
+        "url": "https://github.com/jwasham/coding-interview-university",
+        "topics": [
+          "algorithm",
+          "algorithms",
+          "coding-interview",
+          "coding-interviews",
+          "computer-science",
+          "data-structures",
+          "interview",
+          "interview-prep",
+          "interview-preparation",
+          "programming-interviews",
+          "software-engineering",
+          "study-plan"
+        ],
+        "pushed_at": "2025-08-28T14:42:47Z",
+        "updated_at": "2026-05-09T07:18:43Z"
+      },
+      {
+        "name": "avelino/awesome-go",
+        "stars": 172157,
+        "forks": 13197,
+        "description": "A curated list of awesome Go frameworks, libraries and software",
+        "url": "https://github.com/avelino/awesome-go",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "go",
+          "golang",
+          "golang-library",
+          "hacktoberfest"
+        ],
+        "pushed_at": "2026-05-06T17:21:46Z",
+        "updated_at": "2026-05-09T07:34:45Z"
+      },
+      {
+        "name": "open-webui/open-webui",
+        "stars": 136221,
+        "forks": 19391,
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "url": "https://github.com/open-webui/open-webui",
+        "topics": [
+          "ai",
+          "llm",
+          "llm-ui",
+          "llm-webui",
+          "llms",
+          "mcp",
+          "ollama",
+          "ollama-webui",
+          "open-webui",
+          "openai",
+          "openapi",
+          "rag",
+          "self-hosted",
+          "ui",
+          "webui"
+        ],
+        "pushed_at": "2026-05-09T07:17:18Z",
+        "updated_at": "2026-05-09T07:35:55Z"
+      },
+      {
+        "name": "ripienaar/free-for-dev",
+        "stars": 121632,
+        "forks": 12717,
+        "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "url": "https://github.com/ripienaar/free-for-dev",
+        "topics": [
+          "awesome-list",
+          "free-for-developers"
+        ],
+        "pushed_at": "2026-05-09T04:57:36Z",
+        "updated_at": "2026-05-09T07:07:51Z"
+      },
+      {
+        "name": "microsoft/generative-ai-for-beginners",
+        "stars": 110499,
+        "forks": 59279,
+        "description": "21 Lessons, Get Started Building with Generative AI ",
+        "url": "https://github.com/microsoft/generative-ai-for-beginners",
+        "topics": [
+          "ai",
+          "azure",
+          "chatgpt",
+          "dall-e",
+          "generative-ai",
+          "generativeai",
+          "gpt",
+          "language-model",
+          "llms",
+          "microsoft-for-beginners",
+          "openai",
+          "prompt-engineering",
+          "semantic-search",
+          "transformers"
+        ],
+        "pushed_at": "2026-05-08T09:59:03Z",
+        "updated_at": "2026-05-09T06:50:13Z"
+      },
+      {
+        "name": "Shubhamsaboo/awesome-llm-apps",
+        "stars": 109351,
+        "forks": 16174,
+        "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "topics": [
+          "agents",
+          "llms",
+          "python",
+          "rag"
+        ],
+        "pushed_at": "2026-05-08T23:30:18Z",
+        "updated_at": "2026-05-09T07:35:36Z"
+      },
+      {
+        "name": "punkpeye/awesome-mcp-servers",
+        "stars": 86525,
+        "forks": 9981,
+        "description": "A collection of MCP servers.",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "topics": [
+          "ai",
+          "mcp"
+        ],
+        "pushed_at": "2026-05-02T16:08:17Z",
+        "updated_at": "2026-05-09T07:26:18Z"
+      },
+      {
+        "name": "infiniflow/ragflow",
+        "stars": 80036,
+        "forks": 9127,
+        "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+        "url": "https://github.com/infiniflow/ragflow",
+        "topics": [
+          "agentic-ai",
+          "agentic-retrieval",
+          "agentic-search",
+          "ai",
+          "ai-agents",
+          "context-engine",
+          "context-management",
+          "llm-apps",
+          "rag",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2026-05-09T07:13:01Z",
+        "updated_at": "2026-05-09T07:14:56Z"
+      },
+      {
+        "name": "mlabonne/llm-course",
+        "stars": 79107,
+        "forks": 9189,
+        "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
+        "url": "https://github.com/mlabonne/llm-course",
+        "topics": [
+          "course",
+          "large-language-models",
+          "llm",
+          "machine-learning",
+          "roadmap"
+        ],
+        "pushed_at": "2026-02-05T13:09:26Z",
+        "updated_at": "2026-05-09T06:05:46Z"
+      },
+      {
+        "name": "elastic/elasticsearch",
+        "stars": 76667,
+        "forks": 25867,
+        "description": "Free and Open Source, Distributed, RESTful Search Engine",
+        "url": "https://github.com/elastic/elasticsearch",
+        "topics": [
+          "elasticsearch",
+          "java",
+          "search-engine"
+        ],
+        "pushed_at": "2026-05-09T06:15:24Z",
+        "updated_at": "2026-05-09T06:36:48Z"
+      },
+      {
+        "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "stars": 75750,
+        "forks": 7809,
+        "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
+        "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+        "topics": [
+          "ai-skills",
+          "antigravity",
+          "claude",
+          "claude-code",
+          "codex",
+          "command-line",
+          "copilot",
+          "cursor-ai",
+          "html5",
+          "kiro",
+          "landing-page",
+          "mobile-ui",
+          "qoder",
+          "react",
+          "tailwindcss",
+          "trae",
+          "ui-design",
+          "uikit",
+          "windsurf-ai"
+        ],
+        "pushed_at": "2026-04-03T05:08:19Z",
+        "updated_at": "2026-05-09T07:34:24Z"
+      },
+      {
+        "name": "dair-ai/Prompt-Engineering-Guide",
+        "stars": 74356,
+        "forks": 8034,
+        "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+        "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+        "topics": [
+          "agent",
+          "agents",
+          "ai-agents",
+          "chatgpt",
+          "deep-learning",
+          "generative-ai",
+          "language-model",
+          "llms",
+          "openai",
+          "prompt-engineering",
+          "rag"
+        ],
+        "pushed_at": "2026-03-11T20:09:13Z",
+        "updated_at": "2026-05-09T07:16:54Z"
+      },
+      {
+        "name": "redis/redis",
+        "stars": 74229,
+        "forks": 24606,
+        "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
+        "url": "https://github.com/redis/redis",
+        "topics": [
+          "cache",
+          "caching",
+          "database",
+          "distributed-systems",
+          "in-memory",
+          "in-memory-database",
+          "json",
+          "key-value",
+          "key-value-store",
+          "message-broker",
+          "message-queue",
+          "no-sql",
+          "nosql",
+          "open-source",
+          "real-time",
+          "realtime",
+          "redis",
+          "time-series",
+          "vector-databases",
+          "vector-search"
+        ],
+        "pushed_at": "2026-05-08T09:16:57Z",
+        "updated_at": "2026-05-09T07:28:35Z"
+      },
+      {
+        "name": "josephmisiti/awesome-machine-learning",
+        "stars": 72424,
+        "forks": 15450,
+        "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+        "url": "https://github.com/josephmisiti/awesome-machine-learning",
+        "topics": [],
+        "pushed_at": "2026-04-26T15:32:15Z",
+        "updated_at": "2026-05-09T02:20:36Z"
+      }
+    ],
+    "status": 200,
+    "total": 280911
+  },
+  {
+    "query": "retrieval augmented generation benchmark in:name,description",
+    "results": [
+      {
+        "name": "DEEP-PolyU/Awesome-GraphRAG",
+        "stars": 2350,
+        "forks": 201,
+        "description": "Awesome-GraphRAG: A curated list of resources (surveys, papers, benchmarks, and opensource projects) on graph-based retrieval-augmented generation. ",
+        "url": "https://github.com/DEEP-PolyU/Awesome-GraphRAG",
+        "topics": [
+          "graphrag",
+          "graphrag-paper",
+          "graphrag-survey",
+          "knowledge-graph",
+          "large-language-models",
+          "rag",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2026-04-20T08:00:45Z",
+        "updated_at": "2026-05-09T07:03:25Z"
+      },
+      {
+        "name": "DataScienceUIBK/Rankify",
+        "stars": 675,
+        "forks": 69,
+        "description": "🔥 Rankify: A Comprehensive Python Toolkit for Retrieval, Re-Ranking, and Retrieval-Augmented Generation 🔥. Our toolkit integrates 40 pre-retrieved benchmark datasets and supports 7+ retrieval techniques, 24+ state-of-the-art Reranking models, and multiple RAG methods.",
+        "url": "https://github.com/DataScienceUIBK/Rankify",
+        "topics": [
+          "agent",
+          "ai",
+          "chatgpt",
+          "information-retrieval",
+          "llm",
+          "nlp",
+          "question-answering",
+          "rag",
+          "ranked-retrieval",
+          "reranking",
+          "retrieval",
+          "retrival-augmented-generation"
+        ],
+        "pushed_at": "2026-05-06T23:15:39Z",
+        "updated_at": "2026-05-02T09:29:55Z"
+      },
+      {
+        "name": "Alibaba-NLP/OmniSearch",
+        "stars": 423,
+        "forks": 31,
+        "description": "Repo for Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+        "url": "https://github.com/Alibaba-NLP/OmniSearch",
+        "topics": [],
+        "pushed_at": "2025-04-22T01:15:19Z",
+        "updated_at": "2026-04-28T11:31:50Z"
+      },
+      {
+        "name": "GraphRAG-Bench/GraphRAG-Benchmark",
+        "stars": 416,
+        "forks": 49,
+        "description": "The official repo of GraphRAG-Bench for evaluating GraphRAG models. \"When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation\".  (ICLR'26)",
+        "url": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
+        "topics": [
+          "analysis",
+          "benchmark",
+          "dataset",
+          "graphrag",
+          "graphrag-bench",
+          "graphrag-benchmark",
+          "graphragdataset"
+        ],
+        "pushed_at": "2026-03-04T02:49:30Z",
+        "updated_at": "2026-05-08T10:05:16Z"
+      },
+      {
+        "name": "IAAR-Shanghai/CRUD_RAG",
+        "stars": 378,
+        "forks": 30,
+        "description": "CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented Generation of Large Language Models",
+        "url": "https://github.com/IAAR-Shanghai/CRUD_RAG",
+        "topics": [
+          "benchmark",
+          "large-language-models",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2025-05-20T08:38:28Z",
+        "updated_at": "2026-05-09T06:30:15Z"
+      },
+      {
+        "name": "DocAILab/XRAG",
+        "stars": 117,
+        "forks": 17,
+        "description": "XRAG: eXamining the Core - Benchmarking Foundational Component Modules in Advanced Retrieval-Augmented Generation",
+        "url": "https://github.com/DocAILab/XRAG",
+        "topics": [
+          "evaluation",
+          "llamaindex",
+          "llm",
+          "rag"
+        ],
+        "pushed_at": "2026-03-13T08:18:45Z",
+        "updated_at": "2026-05-08T07:05:16Z"
+      },
+      {
+        "name": "microsoft/benchmark-qed",
+        "stars": 89,
+        "forks": 15,
+        "description": "Automated benchmarking of Retrieval-Augmented Generation (RAG) systems",
+        "url": "https://github.com/microsoft/benchmark-qed",
+        "topics": [
+          "benchmarking",
+          "benchmarkqed",
+          "llm",
+          "rag"
+        ],
+        "pushed_at": "2026-05-08T21:13:37Z",
+        "updated_at": "2026-05-08T20:55:27Z"
+      },
+      {
+        "name": "NEUIR/M2RAG",
+        "stars": 44,
+        "forks": 4,
+        "description": "[MM '25] This is the code repo for our paper \"Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts\".",
+        "url": "https://github.com/NEUIR/M2RAG",
+        "topics": [],
+        "pushed_at": "2025-09-27T14:13:39Z",
+        "updated_at": "2026-04-09T08:54:21Z"
+      },
+      {
+        "name": "qinchuanhui/UDA-Benchmark",
+        "stars": 43,
+        "forks": 3,
+        "description": "[NeurIPS'24] UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-world Document Analysis",
+        "url": "https://github.com/qinchuanhui/UDA-Benchmark",
+        "topics": [],
+        "pushed_at": "2025-02-21T09:51:02Z",
+        "updated_at": "2026-03-21T07:09:12Z"
+      },
+      {
+        "name": "CSHaitao/LexRAG",
+        "stars": 41,
+        "forks": 8,
+        "description": "Benchmarking Retrieval-Augmented Generation in Multi-Turn Legal Consultation Conversation",
+        "url": "https://github.com/CSHaitao/LexRAG",
+        "topics": [],
+        "pushed_at": "2025-03-03T04:08:10Z",
+        "updated_at": "2026-04-26T14:14:32Z"
+      },
+      {
+        "name": "ReLink-Inc/PropRAG",
+        "stars": 33,
+        "forks": 3,
+        "description": "PropRAG: A novel Retrieval-Augmented Generation framework leveraging context-rich propositions and LLM-free beam search over proposition paths for multi-hop reasoning. Achieves state-of-the-art zero-shot performance on benchmarks like MuSiQue, HotpotQA, and 2Wiki. ",
+        "url": "https://github.com/ReLink-Inc/PropRAG",
+        "topics": [],
+        "pushed_at": "2025-11-09T11:32:37Z",
+        "updated_at": "2026-03-10T14:17:21Z"
+      },
+      {
+        "name": "platformxlab/RAGPerf",
+        "stars": 25,
+        "forks": 2,
+        "description": "An End-to-End Benchmarking Framework for Retrieval-Augmented Generation Systems",
+        "url": "https://github.com/platformxlab/RAGPerf",
+        "topics": [],
+        "pushed_at": "2026-03-13T03:04:40Z",
+        "updated_at": "2026-04-17T09:29:42Z"
+      },
+      {
+        "name": "MRAMG-Bench/MRAMG",
+        "stars": 19,
+        "forks": 1,
+        "description": "[SIGIR 2025] Official impl. of \"MRAMG-Bench: A Comprehensive Benchmark for Advancing Multimodal Retrieval-Augmented Multimodal Generation\"",
+        "url": "https://github.com/MRAMG-Bench/MRAMG",
+        "topics": [],
+        "pushed_at": "2025-04-15T15:12:21Z",
+        "updated_at": "2026-04-24T07:52:09Z"
+      },
+      {
+        "name": "YunjiaXi/InfoDeepSeek",
+        "stars": 18,
+        "forks": 2,
+        "description": "Code for InfoDeepSeek: Benchmarking Agentic Information Seeking for Retrieval-Augmented Generation",
+        "url": "https://github.com/YunjiaXi/InfoDeepSeek",
+        "topics": [],
+        "pushed_at": "2025-05-29T08:53:45Z",
+        "updated_at": "2026-03-30T03:11:03Z"
+      },
+      {
+        "name": "jinzhuoran/RAG-RewardBench",
+        "stars": 17,
+        "forks": 0,
+        "description": "RAG-RewardBench: Benchmarking Reward Models in Retrieval Augmented Generation for Preference Alignment",
+        "url": "https://github.com/jinzhuoran/RAG-RewardBench",
+        "topics": [],
+        "pushed_at": "2024-12-19T08:24:23Z",
+        "updated_at": "2026-04-11T06:24:36Z"
+      }
+    ],
+    "status": 200,
+    "total": 148
+  },
+  {
+    "query": "retrieval augmented generation evaluation in:name,description",
+    "results": [
+      {
+        "name": "Marker-Inc-Korea/AutoRAG",
+        "stars": 4752,
+        "forks": 397,
+        "description": "AutoRAG: An Open-Source Framework for Retrieval-Augmented Generation (RAG) Evaluation & Optimization with AutoML-Style Automation",
+        "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+        "topics": [
+          "analysis",
+          "automl",
+          "benchmarking",
+          "document-parser",
+          "embeddings",
+          "evaluation",
+          "llm",
+          "llm-evaluation",
+          "llm-ops",
+          "open-source",
+          "ops",
+          "optimization",
+          "pipeline",
+          "python",
+          "qa",
+          "rag",
+          "rag-evaluation",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2026-05-09T02:24:05Z",
+        "updated_at": "2026-05-08T15:01:43Z"
+      },
+      {
+        "name": "Raudaschl/rag-fusion",
+        "stars": 926,
+        "forks": 112,
+        "description": "RAG-Fusion: multi-query generation + Reciprocal Rank Fusion for better retrieval-augmented generation. Includes evaluation harness with NFCorpus/BEIR.",
+        "url": "https://github.com/Raudaschl/rag-fusion",
+        "topics": [
+          "chromadb",
+          "information-retrieval",
+          "openai",
+          "python",
+          "rag",
+          "rag-fusion",
+          "reciprocal-rank-fusion",
+          "retrieval-augmented-generation",
+          "vector-search"
+        ],
+        "pushed_at": "2026-04-26T18:45:05Z",
+        "updated_at": "2026-05-06T16:52:32Z"
+      },
+      {
+        "name": "Denis2054/RAG-Driven-Generative-AI",
+        "stars": 601,
+        "forks": 209,
+        "description": "This repository provides programs to build Retrieval Augmented Generation (RAG) code for Generative AI with LlamaIndex, Deep Lake, and Pinecone leveraging the power of OpenAI and Hugging Face models for generation and evaluation.",
+        "url": "https://github.com/Denis2054/RAG-Driven-Generative-AI",
+        "topics": [
+          "advanced-rag",
+          "chroma",
+          "chromadb",
+          "embedding-models",
+          "fine-tuning",
+          "gpt-4o-mini",
+          "gpt4-omni",
+          "grok",
+          "huggingface",
+          "indexing-querying",
+          "llama",
+          "llama-index",
+          "multimodal",
+          "openai-api",
+          "pinecone",
+          "rag",
+          "scaling",
+          "vision-transformer",
+          "xai-grok"
+        ],
+        "pushed_at": "2025-09-23T15:31:25Z",
+        "updated_at": "2026-05-06T16:48:07Z"
+      },
+      {
+        "name": "yixuantt/MultiHop-RAG",
+        "stars": 442,
+        "forks": 37,
+        "description": "Repository for \"MultiHop-RAG: A Dataset for Evaluating Retrieval-Augmented Generation Across Documents\" (COLM 2024)",
+        "url": "https://github.com/yixuantt/MultiHop-RAG",
+        "topics": [],
+        "pushed_at": "2025-04-03T01:42:18Z",
+        "updated_at": "2026-04-29T08:06:33Z"
+      },
+      {
+        "name": "GraphRAG-Bench/GraphRAG-Benchmark",
+        "stars": 416,
+        "forks": 49,
+        "description": "The official repo of GraphRAG-Bench for evaluating GraphRAG models. \"When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation\".  (ICLR'26)",
+        "url": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
+        "topics": [
+          "analysis",
+          "benchmark",
+          "dataset",
+          "graphrag",
+          "graphrag-bench",
+          "graphrag-benchmark",
+          "graphragdataset"
+        ],
+        "pushed_at": "2026-03-04T02:49:30Z",
+        "updated_at": "2026-05-08T10:05:16Z"
+      },
+      {
+        "name": "TonicAI/tonic_validate",
+        "stars": 325,
+        "forks": 31,
+        "description": "Metrics to evaluate the quality of responses of your Retrieval Augmented Generation (RAG) applications.",
+        "url": "https://github.com/TonicAI/tonic_validate",
+        "topics": [
+          "evaluation-framework",
+          "evaluation-metrics",
+          "large-language-models",
+          "llm",
+          "llmops",
+          "llms",
+          "rag",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2025-07-10T13:53:28Z",
+        "updated_at": "2026-04-29T14:38:09Z"
+      },
+      {
+        "name": "YHPeter/Awesome-RAG-Evaluation",
+        "stars": 193,
+        "forks": 18,
+        "description": "The official repository for the paper: Evaluation of Retrieval-Augmented Generation: A Survey.",
+        "url": "https://github.com/YHPeter/Awesome-RAG-Evaluation",
+        "topics": [],
+        "pushed_at": "2025-04-25T05:41:01Z",
+        "updated_at": "2026-03-25T00:03:58Z"
+      },
+      {
+        "name": "gomate-community/rageval",
+        "stars": 172,
+        "forks": 10,
+        "description": "Evaluation tools for Retrieval-augmented Generation (RAG) methods.",
+        "url": "https://github.com/gomate-community/rageval",
+        "topics": [
+          "evalution",
+          "llm",
+          "rag"
+        ],
+        "pushed_at": "2024-11-18T09:16:08Z",
+        "updated_at": "2026-05-07T08:03:42Z"
+      },
+      {
+        "name": "opendatalab/OHR-Bench",
+        "stars": 98,
+        "forks": 13,
+        "description": "(ICCV 2025) OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation",
+        "url": "https://github.com/opendatalab/OHR-Bench",
+        "topics": [],
+        "pushed_at": "2025-12-03T11:55:00Z",
+        "updated_at": "2026-04-30T11:35:02Z"
+      },
+      {
+        "name": "TencentCloudADP/hichunk",
+        "stars": 96,
+        "forks": 4,
+        "description": "Code for \"HiChunk: Evaluating and Enhancing Retrieval-Augmented Generation with Hierarchical Chunking\"",
+        "url": "https://github.com/TencentCloudADP/hichunk",
+        "topics": [],
+        "pushed_at": "2025-11-18T13:05:27Z",
+        "updated_at": "2026-04-17T08:56:00Z"
+      },
+      {
+        "name": "amazon-science/auto-rag-eval",
+        "stars": 87,
+        "forks": 13,
+        "description": "Code repo for the ICML 2024 paper \"Automated Evaluation of Retrieval-Augmented Language Models with Task-Specific Exam Generation\"",
+        "url": "https://github.com/amazon-science/auto-rag-eval",
+        "topics": [
+          "evaluation",
+          "genai",
+          "llm",
+          "machine-learning"
+        ],
+        "pushed_at": "2024-06-13T20:50:39Z",
+        "updated_at": "2026-04-10T02:23:26Z"
+      },
+      {
+        "name": "jeremycp3/GraphRAG-Bench",
+        "stars": 74,
+        "forks": 14,
+        "description": "This is the official repo for GraphRAG-Bench: Challenging Domain-Specific Reasoning for Evaluating Graph Retrieval-Augmented Generation",
+        "url": "https://github.com/jeremycp3/GraphRAG-Bench",
+        "topics": [],
+        "pushed_at": "2025-08-01T09:11:02Z",
+        "updated_at": "2026-04-26T15:29:28Z"
+      },
+      {
+        "name": "neulab/ragged",
+        "stars": 61,
+        "forks": 6,
+        "description": "Retrieval Augmented Generation Generalized Evaluation Dataset",
+        "url": "https://github.com/neulab/ragged",
+        "topics": [],
+        "pushed_at": "2025-07-16T09:48:11Z",
+        "updated_at": "2026-01-31T07:21:35Z"
+      },
+      {
+        "name": "Azure-Samples/Design-and-evaluation-of-RAG-solutions",
+        "stars": 55,
+        "forks": 18,
+        "description": "This repo contains a comprehensive set of the recommendations to build a RAG (Retrieval-Augmented Generation) solution following best practices, along with tools and techniques for testing and evaluation and reusable code snippets.",
+        "url": "https://github.com/Azure-Samples/Design-and-evaluation-of-RAG-solutions",
+        "topics": [],
+        "pushed_at": "2025-01-26T19:53:29Z",
+        "updated_at": "2026-05-03T06:47:59Z"
+      },
+      {
+        "name": "HuggingAGI/AwesomeRAGPapers",
+        "stars": 51,
+        "forks": 4,
+        "description": "A curated collection of influential surveys and papers on Retrieval-Augmented Generation (RAG), covering frameworks, evaluations, multi-modal extensions, and domain-specific applications.  ",
+        "url": "https://github.com/HuggingAGI/AwesomeRAGPapers",
+        "topics": [
+          "llm",
+          "rag",
+          "survey"
+        ],
+        "pushed_at": "2025-02-03T12:26:37Z",
+        "updated_at": "2026-05-05T03:27:18Z"
+      }
+    ],
+    "status": 200,
+    "total": 858
+  }
+]

@@ -1,0 +1,3100 @@
+[
+  {
+    "query": "retrieval augmented generation",
+    "results": [
+      {
+        "DOI": "10.59350/r9dj1-zkx52",
+        "title": [
+          "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-2884-2771",
+            "authenticated-orcid": false,
+            "given": "Wenyi",
+            "family": "Pi",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;strong&gt; How to efficiently retrieve information for different applications &lt;/strong&gt; Author Wenyi Pi (ORCID: 0009-0002-2884-2771) This article aims to explore various ways in which Retrieval-Augmented Generation (RAG) can be utilised to retrieve information and generate responses effectively within the dialogue system. The rationale behind utilising RAG as well as potential ways in which it can be employed effectively will be covered.</jats:p>"
+      },
+      {
+        "DOI": "10.59350/q2pq3-0fv85",
+        "title": [
+          "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-2884-2771",
+            "authenticated-orcid": false,
+            "given": "Wenyi",
+            "family": "Pi",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;strong&gt; How to efficiently retrieve information for different applications &lt;/strong&gt; Author Wenyi Pi (ORCID: 0009-0002-2884-2771) This article aims to explore various ways in which Retrieval-Augmented Generation (RAG) can be utilised to retrieve information and generate responses effectively within the dialogue system. The rationale behind utilising RAG as well as potential ways in which it can be employed effectively will be covered.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5253805",
+        "title": [
+          "A Comparative Study of Retrieval-Augmented Generation, Graph Retrieval-Augmented Generation, and Fine-Tuned Large Language Models for Fire Engineering Knowledge Retrieval"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Xingzhuo",
+            "family": "Xue",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Guowei",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Liming",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Chunyuan",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5316632",
+        "title": [
+          "A Comparative Study of Retrieval-Augmented Generation, Graph Retrieval-Augmented Generation, and Fine-Tuned Large Language Models for Fire Engineering Knowledge Retrieval"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Xingzhuo",
+            "family": "Xue",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Guowei",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Liming",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Chunyuan",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/979-8-8688-1808-0_1",
+        "title": [
+          "Introduction to Retrieval-Augmented Generation (RAG)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Mastering Retrieval-Augmented Generation"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ranajoy",
+            "family": "Bose",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/979-8-8688-1808-0_2",
+        "title": [
+          "Core Concepts of Retrieval-Augmented Generation (RAG)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Mastering Retrieval-Augmented Generation"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ranajoy",
+            "family": "Bose",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/979-8-8688-1808-0_3",
+        "title": [
+          "Building a Retrieval-Augmented Generation (RAG) Application"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Mastering Retrieval-Augmented Generation"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ranajoy",
+            "family": "Bose",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/4l83f7",
+        "title": [
+          "Review of: \"GeAR: Generation Augmented Retrieval\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2819-388X",
+            "authenticated-orcid": true,
+            "given": "Yan",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/70qgzw",
+        "title": [
+          "Review of: \"GeAR: Generation Augmented Retrieval\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              17
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4684-3703",
+            "authenticated-orcid": true,
+            "given": "Yahya",
+            "family": "Slimani",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21275/sr251104092705",
+        "title": [
+          "Retrieval-Augmented Generation: Enhancing AI with Reliable Knowledge."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Science and Research (IJSR)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Raja",
+            "family": "Patnaik",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3390/engproc2025120047",
+        "title": [
+          "Tracert-Retrieval-Augmented Generation: Boosting Multi-Hop Retrieval-Augmented Generation with Direction-Aware Graph Traversal"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "8th International Conference on Knowledge Innovation and Invention"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Siu-Him",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "iSchool, Feng Chia University, Taichung 407102, Taiwan"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7922-6269",
+            "authenticated-orcid": false,
+            "given": "Jhe-Wei",
+            "family": "Lin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Information Engineering and Computer Science, Feng Chia University, Taichung 407102, Taiwan"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/nth9ey",
+        "title": [
+          "Review of: \"GeAR: Generation Augmented Retrieval\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              17
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Soraya",
+            "family": "Setti Ahmed",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31274/cc-20260223-58",
+        "title": [
+          "Retrieval Augmented Generation for HPC Code Optimization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Shalini",
+            "family": "Mutyala",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.59350/xcq3s-jvk04",
+        "title": [
+          "Understanding Retrieval Pitfalls: Challenges Faced by Retrieval Augmented Generation (RAG) models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Amanda",
+            "family": "Kau",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Introduction Large language models (LLMs) like GPT-4, the engine of products like ChatGPT, have taken centre stage in recent years due to their astonishing capabilities. Yet, they are far from perfect. Many of us have since learnt — perhaps when asking ChatGPT a question or employing it to write our reports — that LLMs can hallucinate.</jats:p>"
+      },
+      {
+        "DOI": "10.36085/jsai.v9i1.9897",
+        "title": [
+          "Evaluation of Retrieval Methods in Domain-Specific Chatbots Based on Retrieval-Augmented Generation",
+          "Evaluasi Metode Retrieval pada Chatbot Domain Khusus Berbasis Retrieval-Augmented Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              23
+            ]
+          ]
+        },
+        "container-title": [
+          "JSAI (Journal Scientific and Applied Informatics)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Asmaidin",
+            "family": "Asmaidin",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Cahyono",
+            "family": "Budy Santoso",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This study evaluated retrieval methods in the implementation of a domain-specific chatbot based on Retrieval-Augmented Generation to improve information accuracy and relevance while reducing hallucination risks. The primary problem addressed was the incorrect selection and prioritization of contextual documents in chatbot systems built on large language models, particularly in technical domains. An experimental approach was applied by comparing three retrieval strategies: lexical retrieval based on term frequency–inverse document frequency, semantic retrieval using vector representations, and a hybrid retrieval method combining lexical and semantic signals. System performance was measured using Recall at different ranking thresholds and Mean Reciprocal Rank to assess both document discovery and ranking quality. The results demonstrated that lexical retrieval achieved the highest precision at the top-ranked position, while semantic retrieval showed reduced effectiveness due to semantic drift in technical documents. The hybrid approach improved mid-range recall performance but still exhibited ranking ambiguity for top-ranked results. These findings indicated that retrieval quality in Retrieval-Augmented Generation systems depended more on effective ranking and context prioritization than on document availability alone. The study concluded that systematic evaluation of retrieval methods was essential for developing reliable domain-specific chatbots.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5295044",
+        "title": [
+          "Prospects of Retrieval Augmented Generation (RAG) for Academic Library Search and Retrieval"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Brady",
+            "family": "Lund",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.59350/wek8b-sbj84",
+        "title": [
+          "Understanding Retrieval Pitfalls: Challenges Faced by Retrieval Augmented Generation (RAG) models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Amanda",
+            "family": "Kau",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Introduction Large language models (LLMs) like GPT-4, the engine of products like ChatGPT, have taken centre stage in recent years due to their astonishing capabilities. Yet, they are far from perfect. Many of us have since learnt — perhaps when asking ChatGPT a question or employing it to write our reports — that LLMs can hallucinate.</jats:p>"
+      },
+      {
+        "DOI": "10.55248/gengpi.6.0125.0635",
+        "title": [
+          "Retrieval Augmented Generation (RAG) Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Research Publication and Reviews"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Ankit",
+            "family": "Mishra",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Aniket",
+            "family": "Gupta",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.51473/rcmos.v1i2.2024.736",
+        "title": [
+          "Protótipo de Pesquisa Documental para a Polícia Militar do Paraná com Retrieval Augmented Generation e Gemini AI em Ambiente Dockerizado",
+          "Prototype for Document Retrieval for the Military Police of Paraná with Retrieval Augmented Generation and Gemini AI in a Dockerized Environment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              12
+            ]
+          ]
+        },
+        "container-title": [
+          "RCMOS - Revista Científica Multidisciplinar O Saber"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Cleiton",
+            "family": "Giacomelli da Silva",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Este trabalho apresenta o desenvolvimento de um protótipo de pesquisa documental para as diretrizes e doutrinas da Polícia Militar do Paraná (PMPR) utilizando a estratégia Retrieval Augmented Generation (RAG) e o modelo de linguagem Gemini AI Flash 1.5. O protótipo foi implementado em um ambiente containerizado com Docker, visando garantir portabilidade e reprodutibilidade. A estratégia RAG combina a busca tradicional com modelos de linguagem avançados para gerar respostas mais precisas e completas às consultas dos usuários. O protótipo foi testado com perguntas reais e os resultados preliminares demonstram a capacidade do sistema em compreender as perguntas e fornecer respostas relevantes, com base nas informações contidas nos documentos da PMPR. O trabalho discute o potencial do protótipo para auxiliar os policiais militares no acesso às informações relevantes, superando as limitações da atual forma de pesquisa documental na instituição.</jats:p>"
+      },
+      {
+        "DOI": "10.21070/ijins.v27i1.1836",
+        "title": [
+          "Comparative Performance of Retrieval Augmented Generation Tourism Chatbots"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Indonesian Journal of Innovation Studies"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Amar Al",
+            "family": "Farizi",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Primandani",
+            "family": "Arsi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Pungkas",
+            "family": "Subarkah",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>General Background: The rapid adoption of artificial intelligence in smart tourism has increased the use of contextual chatbots to deliver destination information efficiently. Specific Background: However, tourism chatbots based on Large Language Models frequently encounter information hallucination, reducing reliability when handling dynamic and local tourism data. Knowledge Gap: Existing studies mainly focus on rule-based or single-model chatbot implementations and provide limited comparative evaluation of Retrieval Augmented Generation configurations combining embedding models and Large Language Models. Aims: This study aims to comparatively evaluate multiple Retrieval Augmented Generation configurations to identify the most suitable combination for contextual tourism chatbots and to analyze differences between large multilingual and small monolingual embedding models using a local tourism dataset. Results: Experimental evaluation using data from 49 tourist destinations in Banyumas Regency shows that the Multilingual-E5-Large embedding model consistently achieves perfect Precision, Recall, and F1-Score across all tested Large Language Models. The combination of Multilingual-E5-Large and GPT-4.1-Mini demonstrates the most balanced performance, achieving a BERTScore F1 of 0.7515 with an average response time of 1.555 seconds. Novelty: This research provides a systematic comparative assessment of embedding capacity and Large Language Model selection within a unified Retrieval Augmented Generation framework for tourism chatbots. Implications: The findings offer practical guidance for selecting model configurations that ensure accurate retrieval, high-quality responses, and efficient system performance in contextual tourism information services.\nHighlights\n• Multilingual embedding models deliver consistently higher retrieval accuracy across all tested configurations• GPT-4.1-Mini produces the most balanced generative quality and response latency• Embedding model selection plays a more decisive role than language model variation\nKeywords\nRetrieval Augmented Generation; Tourism Chatbot; Large Language Model; Embedding Model; Comparative Evaluation</jats:p>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.171837853.31531482/v1",
+        "title": [
+          "Large Language Model with Federated Retrieval-Augmented Generation for Improved Knowledge Retrieval"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              14
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-8789-9881",
+            "authenticated-orcid": false,
+            "given": "Xueqin",
+            "family": "Hou",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Jinhui Artificial Intelligence Solutions"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0001-2954-8286",
+            "authenticated-orcid": false,
+            "given": "Xijin",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Jinhui Artificial Intelligence Solutions"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.174060240.09460752/v1",
+        "title": [
+          "Enhancing Context-Aware Search with Retrieval-Augmented Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0452-4894",
+            "authenticated-orcid": false,
+            "given": "Rahul",
+            "family": "Shetty",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.5220/0014218900004052",
+        "title": [
+          "Adaptive Retriever Weighting for Robust Retrieval-Augmented Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 18th International Conference on Agents and Artificial Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Sreenivasan",
+            "family": "Mohandas",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "International Institute of Information Technology, Hyderabad, India"
+              }
+            ]
+          },
+          {
+            "given": "Jahnavi",
+            "family": "Chowdary Pothuri",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Independent Researcher, India"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.21070/ups.9995",
+        "title": [
+          "Implementation of an Academic Information Chatbot Based on Retrieval-Augmented Generation (RAG) Using LLaMA 3.1"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Muhammad Saddam Heykal",
+            "family": "Bustomy",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1564-4987",
+            "authenticated-orcid": false,
+            "given": "Mochamad Alfan",
+            "family": "Rosid",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.177155637.75354706/v1",
+        "title": [
+          "Adaptive Optimization for Retrieval-Augmented Generation via Diagnostic-Driven Strategy Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              20
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0009-1536-1259",
+            "authenticated-orcid": false,
+            "given": "Zihan",
+            "family": "Gai",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Kunming University of Science and Technology"
+              }
+            ]
+          },
+          {
+            "given": "Linyu",
+            "family": "Kuang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Kunming University of Science and Technology"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "hallucination taxonomy",
+    "results": [
+      {
+        "DOI": "10.2139/ssrn.6541198",
+        "title": [
+          "Pedagogical Integrity and Hallucination Risks in Bloom's Taxonomy-Aligned AQG"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0007-9071-059X",
+            "authenticated-orcid": true,
+            "given": "Firmansyah",
+            "family": "Ibrahim",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The application of Generative AI to educational settings has revolutionized the efficiency of Automatic Question Generation (AQG) in assessment practices. The application of technology in pedagogy, however, runs the risk of losing educational integrity and educational ethical validity. This research examines the moral uncertainties of utilizing LLMs (Large Language Models) to develop assessments, particularly high-stakes assessments, on the alignment of hallucination and cognition with Bloom's. Based on the results of an analysis of 20 studies conducted between the years 2023 and 2025, this paper outlines what is a \"crisis of validity,\" wherein it is argued that the majority of AI-generated questions are factually wrong and, if anything, biased to testing LOTS (Lower Order Thinking Skills) such that analysis and evaluation and other attributes of the upper (and even middle) cognitive domains are neglected. Finally, the research points to the lack of reliability in AI grading systems and the possibility that they, and not the AI, are the source of the Bias. This paper presents a draft of a unified ethical framework for \"Controllable AQG,\" in which the HITL (human-in-the-loop) and automated verification systems address the concerns raised. Maintaining educational integrity, it is argued, requires moving away from a purely binary policy of prohibition on the one hand and unrestricted use on the other, towards a \"middle lane\" approach in which AI is used not as a replacement for the educator's professional judgment but as a support.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6496861",
+        "title": [
+          "Not Hallucination but Granularity: Error Taxonomy and Quality Audit of LLM-Based Legal Information Extraction"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Diego",
+            "family": "Sens",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The dominant concern in LLM-based information extraction is hallucination-the fabrication of content not present in the source text. We present an end-to-end expert audit of a production multi-stage legal extraction pipeline, evaluating 1,042 items across 100 Brazilian court decisions from four tribunals. With its production model configuration (Grok-3-mini, Claude Sonnet 4.6, GPT-5-4), the pipeline achieves 96.0% precision with zero hallucinations. The dominant error is not fabrication but granularity mismatch (3.0%): legally correct concepts extracted at the wrong level of specificity-wrong level of specificity or missing essential qualifiersundetected by all verification methods tested. A controlled experiment re-extracting 40 decisions with Llama-3.3-70b-a model not in the production configuration-shows this result is model-dependent: extraction quality depends on at least three contributing factorsmodel capability (3-10pp), decision complexity (12pp), and prompt specificity (10pp in a single-tribunal comparison). We propose a 7type error taxonomy for legal extraction, show that deterministic checks plateau at 86% accuracy, and demonstrate that LLM-as-judge performance varies dramatically by model (Cohen's κ from 0.23 to 0.74, 95% CIs nonoverlapping). Our findings suggest that hallucination mitigation, while important, is insufficient-the research focus should expand to granularity specification and recall optimization.</jats:p>"
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-8589677/v1",
+        "title": [
+          "Self-Aware Language Models: A Taxonomy and Evaluation of Epistemic Uncertainty and Hallucination Mitigation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Anjikya",
+            "family": "Tiwari",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Microsoft (United States)"
+              }
+            ]
+          },
+          {
+            "given": "Vibhuti",
+            "family": "Gupta",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The University of Texas Medical Branch at Galveston"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title>\n                <p>Artificial intelligence is rapidly getting ubiquitous, getting intertwined with people's everyday lives. As the adoption grows, so does the need to verify large language models (LLMs) for correctness. The inability of LLMs to recognize their own knowledge gaps remains a fundamental limitation. While prior research address subsets of these mechanisms, they do not analyze them explicitly as manifestations of epistemic self-awareness nor research their interaction as a unified capability. In this review we investigate knowledge gap awareness, an emerging field that seeks to enable LLMs with epistemic self-awareness to detect, present and respond to the absence of knowledge. We synthesize research across five key mechanisms: (i) reflective prompting, (ii) uncertainty quantification, (iii) selective prediction and abstention, (iv) retrieval-based verification, and (v)confidence calibration. Drawing on 51 curated papers using PRISMA methodology, we provide a comprehensive taxonomy, evaluate current benchmarks, and analyze practical applications in medicine, science, education, law, and collaborative AI. We also outline open challenges and limitations in modeling epistemic context-drive knowledge gap monitoring in LLMs and its applications in read world.</p>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.177219979.94060974/v1",
+        "title": [
+          "Tool Execution Hallucination in LLM-based Agents: A Unified Taxonomy with Detection, Mitigation, and Future Directions"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0001-9086-8473",
+            "authenticated-orcid": false,
+            "given": "Hanli",
+            "family": "Peng",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "College of Computing and Data Science, Nanyang Technological University"
+              }
+            ]
+          },
+          {
+            "given": "Yongsen",
+            "family": "Zheng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Computing and Data Science, Nanyang Technological University"
+              },
+              {
+                "name": "Digital Trust Centre"
+              }
+            ]
+          },
+          {
+            "given": "Ziyao",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Computing and Data Science, Nanyang Technological University"
+              },
+              {
+                "name": "Digital Trust Centre"
+              }
+            ]
+          },
+          {
+            "given": "Kwok-Yan",
+            "family": "Lam",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Computing and Data Science, Nanyang Technological University"
+              },
+              {
+                "name": "Digital Trust Centre"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.3724/2096-7004.di.2025.0131",
+        "title": [
+          "Survey on Hallucination in Reasoning Large Language Model: Evaluation, Taxonomy, Intervention, and Open Issues"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Data Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Xinyi",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Yuting",
+            "family": "Lu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Shunping",
+            "family": "Wei",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.46647/ijetms.2026.v10i02.001",
+        "title": [
+          "Hallucination in Large Language Models: A Comprehensive Survey, Taxonomy, and Mitigation Strategies"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Engineering Technology and Management Sciences"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "Sudhakar Murthy Molli",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "family": "Ramya Krishna Kurra",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Large Language Models (LLMs) have demonstrated impressive performance in a wide range of natural language processing operations, but their propensity to produce plausible-sounding, but factually incorrect information is often known as hallucination is a significant impediment to their use in high-stakes areas of application, like medicine, law, and scientific research. It is in this paper that the current state-of-the-art LLMs have their hallucination phenomena surveyed, and a new four-tier taxonomy defining hallucinations by origin is introduced: (1) intrinsic factual contradictions, (2) extrinsic knowledge conflicts, (3) temporal reasoning failures, and (4) contextual coherence breakdowns. We evaluate five top LLMs, GPT-4, Claude 3 Opus, Gemini Pro 1.5, Llama 3 70B, and Mistral 8x7B on the TruthfulQA, HaluEval, and factscore benchmarks and find hallucination rates of 18.7 percent to 34.2 percent. Moreover, we engage in a strict comparative assessment of such mitigation strategies as Retrieval-Augmented Generation (RAG), Reinforcement Learning on Human Feedback (RLHF), Chain-of-Thought prompting, and hybrid ensemble technologies. The experiments we carried out prove that the RLHF+RAG hybrid has the best accuracy of 91.5% which is far better than the individual methods. The survey will equip the practitioners and researchers with practical information regarding which type of hallucination mitigation strategies to choose given the task-specific requirements and computational limitations.</jats:p>"
+      },
+      {
+        "DOI": "10.1148/ryai.250203",
+        "title": [
+          "A Taxonomy of Machine Hallucination in Radiology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Radiology: Artificial Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-5949-3386",
+            "authenticated-orcid": false,
+            "given": "Frank J.",
+            "family": "Brooks",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Bioengineering, Grainger College of                     Engineering, University of Illinois Urbana-Champaign, 1406 W. Green St, 1102                     Everitt Lab MC 278, Urbana, IL 61801"
+              }
+            ]
+          },
+          {
+            "given": "Mark A.",
+            "family": "Anastasio",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Bioengineering, Grainger College of                     Engineering, University of Illinois Urbana-Champaign, 1406 W. Green St, 1102                     Everitt Lab MC 278, Urbana, IL 61801"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>A taxonomy of machine hallucination is proposed to codify intended interpretations of hallucination when evaluating the utility and trustworthiness of generative artificial intelligence deployed in radiology.</jats:p>"
+      },
+      {
+        "DOI": "10.59350/2kf7k-r1m79",
+        "title": [
+          "When is a Hallucination Not a Hallucination? The Role of Implicit Knowledge in RAG"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-0159-013X",
+            "authenticated-orcid": false,
+            "given": "Aaron",
+            "family": "Tay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;strong&gt; Summary (summarised by Gemini 2.0-exp) &lt;/strong&gt; We often think of AI-generated 'hallucinations' as blatant errors, but what happens when a RAG system produces information that's factually true but not explicitly stated in its sources?</jats:p>"
+      },
+      {
+        "DOI": "10.38124/ijisrt/26feb1090",
+        "title": [
+          "Trustworthy Agentic AI: A Survey and Taxonomy of Secure Coordination and Hallucination Mitigation in Multi-Agent Large Language Model Systems"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Innovative Science and Research Technology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tharakesvulu",
+            "family": "Vangalapat",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Samreen Iftekhar",
+            "family": "Shaikh",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Background:\nLarge language model (LLM)-based agentic systems are evolving beyond single-turn generators into autonomous, toolusing, multi-agent workflows with persistent memory and self-directed planning. When these agents collaborate,\nhallucinations no longer remain local; they can propagate across agent boundaries and trigger real-world operational\nfailures.\n Objective:\nThis paper provides a structured foundation for building secure, reliable, and hallucination-resilient agentic AI by\nsurveying failure modes and proposing a layered trust taxonomy with enforceable controls.\n Methods:\nWe reviewed literature on LLM reasoning, retrieval-augmented generation (RAG), hallucination detection, multi-agent\nframeworks, and AI governance (including zero-trust security principles) and catalogued failure modes across reliability\nand security dimensions.\n Results:\nWe present a seven-layer trust taxonomy spanning identity, planning, communication, memory, retrieval, execution,\nand oversight. From this taxonomy, we derive six reusable secure-coordination design patterns and propose a model-agnostic\nreference architecture for auditable, policy-enforced agentic workflows.\n Conclusion:\nTrustworthiness in agentic AI is fundamentally a system property, not merely a model property. The proposed\ntaxonomy and design patterns provide practical, implementation-independent guidance for securing multi-agent LLM\ndeployments in research and high-assurance enterprise contexts.\n Plain Language Summary:\nAI systems built from large language models can now plan tasks, use tools, and work together as teams of specialized\nagents. This collaboration creates new dangers: when one agent fabricates information, the other agents may act on it as\nthough it were true, spreading errors throughout the system. This paper maps where trust breaks down, from agent identity\nand message passing to memory and tool use, and proposes design rules and a system blueprint for more reliable and secure\nAI teams. agentic AI, multi-agent systems, trustworthy AI, hallucination mitigation, retrieval-augmented generation, tool\nuse, zero trust, AI governance.</jats:p>"
+      },
+      {
+        "DOI": "10.59350/e97te-q1q85",
+        "title": [
+          "When is a Hallucination Not a Hallucination? The Role of Implicit Knowledge in RAG"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-0159-013X",
+            "authenticated-orcid": false,
+            "given": "Aaron",
+            "family": "Tay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;strong&gt; Summary (summarised by Gemini 2.0-exp) &lt;/strong&gt; We often think of AI-generated 'hallucinations' as blatant errors, but what happens when a RAG system produces information that's factually true but not explicitly stated in its sources?</jats:p>"
+      },
+      {
+        "DOI": "10.1093/oed/9251553181",
+        "title": [
+          "hallucination, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 1
+      },
+      {
+        "DOI": "10.33541/helfin.v2i2.7186",
+        "title": [
+          "TERAPI MUSIK KLASIK MOZART MENGONTROL INTENSITAS HALUSINASI PENDENGARAN MENGGUNAKAN PENDEKATAN AUDITORY HALLUCINATION RATING SCALE"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "HelFin Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "Balbina Antonelda Marled Wawo",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Halusinasi merupakan gejala perubahan persepsi sensorik sehingga individu merasakan sensasi yang tidak nyata. Halusinasi jika tidak ditangani intensif, dapat menyebabkan kehilangan kontrol diri, pasien panik dan sulit dikendalikan. Tujuan dari studi kasus ini adalah untuk menerapkan manajemen fungsi persepsi sensori terapi musik klasik dalam mengontrol halusinasi pendengaran di RSKD Duren Sawit Jakarta Timur. Metode studi kasus ini adalah penelitian kualitatif dengan pendekatan deskriptif menggunakan rancangan asuhan keperawatan sesuai tahapan proses keperawatan. Partisipan studi kasus berjumlah dua orang pasien dengan kriteria inklusi pasien yang mengalami manifestasi klinis halusinasi auditori, pasien dewasa, pasien yang mendapatkan persetujuan oleh perawat penanggung jawab sebagai partisipan, pasien yang suka dan bersedia mendengar musik klasik mozart. Studi kasus ini dilakukan selama enam hari dengan penerapan terapi musik klasik 1 kali setiap hari selama 15 menit di sore hari. Pengumpulan data menggunakan instrument Auditory Hallucination Rating Scale (AHRS) dan dianalisis skor pre dan postnya. Hasil studi kasus skor AHRS pre dan post pasien satu dari 33 menjadi 14 sedangkan skor AHRS pre dan post pasien dua dari 29 menjadi 11, hasil evaluasi berdasarkan AHRS terlihat gejala yang kuat dari halusinasi pendengaran yaitu masih mendengar suara dengan intensitas rendah durasi lima sampai 1 menit. Rekomendasi terapi musik klasik efektif menurunkan intensitas dan durasi halusinasi pendengaran.</jats:p>"
+      },
+      {
+        "DOI": "10.1093/oed/5313966157",
+        "title": [
+          "pseudo-hallucination, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1109/uv63228.2024.11189154",
+        "title": [
+          "Beyond Isolated Fixes: A Comprehensive Survey on Hallucination Mitigation with a Three-Dimensional Taxonomy and Integrative Framework"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "2024 7th International Conference on Universal Village (UV)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Jieren",
+            "family": "Kou",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "New York University,Tandon School of Engineering,New York,USA"
+              }
+            ]
+          },
+          {
+            "given": "Xiuyuan",
+            "family": "Lu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Fudan University,School of Mathematical Sciences,Shanghai,China"
+              }
+            ]
+          },
+          {
+            "given": "Aobing",
+            "family": "Yin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Electrical &#x0026; Electronic Eng Imperial College London,London,United Kingdom"
+              }
+            ]
+          },
+          {
+            "given": "Wuyang",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Massachusetts Amherst,Dept. of Elec.&#x0026;Comp. Engineering,Amherst,USA"
+              }
+            ]
+          },
+          {
+            "given": "Xinyi",
+            "family": "Fang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universal Village Society,Cambridge,USA"
+              }
+            ]
+          },
+          {
+            "given": "Youzhang",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of California,Department of Cognitive Science,San Diego,CA,USA"
+              }
+            ]
+          },
+          {
+            "given": "Tengyue",
+            "family": "Pan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Stevenson School,California,United States"
+              }
+            ]
+          },
+          {
+            "given": "Lijia",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The Chinese University of Hong Kong,Department of Mathematics,Hong Kong,China"
+              }
+            ]
+          },
+          {
+            "given": "Ge",
+            "family": "Cheng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universal Village Society,Boston,USA"
+              }
+            ]
+          },
+          {
+            "given": "Hao",
+            "family": "Yuan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universal Village Society,Boston,USA"
+              }
+            ]
+          },
+          {
+            "given": "Xiaoman",
+            "family": "Duan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universal Village Society,Boston,USA"
+              }
+            ]
+          },
+          {
+            "given": "Yajun",
+            "family": "Fang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universal Village Society,Boston,USA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.54103/ai/15443",
+        "title": [
+          "Perception, hallucination, virtual reality. From controlled hallucination to Resident Evil 7: Biohazard"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              16
+            ]
+          ]
+        },
+        "container-title": [
+          "AN-ICON. Studies in Environmental Images [ISSN 2785-7433]"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Claudio",
+            "family": "Paolucci",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>\n\n\nIn this paper, I will work on the relationship between perception and imagination in Virtual Reality, claiming that “hallucination” is the ordinary motor also for online perception and not only a deviant form of it. First, I will deal with the problem of perception from the point of view of cognitive semiotics and I will try to underline the crucial role of imagination, claiming that perception is a form of “controlled hallucination”. Later, I will focus on the relationship between perception, hallucination, and memory in Virtual Reality. On the one hand, I will claim that Virtual Reality expresses the transition from actual perception to imagination, memory or dream through another actual perception. On the other hand, I will claim that it can express it without any problems through the old techniques coming from cinema and other audiovisual languages, since they partially share the very same formal apparatus of enunciation. I will demonstrate all of this by analyzing Resident Evil 7: Biohazard. \n\n\n</jats:p>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.22727717",
+        "title": [
+          "Hallucination, Panic, and Exhaustion in Embodied Cognition"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rodrick",
+            "family": "Wallace",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;p&gt;We demonstrate that all enterprises of embodied cognition, ranging from the 'simply' cognitive to the conscious, and from the individual to the mechanical, institutional, and composite, are susceptible to induced patterns of hallucination, panic, and exhaustion on challenging landscapes of fog, friction, and deadly adversarial intent. We further argue, in consonance with C.S. Gray, that dreams of 'Wunderwaffen', 'Wundertaktik', and implacable 'Reflexive Control' are themselves siren hallucinations.&lt;/p&gt;</jats:p>"
+      },
+      {
+        "DOI": "10.32388/3jme5g",
+        "title": [
+          "Review of: \"100% Hallucination Elimination Using Acurai\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2696-1064",
+            "authenticated-orcid": true,
+            "given": "Liam",
+            "family": "Magee",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/fxo089",
+        "title": [
+          "Review of: \"100% Hallucination Elimination Using Acurai\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              25
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6956-7513",
+            "authenticated-orcid": true,
+            "given": "Alberto",
+            "family": "Gandolfi",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5539338",
+        "title": [
+          "The Uncanny Positivity of AI Hallucination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mayukh",
+            "family": "Mukhopadhyay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.22727717.v1",
+        "title": [
+          "Hallucination, Panic, and Exhaustion in Embodied Cognition"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1097-8507",
+            "authenticated-orcid": false,
+            "given": "Rodrick",
+            "family": "Wallace",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "The New York State Psychiatric Institute at Columbia University"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1145/3703155",
+        "title": [
+          "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              24
+            ]
+          ]
+        },
+        "container-title": [
+          "ACM Transactions on Information Systems"
+        ],
+        "is-referenced-by-count": 1316,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-9650-8353",
+            "authenticated-orcid": false,
+            "given": "Lei",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7449-3093",
+            "authenticated-orcid": false,
+            "given": "Weijiang",
+            "family": "Yu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Huawei Inc., Shenzhen, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0007-8631-3858",
+            "authenticated-orcid": false,
+            "given": "Weitao",
+            "family": "Ma",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0002-4063-668X",
+            "authenticated-orcid": false,
+            "given": "Weihong",
+            "family": "Zhong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5909-1339",
+            "authenticated-orcid": false,
+            "given": "Zhangyin",
+            "family": "Feng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0001-5363-3886",
+            "authenticated-orcid": false,
+            "given": "Haotian",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7845-1544",
+            "authenticated-orcid": false,
+            "given": "Qianglong",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Huawei Inc., Shenzhen, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3380-6409",
+            "authenticated-orcid": false,
+            "given": "Weihua",
+            "family": "Peng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Huawei Inc., Shenzhen, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6011-0496",
+            "authenticated-orcid": false,
+            "given": "Xiaocheng",
+            "family": "Feng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2543-5604",
+            "authenticated-orcid": false,
+            "given": "Bing",
+            "family": "Qin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0007-1999-2600",
+            "authenticated-orcid": false,
+            "given": "Ting",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Harbin Institute of Technology, Harbin, China"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>The emergence of large language models (LLMs) has marked a significant breakthrough in natural language processing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone to hallucination, generating plausible yet nonfactual content. This phenomenon raises significant concerns over the reliability of LLMs in real-world information retrieval (IR) systems and has attracted intensive research to detect and mitigate such hallucinations. Given the open-ended general-purpose attributes inherent to LLMs, LLM hallucinations present distinct challenges that diverge from prior task-specific models. This divergence highlights the urgency for a nuanced understanding and comprehensive overview of recent advances in LLM hallucinations. In this survey, we begin with an innovative taxonomy of hallucination in the era of LLM and then delve into the factors contributing to hallucinations. Subsequently, we present a thorough overview of hallucination detection methods and benchmarks. Our discussion then transfers to representative methodologies for mitigating LLM hallucinations. Additionally, we delve into the current limitations faced by retrieval-augmented LLMs in combating hallucinations, offering insights for developing more robust IR systems. Finally, we highlight the promising research directions on LLM hallucinations, including hallucination in large vision-language models and understanding of knowledge boundaries in LLM hallucinations.</jats:p>"
+      },
+      {
+        "DOI": "10.1201/9781003637691",
+        "title": [
+          "Architecture and AI"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              20
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mustapha",
+            "family": "El Moussaoui",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2218/ed.9781912669615.21",
+        "title": [
+          "Illusion/Hallucination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              21
+            ]
+          ]
+        },
+        "container-title": [
+          "RECOUNT: ‘Kashfing’ Accounting with Visuals"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Abhay",
+            "family": "Patel",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/zwr8v5",
+        "title": [
+          "Review of: \"100% Hallucination Elimination Using Acurai\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              21
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8055-0541",
+            "authenticated-orcid": true,
+            "given": "Aurelian",
+            "family": "Anghelescu",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.4103/indianjpsychiatry.indianjpsychiatry_762_23",
+        "title": [
+          "Tactile hallucination triggered by auditory hallucination – A new phenomenon"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "Indian Journal of Psychiatry"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rajmohan",
+            "family": "Velayudhan",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Psychiatry, KMCT College, Kozhikode, Kerala, India"
+              }
+            ]
+          },
+          {
+            "given": "Zoheb",
+            "family": "Raj",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Psychiatry, KMCT College, Kozhikode, Kerala, India"
+              }
+            ]
+          },
+          {
+            "given": "Bindhiya",
+            "family": "Babu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Psychiatry, KMCT College, Kozhikode, Kerala, India"
+              }
+            ]
+          },
+          {
+            "given": "Pranav",
+            "family": "Nair",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Psychiatry, KMCT College, Kozhikode, Kerala, India"
+              }
+            ]
+          },
+          {
+            "given": "Sushil",
+            "family": "Kakkan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Psychiatry, KMCT College, Kozhikode, Kerala, India"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "faithfulness",
+    "results": [
+      {
+        "DOI": "10.1093/oed/1055996628",
+        "title": [
+          "faithfulness, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.4324/9781003434030-7",
+        "title": [
+          "God's Faithfulness and Dementia: Christian Theology in Context"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "Still Waters Run Deep"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rosalie Evelyn",
+            "family": "Hudson",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2307/jj.26622536.7",
+        "title": [
+          "FAITHFULNESS"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "Love's Virtues"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.5040/bci-0k2g.0010",
+        "title": [
+          "Proverbs 5:1–23"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "Proverbs"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.57106/scientia.v13i1.176",
+        "title": [
+          "Faithfulness to Faithfulness: The Compass of Spiritual Reading in the Letters of Saint Paul"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Scientia - The International Journal on the Liberal Arts"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0732-3326",
+            "authenticated-orcid": false,
+            "given": "Sheldon",
+            "family": "Tabile",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This paper is intended for the spiritual reading of St. Paul’s Letter. It investigates the dynamics and movements in the relationship between Divine and human reality. For the Divine reality, it investigates God’s Hesed in the covenantal promise, particularly with Abraham, and its fulfillment in Jesus Christ, who will come on the last days. In human reality, the Shema and commandments are explored together with Emunah and Hineni as the human response to God’s faithfulness. Also, it investigates the tradition of zealousness for God, having no idols, and living a moral life. The key to human reality is conformity to Jesus Christ and having faith like that of Jesus in the Father, through which there is justification and participation. Maranatha is the human disposition to the parousia of the Lord. Finally, the paper investigates the eschatological dimension of One God, One People, and One Future: the new creation, new heaven and earth, new mind, and new ways of relating called the Church.</jats:p>"
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.3",
+        "title": [
+          "Preface"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1007/978-3-031-48129-1_300578",
+        "title": [
+          "Faithfulness"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Encyclopedia of Heroism Studies"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k",
+        "title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.2",
+        "title": [
+          "Table of Contents"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.9",
+        "title": [
+          "Questions for Discussion"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2139/ssrn.6564479",
+        "title": [
+          "FACET: Measuring Attribution Faithfulness in Multi-Factor LLM Reasoning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0007-6740-2150",
+            "authenticated-orcid": true,
+            "given": "Venkateshwar Reddy",
+            "family": "Jambula",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Many decisions require weighing N ≥ 5 different factors simultaneously. When LLMs are deployed in these settings, do they integrate all factors or collapse onto whichever one is most canonical in their training data? We present FACET (Factor Accessibility, Coverage, and Evidence Test), a pilot study using a counterfactualoutcome protocol: neutralize the canonical factor and flip the remaining factors, creating cases where integration and single-factor processing predict different outcomes. We test nine frontier configurations (eight in the counterfactual arm) from six labs on US tort law (chosen for explicit factor lists and verifiable ground truth). All models answer correctly on counterfactuals, but probe faithfulness varies by canonicity: 7/8 models update their attribution when a moderately canonical factor is neutralized, 0/8 update for a highly canonical factor, and 4/8 for an intermediate case. We interpret this as canonicity-dependent embedding strength and connect it to Turpin et al. [2023] on chain-of-thought unfaithfulness. The protocol is not specific to law; legal balancing tests are the first instantiation.</jats:p>"
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.8",
+        "title": [
+          "Practical Implications"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.5",
+        "title": [
+          "A Burning Issue"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.1",
+        "title": [
+          "Front Matter"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.5040/9781350401259.0021",
+        "title": [
+          "God’s faithfulness has never failed"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Christians in the City of Lagos"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.14325/mississippi/9781496837981.003.0004",
+        "title": [
+          "”Faithfulness Itself“"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "Little Women at 150"
+        ],
+        "is-referenced-by-count": 0,
+        "abstract": "<p>\n                    Sandra Harbert Petrulionis, in an essay that critiques Alcott’s own attitudes about social class, examines Hannah Mullet, one of\n                    <italic>Little Women’s</italic>\n                    most-overlooked characters.  Alcott’s narrator, she argues, “renders Hannah Mullet utterly unmemorable, to the extent that most readers, and likely a majority of Alcott scholars, would be hard pressed to recall her full name.”  Exploring a character who has been almost untouched in Alcott scholarship, Petrulionis places the March family housekeeper and cook “in the historical context of mid-nineteenth-century domestic servitude” while also looking closely at the significance of the major scenes of Hannah’s appearance in the novel.  In her investigation, Petrulionis argues that Hannah “must be viewed as an essential complement to Marmee. Without her bifurcated role as both family intimate and maid-of-all-work,\n                    <italic>Little Women</italic>\n                    ’s beloved mother-of-all-wisdom could not exist.”\n                  </p>"
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.7",
+        "title": [
+          "Our Pluralistic Context"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.5040/bci-0k2g.0017",
+        "title": [
+          "Proverbs 10:31–11:31"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "Proverbs"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.51644/iesk5852",
+        "title": [
+          "Post Truth? Facts and Faithfulness"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              25
+            ]
+          ]
+        },
+        "container-title": [
+          "Consensus"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "John",
+            "family": "Milloy",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2307/j.ctv2xkjp3k.6",
+        "title": [
+          "Transforming Christian Teaching"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "The Faithfulness of Pluralism"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.5040/9780567696052.ch-019",
+        "title": [
+          "The Faithfulness of Jesus (12:1–13)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Hebrews A Social Identity Commentary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.5040/9781350601529.5427",
+        "title": [
+          "faithfulness"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "The Arden Encyclopedia of Shakespeare’s Language"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1162/ling.a.56",
+        "title": [
+          "Input Prevocalic Faithfulness and Opacity"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "Linguistic Inquiry"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Peter",
+            "family": "Jurgec",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Linguistics, University of Toronto, peter.jurgec@utoronto.ca"
+              }
+            ]
+          },
+          {
+            "given": "Yixin",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Linguistics, University of Toronto, yixin7.wang@gmail.com"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Positional faithfulness in parallel Optimality Theory refers to prominent positions in the output. This squib explores the predictions of a new class of constraints that refer to prominent positions in the input. We show that input prevocalic faithfulness correctly predicts counterfeeding opacity in which a consonantal process underapplies in positions that are no longer prevocalic due to vowel deletion, as well as counterbleeding opacity in which a consonantal process overapplies in prevocalic positions created by vowel epenthesis. We also discuss predictions involving other opaque interactions (e.g., between consonant neutralization and metathesis) and other prominent positions (e.g., leftmost, stressed).</jats:p>"
+      },
+      {
+        "DOI": "10.4324/9781003670049",
+        "title": [
+          "The Faithfulness of Self-Realisation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              6
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Jaimee van",
+            "family": "Gemerden",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.5040/9780567696052.ch-012",
+        "title": [
+          "God’s Faithfulness (6:9–20)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Hebrews A Social Identity Commentary"
+        ],
+        "is-referenced-by-count": 0
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "grounded generation",
+    "results": [
+      {
+        "DOI": "10.18653/v1/2023.inlg-genchal.3",
+        "title": [
+          "Visually Grounded Story Generation Challenge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 16th International Natural Language Generation Conference: Generation Challenges"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Xudong",
+            "family": "Hong",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Khushboo",
+            "family": "Mehra",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Asad",
+            "family": "Sayeed",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Vera",
+            "family": "Demberg",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.32388/ydank8",
+        "title": [
+          "Text-to-3D Gaussian Splatting with Physics-Grounded Motion Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Wenqing",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Yun",
+            "family": "Fu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Text-to-3D generation is a valuable technology in virtual reality and digital content creation. While recent works have pushed the boundaries of text-to-3D generation, producing high-fidelity 3D objects with inefficient prompts and simulating their physics-grounded motion accurately still remain unsolved challenges. To address these challenges, we present an innovative framework that utilizes the Large Language Model (LLM)-refined prompts and diffusion priors-guided Gaussian Splatting (GS) for generating 3D models with accurate appearances and geometric structures. We also incorporate a continuum mechanics-based deformation map and color regularization to synthesize vivid physics-grounded motion for the generated 3D Gaussians, adhering to the conservation of mass and momentum. By integrating text-to-3D generation with physics-grounded motion synthesis, our framework renders photo-realistic 3D objects that exhibit physics-aware motion, accurately reflecting the behaviors of the objects under various forces and constraints across different materials. Extensive experiments demonstrate that our approach achieves high-quality 3D generations with realistic physics-grounded motion.\n</jats:p>"
+      },
+      {
+        "DOI": "10.4324/9781032695563-8",
+        "title": [
+          "Comparison of First- and Second-Generation Grounded Theory Approaches"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Using Grounded Theory Research Methods"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Cheryl Tatano",
+            "family": "Beck",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2024.inlg-genchal.3",
+        "title": [
+          "Summary of the Visually Grounded Story Generation Challenge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 17th International Natural Language Generation Conference: Generation Challenges"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Xudong",
+            "family": "Hong",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Asad",
+            "family": "Sayeed",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Vera",
+            "family": "Demberg",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1145/3764914.3770591",
+        "title": [
+          "Grounded Anomalies: Towards Causally Grounded Kinematic Anomaly Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              3
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 2nd ACM SIGSPATIAL International Workshop on Geospatial Anomaly Detection"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9963-6698",
+            "authenticated-orcid": false,
+            "given": "Joon-Seok",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Computer Science, Emory University Atlanta, GA, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7001-4123",
+            "authenticated-orcid": false,
+            "given": "Andreas",
+            "family": "Züfle",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Computer Science, Emory University Atlanta, GA, USA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.64898/2026.02.18.706554",
+        "title": [
+          "BOND-PEP: topology-conditioned bipartite alignment for evidence-grounded peptide binder generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Wenze",
+            "family": "Ding",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Mathematics and Statistics, Faculty of Science, University of Sydney, NSW 2006, NSW, Australia"
+              },
+              {
+                "name": "Charles Perkins Centre, University of Sydney, Sydney, NSW 2006, Australia"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:p>Peptide binders can modulate proteins that remain challenging for small molecules, but discovering high-affinity, selective peptides is still slow and sample-intensive. Sequence-first generators could scale design when structures are unavailable or conformationally heterogeneous, yet they often trade diversity for control: unconstrained sampling is inefficient while conditioning remains largely implicit. This limitation is exacerbated by the uneven transfer of protein language model priors to short peptides. Here we present BOND-PEP, a retrieval-augmented, bipartite-aligned, topology-conditioned framework that converts empirical binding evidence into an explicit, residue-resolved conditioning state for peptide generation. BOND-PEP shows low perplexity together with satisfactory free-generation hit rates and sequence novelty under a fair evaluation protocol and decoding budget. Compared with existing peptide generation methods, BOND-PEP achieves state-of-the-art results that match or improve upon validated peptide-protein sequence pairs. In total, BOND-PEP provides a practical, sequence-only route to controllable de novo peptide binder generation under noisy labels and distribution shift.</jats:p>"
+      },
+      {
+        "DOI": "10.64898/2026.01.20.700704",
+        "title": [
+          "RAGulate: Retrieval-Augmented Generation for Post-hoc Literature-Grounded Regulatory Assessment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              21
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3772-2683",
+            "authenticated-orcid": false,
+            "given": "Mehrdad",
+            "family": "Zandigohar",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Biomedical Engineering, University of Illinois Chicago, Chicago, Illinois 60612, United States"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7638-849X",
+            "authenticated-orcid": false,
+            "given": "Yang",
+            "family": "Dai",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Biomedical Engineering, University of Illinois Chicago, Chicago, Illinois 60612, United States"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:sec>\n                  <jats:title>Motivation</jats:title>\n                  <jats:p>Prioritization of transcription factor (TF)–target relationships predicted by computational models for experimental validation often requires biologists to manually inspect heterogeneous and context-dependent evidence scattered across the biomedical literature. Large Language Models (LLMs) offer a promising solution to streamline this task. However, their reliance on general-purpose knowledge may lead to hallucinations and inaccurate interpretations.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>We present RAGulate, a retrieval-augmented generation (RAG) framework for literature-grounded assessment of transcriptional regulation. RAGulate leverages CollecTRI, an external regulatory knowledge base, and integrates alias-aware query expansion, sparse and dense retrieval, maximum-marginal-relevance re-ranking, and LLM-based classification of predictions within a modular pipeline. Using a balanced TF–target–context benchmark from the same resource, we evaluate retrieval, classification, and evidence faithfulness. While CollecTRI provides TF-target links with supporting PubMed Identifiers (PMIDs), RAGulate infers the context of each interaction from the retrieved literature. Results show that alias normalization markedly improves retrieval recall, while hybrid retrieval, which merges lexical and embedding-based candidates, achieves the highest evidence recovery across all cut-offs. Conditioning LLMs on retrieved documents consistently improves AUROC and AUPR for classifying whether a TF–target interaction is supported in the specified context compared with direct prompting. RAGulate reduces hallucinations and improves PMID-level citation correctness, producing explanations that faithfully reflect the supporting literature. RAGulate represents a knowledge-based AI tool that partners with biologists to accelerate the process of TF-target prioritization for experimental validation and foster hypothesis generation.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Availability and implementation</jats:title>\n                  <jats:p>\n                    The software and tutorials are available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://github.com/YDaiLab/RAGulate\">github.com/YDaiLab/RAGulate</jats:ext-link>\n                    .\n                  </jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.5220/0013864400003985",
+        "title": [
+          "Ontology-Grounded Language Modeling: Enhancing GPT-Based Philosophical Text Generation with Structured Knowledge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 21st International Conference on Web Information Systems and Technologies"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Claire",
+            "family": "Ponciano",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "i3mainz, University of Applied Sciences, Germany"
+              }
+            ]
+          },
+          {
+            "given": "Markus",
+            "family": "Schaffert",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "i3mainz, University of Applied Sciences, Germany"
+              }
+            ]
+          },
+          {
+            "given": "Jean-Jacques",
+            "family": "Ponciano",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "i3mainz, University of Applied Sciences, Germany"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-7900022/v1",
+        "title": [
+          "GRAVITI: Grounded Retrieval Generation Framework for VideoLLM Hallucination Mitigation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ahmad",
+            "family": "Khalil",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Windsor"
+              }
+            ]
+          },
+          {
+            "given": "Mahmoud",
+            "family": "Khalil",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Windsor"
+              }
+            ]
+          },
+          {
+            "given": "Alioune",
+            "family": "Ngom",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Windsor"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title>\n                <p>Video-language models (VideoLLMs) excel at tasks such as video captioning and question answering, but often produce hallucinations—content not grounded in the video or metadata—limiting their reliability. To address this, we propose GRAVITI (Grounded Retrieval Generation framework for VideoLLM hallucination mitigation), a model-agnostic, training-free and API-free framework that integrates a dynamically constructed ad-hoc knowledge base with a retrieval-guided decoding process. We refer to this process as Grounded Retrieval Generation (GRG), where each generated token is conditioned on evidence retrieved from video features and auxiliary metadata. GRAVITI reduces hallucinations while remaining compatible across diverse VideoLLMs. Evaluated on three benchmarks—VidHalluc, EventHallusion, and VideoHallucer—GRAVITI improves overall accuracy by 6–14% and substantially lowers hallucination rates compared to strong baselines. Ablation studies demonstrate the impact of retrieval size, detector thresholds, and grounding mechanisms, highlighting the effectiveness of GRG in producing reliable, multi-modal video descriptions.</p>"
+      },
+      {
+        "DOI": "10.1111/jan.16439/v1/review1",
+        "title": [
+          "Review for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              23
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2139/ssrn.6007054",
+        "title": [
+          "Geometry-Grounded Video Generation: Bridging 3D Structure, Temporal Coherence, and Controllability"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Alina",
+            "family": "Verroth",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Mei",
+            "family": "Talvick",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Adrian",
+            "family": "Volrex",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1111/jan.16439/v2/review1",
+        "title": [
+          "Review for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              18
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.18653/v1/2024.inlg-main.38",
+        "title": [
+          "Referring Expression Generation in Visually Grounded Dialogue with Discourse-aware Comprehension Guiding"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 17th International Natural Language Generation Conference"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Bram",
+            "family": "Willemsen",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Gabriel",
+            "family": "Skantze",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6172566",
+        "title": [
+          "StoryReasoning Dataset: Using Chain-of-Thought for Scene Understanding and Grounded Story Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Daniel",
+            "family": "Oliveira",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8631-2870",
+            "authenticated-orcid": true,
+            "given": "David",
+            "family": "Martins de Matos",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>isual storytelling systems struggle to maintain character identity across frames and link actions to appropriate subjects, frequently leading to referential hallucinations. We address these issues through entity grounding and propose StoryReasoning, a dataset containing 4,178 stories derived from 52,016 movie images, with both structured scene analyses and grounded stories. Each story maintains character and object consistency across frames while explicitly modeling multi-frame relationships through structured tabular representations. Our approach features cross-frame object re-identification using visual similarity and face recognition, chain-of-thought reasoning for narrative modeling, and a grounding scheme linking textual elements to visual entities across frames. We fine-tune Qwen2.5-VL 7B, creating Qwen Storyteller, which performs end-to-end object detection, re-identification, and landmark detection while maintaining consistent object references throughout the story. Evaluation demonstrates a reduction from 4.06 to 3.56 (-12.3%) hallucinations per story and improved creativity from 2.58 to 3.38 (+31.0%) compared to the base model.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5397022",
+        "title": [
+          "Guided-Grounded-Instructpix2pix (Ggip2p): Instruction-Based Image Editing with Grounding and Mask Generation Control"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "zahra",
+            "family": "esmaily",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hossein",
+            "family": "Ebrahimpour-Komleh",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1111/jan.16439/v1/review2",
+        "title": [
+          "Review for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Carlos",
+            "family": "Laranjeira",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1111/jan.16439/v2/review2",
+        "title": [
+          "Review for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              5
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Carlos",
+            "family": "Laranjeira",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.24306/plnxt/105",
+        "title": [
+          "Grounded futures: A decade of planning through humanitarian and Southern lenses"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "plaNext–Next Generation Planning"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6715-765X",
+            "authenticated-orcid": false,
+            "given": "Batoul",
+            "family": "Ibrahim",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This reflective article marks the tenth anniversary of plaNext – Next Generation Planning, tracing its evolution as a critical platform for spatial planning discourse, particularly in humanitarian and Global South contexts. Drawing on personal editorial and field-based experience, the author explores how plaNext has shifted spatial planning discourse toward inclusion, ethics, and contextual sensitivity. Focusing on contributions from Volumes 9 to 11, the article highlights planning’s potential as a transformative tool in humanitarian settings, centering community agency, participatory methods, and interdisciplinary innovation. The analysis further integrates non-Western ethical frameworks, advocating for planning as a reparative and care-based practice, especially relevant in post-crisis urban environments. Contributions from the Global South illustrate planning as a reparative practice rooted in justice, resilience, and relational well-being. Ultimately, the article calls for bridging academic and humanitarian spheres to foster responsive, interdisciplinary, and just planning. The next decade of plaNext offers a chance to consolidate many gains and push further. Thus, the journal’s commitment to fostering a young researchers-driven process is vital for the future of spatial planning.</jats:p>"
+      },
+      {
+        "DOI": "10.1111/jan.16439/v4/decision1",
+        "title": [
+          "Decision letter for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              17
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1111/jan.16439/v3/decision1",
+        "title": [
+          "Decision letter for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              2
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.36227/techrxiv.176003146.66290582/v1",
+        "title": [
+          "A Hybrid Retrieval-Augmented Generation and Language Model Framework for Evidence-Grounded Review Systems"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4051-5503",
+            "authenticated-orcid": false,
+            "given": "Chidozie",
+            "family": "Managwu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Applied Artificial Intelligence and Data Analytics, University of Bradford"
+              }
+            ]
+          },
+          {
+            "given": "Lanre",
+            "family": "Shittu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "David",
+            "family": "Obi-Nwankpa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Data Science & Artificial Intelligence, University of Hull"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1111/jan.16439/v2/decision1",
+        "title": [
+          "Decision letter for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1111/jan.16439/v1/decision1",
+        "title": [
+          "Decision letter for \"Experiences of Generation Z Nurses Adapting to Work in a Tertiary Hospital: A Grounded Theory Study\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2139/ssrn.5525461",
+        "title": [
+          "A Hybrid Retrieval-Augmented Generation and Language Model Framework for Evidence-Grounded Review Systems"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Chidozie",
+            "family": "Managwu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Lanre",
+            "family": "Shittu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "David",
+            "family": "Obi-Nwankpa",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1017/9781805432814.005",
+        "title": [
+          "Young Diasporans of Ethiopian Origin: A Historically Grounded Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              23
+            ]
+          ]
+        },
+        "container-title": [
+          "The Global Ethiopian Diaspora"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Alpha",
+            "family": "Abebe",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  }
+]

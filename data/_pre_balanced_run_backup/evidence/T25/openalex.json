@@ -1,0 +1,27 @@
+[
+  {
+    "query": "retrieval augmented generation",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "hallucination taxonomy",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "faithfulness",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "grounded generation",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "citation correctness",
+    "results": [],
+    "status": 400
+  }
+]

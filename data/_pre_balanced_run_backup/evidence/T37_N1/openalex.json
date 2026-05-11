@@ -1,0 +1,27 @@
+[
+  {
+    "query": "clinical guideline",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "model drift",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "LLM versioning",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "USPSTF",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "CDC guidelines",
+    "results": [],
+    "status": 400
+  }
+]

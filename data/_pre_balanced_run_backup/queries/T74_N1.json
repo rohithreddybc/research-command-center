@@ -1,0 +1,116 @@
+{
+  "topic": {
+    "topic_id": "T74_N1",
+    "title": "Open structured-metadata dataset of LLM-eval papers — noise-pruned",
+    "category": "meta",
+    "keywords": "LLM evaluation methodology",
+    "synonyms": "evaluation survey;benchmarking practices",
+    "negative_keywords": "tutorial;metadata;systematic mapping",
+    "target_artifact": "dataset",
+    "prelim_priority": "5",
+    "parent_topic_id": "T74",
+    "narrowing_type": "noise_pruned",
+    "narrowing_note": "removed noisy secondaries=['metadata', 'systematic mapping']; added to negatives",
+    "est_relevance_purity": "0.5",
+    "est_kept_papers": "1",
+    "est_hi_papers": "1",
+    "est_citation_signal": "1",
+    "est_artifact": "3",
+    "est_saturation": "3",
+    "est_evidence_quality": "1",
+    "est_niw": "2",
+    "est_eb1a": "5",
+    "est_career": "4",
+    "est_novelty_risk": "LOW",
+    "est_exec_feasibility": "HIGH",
+    "composite_score": "0.555",
+    "purity_gain_vs_parent": "0.25"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "LLM evaluation methodology evaluation",
+      "LLM evaluation methodology robustness",
+      "LLM evaluation methodology reproducibility",
+      "evaluation survey benchmark",
+      "evaluation survey evaluation"
+    ],
+    "openalex": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "LLM evaluation methodology evaluation",
+      "LLM evaluation methodology robustness",
+      "LLM evaluation methodology reproducibility",
+      "evaluation survey benchmark",
+      "evaluation survey evaluation"
+    ],
+    "crossref": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22LLM%20evaluation%20methodology%22+AND+all:%22evaluation%20survey%22+AND+all:%22benchmarking%20practices%22)",
+      "all:LLM%20evaluation%20methodology"
+    ],
+    "github": [
+      "LLM evaluation methodology in:readme,description",
+      "LLM evaluation methodology benchmark in:name,description",
+      "LLM evaluation methodology evaluation in:name,description",
+      "evaluation survey in:readme,description",
+      "evaluation survey benchmark in:name,description",
+      "evaluation survey evaluation in:name,description",
+      "benchmarking practices in:readme,description",
+      "benchmarking practices benchmark in:name,description",
+      "benchmarking practices evaluation in:name,description"
+    ],
+    "huggingface": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "evaluation survey benchmark"
+    ],
+    "doaj": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices"
+    ],
+    "pwc": [
+      "LLM evaluation methodology",
+      "evaluation survey",
+      "benchmarking practices"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "LLM evaluation methodology",
+        "url": "https://scholar.google.com/scholar?q=%22LLM%20evaluation%20methodology%22%202024..2026"
+      },
+      {
+        "label": "evaluation survey",
+        "url": "https://scholar.google.com/scholar?q=%22evaluation%20survey%22%202024..2026"
+      },
+      {
+        "label": "benchmarking practices",
+        "url": "https://scholar.google.com/scholar?q=%22benchmarking%20practices%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

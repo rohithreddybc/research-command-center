@@ -1,0 +1,383 @@
+[
+  {
+    "query": "data contamination",
+    "results": [
+      {
+        "id": "BrianatCambridge/DataContaminationExp",
+        "downloads": 74,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "williamxing1/water-contamination-data",
+        "downloads": 35,
+        "likes": 0,
+        "tags": [
+          "license:cc-by-4.0",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ClarusC64/ai-5node-data-buf-lag-cpl-data-contamination-v0.1",
+        "downloads": 9,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:en",
+          "license:mit",
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "quad-coupling"
+        ],
+        "description": "\n\t\n\t\t\n\t\tWhat this repo does\n\t\n\nThis dataset models data contamination cascades in AI training and deployment pipelines. It detects when contamination pressure, weakened validation buffer, governance lag in audits and quarantine actions, and tight coupling through shared stores and pipelines cross the five-node cascade threshold into an unrecoverable data contamination cascade.\nThis dataset models a five-node cascade: four interacting instability drivers and one emergent cascade state.The fifth… "
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "PubMedQA",
+    "results": [
+      {
+        "id": "qiaojin/PubMedQA",
+        "downloads": 32315,
+        "likes": 320,
+        "tags": [
+          "task_categories:question-answering",
+          "task_ids:multiple-choice-qa",
+          "annotations_creators:expert-generated",
+          "annotations_creators:machine-generated",
+          "language_creators:expert-generated",
+          "multilinguality:monolingual",
+          "source_datasets:original",
+          "language:en",
+          "license:mit",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "arxiv:1909.06146",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for [Dataset Name]\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nThe task of PubMedQA is to answer research questions with yes/no/maybe (e.g.: Do preoperative statins reduce atrial fibrillation after coronary artery bypass grafting?) using the corresponding abstracts.\n\n\t\n\t\t\n\t\tSupported Tasks and Leaderboards\n\t\n\nThe official leaderboard is available at: https://pubmedqa.github.io/.\n500 questions in the pqa_labeled are used as the test set. They can be found at… See the full description on th"
+      },
+      {
+        "id": "fedml/PubMedQA_instruction",
+        "downloads": 999,
+        "likes": 23,
+        "tags": [
+          "task_categories:question-answering",
+          "task_categories:text-generation",
+          "language:en",
+          "license:mit",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us",
+          "medical"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"PubMedQA_instruction\"\n\t\n\nThis repo contains a PubMedQA dataset converted for instruction tuning.\n\n\t\n\t\t\n\t\tCitation Information\n\t\n\n@inproceedings{jin2019pubmedqa,\n  title={PubMedQA: A Dataset for Biomedical Research Question Answering},\n  author={Jin, Qiao and Dhingra, Bhuwan and Liu, Zhengping and Cohen, William and Lu, Xinghua},\n  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint… See the fu"
+      },
+      {
+        "id": "MedSwin/PubMedQA-u-RAG",
+        "downloads": 323,
+        "likes": 1,
+        "tags": [
+          "task_categories:question-answering",
+          "language:en",
+          "license:apache-2.0",
+          "size_categories:10K<n<100K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us",
+          "medical"
+        ],
+        "description": "This dataset undergone:\n\nThis dataset undergone a comprehensive data augmentation pipeline to curate specifically for semantic retrieval and knowledge compactness,\nSoft/hard label distillation from MedGemma-27B-Text-IT\n\n"
+      },
+      {
+        "id": "tan9/pubmedQA",
+        "downloads": 69,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": "annotations_creators:\n\nother\nlanguage_creators:\nother\nlanguages:\nen-US\nlicenses:\nother-my-license\nmultilinguality:\nmonolingual\npretty_name: pubmedqa\nsize_categories:\nunknown\nsource_datasets: []\ntask_categories:\nquestion-answering\ntask_ids:\nextractive-qa\n\n"
+      },
+      {
+        "id": "pythonist/PubMedQA",
+        "downloads": 30,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "bigbio/pubmed_qa",
+        "downloads": 6824,
+        "likes": 54,
+        "tags": [
+          "multilinguality:monolingual",
+          "language:en",
+          "license:mit",
+          "region:us"
+        ],
+        "description": "PubMedQA is a novel biomedical question answering (QA) dataset collected from PubMed abstracts.\nThe task of PubMedQA is to answer research biomedical questions with yes/no/maybe using the corresponding abstracts.\nPubMedQA has 1k expert-annotated (PQA-L), 61.2k unlabeled (PQA-U) and 211.3k artificially generated QA instances (PQA-A).\n\nEach PubMedQA instance is composed of:\n  (1) a question which is either an existing research article title or derived from one,\n  (2) a context which is the corresp"
+      },
+      {
+        "id": "reginaboateng/cleaned_pubmedqa",
+        "downloads": 22,
+        "likes": 1,
+        "tags": [
+          "language:en",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"cleaned_pubmedqa\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "reginaboateng/pubmedqa_cleaned",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"pubmedqa_cleaned\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "gaodrew/pubmedQA-Llama-2-format",
+        "downloads": 3,
+        "likes": 2,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "hagara/labelled-PubMedQA",
+        "downloads": 5,
+        "likes": 1,
+        "tags": [
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "highnote/pubmed_qa",
+        "downloads": 24,
+        "likes": 4,
+        "tags": [
+          "task_categories:question-answering",
+          "task_ids:multiple-choice-qa",
+          "annotations_creators:expert-generated",
+          "annotations_creators:machine-generated",
+          "language_creators:expert-generated",
+          "multilinguality:monolingual",
+          "source_datasets:original",
+          "language:en",
+          "license:mit",
+          "size_categories:100K<n<1M",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "arxiv:1909.06146",
+          "region:us"
+        ],
+        "description": "PubMedQA is a novel biomedical question answering (QA) dataset collected from PubMed abstracts.\nThe task of PubMedQA is to answer research questions with yes/no/maybe (e.g.: Do preoperative\nstatins reduce atrial fibrillation after coronary artery bypass grafting?) using the corresponding abstracts.\nPubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially generated QA instances.\nEach PubMedQA instance is composed of (1) a question which is either an existing research article\ntitl"
+      },
+      {
+        "id": "clinicalnlplab/pubmedqa_test",
+        "downloads": 2,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"pubmedqa_test\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "clinicalnlplab/PubmedQA_train",
+        "downloads": 13,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"PubmedQA_train\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "Coldog2333/blurb-pubmedqa",
+        "downloads": 14,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "multi-train/pubmedqa_1107",
+        "downloads": 8,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"pubmedqa_1107\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "Medilora/PubMedQA-ShareGPT",
+        "downloads": 10,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"PubMedQA-ShareGPT\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "proserve/FedML_PubMedQA_instruction_stf_dataset",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "EllieS/pubmedqa_data",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "EllieS/pubmedqa_dpo_data",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "open-llm-leaderboard-old/details_EllieS__zephyr-7b-dpo-lora-pubmedqa-ultrafeedback",
+        "downloads": 3,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  }
+]

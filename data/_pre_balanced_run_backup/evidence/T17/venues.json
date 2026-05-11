@@ -1,0 +1,285 @@
+{
+  "topic_id": "T17",
+  "venues": [
+    {
+      "venue": "TMLR",
+      "type": "journal",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://jmlr.org/tmlr/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://jmlr.org/tmlr/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://jmlr.org/tmlr/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "ACL Findings",
+      "type": "conf",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://www.aclweb.org/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [],
+      "automated_next_step": []
+    },
+    {
+      "venue": "EMNLP Findings",
+      "type": "conf",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://2024.emnlp.org/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [],
+      "automated_next_step": []
+    },
+    {
+      "venue": "NeurIPS Datasets and Benchmarks",
+      "type": "conf_track",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://neurips.cc/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://neurips.cc/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "ML4H",
+      "type": "workshop",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://ml4health.github.io/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://ml4health.github.io/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "MLHC",
+      "type": "conf",
+      "credibility_prelim": "high",
+      "fit": "excellent",
+      "source_url": "https://www.mlforhc.org/",
+      "crossref_active": false,
+      "crossref_top": [],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://www.mlforhc.org/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://www.mlforhc.org/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "JAMIA Open",
+      "type": "journal",
+      "credibility_prelim": "high",
+      "fit": "good",
+      "source_url": "https://academic.oup.com/jamiaopen",
+      "crossref_active": true,
+      "crossref_top": [
+        {
+          "title": "JAMIA Open",
+          "publisher": "Oxford University Press",
+          "issn": [
+            "2574-2531"
+          ],
+          "counts": {
+            "current-dois": 397,
+            "backfile-dois": 552,
+            "total-dois": 949
+          },
+          "last-status-check-time": 1777942653530
+        }
+      ],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://academic.oup.com/jamiaopen and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://academic.oup.com/jamiaopen and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "JMIR",
+      "type": "journal",
+      "credibility_prelim": "high",
+      "fit": "good",
+      "source_url": "https://www.jmir.org/",
+      "crossref_active": true,
+      "crossref_top": [
+        {
+          "title": "JMIRx Med",
+          "publisher": "JMIR Publications Inc.",
+          "issn": [
+            "2563-6316"
+          ],
+          "counts": {
+            "current-dois": 282,
+            "backfile-dois": 325,
+            "total-dois": 607
+          },
+          "last-status-check-time": 1777944755202
+        },
+        {
+          "title": "JMIRx Bio",
+          "publisher": "JMIR Publications Inc.",
+          "issn": [
+            "2819-2044"
+          ],
+          "counts": {
+            "current-dois": 44,
+            "backfile-dois": 5,
+            "total-dois": 49
+          },
+          "last-status-check-time": 1777949405829
+        },
+        {
+          "title": "JMIR Cancer",
+          "publisher": "JMIR Publications Inc.",
+          "issn": [
+            "2369-1999"
+          ],
+          "counts": {
+            "current-dois": 289,
+            "backfile-dois": 336,
+            "total-dois": 625
+          },
+          "last-status-check-time": 1778128535033
+        }
+      ],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://www.jmir.org/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://www.jmir.org/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "PLOS Digital Health",
+      "type": "journal",
+      "credibility_prelim": "med-high",
+      "fit": "good",
+      "source_url": "https://journals.plos.org/digitalhealth/",
+      "crossref_active": true,
+      "crossref_top": [
+        {
+          "title": "PLOS Digital Health",
+          "publisher": "Public Library of Science",
+          "issn": [
+            "2767-3170"
+          ],
+          "counts": {
+            "current-dois": 708,
+            "backfile-dois": 321,
+            "total-dois": 1029
+          },
+          "last-status-check-time": 1777945612641
+        }
+      ],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://journals.plos.org/digitalhealth/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://journals.plos.org/digitalhealth/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "npj Digital Medicine",
+      "type": "journal",
+      "credibility_prelim": "high",
+      "fit": "good",
+      "source_url": "https://www.nature.com/npjdigitalmed/",
+      "crossref_active": true,
+      "crossref_top": [
+        {
+          "title": "npj Digital Medicine",
+          "publisher": "Springer Science and Business Media LLC",
+          "issn": [
+            "2398-6352"
+          ],
+          "counts": {
+            "current-dois": 1668,
+            "backfile-dois": 975,
+            "total-dois": 2643
+          },
+          "last-status-check-time": 1777942493002
+        }
+      ],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://www.nature.com/npjdigitalmed/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://www.nature.com/npjdigitalmed/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    },
+    {
+      "venue": "ACM Computing Surveys",
+      "type": "journal",
+      "credibility_prelim": "very_high",
+      "fit": "survey only",
+      "source_url": "https://csur.acm.org/",
+      "crossref_active": true,
+      "crossref_top": [
+        {
+          "title": "ACM Computing Surveys",
+          "publisher": "Association for Computing Machinery",
+          "issn": [
+            "0360-0300",
+            "1557-7341"
+          ],
+          "counts": {
+            "current-dois": 851,
+            "backfile-dois": 2849,
+            "total-dois": 3700
+          },
+          "last-status-check-time": 1778286524352
+        }
+      ],
+      "verify_flags": [
+        "apc_status_VERIFY",
+        "timeline_VERIFY"
+      ],
+      "automated_next_step": [
+        "Fetch official site at https://csur.acm.org/ and DOAJ; if APC info absent, mark MANUAL.",
+        "Fetch official site at https://csur.acm.org/ and DOAJ; if APC info absent, mark MANUAL."
+      ]
+    }
+  ],
+  "openreview_signal": [
+    {
+      "query": "tokenizer",
+      "results": [],
+      "status": 400
+    },
+    {
+      "query": "BPE",
+      "results": [],
+      "status": 400
+    }
+  ]
+}

@@ -1,0 +1,1817 @@
+[
+  {
+    "query": "clinical guideline",
+    "results": [
+      {
+        "DOI": "10.1002/uro2.70055",
+        "title": [
+          "Correction to “‘Clinical practice guideline on bladder cancer (Part I)’, ‘Clinical practice guideline on bladder cancer (Part II)’ and ‘Clinical practice guideline on bladder cancer (Part III)’”"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "UroPrecision"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2471/b09467",
+        "title": [
+          "Clinical management of COVID-19"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              15
+            ]
+          ]
+        },
+        "is-referenced-by-count": 7,
+        "author": [
+          {
+            "name": "World Health Organization",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2471/b09434",
+        "title": [
+          "Clinical management and infection prevention control for mpox"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              2
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "name": "World Health Organization",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.jphys.2022.05.006",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: Clinical Practice Guideline for Physical Therapist Management of People With Rheumatoid Arthritis"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "given": "Leanne",
+            "family": "Johnston",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2471/b09495",
+        "title": [
+          "Abortion care guideline, second edition. Supplementary material 2. Evidence-to-Decision frameworks for the clinical service recommendations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "name": "World Health Organization",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.jphys.2025.02.006",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: Aspetar clinical practice guideline on rehabilitation after anterior cruciate ligament reconstruction"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9624-0791",
+            "authenticated-orcid": false,
+            "given": "Stephanie",
+            "family": "Filbay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1211/pj.2025.1.372584",
+        "title": [
+          "First ‘NICE-curated’ clinical guideline announced"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Pharmaceutical Journal"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/j.jphys.2026.01.002",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: European Respiratory Society Clinical Practice Guideline for the Management of Adult Bronchiectasis"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8631-0135",
+            "authenticated-orcid": false,
+            "given": "Annemarie L",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.jphys.2024.05.009",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: Australian Clinical Guideline for Physical Rehabilitation and Mobilisation in Adult Intensive Care Units: 2023"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-8973-661X",
+            "authenticated-orcid": false,
+            "given": "Thomas C",
+            "family": "Rollinson",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.jphys.2024.07.006",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: Telerehabilitation in Physical Therapist Practice: A Clinical Practice Guideline From the American Physical Therapy Association"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2061-845X",
+            "authenticated-orcid": false,
+            "given": "Anne E",
+            "family": "Holland",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1542/9781610026086-part01-18",
+        "title": [
+          "Hyperbilirubinemia Clinical Practice Guideline Quick Reference Tools"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Pediatric Clinical Practice Guidelines &amp; Policies"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1542/9781610026086-part01-27",
+        "title": [
+          "Sinusitis Clinical Practice Guideline Quick Reference Tools"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Pediatric Clinical Practice Guidelines &amp; Policies"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1542/9781610026086-part01-09",
+        "title": [
+          "Diabetes Clinical Practice Guideline Quick Reference Tools"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Pediatric Clinical Practice Guidelines &amp; Policies"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1542/9781610026086-part01-07",
+        "title": [
+          "Bronchiolitis Clinical Practice Guideline Quick Reference Tools"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Pediatric Clinical Practice Guidelines &amp; Policies"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/j.jphys.2024.11.004",
+        "title": [
+          "Appraisal of Clinical Practice Guideline: Australian Physical Activity Clinical Practice Guideline for people with moderate to severe traumatic brain injury 2024"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Physiotherapy"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-6641-4017",
+            "authenticated-orcid": false,
+            "given": "Ada",
+            "family": "Tang",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "model drift",
+    "results": [
+      {
+        "DOI": "10.1016/b978-0-323-91649-3.00013-7",
+        "title": [
+          "Drift Flux Model and Reduced Drift Flux Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Managed Pressure Drilling"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2139/ssrn.5089532",
+        "title": [
+          "Landscape-Level Assessment of Spray Drift – a Virtual Experiment Using the Droplet and Atmospheric Dispersion Drift (Dad-Drift) Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mike  Devin",
+            "family": "Fuchs",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Sebastian",
+            "family": "Gebler",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Andreas",
+            "family": "Lorke",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5049124",
+        "title": [
+          "The Droplet and Atmospheric Dispersion Drift (Dad-Drift) Model – a Modular Approach for Estimating Spray Drift at the Landscape Scale"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mike  Devin",
+            "family": "Fuchs",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Sebastian",
+            "family": "Gebler",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Andreas",
+            "family": "Lorke",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31219/osf.io/5296r",
+        "title": [
+          "A Macroscopic Model of Drift Velocity and Kinetic Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              31
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Meejong",
+            "family": "Inky",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Umer",
+            "family": "Tanane",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>A Macroscopic Model of Drift Velocity and Kinetic Model</p>"
+      },
+      {
+        "DOI": "10.1016/j.envres.2025.121104",
+        "title": [
+          "The droplet and atmospheric dispersion drift (DAD-drift) model – A modular approach for estimating spray drift at the landscape scale"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Environmental Research"
+        ],
+        "is-referenced-by-count": 5,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0004-0790-9927",
+            "authenticated-orcid": false,
+            "given": "Mike Devin",
+            "family": "Fuchs",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9421-7117",
+            "authenticated-orcid": false,
+            "given": "Sebastian",
+            "family": "Gebler",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5533-1817",
+            "authenticated-orcid": false,
+            "given": "Andreas",
+            "family": "Lorke",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.20948/mathmontis-2022-54-6",
+        "title": [
+          "A drift model N of a velocity mixture and the evolution of a discontinuous solution of a two-velocity drift model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": [
+          "Mathematica Montisnigri"
+        ],
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9252-5303",
+            "authenticated-orcid": false,
+            "given": "Alexander Evgen`evich",
+            "family": "Kroshilin",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "JSC «ETC «GET». Moscow, Russia"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9932-8465",
+            "authenticated-orcid": false,
+            "given": "Vladimir Evgen`evich",
+            "family": "Kroshilin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Lomonosov Moscow State University. Moscow, Russia"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>At present, to describe the two-velocity flow of a multiphase mixture, either a two-fluid model is used; or a drift model using simplified momentum equations that do not take into account inertial forces. The corresponding system of equations for a two-fluid model with the same phase pressure without special, postulated, stabilizing terms is non-hyperbolic. This can lead to difficulties in finding a solution. Accounting for the difference in phase pressure in this model can lead to instability of solutions, which can also complicate the search for a solution. The drift model, which is the subject of this work, does not have this shortcoming. The case of N phase velocities (N &gt; 2), considered in this article, has not been studied so far, although it has a large area of practical applications, for example, a three-velocity flow of a dispersed-film flow in the energy and chemical industries, and others. Hyperbolicity and characteristics are investigated. The characteristic equation of the system, which has N-1 degree, is analyzed. It is proved that there is one eigenvalue between neighboring speeds. If the k phases have the same speed, then the k-1 eigenvalue is equal to that same speed. So, if there are no coinciding phase velocities, or the number of phases with the same speed does not exceed 2, then all eigenvalues are real and different, which means that the system is hyperbolic. If the number of phases with the same speed exceeds 2, then all eigenvalues are also real, but there are multiples among them. An additional study carried out for this case showed that the system is also hyperbolic. An analytical solution of the discontinuity decay problem for a three-velocity flow (N=3) is found. It is assumed that the speed difference between the first and second phases is much greater than the speed difference between the second and third phases. Without this assumption, the solution can be found numerically. For the case of two phase velocities (N = 2), an analytical solution is found that describes the transition from a continuous distribution to a jump. This solution describes the flow for a given dependence of the slip rate on the regime parameter.</jats:p>"
+      },
+      {
+        "DOI": "10.1016/j.envsoft.2025.106455",
+        "title": [
+          "Landscape-level assessment of spray drift – A virtual experiment using the Droplet and Atmospheric Dispersion drift (DAD-drift) model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "Environmental Modelling &amp; Software"
+        ],
+        "is-referenced-by-count": 4,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0004-0790-9927",
+            "authenticated-orcid": false,
+            "given": "Mike Devin",
+            "family": "Fuchs",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Sebastian",
+            "family": "Gebler",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Andreas",
+            "family": "Lorke",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6438447",
+        "title": [
+          "Physics-Informed Data-Driven Temperature Drift Compensation Model for Piezoelectric Sensors"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0007-6961-4587",
+            "authenticated-orcid": true,
+            "given": "Sherali",
+            "family": "Abdukarimov",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Temperature-induced drift significantly degrades the accuracy and long-term stability of piezoelectric sensors operating under wide thermal environments. Conventional compensation approaches typically rely on empirical polynomial regression or purely data-driven machine learning models, both of which lack explicit incorporation of governing physical mechanisms. This study proposes a physics-informed data-driven compensation framework that integrates temperature-dependent electromechanical behavior with a residual machine learning correction layer. The model decomposes temperature-induced output variation into physically interpretable components, including sensitivity variation associated with the temperature-dependent piezoelectric coefficient, dielectric scaling effects, and thermally activated leakage current following Arrhenius behavior. Validation is conducted using curated literature-derived datasets representing PZT and PVDF sensors across extended temperature ranges. Comparative analysis demonstrates that the proposed hybrid approach reduces drift error by 35–60% relative to classical polynomial compensation, while maintaining sensitivity and improving extrapolation robustness. The framework provides a transferable, mechanism-consistent strategy for intelligent temperature compensation across multiple piezoelectric material systems.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6307061",
+        "title": [
+          "Identity Drift in Growing Cloud Teams: A Structural Risk Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0009-0253-2370",
+            "authenticated-orcid": true,
+            "given": "Jaymeet Miteshkumar",
+            "family": "Patel",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&lt;p&gt;Identity drift is a structural security risk that emerges as cloud-native organizations scale identities, permissions, and federated access across hybrid and multicloud environments. As workforce and workload identities proliferate, effective permissions frequently diverge from intended access due to lifecycle latency, over-granting, token persistence, and fragmented governance across identity providers and cloud platforms. This divergence increases the blast radius associated with compromised credentials and access tokens.&lt;/p&gt;\n&lt;p&gt;This working paper introduces the Structural Risk Model for Identity Drift (SRM-ID), a formal framework for representing and quantifying authorization divergence in operational cloud systems. The model defines an identity–entitlement graph, formalizes excess authorization as measurable drift, and proposes a weighted drift index derived from effective versus intended permissions. Drift conditions are mapped to threat scenarios aligned with established adversary techniques involving valid account abuse and token theft. A parameterized synthetic simulation evaluates drift accumulation under workforce growth, workload identity expansion, and imperfect deprovisioning, and analyzes the sensitivity of risk outcomes to governance cadence and continuous remediation controls.&lt;/p&gt;\n&lt;p&gt;SRM-ID is designed to operationalize drift measurement, prioritize remediation, and align identity governance with continuous authorization principles in Zero Trust architectures. The manuscript is released as a working paper and has not yet undergone peer review.&lt;/p&gt;</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.4495246",
+        "title": [
+          "Drift Model of Sinking Containers at Sea"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Lvzhen",
+            "family": "Ren",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Jinxiang",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jia",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/ijcnn60899.2024.10650489",
+        "title": [
+          "Drift-DiffuSE: Diffusion Model with Learnable Drift Term for Speech Enhancement"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "2024 International Joint Conference on Neural Networks (IJCNN)"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Sixing",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,College of Computer Science and Technology,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Yi",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,College of Computer Science and Technology,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Zhichao",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,College of Computer Science and Technology,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Linyu",
+            "family": "Yao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,College of Computer Science and Technology,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Qun",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanjing University of Aeronautics and Astronautics,College of Computer Science and Technology,Nanjing,China"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.5194/egusphere-egu22-10657",
+        "title": [
+          "Validation of the North American Ice Service iceberg drift model using a novel database of in-situ iceberg drift observations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7312-7390",
+            "authenticated-orcid": false,
+            "given": "Adam",
+            "family": "Garbo",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Luke",
+            "family": "Copland",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1974-319X",
+            "authenticated-orcid": false,
+            "given": "Derek",
+            "family": "Mueller",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Adrienne",
+            "family": "Tivy",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Philippe",
+            "family": "Lamontagne",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>&amp;lt;p&amp;gt;Icebergs calved from high-latitude glaciers and ice shelves pose a threat to vessels and offshore infrastructure at a time when Arctic shipping and offshore resource exploration are increasing. Knowledge of the location of potential ice hazards is therefore critical to ensure safe and efficient operations in this remote region. The Canadian Ice Service provides information to stakeholders on the observed and predicted distribution of icebergs in Canadian waters by combining iceberg observations with forecasts from the North American Ice Service (NAIS) iceberg drift model. The NAIS model estimates the forces acting on an iceberg to predict its future position and velocity and is widely used for the East Coast of Canada. However, the model is unproven for areas &amp;gt;60&amp;amp;#176;N and suffers from insufficient validation due to a lack of reliable &amp;lt;em&amp;gt;in-situ&amp;lt;/em&amp;gt; observations of iceberg drift. In this study, we use a newly compiled iceberg tracking beacon database to assess the skill of the NAIS iceberg model's predictions of iceberg drift and investigate sensitivity to morphology and environmental forcing (e.g., ocean currents, winds).&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Hindcast simulations of the observed tracks of 44 icebergs over the period 2008-2019 were run using ocean currents from three ocean models (CECOM, GLORYS and RIOPS) and wind and wave inputs from the ERA5 reanalysis. Comparisons of several distance error metrics between observed and modelled drift tracks indicate that the NAIS model produces realistic simulations of iceberg drift in Baffin Bay. The root mean square error after the initial 24-hour hindcast period ranged from 18-22 km and increased at a daily rate of 11-13 km, which is comparable to operational forecasts elsewhere. Improved model performance was observed for longer (&amp;gt;250 m) and deeper-keeled (&amp;gt;100 m) icebergs, which appears to counteract the model&amp;amp;#8217;s tendency to overestimate drift by reducing the influence of stronger surface ocean currents acting on the iceberg. Ocean current direction, wind direction, and iceberg keel geometry were identified by a sensitivity analysis as the model parameters and environmental driving forces that have the greatest influence on modelled iceberg drift. These results emphasize the need for accurate environmental information and underscore the importance of properly representing the physical characteristics of icebergs in drift models.&amp;lt;/p&amp;gt;</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6140548",
+        "title": [
+          "The Limitations of Moore's R\", a Variable-Drift Fokker-Planck Option Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Gary",
+            "family": "Moore",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Based on Gary Moore's research (SSRN 2023, 2025), \"Moore's R\" is a variable-drift Fokker-Planck option model designed to improve upon the Black-Scholes model by better fitting \"normal\" period option chains such as the Rubinstein data set through a discounted cash flow (DCF) approach.. While it provides more accurate hedge ratios, betas, and explains the volatility smirk as a rational outcome of DCF pricing, its core limitation concerning discontinuities is that it is fundamentally a continuous model.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5969298",
+        "title": [
+          "The Dynamics of Less-Idiocy: A Model of Organizational Adaptation under Drift"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rajendra",
+            "family": "Wadje",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6110226",
+        "title": [
+          "Cryptographic Observability and Drift Detection: A Dual-Layer Model and Reference Implementation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0005-8967-4910",
+            "authenticated-orcid": true,
+            "given": "Marco",
+            "family": "Graziano",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Cryptographic systems deployed in production often differ substantially from their documented or configured cryptographic posture, creating blind spots that complicate security analysis and post-quantum migration planning. We introduce a dual-layer observability model that distinguishes between configured cryptography (static layer) and observed cryptography (runtime layer), and formalize cryptographic drift as the mismatch between these layers. We define two classes of drift: Configured-Not-Observed (CNO) and Observed-Not-Configured (ONC), and establish basic properties of drift detection under this model. We present a reference implementation that realizes the model by combining binary-level cryptographic inventorying, runtime tracing of cryptographic operations, and passive network protocol analysis. The implementation enables detection of undocumented libraries, dynamically loaded cryptographic code, and network-visible cryptographic behavior without payload decryption. Experimental results on Linux and embedded systems demonstrate scalable static analysis, production-safe runtime tracing, and high-throughput network observation, and reveal substantial cryptographic drift in real deployments. The proposed model provides a practical foundation for cryptographic auditing, post-quantum readiness assessment, and continuous cryptographic inventory maintenance.\n&lt;br&gt;</jats:p>"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "LLM versioning",
+    "results": [
+      {
+        "DOI": "10.1109/models67397.2025.00032",
+        "title": [
+          "Towards LLM-enhanced Conflict Detection and Resolution in Model Versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 ACM/IEEE 28th International Conference on Model Driven Engineering Languages and Systems (MODELS)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Martin",
+            "family": "Eisenberg",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Johannes Kepler University Linz,Linz,Austria"
+              }
+            ]
+          },
+          {
+            "given": "Stefan",
+            "family": "Klikovits",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Johannes Kepler University Linz,Linz,Austria"
+              }
+            ]
+          },
+          {
+            "given": "Manuel",
+            "family": "Wimmer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Johannes Kepler University Linz,Linz,Austria"
+              }
+            ]
+          },
+          {
+            "given": "Konrad",
+            "family": "Wieland",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "LieberLieber Software GmbH,Vienna,Austria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1145/3696630.3728714",
+        "title": [
+          "Towards the Versioning of LLM-Agent-Based Software"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              23
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 33rd ACM International Conference on the Foundations of Software Engineering"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1175-2753",
+            "authenticated-orcid": false,
+            "given": "Chengwei",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Nanyang Technological University, Singapore, Singapore"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3087-9645",
+            "authenticated-orcid": false,
+            "given": "Lyuye",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanyang Technological University, Singapore, -Select-, Singapore"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2564-6660",
+            "authenticated-orcid": false,
+            "given": "Xiufeng",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanyang Technological University, Singapore, -Select-, Singapore"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6655-8179",
+            "authenticated-orcid": false,
+            "given": "Wenbo",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "NANYANG TECHNOLOGICAL UNIVERSITY, Singapore, -Select-, Singapore"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7300-9215",
+            "authenticated-orcid": false,
+            "given": "Yang",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nanyang Technological University, Singapore, -Select-, Singapore"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1093/oed/4316979400",
+        "title": [
+          "versioning, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31219/osf.io/auxpg_v1",
+        "title": [
+          "Testing versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4283-1403",
+            "authenticated-orcid": true,
+            "given": "Blaine",
+            "family": "Butler",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "id": [
+                  {
+                    "id": "https://ror.org/05d5mza29",
+                    "id-type": "ROR",
+                    "asserted-by": "publisher"
+                  }
+                ],
+                "name": "Center For Open Science"
+              }
+            ]
+          }
+        ],
+        "abstract": "<p>Testing versioning Testing versioning</p>"
+      },
+      {
+        "DOI": "10.59350/m9xva-xxf37",
+        "title": [
+          "Rogue Scholar starts supporting versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1419-2405",
+            "authenticated-orcid": false,
+            "given": "Martin",
+            "family": "Fenner",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The science blog archive Rogue Scholar this week started supporting versioning of blog posts. This is a core feature of the InvenioRDM repository platform used by Rogue Scholar, but Rogue Scholar uses DOIs from Crossref rather than DataCite, the default DOI registration agency for InvenioRDM. Crossref versioning was made possible with the Crossref schema 5.4.0 released in March.</jats:p>"
+      },
+      {
+        "DOI": "10.59350/7z26y-5cy30",
+        "title": [
+          "Rogue Scholar starts supporting versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1419-2405",
+            "authenticated-orcid": false,
+            "given": "Martin",
+            "family": "Fenner",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The science blog archive Rogue Scholar this week started supporting versioning of blog posts. This is a core feature of the InvenioRDM repository platform used by Rogue Scholar, but Rogue Scholar uses DOIs from Crossref rather than DataCite, the default DOI registration agency for InvenioRDM. Crossref versioning was made possible with the Crossref schema 5.4.0 released in March.</jats:p>"
+      },
+      {
+        "DOI": "10.53731/7z26y-5cy30",
+        "title": [
+          "Rogue Scholar starts supporting versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1419-2405",
+            "authenticated-orcid": false,
+            "given": "Martin",
+            "family": "Fenner",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<ns4:p>The science blog archive Rogue Scholar this week started supporting versioning of blog posts. This is a core feature of the InvenioRDM repository platform used by Rogue Scholar, but Rogue Scholar uses DOIs from Crossref rather than DataCite, the default DOI registration agency for InvenioRDM. Crossref versioning was made possible with the Crossref schema 5.4.0 released in March.</ns4:p>"
+      },
+      {
+        "DOI": "10.53731/nxp08-a9947",
+        "title": [
+          "Rogue Scholar starts supporting versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 5,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1419-2405",
+            "authenticated-orcid": false,
+            "given": "Martin",
+            "family": "Fenner",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<ns4:p>The science blog archive Rogue Scholar this week started supporting versioning of blog posts. This is a core feature of the InvenioRDM repository platform used by Rogue Scholar, but Rogue Scholar uses DOIs from Crossref rather than DataCite, the default DOI registration agency for InvenioRDM. Crossref versioning was made possible with the Crossref schema 5.4.0 released in March.</ns4:p>"
+      },
+      {
+        "DOI": "10.5040/9781501365287.2991",
+        "title": [
+          "versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": [
+          "The Fairchild Books Dictionary of Fashion"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/b978-0-443-22219-1.00002-7",
+        "title": [
+          "Versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "API Design for C++"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Martin",
+            "family": "Reddy",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1201/9788770048347-13",
+        "title": [
+          "Versioning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              14
+            ]
+          ]
+        },
+        "container-title": [
+          "Doctoring Documents"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Steven",
+            "family": "Simske",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Dallen",
+            "family": "Simske",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21275/sr25520072821",
+        "title": [
+          "Implementing Data Versioning and Lineage Tracking in ETL Workflows"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              26
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Science and Research (IJSR)"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Mounica",
+            "family": "Achanta",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Dharanidhar",
+            "family": "Vuppu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3289/hmc_publ_04",
+        "title": [
+          "Guidance on Versioning of Digital Assets"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "Helmholtz Metadata Collaboration (HMC)",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4366-3088",
+            "authenticated-orcid": false,
+            "given": "Pier Luigi",
+            "family": "Buttigieg",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Versioning of data and metadata is a crucial - but often overlooked - topic in scientific work. Using the wrong version of a (meta)data set can lead to drastically difference outcomes in interpretation, and lead to substantial, propagating downstream errors. At the same time, past versions of (meta)data sets are valuable records of the research process which should be preserved for transparency and complete reproducibility. Further, the final version of (meta)data sets may actually include errors that previous versions did not. Thus, careful version control is the foundation for trust in and broad reusability of research and operational (meta)data. This document provides an introduction to the principles of versioning, technical recommendations on how to manage version histories, and discusses some pitfalls and possible solutions. In the first part of this document, we present examples of change processes that require proper management and introduce popular versioning schemes. Finally, the document presents recommended practices for researchers as well as for infrastructure developers.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5012925",
+        "title": [
+          "Versioning by Outsourcing"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "SSRN Electronic Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Frago",
+            "family": "Kourandi",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Romain",
+            "family": "Lestage",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5351907",
+        "title": [
+          "Dynamic Frontend Architecture for Runtime Component Versioning and Feature Flag Resolution in Regulated Applications"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Roman",
+            "family": "Fedytskyi",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "longitudinal evaluation",
+    "results": [
+      {
+        "DOI": "10.7190/steer/longitudinal",
+        "title": [
+          "HeppSY Uni Connect Outreach: Longitudinal Evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Daniel",
+            "family": "Fletcher",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The Higher Education Progression Partnership South Yorkshire (HeppSY) is part of the Uni Connect Programme (UCP), funded by the Office for Students. The main focus of Uni Connect is to provide targeted higher education (HE) outreach to young people in Years 9 to 13 living in particular geographic areas. From August 2021 this broadened out to include the targeting of adult learners (learners aged 19 and above). HeppSY is working in partnership with Sheffield Hallam University, The University of Sheffield and South Yorkshire schools and colleges. To provide evidence for the impact of HeppSY outreach on outcomes relevant to HE access, a series of analyses were conducted matching together multiple waves of an annual student survey, HeppSY activity data, and student HE access data drawn from the Higher Education Statistics Agency (HESA). The results indicated that students who participated in more hours of outreach displayed greater increases in self-reported HE knowledge across survey waves, while evidence for an association between outreach engagement and increases in intention of applying to HE was mixed. Importantly, greater engagement in HeppSY outreach was associated with increased odds of accessing HE, and this relationship remained significant after controlling for baseline intentions of applying to HE.</jats:p>"
+      },
+      {
+        "DOI": "10.1002/brb3.2712/v1/review2",
+        "title": [
+          "Review for \"A longitudinal evaluation of fatigue in chronic inflammatory demyelinating polyneuropathy\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1002/brb3.2712/v1/review1",
+        "title": [
+          "Review for \"A longitudinal evaluation of fatigue in chronic inflammatory demyelinating polyneuropathy\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              14
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.20944/preprints202503.2111.v1",
+        "title": [
+          "An Expanded McNemar Approach for Evaluation of Longitudinal Data"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Debra",
+            "family": "Wetcher-Hendricks",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The standard chi-square test, developed by Pearson (1900) determines whether significant differences exist between frequencies of data categories, each containing unique subjects. In other words, each subject provides data for only one category. This stipulation prevents analysis of longitudinal data pertaining to subjects’ categorization at more than one point in time. The McNemar test (1947) produces a chi-square value that, in contrast to the Pearson chi-square value, accounts for dichotomous data from a single sample measured twice. Although extremely beneficial for data analysis, the McNemar test cannot be used for situations involving more than two measurements of the sample. This article, therefore, establishes a formula to compare dichotomous data from three or more trials involving the same subjects. An example demonstrates the formula’s applicability in a three-trial situation. Further expansion of the formula used for this example, as described in subsequent text, makes it possible to evaluate differences in repeated-measures frequencies for any number of trials.</jats:p>"
+      },
+      {
+        "DOI": "10.31222/osf.io/g8q9v_v1",
+        "title": [
+          "A Multi-Component Evaluation Instrument for Retrospective Assessment of Prevention Programs: A Framework for The Longitudinal Prophylactic-Capacity Evaluation Tool"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              6
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-0049-5317",
+            "authenticated-orcid": true,
+            "given": "Jason",
+            "family": "Kreger",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Background: Despite modern advances, prevention programs often exhibit participant attrition and limited behavior persistence following program cessation. Program evaluation methods have proven helpful for retrospectively examining intervention efficacy; however, there is a lack of standardized methods to jointly assess intervention-period outcomes and post-intervention prevention practice durability with respect to program characteristics. The absence of such an evaluation instrument limits comparative inference and represents a gap in contemporary prevention science. Objectives: To develop and propose a standardized, theory-informed, multi-component program evaluation tool that facilitates systematic assessment of intervention-phase attrition and post-intervention behavior sustainability, while incorporating key program design, implementation, and equity characteristics to enable comparative synthesis across heterogeneous interventions. Methods: The Longitudinal Prophylactic Capacity Evaluation (LPCE) Tool was developed through analytic abstraction of prevailing evaluation constructs used in lifestyle prevention research, with explicit emphasis on participant retention, behavioral durability, and real-world implementation feasibility. LPCE evaluates prevention programs as the unit of analysis, using six ordinally scored domains: (1) Intervention-period attrition; (2) Post-intervention behavior sustainability; (3) Intervention design and behavioral framework fidelity; (4) Engagement and participant-resonance strategies; (5) Implementation and scalability; and (6) Equity and accessibility considerations. Domain scores are synthesized into two standardized indices: (1) A Composite Program Score (CPS), which applies equal domain weights; and (2) A Weighted Program Score (WPS), which prioritizes sustainability domain influence through differential weighting and a durability-based gate rule. LPCE then normalizes domain scores for subsequent integration into a heatmap-based visualization to support transparent, pattern-based comparative analysis. Results: LPCE will facilitate reproducible, interpretable program-level performance profiles that distinguish interventions that achieve only short-term engagement from those that demonstrate durable post-intervention behavior maintenance. The sustainability-weighted scoring structure prevents inflation of overall program performance in the absence of post-intervention durability, while the domain-level heatmap approach facilitates cross-program comparisons and identifies design and implementation features associated with sustained outcomes. Conclusions: The LPCE Tool provides a standardized, extensible framework for evaluating the longitudinal prophylactic capacity of lifestyle prevention programs. By explicitly integrating attrition, sustainability, behavioral design, implementation feasibility, and equity considerations into a unified evaluation system, LPCE addresses a critical methodological gap.</p>"
+      },
+      {
+        "DOI": "10.31235/osf.io/jwbnm_v1",
+        "title": [
+          "A Multi-Component Evaluation Instrument for Retrospective Assessment of Prevention Programs: A Framework for The Longitudinal Prophylactic-Capacity Evaluation Tool"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-0049-5317",
+            "authenticated-orcid": true,
+            "given": "Jason",
+            "family": "Kreger",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Background: Despite modern advances, prevention programs often exhibit participant attrition and limited behavior persistence following program cessation. Program evaluation methods have proven helpful for retrospectively examining intervention efficacy; however, there is a lack of standardized methods to jointly assess intervention-period outcomes and post-intervention prevention practice durability with respect to program characteristics. The absence of such an evaluation instrument limits comparative inference and represents a gap in contemporary prevention science. Objectives: To develop and propose a standardized, theory-informed, multi-component program evaluation tool that facilitates systematic assessment of intervention-phase attrition and post-intervention behavior sustainability, while incorporating key program design, implementation, and equity characteristics to enable comparative synthesis across heterogeneous interventions. Methods: The Longitudinal Prophylactic Capacity Evaluation (LPCE) Tool was developed through analytic abstraction of prevailing evaluation constructs used in lifestyle prevention research, with explicit emphasis on participant retention, behavioral durability, and real-world implementation feasibility. LPCE evaluates prevention programs as the unit of analysis, using six ordinally scored domains: (1) Intervention-period attrition; (2) Post-intervention behavior sustainability; (3) Intervention design and behavioral framework fidelity; (4) Engagement and participant-resonance strategies; (5) Implementation and scalability; and (6) Equity and accessibility considerations. Domain scores are synthesized into two standardized indices: (1) A Composite Program Score (CPS), which applies equal domain weights; and (2) A Weighted Program Score (WPS), which prioritizes sustainability domain influence through differential weighting and a durability-based gate rule. LPCE then normalizes domain scores for subsequent integration into a heatmap-based visualization to support transparent, pattern-based comparative analysis. Results: LPCE will facilitate reproducible, interpretable program-level performance profiles that distinguish interventions that achieve only short-term engagement from those that demonstrate durable post-intervention behavior maintenance. The sustainability-weighted scoring structure prevents inflation of overall program performance in the absence of post-intervention durability, while the domain-level heatmap approach facilitates cross-program comparisons and identifies design and implementation features associated with sustained outcomes. Conclusions: The LPCE Tool provides a standardized, extensible framework for evaluating the longitudinal prophylactic capacity of lifestyle prevention programs. By explicitly integrating attrition, sustainability, behavioral design, implementation feasibility, and equity considerations into a unified evaluation system, LPCE addresses a critical methodological gap.</p>"
+      },
+      {
+        "DOI": "10.1002/brb3.2712/v1/decision1",
+        "title": [
+          "Decision letter for \"A longitudinal evaluation of fatigue in chronic inflammatory demyelinating polyneuropathy\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.7554/elife.85488.sa0",
+        "title": [
+          "Editor's evaluation: Differential ripple propagation along the hippocampal longitudinal axis"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0160-6472",
+            "authenticated-orcid": true,
+            "given": "Liset M",
+            "family": "de la Prida",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "id": [
+                  {
+                    "id": "https://ror.org/012gwbh42",
+                    "id-type": "ROR",
+                    "asserted-by": "publisher"
+                  }
+                ],
+                "name": "Instituto Cajal",
+                "place": [
+                  "Spain"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.14305/rt.ivmf.2025.4",
+        "title": [
+          "United Through Reading: Longitudinal Evaluation 18-Month Findings"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Erica",
+            "family": "Hawvermale",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "D'Aniello Institute for Veterans and Military Families at Syracuse University"
+              }
+            ]
+          },
+          {
+            "given": "Cassidy",
+            "family": "Cooper",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "D'Aniello Institute for Veterans and Military Families at Syracuse University"
+              }
+            ]
+          },
+          {
+            "given": "Bonnie",
+            "family": "Chapman-Beers",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "D'Aniello Institute for Veterans and Military Families at Syracuse University"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1002/brb3.2712/v2/decision1",
+        "title": [
+          "Decision letter for \"A longitudinal evaluation of fatigue in chronic inflammatory demyelinating polyneuropathy\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.7554/elife.85193.sa0",
+        "title": [
+          "Editor's evaluation: The AUX1-AFB1-CNGC14 module establishes a longitudinal root surface pH profile"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              18
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9779-0413",
+            "authenticated-orcid": true,
+            "given": "Yoselin",
+            "family": "Benitez-Alfonso",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "id": [
+                  {
+                    "id": "https://ror.org/024mrxd33",
+                    "id-type": "ROR",
+                    "asserted-by": "publisher"
+                  }
+                ],
+                "name": "University of Leeds",
+                "place": [
+                  "United Kingdom"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.7554/elife.86514.sa0",
+        "title": [
+          "Editor's evaluation: Genetic insights into ossification of the posterior longitudinal ligament of the spine"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              22
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4253-4775",
+            "authenticated-orcid": true,
+            "given": "Cheryl",
+            "family": "Ackert-Bicknell",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "id": [
+                  {
+                    "id": "https://ror.org/00jc20583",
+                    "id-type": "ROR",
+                    "asserted-by": "publisher"
+                  }
+                ],
+                "name": "University of Colorado",
+                "place": [
+                  "United States"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.stueduc.2025.101454",
+        "title": [
+          "Longitudinal relations among perceived autonomy support, time management, completion, and achievement"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6
+            ]
+          ]
+        },
+        "container-title": [
+          "Studies in Educational Evaluation"
+        ],
+        "is-referenced-by-count": 5,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0269-4590",
+            "authenticated-orcid": false,
+            "given": "Jianzhong",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.26226/m.64199a1770c3630019099002",
+        "title": [
+          "ISID1558 - Global proteomic evaluation reveals longitudinal molecular skin improvements in atopic dermatitis patients treated with dupilumab"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              8
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Elena",
+            "family": "Goleva",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.7554/elife.90943.sa0",
+        "title": [
+          "Editor's evaluation: The vaginal immunoproteome for the prediction of spontaneous preterm birth: A retrospective longitudinal study"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              12
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Carlos",
+            "family": "Simon",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "id": [
+                  {
+                    "id": "https://ror.org/043nxc105",
+                    "id-type": "ROR",
+                    "asserted-by": "publisher"
+                  }
+                ],
+                "name": "Foundation Carlos Simon and Valencia University",
+                "place": [
+                  "Spain"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": 200
+  }
+]

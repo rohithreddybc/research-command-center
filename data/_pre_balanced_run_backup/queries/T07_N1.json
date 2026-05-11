@@ -1,0 +1,124 @@
+{
+  "topic": {
+    "topic_id": "T07_N1",
+    "title": "Judge robustness to candidate-side prompt injection — noise-pruned",
+    "category": "eval+safety",
+    "keywords": "prompt injection|LLM judge",
+    "synonyms": "jailbreak;evaluator manipulation",
+    "negative_keywords": "general red teaming;adversarial robustness",
+    "target_artifact": "benchmark",
+    "prelim_priority": "5",
+    "parent_topic_id": "T07",
+    "narrowing_type": "noise_pruned",
+    "narrowing_note": "removed noisy secondaries=['adversarial robustness']; added to negatives",
+    "est_relevance_purity": "0.5",
+    "est_kept_papers": "13",
+    "est_hi_papers": "13",
+    "est_citation_signal": "2",
+    "est_artifact": "2",
+    "est_saturation": "2",
+    "est_evidence_quality": "3",
+    "est_niw": "4",
+    "est_eb1a": "4",
+    "est_career": "5",
+    "est_novelty_risk": "MEDIUM",
+    "est_exec_feasibility": "HIGH",
+    "composite_score": "0.605",
+    "purity_gain_vs_parent": "0.0"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak",
+      "evaluator manipulation",
+      "prompt injection benchmark",
+      "prompt injection evaluation",
+      "prompt injection robustness",
+      "prompt injection reproducibility",
+      "LLM judge benchmark",
+      "LLM judge evaluation"
+    ],
+    "openalex": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak",
+      "evaluator manipulation",
+      "prompt injection benchmark",
+      "prompt injection evaluation",
+      "prompt injection robustness",
+      "prompt injection reproducibility",
+      "LLM judge benchmark",
+      "LLM judge evaluation"
+    ],
+    "crossref": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak",
+      "evaluator manipulation"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22prompt%20injection%22+AND+all:%22LLM%20judge%22+AND+all:%22jailbreak%22)",
+      "all:prompt%20injection"
+    ],
+    "github": [
+      "prompt injection in:readme,description",
+      "prompt injection benchmark in:name,description",
+      "prompt injection evaluation in:name,description",
+      "LLM judge in:readme,description",
+      "LLM judge benchmark in:name,description",
+      "LLM judge evaluation in:name,description",
+      "jailbreak in:readme,description",
+      "jailbreak benchmark in:name,description",
+      "jailbreak evaluation in:name,description"
+    ],
+    "huggingface": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak",
+      "evaluator manipulation",
+      "prompt injection benchmark",
+      "LLM judge benchmark"
+    ],
+    "doaj": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak"
+    ],
+    "pwc": [
+      "prompt injection",
+      "LLM judge",
+      "jailbreak"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "prompt injection",
+        "url": "https://scholar.google.com/scholar?q=%22prompt%20injection%22%202024..2026"
+      },
+      {
+        "label": "LLM judge",
+        "url": "https://scholar.google.com/scholar?q=%22LLM%20judge%22%202024..2026"
+      },
+      {
+        "label": "jailbreak",
+        "url": "https://scholar.google.com/scholar?q=%22jailbreak%22%202024..2026"
+      },
+      {
+        "label": "evaluator manipulation",
+        "url": "https://scholar.google.com/scholar?q=%22evaluator%20manipulation%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

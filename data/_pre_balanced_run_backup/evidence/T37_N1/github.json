@@ -1,0 +1,504 @@
+[
+  {
+    "query": "clinical guideline in:readme,description",
+    "results": [
+      {
+        "name": "veeral-patel/how-to-secure-anything",
+        "stars": 10219,
+        "forks": 699,
+        "description": "How to systematically secure anything: a repository about security engineering",
+        "url": "https://github.com/veeral-patel/how-to-secure-anything",
+        "topics": [
+          "secure-design",
+          "secure-systems",
+          "security",
+          "security-architecture",
+          "security-assurance",
+          "security-engineering",
+          "threat-modeling"
+        ],
+        "pushed_at": "2023-03-07T19:50:13Z",
+        "updated_at": "2026-05-07T04:41:05Z"
+      },
+      {
+        "name": "stanfordnlp/stanza",
+        "stars": 7788,
+        "forks": 940,
+        "description": "Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages",
+        "url": "https://github.com/stanfordnlp/stanza",
+        "topics": [
+          "artificial-intelligence",
+          "corenlp",
+          "deep-learning",
+          "machine-learning",
+          "named-entity-recognition",
+          "natural-language-processing",
+          "nlp",
+          "python",
+          "pytorch",
+          "universal-dependencies"
+        ],
+        "pushed_at": "2026-05-09T01:20:51Z",
+        "updated_at": "2026-05-09T01:51:50Z"
+      },
+      {
+        "name": "jphall663/awesome-machine-learning-interpretability",
+        "stars": 4023,
+        "forks": 627,
+        "description": "A curated list of awesome responsible machine learning resources.",
+        "url": "https://github.com/jphall663/awesome-machine-learning-interpretability",
+        "topics": [
+          "ai-safety",
+          "awesome",
+          "awesome-list",
+          "data-science",
+          "explainable-ml",
+          "fairness",
+          "interpretability",
+          "interpretable-ai",
+          "interpretable-machine-learning",
+          "interpretable-ml",
+          "machine-learning",
+          "machine-learning-interpretability",
+          "privacy-enhancing-technologies",
+          "privacy-preserving-machine-learning",
+          "python",
+          "r",
+          "reliable-ai",
+          "secure-ml",
+          "transparency",
+          "xai"
+        ],
+        "pushed_at": "2026-03-16T14:03:45Z",
+        "updated_at": "2026-05-07T22:42:17Z"
+      },
+      {
+        "name": "seandavi/awesome-single-cell",
+        "stars": 3730,
+        "forks": 1074,
+        "description": "Community-curated list of software packages and data resources for single-cell, including RNA-seq, ATAC-seq, etc.",
+        "url": "https://github.com/seandavi/awesome-single-cell",
+        "topics": [
+          "analysis-pipeline",
+          "atac-seq",
+          "awesome-list",
+          "bioinformatics",
+          "cell-clusters",
+          "cell-differentiation",
+          "cell-populations",
+          "clustering",
+          "data-integration",
+          "data-visualization",
+          "dimensionality-reduction",
+          "gene-expression",
+          "gene-expression-profiles",
+          "python",
+          "rna-seq-data",
+          "rna-seq-experiments",
+          "scrna-seq-data",
+          "single-cell",
+          "spatial-transcriptomics"
+        ],
+        "pushed_at": "2026-05-02T21:21:04Z",
+        "updated_at": "2026-05-08T14:54:13Z"
+      },
+      {
+        "name": "DSXiangLi/DecryptPrompt",
+        "stars": 3407,
+        "forks": 321,
+        "description": "总结Prompt&LLM论文，开源数据&模型，AIGC应用",
+        "url": "https://github.com/DSXiangLi/DecryptPrompt",
+        "topics": [
+          "aigc",
+          "chain-of-thought",
+          "chatgpt",
+          "demonstration",
+          "few-shot-learning",
+          "in-context-learning",
+          "instruction-tuning",
+          "llm",
+          "llm-agent",
+          "papers",
+          "prompt",
+          "prompt-engineering",
+          "prompt-tuning",
+          "zero-shot-learning"
+        ],
+        "pushed_at": "2026-05-06T00:21:19Z",
+        "updated_at": "2026-05-08T08:55:43Z"
+      },
+      {
+        "name": "codefuse-ai/Awesome-Code-LLM",
+        "stars": 3329,
+        "forks": 233,
+        "description": "[TMLR] A curated list of language modeling researches for code (and other software engineering activities), plus related datasets.",
+        "url": "https://github.com/codefuse-ai/Awesome-Code-LLM",
+        "topics": [
+          "ai",
+          "awesome",
+          "datasets",
+          "llm",
+          "nlp",
+          "papers",
+          "software-engineering",
+          "survey",
+          "tmlr"
+        ],
+        "pushed_at": "2026-04-10T07:12:55Z",
+        "updated_at": "2026-05-07T04:17:10Z"
+      },
+      {
+        "name": "luo-junyu/Awesome-Agent-Papers",
+        "stars": 2654,
+        "forks": 99,
+        "description": "[Up-to-date] Large Language Model Agent: A Survey on Methodology, Applications and Challenges",
+        "url": "https://github.com/luo-junyu/Awesome-Agent-Papers",
+        "topics": [
+          "agent",
+          "awesome-list",
+          "llm",
+          "llmagents"
+        ],
+        "pushed_at": "2025-11-07T09:27:28Z",
+        "updated_at": "2026-05-07T16:16:26Z"
+      },
+      {
+        "name": "AGI-Edgerunners/LLM-Agents-Papers",
+        "stars": 2296,
+        "forks": 147,
+        "description": "A repo lists papers related to LLM based agent",
+        "url": "https://github.com/AGI-Edgerunners/LLM-Agents-Papers",
+        "topics": [
+          "agents",
+          "large-language-models",
+          "llm-agent",
+          "paper-list"
+        ],
+        "pushed_at": "2025-07-12T07:39:24Z",
+        "updated_at": "2026-05-08T15:48:24Z"
+      },
+      {
+        "name": "zjukg/KG-LLM-Papers",
+        "stars": 2183,
+        "forks": 156,
+        "description": "[Paper List] Papers integrating knowledge graphs (KGs) and large language models (LLMs)",
+        "url": "https://github.com/zjukg/KG-LLM-Papers",
+        "topics": [
+          "awesome",
+          "awesome-kg",
+          "awesome-llm",
+          "awsome-list",
+          "commonsense",
+          "gpt",
+          "knowledge",
+          "knowledge-graph",
+          "language-models",
+          "large-language-models",
+          "llm",
+          "nlp",
+          "paper-list",
+          "prompt",
+          "survey"
+        ],
+        "pushed_at": "2026-03-02T20:23:03Z",
+        "updated_at": "2026-05-09T02:57:58Z"
+      },
+      {
+        "name": "NiuTrans/ABigSurvey",
+        "stars": 2033,
+        "forks": 246,
+        "description": "A collection of 1000+ survey papers on Natural Language Processing (NLP) and Machine Learning (ML).",
+        "url": "https://github.com/NiuTrans/ABigSurvey",
+        "topics": [
+          "deep-learning",
+          "machine-learning",
+          "natural-language-processing",
+          "neural-networks",
+          "paper-list",
+          "surveys"
+        ],
+        "pushed_at": "2024-03-31T12:43:28Z",
+        "updated_at": "2026-04-10T04:55:16Z"
+      },
+      {
+        "name": "WenjieDu/PyPOTS",
+        "stars": 2009,
+        "forks": 184,
+        "description": "A Python toolkit/library for reality-centric machine/deep learning & data mining on partially-observed time series, with 50+ SOTA neural network models for scientific analysis tasks (imputation, classification, clustering, forecasting, anomaly detection, cleaning) on incomplete industrial irregularly-sampled multivariate TS with NaN missing values",
+        "url": "https://github.com/WenjieDu/PyPOTS",
+        "topics": [
+          "anomaly-detection",
+          "classification",
+          "clustering",
+          "data-analysis",
+          "data-mining",
+          "data-science",
+          "deep-learning",
+          "forecasting",
+          "generation",
+          "imputation",
+          "machine-learning",
+          "missing-values",
+          "neural-networks",
+          "pytorch",
+          "time-series"
+        ],
+        "pushed_at": "2026-05-09T06:16:24Z",
+        "updated_at": "2026-05-09T06:15:12Z"
+      },
+      {
+        "name": "jim-schwoebel/awesome_ai_agents",
+        "stars": 1736,
+        "forks": 499,
+        "description": "🤖 A comprehensive list of 1,500+ resources and tools related to AI agents.",
+        "url": "https://github.com/jim-schwoebel/awesome_ai_agents",
+        "topics": [
+          "agent-based-modeling",
+          "agentic",
+          "agentic-ai",
+          "agentic-workflow",
+          "agents",
+          "ai",
+          "ai-agent",
+          "ai-agent-framework",
+          "ai-agent-tools",
+          "ai-agents-cli",
+          "ai-agents-framework",
+          "aiagent",
+          "aiagents",
+          "aiworkflow",
+          "awesome-list",
+          "awesome-lists",
+          "learning",
+          "multi-agent",
+          "multi-agent-system",
+          "multi-agent-systems"
+        ],
+        "pushed_at": "2026-03-28T08:28:51Z",
+        "updated_at": "2026-05-09T06:36:40Z"
+      },
+      {
+        "name": "Vincentqyw/cv-arxiv-daily",
+        "stars": 1469,
+        "forks": 571,
+        "description": "🎓Automatically Update CV Papers Daily using Github Actions",
+        "url": "https://github.com/Vincentqyw/cv-arxiv-daily",
+        "topics": [
+          "3d-reconstruction",
+          "arxiv",
+          "cv",
+          "deep-learning",
+          "image-matching",
+          "lidar",
+          "localization",
+          "mapping",
+          "nerf",
+          "paper",
+          "paperwithcode",
+          "robotics",
+          "sfm",
+          "slam",
+          "structure-from-motion"
+        ],
+        "pushed_at": "2026-05-06T02:12:19Z",
+        "updated_at": "2026-05-08T05:39:27Z"
+      },
+      {
+        "name": "Sun-Haoyuan23/Awesome-RL-based-Reasoning-MLLMs",
+        "stars": 1410,
+        "forks": 62,
+        "description": "This repository provides valuable reference for researchers in the field of multimodality, please start your exploratory travel in RL-based Reasoning MLLMs!",
+        "url": "https://github.com/Sun-Haoyuan23/Awesome-RL-based-Reasoning-MLLMs",
+        "topics": [],
+        "pushed_at": "2026-04-19T08:24:42Z",
+        "updated_at": "2026-05-08T18:05:57Z"
+      },
+      {
+        "name": "tmgthb/Autonomous-Agents",
+        "stars": 1259,
+        "forks": 95,
+        "description": "Autonomous Agents (LLMs) research papers. Updated Daily.",
+        "url": "https://github.com/tmgthb/Autonomous-Agents",
+        "topics": [
+          "agent",
+          "agentic",
+          "agentic-ai",
+          "agents",
+          "ai",
+          "ai-agents",
+          "aiagent",
+          "aiagents",
+          "autonomous-agents",
+          "cognitive-agents",
+          "computer-use-agent",
+          "embodied-agent",
+          "generalist-agent",
+          "language-agent",
+          "language-agents",
+          "llm",
+          "llm-agents",
+          "llmagents",
+          "research-paper"
+        ],
+        "pushed_at": "2026-05-07T22:54:54Z",
+        "updated_at": "2026-05-08T18:45:57Z"
+      }
+    ],
+    "status": 200,
+    "total": 3703
+  },
+  {
+    "query": "clinical guideline benchmark in:name,description",
+    "results": [
+      {
+        "name": "MugiZer/Clinical-Benchmark",
+        "stars": 0,
+        "forks": 0,
+        "description": "This is a benchmark for evaluating whether LLMs can faithfully apply Canadian clinical guideline recommendations to synthetic patient scenarios using only provided guideline excerpts.",
+        "url": "https://github.com/MugiZer/Clinical-Benchmark",
+        "topics": [],
+        "pushed_at": "2026-04-28T04:54:46Z",
+        "updated_at": "2026-04-28T04:54:51Z"
+      }
+    ],
+    "status": 200,
+    "total": 1
+  },
+  {
+    "query": "clinical guideline evaluation in:name,description",
+    "results": [
+      {
+        "name": "hemjay07/clinicalguard",
+        "stars": 3,
+        "forks": 0,
+        "description": "Open-source clinical AI evaluation framework with a pluggable adapter pattern for any treatment guideline. First adapter implements the Nigerian Standard Treatment Guidelines (NSTG 2022, 251 conditions). Tests guideline adherence across four dimensions with required/expected scoring, deterministic safety engine, and measured intra-judge variance.",
+        "url": "https://github.com/hemjay07/clinicalguard",
+        "topics": [],
+        "pushed_at": "2026-04-27T11:20:50Z",
+        "updated_at": "2026-05-04T10:27:28Z"
+      },
+      {
+        "name": "shubh2016shiv/azure-ai-search-healthcare-guidelines",
+        "stars": 1,
+        "forks": 0,
+        "description": "Healthcare-focused hybrid search implementation with Azure AI Search, featuring vector + semantic search for clinical guideline retrieval and LLM-based evaluation",
+        "url": "https://github.com/shubh2016shiv/azure-ai-search-healthcare-guidelines",
+        "topics": [],
+        "pushed_at": "2025-10-06T11:33:54Z",
+        "updated_at": "2025-10-20T20:46:26Z"
+      },
+      {
+        "name": "MugiZer/Clinical-Benchmark",
+        "stars": 0,
+        "forks": 0,
+        "description": "This is a benchmark for evaluating whether LLMs can faithfully apply Canadian clinical guideline recommendations to synthetic patient scenarios using only provided guideline excerpts.",
+        "url": "https://github.com/MugiZer/Clinical-Benchmark",
+        "topics": [],
+        "pushed_at": "2026-04-28T04:54:46Z",
+        "updated_at": "2026-04-28T04:54:51Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator7",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator7",
+        "topics": [],
+        "pushed_at": "2026-03-16T20:00:14Z",
+        "updated_at": "2026-03-16T20:00:24Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator4",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator4",
+        "topics": [],
+        "pushed_at": "2026-03-16T17:34:21Z",
+        "updated_at": "2026-03-16T17:37:12Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator13",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator13",
+        "topics": [],
+        "pushed_at": "2026-03-16T20:21:21Z",
+        "updated_at": "2026-03-16T20:21:26Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator3",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator3",
+        "topics": [],
+        "pushed_at": "2026-03-16T17:33:20Z",
+        "updated_at": "2026-03-16T17:33:24Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator9",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator9",
+        "topics": [],
+        "pushed_at": "2026-03-16T20:05:27Z",
+        "updated_at": "2026-03-16T20:05:30Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator5",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator5",
+        "topics": [],
+        "pushed_at": "2026-03-16T19:04:14Z",
+        "updated_at": "2026-03-16T19:04:17Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator6",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator6",
+        "topics": [],
+        "pushed_at": "2026-03-16T19:51:02Z",
+        "updated_at": "2026-03-16T19:51:06Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator2",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator2",
+        "topics": [],
+        "pushed_at": "2026-03-16T17:13:40Z",
+        "updated_at": "2026-03-16T17:13:44Z"
+      },
+      {
+        "name": "akhoury888/chest-pain-navigator",
+        "stars": 0,
+        "forks": 0,
+        "description": "Clinical decision support tool for chest pain evaluation based on guideline pathways.",
+        "url": "https://github.com/akhoury888/chest-pain-navigator",
+        "topics": [],
+        "pushed_at": "2026-03-16T16:46:46Z",
+        "updated_at": "2026-03-16T16:57:01Z"
+      },
+      {
+        "name": "HL7/cdc-opioid-cpg",
+        "stars": 0,
+        "forks": 1,
+        "description": "A FHIR implementation guide that defines exchange expectations for systems that implement the CDC's Clinical Practice Guideline for Prescribing Opioids, both in terms of the data required to evaluate whether recommendations are applicable, as well as the data required to represent proposals resulting from those recommendations.",
+        "url": "https://github.com/HL7/cdc-opioid-cpg",
+        "topics": [],
+        "pushed_at": "2026-04-08T17:52:46Z",
+        "updated_at": "2026-04-08T17:52:50Z"
+      }
+    ],
+    "status": 200,
+    "total": 13
+  }
+]

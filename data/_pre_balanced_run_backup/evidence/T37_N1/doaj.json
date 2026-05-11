@@ -1,0 +1,79 @@
+[
+  {
+    "query": "clinical guideline",
+    "results": [
+      {
+        "title": "International Pharmacy Acta",
+        "issn": [],
+        "publisher": "Shahid Beheshti University of Medical Sciences",
+        "subject": [
+          "Therapeutics. Pharmacology",
+          "Pharmaceutical industry"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 200,
+            "currency": "USD"
+          }
+        ],
+        "license": [
+          "CC BY-NC"
+        ],
+        "url": "http://journals.sbmu.ac.ir/acta",
+        "country": "IR"
+      },
+      {
+        "title": "Indonesian Journal of Medical Laboratory Science and Technology",
+        "issn": [],
+        "publisher": "Universitas Nahdlatul Ulama Surabaya",
+        "subject": [
+          "Medicine (General)"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 3000000,
+            "currency": "IDR"
+          }
+        ],
+        "license": [
+          "CC BY-SA"
+        ],
+        "url": "https://journal2.unusa.ac.id/index.php/IJMLST",
+        "country": "ID"
+      },
+      {
+        "title": "Jurnal Ilmiah Medicamento",
+        "issn": [],
+        "publisher": "Universitas Mahasaraswati Denpasar",
+        "subject": [
+          "Pharmacy and materia medica"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 1200000,
+            "currency": "IDR"
+          }
+        ],
+        "license": [
+          "CC BY-NC-SA"
+        ],
+        "url": "https://e-journal.unmas.ac.id/index.php/Medicamento/index",
+        "country": "ID"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "model drift",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "LLM versioning",
+    "results": [],
+    "status": 200
+  }
+]

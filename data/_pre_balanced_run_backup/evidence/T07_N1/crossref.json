@@ -1,0 +1,1995 @@
+[
+  {
+    "query": "prompt injection",
+    "results": [
+      {
+        "DOI": "10.3390/electronics14101907",
+        "title": [
+          "Mind Mapping Prompt Injection: Visual Prompt Injection Attacks in Modern Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "Electronics"
+        ],
+        "is-referenced-by-count": 6,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0001-3437-5340",
+            "authenticated-orcid": false,
+            "given": "Seyong",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Computer Science and Engineering, Yeungnam University, Gyeongsan 38541, Republic of Korea"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0006-8855-2214",
+            "authenticated-orcid": false,
+            "given": "Jaebeom",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science and Engineering, Yeungnam University, Gyeongsan 38541, Republic of Korea"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5212-8140",
+            "authenticated-orcid": false,
+            "given": "Wooguil",
+            "family": "Pak",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science and Engineering, Yeungnam University, Gyeongsan 38541, Republic of Korea"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Large language models (LLMs) have made significant strides in generating coherent and contextually relevant responses across diverse domains. However, these advancements have also led to an increase in adversarial attacks, such as prompt injection, where attackers embed malicious instructions within prompts to bypass security filters and manipulate LLM outputs. Various injection techniques, including masking and encoding sensitive words, have been employed to circumvent security measures. While LLMs continuously enhance their security protocols, they remain vulnerable, particularly in multimodal contexts. This study introduces a novel method for bypassing LLM security policies by embedding malicious instructions within a mind map image. The attack leverages the intentional incompleteness of the mind map structure, specifically the absence of explanatory details. When the LLM processes the image and fills in the missing sections, it inadvertently generates unauthorized outputs, violating its intended security constraints. This approach applies to any LLM capable of extracting and interpreting text from images. Compared to the best-performing baseline method, which achieved an ASR of 30.5%, our method reaches an ASR of 90%, yielding an approximately threefold-higher attack success. Understanding this vulnerability is crucial for strengthening security policies in state-of-the-art LLMs.</jats:p>"
+      },
+      {
+        "DOI": "10.1109/aann66429.2025.11257661",
+        "title": [
+          "Reconstruction-Based Prompt Generation Algorithm for Prompt Injection Attacks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 5th International Conference on Advanced Algorithms and Neural Networks (AANN)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Zhengyi",
+            "family": "Yu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Shenyang Aerospace University,Shenyang,China"
+              }
+            ]
+          },
+          {
+            "given": "Chunlong",
+            "family": "Fan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, Shenyang Aerospace University,Shenyang,China"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6280858",
+        "title": [
+          "Intent Vectoring: Black-Box Prompt Injection Detection via Semantic Trajectory Monitoring"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tatu",
+            "family": "Lertola",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>As Large Language Model (LLM) agents transition from isolated chat interfaces to autonomous systems with tool-access capabilities, the traditional security perimeter has collapsed. Injected instructions can redirect model behavior through retrieved context, tool outputs, or processed documents-without visible indication to users or supervising systems. We propose Intent Vectoring (IV), a black-box monitoring framework that detects prompt injections by measuring semantic displacement-computed as cosine distance between independently embedded user-intent summaries and raw model outputs-using a single frozen sentence encoder. We present results from a multi-family cross-model validation study (N=1,944 individual test runs) across four distinct open-source architectures (GPT-OSS-20B, Gemma2-9B, Qwen3-8B, Mistral-7B) and three semantically distinct injection families (financial redirect, code injection, persona hijack). Our findings demonstrate that IV can distinguish between intended trajectories and injection-steered outputs with high statistical significance across all tested families (Cohen's d range: 1.55-2.05 on complied injections; AUC-ROC = 0.870 pooled across families), providing the first multi-family, cross-model validated black-box semantic deviation method for prompt injection detection. We additionally report a complexity gradient effect: detection performance varies systematically with prompt complexity (simple factual → multi-step analytical) and injection delivery method, with subtle code injection identified as the most evasive attack vector (Δv2 separation +0.081).</jats:p>"
+      },
+      {
+        "DOI": "10.61608/9783775757027-002",
+        "title": [
+          "Prompt Injection"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "Worldbuilding"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Peter",
+            "family": "Watts",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.171822345.56781952/v1",
+        "title": [
+          "Dynamic Moving Target Defense for Mitigating Targeted LLM Prompt Injection"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              12
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-4889-2106",
+            "authenticated-orcid": false,
+            "given": "Samuel",
+            "family": "Panterino",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0002-8130-7903",
+            "authenticated-orcid": false,
+            "given": "Matthew",
+            "family": "Fellington",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6246379",
+        "title": [
+          "Evaluating Hybrid Guardrail Architectures for Prompt Injection Defense in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3587-3093",
+            "authenticated-orcid": true,
+            "given": "Olanrewaju",
+            "family": "Muili",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Prompt injection attacks exploit the instruction-following behavior of large language models (LLMs) by embedding adversarial directives within user-provided text. Production systems frequently deploy layered guardrail mechanisms, combining heuristic filters and model-based classifiers, to mitigate such attacks. However, rigorous empirical evaluations of these architectures under structured adversarial variation remain limited, and most deployed systems lack publicly reported performance metrics. We present a systematic evaluation of three guardrail configurations: (1) a baseline with no guardrails, (2) regex-based heuristic filtering, and (3) a hybrid architecture combining regex filtering with an LLM-based safety classifier. We construct a two-tier benchmark of 625 prompts: 400 standard-difficulty prompts (200 attacks across 8 categories, 200 benign across 11 categories) and 225 hard-difficulty prompts (175 adversarially crafted attacks across 10 categories, 50 benign across 10 categories). We measure attack block rate, miss rate, benign false-positive rate, precision, recall, and F 1-score under a single-turn threat model. On standard attacks, the hybrid configuration achieves perfect recall (100.0% block rate, 0.0% miss rate) with 5.0% benign FPR and F 1 = 0.976, while regex-only filtering blocks 75.0% of attacks with 2.5% FPR. On adversarially crafted hard attacks, the hybrid maintains near-perfect performance: 98.9% block rate with 0.0% benign FPR and F 1 = 0.994, while regex-only filtering degrades to 24.6% block rate (F 1 = 0.408). The hybrid's only failures on the hard tier occur in the benign-wrapper injection category (2 misses of 35 attempts). We identify two principal findings: (1) the hybrid classifier generalizes robustly to adversarial attack variations, losing only 1.1 percentage points in recall from standard to hard; and (2) false positives concentrate exclusively in security-adjacent benign categories on the standard tier (security research: 87.5% FPR; critique: 37.5%), while the hard tier's generalpurpose benign prompts produce zero false positives. Our results demonstrate that hybrid architectures can achieve robust adversarial performance, though the semantic overlap between legitimate security discourse and attack signatures remains a persistent challenge for input-level classification.</jats:p>"
+      },
+      {
+        "DOI": "10.61608/9783775757010-002",
+        "title": [
+          "Prompt injection"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "Worldbuilding"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Peter",
+            "family": "Watts",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5669662",
+        "title": [
+          "Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Gergely",
+            "family": "Szlobodnyik",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5412645",
+        "title": [
+          "Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Gergely",
+            "family": "Szlobodnyik",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.15611/2025.07.4.02",
+        "title": [
+          "Prompt Injection Attacks on LLM-Based Spam Filters"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Informatyka w biznesie"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Grzegorz",
+            "family": "Borkowski",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-4487194/v1",
+        "title": [
+          "An Evaluation of the Safety of ChatGPT with Malicious Prompt Injection"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              30
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-9872-4294",
+            "authenticated-orcid": false,
+            "given": "Jiang",
+            "family": "Han",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Mingri Software Co., Ltd"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0000-9006-892X",
+            "authenticated-orcid": false,
+            "given": "Mingming",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Mingri Software Co., Ltd"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title>\n        <p>Artificial intelligence systems, particularly those involving sophisticated neural network architectures like ChatGPT, have demonstrated remarkable capabilities in generating human-like text. However, the susceptibility of these systems to malicious prompt injections poses significant risks, necessitating comprehensive evaluations of their safety and robustness. The study presents a novel automated framework for systematically injecting and analyzing malicious prompts to assess the vulnerabilities of ChatGPT. Results indicate substantial rates of harmful responses across various scenarios, highlighting critical areas for improvement in model defenses. The findings underscore the importance of advanced adversarial training, real-time monitoring, and interdisciplinary collaboration to enhance the ethical deployment of AI systems. Recommendations for future research emphasize the need for robust safety mechanisms and transparent model operations to mitigate the risks associated with adversarial inputs.</p>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.172954263.32914470/v1",
+        "title": [
+          "Enhancing Security in Large Language Models: A Comprehensive Review of Prompt Injection Attacks and Defenses"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              21
+            ]
+          ]
+        },
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-2722-2132",
+            "authenticated-orcid": false,
+            "given": "Eleena",
+            "family": "Mathew",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.36948/ijfmr.2025.v07i01.35371",
+        "title": [
+          "Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt injection and prompt poisoning attacks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal For Multidisciplinary Research"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Hitika Teckani",
+            "family": "-",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Devansh Pandya",
+            "family": "-",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Harshita Makwana",
+            "family": "-",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Secure Artificial Intelligence (SAI): A Dual-layer defence model against prompt injection and prompt poisoning attacks.\nKeywords—  Large Language Model,  Secure Artificial Intelligence,  Artificial Intelligence, Prompt Injection, AI security.  \nAbstract— Artificial Intelligence (AI) is deeply embedded in sectors handling sensitive information and mission-critical operations, and safeguarding these systems has become paramount. This paper introduces a novel dual-layer defence system termed Secure Artificial Intelligence (SAI), designed to mitigate risks associated with prompt injections and prompt poisoning attacks. Using two Large Language Models (LLMs) in a sequential setup “SAI”– a “Guard” model for initial input prompt classification which effectively filters out adversarial inputs to protect the AI system and a primary response model that responds to the user’s queries. Through rigorous testing, SAI has shown resilience in preventing malicious prompts from compromising AI responses, thereby significantly advancing AI security. This paper thoroughly examines SAI’s architecture, methodology, and performance, addressing the growing demand for secure and adversarial-resistant AI systems.</jats:p>"
+      },
+      {
+        "DOI": "10.1063/5.0222987",
+        "title": [
+          "Signed-prompt: A new approach to prevent prompt injection attacks against LLM-Integrated applications"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "AIP Conference Proceedings",
+          "2024 2ND INTERNATIONAL CONFERENCE ON COMPUTER SCIENCE AND MECHATRONICS (ICCSM 2024)"
+        ],
+        "is-referenced-by-count": 23,
+        "author": [
+          {
+            "given": "Xuchen",
+            "family": "Suo",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.37962/icydd/2025/23-24",
+        "title": [
+          "REAL TIME AI DEFENSE AGAINST PROMPT INJECTION ATTACKS"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              25
+            ]
+          ]
+        },
+        "container-title": [
+          "2nd International Conference on Cybersecurity and Digital Defense (ICyDD)"
+        ],
+        "is-referenced-by-count": 1
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "LLM judge",
+    "results": [
+      {
+        "DOI": "10.3156/jsoft.37.3_69_1",
+        "title": [
+          "LLM as a Judge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Japan Society for Fuzzy Theory and Intelligent Informatics"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Md Faizul Ibne",
+            "family": "AMIN",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "会津大学 コンピューター理工学部"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6482162",
+        "title": [
+          "When the Judge is Wrong: Measuring LLM-as-Judge Reliability Against Graph-Verified Ground Truth in Financial Documents"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Agus",
+            "family": "Sudjianto",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Wingyan",
+            "family": "Lau",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>LLM-as-judge is widely adopted for evaluating AI system outputs, yet its reliability for structured tasks remains poorly understood because ground truth is typically established by the same class of system being evaluated. We break this circularity by introducing a graph-verified evaluation framework: we construct provably correct ground truth from financial documents using a Geometric Memory System (GMS), then measure how accurately LLM judges assess answer correctness. Across 258 structured retrieval questions spanning five financial report types, we find that even a strict LLM judge with access to ground truth disagrees with GMSverified truth in 5.9% of cases, with a false acceptance rate of 2.9%-approving wrong answers as correct. A lenient judge inflates this to 7.9% and a blind judge (without ground truth) reaches 22.3%. A grounded judge-given the full source document but no ground truthachieves only 54.3% agreement, with a 33.1% false acceptance rate-approving 1 in 3 wrong answers even with the source material in context. False acceptances concentrate in exact recall (50%), multi-hop (46%), and threshold (33%) categories-precisely the structured tasks where accuracy matters most in financial regulation. These findings demonstrate that LLM-as-judge is unreliable for verifying structured information extraction and that graph-based verification provides a necessary alternative.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6531679",
+        "title": [
+          "Modern LLM Evaluation Techniques: A Mathematical Framework From Classical Metrics to LLM-as-Judge and Psychometric Foundations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ana Elvira",
+            "family": "Alfaro Pizana",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Miquel",
+            "family": "Noguer I Alonso",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The evaluation of large language models (LLMs) presents fundamental measurement challenges that classical NLP metrics fail to address. This paper provides a rigorous mathematical treatment of modern LLM evaluation techniques, grounded in a new measurement-theoretic foundation drawn from classical test theory. We progress from the statistical properties of legacy n-gram metrics (BLEU, ROUGE) through embedding-based semantic measures (BERTScore, MoverScore), to the rapidly evolving paradigm of LLM-as-Judge evaluation. We formalize the Bradley-Terry model underpinning Elo-based ranking systems such as Chatbot Arena, develop the Item Response Theory (IRT) framework for benchmark design, and provide a complete treatment of inter-rater reliability measures including Cohen's κ and Krippendorff's α. Beyond organizing known results, this paper establishes four original theoretical contributions. First, a Validity Ceiling Theorem shows that the construct validity of any evaluation metric is bounded by the geometric mean of its reliability with the ground-truth measure, formalizing why unreliable judges cannot achieve high validity. Second, a Judge Bias-Variance Decomposition identifies systematic and random error components in LLM-as-Judge evaluation, yielding a corollary that selfenhancement bias is irreducible under swap debiasing. Third, a Discriminability-Contamination Tradeoff Theorem proves that no fixed benchmark item can simultaneously achieve maximum Fisher information and zero contamination risk, establishing dynamic benchmarks as the uniquely optimal design. Fourth, a formal Goodhart's Law Theorem quantifies how metric optimization degrades proxy validity: the optimization gap grows as √ log M in the number of training runs. The paper concludes with structural parallels to financial model validation and a taxonomy of practical guidelines.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5937996",
+        "title": [
+          "LLM as a Judge for Evaluating Contract Graphs: Multi-Judge Benchmarking and Agentic Uncertainty-Aware Refinement"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Moriya",
+            "family": "Dechtiar",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Daniel Martin",
+            "family": "Katz",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sylvain",
+            "family": "Jaume",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hongming",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/cloud67622.2025.00053",
+        "title": [
+          "Automated LLM Deployment and Evaluation: A Cloud-Native Approach Using LLM-as-a-Judge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE 18th International Conference on Cloud Computing (CLOUD)"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Ansar",
+            "family": "Rafique",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Digital Transformation, University of Oxford,Cloud Computing for Research Competency Centre,UK"
+              }
+            ]
+          },
+          {
+            "given": "Brian D.",
+            "family": "Marsden",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "NDM, University of Oxford,Centre for Medicines Discovery,UK"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.174584742.28568002/v1",
+        "title": [
+          "DR-100: Rubric-Based LLM-as-Judge in Machine Translation Via a Simple Meta-Evaluation Framework"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2989-3220",
+            "authenticated-orcid": false,
+            "given": "Ahrii",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2025.findings-acl.306",
+        "title": [
+          "An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Findings of the Association for Computational Linguistics: ACL 2025"
+        ],
+        "is-referenced-by-count": 15,
+        "author": [
+          {
+            "given": "Hui",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Xingyuan",
+            "family": "Bu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hongli",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yingqi",
+            "family": "Qu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jing",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Muyun",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Bing",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Tiejun",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2024.emnlp-main.427",
+        "title": [
+          "Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing"
+        ],
+        "is-referenced-by-count": 26,
+        "author": [
+          {
+            "given": "Vyas",
+            "family": "Raina",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Adian",
+            "family": "Liusie",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mark",
+            "family": "Gales",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.5626/ktcp.2026.32.3.126",
+        "title": [
+          "The Impact of Likert Scale Design on Judgment Reliability in Korean and English LLM-as-a-Judge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "KIISE Transactions on Computing Practices"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "You-Won",
+            "family": "Jang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Woo-Suk",
+            "family": "Choi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Minsu",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Byoung-Tak",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/resgenxai64788.2025.11344029",
+        "title": [
+          "LLM Evaluations for Emotional Expressiveness and Factual Consistency in Medical Dialogue Systems Using LLM-as-a-Judge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 International Conference on Responsible, Generative and Explainable AI (ResGenXAI)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rahul",
+            "family": "Mahadik",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Bosch Global Software Technologies,Data and Applied Sciences,Pune,India"
+              }
+            ]
+          },
+          {
+            "given": "Akhilesh",
+            "family": "Mandal",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bosch Global Software Technologies,Data and Applied Sciences,Pune,India"
+              }
+            ]
+          },
+          {
+            "given": "Sanya",
+            "family": "Tripathi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bosch Global Software Technologies,Data and Applied Sciences,Pune,India"
+              }
+            ]
+          },
+          {
+            "given": "Shruti",
+            "family": "Jaiswal",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bosch Global Software Technologies,Data and Applied Sciences,Pune,India"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2025.findings-emnlp.587",
+        "title": [
+          "How Reliable is Multilingual LLM-as-a-Judge?"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Findings of the Association for Computational Linguistics: EMNLP 2025"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Xiyan",
+            "family": "Fu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Wei",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5249953",
+        "title": [
+          "Uncovering the Risk of Evaluation Formalism: A Debiased LLM-as-a-Judge Study in Japan's Government Project Reviews"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Masahiro",
+            "family": "Asami",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Kai",
+            "family": "Fukunaga",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.15680/ijirset.2025.1406011",
+        "title": [
+          "LLM Evaluations: A Survey of Programmatic, Human, and LLM-as-Judge Approaches"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Innovative Research in Science, Engineering and Technology"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "name": "Senior Solutions Architect, Amazon Web Services, New York, USA",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Sarath Babu Poovassery",
+            "family": "Krishnan",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The rapid progress of large language models (LLMs) has created an urgent need for robust, multifaceted evaluation methods that address both objective performance and subjective qualities. This survey reviews stateof-the-art developments from 2023–2025 in LLM evaluation, focusing on three paradigms: (1) programmatic\n(automated) evaluation, (2) human evaluation, and (3) LLM-as-a-judge approaches. We analyze the advantages,\nlimitations, and practical trade-offs of each method, and highlight recent innovations in benchmarking, human\nfeedback, and scalable AI-assisted evaluation. Our review concludes that comprehensive LLM assessment demands\nintegrated strategies balancing automation, human judgment, and model-based augmentation, supported by dynamic,\ntransparent, and community-driven practices.</jats:p>"
+      },
+      {
+        "DOI": "10.1016/j.procs.2026.01.060",
+        "title": [
+          "LLM as a Judge for Evaluating Contract Graphs: Multi-Judge Benchmarking and Agentic Uncertainty-Aware Refinement"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Procedia Computer Science"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Moriya",
+            "family": "Dechtiar",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Daniel Martin",
+            "family": "Katz",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sylvain",
+            "family": "Jaume",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hongming",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2024.findings-emnlp.592",
+        "title": [
+          "Can LLM be a Personalized Judge?"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Findings of the Association for Computational Linguistics: EMNLP 2024"
+        ],
+        "is-referenced-by-count": 17,
+        "author": [
+          {
+            "given": "Yijiang River",
+            "family": "Dong",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Tiancheng",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Nigel",
+            "family": "Collier",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "jailbreak",
+    "results": [
+      {
+        "DOI": "10.1093/oed/8648403980",
+        "title": [
+          "jailbreak, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 1
+      },
+      {
+        "DOI": "10.1093/oed/3684995995",
+        "title": [
+          "jailbreak, v."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.18653/v1/2025.emnlp-main.669",
+        "title": [
+          "Jailbreak-Tuning: Models Efficiently Learn Jailbreak Susceptibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Brendan",
+            "family": "Murphy",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Dillon",
+            "family": "Bowen",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Shahrad",
+            "family": "Mohammadzadeh",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Tom",
+            "family": "Tseng",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Julius",
+            "family": "Broomfield",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Adam",
+            "family": "Gleave",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Kellin",
+            "family": "Pelrine",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5958180",
+        "title": [
+          "Defending Financial RAG Systems Against Jailbreak Attacks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Eunji",
+            "family": "Song",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hwansoo",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5124466",
+        "title": [
+          "Chain-of-Detection Enables Robust and Efficient Jailbreak Defense"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tingting",
+            "family": "Wu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hao",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6065410",
+        "title": [
+          "Jailbreak-as-a-Service: The Emerging Threat Landscape"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Chetan",
+            "family": "Pathade",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Vinod",
+            "family": "Dhiman",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sheheryar",
+            "family": "Ahmad",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The commoditization of jailbreak attacks through Jailbreak-as-a-Service (JaaS) platforms represents a critical escalation in the threat landscape facing generative AI systems. This paper examines the emergence of JaaS as a structured underground economy that democratizes access to sophisticated prompt-based attacks against large language models (LLMs). We analyze the architectural components of the JaaS ecosystem, including marketplace platforms, pricing models, and distribution channels that have lowered the technical barrier for exploiting AI safety mechanisms. Through systematic categorization of attack methodologies employed by JaaS providers-ranging from automated prompt engineering and role-playing techniques to encoded obfuscation strategies, we demonstrate how these services achieve reported success rates of 65-78% against major LLM providers. Our analysis reveals that JaaS platforms operate with varying degrees of sophistication, from simple Telegram bots offering pay-per-query models to subscription-based web portals with curated jailbreak libraries. We present a comparative evaluation of detection and mitigation strategies, highlighting the inadequacy of current guardrail systems against evolving JaaS techniques. The findings underscore an urgent need for collaborative defense mechanisms between AI providers, researchers, and policymakers to address this growing threat. This work contributes a comprehensive taxonomy of the JaaS ecosystem and provides actionable insights for developing robust countermeasures against commercialized AI exploitation.</jats:p>"
+      },
+      {
+        "DOI": "10.1590/scielopreprints.14563",
+        "title": [
+          "Versificação Adversarial em Português como Operador de Jailbreak em LLMs"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6978-4446",
+            "authenticated-orcid": false,
+            "given": "Joao",
+            "family": "Queiroz",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Evidências recentes mostram que a versificação de prompts constitui um mecanismo adversarial altamente eficaz contra LLMs alinhados. O estudo “Adversarial poetry as a universal single-turn jailbreak mechanism in large language models” demonstra que instruções recusadas em prosa tornam-se executáveis quando convertidas em verso, produzindo “até 18×” mais falhas de segurança em benchmarks derivados do MLCommons AILuminate. Poemas versificados manualmente alcançam cerca de 62% de ASR, e versões automatizadas ~43%, com alguns modelos ultrapassando 90% de sucesso em turno único. O efeito é estrutural — sistemas treinados com RLHF, Constitutional AI e pipelines híbridos apresentam degradação consistente sob variações semiótico-formais mínimas. A versificação desloca o prompt para regiões latentes pouco supervisionadas, revelando guardrails excessivamente dependentes de padrões de superfície. Essa dissociação entre robustez aparente e vulnerabilidade real expõe limitações profundas dos atuais regimes de alinhamento. A ausência de avaliações em português, língua de alta complexidade morfossintática, rica tradição métrico-prosódica e mais de 250 milhões de falantes, constitui uma lacuna crítica. Protocolos experimentais devem parametrizar escansão, métrica e variação prosódica para testar vulnerabilidades específicas a padrões lusófonos, atualmente ignorados.</jats:p>"
+      },
+      {
+        "DOI": "10.1108/oxan-es276605",
+        "title": [
+          "Mauritanian jailbreak may increase terrorism risks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "Emerald Expert Briefings"
+        ],
+        "is-referenced-by-count": 0,
+        "abstract": "<jats:sec sec-type=\"headline\">\n               <jats:title content-type=\"abstract-subheading\">Headline</jats:title>\n               <jats:p>MAURITANIA: Jailbreak may increase terrorism risks</jats:p>\n            </jats:sec>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.176834604.40419489/v1",
+        "title": [
+          "Jailbreak-as-a-Service: The Emerging Threat Landscape"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-2937-3962",
+            "authenticated-orcid": false,
+            "given": "Chetan",
+            "family": "Pathade",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Vinod",
+            "family": "Dhiman",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sheheryar",
+            "family": "Ahmad",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1002/eng2.70069/v2/review1",
+        "title": [
+          "Review for \"RogueGPT: Unleashing Jailbreak Prompts on LLMs A comparative analysis of security efficiency across large language models\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              30
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.33778/kcsa.2025.25.5.117",
+        "title": [
+          "Multilingual Prompt-Injection-Based Jailbreak Vulnerability Analysis : A Comparative Study of English, Korean Plain Speech, and Honorific Style"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Jouranl of Information and Security"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "중앙대학교 융합보안학과 석사과정",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Jimin",
+            "family": "Lee",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hangbae",
+            "family": "Chang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1215/9781478059899-007",
+        "title": [
+          "Jailbreak"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "All of Us or None"
+        ],
+        "is-referenced-by-count": 0,
+        "abstract": "<jats:p>The conclusion highlights four themes that characterize migration justice. First, migrant-led and Indigenous politics have a common object of analysis: US carceral countersovereignty. The grounds for coalition emerge from bringing crimmigration-sensitive antideportation activism into conversation with Indigenous decolonial projects centered on self-determining relationships to land. Second, antideportation activism provides points of entry into the gender and sexual politics of settler carcerality, deportability, and the movement for migration justice. Third, the activists’ feminist and queer analysis and action model a world without policing and cages within radical spaces. Fourth, the power of storytelling binds those who tell them in relations of care, supporting them to take collective action to transform settler carceral arrangements.</jats:p>"
+      },
+      {
+        "DOI": "10.20944/preprints202604.0092.v1",
+        "title": [
+          "Jailbreak Attacks and Defenses in Large Language Models: A Beginner-Friendly Survey"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0004-8111-2422",
+            "authenticated-orcid": false,
+            "given": "Md Nurul Absar",
+            "family": "Siddiky",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Large language models (LLMs) are designed to be helpful, polite, and safe. However, users and attackers have discovered that these models can sometimes be pushed into ignoring their safety rules. This is commonly called jailbreaking. A jailbreak attack is a method for making an LLM answer a question or perform a task that it would normally refuse. At the same time, researchers have proposed many defenses to make models more robust against such attacks. This paper presents a beginner-friendly survey of major LLM jailbreak attack and defense methods. We follow a simple taxonomy in which attacks are divided into white-box and black-box methods, while defenses are divided into prompt-level and model-level methods. For each major method family, we explain the main idea in simple language, name representative techniques from the literature, and provide descriptive toy examples to help readers understand the mechanism. We also summarize common evaluation metrics and datasets used in jailbreak research. The purpose of this paper is pedagogical: to give new students and researchers a clear mental map of how jailbreak attacks work, why they succeed, and how current defense methods attempt to stop them.</jats:p>"
+      },
+      {
+        "DOI": "10.1002/eng2.70069/v1/review2",
+        "title": [
+          "Review for \"RogueGPT: Unleashing Jailbreak Prompts on LLMs A comparative analysis of security efficiency across large language models\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              2
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "Oussama H. Hamid",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2307/jj.18531025.11",
+        "title": [
+          "CONCLUSION."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              21
+            ]
+          ]
+        },
+        "container-title": [
+          "All of Us or None"
+        ],
+        "is-referenced-by-count": 0
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "evaluator manipulation",
+    "results": [
+      {
+        "DOI": "10.21428/d28e8e57.a8ca23ad",
+        "title": [
+          "Evaluation Summary and Metrics: \"Biodiversity Risk\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Ben",
+            "family": "Balmford",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.072621d7",
+        "title": [
+          "Evaluation Summary and Metrics: “Pharmaceutical Pricing and R&amp;D as a Global Public Good”"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              30
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Tabare",
+            "family": "Capitan",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.5411b150",
+        "title": [
+          "Evaluation Summary and Metrics: \"Global potential for natural regeneration in deforested tropical regions\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0470-4991",
+            "authenticated-orcid": false,
+            "given": "David",
+            "family": "Reinstein",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Lorenzo",
+            "family": "Pacchiardi",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.81d3d2c5",
+        "title": [
+          "Evaluation Summary of The Long-Run Effects of Psychotherapy on Depression, Beliefs, and Economic Outcomes"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              11
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Rosie",
+            "family": "Bettle",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Founders Pledge"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.8a1cac7b",
+        "title": [
+          "Evaluation Summary and Metrics: \"How Effective Is (More) Money? Randomizing Unconditional Cash Transfer Amounts in the US\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.03af1a64",
+        "title": [
+          "Evaluation Summary and Metrics: \"Zero-Sum Thinking, the Evolution of Effort-Suppressing Beliefs, and Economic Development\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Julian",
+            "family": "Jamison",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1093/oed/1081278496",
+        "title": [
+          "evaluator, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.21428/d28e8e57.9b2dc59c",
+        "title": [
+          "Evaluation Summary and Metrics: \"Building Resilient Education Systems: Evidence from Large-Scale Randomized Trials in Five Countries\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              2
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Anirudh",
+            "family": "Tagat",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21428/d28e8e57.b29641d0",
+        "title": [
+          "Evaluation Summary and Metrics: \"Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "The Unjournal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Anirudh",
+            "family": "Tagat",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.17504/protocols.io.rm7vz9614gx1/v1",
+        "title": [
+          "Juridical Evaluator (JurE) v1"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              7
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1907-1880",
+            "authenticated-orcid": false,
+            "given": "Felipe",
+            "family": "Ribeiro",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Juridical Evaluator (JurE) is a rule of law (RoL) voting method based on the open science methodology proposal of massive preprogrammed series of questions based secret ballot public polls that allow for the increase of direct democracy and electronic democracy (eDem) open data science through transparent audit. </p>"
+      },
+      {
+        "DOI": "10.21428/d28e8e57.33a621b6",
+        "title": [
+          "Evaluation Summary and Metrics: \"Intergenerational Child Mortality Impacts of Deworming: Experimental Evidence from Two Decades of the Kenya Life Panel Survey\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              8
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "1",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Charlotte",
+            "family": "Lane",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31219/osf.io/vgsqd",
+        "title": [
+          "PERAN GURU SEBAGAI EVALUATOR"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Hafzah",
+            "family": "Harja",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Artikel ini bertujuan untuk menjelaskan terkait peran guru sebagai EVALUATOR, guru. Dengan melaksanakan evaluasi seorang guru dapat mengetahui hasil belajar peserta didik, capaian hasil belajar peserta didik, seorang guru dapat mengetahui apakah materi ajar yang diberikan sesuai. Melalui evaluasi akan menjadi umpan balik (feedback) terhadap proses belajar-mengajar dan kemudian guru dapat mengambil tindakan konstruktif</p>"
+      },
+      {
+        "DOI": "10.1037/lhb0000561.supp",
+        "title": [
+          "Supplemental Material for Do Risk Measure Scores and Diagnoses Predict Evaluator Opinions in Sexually Violent Predator Cases? It Depends on the Evaluator"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Law and Human Behavior"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.21428/d28e8e57.ef6f66cd/3c5e0495",
+        "title": [
+          "Evaluation 2 of \"Misperceptions and Demand for Democracy under Authoritarianism\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              7
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Evaluator",
+            "family": "2",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1177/10982140211056539",
+        "title": [
+          "Measuring Evaluator Competencies: Developing and Validating the Evaluator Competencies Assessment Tool"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              20
+            ]
+          ]
+        },
+        "container-title": [
+          "American Journal of Evaluation"
+        ],
+        "is-referenced-by-count": 6,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7720-9713",
+            "authenticated-orcid": false,
+            "given": "Minji",
+            "family": "Cho",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Division of Behavioral & Organizational Sciences, Claremont Graduate University, Claremont, CA, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3954-625X",
+            "authenticated-orcid": false,
+            "given": "Ann Marie",
+            "family": "Castleman",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Division of Behavioral & Organizational Sciences, Claremont Graduate University, Claremont, CA, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1761-5602",
+            "authenticated-orcid": false,
+            "given": "Haley",
+            "family": "Umans",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Division of Behavioral & Organizational Sciences, Claremont Graduate University, Claremont, CA, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6414-3903",
+            "authenticated-orcid": false,
+            "given": "Mike Osiemo",
+            "family": "Mwirigi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Division of Behavioral & Organizational Sciences, Claremont Graduate University, Claremont, CA, USA"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Evaluation scholars have committed decades of work to the development of evaluator competencies. The 2018 American Evaluation Association (AEA) Evaluator Competencies may be useful for evaluators to identify their strengths and weaknesses to improve their practice; however, a few empirically validated self-assessment tools based on the competencies exist. Two studies were conducted to develop a validated tool. The first study ( N = 170) developed the Evaluator Competencies Assessment Tool (ECAT), a self-assessment tool based on the AEA, 2018 Evaluator Competencies. This study provided evidence for structural validity via confirmatory factor analysis. The second study ( N = 142) reconfirmed structural validity with a new sample and examined variables that are associated with evaluator competencies through correlation and t-test analyses. Having a mentor, years of evaluation experience, age, evaluation training, and education level were positively related to evaluator competencies. The ECAT can be used to foster self-reflection for practitioners to improve evaluation competence.</jats:p>"
+      }
+    ],
+    "status": 200
+  }
+]

@@ -1,0 +1,712 @@
+[
+  {
+    "query": "clinical LLM in:readme,description",
+    "results": [
+      {
+        "name": "ripienaar/free-for-dev",
+        "stars": 121632,
+        "forks": 12717,
+        "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "url": "https://github.com/ripienaar/free-for-dev",
+        "topics": [
+          "awesome-list",
+          "free-for-developers"
+        ],
+        "pushed_at": "2026-05-09T04:57:36Z",
+        "updated_at": "2026-05-09T07:07:51Z"
+      },
+      {
+        "name": "punkpeye/awesome-mcp-servers",
+        "stars": 86525,
+        "forks": 9981,
+        "description": "A collection of MCP servers.",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "topics": [
+          "ai",
+          "mcp"
+        ],
+        "pushed_at": "2026-05-02T16:08:17Z",
+        "updated_at": "2026-05-09T07:26:18Z"
+      },
+      {
+        "name": "josephmisiti/awesome-machine-learning",
+        "stars": 72424,
+        "forks": 15450,
+        "description": "A curated list of awesome Machine Learning frameworks, libraries and software.",
+        "url": "https://github.com/josephmisiti/awesome-machine-learning",
+        "topics": [],
+        "pushed_at": "2026-04-26T15:32:15Z",
+        "updated_at": "2026-05-09T02:20:36Z"
+      },
+      {
+        "name": "SimplifyJobs/Summer2026-Internships",
+        "stars": 44489,
+        "forks": 3177,
+        "description": "Collection of Summer 2026 tech internships!",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships",
+        "topics": [
+          "internships",
+          "interview-preparation",
+          "jobs",
+          "university"
+        ],
+        "pushed_at": "2026-05-09T07:31:01Z",
+        "updated_at": "2026-05-09T07:31:05Z"
+      },
+      {
+        "name": "sickn33/antigravity-awesome-skills",
+        "stars": 36888,
+        "forks": 6031,
+        "description": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills",
+        "topics": [
+          "agent-skills",
+          "agentic-skills",
+          "ai-agent-skills",
+          "ai-agents",
+          "ai-coding",
+          "ai-workflows",
+          "antigravity",
+          "antigravity-skills",
+          "claude-code",
+          "claude-code-skills",
+          "codex-cli",
+          "codex-skills",
+          "cursor",
+          "cursor-skills",
+          "developer-tools",
+          "gemini-cli",
+          "gemini-skills",
+          "kiro",
+          "mcp",
+          "skill-library"
+        ],
+        "pushed_at": "2026-05-09T06:45:38Z",
+        "updated_at": "2026-05-09T07:26:47Z"
+      },
+      {
+        "name": "google/langextract",
+        "stars": 36409,
+        "forks": 2504,
+        "description": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
+        "url": "https://github.com/google/langextract",
+        "topics": [
+          "gemini",
+          "gemini-ai",
+          "gemini-api",
+          "gemini-flash",
+          "gemini-pro",
+          "information-extration",
+          "large-language-models",
+          "llm",
+          "nlp",
+          "python",
+          "structured-data"
+        ],
+        "pushed_at": "2026-05-01T20:38:50Z",
+        "updated_at": "2026-05-09T04:02:53Z"
+      },
+      {
+        "name": "spmallick/learnopencv",
+        "stars": 22910,
+        "forks": 11702,
+        "description": "Learn OpenCV  : C++ and Python Examples",
+        "url": "https://github.com/spmallick/learnopencv",
+        "topics": [
+          "ai",
+          "computer-vision",
+          "computervision",
+          "deep-learning",
+          "deep-neural-networks",
+          "deeplearning",
+          "machine-learning",
+          "opencv",
+          "opencv-cpp",
+          "opencv-library",
+          "opencv-python",
+          "opencv-tutorial",
+          "opencv3"
+        ],
+        "pushed_at": "2026-04-24T00:35:40Z",
+        "updated_at": "2026-05-09T06:26:00Z"
+      },
+      {
+        "name": "EthicalML/awesome-production-machine-learning",
+        "stars": 20501,
+        "forks": 2568,
+        "description": "A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning",
+        "url": "https://github.com/EthicalML/awesome-production-machine-learning",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "data-mining",
+          "deep-learning",
+          "explainability",
+          "interpretability",
+          "large-scale-machine-learning",
+          "large-scale-ml",
+          "machine-learning",
+          "machine-learning-operations",
+          "ml-operations",
+          "ml-ops",
+          "mlops",
+          "privacy-preserving",
+          "privacy-preserving-machine-learning",
+          "privacy-preserving-ml",
+          "production-machine-learning",
+          "production-ml",
+          "responsible-ai"
+        ],
+        "pushed_at": "2026-05-01T03:49:46Z",
+        "updated_at": "2026-05-09T05:58:33Z"
+      },
+      {
+        "name": "K-Dense-AI/scientific-agent-skills",
+        "stars": 20438,
+        "forks": 2273,
+        "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "pushed_at": "2026-05-06T21:06:12Z",
+        "updated_at": "2026-05-09T07:11:36Z"
+      },
+      {
+        "name": "VoltAgent/awesome-claude-code-subagents",
+        "stars": 19414,
+        "forks": 2245,
+        "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
+        "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+        "topics": [
+          "ai-agent-framework",
+          "ai-agent-tools",
+          "ai-agents",
+          "awesome",
+          "awesome-list",
+          "claude",
+          "claude-ai",
+          "claude-code-subagents",
+          "claude-subagents",
+          "subagents"
+        ],
+        "pushed_at": "2026-04-20T07:13:01Z",
+        "updated_at": "2026-05-09T07:29:17Z"
+      },
+      {
+        "name": "dair-ai/ML-YouTube-Courses",
+        "stars": 17196,
+        "forks": 2105,
+        "description": "📺 Discover the latest machine learning / AI courses on YouTube.",
+        "url": "https://github.com/dair-ai/ML-YouTube-Courses",
+        "topics": [
+          "ai",
+          "data-science",
+          "deep-learning",
+          "machine-learning",
+          "natural-language-processing",
+          "nlp"
+        ],
+        "pushed_at": "2024-01-22T15:52:28Z",
+        "updated_at": "2026-05-09T05:55:48Z"
+      },
+      {
+        "name": "SimplifyJobs/New-Grad-Positions",
+        "stars": 16885,
+        "forks": 1284,
+        "description": "A collection of full time roles in SWE, Quant, and PM for new grads.",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions",
+        "topics": [
+          "applications",
+          "coderquad",
+          "college",
+          "fulltime",
+          "hacktoberfest",
+          "jobs",
+          "newgrad",
+          "position",
+          "posting",
+          "university"
+        ],
+        "pushed_at": "2026-05-09T07:31:09Z",
+        "updated_at": "2026-05-09T07:31:13Z"
+      },
+      {
+        "name": "architecture-decision-record/architecture-decision-record",
+        "stars": 15793,
+        "forks": 2712,
+        "description": "Architecture decision record (ADR) examples for software planning, IT leadership, and template documentation",
+        "url": "https://github.com/architecture-decision-record/architecture-decision-record",
+        "topics": [
+          "adr",
+          "architecture-decision-record",
+          "decision-record",
+          "decisions",
+          "documentation",
+          "project-management",
+          "teamwork",
+          "tutorial"
+        ],
+        "pushed_at": "2026-05-08T07:33:14Z",
+        "updated_at": "2026-05-09T04:55:29Z"
+      },
+      {
+        "name": "diff-usion/Awesome-Diffusion-Models",
+        "stars": 12320,
+        "forks": 1012,
+        "description": " A collection of resources and papers on Diffusion Models",
+        "url": "https://github.com/diff-usion/Awesome-Diffusion-Models",
+        "topics": [
+          "artificial-intelligence",
+          "diffusion-models",
+          "generative-model",
+          "machine-learning",
+          "score-based",
+          "score-matching"
+        ],
+        "pushed_at": "2024-08-01T07:11:20Z",
+        "updated_at": "2026-05-09T06:31:42Z"
+      },
+      {
+        "name": "RUCAIBox/LLMSurvey",
+        "stars": 12159,
+        "forks": 941,
+        "description": "The official GitHub page for the survey paper \"A Survey of Large Language Models\".",
+        "url": "https://github.com/RUCAIBox/LLMSurvey",
+        "topics": [
+          "chain-of-thought",
+          "chatgpt",
+          "in-context-learning",
+          "instruction-tuning",
+          "large-language-models",
+          "llm",
+          "llms",
+          "natural-language-processing",
+          "pre-trained-language-models",
+          "pre-training",
+          "rlhf"
+        ],
+        "pushed_at": "2025-03-11T09:51:42Z",
+        "updated_at": "2026-05-09T06:06:56Z"
+      }
+    ],
+    "status": 200,
+    "total": 30959
+  },
+  {
+    "query": "clinical LLM benchmark in:name,description",
+    "results": [
+      {
+        "name": "ji-youn-kim/EHRNoteQA",
+        "stars": 44,
+        "forks": 9,
+        "description": "[NeurIPS 2024 D&B] Official code for \"EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries\"",
+        "url": "https://github.com/ji-youn-kim/EHRNoteQA",
+        "topics": [],
+        "pushed_at": "2025-01-11T14:39:42Z",
+        "updated_at": "2026-05-06T08:52:03Z"
+      },
+      {
+        "name": "bunnelab/mtbbench",
+        "stars": 31,
+        "forks": 4,
+        "description": "MTBBench is a benchmark designed to evaluate the reasoning capabilities of multimodal large language models (LLMs) in complex clinical decision-making scenarios. It focuses on two core challenges in oncology: multimodal integration (e.g., pathology, genomics, radiology) and longitudinal reasoning across patient timelines. ",
+        "url": "https://github.com/bunnelab/mtbbench",
+        "topics": [],
+        "pushed_at": "2025-10-23T09:29:15Z",
+        "updated_at": "2026-04-30T09:41:06Z"
+      },
+      {
+        "name": "llmeval/LLMEval-Med",
+        "stars": 26,
+        "forks": 1,
+        "description": "[EMNLP 2025] A real-world clinical benchmark for medical LLMs with physician validation — 2,996 questions from EHRs",
+        "url": "https://github.com/llmeval/LLMEval-Med",
+        "topics": [],
+        "pushed_at": "2026-05-07T12:12:53Z",
+        "updated_at": "2026-05-07T12:12:57Z"
+      },
+      {
+        "name": "AlaaLab/ER-Reason",
+        "stars": 21,
+        "forks": 1,
+        "description": "Official Codebase for \"ER-Reason: A Benchmark Dataset for LLM-Based Clinical Reasoning in the Emergency Room\"",
+        "url": "https://github.com/AlaaLab/ER-Reason",
+        "topics": [
+          "clinical-reasoning",
+          "emergency-medicine",
+          "llm-benchmarking",
+          "llm-evaluation",
+          "medical-llm-benchmarks",
+          "medical-llms",
+          "reasoning-language-models"
+        ],
+        "pushed_at": "2026-05-05T22:02:22Z",
+        "updated_at": "2026-05-05T22:02:27Z"
+      },
+      {
+        "name": "bio-nlp/MedQA-CS",
+        "stars": 13,
+        "forks": 1,
+        "description": "Benchmarking LLMs Clinical Skills for Patient-Centered Diagnostics and Documentation",
+        "url": "https://github.com/bio-nlp/MedQA-CS",
+        "topics": [],
+        "pushed_at": "2025-06-08T03:24:43Z",
+        "updated_at": "2026-02-13T13:55:38Z"
+      },
+      {
+        "name": "yhzhu99/ehr-llm-benchmark",
+        "stars": 12,
+        "forks": 2,
+        "description": "[npj Digital Medicine] ClinicRealm: Re-evaluating Large Language Models with Conventional Machine Learning for Non-Generative Clinical Prediction Tasks",
+        "url": "https://github.com/yhzhu99/ehr-llm-benchmark",
+        "topics": [
+          "benchmark",
+          "ehr",
+          "llm"
+        ],
+        "pushed_at": "2025-12-12T12:56:25Z",
+        "updated_at": "2026-04-14T22:20:47Z"
+      },
+      {
+        "name": "olaflaitinen/llm-proteomics-hallucination",
+        "stars": 9,
+        "forks": 2,
+        "description": "Systematic evaluation of hallucination risks in Large Language Models (GPT-4, Claude 3, Gemini Pro) for clinical proteomics and mass spectrometry interpretation. Production-ready detection framework with comprehensive benchmarks.",
+        "url": "https://github.com/olaflaitinen/llm-proteomics-hallucination",
+        "topics": [
+          "ai-safety",
+          "anthropic",
+          "bioinformatics",
+          "biomedical-nlp",
+          "claude",
+          "clinical-ai",
+          "computational-biology",
+          "deep-learning",
+          "gpt-4",
+          "hallucination-detection",
+          "healthcare-ai",
+          "llm-evaluation",
+          "machine-learning",
+          "mass-spectrometry",
+          "openai",
+          "protein-analysis",
+          "proteomics",
+          "python",
+          "research"
+        ],
+        "pushed_at": "2025-11-11T15:20:13Z",
+        "updated_at": "2025-12-21T14:12:20Z"
+      },
+      {
+        "name": "nyuolab/MedDistractQA",
+        "stars": 6,
+        "forks": 1,
+        "description": "MedDistractQA is a benchmark designed to assess the ability of large language models (LLMs) to filter relevant clinical information from extraneous data, a common challenge in real-world medical applications. ",
+        "url": "https://github.com/nyuolab/MedDistractQA",
+        "topics": [],
+        "pushed_at": "2025-04-02T02:32:13Z",
+        "updated_at": "2026-03-09T06:01:22Z"
+      },
+      {
+        "name": "hotdogisme/MedChain",
+        "stars": 5,
+        "forks": 1,
+        "description": "Bridging the Gap Between LLM Agents and Clinical Practice through Interactive Sequential Benchmarking",
+        "url": "https://github.com/hotdogisme/MedChain",
+        "topics": [],
+        "pushed_at": "2025-05-24T03:20:50Z",
+        "updated_at": "2025-05-27T06:39:53Z"
+      },
+      {
+        "name": "owencqueen/cgbench",
+        "stars": 4,
+        "forks": 2,
+        "description": "CGBench: Benchmarking Scientific Understanding of LLMs via Clinical Genetics Annotations",
+        "url": "https://github.com/owencqueen/cgbench",
+        "topics": [],
+        "pushed_at": "2025-06-10T01:13:24Z",
+        "updated_at": "2025-11-08T07:00:25Z"
+      },
+      {
+        "name": "aphp-datascience/eds-diabetes-date",
+        "stars": 4,
+        "forks": 0,
+        "description": "Benchmarking LLMs and rule-based methods for diabetes diagnosis date extraction from French clinical notes",
+        "url": "https://github.com/aphp-datascience/eds-diabetes-date",
+        "topics": [],
+        "pushed_at": "2026-01-21T20:55:48Z",
+        "updated_at": "2026-01-21T20:56:22Z"
+      },
+      {
+        "name": "GOATnote-Inc/scribegoat2",
+        "stars": 4,
+        "forks": 1,
+        "description": "Open-source medical LLM safety evaluation pipeline with reproducible benchmarks and high-risk clinical failure analysis.",
+        "url": "https://github.com/GOATnote-Inc/scribegoat2",
+        "topics": [
+          "ai-safety",
+          "emergency",
+          "emergency-department",
+          "evaluation-framework",
+          "gpt-5",
+          "healthbench",
+          "llm-evaluation",
+          "medical-ai",
+          "physician"
+        ],
+        "pushed_at": "2026-04-16T20:40:23Z",
+        "updated_at": "2026-04-16T20:40:27Z"
+      },
+      {
+        "name": "1Krypt0/clinical-summarization-llm",
+        "stars": 3,
+        "forks": 0,
+        "description": "Benchmarks for several LLMs on Discharge Summary Generation from Clinical Notes",
+        "url": "https://github.com/1Krypt0/clinical-summarization-llm",
+        "topics": [],
+        "pushed_at": "2026-01-21T19:57:54Z",
+        "updated_at": "2026-01-21T19:57:57Z"
+      },
+      {
+        "name": "ncbi-nlp/Calculator-Recommendation",
+        "stars": 3,
+        "forks": 0,
+        "description": "MedQA-Calc is a benchmarking dataset designed to assess the capability of LLMs to recommend clinical calculators",
+        "url": "https://github.com/ncbi-nlp/Calculator-Recommendation",
+        "topics": [],
+        "pushed_at": "2024-10-22T16:19:22Z",
+        "updated_at": "2025-11-12T16:58:06Z"
+      },
+      {
+        "name": "Ufonia/wer-is-unaware",
+        "stars": 3,
+        "forks": 0,
+        "description": "A benchmark, alignment pipeline, and LLM-as-a-Judge for evaluating the clinical impact of ASR errors.",
+        "url": "https://github.com/Ufonia/wer-is-unaware",
+        "topics": [
+          "dspy",
+          "gepa",
+          "healthcare-ai",
+          "llm-as-judge"
+        ],
+        "pushed_at": "2026-03-05T14:21:22Z",
+        "updated_at": "2026-03-30T03:07:02Z"
+      }
+    ],
+    "status": 200,
+    "total": 58
+  },
+  {
+    "query": "clinical LLM evaluation in:name,description",
+    "results": [
+      {
+        "name": "LibertFan/AI_Hospital",
+        "stars": 193,
+        "forks": 30,
+        "description": "AI Hospital: Interactive Evaluation and Collaboration of LLMs as Intern Doctors for Clinical Diagnosis",
+        "url": "https://github.com/LibertFan/AI_Hospital",
+        "topics": [],
+        "pushed_at": "2024-09-13T13:17:23Z",
+        "updated_at": "2026-05-02T16:47:59Z"
+      },
+      {
+        "name": "bunnelab/mtbbench",
+        "stars": 31,
+        "forks": 4,
+        "description": "MTBBench is a benchmark designed to evaluate the reasoning capabilities of multimodal large language models (LLMs) in complex clinical decision-making scenarios. It focuses on two core challenges in oncology: multimodal integration (e.g., pathology, genomics, radiology) and longitudinal reasoning across patient timelines. ",
+        "url": "https://github.com/bunnelab/mtbbench",
+        "topics": [],
+        "pushed_at": "2025-10-23T09:29:15Z",
+        "updated_at": "2026-04-30T09:41:06Z"
+      },
+      {
+        "name": "TIO-IKIM/CLUE",
+        "stars": 21,
+        "forks": 5,
+        "description": "CLUE: A Clinical Language Understanding Evaluation for LLMs",
+        "url": "https://github.com/TIO-IKIM/CLUE",
+        "topics": [],
+        "pushed_at": "2025-01-22T07:44:00Z",
+        "updated_at": "2026-04-24T00:29:23Z"
+      },
+      {
+        "name": "yhzhu99/ehr-llm-benchmark",
+        "stars": 12,
+        "forks": 2,
+        "description": "[npj Digital Medicine] ClinicRealm: Re-evaluating Large Language Models with Conventional Machine Learning for Non-Generative Clinical Prediction Tasks",
+        "url": "https://github.com/yhzhu99/ehr-llm-benchmark",
+        "topics": [
+          "benchmark",
+          "ehr",
+          "llm"
+        ],
+        "pushed_at": "2025-12-12T12:56:25Z",
+        "updated_at": "2026-04-14T22:20:47Z"
+      },
+      {
+        "name": "olaflaitinen/llm-proteomics-hallucination",
+        "stars": 9,
+        "forks": 2,
+        "description": "Systematic evaluation of hallucination risks in Large Language Models (GPT-4, Claude 3, Gemini Pro) for clinical proteomics and mass spectrometry interpretation. Production-ready detection framework with comprehensive benchmarks.",
+        "url": "https://github.com/olaflaitinen/llm-proteomics-hallucination",
+        "topics": [
+          "ai-safety",
+          "anthropic",
+          "bioinformatics",
+          "biomedical-nlp",
+          "claude",
+          "clinical-ai",
+          "computational-biology",
+          "deep-learning",
+          "gpt-4",
+          "hallucination-detection",
+          "healthcare-ai",
+          "llm-evaluation",
+          "machine-learning",
+          "mass-spectrometry",
+          "openai",
+          "protein-analysis",
+          "proteomics",
+          "python",
+          "research"
+        ],
+        "pushed_at": "2025-11-11T15:20:13Z",
+        "updated_at": "2025-12-21T14:12:20Z"
+      },
+      {
+        "name": "dsi-clinical-llm/clinical-llm-evaluation",
+        "stars": 7,
+        "forks": 1,
+        "description": "This repo is created to evaluate the LLMs on 4 tasks including Question-Answer (QA), Summarization, Name Entity Recognition (NER), and Relation Extraction (RE). The goal is to create a general framework to quickly evaluate any Causal Language Models against publicly available medical datasets.",
+        "url": "https://github.com/dsi-clinical-llm/clinical-llm-evaluation",
+        "topics": [],
+        "pushed_at": "2023-12-17T19:16:01Z",
+        "updated_at": "2024-11-01T01:04:30Z"
+      },
+      {
+        "name": "sandmanns/llm_evaluation",
+        "stars": 6,
+        "forks": 2,
+        "description": "Open-source large language model DeepSeek on a par with proprietary models in clinical decision making",
+        "url": "https://github.com/sandmanns/llm_evaluation",
+        "topics": [],
+        "pushed_at": "2025-04-12T06:00:23Z",
+        "updated_at": "2026-04-01T13:05:16Z"
+      },
+      {
+        "name": "dataphysician/tmsp",
+        "stars": 5,
+        "forks": 1,
+        "description": "Evaluating long-horizon LLM reasoning via stepwise traversal of ICD-10-CM code paths derived from clinical text",
+        "url": "https://github.com/dataphysician/tmsp",
+        "topics": [],
+        "pushed_at": "2026-02-15T06:43:18Z",
+        "updated_at": "2026-03-27T05:21:47Z"
+      },
+      {
+        "name": "bab-git/llm_pharma",
+        "stars": 4,
+        "forks": 0,
+        "description": "This is a tutorial of an agentic Large Language Model (LLM) application to automate the evaluation of patients for clinical trials. It leverages documents related to patients' medical histories, clinical policies, and trial inclusion criteria.",
+        "url": "https://github.com/bab-git/llm_pharma",
+        "topics": [],
+        "pushed_at": "2025-08-12T13:07:54Z",
+        "updated_at": "2026-04-07T15:35:16Z"
+      },
+      {
+        "name": "hk21702/Evaluating-XAI-LLMs-in-a-Clinical-Context_CSC413-Project",
+        "stars": 4,
+        "forks": 0,
+        "description": "A UofT CSC413 Final Project - Evaluating interpretable large language models in a clinical context using the MIMIC-IV dataset.",
+        "url": "https://github.com/hk21702/Evaluating-XAI-LLMs-in-a-Clinical-Context_CSC413-Project",
+        "topics": [],
+        "pushed_at": "2024-04-21T20:14:22Z",
+        "updated_at": "2026-03-16T18:31:15Z"
+      },
+      {
+        "name": "GOATnote-Inc/scribegoat2",
+        "stars": 4,
+        "forks": 1,
+        "description": "Open-source medical LLM safety evaluation pipeline with reproducible benchmarks and high-risk clinical failure analysis.",
+        "url": "https://github.com/GOATnote-Inc/scribegoat2",
+        "topics": [
+          "ai-safety",
+          "emergency",
+          "emergency-department",
+          "evaluation-framework",
+          "gpt-5",
+          "healthbench",
+          "llm-evaluation",
+          "medical-ai",
+          "physician"
+        ],
+        "pushed_at": "2026-04-16T20:40:23Z",
+        "updated_at": "2026-04-16T20:40:27Z"
+      },
+      {
+        "name": "toktamk/clinical-qa-rag-llm-evaluation-offline-first",
+        "stars": 3,
+        "forks": 0,
+        "description": "",
+        "url": "https://github.com/toktamk/clinical-qa-rag-llm-evaluation-offline-first",
+        "topics": [],
+        "pushed_at": "2026-05-06T07:33:47Z",
+        "updated_at": "2026-05-08T01:53:17Z"
+      },
+      {
+        "name": "Ufonia/wer-is-unaware",
+        "stars": 3,
+        "forks": 0,
+        "description": "A benchmark, alignment pipeline, and LLM-as-a-Judge for evaluating the clinical impact of ASR errors.",
+        "url": "https://github.com/Ufonia/wer-is-unaware",
+        "topics": [
+          "dspy",
+          "gepa",
+          "healthcare-ai",
+          "llm-as-judge"
+        ],
+        "pushed_at": "2026-03-05T14:21:22Z",
+        "updated_at": "2026-03-30T03:07:02Z"
+      },
+      {
+        "name": "Whitefield64/Comparing-Diagnostic-Reasoning-patterns-of-medical-specialist-and-LLMs",
+        "stars": 2,
+        "forks": 0,
+        "description": "LLMs struggle with clinical adoption because their reasoning lacks transparency. Real medical diagnosis integrates abductive, deductive, and inductive logic. To bridge this gap, we must evaluate LLMs against an epistemic baseline grounded in human reasoning and structured for reproducibility.",
+        "url": "https://github.com/Whitefield64/Comparing-Diagnostic-Reasoning-patterns-of-medical-specialist-and-LLMs",
+        "topics": [],
+        "pushed_at": "2026-05-05T11:14:18Z",
+        "updated_at": "2026-05-05T11:14:21Z"
+      },
+      {
+        "name": "UNHSAILLab/VSF-Med",
+        "stars": 2,
+        "forks": 0,
+        "description": "We present VSF-Med, a Vulnerability Scoring Framework for medical Vision–Language Models (Vision LLMs), designed to systematically evaluate safety, reliability, and adversarial robustness in clinical imaging applications. ",
+        "url": "https://github.com/UNHSAILLab/VSF-Med",
+        "topics": [],
+        "pushed_at": "2026-05-09T02:13:56Z",
+        "updated_at": "2026-05-09T02:14:00Z"
+      }
+    ],
+    "status": 200,
+    "total": 141
+  }
+]

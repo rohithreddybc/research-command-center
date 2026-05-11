@@ -1,0 +1,26 @@
+{
+  "topic_id": "T07_N1",
+  "n_reviews": 8,
+  "providers": {
+    "claude_cli": 8
+  },
+  "scores": {
+    "mean": 2,
+    "stdev": 0.0,
+    "n": 8
+  },
+  "decisions": {
+    "NARROW": 7,
+    "DROP": 1
+  },
+  "plurality_decision": "NARROW",
+  "plurality_count": 7,
+  "decision_score_mean_0to3": 1.75,
+  "confidences": {
+    "MEDIUM": 6,
+    "HIGH": 2
+  },
+  "high_confidence_drops": 0,
+  "per_role_disagreements": [],
+  "high_disagreement_flag": false
+}

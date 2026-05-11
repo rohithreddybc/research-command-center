@@ -1,0 +1,17 @@
+[
+  {
+    "query": "prompt injection",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "LLM judge",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "jailbreak",
+    "results": [],
+    "status": 200
+  }
+]

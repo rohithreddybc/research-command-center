@@ -1,0 +1,1409 @@
+[
+  {
+    "query": "LLM evaluation methodology",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "metadata",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "systematic mapping",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "evaluation survey",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "benchmarking practices",
+    "results": [
+      {
+        "paperId": "b188ac703c2afedffe54595fc58a502ed852663c",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2504-10112",
+          "ArXiv": "2504.10112",
+          "DOI": "10.48550/arXiv.2504.10112",
+          "CorpusId": 277780366
+        },
+        "title": "Benchmarking Practices in LLM-driven Offensive Security: Testbeds, Metrics, and Experiment Design",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.10112, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "3127567",
+            "name": "A. Happe"
+          },
+          {
+            "authorId": "2268775966",
+            "name": "Jürgen Cito"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have emerged as a powerful approach for driving offensive penetration-testing tooling. Due to the opaque nature of LLMs, empirical methods are typically used to analyze their efficacy. The quality of this analysis is highly dependent on the chosen testbed, captured metrics and analysis methods employed. This paper analyzes the methodology and benchmarking practices used for evaluating Large Language Model (LLM)-driven attacks, focusing on offensive uses of LLMs in cybersecurity. We review 19 research papers detailing 18 prototypes and their respective testbeds. We detail our findings and provide actionable recommendations for future research, emphasizing the importance of extending existing testbeds, creating baselines, and including comprehensive metrics and qualitative analysis. We also note the distinction between security research and practice, suggesting that CTF-based challenges may not fully represent real-world penetration testing scenarios."
+      },
+      {
+        "paperId": "18e51a359068d11e3cb7a1af5b262dd933b0e21a",
+        "externalIds": {
+          "DOI": "10.7166/36-2-3045",
+          "CorpusId": 281075385
+        },
+        "title": "South African Sawmill Industry Clusters and Benchmarking Practices",
+        "venue": "South African Journal of Industrial Engineering",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.7166/36-2-3045?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.7166/36-2-3045, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2275697200",
+            "name": "V. Tshavhungwe"
+          },
+          {
+            "authorId": "2378556782",
+            "name": "S. Grobbelaar"
+          }
+        ],
+        "abstract": "Sawmills tend to be concentrated where there is an adequate supply of logs for processing. The concentration of these sawmills presents an excellent opportunity to form successful industry clusters and for firms to be benchmarked against other firms in the industry. The study evaluated benchmarking practices in the South African sawmill industry. It used an online survey methodology to examine how cooperation between the industry players could enhance the industry’s competitiveness. The results gave valuable insights into the views of individuals working in various sawmills. The study could assist sawmillers to evaluate their processes and to consider implementing various forms of benchmarking in order to improve their sawmills in collaboration with multiple stakeholders."
+      },
+      {
+        "paperId": "4f7a441b94c41cab6acd018615d31ae5e425571f",
+        "externalIds": {
+          "PubMedCentral": "12823324",
+          "DOI": "10.1002/psp4.70155",
+          "CorpusId": 282989868,
+          "PubMed": "41230765"
+        },
+        "title": "Predictive AI in Clinical Pharmacology: A Call to Action to Develop Robust Benchmarking Practices",
+        "venue": "CPT: Pharmacometrics & Systems Pharmacology",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBYNCND",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12823324, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2150873297",
+            "name": "A. V. Ponce-Bobadilla"
+          },
+          {
+            "authorId": "2363140505",
+            "name": "Dominic Bräm"
+          },
+          {
+            "authorId": "94355969",
+            "name": "A. Farnoud"
+          },
+          {
+            "authorId": "2319633959",
+            "name": "Holger Fröhlich"
+          },
+          {
+            "authorId": "2140758055",
+            "name": "A. Janssen"
+          },
+          {
+            "authorId": "87203671",
+            "name": "Niklas Korsbo"
+          },
+          {
+            "authorId": "2392242898",
+            "name": "Klaus Lindauer"
+          },
+          {
+            "authorId": "82480928",
+            "name": "E. Raimúndez"
+          },
+          {
+            "authorId": "2053680077",
+            "name": "Anuraag Saini"
+          },
+          {
+            "authorId": "48850257",
+            "name": "S. Stodtmann"
+          },
+          {
+            "authorId": "2258695431",
+            "name": "Diego Valderrama"
+          },
+          {
+            "authorId": "2392242883",
+            "name": "Kristoffer Winther Balling"
+          },
+          {
+            "authorId": "30955448",
+            "name": "Jane Knöchel"
+          },
+          {
+            "authorId": "2346177751",
+            "name": "Sven Mensing"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "64c291b25174c188ecd27480245dac6983cd5a2b",
+        "externalIds": {
+          "ArXiv": "2402.09766",
+          "DBLP": "journals/corr/abs-2402-09766",
+          "DOI": "10.1145/3637528.3671655",
+          "CorpusId": 267681925
+        },
+        "title": "From Variability to Stability: Advancing RecSys Benchmarking Practices",
+        "venue": "Knowledge Discovery and Data Mining",
+        "year": 2024,
+        "citationCount": 14,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2402.09766",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.09766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2261388957",
+            "name": "Valeriy Shevchenko"
+          },
+          {
+            "authorId": "2284217635",
+            "name": "N. Belousov"
+          },
+          {
+            "authorId": "2138953778",
+            "name": "Alexey Vasilev"
+          },
+          {
+            "authorId": "2283152364",
+            "name": "Vladimir Zholobov"
+          },
+          {
+            "authorId": "2176005062",
+            "name": "Artyom Sosedka"
+          },
+          {
+            "authorId": "2293485455",
+            "name": "Natalia Semenova"
+          },
+          {
+            "authorId": "2284217822",
+            "name": "A. Volodkevich"
+          },
+          {
+            "authorId": "2284218004",
+            "name": "Andrey Savchenko"
+          },
+          {
+            "authorId": "2283155988",
+            "name": "Alexey Zaytsev"
+          }
+        ],
+        "abstract": "In the rapidly evolving domain of Recommender Systems (RecSys), new algorithms frequently claim state-of-the-art performance based on evaluations over a limited set of arbitrarily selected datasets. However, this approach may fail to holistically reflect their effectiveness due to the significant impact of dataset characteristics on algorithm performance. Addressing this deficiency, this paper introduces a novel benchmarking methodology to facilitate a fair and robust comparison of RecSys algorithms, thereby advancing evaluation practices. By utilizing a diverse set of 30 open datasets, including two introduced in this work, and evaluating 11 collaborative filtering algorithms across 9 metrics, we critically examine the influence of dataset characteristics on algorithm performance. We further investigate the feasibility of aggregating outcomes from multiple datasets into a unified ranking. Through rigorous experimental analysis, we validate the reliability of our methodology under the variability of datasets, offering a benchmarking strategy that balances quality and computational demands. This methodology enables a fair yet effective means of evaluating RecSys algorithms, providing valuable guidance for future research endeavors."
+      },
+      {
+        "paperId": "2401bc9e2454f87073fa3e6ae51557de7516caad",
+        "externalIds": {
+          "DOI": "10.1002/wcms.1737",
+          "CorpusId": 275375175
+        },
+        "title": "Good Practices in Database Generation for Benchmarking Density Functional Theory",
+        "venue": "WIREs Computational Molecular Science",
+        "year": 2025,
+        "citationCount": 25,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/wcms.1737?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/wcms.1737, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2253829728",
+            "name": "Amir Karton"
+          },
+          {
+            "authorId": "2066365717",
+            "name": "Marcelo T de Oliveira"
+          }
+        ],
+        "abstract": "The hundreds of density functional theory (DFT) methods developed over the past three decades are often referred to as the “zoo” of DFT approximations. In line with this terminology, the numerous DFT benchmark studies might be considered the “safari” of DFT evaluation efforts, reflecting their abundance, diversity, and wide range of application and methodological aspects. These benchmarks have played a critical role in establishing DFT as the dominant approach in quantum chemical applications and remain essential for selecting an appropriate DFT method for specific chemical properties (e.g., reaction energy, barrier height, or noncovalent interaction energy) and systems (e.g., organic, inorganic, or organometallic). DFT benchmark studies are a vital tool for both DFT users in method selection and DFT developers in method design and parameterization. This review provides best‐practice guidance on key methodological aspects of DFT benchmarking, such as the quality of benchmark reference values, dataset size, reference geometries, basis sets, statistical analysis, and electronic availability of the benchmark data. Additionally, we present a flowchart to assist users in systematically choosing these methodological aspects, thereby enhancing the reliability and reproducibility of DFT benchmarking studies."
+      },
+      {
+        "paperId": "9d3d0585a807c3aa5165ddf6a4fdcecbe1a54766",
+        "externalIds": {
+          "ArXiv": "2407.11006",
+          "CorpusId": 271218609
+        },
+        "title": "Evaluating the Efficacy of Foundational Models: Advancing Benchmarking Practices to Enhance Fine-Tuning Decision-Making",
+        "venue": "",
+        "year": 2024,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.11006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "121177913",
+            "name": "O. Amujo"
+          },
+          {
+            "authorId": "37923918",
+            "name": "S. Yang"
+          }
+        ],
+        "abstract": "Recently, large language models (LLMs) have expanded into various domains. However, there remains a need to evaluate how these models perform when prompted with commonplace queries compared to domain-specific queries, which may be useful for benchmarking prior to fine-tuning for domain-specific downstream tasks. This study evaluates LLMs, specifically Gemma-2B and Gemma-7B, across diverse domains, including cybersecurity, medicine, and finance, compared to common knowledge queries. This study utilizes a comprehensive methodology to assess foundational models, which includes problem formulation, data analysis, and the development of ThroughCut, a novel outlier detection technique that automatically identifies response throughput outliers based on their conciseness. This methodological rigor enhances the credibility of the presented evaluation frameworks. This study focused on assessing inference time, response length, throughput, quality, and resource utilization and investigated the correlations between these factors. The results indicate that model size and types of prompts used for inference significantly influenced response length and quality. In addition, common prompts, which include various types of queries, generate diverse and inconsistent responses at irregular intervals. In contrast, domain-specific prompts consistently generate concise responses within a reasonable time. Overall, this study underscores the need for comprehensive evaluation frameworks to enhance the reliability of benchmarking procedures in multidomain AI research."
+      },
+      {
+        "paperId": "77725db1efcd2812f653aa18620d69669bcd945d",
+        "externalIds": {
+          "DOI": "10.1016/j.tre.2024.103689",
+          "CorpusId": 271474167
+        },
+        "title": "Benchmarking operations and supply chain management practices using Generative AI: Towards a theoretical framework",
+        "venue": "Transportation Research Part E: Logistics and Transportation Review",
+        "year": 2024,
+        "citationCount": 84,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.tre.2024.103689?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.tre.2024.103689, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2051250",
+            "name": "Rameshwar Dubey"
+          },
+          {
+            "authorId": "143809890",
+            "name": "A. Gunasekaran"
+          },
+          {
+            "authorId": "1879141",
+            "name": "T. Papadopoulos"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "a7a92f2ced95d88c3bf5d2af1bbacf910ca20fc5",
+        "externalIds": {
+          "DOI": "10.61987/jemr.v4i6.1488",
+          "CorpusId": 285834619
+        },
+        "title": "Benchmarking and Best Practices as Strategies to Improve the Quality of Islamic Education",
+        "venue": "Journal of Educational Management Research",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.61987/jemr.v4i6.1488?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.61987/jemr.v4i6.1488, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2415192789",
+            "name": "Rini Asmiati"
+          },
+          {
+            "authorId": "2400180586",
+            "name": "Siti Julaiha"
+          }
+        ],
+        "abstract": "This research aims to analyze the role of benchmarking and best practices in enhancing the quality of Islamic education. The study examines how benchmarking serves as a systematic comparison tool for identifying outstanding practices that can be adapted to the specific context of Islamic educational institutions. Additionally, the article explores how best practices contribute to the innovation of curriculum, teacher competency, quality management, and creative teaching strategies. The study employs a literature review methodology, drawing on scholarly articles, books, and journals to analyze theoretical frameworks and empirical findings on benchmarking and best practices in Islamic education. The findings indicate that integrating benchmarking and best practices through Total Quality Management (TQM) significantly improves curriculum quality, teaching effectiveness, and teacher professionalism, and fosters a culture of continuous quality improvement. The implications of this study suggest that implementing these strategies can make Islamic education more adaptive, innovative, competitive, and rooted in Islamic values. By adopting benchmarking and best practices, Islamic educational institutions can effectively address existing challenges and ensure sustainable improvements in academic outcomes."
+      },
+      {
+        "paperId": "7b01edbcdcadc8701ca1cd2489b5f28664c2cb67",
+        "externalIds": {
+          "DOI": "10.1038/s41576-023-00679-6",
+          "CorpusId": 266971297,
+          "PubMed": "38216661"
+        },
+        "title": "Challenges and best practices in omics benchmarking",
+        "venue": "Nature reviews genetics",
+        "year": 2024,
+        "citationCount": 37,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41576-023-00679-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41576-023-00679-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2253408918",
+            "name": "Thomas S. Brooks"
+          },
+          {
+            "authorId": "1933401",
+            "name": "N. Lahens"
+          },
+          {
+            "authorId": "1478362295",
+            "name": "Antonijo Mrcela"
+          },
+          {
+            "authorId": "2170742712",
+            "name": "Gregory R. Grant"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "df8411968078e29e88c18842a3d391d4c61bb772",
+        "externalIds": {
+          "DBLP": "journals/cryptography/ThabetTKS25",
+          "DOI": "10.3390/cryptography10010011",
+          "CorpusId": 285576476
+        },
+        "title": "Post-Quantum PKI: A Survey of Applications and Benchmarking Practices",
+        "venue": "Cryptogr.",
+        "year": 2026,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/cryptography10010011?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/cryptography10010011, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2410656691",
+            "name": "Maya Thabet"
+          },
+          {
+            "authorId": "2203380890",
+            "name": "Antonia Tsili"
+          },
+          {
+            "authorId": "2336314079",
+            "name": "Konstantinos Krilakis"
+          },
+          {
+            "authorId": "2335344314",
+            "name": "Dimitris Syvridis"
+          }
+        ],
+        "abstract": "Post-quantum cryptography (PQC) is, and should be, currently dominating the field of cybersecurity, with many works designing and evaluating the transition of communications security to quantum-safe solutions. As the security level and implementations of post-quantum algorithms become more mature, the research on their application to realistic conditions changes accordingly, especially their application to widely adopted network architectures and corresponding protocols such as the Public Key Infrastructure (PKI). In this survey, we identified articles presenting ways of integrating PQC algorithms to PKI and classified related work according to the employed methods and benchmarking choices. The main results from many evaluations converge to similar conclusions on the performance of the most popular PC digital signature algorithms; however, modeling choices concerning architecture variants, hardware and measurement metrics vary. The diversity of the results and experimental setups makes comparison difficult and arrival at an objective conclusion regarding PKI requirements almost impossible. Ultimately, this review reveals a fragmented landscape of benchmarking practices for post-quantum PKI systems. The absence of standardized evaluation frameworks and common test environments limits the comparability and reproducibility of the findings. We aim to provide reference implementations, which are essential to guide the transition of PKI infrastructures toward robust, scalable, and quantum-resistant deployments."
+      },
+      {
+        "paperId": "456af29f0f3d8b8dbd0434f1741226a2d17bdbe0",
+        "externalIds": {
+          "DOI": "10.3138/jehr-2024-0029",
+          "CorpusId": 287600462
+        },
+        "title": "Creating Job Descriptions and Benchmarking Practices: A Human Resource Management Field Exercise Serving Nonprofit Organizations",
+        "venue": "Journal of Education Human Resources",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3138/jehr-2024-0029?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3138/jehr-2024-0029, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "113229516",
+            "name": "Nathan Kirkpatrick"
+          },
+          {
+            "authorId": "2300604988",
+            "name": "Charles Carson"
+          }
+        ],
+        "abstract": "This article seeks to unpack and explain a helpful human resource management field exercise for business students that serves nonprofit organizations and provides tangible experience for students in interviewing, job description creation, and benchmarking best practices. This field exercise is designed to serve nonprofit organizations, given that many of these entities may not have well-developed or established human resource management practices. This article introduces the exercise, the background information related to conducting the project, explains which business classes this type of field exercise would be valuable in, and provides a road map for carrying out the exercise through practical steps, a grading rubric, and learning objectives that undergird the exercise. This human resource management field exercise has been used by an Association to Advance Collegiate Schools of Business (AACSB) school of business in the southeastern United States and has been carried out multiple times in a Human Resource and Organization Management MBA class."
+      },
+      {
+        "paperId": "8f91bafb8f51af2e73b5830743f7f24e1958f5e4",
+        "externalIds": {
+          "DOI": "10.1108/bij-12-2024-1092",
+          "CorpusId": 283432058
+        },
+        "title": "A benchmarking approach to lean quality practices: developing a strategic roadmap for port efficiency",
+        "venue": "Benchmarking : An International Journal",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/bij-12-2024-1092?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/bij-12-2024-1092, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2186061754",
+            "name": "Marvin E. Gonzalez"
+          },
+          {
+            "authorId": "80673340",
+            "name": "G. Quesada"
+          },
+          {
+            "authorId": "2255651086",
+            "name": "Kent Gourdin"
+          },
+          {
+            "authorId": "39168144",
+            "name": "Rene D. Mueller"
+          }
+        ],
+        "abstract": "\n \n This study demonstrates how lean tools and total quality management (TQM) methodologies can improve operational efficiency and competitiveness in port operations.\n \n \n \n Data from three ports (United States, Costa Rica and Spain) were gathered via field observations, focus group discussions and interviews. Key processes analyzed were crane operations, yard management and gate inbound/outbound operations. Lean tools applied included fishbone analysis, value stream mapping (VSM), overall equipment effectiveness (OEE), DMAIC, bottleneck analysis, Kanban, 5S and quality function deployment (QFD). A benchmarking map was created to compare performance and guide lean implementation.\n \n \n \n The US port achieved the highest level of operational efficiency through comprehensive lean tool adoption and training. Costa Rica excelled in yard operations but lagged elsewhere due to limited lean practice use. Spain actively used lean tools, but isolated application reduced their effectiveness.\n \n \n \n This study provides valuable insights into applying lean tools in port operations, but has notable limitations. It examined only three ports in different countries, each with unique regulatory and cultural contexts, limiting the generalizability of findings. The reliance on qualitative data offers rich detail but may introduce bias and lacks quantitative performance metrics. Confidentiality agreements also restricted disclosure of operational details, reducing comparative depth. Future research should expand the sample size to include more geographically and operationally diverse ports. Incorporating larger datasets and varied case studies would strengthen benchmarking frameworks.\n \n \n \n This paper demonstrates how various lean tools help ports align with strategic objectives and foster continuous improvement. The benchmarking map provides a visual guide for implementing or refining lean practices.\n \n \n \n This study provides practical insights into the application of lean and TQM tools in port environments and offers a structured benchmarking framework to support performance improvement across diverse operational contexts.\n"
+      },
+      {
+        "paperId": "35980aadf498012f0eddbeb16d1915f640361457",
+        "externalIds": {
+          "DOI": "10.1108/bij-06-2024-0511",
+          "CorpusId": 275488803
+        },
+        "title": "Benchmarking the best practices of Lean Six Sigma in aerospace industry in India: a longitudinal multiple case analysis and roadmap for deployment",
+        "venue": "Benchmarking : An International Journal",
+        "year": 2025,
+        "citationCount": 4,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/bij-06-2024-0511?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/bij-06-2024-0511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "98519794",
+            "name": "S. Bhat"
+          },
+          {
+            "authorId": "3281096",
+            "name": "E. V. Gijo"
+          },
+          {
+            "authorId": "33782205",
+            "name": "Vinayambika S. Bhat"
+          }
+        ],
+        "abstract": "PurposeThis article intends to comprehend the Lean Six Sigma (LSS) approach adopted in the aerospace industry in India for process improvement. This research has the objective of determining LSS deliverables such as Voice of Customer (VOC), Key Performance Indicators (KPIs), Critical-to-Quality (CTQ), project approach, deployment strategies and tools and techniques used to execute the project.Design/methodology/approachThe study adopted an exploratory research methodology and a multiple case study analysis to draw robust inferences. The research is carried out in the Indian aerospace industry and analyses five case studies. The case studies were collated from the company via a case study protocol with pre-defined criteria. Also, a semi-structured interview is conducted with the stakeholders of each case study to determine the deployment strategies followed during the respective projects.FindingsIt is reconfirmed that LSS is crucial in the aerospace industry, particularly in engine and gear shops, to reduce rework and rejections. Also, it was found that cost and time savings are essential KPIs. Some LSS projects require multiple CTQs for process improvement in aero industries. The DMAIC approach is used for project execution, with the Design of Experiment (DOE) being an essential tool. Top management engagement, effective HRM practices, customer focus, cross-functional collaboration and clear roles are essential for successful LSS projects. Eventually, a road map was developed based on the analysis of multiple case studies.Research limitations/implicationsThe study is focused on the aerospace industry in India, which may limit the generalizability of the findings to other industries or regions. The small sample size and reliance on qualitative data through semi-structured interviews may introduce subjectivity. Additionally, the long-term effects of LSS implementation, particularly in the context of evolving technologies, were not fully explored.Practical implicationsThis study provides actionable insights for aerospace companies and related organisations to enhance quality and operational performance. The developed roadmap offers a practical guide for LSS deployment, helping organisations improve efficiency and competitiveness, especially in an era of economic slowdown and high competition.Originality/valueThe study reveals similarities and differences in LSS deliverables in Indian aerospace industries, creating a roadmap and tool matrix for project execution and serving as a template for manufacturing industries."
+      },
+      {
+        "paperId": "4bcb5cdf0f65f7bf232430757bc7bb7ce24f6e3d",
+        "externalIds": {
+          "DOI": "10.17513/snt.39086",
+          "CorpusId": 248140274
+        },
+        "title": "BENCHMARKING PRACTICES AS A RESOURCE FOR STUDENTS WITH SPECIAL EDUCATIONAL NEEDS IN THE HIGHER SCHOOL SYSTEM",
+        "venue": "Современные наукоемкие технологии (Modern High Technologies)",
+        "year": 2022,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://s.top-technologies.ru/pdf/2022/3/39086.pdf",
+          "status": "GOLD",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17513/snt.39086?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17513/snt.39086, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "21835145",
+            "name": "L. Zakirova"
+          },
+          {
+            "authorId": "82323997",
+            "name": "L. Komarova"
+          },
+          {
+            "authorId": "2162286329",
+            "name": "F.M. Yamaleeva"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "771035f6645c66138e9ed397620724e021e9701a",
+        "externalIds": {
+          "DOI": "10.1097/LVT.0000000000000494",
+          "CorpusId": 272818133,
+          "PubMed": "39311852"
+        },
+        "title": "Core outcome sets and benchmarking complications: Defining best practices for standardized outcome reporting in liver transplantation",
+        "venue": "Liver transplantation",
+        "year": 2024,
+        "citationCount": 10,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1097/LVT.0000000000000494?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1097/LVT.0000000000000494, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2189427831",
+            "name": "C. Wehrle"
+          },
+          {
+            "authorId": "2118216332",
+            "name": "F. D. de Goeij"
+          },
+          {
+            "authorId": "2289478149",
+            "name": "Mingyi Zhang"
+          },
+          {
+            "authorId": "1830377561",
+            "name": "F. Abbassi"
+          },
+          {
+            "authorId": "2279982096",
+            "name": "Sangeeta Satish"
+          },
+          {
+            "authorId": "2274987347",
+            "name": "Chunbao Jiao"
+          },
+          {
+            "authorId": "2214562244",
+            "name": "Keyue Sun"
+          },
+          {
+            "authorId": "2279984013",
+            "name": "A. Pinna"
+          },
+          {
+            "authorId": "2283867487",
+            "name": "Koji Hashimoto"
+          },
+          {
+            "authorId": "2290009212",
+            "name": "Charles Miller"
+          },
+          {
+            "authorId": "2240738710",
+            "name": "Wojciech G. Polak"
+          },
+          {
+            "authorId": "2248475493",
+            "name": "Pierre-Alain Clavien"
+          },
+          {
+            "authorId": "2257849764",
+            "name": "Jeroen de Jonge"
+          },
+          {
+            "authorId": "2268048791",
+            "name": "A. Schlegel"
+          }
+        ],
+        "abstract": "The comparison of outcomes in liver transplantation (LT) is hampered by using clinically nonrelevant surrogate endpoints and considerable variability in reported relevant posttransplant outcomes. Such variability stems from nonstandard outcome measures across studies, variable definitions of the same complication, and different timing of reporting. The Clavien-Dindo classification was established to improve the rigor of outcome reporting but is nonspecific to an intervention, and there are unsolved dilemmas specifically related to LT. Core outcome sets (COSs) have been used in other specialties to standardize outcomes research, but have not been defined for LT. Thus, we use the 5 major benchmarking studies published to date to define a 10-measure COS for LT using previously validated metrics. We further provide standard definitions for each of the 10 measures that may be used in international research on the topic. These definitions also include standard time points for recording to facilitate between-study comparisons and future meta-analysis. These 10 outcomes are paired with 3 validated, procedure-independent metrics, including the Clavien-Dindo Classification and the Comprehensive Complications Index. The Clavien scale and Comprehensive Complications Index are specifically reviewed to enhance their utility in LT, and their use, along with the COS, is explored. We encourage future studies to employ this COS along with the Clavien-Dindo grading system and Comprehensive Complications Index to improve the reproducibility and generalizability of research concerning LT."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "LLM evaluation methodology benchmark",
+    "results": [
+      {
+        "paperId": "838e571d2cc674ac0e88d89cd1159f9e42afa067",
+        "externalIds": {
+          "ArXiv": "2511.14967",
+          "DBLP": "journals/corr/abs-2511-14967",
+          "DOI": "10.48550/arXiv.2511.14967",
+          "CorpusId": 283103744
+        },
+        "title": "MermaidSeqBench: An Evaluation Benchmark for LLM-to-Mermaid Sequence Diagram Generation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 3,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.14967, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1720805839",
+            "name": "Basel Shbita"
+          },
+          {
+            "authorId": "2393879701",
+            "name": "Farhan Ahmed"
+          },
+          {
+            "authorId": "123819783",
+            "name": "Chad DeLuca"
+          }
+        ],
+        "abstract": "Large language models (LLMs) have shown great promise in generating structured diagrams from natural language descriptions, particularly Mermaid sequence diagrams for software engineering. However, the lack of existing benchmarks to assess the LLM's correctness on this task hinders the reliable deployment of these models in production environments. To address this shortcoming, we introduce MermaidSeqBench, a human-verified and LLM-synthetically-extended benchmark for assessing LLM capabilities in generating Mermaid sequence diagrams from natural language prompts. The benchmark consists of 132 samples developed via a hybrid methodology of human-verified flows, LLM-based augmentation, and rule-based expansion. The evaluation uses an LLM-as-a-judge model to assess generation across various fine-grained metrics such as syntax correctness, activation handling, error handling, and practical usability. To demonstrate the effectiveness and flexibility of our benchmark, we perform initial evaluations on numerous state-of-the-art LLMs with multiple LLM judges which reveal significant capability gaps across models and evaluation modes. MermaidSeqBench provides a foundation for evaluating structured diagram generation and establishes the correctness standards needed for real-world software engineering deployment."
+      },
+      {
+        "paperId": "86177d6d07e0cd701669ff199b8104cfee064486",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2505-24324",
+          "ArXiv": "2505.24324",
+          "DOI": "10.1109/Forge66646.2025.00015",
+          "CorpusId": 279070522
+        },
+        "title": "SwiftEval: Developing a Language-Specific Benchmark for LLM-generated Code Evaluation",
+        "venue": "2025 IEEE/ACM Second International Conference on AI Foundation Models and Software Engineering (Forge)",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.24324, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2364681960",
+            "name": "Ivan Petrukha"
+          },
+          {
+            "authorId": "2364681644",
+            "name": "Yana Kurliak"
+          },
+          {
+            "authorId": "2366614881",
+            "name": "Nataliia Stulova"
+          }
+        ],
+        "abstract": "In recent years, large language models (LLMs) have showcased significant advancements in code generation. However, most evaluation benchmarks are primarily oriented towards Python, making it difficult to evaluate other programming languages, such as Swift, with high quality. By examining widely established multilingual benchmarks like HumanEval-Xl and MultiPL-E, we identified critical issues specific to their Swift components, making them insufficient or even irrelevant for assessing LLM coding capabilities on Swift. Unlike these existing approaches, which prioritize rapid scaling and generalization by automatically translating Python-Centric benchmarks with LLMs, we adopt a quality-over-quantity methodology. We present SwiftEval, the first Swift-Oriented benchmark consisting of 28 carefully hand-crafted problems, and evaluate 44 popular Code LLMs on it. Our results show significant LLM scores drop for problems requiring language-specific features, most noticeable in the models of smaller sizes."
+      },
+      {
+        "paperId": "0036df39e45c9db5eb708f6a16875b3c2b2cf83a",
+        "externalIds": {
+          "DOI": "10.15622/ia.24.6.7",
+          "CorpusId": 283663923
+        },
+        "title": "Methodology for Creating a Benchmark to Evaluate LLM Performance on Numerals",
+        "venue": "Informatics and Automation",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.15622/ia.24.6.7?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.15622/ia.24.6.7, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "144472932",
+            "name": "S. Karpovich"
+          },
+          {
+            "authorId": "2327419975",
+            "name": "Alexander Smirnov"
+          },
+          {
+            "authorId": "2279064060",
+            "name": "Nikolay Teslya"
+          }
+        ],
+        "abstract": "The article presents a methodology for designing a benchmark to assess numerical reasoning skills in Large Language Models (LLMs). In the context of LLMs, numerical reasoning is defined as a model’s ability to correctly interpret, process, and utilize numerical information in text, including understanding magnitudes and relations between numbers, performing arithmetic operations, and generating numerals accurately in its outputs. The proposed methodology is based on decomposing applied tasks and enables targeted evaluation of specific facets of numerical reasoning using tasks that involve numerals. Particular attention is paid to the representation of numbers in textual prompts to LLMs, as this factor directly affects the quality of the final output. The need for rigorous assessment of LLMs’ numerical reasoning stems from its critical role across a wide range of text-centric applications, including automated summarization, generation of analytical reports, extraction and interpretation of quantitative data, and conversational systems operating on financial, scientific, or technical information. Drawing on an analysis of state-of-the-art LLM evaluation approaches, core principles for constructing evaluation benchmarks are formulated with an emphasis on generality and real-world applicability. In accordance with the proposed methodology, the MUE (Math Understanding Evaluation) benchmark is introduced; it comprises five test suites, each designed to assess a distinct aspect of LLM numerical reasoning. A comparative evaluation of popular LLMs is conducted, leading models are identified, and the strengths and weaknesses of their numerical reasoning are characterized. The findings are intended to inform LLM developers in refining architectures and training strategies, and to guide end users and integrators in selecting an optimal model for applied projects."
+      },
+      {
+        "paperId": "d9c26364f89a7705bf56cda10dc467939cf0f8bf",
+        "externalIds": {
+          "DBLP": "phd/hal/Chhun24",
+          "DOI": "10.70675/ec296eb8z87a1z4fdbzbbbdz12bb27449b8f",
+          "CorpusId": 279000986
+        },
+        "title": "Meta-Evaluation Methodology and Benchmark for Automatic Story Generation. (Méthodologie et méta-évaluation comparative pour la génération automatique d'histoires)",
+        "venue": "",
+        "year": 2024,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.70675/ec296eb8z87a1z4fdbzbbbdz12bb27449b8f?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.70675/ec296eb8z87a1z4fdbzbbbdz12bb27449b8f, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2364172422",
+            "name": "Cyril Chhun"
+          }
+        ],
+        "abstract": "\n La narration d'histoires est un élément central de la culture humaine. De nombreuses approches de narration numérique ont été proposées, malgré les défis inhérents aux tâches de génération d'histoires et d'évaluation de leur qualité. Dans cette thèse, nous concevons une méthodologie et un benchmark pour la méta-évaluation de la génération automatique d'histoires (ASG).Tout d'abord, nous posons les bases de notre méta-évaluation : nous décrivons le contexte choisi, définissons les tâches d'ASG et d'évaluation automatique d'histoires (ASE) et proposons un ensemble original de six critères pour l'évaluation d'histoires. Ensuite, nous présentons HANNA, notre corpus d'histoires annotées manuellement (Human ANnotated NArratives), qui contient 1 056 histoires annotées selon nos six critères, et nous montrons que ces derniers permettent une évaluation humaine standardisée. Nous utilisons des grands modèles de langage (LLM) pour ajouter 480 nouvelles histoires et 150k+ annotations à HANNA. Nous observons principalement que les LLM obtiennent de meilleures notes que les humains, d'après les LLM que nous avons sélectionnés. Ensuite, nous effectuons notre méta-évaluation comparative des mesures automatiques sur HANNA. Nous observons principalement que des mesures spécifiques pour l'ASE sont nécessaires, et que les mesures couramment utilisées comme BLEU sont sous-optimales.Nous montrons ensuite notre analyse de la performance des LLM pour l'ASE : nous constatons que les LLM sont actuellement la meilleure approximation de l'évaluation humaine de l'ASG et que, dans notre contexte spécifique, fournir des consignes détaillées n'améliore pas les corrélations entre les LLM et les évaluations humaines. Nos résultats nous incitent à étudier si les performances affichées par les LLM en ASE et ASG peuvent être expliquées par différents facteurs. Nous réalisons une étude en trois parties sur les explications générées par les LLM et une analyse des données de pré-entraînement sur les performances des LLM. Nous constatons notamment que les LLM éprouvent des difficultés à expliquer leurs réponses par des affirmations étayées.Pour conclure, nous présentons trois perspectives de recherche principales : la conception de mesures spécifiques à l'ASE, l'étude plus approfondie des performances des LLM en ASG et ASE, et l'évaluation et l'atténuation des risques des LLM sur la société."
+      },
+      {
+        "paperId": "18b3b96ffb28c785452081aa367cbc02a1cf7567",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2401-04531",
+          "ArXiv": "2401.04531",
+          "DOI": "10.48550/arXiv.2401.04531",
+          "CorpusId": 266899830
+        },
+        "title": "MERA: A Comprehensive LLM Evaluation in Russian",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 38,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2401.04531, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "10054744",
+            "name": "Alena Fenogenova"
+          },
+          {
+            "authorId": "2278795222",
+            "name": "A. Chervyakov"
+          },
+          {
+            "authorId": "2180794333",
+            "name": "Nikita Martynov"
+          },
+          {
+            "authorId": "2278796972",
+            "name": "Anastasia V. Kozlova"
+          },
+          {
+            "authorId": "1564571932",
+            "name": "M. Tikhonova"
+          },
+          {
+            "authorId": "2188733371",
+            "name": "Albina Akhmetgareeva"
+          },
+          {
+            "authorId": "146059392",
+            "name": "Anton A. Emelyanov"
+          },
+          {
+            "authorId": "80739149",
+            "name": "Denis Shevelev"
+          },
+          {
+            "authorId": "39434476",
+            "name": "P. Lebedev"
+          },
+          {
+            "authorId": "102315613",
+            "name": "Leonid S. Sinev"
+          },
+          {
+            "authorId": "2103078579",
+            "name": "U. Isaeva"
+          },
+          {
+            "authorId": "2232601767",
+            "name": "Katerina Kolomeytseva"
+          },
+          {
+            "authorId": "2268318729",
+            "name": "Daniil Moskovskiy"
+          },
+          {
+            "authorId": "2266389312",
+            "name": "E. Goncharova"
+          },
+          {
+            "authorId": "2198165070",
+            "name": "Nikita Savushkin"
+          },
+          {
+            "authorId": "2278793085",
+            "name": "Polina Mikhailova"
+          },
+          {
+            "authorId": "2254284540",
+            "name": "Denis Dimitrov"
+          },
+          {
+            "authorId": "2266390354",
+            "name": "Alexander Panchenko"
+          },
+          {
+            "authorId": "143659208",
+            "name": "Sergey Markov"
+          }
+        ],
+        "abstract": "Over the past few years, one of the most notable advancements in AI research has been in foundation models (FMs), headlined by the rise of language models (LMs). As the models' size increases, LMs demonstrate enhancements in measurable aspects and the development of new qualitative features. However, despite researchers' attention and the rapid growth in LM application, the capabilities, limitations, and associated risks still need to be better understood. To address these issues, we introduce an open Multimodal Evaluation of Russian-language Architectures (MERA), a new instruction benchmark for evaluating foundation models oriented towards the Russian language. The benchmark encompasses 21 evaluation tasks for generative models in 11 skill domains and is designed as a black-box test to ensure the exclusion of data leakage. The paper introduces a methodology to evaluate FMs and LMs in zero- and few-shot fixed instruction settings that can be extended to other modalities. We propose an evaluation methodology, an open-source code base for the MERA assessment, and a leaderboard with a submission system. We evaluate open LMs as baselines and find that they are still far behind the human level. We publicly release MERA to guide forthcoming research, anticipate groundbreaking model features, standardize the evaluation procedure, and address potential societal drawbacks."
+      },
+      {
+        "paperId": "3d7dd966a3ce6cc8e9ce9329f4d586ef480f15a3",
+        "externalIds": {
+          "DBLP": "conf/emnlp/ChenHLHZYLHLWL25",
+          "DOI": "10.18653/v1/2025.findings-emnlp.697",
+          "CorpusId": 282897312
+        },
+        "title": "ACEBench: A Comprehensive Evaluation of LLM Tool Usage",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 11,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2025.findings-emnlp.697?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2025.findings-emnlp.697, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2341673156",
+            "name": "Chen Chen"
+          },
+          {
+            "authorId": "2319803268",
+            "name": "Xinlong Hao"
+          },
+          {
+            "authorId": "2281903918",
+            "name": "Weiwen Liu"
+          },
+          {
+            "authorId": "2340699145",
+            "name": "Xu Huang"
+          },
+          {
+            "authorId": "2329903868",
+            "name": "Xingshan Zeng"
+          },
+          {
+            "authorId": "2319400570",
+            "name": "Shuai Yu"
+          },
+          {
+            "authorId": "2284449061",
+            "name": "Dexun Li"
+          },
+          {
+            "authorId": "2239389807",
+            "name": "Yue-Run Huang"
+          },
+          {
+            "authorId": "2391748764",
+            "name": "Xiangcheng Liu"
+          },
+          {
+            "authorId": "2319420767",
+            "name": "Xinzhi Wang"
+          },
+          {
+            "authorId": "2342989060",
+            "name": "Wulong Liu"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have demonstrated significant potential in decision-making and reasoning, particularly when integrated with various tools to effectively solve complex problems. However, existing benchmarks for evaluating LLMs’ tool usage face several limitations: (1) limited evaluation scenarios, often lacking assessments in real multi-turn dialogue contexts; (2) narrow evaluation dimensions, with insufficient detailed assessments of how LLMs use tools; and (3) reliance on LLMs or real API executions for evaluation, which introduces significant overhead. To address these challenges, we introduce ACEBench, a comprehensive benchmark for assessing tool usage in LLMs. ACEBench categorizes data into three primary types based on evaluation methodology: Normal, Special, and Agent. \"Normal\" evaluates tool usage in basic scenarios; \"Special\" evaluates tool usage in situations with ambiguous or incomplete instructions; \"Agent\" evaluates tool usage through multi-agent interactions to simulate real-world, multi-turn dialogues. We conducted extensive experiments using ACEBench, analyzing various LLMs in-depth and providing a more granular examination of error causes across different data types."
+      },
+      {
+        "paperId": "5fc1d26c2d8c2f7e22b998b92e141ef7dd454d4d",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2602-04064",
+          "ArXiv": "2602.04064",
+          "DOI": "10.48550/arXiv.2602.04064",
+          "CorpusId": 285285449
+        },
+        "title": "The CitizenQuery Benchmark: A Novel Dataset and Evaluation Pipeline for Measuring LLM Performance in Citizen Query Tasks",
+        "venue": "arXiv.org",
+        "year": 2026,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.04064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2303158413",
+            "name": "Neil Majithia"
+          },
+          {
+            "authorId": "2293721930",
+            "name": "Rajat Shinde"
+          },
+          {
+            "authorId": "2408640779",
+            "name": "Zo Chapman"
+          },
+          {
+            "authorId": "2381665858",
+            "name": "Prajun Trital"
+          },
+          {
+            "authorId": "2069162322",
+            "name": "Jordan Decker"
+          },
+          {
+            "authorId": "1742090",
+            "name": "M. Maskey"
+          },
+          {
+            "authorId": "2274939157",
+            "name": "E. Simperl"
+          },
+          {
+            "authorId": "2274675619",
+            "name": "Nigel Shadbolt"
+          }
+        ],
+        "abstract": "\"Citizen queries\"are questions asked by an individual about government policies, guidance, and services that are relevant to their circumstances, encompassing a range of topics including benefits, taxes, immigration, employment, public health, and more. This represents a compelling use case for Large Language Models (LLMs) that respond to citizen queries with information that is adapted to a user's context and communicated according to their needs. However, in this use case, any misinformation could have severe, negative, likely invisible ramifications for an individual placing their trust in a model's response. To this effect, we introduce CitizenQuery-UK, a benchmark dataset of 22 thousand pairs of citizen queries and responses that have been synthetically generated from the swathes of public information on $gov.uk$ about government in the UK. We present the curation methodology behind CitizenQuery-UK and an overview of its contents. We also introduce a methodology for the benchmarking of LLMs with the dataset, using an adaptation of FActScore to benchmark 11 models for factuality, abstention frequency, and verbosity. We document these results, and interpret them in the context of the public sector, finding that: (i) there are distinct performance profiles across model families, but each is competitive; (ii) high variance undermines utility; (iii) abstention is low and verbosity is high, with implications on reliability; and (iv) more trustworthy AI requires acknowledged\"fallibility\"in the way it interacts with users. The contribution of our research lies in assessing the trustworthiness of LLMs in citizen query tasks; as we see a world of increasing AI integration into day-to-day life, our benchmark, built entirely on open data, lays the foundations for better evidenced decision-making regarding AI and the public sector."
+      },
+      {
+        "paperId": "c5caed7fbc46933195a2644325a0f72488d37182",
+        "externalIds": {
+          "DBLP": "journals/kais/LiW26",
+          "DOI": "10.1007/s10115-026-02703-7",
+          "CorpusId": 286003772
+        },
+        "title": "Legaleval-q: a benchmark for quality evaluation of LLM-generated Chinese legal text",
+        "venue": "Knowledge and Information Systems",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10115-026-02703-7?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10115-026-02703-7, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2364790053",
+            "name": "Yunhan Li"
+          },
+          {
+            "authorId": "2364696459",
+            "name": "Gengshen Wu"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "7e4d3b819547212190325d0771cafebcd009f241",
+        "externalIds": {
+          "ArXiv": "2511.13998",
+          "DBLP": "journals/corr/abs-2511-13998",
+          "DOI": "10.48550/arXiv.2511.13998",
+          "CorpusId": 283080288
+        },
+        "title": "LoCoBench-Agent: An Interactive Benchmark for LLM Agents in Long-Context Software Engineering",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.13998, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2375300635",
+            "name": "Jielin Qiu"
+          },
+          {
+            "authorId": "2286595352",
+            "name": "Zuxin Liu"
+          },
+          {
+            "authorId": "2223887365",
+            "name": "Zhiwei Liu"
+          },
+          {
+            "authorId": "2223748790",
+            "name": "Rithesh Murthy"
+          },
+          {
+            "authorId": "2312345256",
+            "name": "Jianguo Zhang"
+          },
+          {
+            "authorId": "2319965998",
+            "name": "Haolin Chen"
+          },
+          {
+            "authorId": "2352883539",
+            "name": "Shiyu Wang"
+          },
+          {
+            "authorId": "2308423944",
+            "name": "Ming Zhu"
+          },
+          {
+            "authorId": "2354128342",
+            "name": "Liangwei Yang"
+          },
+          {
+            "authorId": "2286700513",
+            "name": "Juntao Tan"
+          },
+          {
+            "authorId": "2372863501",
+            "name": "Roshan Ram"
+          },
+          {
+            "authorId": "116606529",
+            "name": "Akshara Prabhakar"
+          },
+          {
+            "authorId": "2047548223",
+            "name": "T. Awalgaonkar"
+          },
+          {
+            "authorId": "2389218943",
+            "name": "Zixiang Chen"
+          },
+          {
+            "authorId": "2060909365",
+            "name": "Zhepeng Cen"
+          },
+          {
+            "authorId": "2380062516",
+            "name": "Cheng Qian"
+          },
+          {
+            "authorId": "71926704",
+            "name": "Shelby Heinecke"
+          },
+          {
+            "authorId": "2275161304",
+            "name": "Weiran Yao"
+          },
+          {
+            "authorId": "2238207181",
+            "name": "Silvio Savarese"
+          },
+          {
+            "authorId": "2256976968",
+            "name": "Caiming Xiong"
+          },
+          {
+            "authorId": "2258793468",
+            "name": "Huan Wang"
+          }
+        ],
+        "abstract": "As large language models (LLMs) evolve into sophisticated autonomous agents capable of complex software development tasks, evaluating their real-world capabilities becomes critical. While existing benchmarks like LoCoBench~\\cite{qiu2025locobench} assess long-context code understanding, they focus on single-turn evaluation and cannot capture the multi-turn interactive nature, tool usage patterns, and adaptive reasoning required by real-world coding agents. We introduce \\textbf{LoCoBench-Agent}, a comprehensive evaluation framework specifically designed to assess LLM agents in realistic, long-context software engineering workflows. Our framework extends LoCoBench's 8,000 scenarios into interactive agent environments, enabling systematic evaluation of multi-turn conversations, tool usage efficiency, error recovery, and architectural consistency across extended development sessions. We also introduce an evaluation methodology with 9 metrics across comprehension and efficiency dimensions. Our framework provides agents with 8 specialized tools (file operations, search, code analysis) and evaluates them across context lengths ranging from 10K to 1M tokens, enabling precise assessment of long-context performance. Through systematic evaluation of state-of-the-art models, we reveal several key findings: (1) agents exhibit remarkable long-context robustness; (2) comprehension-efficiency trade-off exists with negative correlation, where thorough exploration increases comprehension but reduces efficiency; and (3) conversation efficiency varies dramatically across models, with strategic tool usage patterns differentiating high-performing agents. As the first long-context LLM agent benchmark for software engineering, LoCoBench-Agent establishes a rigorous foundation for measuring agent capabilities, identifying performance gaps, and advancing autonomous software development at scale."
+      },
+      {
+        "paperId": "a67e03298127b2a42a971718735d1318b5c45772",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2411-06032",
+          "ArXiv": "2411.06032",
+          "DOI": "10.48550/arXiv.2411.06032",
+          "CorpusId": 273962875
+        },
+        "title": "LLM-GLOBE: A Benchmark Evaluating the Cultural Values Embedded in LLM Output",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 28,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.06032, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2330183980",
+            "name": "Elise Karinshak"
+          },
+          {
+            "authorId": "2056384798",
+            "name": "Amanda Hu"
+          },
+          {
+            "authorId": "2330185481",
+            "name": "Kewen Kong"
+          },
+          {
+            "authorId": "144614226",
+            "name": "V. Rao"
+          },
+          {
+            "authorId": "2398855242",
+            "name": "Jingren Wang"
+          },
+          {
+            "authorId": "2281902732",
+            "name": "Jindong Wang"
+          },
+          {
+            "authorId": "2385991912",
+            "name": "Yi Zeng"
+          }
+        ],
+        "abstract": "Immense effort has been dedicated to minimizing the presence of harmful or biased generative content and better aligning AI output to human intention; however, research investigating the cultural values of LLMs is still in very early stages. Cultural values underpin how societies operate, providing profound insights into the norms, priorities, and decision making of their members. In recognition of this need for further research, we draw upon cultural psychology theory and the empirically-validated GLOBE framework to propose the LLM-GLOBE benchmark for evaluating the cultural value systems of LLMs, and we then leverage the benchmark to compare the values of Chinese and US LLMs. Our methodology includes a novel\"LLMs-as-a-Jury\"pipeline which automates the evaluation of open-ended content to enable large-scale analysis at a conceptual level. Results clarify similarities and differences that exist between Eastern and Western cultural value systems and suggest that open-generation tasks represent a more promising direction for evaluation of cultural values. We interpret the implications of this research for subsequent model development, evaluation, and deployment efforts as they relate to LLMs, AI cultural alignment more broadly, and the influence of AI cultural value systems on human-AI collaboration outcomes."
+      },
+      {
+        "paperId": "bd56ea28bdac7ab99fb56862f1c3df12db71510a",
+        "externalIds": {
+          "ArXiv": "2505.04146",
+          "DBLP": "journals/corr/abs-2505-04146",
+          "DOI": "10.48550/arXiv.2505.04146",
+          "CorpusId": 278368295
+        },
+        "title": "Unmasking the Canvas: A Dynamic Benchmark for Image Generation Jailbreaking and LLM Content Safety",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.04146, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2290928918",
+            "name": "V. Nair"
+          },
+          {
+            "authorId": "2359452393",
+            "name": "Vishal Varma Dantuluri"
+          }
+        ],
+        "abstract": "Existing large language models (LLMs) are advancing rapidly and produce outstanding results in image generation tasks, yet their content safety checks remain vulnerable to prompt-based jailbreaks. Through preliminary testing on platforms such as ChatGPT, MetaAI, and Grok, we observed that even short, natural prompts could lead to the generation of compromising images ranging from realistic depictions of forged documents to manipulated images of public figures. We introduce Unmasking the Canvas (UTC Benchmark; UTCB), a dynamic and scalable benchmark dataset to evaluate LLM vulnerability in image generation. Our methodology combines structured prompt engineering, multilingual obfuscation (e.g., Zulu, Gaelic, Base64), and evaluation using Groq-hosted LLaMA-3. The pipeline supports both zero-shot and fallback prompting strategies, risk scoring, and automated tagging. All generations are stored with rich metadata and curated into Bronze (non-verified), Silver (LLM-aided verification), and Gold (manually verified) tiers. UTCB is designed to evolve over time with new data sources, prompt templates, and model behaviors. Warning: This paper includes visual examples of adversarial inputs designed to test model safety. All outputs have been redacted to ensure responsible disclosure."
+      },
+      {
+        "paperId": "d22f64d914dc3ce8c4932ab84cfc83d972828579",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2509-18965",
+          "ArXiv": "2509.18965",
+          "DOI": "10.1145/3663547.3746380",
+          "CorpusId": 281495926
+        },
+        "title": "Benchmarking PDF Accessibility Evaluation: A Dataset and Framework for Assessing Automated and LLM-Based Approaches for Accessibility Testing",
+        "venue": "International ACM SIGACCESS Conference on Computers and Accessibility",
+        "year": 2025,
+        "citationCount": 4,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.18965, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2315319060",
+            "name": "Anukriti Kumar"
+          },
+          {
+            "authorId": "2381722474",
+            "name": "Tanushree Padath"
+          },
+          {
+            "authorId": "31860505",
+            "name": "Lucy Lu Wang"
+          }
+        ],
+        "abstract": "PDFs remain the dominant format for scholarly communication, despite significant accessibility challenges for blind and low-vision users. While various tools attempt to evaluate PDF accessibility, there is no standardized methodology to evaluate how different accessibility assessment approaches perform. Our work addresses this critical gap by introducing a novel benchmark dataset of scholarly PDFs with expert-validated accessibility annotations across seven criteria (alternative text quality, logical reading order, semantic tagging, table structure, functional hyperlinks, color contrast, and font readability), and a four-category evaluation framework with standardized labels (Passed, Failed, Not Present, Cannot Tell) to systematically assess accessibility evaluation approaches. Using our evaluation framework, we explore whether large language models (LLMs) are capable of supporting automated accessibility evaluation. We benchmark five LLMs, which demonstrate varying capabilities in correctly assessing different accessibility criteria, with GPT-4-Turbo achieving the highest overall accuracy (0.85). However, all models struggled in correctly categorizing documents with Not Present and Cannot Tell accessibility labels, particularly for alt text quality assessment. Our qualitative comparison with standard automated checkers reveals complementary strengths: rule-based tools excel at technical verification, while LLMs better evaluate semantic appropriateness and contextual relevance. Based on our findings, we propose a hybrid approach that would combine automated checkers, LLM evaluation, and human assessment as a future strategy for PDF accessibility evaluation.1"
+      },
+      {
+        "paperId": "49b7bd275a0386392769f5b33028500754dbc69d",
+        "externalIds": {
+          "ACL": "2024.nlp4pi-1.28",
+          "DBLP": "journals/corr/abs-2408-14845",
+          "ArXiv": "2408.14845",
+          "DOI": "10.48550/arXiv.2408.14845",
+          "CorpusId": 271962771
+        },
+        "title": "AAVENUE: Detecting LLM Biases on NLU Tasks in AAVE via a Novel Benchmark",
+        "venue": "NLP4PI",
+        "year": 2024,
+        "citationCount": 15,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2408.14845, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2317040111",
+            "name": "Abhay Gupta"
+          },
+          {
+            "authorId": "2317010916",
+            "name": "Philip Meng"
+          },
+          {
+            "authorId": "12084908",
+            "name": "E. Yurtseven"
+          },
+          {
+            "authorId": "2241351144",
+            "name": "Sean O'Brien"
+          },
+          {
+            "authorId": "2312105716",
+            "name": "Kevin Zhu"
+          }
+        ],
+        "abstract": "Detecting biases in natural language understanding (NLU) for African American Vernacular English (AAVE) is crucial to developing inclusive natural language processing (NLP) systems. To address dialect-induced performance discrepancies, we introduce AAVENUE (AAVE Natural Language Understanding Evaluation), a benchmark for evaluating large language model (LLM) performance on NLU tasks in AAVE and Standard American English (SAE). AAVENUE builds upon and extends existing benchmarks like VALUE, replacing deterministic syntactic and morphological transformations with a more flexible methodology leveraging LLM-based translation with few-shot prompting, improving performance across our evaluation metrics when translating key tasks from the GLUE and SuperGLUE benchmarks. We compare AAVENUE and VALUE translations using five popular LLMs and a comprehensive set of metrics including fluency, BARTScore, quality, coherence, and understandability. Additionally, we recruit fluent AAVE speakers to validate our translations for authenticity. Our evaluations reveal that LLMs consistently perform better on SAE tasks than AAVE-translated versions, underscoring inherent biases and highlighting the need for more inclusive NLP models."
+      },
+      {
+        "paperId": "b3d86acd1bae52b92b14e5253a3a5bb8a3a3f8da",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2405-15165",
+          "ArXiv": "2405.15165",
+          "DOI": "10.1145/3690624.3709412",
+          "CorpusId": 270045523
+        },
+        "title": "SoAy: A Solution-based LLM API-using Methodology for Academic Information Seeking",
+        "venue": "Knowledge Discovery and Data Mining",
+        "year": 2024,
+        "citationCount": 12,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.15165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2303359307",
+            "name": "Yuanchun Wang"
+          },
+          {
+            "authorId": "2116034394",
+            "name": "Jifan Yu"
+          },
+          {
+            "authorId": "2273946831",
+            "name": "Zijun Yao"
+          },
+          {
+            "authorId": "2273814561",
+            "name": "Jing Zhang"
+          },
+          {
+            "authorId": "2303331850",
+            "name": "Yuyang Xie"
+          },
+          {
+            "authorId": "2116520118",
+            "name": "Shangqing Tu"
+          },
+          {
+            "authorId": "2303312077",
+            "name": "Yiyang Fu"
+          },
+          {
+            "authorId": "2334698039",
+            "name": "Youhe Feng"
+          },
+          {
+            "authorId": "51028376",
+            "name": "Jinkai Zhang"
+          },
+          {
+            "authorId": "2267151935",
+            "name": "Jingyao Zhang"
+          },
+          {
+            "authorId": "2303618842",
+            "name": "Bowen Huang"
+          },
+          {
+            "authorId": "2303364479",
+            "name": "Yuanyao Li"
+          },
+          {
+            "authorId": "2287001632",
+            "name": "Huihui Yuan"
+          },
+          {
+            "authorId": "2284777109",
+            "name": "Lei Hou"
+          },
+          {
+            "authorId": "2273824956",
+            "name": "Juan-Zi Li"
+          },
+          {
+            "authorId": "2266873369",
+            "name": "Jie Tang"
+          }
+        ],
+        "abstract": "Applying large language models (LLMs) to academic API usage shows promise in reducing researchers' efforts to seek academic information. However, current LLM methods for using APIs struggle with the complex API coupling commonly encountered in academic queries. To address this, we introduce SoAy, a solution-based LLM methodology for academic information seeking. SoAy enables LLMs to generate code for invoking APIs, guided by a pre-constructed API calling sequence referred to as a solution. This solution simplifies the model's understanding of complex API relationships, while the generated code enhances reasoning efficiency. LLMs are aligned with this solution-oriented, code-based reasoning method by automatically enumerating valid API coupling sequences and transforming them into queries and executable code. To evaluate SoAy, we introduce SoAyBench, an evaluation benchmark accompanied by SoAyEval, built upon a cloned environment of APIs from AMiner. Experimental results demonstrate a 34.58-75.99% performance improvement compared to state-of-the-art LLM API-based baselines. All datasets, codes, tuned models, and deployed online services are publicly accessible at https://github.com/RUCKBReasoning/SoAy."
+      },
+      {
+        "paperId": "85c647eb554210441765723376291a77f8907812",
+        "externalIds": {
+          "DBLP": "conf/greenai/LemonnierKM25",
+          "CorpusId": 285661520
+        },
+        "title": "Sustainable LLM Benchmarking: Efficient Evaluation Optimizing Costs and Resources",
+        "venue": "Green-Aware AI@ECAI",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://ceur-ws.org/Vol-4165/paper11.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "8715814",
+            "name": "N. Lemonnier"
+          },
+          {
+            "authorId": "48645553",
+            "name": "J. Kluska"
+          },
+          {
+            "authorId": "32613208",
+            "name": "V. Morel"
+          }
+        ],
+        "abstract": null
+      }
+    ],
+    "status": 200
+  }
+]

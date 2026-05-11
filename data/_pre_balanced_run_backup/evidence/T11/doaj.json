@@ -1,0 +1,17 @@
+[
+  {
+    "query": "format sensitivity",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "JSON YAML prose",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "benchmark variance",
+    "results": [],
+    "status": 200
+  }
+]

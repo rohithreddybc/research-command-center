@@ -15,11 +15,11 @@
     },
     {
       "issue": "axis_term_contamination_in_actual_queries",
-      "evidence": "344/567 (60.7%) of queries across 14 topics contain benchmark/evaluation/reproducibility/robustness",
-      "severity": "HIGH",
+      "evidence": "261/978 (26.7%) of queries across 36 topics contain benchmark/evaluation/reproducibility/robustness",
+      "severity": "MEDIUM",
       "explanation": "This is the empirical impact of the axis-term injection. If above 40%, evidence retrieval is systematically biased toward benchmark/eval papers."
     }
   ],
-  "n_queries_sampled": 567,
-  "n_topics_sampled": 14
+  "n_queries_sampled": 978,
+  "n_topics_sampled": 36
 }

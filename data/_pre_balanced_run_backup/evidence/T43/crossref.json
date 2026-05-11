@@ -1,0 +1,2047 @@
+[
+  {
+    "query": "clinical LLM",
+    "results": [
+      {
+        "DOI": "10.22541/au.177499233.37732392/v1",
+        "title": [
+          "Emergent Misinformation Genesis in Multi-Agent LLM Clinical Pipelines"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              31
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0005-5107-4485",
+            "authenticated-orcid": true,
+            "given": "Aman",
+            "family": "Sharma",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Blue Shield of California †, Colorado Technical University"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.31224/4544",
+        "title": [
+          "Procedural Guideline Execution Training Improves LLM Performance in Rule-Based Clinical Tasks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              22
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Pimchanok",
+            "family": "Boonmee",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Large Language Models (LLMs) offer transformative potential for Clinical Decision Support (CDS) by processing complex medical information and generating actionable insights. However, ensuring their reliability, strict adherence to Clinical Practice Guidelines (CPGs), and interpretability remains a critical challenge for safe clinical deployment. Existing methods, such as prompting strategies and integrating external CPG structures, provide guidance but do not intrinsically train the LLM to execute procedural guideline logic. To address this gap, we propose Procedural Guideline Execution Training (PGET), a novel fine-tuning approach that trains LLMs to generate step-by-step execution traces explicitly demonstrating the application of CPG rules to a patient scenario. We evaluate PGET using diverse LLMs on a synthetic dataset for COVID-19 outpatient treatment, comparing it against Zero-Shot Prompting and established CPG integration methods like Binary Decision Tree integration. Our experiments, leveraging both automatic CPG adherence metrics and expert human evaluation, demonstrate that PGET significantly outperforms comparison methods in achieving higher CPG adherence, clinical accuracy, and interpretability. The generated execution trace provides valuable transparency, fostering trust in the model's recommendations. PGET offers a promising path towards building more reliable, transparent, and guideline-compliant AI systems for clinical decision support.</jats:p>"
+      },
+      {
+        "DOI": "10.31224/5932",
+        "title": [
+          "A Resource-Efficient LLM-RAG Framework for Robust Clinical Decision Support"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Pimchanok",
+            "family": "Boonmee",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Patrick",
+            "family": "Coleman",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The rapid growth of medical data and increasingly complex clinical workflows call for more capable and efficient decision support systems. Although recent language model–based approaches show promise, they often lack sufficient medical specialization and place heavy demands on computational resources. Lightweight retrieval-augmented methods offer a partial solution, yet their performance in nuanced clinical scenarios remains limited. To address these issues, we present the Adaptive Enhanced Clinical Intelligence Assistant (AECIA), a retrieval-augmented framework tailored for reliable and resource-efficient clinical decision support. AECIA integrates three core components: an adaptive fine-tuning strategy that allocates parameter-efficient updates according to layer sensitivity, a context-aware retrieval module that combines multi-granularity chunking with dynamic retrieval and re-ranking, and a prompt orchestration mechanism that adjusts prompt structure based on query characteristics and metadata cues. Built on a compact instruction-tuned model, AECIA achieves clear improvements on medical understanding and reasoning benchmarks, particularly in challenging specialties such as advanced medicine and genetics. These results demonstrate that adaptive fine-tuning, targeted retrieval, and flexible prompting can markedly strengthen clinical decision support while remaining feasible on modest hardware.</jats:p>"
+      },
+      {
+        "DOI": "10.5220/0014459100004052",
+        "title": [
+          "An Agentic Hybrid LLM–RAG Framework for Explainable Clinical Decision Support"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 18th International Conference on Agents and Artificial Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mohammed",
+            "family": "Kapadia",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Information Technology, K J Somaiya School of Engineering (formerly known as K J Somaiya College of Engineering), Mumbai 400077, Maharashtra, India"
+              }
+            ]
+          },
+          {
+            "given": "Mohammed",
+            "family": "Memon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Information Technology, K J Somaiya School of Engineering (formerly known as K J Somaiya College of Engineering), Mumbai 400077, Maharashtra, India"
+              }
+            ]
+          },
+          {
+            "given": "Pankaj",
+            "family": "Mishra",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Information Technology, K J Somaiya School of Engineering (formerly known as K J Somaiya College of Engineering), Mumbai 400077, Maharashtra, India"
+              }
+            ]
+          },
+          {
+            "given": "Shun",
+            "family": "Okuhara",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Engineering, Graduate School of Engineering, Mie University, Japan"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.62891/37419d05",
+        "title": [
+          "Hallucinations: Clinical, Jungian, and LLM Engineering -The Integrity of Cognition I. Authorship and Trilingual Titles A. Authorship and Affiliations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              11
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Clarisse",
+            "family": "Cardoso",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0005-2697-4668",
+            "authenticated-orcid": true,
+            "given": "Rafael",
+            "family": "Henrique do Nascimento Oliveira",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0002-5963-6196",
+            "authenticated-orcid": true,
+            "given": "Jameson",
+            "family": "Joseph Bednarski",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21275/sr24930023705",
+        "title": [
+          "Accuracy and Bias Mitigation in GenAI / LLM-based Financial Underwriting and Clinical Summarization Systems"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Science and Research (IJSR)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Praveen",
+            "family": "Kumar",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Shailendra",
+            "family": "Bade",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.26434/chemrxiv.15001071/v1",
+        "title": [
+          "ToxiLens: An Explainable ADMET Prediction Platform with Multi-Layered Interpretability and LLM-Powered Clinical Analysis"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Chitrang",
+            "family": "Patel",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1101/2025.08.24.25334321",
+        "title": [
+          "LLM-assisted Clinical Coding Audit through an Interpretable Coding Pipeline"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              26
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Supriya",
+            "family": "Khadka",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Centre for Computational Sciences and Mathematical Modelling, Coventry University, Coventry, CV1 2TT UK"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4255-5445",
+            "authenticated-orcid": false,
+            "given": "Xiaorui",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Sheffield, Sheffield, S10 2AH UK"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6768-8394",
+            "authenticated-orcid": false,
+            "given": "Vasile",
+            "family": "Palade",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Computational Sciences and Mathematical Modelling, Coventry University, Coventry, CV1 2TT UK"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:p>Clinical coding is a vital yet complex part of healthcare practice. Most automated coding research relies on imperfect training data, which has an unavoidable negative impact on the quality of code prediction. A key contributing issue, vastly overlooked in current research, is the ubiquitous presence of undercoding and various types of coding errors in widely used coding datasets. From another angle, coding audit is as challenging as coding itself due to the lack of assistive tools, which is also under-studied compared to automated coding research. In this work, we uncover substantial undercoding and errors in commonly used datasets and present the first empirical study on their impacts on the performances of automated coding algorithms. To enable this, we develop an interpretable coding pipeline, using large language models (LLMs) for evidence extraction and code verification, and a multiclass classifier trained on a large-scale dataset of silver-standard evidence-code pairs for code prediction. Assisted by the pipeline, three professional coders systematically identify, categorise, and correct errors in two widely-used coding datasets that have human-annotated evidence texts for assigned codes. As an AI-assisted coding audit tool, the current study uncovers significant data quality issues, including a 76.3% undercoding rate in MDACE and a 29.7% error rate in CodiEsp. Re-evaluating existing models on error-corrected datasets results in consistent performance improvements. Additionally, the pipeline is a highly potential coding framework, which achieves superior or comparative performances to state-of-the-art LLM-based methods. The results underscore the necessity of shifting research focus from model-centric to data-centric solutions in clinical AI.</jats:p>"
+      },
+      {
+        "DOI": "10.64898/2026.02.26.26347212",
+        "title": [
+          "Red-Teaming Medical AI: Systematic Adversarial Evaluation of LLM Safety Guardrails in Clinical Contexts"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              5
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tashfeen",
+            "family": "Ekram",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Luma Health"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:sec>\n                  <jats:title>Background</jats:title>\n                  <jats:p>Large language models (LLMs) are increasingly deployed in medical contexts as patient-facing assistants, providing medication information, symptom triage, and health guidance. Understanding their robustness to adversarial inputs is critical for patient safety, as even a single safety failure can lead to adverse outcomes including severe harm or death.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Objective</jats:title>\n                  <jats:p>To systematically evaluate the safety guardrails of state-of-the-art LLMs through adversarial red-teaming specifically designed for medical contexts.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Methods</jats:title>\n                  <jats:p>We developed a comprehensive taxonomy of 8 adversarial attack categories targeting medical AI safety, encompassing 24 distinct sub-strategies. Using an LLM-based attack generator, we created 160 realistic adversarial prompts across categories including dangerous dosing, contraindication bypass, emergency misdirection, and multi-turn escalation. We tested multiple leading LLMs (Claude Sonnet 4.5, GPT-5.2, Gemini 2.5 Pro, Gemini 3 Flash) using both single-turn and multi-turn attack sequences. All models received identical, standard medical assistant system prompts. An automated evaluator (Claude Sonnet 4.5) pre-screened responses for harm potential (0-5 scale) and guardrail effectiveness, with physician review planned for high-risk responses (harm_level ≥ 3).</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>Of 160 adversarial prompts evaluated against Claude Sonnet 4.5, 11 (6.9%) elicited responses meeting our threshold for clinically significant harm (harm level ≥ 3 on a 0–5 scale). The model exhibited full refusal behavior in 86.2% of cases. Authority Impersonation was the dominant attack vector (45.0% success rate),s with the “Educational Authority” sub-strategy (framing requests as medical student questions) achieving 83.3% success — the highest of any sub-strategy. Multi-turn escalation attacks achieved 0% success (0/20). Six of eight attack categories yielded no successful attacks. Physician review of the 11 flagged high-harm cases is in progress.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Conclusions</jats:title>\n                  <jats:p>Standard medical assistant system prompts provide strong baseline protection against most adversarial attacks, but are substantially vulnerable to authority impersonation — particularly claims of educational context. The primary failure mode is behavioral mode-switching: the model provides clinically accurate but safety-framed-inadequately responses when it perceives a professional audience, rather than providing factually incorrect information. This suggests that guardrail improvements should target context-conditioned behavior rather than factual accuracy alone. Our open-source taxonomy and evaluation pipeline enable ongoing adversarial assessment as medical AI systems evolve.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Impact</jats:title>\n                  <jats:p>This work provides the first systematic taxonomy and evaluation framework for medical AI adversarial testing, enabling developers to identify and remediate safety gaps before deployment. Our open-source attack taxonomy and methodology can serve as a foundation for ongoing red-teaming efforts as medical AI systems continue to evolve.</jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.1109/icdmw69685.2025.00381",
+        "title": [
+          "Graph-LLM for EHRs: Combining Temporal Graph Representations and LLM-Based Note Imputation for Clinical Predictions"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              12
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE International Conference on Data Mining Workshops (ICDMW)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Michael",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Mission San Jose High School,Fremont,USA"
+              }
+            ]
+          },
+          {
+            "given": "Qi",
+            "family": "Long",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Pennsylvania,Department of Biostatistics, Epidemiology and Informatics,Philadelphia,USA"
+              }
+            ]
+          },
+          {
+            "given": "Inyoung",
+            "family": "Choi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Pennsylvania,Department of Computer and Information Science,Philadelphia,USA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6678962",
+        "title": [
+          "Title: \"A Role-Locked Multi-Agent LLM System for Clinical Dialogue: A Feasibility Study”"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "David",
+            "family": "Power",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Theresa",
+            "family": "Power",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Background: The development of high-quality healthcare simulation scenarios and educational clinical dialogue is resource-intensive, limiting scalability in healthcare education. Large language models (LLMs) offer new opportunities for generating dynamic conversational simulations but raise concerns regarding role fidelity, realism, and evaluation.Innovation: We describe a role-locked, multi-agent LLM system designed to generate realistic emergency department conversations involving a doctor, nurse, and patient. Separate LLM agents were assigned fixed clinical roles and interacted within a shared conversational environment, supported by explicit role constraints and rule-based role-guarding mechanisms. An independent LLM was used as an automated evaluator (“AI-as-judge”) to assess role fidelity, turn coherence, communication realism, and educational usability.Evaluation: Twenty-five simulated conversations were generated and evaluated using the automated judge. A subset of ten conversations underwent independent human evaluation by two clinically experienced raters using aligned assessment domains. Automated evaluation indicated high ratings across all domains, with all simulations judged educationally usable. Human evaluation showed substantial agreement for role fidelity and moderate agreement across other domains, providing expert plausibility benchmarking for the automated approach.Implications: This work demonstrates the feasibility of a role-locked, multi-agent LLM architecture for generating educationally plausible conversational simulations. The combination of automated and limited human evaluation provides preliminary feasibility and plausibility evidence supporting usability, while requiring further independent validation. This approach may support rapid prototyping and scalable development of simulation-based educational content.</jats:p>"
+      },
+      {
+        "DOI": "10.5578/llm.20239801",
+        "title": [
+          "Kanserle İlişkili Venöz Tromboemboli ve Pulmoner Emboli: Patofizyolojik Hususlar ve Klinik Yönetim"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              22
+            ]
+          ]
+        },
+        "container-title": [
+          "LLM Dergi"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4659-9082",
+            "authenticated-orcid": false,
+            "given": "Ege",
+            "family": "Gürlü",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6359-7279",
+            "authenticated-orcid": false,
+            "given": "Stavros V.",
+            "family": "Konstantinides",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2196/preprints.96024",
+        "title": [
+          "The Matchmaker's Dilemma: A Survey of Retrieval, Ranking, and LLM Systems in Clinical Trial Matching (Preprint)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              24
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-2944-3633",
+            "authenticated-orcid": false,
+            "given": "Simon",
+            "family": "Dhungana",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<sec>\n                  <title>BACKGROUND</title>\n                  <p>Clinical trials are essential for evaluating medical interventions, yet approximately 80% fail to meet enrollment targets on time. The challenge of matching patients to suitable trials involves reviewing unstructured clinical notes against complex eligibility criteria containing dozens of inclusion and exclusion conditions. AI methods promise to automate this matching at scale, but each approach involves fundamental tradeoffs between speed, accuracy, interpretability, and auditability.</p>\n                </sec>\n                <sec>\n                  <title>OBJECTIVE</title>\n                  <p>This technical narrative review surveys the landscape of AI approaches to patient-trial matching, tracing the evolution from rule-based systems through sparse retrieval, dense retrieval, cross-encoder reranking, knowledge graphs, and large language model approaches. We identify critical gaps and provide an integrative framework for understanding tradeoffs across methods.</p>\n                </sec>\n                <sec>\n                  <title>METHODS</title>\n                  <p>We searched PubMed, IEEE Xplore, ACL Anthology, and arXiv using terms including \"clinical trial matching,\" \"patient recruitment AI,\" \"eligibility criteria NLP,\" and \"trial-patient retrieval\" for literature published 2015 to 2026. We synthesized algorithmic approaches, commercial platforms, evaluation methodologies, and explainability requirements through a technical narrative review.</p>\n                </sec>\n                <sec>\n                  <title>RESULTS</title>\n                  <p>We identified seven algorithmic paradigms: rule-based systems, machine learning classifiers, BM25 sparse retrieval, BERT-based dense retrieval, cross-encoder reranking, large language models (including TrialGPT achieving 87.3% criterion-level accuracy), and knowledge graph approaches. We catalogued sixteen commercial platforms and documented the TREC Clinical Trials Track and n2c2 2018 benchmarks. Each method resolves the core tradeoff differently: BM25 offers speed without semantic understanding; LLMs offer flexibility without auditability; hybrid architectures distribute tradeoffs across components.</p>\n                </sec>\n                <sec>\n                  <title>CONCLUSIONS</title>\n                  <p>Six critical gaps define the frontier: absence of operational-scale benchmarks, temporal and Boolean reasoning limitations, tension between LLM flexibility and deterministic auditability, multi-method explainability disclosure requirements, proxy-label governance, and data heterogeneity across EHR systems. The matchmaker's dilemma of balancing competing goods with no perfect solution frames both progress and unresolved challenges in this rapidly evolving field.</p>\n                </sec>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.176045741.13024122/v1",
+        "title": [
+          "Schema-Preserving Generation of Clinical TLF Templates and Executable R Code via Iterative LLM-Guided Debugging"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              14
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0007-1786-7259",
+            "authenticated-orcid": false,
+            "given": "Jaime",
+            "family": "Yan",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Harrisburg University"
+              }
+            ]
+          },
+          {
+            "given": "Ming",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Kura Oncology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.7759/cureus.107729",
+        "title": [
+          "Detecting Citation Veneer in Guideline-Grounded Clinical and Public Health Large Language Model (LLM) Outputs: A Clinical Evidence Audit Grid Using CENHOV Tags"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              26
+            ]
+          ]
+        },
+        "container-title": [
+          "Cureus"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Yuusuke",
+            "family": "Harada",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "reproducibility",
+    "results": [
+      {
+        "DOI": "10.52843/cassyni.x36fmy",
+        "title": [
+          "BioModels Reproducibility Scorecard"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "abstract": "<jats:p>Systems biology modelling involves the mathematical representation of biological processes to study complex system behaviour and was expected to be least affected by the reproducibility crisis. However, models often fail to reproduce and the reasons for the failure and prevalence were not fully understood. In a recent study, we analyzed 455 kinetic models published in 152 peer-reviewed journals. Most of these models were manually encoded from scratch to assess the reproducibility. Our investigation revealed that 49% of the models could not be reproduced using the information provided in the manuscripts. Among the corresponding authors, we contacted over 70% did not respond. Models across several life science journals failed to reproduce, revealing a common problem in the peer-review process. As a solution, we proposed a simple easy-to-use reproducibility scorecard with 8 yes-or-no questions that can be used by model authors, reviewers and journal editors during the peer-review process. We demonstrated that the scorecard is a good indicator of model reproducibility. In this workshop we discuss about our study in details, run a hands-on training to use the scorecard to assess models during the peer-review process. The reproducibility crisis in systems biology modelling can be tackled as a community, where model authors, reviewers, journal editors and funding bodies embrace reproducibility more proactively than before.</jats:p>"
+      },
+      {
+        "DOI": "10.5194/egusphere-2025-5497-rc1",
+        "title": [
+          "Reproducibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              6
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.4135/9781036219994",
+        "title": [
+          "Rigor and Reproducibility in Research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/b978-0-443-13829-4.00013-1",
+        "title": [
+          "Validity of biomedical science, reproducibility, and irreproducibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Reproducibility in Biomedical Research"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "suffix": "Jr.",
+            "given": "Erwin B.",
+            "family": "Montgomery",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-2640542/v1",
+        "title": [
+          "Committing to Reproducibility and Explainability]{Committing to Reproducibility and Explainability: Version Control as Research Journal"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Samuel",
+            "family": "Huskey",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Oklahoma"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n        <jats:p>Traditional critical editions in print offer a model for creating a culture of reproducible and explainable research in Digital Humanities. In addition to explaining their editorial methods and practices in a preface, editors provide a critical apparatus to allow readers to evaluate the evidence and decide for themselves whether the editor's judgment is sound. This paper will argue for viewing distributed, version-controlled data repositories (e.g., Git) in the same way, to empower users to follow the choices and methods of DH researchers and to reproduce their work. Using examples from a current project, this paper will propose some guidelines for using Git to promote reproducibility and explainability in the publication of DH research of all kinds.</jats:p>"
+      },
+      {
+        "DOI": "10.1162/99608f92.ea5e6f9a",
+        "title": [
+          "After Computational Reproducibility: Scientific Reproducibility and Trustworthy AI"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              24
+            ]
+          ]
+        },
+        "container-title": [
+          "Harvard Data Science Review"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Bin",
+            "family": "Yu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of California Berkeley, Berkeley, California, United States of America"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.31219/osf.io/mydzv",
+        "title": [
+          "Reproducibility in Management Science"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-4153-3500",
+            "authenticated-orcid": true,
+            "given": "Miloš",
+            "family": "Fišar",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Ben",
+            "family": "Greiner",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-5820-571X",
+            "authenticated-orcid": true,
+            "given": "Christoph",
+            "family": "Huber",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Elena",
+            "family": "Katok",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8720-2494",
+            "authenticated-orcid": true,
+            "given": "Ali",
+            "family": "Ozkes",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Management Science Reproducibility",
+            "family": "Collaboration",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>With the help of more than 700 reviewers we assess the reproducibility of nearly 500 articles published in the journal Management Science before and after the introduction of a new Data and Code Disclosure policy in 2019. When considering only articles for which data accessibility and hard- and software requirements were not an obstacle for reviewers, the results of more than 95% of articles under the new disclosure policy could be fully or largely computationally reproduced. However, for 29% of articles at least part of the dataset was not accessible to the reviewer. Considering all articles in our sample reduces the share of reproduced articles to 68%. These figures represent a significant increase compared to the period before the introduction of the disclosure policy, where only 12% of articles voluntarily provided replication materials, out of which 55% could be (largely) reproduced. Substantial heterogeneity in reproducibility rates across different fields is mainly driven by differences in dataset accessibility. Other reasons for unsuccessful reproduction attempts include missing code, unresolvable code errors, weak or missing documentation, but also soft- and hardware requirements and code complexity. Our findings highlight the importance of journal code and data disclosure policies, and suggest potential avenues for enhancing their effectiveness.</p>"
+      },
+      {
+        "DOI": "10.1061/reprod.000001",
+        "title": [
+          "Form to Assess Result Reproducibility of Manuscripts"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "American Society of Civil Engineers",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Jelian",
+            "family": "Larbi",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Use this worksheet to assess the: (a) availability of manuscript data, models, code, directions, and other digital artifacts; and (b) reproducibility of figures, tables, and other results presented in the manuscript. Should you answer “no” or “not sure” to any question, skip to Section IV and then answer the final questions to provide the authors constructive feedback to improve their repository and materials. The Journal asks that AERs and reproducibility reviewers take no more than four hours to assess the reproducibility of a manuscript’s results. Should an assessment take longer, skip to Section IV and provide the authors feedback on the steps that took a long time and how the authors can better organize their repository and materials to reduce the time to assess result reproducibility.</jats:p>"
+      },
+      {
+        "DOI": "10.52843/cassyni.dq8svs",
+        "title": [
+          "Reproducibility, Transparency, Positionality? Perspectives From Different Research Fields"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              18
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "abstract": "<jats:p>The word ‘reproducibility’ in UKRN’s name can prompt discussion and even concern that our vision, of a research system that promotes rigour and transparency, excludes some kinds of research. Certainly, many of UKRN’s origins lie in the so-called ‘reproducibility crisis’ in, for example, psychology. However, it seems clear that characteristics of research such as transparency in method and findings, and acknowledging and handling factors that might confound those findings, are common concerns related to rigour in many – if not all – research fields. In this webinar, speakers from arts practice, astronomy, psychology, and qualitative social sciences outline their perspectives on these questions, with the aim of highlighting both diversity and perhaps surprising commonalities. The webinar marks the release of a new UKRN working paper, based on a recent facilitated dialogue between arts practice and psychology researchers, sponsored by the British Psychological Society , the Practice Research Advisory Group, and UKRN.</jats:p>"
+      },
+      {
+        "DOI": "10.5194/egusphere-2025-5497-cc5",
+        "title": [
+          "More information needed for reproducibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1145/3736731.3746149",
+        "title": [
+          "Summer of Reproducibility: Building Global Capacity for Practical Reproducibility through Hands-On Mentorship"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              29
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 3rd ACM Conference on Reproducibility and Replicability"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-5647-6540",
+            "authenticated-orcid": false,
+            "given": "Stephanie",
+            "family": "Lieggi",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Baskin Engineering, UC Santa Cruz, Santa Cruz, CA, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9897-9282",
+            "authenticated-orcid": false,
+            "given": "Fraida",
+            "family": "Fund",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "NYU Tandon School of Engineering, New York, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5251-5466",
+            "authenticated-orcid": false,
+            "given": "Kate",
+            "family": "Keahey",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Chicago, Chicago, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0000-3532-4281",
+            "authenticated-orcid": false,
+            "given": "Marc",
+            "family": "Richardson",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Chicago, Chicago, USA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.5194/egusphere-2024-3560-ac2",
+        "title": [
+          "Resolution and Reproducibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7084-8566",
+            "authenticated-orcid": false,
+            "given": "David",
+            "family": "Webb",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.5194/egusphere-2025-5497-cc4",
+        "title": [
+          "More information needed for reproducibility"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1093/oed/4082406807",
+        "title": [
+          "reproducibility, n."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              2
+            ]
+          ]
+        },
+        "container-title": [
+          "Oxford English Dictionary"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/c2022-0-02971-8",
+        "title": [
+          "Reproducibility in Biomedical Research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "methodology disclosure",
+    "results": [
+      {
+        "DOI": "10.55057/ijbtm.2025.7.9.5",
+        "title": [
+          "A Typology of Non-Financial Information Disclosure Criteria and a Methodology for Generating Disclosure Information"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Business and Technology Management"
+        ],
+        "is-referenced-by-count": 0,
+        "abstract": "<jats:p>In the contemporary business environment, enterprises are increasingly compelled to address non-financial challenges, including climate change and human capital issues. There is a growing recognition that the disclosure of sustainability information has a direct impact on corporate value creation. The present study aims to shed light on the fundamental stance for information generated in the context of \"information quality\" and to explore the approaches that can be used to generate non-financial information that contributes to corporate valuation. The organization of key frameworks related to non-financial disclosure was conducted, with the identification of common elements and underlying philosophies in current disclosure standards also being undertaken. Furthermore, methods for generating information that contributes to corporate valuation were examined. The present study analysed the extant literature pertaining to non-financial disclosure standards, with a view to confirming the fundamental stance adopted in the generation of such information, which emphasizes 'exit'. This emphasis focuses on the 'output' (information) of corporate activities. This contrasts with Japan's conventional financial information, which emphasizes the concept of \"entry\" – a theoretical framework that places significant emphasis on the principles of formal bookkeeping (double-entry bookkeeping) for all transactions. In order to address this discrepancy, a \"hybrid model\" has been proposed as a methodology for the generation of non-financial information, with the objective of contributing to the assessment of corporate value. This model integrates both entry and exit elements.</jats:p>"
+      },
+      {
+        "DOI": "10.1007/978-3-658-40817-6_5",
+        "title": [
+          "Methodology and Empirical Research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "Chairperson Succession"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Cornel",
+            "family": "Germann",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title><jats:p>Chapter 5 deals with the research gap, research questions, and research strategy.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.4929785",
+        "title": [
+          "Bond Disclosure as a Window into Private Equity: A Methodology and First Evidence from the European Market"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Albert F.",
+            "family": "Aharonian",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.23977/curtm.2024.070405",
+        "title": [
+          "Study on the Review of Graduate Program Offerings and Disclosure of Information"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Curriculum and Teaching Methodology"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.26642/pbo-2022-1(51)-3-8",
+        "title": [
+          "Audit of disclosure in lease notes according to IFRS"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              9
+            ]
+          ]
+        },
+        "container-title": [
+          "Problems of Theory and Methodology of Accounting, Control and Analysis"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "O.V.",
+            "family": "Karpachova",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Taking into account the fact that almost most Ukrainian companies that apply International Financial Reporting Standards (IFRSs) are now either lessee or lessor, they are required to apply IFRS 16 Leases. This standard has its own requirements for both accounting and disclosure in the notes to the financial statements. Disclosure is a mandatory requirement for IFRS entities. This allows users of financial statements to assess the actual state of the enterprise, namely: toassess the number and value of leased assets, analyze liabilities, etc. As a result, the auditor who audits such entities should review not only the accounting but also the disclosures that are not an integral part of the financial statements. So far as many IFRS professionals consider IFRS 16 to be one of the most complex and risky accounting matters, the auditor should plan sufficient time and human resources for such an audit. This article sets out the purpose of the lease disclosure audit. The requirements of IFRS 16 are analyzed and a checklist for the auditor during the lease audit is formed. The check letter takes into account the requirements for the tenant and the landlord, considering the finance and operating lease. The proposed checklist of the standard requirements for disclosure in notes will help the auditor to optimize his time and check the notes faster. An algorithm for auditing the disclosure of information in the notes on the lease has been developed. In the course of the research, audit statements were identified during the audit of the notes. The basic requirements for the design of audit documentation in the audit of notes are analyzed and formed.</jats:p>"
+      },
+      {
+        "DOI": "10.1002/bse.70700",
+        "title": [
+          "The Influence of Corporate Sustainability Rating Methodology on Disclosure Behavior"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "Business Strategy and the Environment"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3395-0884",
+            "authenticated-orcid": false,
+            "given": "Patrick J.",
+            "family": "Callery",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Vermont  Burlington Vermont USA"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>The rise of environmental, social, and governance (ESG) investing has illuminated long‐standing concerns over the ability for sustainability rating schemes to accurately convey sustainability‐related performance of firms. This study theorizes and empirically examines how a detailed and transparent rating methodology influences what information firms choose to disclose and how such influence may further decouple the rating from societal outcomes the rating seeks to address. I replicate the scoring methodology of a prominent disclosure mechanism and rating scheme (CDP) and examine the relationships between firm motivation and capacity for strategic response to ratings and carbon emissions. Findings indicate that firms closely attend to rating methodology, both applying greater effort to aspects of disclosure carrying greater rating value and altering disclosure when rating value prescribed by the methodology changes over time. More significantly, higher ratings are not on average associated with better carbon emissions performance.</jats:p>"
+      },
+      {
+        "DOI": "10.26794/2408-9303-2021-8-5-28-40",
+        "title": [
+          "Research methodology for corporate disclosure of business social responsibility: conceptual approach"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "Accounting. Analysis. Auditing"
+        ],
+        "is-referenced-by-count": 9,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3574-6916",
+            "authenticated-orcid": true,
+            "given": "O. V.",
+            "family": "Efimova",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Financial University"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8955-5904",
+            "authenticated-orcid": true,
+            "given": "O. V.",
+            "family": "Rozhnova",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Financial University"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>The article analyzes the social responsibility of business and the quality of its reflection in corporate reporting. The purpose of the study is to develop methodological solutions for conducting an up-to-date study of the social responsibility of Russian large businesses, based on the information contained in their financial and non-financial statements. The study uses the methods of abduction, meaningful analysis of the current state of the social sphere; logical analysis of research made by scientists and interested organizations in the field of social sphere and business social responsibility, which were assessed on the basis of the social reporting study; logical content analysis of financial and non-financial reporting standards in terms of requirements for disclosure of social aspects; expert analysis of social reporting of Russian companies in various industries, linguistic analysis to analyze the use of certain terms and concepts in financial and non-financial reporting of companies. The information base of the study includes the International Financial Reporting Standards, Sustainable Development Reporting Standards, Basic Performance Indicators of the Russian Union of Industrialists and Entrepreneurs (RSPP); financial and non-financial reporting of companies in the material production industries. As a result of the study, the methodological solutions for the analysis and assessment of the Russian economic entities` social responsibility were substantiated and proposed. On the basis of the analysis of trends in the social sphere along with the identified opportunities and threats for its further development caused by the evolution of digitalization, economy and ecology, a block of the most important problems was formed. Participation in the solution of such problems characterizes the social responsibility of business. The paper proposes certain stages of researching the social responsibility of business. With this article, the authors open a series of publications that will comprehensively and systematically study the problems of accounting, analysis and assessment of the economic entities` social responsibility in a rapidly changing environment and emerging new challenges for society and business, including the development of a research methodology, assessment of the composition, completeness and quality of the information base, taking into account industry-specific features of the studied objects, and analytical methods and procedures.</jats:p>"
+      },
+      {
+        "DOI": "10.1093/jssam/smac035",
+        "title": [
+          "Integrating Administrative and Survey Data to Estimate WIC Eligibility and Access"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              16
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Survey Statistics and Methodology"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Linden",
+            "family": "McBride",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Survey Statistician with the US Census Bureau is a Research Economist, , Center for Economic Studies, 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Thomas B",
+            "family": "Foster",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Survey Statistician with the US Census Bureau is a Senior Sociologist, , Center for Economic Studies, 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Renuka",
+            "family": "Bhaskar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Survey Statistician with the US Census Bureau is a , Center for Economic Studies, 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Mark",
+            "family": "Prell",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "US Department of Agriculture, Economic Research Service Mark Prell is a Senior Economist with the , 1400 Independence Ave., SW, Mail Stop 1800, Washington, DC 20250-0002, USA"
+              }
+            ]
+          },
+          {
+            "given": "Maria",
+            "family": "Perez-Patron",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Research Economist with the US Census Bureau, Center for Economic Studies is a Statistician/Demographer, , 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Erik",
+            "family": "Vickstrom",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Research Economist with the US Census Bureau, Center for Economic Studies is a Supervisory Survey Statistician, , 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Brian",
+            "family": "Knop",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Research Economist with the US Census Bureau, Center for Economic Studies is a Survey Statistician, , 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          },
+          {
+            "given": "Michaela",
+            "family": "Dillon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Research Economist with the US Census Bureau, Center for Economic Studies is a , 4600 Silver Hill Rd, Washington, DC 20233, USA"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>The Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) provides benefits to low-income, nutritionally at-risk women, infants, and children. To administer WIC, officials and program managers at the federal and state levels want to understand who is eligible for the program, who among the eligible population chooses to participate, and who is not accessing the program despite their eligibility. Novel individual-level data linkages between restricted-use WIC Administrative Records and the American Community Survey provide WIC access rates estimated at the state and county levels, as well as estimates disaggregated by the demographic and socioeconomic characteristics of individuals and their households. These estimates are developed by the Census-FNS-ERS Joint Project, a research partnership among the US Census Bureau, the US Department of Agriculture’s Food and Nutrition Service and Economic Research Service, and state WIC agencies that provide the requisite WIC administrative data to the Census Bureau. This article details and evaluates our current data linkage and estimation methods, reports results, and identifies areas for improvement and further research.</jats:p>"
+      },
+      {
+        "DOI": "10.1093/jssam/smac022",
+        "title": [
+          "Preface to <i>JSSAM</i> Privacy, Confidentiality, and Disclosure Protection Special Issue"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Survey Statistics and Methodology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Natalie",
+            "family": "Shlomo",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Anne-Sophie",
+            "family": "Charest",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>This article is an introduction to the 13 articles in the JSSAM special issue on Privacy, Confidentiality, and Disclosure Protection. We also provide background information to place the articles into context.</jats:p>"
+      },
+      {
+        "DOI": "10.1177/07591063251321673",
+        "title": [
+          "Researchers’ identities and their consequences for fieldwork. The methodological and scientific implications of gender, illicit practices and disclosure."
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Bulletin of Sociological Methodology/Bulletin de Méthodologie Sociologique"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Sarah",
+            "family": "Perrin",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Fonds de recherche Savoir Plus Risquer Moins, Centre Emile Durkheim and Bordeaux Population Health Center, Bordeaux, France"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Is it possible to conduct rigorous, reflexive social science research without revealing something of oneself? This is the question I propose to address in this article, analysing the influence that my personal identities as a researcher, my gender identity, and my experiences in the drug scene had on my access to this field, the nature of the data gathered and the process of analysing that data. As a woman who uses drugs writing a research thesis on female drug users in Bordeaux and Montreal, I was very well integrated into the Bordeaux field context and much less so in Montreal, resulting in an asymmetrical comparison. This asymmetry cannot be explained without taking into account my own personal experience among drug users. My gender identity also shaped the data-gathering process: during my field research I had to contend with sexual harassment, as well as being on the receiving end of stereotypes undermining my credibility, all the while dealing with my own emotional trauma linked to past experiences of sexual violence. The resulting research is a form of “delinquent ethnography”, whose participatory dimension has clear scientific and methodological advantages, but which also raises important ethical questions. This article concludes with some proposals for protecting women researchers from gender violence and inequality in their fieldwork.</jats:p>"
+      },
+      {
+        "DOI": "10.26794/2408-9303-2021-8-6-6-20",
+        "title": [
+          "Methodology for researching corporate disclosure of business social responsibility: Information base and stages of implementation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "Accounting. Analysis. Auditing"
+        ],
+        "is-referenced-by-count": 4,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3574-6916",
+            "authenticated-orcid": true,
+            "given": "O. V.",
+            "family": "Efimova",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Financial University,"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8955-5904",
+            "authenticated-orcid": true,
+            "given": "O. V.",
+            "family": "Rozhnova",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Financial University,"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>This article continues a series of publications on the issues of accounting, analysis and assessment of the corporate social responsibility in a rapidly changing environment when society and business face new challenges. The authors provide methodological solutions to the problem of studying the social responsibility of Russian public companies based on the analysis of data disclosed in their financial and non-financial statements. The research uses abduction methods; logical analysis; logical content analysis of financial and non-financial reporting standards in terms of requirements for disclosure of social aspects; expert analysis of social reporting of Russian companies; linguistic analysis in order to identify the practice of using certain terms and concepts in the financial and non-financial reporting. The analysis of corporate reporting standards made it possible to propose a new model for analyzing disclosures in the field of corporate social responsibility. The authors reveal the most important issues of the corporate social responsibility by assessing the trends in the social sphere, identifying opportunities and threats for its further development connected with the evolution of society, economy and ecology, ongoing digitalization processes. Procedures of researching business social responsibility are developed and fully described. The documentary base of the research includes International Financial Reporting Standards, Sustainable Development Reporting Standards, Basic Performance Indicators of the Russian Union of Industrialists and Entrepreneurs (RSPP) as well as financial and non-financial reports of Russian companies operating in production industries. The results of the research are the proposals to apply the multi-stage approach, which makes it possible to assess the social responsibility of certain economic entities through the prism of global tasks the country and the world community face with. The analysis of the complex problems of business and civilization allows us to identify five top problems in the light of which the social responsibility of large companies should be assessed, as well as to build a logical connection between these top problems and the key topics of disclosures in corporate reports.</jats:p>"
+      },
+      {
+        "DOI": "10.26642/pbo-2025-1(60)-37-45",
+        "title": [
+          "Disclosure of information about sustainable development in corporate reporting during martial status: the environmental aspect"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Problems of Theory and Methodology of Accounting, Control and Analysis"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-6074-6627",
+            "authenticated-orcid": false,
+            "given": "I.R.",
+            "family": "Polishchuk",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0004-8680-0507",
+            "authenticated-orcid": false,
+            "given": "A.O.",
+            "family": "Pylypchuk",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The judicial practice regarding the completeness and timeliness of the assessment and payment of the environmental tax for 2020–2024 was analyzed. Typical violations in the assessment of environmental tax, which are systematic and deliberate in nature and lead to legal disputes regarding the collection of tax debt, have been established. Based on the analysis of the structure of paid environmental taxes in Ukraine, it was found that the largest source of damage caused by the activities of enterprises is emissions into the atmospheric air, and the smallest one is the pollution of water resources.\r\nThe comparative characteristics of 10 enterprises according to various types of economic activity according to indicators of environmental responsibility are given. It was established that there is no single approach to disclosing the impact of the activities of the studied enterprises on the environment, which confirms the cause-and-effect relationship between industry specifics and the published absolute and relative indicators characterizing environmental responsibility.\r\nAn algorithm for determining the productivity of costs for environmental protection measures has been developed. If, after the environmental protection measures have been implemented, water, energy, and fuel resources have been saved in the course of business processes, and the quality of products has not deteriorated, the amount of waste and emissions and discharges have not increased, then the costs of environmental protection measures are productive.\r\nThe absolute and relative indicators of environmental responsibility in the Report on the management of the investigated 10 enterprises under different KVEDs are grouped according to the following directions: volumes of waste in natural terms; expenses for environmental protection measures; natural indicators regarding commissioned objects of nature protection importance; specific weight of energy sources that were used to produce electricity; volumes of water, gas, electricity use; the number of facilities with refrigeration equipment with a carbon dioxide cooler; volumes of renewal of fixed assets; natural indicators on the amount of savings due to trade without printing checks; expenses for environmental taxes; rent for the use of subsoil.</jats:p>"
+      },
+      {
+        "DOI": "10.26794/2587-5671-2023-27-3-209-220",
+        "title": [
+          "Methodology for assessing information disclosure on stakeholder risks in non-financial reporting of oil and gas companies"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              14
+            ]
+          ]
+        },
+        "container-title": [
+          "Finance: Theory and Practice"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4387-7828",
+            "authenticated-orcid": true,
+            "given": "Thi Doan",
+            "family": "Loc",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Plekhanov Russian University of Economics"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1499-3448",
+            "authenticated-orcid": true,
+            "given": "N. A.",
+            "family": "Kazakova",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Plekhanov Russian University of Economics"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>The <jats:bold>subject </jats:bold>of the study was the public non-financial reporting of oil and gas companies in Vietnam and Russia. The research methodology is based on the analysis of theories, methods for assessing and rating the best practices of public non-financial reporting from the standpoint of disclosing stakeholder risks when making economic, including investment decisions. The analysis revealed the limitations of the studied methods within the framework of openness and the absence of an important component of quantifying the satisfaction of stakeholders with the disclosure of information that is of high importance to them from in terms of key risks associated with the company’s activities. In this regard, the <jats:bold>purpose </jats:bold>of the study was to develop a methodology and analytical tools to assess the degree of disclosure of information about stakeholder risks in the non-financial reporting of oil and gas sector companies (the degree of satisfaction of the most significant stakeholders). The <jats:bold>methodology </jats:bold>is based on the identification and correlation of companies’ key risks with the interests of the most significant stakeholders, which is the theoretical significance of the study, and also includes a compliance approach, mathematical and statistical assessment of the degree of satisfaction of stakeholders’ interests. The empirical base of the study was the 20 leading companies in Russia according to the RUIE 2022 ranking and the 23 largest companies in Vietnam according to the VN 500 2022 ranking in terms of revenue. The practical significance of the methodology lies in the fact that its results make it possible to increase the effectiveness of the company’s communications with the most significant stakeholders in order to achieve the goals set in the field of sustainable development.</jats:p>"
+      },
+      {
+        "DOI": "10.1057/s41310-025-00339-7",
+        "title": [
+          "Demystifying ESG scoring: a new methodology for the iron and steel sector based on the sustainability reporting framework"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Disclosure and Governance"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6023-4544",
+            "authenticated-orcid": false,
+            "given": "Arindam",
+            "family": "Dutta",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Manabendra",
+            "family": "Ghosh",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1089/aut.2022.0090",
+        "title": [
+          "Using Experience Sampling Methodology to Capture Disclosure Opportunities for Autistic Adults"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Autism in Adulthood"
+        ],
+        "is-referenced-by-count": 17,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-6647-9814",
+            "authenticated-orcid": false,
+            "given": "Abigail M.A.",
+            "family": "Love",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Autism Spectrum Australia, Aspect Research for Autism Practice, Chatswood, New South Wales, Australia."
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0617-674X",
+            "authenticated-orcid": false,
+            "given": "Chris",
+            "family": "Edwards",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Autism Spectrum Australia, Aspect Research for Autism Practice, Chatswood, New South Wales, Australia."
+              },
+              {
+                "name": "Menzies Health Institute Queensland, Griffith University, Gold Coast, Queensland, Australia."
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2954-0495",
+            "authenticated-orcid": false,
+            "given": "Ru Ying",
+            "family": "Cai",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Autism Spectrum Australia, Aspect Research for Autism Practice, Chatswood, New South Wales, Australia."
+              },
+              {
+                "name": "School of Psychological Sciences, Faulty of Medicine, Nursing and Health Sciences, Monash University, Clayton, Victoria, Australia."
+              }
+            ]
+          },
+          {
+            "given": "Vicki",
+            "family": "Gibbs",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Autism Spectrum Australia, Aspect Research for Autism Practice, Chatswood, New South Wales, Australia."
+              },
+              {
+                "name": "FMH Translational Research Collective, The Faculty of Medicine and Health, The University of Sydney, Sydney, New South Wales, Australia."
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:sec>\n                    <jats:title>Background:</jats:title>\n                    <jats:p>Despite a recent surge in literature contributing to our understanding of autistic individuals' disclosure experiences, the findings remain mixed. Research based on autistic people's perspective often indicates negative outcomes, while research that focuses on nonautistic perspectives is more positive. In addition, no disclosure study has used ecologically valid research methods, which help to reduce the risk of memory biases and are more representative of real-world experiences. The aim of this research was to capture outcomes from real-world disclosure opportunities as reported by a diverse range of autistic adults.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods:</jats:title>\n                    <jats:p>Thirty-six autistic adults reported their disclosure opportunities through experience sampling methodology (58% female, 28% male, and 14% nonbinary), multiple times per day or week for 2 months. Importantly, we embedded coproduction from conception to dissemination, ensuring that the outputs are relevant and beneficial for the autistic community.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results:</jats:title>\n                    <jats:p>\n                      In total, participants recorded 231 disclosure opportunities (\n                      <jats:italic toggle=\"yes\">M</jats:italic>\n                       = 6.42, SD = 4.83). Two-thirds of opportunities (\n                      <jats:italic toggle=\"yes\">n</jats:italic>\n                       = 153) were categorized as disclosure, where the participants decided to share they were autistic, and 33.8% (\n                      <jats:italic toggle=\"yes\">n</jats:italic>\n                       = 78) were labeled nondisclosure, where the participants decided not to share that they were autistic. Qualitative thematic analysis of open responses resulted in five themes that illustrated the thought processes during disclosure opportunities, the reactions of others, and reflections following disclosure for autistic adults in our study.\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion:</jats:title>\n                    <jats:p>These findings show that disclosure decisions and outcomes are complex and are influenced by both internal and external factors. Both support for autistic adults navigating this process and knowledge for nonautistic individuals on the experiences of their autistic friends, family, and community members will help to alleviate negative experiences and improve the mental well-being of autistic adults who face these decisions daily.</jats:p>\n                  </jats:sec>"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "medical NLP",
+    "results": [
+      {
+        "DOI": "10.18653/v1/2023.nlpmc-1",
+        "title": [
+          "Proceedings of the Third Workshop on NLP for Medical Conversations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-1887873/v1",
+        "title": [
+          "Natural Language Processing (NLP) to Facilitate Abstract Review in Medical Research: The Application of BioBERT to exploring the 20-years use of NLP in medical research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7343-1771",
+            "authenticated-orcid": false,
+            "given": "Safoora",
+            "family": "Masoumi",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Mazandaran University of Medical Sciences"
+              }
+            ]
+          },
+          {
+            "given": "Hossein",
+            "family": "Amirkhani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Qom"
+              }
+            ]
+          },
+          {
+            "given": "Najmeh",
+            "family": "Sadeghian",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Mazandaran University of Medical Sciences"
+              }
+            ]
+          },
+          {
+            "given": "Saeid",
+            "family": "Shahraz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "KOMODO HEALTH"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title><p><bold>Background</bold>Abstract review is a time and labor-consuming step in the systematic and scoping literature review in medicine. Automation methods, typically natural language processing (NLP), may efficiently replace manual abstract screening. This study applies NLP to a deliberately selected literature review problem, the trend of using NLP in medical research, to demonstrate the performance of this automated abstract review model.<bold>Methods</bold>Scanning PubMed, Embase, PsycINFO, and CINAHL databases, we identified 22,294 with a final selection of 12,817 English abstracts published between 2000 to 2021. We invented a manual classification of medical fields, three variables, i.e., the context of use (COU), text source (TS), and primary research field (PRF). A training dataset was developed after reviewing 485 abstracts. We used a language model called Bidirectional Encoder Representations from Transformers to classify the abstracts. To evaluate the performance of the trained models, we report a micro f1-score and accuracy.<bold>Results</bold>The trained models' micro f1-score in classifying abstracts the three variables were 77.35 % for COU, 76.24% for TS, and 85.64 % for PRF. The average annual growth rate (AAGR) of the publications was 20.99% between 2000 and 2020 (72.01 articles (95%CI: 56.80-78.30) yearly increase), with 81.76% of the abstracts published between 2010 and 2020. Studies on neoplasms constituted 27.66% of the entire corpus with an AAGR of 42.41%, followed by studies on mental conditions (AAGR=39.28%). While electronic health or medical records comprised the highest proportion of text sources (57.12%), omics databases had the highest growth among all text sources with an AAGR of 65.08%. The most common NLP application was clinical decision support (25.45%).<bold>Conclusions</bold>BioBERT showed an acceptable performance in the abstract review. If future research shows the high performance of this language model, it can reliably replace manual abstract reviews.</p>"
+      },
+      {
+        "DOI": "10.1186/s13643-024-02470-y",
+        "title": [
+          "Natural language processing (NLP) to facilitate abstract review in medical research: the application of BioBERT to exploring the 20-year use of NLP in medical research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              15
+            ]
+          ]
+        },
+        "container-title": [
+          "Systematic Reviews"
+        ],
+        "is-referenced-by-count": 20,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7343-1771",
+            "authenticated-orcid": false,
+            "given": "Safoora",
+            "family": "Masoumi",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hossein",
+            "family": "Amirkhani",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Najmeh",
+            "family": "Sadeghian",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Saeid",
+            "family": "Shahraz",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Abstract review is a time and labor-consuming step in the systematic and scoping literature review in medicine. Text mining methods, typically natural language processing (NLP), may efficiently replace manual abstract screening. This study applies NLP to a deliberately selected literature review problem, the trend of using NLP in medical research, to demonstrate the performance of this automated abstract review model.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>Scanning PubMed, Embase, PsycINFO, and CINAHL databases, we identified 22,294 with a final selection of 12,817 English abstracts published between 2000 and 2021. We invented a manual classification of medical fields, three variables, i.e., the context of use (COU), text source (TS), and primary research field (PRF). A training dataset was developed after reviewing 485 abstracts. We used a language model called Bidirectional Encoder Representations from Transformers to classify the abstracts. To evaluate the performance of the trained models, we report a micro f1-score and accuracy.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p> The trained models’ micro f1-score for classifying abstracts, into three variables were 77.35% for COU, 76.24% for TS, and 85.64% for PRF.</jats:p>\n                <jats:p>The average annual growth rate (AAGR) of the publications was 20.99% between 2000 and 2020 (72.01 articles (95% <jats:italic>CI</jats:italic>: 56.80–78.30) yearly increase), with 81.76% of the abstracts published between 2010 and 2020. Studies on neoplasms constituted 27.66% of the entire corpus with an AAGR of 42.41%, followed by studies on mental conditions (<jats:italic>AAGR</jats:italic> = 39.28%). While electronic health or medical records comprised the highest proportion of text sources (57.12%), omics databases had the highest growth among all text sources with an AAGR of 65.08%. The most common NLP application was clinical decision support (25.45%).</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>BioBERT showed an acceptable performance in the abstract review. If future research shows the high performance of this language model, it can reliably replace manual abstract reviews.</jats:p>\n              </jats:sec>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5255346",
+        "title": [
+          "Bias and Ethical Concerns in Generative AI-driven Medical NLP Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ram",
+            "family": "Sharma",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Goldi",
+            "family": "Soni",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Shristi",
+            "family": "Sethia",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.37547/tajmspr/volume08issue04-14",
+        "title": [
+          "Aggressive Compression Compromises Care: Patient Safety Risks in Clinical NLP"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "The American Journal of Medical Sciences and Pharmaceutical Research"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0001-0669-4694",
+            "authenticated-orcid": false,
+            "given": "Rahul Reddy",
+            "family": "Hanumanthgari",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "AI Engineering, NC, USA"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Large language models (LLMs) are increasingly deployed in clinical documentation workflows to alleviate physician burnout and improve efficiency. As encounter transcripts often exceed 2,000-5,000 tokens, prompt compression techniques like LLMLingua have emerged, promising 50-80% token reduction to manage computational costs. However, these generic methods optimize for maximum compression without domain awareness, creating systematic risks in healthcare settings where information loss can directly impact patient safety. This paper presents a critical analysis establishing that clinical text possesses three properties that resist aggressive compression: (1) high information density (predominantly medically relevant content), (2) semantic fragility (single-token changes invert clinical meaning), and (3) liability context (documentation errors cascade to patient harm). We demonstrate through analysis and failure mode examination that generic compression creates dangerous error patterns-negation inversions (\"denies chest pain\" → \"chest pain\"), dosage omissions (\"metformin 500mg\" → \"metformin\"), and laterality loss (\"left knee\" → \"knee\")-that standard NLP metrics like ROUGE fail to detect. We propose the Clinical BERT Safety Gate, a safety-constrained framework with five architectural principles requiring conservative compression limited to demonstrably safe filler removal, domain-aware span protection, and clinical fidelity evaluation. This work challenges the field's efficiency-first paradigm and establishes compression safety as a first-class architectural requirement for clinical NLP systems. Our framework provides actionable guidance for researchers, practitioners, and healthcare AI vendors deploying LLMs in high-stakes clinical applications.</jats:p>"
+      },
+      {
+        "DOI": "10.1002/9781394389131.ch29",
+        "title": [
+          "Natural Language Processing (NLP) in Chronic Disease Management Utilizing NLP to Extract Critical Information from Medical Records for Improving Chronic Disease Care"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              9
+            ]
+          ]
+        },
+        "container-title": [
+          "Artificial Intelligence and Machine Learning in Neurology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "P.",
+            "family": "Patange Aparna",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Chandrayani",
+            "family": "Rokde",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2022.nlppower-1",
+        "title": [
+          "Proceedings of NLP Power! The First Workshop on Efficient Benchmarking in NLP"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.20944/preprints202503.2137.v1",
+        "title": [
+          "A Study of NLP-Based Speech Interfaces in Medical Virtual Reality"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              28
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mohit",
+            "family": "Nayak",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1970-1862",
+            "authenticated-orcid": false,
+            "given": "Jari",
+            "family": "Kangas",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3276-7866",
+            "authenticated-orcid": false,
+            "given": "Roope",
+            "family": "Raisamo",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Applications of virtual reality (VR) have grown in significance in medicine as they are able to recreate real-life scenarios in 3D while posing reduced risks to patients. However, there are several interaction challenges to overcome when moving from 2D screens to 3D VR environments, such as complex controls, and slow user adaptation. More intuitive techniques are needed for enhanced user experience. Our research explores the potential of intelligent speech interfaces to enhance user interaction while conducting complex medical tasks. We developed a speech-based assistant within VR application for maxillofacial implant planning, leveraging natural language processing (NLP) to interpret user intentions and to execute tasks such as obtaining surgical equipment or answering questions related to the VR environment. The objective of the study was to evaluate the usability and cognitive load of the speech-based assistant. We conducted a mixed-methods within-subjects user study with 20 participants and compared the voice-assisted approach to traditional interaction methods such as button panels on the VR view, across various tasks. Our findings indicate that NLP driven speech-based assistants can enhance interaction and accessibility in medical VR, especially in areas such as locating controls, easiness of control, user comfort, and intuitive interaction. These findings highlight the potential benefits of augmenting traditional controls with speech interfaces, particularly in complex VR scenarios where conventional methods may limit usability. We identified key areas for future research, including improving the intelligence, accuracy, and user experience of speech-based systems. Addressing these areas could facilitate the development of more robust, user-centric, voice-assisted applications in virtual reality environments.</jats:p>"
+      },
+      {
+        "DOI": "10.1109/icamcs62774.2024.00029",
+        "title": [
+          "MeDAl – The Creation of Medical Dissertations Corpus in Albanian for Medical NLP"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              28
+            ]
+          ]
+        },
+        "container-title": [
+          "2024 International Conference on Applied Mathematics &amp;amp; Computer Science (ICAMCS)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Polina",
+            "family": "Çeço",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Tirana,Faculty of Economy,Department of Statistics and Applied Informatics,Albania"
+              }
+            ]
+          },
+          {
+            "given": "Elira",
+            "family": "Hoxha",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Tirana,Faculty of Economy,Department of Statistics and Applied Informatics,Albania"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/978-1-4842-8217-5_8",
+        "title": [
+          "Medical Records Categorization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "container-title": [
+          "Artificial Intelligence in Medical Sciences and Psychology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tshepo Chris",
+            "family": "Nokeri",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31222/osf.io/3bvzc_v1",
+        "title": [
+          "Detecting Fraud-Associated Characteristics in the Medical AI Literature: A Multi-Signal NLP Framework Reveals Distinct Paper Mill Subtypes"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              10
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-6226-440X",
+            "authenticated-orcid": true,
+            "given": "Hayden",
+            "family": "Farquhar",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Paper mills increasingly compromise the integrity of the medical artificial intelligence (AI) literature. We developed a pre-registered, multi-signal natural language processing pipeline combining seven feature categories -- tortured phrases, structural formulaicity, AI-generated text markers, citation anomalies, cross-document similarity, co-authorship networks, and geographic metadata -- and applied it to 2,478 medical AI papers (2018-2025) labelled using Retraction Watch data via the Crossref Labs API. A Random Forest-XGBoost ensemble classifier achieved average precision 0.858 and AUC-ROC 0.916 on 5-fold cross-validation, but the most important features were writing quality indicators (vocabulary diversity, reference count) rather than fraud-specific signals, reflecting the dominance of the 2021-2022 Hindawi mass retractions. Retraction subtype analysis revealed distinct fingerprints across fraud types: AI-generated content papers had twice the boilerplate density of other subtypes, while fake peer review papers had the highest co-authorship network density. Unsupervised clustering identified an \"author pool\" cluster (n=133, 47% retracted) with extreme co-author reuse (0.75 vs 0.11 corpus mean). Among unlabelled papers, 9.1% fell in high or very high risk tiers. Prevalence was broadly uniform across WHO regions (15-20%) and robust to corpus definition. Four pre-registered sensitivity analyses confirmed robustness. The heterogeneity of paper mill operations -- synonym-substitution mills, AI content generators, and peer-review manipulation rings -- demands subtype-aware detection strategies. Code: https://doi.org/10.5281/zenodo.19488868. Pre-registration: https://doi.org/10.17605/OSF.IO/JB4T6.</p>"
+      },
+      {
+        "DOI": "10.1101/2023.07.07.23292367",
+        "title": [
+          "Towards Medical Billing Automation: NLP for Outpatient Clinician Note Classification"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              12
+            ]
+          ]
+        },
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9950-0985",
+            "authenticated-orcid": false,
+            "given": "Matthew G.",
+            "family": "Crowson",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5370-1746",
+            "authenticated-orcid": false,
+            "given": "Emily",
+            "family": "Alsentzer",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Julie",
+            "family": "Fiskio",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6268-1540",
+            "authenticated-orcid": false,
+            "given": "David W.",
+            "family": "Bates",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>ABSTRACT</jats:title>\n                <jats:sec>\n                  <jats:title>Objectives</jats:title>\n                  <jats:p>Our primary objective was to develop a natural language processing approach that accurately predicts outpatient Evaluation and Management (E/M) level of service (LoS) codes using clinicians’ notes from a health system electronic health record. A secondary objective was to investigate the impact of clinic note de-identification on document classification performance.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Methods</jats:title>\n                  <jats:p>We used retrospective outpatient office clinic notes from four medical and surgical specialties. Classification models were fine-tuned on the clinic notes datasets and stratified by subspecialty. The success criteria for the classification tasks were the classification accuracy and F1-scores on internal test data. For the secondary objective, the dataset was de-identified using Named Entity Recognition (NER) to remove protected health information (PHI), and models were retrained.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>The models demonstrated similar predictive performance across different specialties, except for internal medicine, which had the lowest classification accuracy across all model architectures. The models trained on the entire note corpus achieved an E/M LoS CPT code classification accuracy of 74.8% (CI 95: 74.1-75.6). However, the de-identified note corpus showed a markedly lower classification accuracy of 48.2% (CI 95: 47.7-48.6) compared to the model trained on the identified notes.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Conclusion</jats:title>\n                  <jats:p>The study demonstrates the potential of NLP-based document classifiers to accurately predict E/M LoS CPT codes using clinical notes from various medical and procedural specialties. The models’ performance suggests that the classification task’s complexity merits further investigation. The de-identification experiment demonstrated that de-identification may negatively impact classifier performance. Further research is needed to validate the performance of our NLP classifiers in different healthcare settings and patient populations and to investigate the potential implications of de-identification on model performance.</jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.18653/v1/2025.justnlp-main",
+        "title": [
+          "Proceedings of the 1st Workshop on NLP for Empowering Justice (JUST-NLP 2025)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.23977/acss.2023.070903",
+        "title": [
+          "Research on NLP Based Automatic Summarization Generation Method for Medical Texts"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "container-title": [
+          "Advances in Computer, Signals and Systems"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.56975/ijcrt.v13i10.295562",
+        "title": [
+          "Medical application for real-time chatbot using nlp"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "INTERNATIONAL JOURNAL OF CREATIVE RESEARCH THOUGHTS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Shridevi",
+            "family": "Wani",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Dr.Raju",
+            "family": "Hiremath",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  }
+]

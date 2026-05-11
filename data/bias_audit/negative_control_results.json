@@ -52,9 +52,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 19.24,
-      "real_median": 22.1,
-      "real_max": 24.3,
+      "real_min": 12.45,
+      "real_median": 20.03,
+      "real_max": 26.5,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -110,9 +110,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 19.05,
-      "real_median": 22.25,
-      "real_max": 25.15,
+      "real_min": 10.73,
+      "real_median": 20.93,
+      "real_max": 27.8,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -168,9 +168,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 18.44,
-      "real_median": 21.3,
-      "real_max": 23.5,
+      "real_min": 12.05,
+      "real_median": 19.29,
+      "real_max": 25.7,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -226,9 +226,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 18.4,
-      "real_median": 21.52,
-      "real_max": 24.3,
+      "real_min": 12.45,
+      "real_median": 20.03,
+      "real_max": 26.5,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -284,9 +284,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 12.39,
-      "real_median": 18.45,
-      "real_max": 20.97,
+      "real_min": 8.36,
+      "real_median": 16.74,
+      "real_max": 25.0,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -342,9 +342,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 16.42,
-      "real_median": 21.7,
-      "real_max": 31.2,
+      "real_min": 11.87,
+      "real_median": 17.78,
+      "real_max": 28.42,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -400,9 +400,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 25.48,
-      "real_median": 30.81,
-      "real_max": 34.86,
+      "real_min": 16.06,
+      "real_median": 25.45,
+      "real_max": 33.0,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -458,9 +458,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 23.38,
-      "real_median": 26.8,
-      "real_max": 32.74,
+      "real_min": 19.24,
+      "real_median": 25.41,
+      "real_max": 31.35,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -516,9 +516,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 25.08,
-      "real_median": 29.18,
-      "real_max": 32.81,
+      "real_min": 18.46,
+      "real_median": 25.11,
+      "real_max": 30.81,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -574,9 +574,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 15.0,
-      "real_median": 22.5,
-      "real_max": 31.9,
+      "real_min": 10.0,
+      "real_median": 15.0,
+      "real_max": 29.9,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -632,9 +632,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 7.8,
-      "real_median": 13.8,
-      "real_max": 17.8,
+      "real_min": 4.5,
+      "real_median": 10.8,
+      "real_max": 16.8,
       "n_fail": 0,
       "verdict": "TIGHT"
     },
@@ -690,9 +690,9 @@
           "verdict": "PASS_below_real_range"
         }
       ],
-      "real_min": 21.87,
-      "real_median": 25.3,
-      "real_max": 28.62,
+      "real_min": 16.47,
+      "real_median": 22.43,
+      "real_max": 27.24,
       "n_fail": 0,
       "verdict": "TIGHT"
     },

@@ -1,0 +1,1451 @@
+[
+  {
+    "query": "LLM evaluation methodology",
+    "results": [
+      {
+        "DOI": "10.1080/13645579.2026.2625160",
+        "title": [
+          "Prompt-imposed structure: a methodological evaluation of LLM-generated survey data for theory-based modeling"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "International Journal of Social Research Methodology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0004-9813-4214",
+            "authenticated-orcid": false,
+            "given": "Zhangwei",
+            "family": "Zheng",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Universiti Kebangsaan Malaysia",
+                "place": [
+                  "Bangi, Malaysia"
+                ]
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9738-9432",
+            "authenticated-orcid": false,
+            "given": "Hafizuddin-Syah",
+            "family": "B.A.M",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universiti Kebangsaan Malaysia",
+                "place": [
+                  "Bangi, Malaysia"
+                ]
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0008-2435-4184",
+            "authenticated-orcid": false,
+            "given": "Qin Lingda",
+            "family": "Tan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Universiti Kebangsaan Malaysia",
+                "place": [
+                  "Bangi, Malaysia"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.31673/2412-9070.2026.028906",
+        "title": [
+          "Methodology of application of LLM to support management decision-making"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "Connectivity"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1109/gaclm67198.2025.11232232",
+        "title": [
+          "Magic Sequence: LLM evaluation methodology of logical problem solving for sequence manipulation. Application to mathematical magic tricks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 2nd International Generative AI and Computational Language Modelling Conference (GACLM)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Hugues Ali",
+            "family": "Mehenni",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Talan,Paris,France"
+              }
+            ]
+          },
+          {
+            "given": "Laurent",
+            "family": "Cervoni",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Talan,Paris,France"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.36227/techrxiv.177069683.39144593/v1",
+        "title": [
+          "LLM-Aided Verification Gap Detection: A Methodology for Identifying Missing Checkers in UVM Testbenches"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              10
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0002-9551-9894",
+            "authenticated-orcid": false,
+            "given": "Praveen Kumar",
+            "family": "Vagala",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Independent Researcher"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/icecce67514.2025.11257953",
+        "title": [
+          "Ad Hoc LLM-to-LLM Evaluation Framework"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              27
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 International Conference on Electrical, Communication and Computer Engineering (ICECCE)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Abdulaziz",
+            "family": "Almaslukh",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "College of Computer and Information Sciences, King Saud University,Department of Information Systems,Riyadh,Saudi Arabia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6481258",
+        "title": [
+          "QAI Lab: Domain-Isolated Architecture for Reliable LLM Inference Through Clean Data Methodology and Reactor Isolation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Murat",
+            "family": "Atilgan",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This paper presents QAI Lab, an architecture designed to address a critical failure mode in mainstream large language model deployments that standard benchmarks fail to capture: multi-domain session degradation. Operational testing across 50+ model configurations reveals that cross-domain queries within a single session produce progressive context contamination, with semantically incoherent outputs emerging consistently by query 5-8. We identify contamination-not model scale-as the primary determinant of inference reliability, and propose a unified methodology applied across all system layers: identify the real constraint, remove noise, prevent contamination. QAI Lab implements this methodology through three architectural contributions: (1) a clean data philosophy that treats datasets as version-controlled engineering artefacts with provenance tracking, (2) a reactor isolation architecture that maintains strict domain boundaries through dedicated context, retrieval indices, and output schemas, and (3) a retrieval-first inference pipeline that requires factual grounding before generation. Testing demonstrates consistent ∼95% accuracy across 8 sequential cross-domain queries, compared to ∼40% accuracy by query 8 in conventional architectures. The principles were discovered through extensive operational testing, not derived from existing literature, and subsequently found to align with established Data-Centric Engineering frameworks.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5601120",
+        "title": [
+          "Prompt2DAG: A Modular LLM-Prompting Methodology for Data Enrichment Pipeline Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Abubakari",
+            "family": "Alidu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Michele",
+            "family": "Ciavotta",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Flavio",
+            "family": "De Paoli",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31219/osf.io/eukna_v1",
+        "title": [
+          "Generating Medical Diagnostic Scenarios with LLM-Based Reinforcement Learning Feedback: Dataset Release and Methodology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              21
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-5220-2155",
+            "authenticated-orcid": true,
+            "given": "Aniruth",
+            "family": "Ananthanarayanan",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Sample medical scenarios play a crucial role in training healthcare professionals by providing structured cases to develop diagnostic reasoning and clinical decision-making skills. However, access to diverse and inclusive sample diagnostic cases remains challenging due to the limited representation of specific conditions and populations in medical education materials, and existing cases are often not equitable due to a lack of representation of minority groups. In this paper, we present a new dataset of medical diagnostic scenarios generated using a combination of reinforcement learning from artificial intelligence feedback and retrieval augment generation techniques. Despite the dataset’s limited size, it offers a unique resource for advancing medical education, particularly in regions with scarce training materials while also emphasizing inclusivity by incorporating a higher representation of people of color and women. Then, we discuss the data generation process, the dataset structure, and potential applications in medical training programs. This work aims to contribute to the development of accessible, high-quality, and inclusive educational tools in the medical field.</p>"
+      },
+      {
+        "DOI": "10.32604/cmc.2025.068670",
+        "title": [
+          "LLM-KE: An Ontology-Aware LLM Methodology for Military Domain Knowledge Extraction"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Computers, Materials &amp; Continua"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Yu",
+            "family": "Tao",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Ruopeng",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yongqi",
+            "family": "Wen",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yihao",
+            "family": "Zhong",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Kaige",
+            "family": "Jiao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Xiaolei",
+            "family": "Gu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5702477",
+        "title": [
+          "Preprocessing Methodology for Enhancing LLM Numeric Processing in Ten-Thousand System"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Hyeryeon",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Kyeongseo",
+            "family": "Mok",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hojin",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Raehyung",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.22541/au.177023300.06946143/v1",
+        "title": [
+          "Single-LLM Synthetic Market Evaluation for Banner Design"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-7252-5115",
+            "authenticated-orcid": true,
+            "given": "Yuusuke",
+            "family": "Harada",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Hiroshima University"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.22541/au.174897564.48312932/v1",
+        "title": [
+          "The STARR Protocol: An Automated LLM Methodology for Enhanced Systematic Literature Review Screening"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-9854-8290",
+            "authenticated-orcid": true,
+            "given": "Ben",
+            "family": "Baranker",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Columbia University Vagelos College of Physicians and Surgeons"
+              }
+            ]
+          },
+          {
+            "given": "Akash",
+            "family": "Kapoor",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Columbia University Vagelos College of Physicians and Surgeons"
+              }
+            ]
+          },
+          {
+            "given": "Shailen G.",
+            "family": "Sampath",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Columbia University Vagelos College of Physicians and Surgeons"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13088/jiis.2025.31.2.151",
+        "title": [
+          "A Multivariate Time Series Forecasting Methodology Based on Pre-trained LLM"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Journal of Intelligence and Information Systems"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Minseob",
+            "family": "Song",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Namgyu",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.6338478",
+        "title": [
+          "A Systematic Literature Review of LLM Evaluation Methods"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Michael",
+            "family": "Solomon",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The rapid advancement of Large Language Models (LLMs) has fundamentally transformed the landscape of natural language processing (NLP), offering unprecedented capabilities in generating and understanding human-like text. However, the integration of these models into real-world applications necessitates rigorous evaluation methodologies to ensure their performance, reliability, and ethicality. This systematic literature review aims to comprehensively analyze and synthesize the current state of evaluation methods for LLMs, providing a detailed examination of the diverse frameworks, metrics, and benchmarks employed within this domain. The review begins by contextualizing the emergence of LLMs, highlighting their significant impact across various applications, including machine translation, sentiment analysis, text summarization, and conversational agents. We categorize the evaluation methods into distinct paradigms: intrinsic evaluation, which assesses model performance on standard benchmarks and quantitative metrics; extrinsic evaluation, which explores the model's effectiveness in real-world applications and user-facing scenarios; and human-centered evaluation, emphasizing user experience and satisfaction. Each paradigm is critically analyzed to understand its strengths, weaknesses, and applicability in assessing LLM performance.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6531679",
+        "title": [
+          "Modern LLM Evaluation Techniques: A Mathematical Framework From Classical Metrics to LLM-as-Judge and Psychometric Foundations"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ana Elvira",
+            "family": "Alfaro Pizana",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Miquel",
+            "family": "Noguer I Alonso",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The evaluation of large language models (LLMs) presents fundamental measurement challenges that classical NLP metrics fail to address. This paper provides a rigorous mathematical treatment of modern LLM evaluation techniques, grounded in a new measurement-theoretic foundation drawn from classical test theory. We progress from the statistical properties of legacy n-gram metrics (BLEU, ROUGE) through embedding-based semantic measures (BERTScore, MoverScore), to the rapidly evolving paradigm of LLM-as-Judge evaluation. We formalize the Bradley-Terry model underpinning Elo-based ranking systems such as Chatbot Arena, develop the Item Response Theory (IRT) framework for benchmark design, and provide a complete treatment of inter-rater reliability measures including Cohen's κ and Krippendorff's α. Beyond organizing known results, this paper establishes four original theoretical contributions. First, a Validity Ceiling Theorem shows that the construct validity of any evaluation metric is bounded by the geometric mean of its reliability with the ground-truth measure, formalizing why unreliable judges cannot achieve high validity. Second, a Judge Bias-Variance Decomposition identifies systematic and random error components in LLM-as-Judge evaluation, yielding a corollary that selfenhancement bias is irreducible under swap debiasing. Third, a Discriminability-Contamination Tradeoff Theorem proves that no fixed benchmark item can simultaneously achieve maximum Fisher information and zero contamination risk, establishing dynamic benchmarks as the uniquely optimal design. Fourth, a formal Goodhart's Law Theorem quantifies how metric optimization degrades proxy validity: the optimization gap grows as √ log M in the number of training runs. The paper concludes with structural parallels to financial model validation and a taxonomy of practical guidelines.</jats:p>"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "evaluation survey",
+    "results": [
+      {
+        "DOI": "10.4324/9781003367826-3",
+        "title": [
+          "Survey Response Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "A Practical Guide to Survey Questionnaire Design and Evaluation"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0008-7012-6537",
+            "authenticated-orcid": false,
+            "given": "Emilia",
+            "family": "Peytcheva",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-0187-3789",
+            "authenticated-orcid": false,
+            "given": "Ting",
+            "family": "Yan",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.4060/cd3689en",
+        "title": [
+          "Farmer Field School monitoring, evaluation and learning scoping survey"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.3390/rs16010169",
+        "title": [
+          "SDSNet: Building Extraction in High-Resolution Remote Sensing Images Using a Deep Convolutional Network with Cross-Layer Feature Information Interaction Filtering"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Remote Sensing"
+        ],
+        "is-referenced-by-count": 11,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0001-2291-1812",
+            "authenticated-orcid": false,
+            "given": "Xudong",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0005-0228-7177",
+            "authenticated-orcid": false,
+            "given": "Mingliang",
+            "family": "Tian",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          },
+          {
+            "given": "Zhijun",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Hubei Key Laboratory of Geological Survey and Evaluation of Ministry of Education, China University of Geosciences, Wuhan 430078, China"
+              },
+              {
+                "name": "Xining Center of Natural Resources Comprehensive Survey, China Geological Survey, Xining 810000, China"
+              }
+            ]
+          },
+          {
+            "given": "Kang",
+            "family": "He",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Hubei Key Laboratory of Geological Survey and Evaluation of Ministry of Education, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          },
+          {
+            "given": "Sheng",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, China University of Geosciences, Wuhan 430078, China"
+              },
+              {
+                "name": "Hubei Key Laboratory of Geological Survey and Evaluation of Ministry of Education, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          },
+          {
+            "given": "Yan",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State Key Laboratory of Geological Processes and Mineral Resources, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6424-0623",
+            "authenticated-orcid": false,
+            "given": "Yusen",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Computer Science, China University of Geosciences, Wuhan 430078, China"
+              },
+              {
+                "name": "Hubei Key Laboratory of Geological Survey and Evaluation of Ministry of Education, China University of Geosciences, Wuhan 430078, China"
+              },
+              {
+                "name": "Key Laboratory of Intelligent Geo-Information Processing, China University of Geosciences, Wuhan 430078, China"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Building extraction refers to the automatic identification and separation of buildings from the background in remote sensing images. It plays a significant role in urban planning, land management, and disaster monitoring. Deep-learning methods have shown advantages in building extraction, but they still face challenges such as variations in building types, object occlusions, and complex backgrounds. To address these issues, SDSNet, a deep convolutional network that incorporates global multi-scale feature extraction and cross-level feature fusion, is proposed. SDSNet consists of three modules: semantic information extraction (SIE), multi-level merge (MLM), and semantic information fusion (SIF). The SIE module extracts contextual information and improves recognition of multi-scale buildings. The MLM module filters irrelevant details guided by high-level semantic information, aiding in the restoration of edge details for buildings. The SIF module combines filtered detail information with extracted semantic information for refined building extraction. A series of experiments conducted on two distinct public datasets for building extraction consistently demonstrate that SDSNet outperforms the state-of-the-art deep-learning models for building extraction tasks. On the WHU building dataset, the overall accuracy (OA) and intersection over union (IoU) achieved impressive scores of 98.86% and 90.17%, respectively. Meanwhile, on the Massachusetts dataset, SDSNet achieved OA and IoU scores of 94.05% and 71.6%, respectively. SDSNet exhibits a unique advantage in recovering fine details along building edges, enabling automated and intelligent building extraction. This capability effectively supports urban planning, resource management, and disaster monitoring.</jats:p>"
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v1/review1",
+        "title": [
+          "Review for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              6
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Nate",
+            "family": "Breznau",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v2/review1",
+        "title": [
+          "Review for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              8
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Nate",
+            "family": "Breznau",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v1/review2",
+        "title": [
+          "Review for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              16
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "Sean Grant",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3390/su162210122",
+        "title": [
+          "What Drives Vegetation Evolution in the Middle Reaches of the Yellow River Basin, Climate Change or Human Activities?"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              20
+            ]
+          ]
+        },
+        "container-title": [
+          "Sustainability"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Mengmeng",
+            "family": "Gao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "China Institute of Geological Environmental Monitoring, Beijing 100081, China"
+              },
+              {
+                "name": "Key Laboratory of Mining Ecological Effects and System Restoration, Ministry of Natural Resources, Beijing 100081, China"
+              }
+            ]
+          },
+          {
+            "given": "Nan",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "China Institute of Geological Environmental Monitoring, Beijing 100081, China"
+              },
+              {
+                "name": "Key Laboratory of Mining Ecological Effects and System Restoration, Ministry of Natural Resources, Beijing 100081, China"
+              },
+              {
+                "name": "Institute of Geophysical and Geochemical Exploration, Chinese Academy of Geological Sciences, Langfang 065000, China"
+              }
+            ]
+          },
+          {
+            "given": "Qiong",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "China Institute of Geological Environmental Monitoring, Beijing 100081, China"
+              },
+              {
+                "name": "Key Laboratory of Mining Ecological Effects and System Restoration, Ministry of Natural Resources, Beijing 100081, China"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>The middle reaches of the Yellow River Basin (MYRB) are known for their significant soil erosion and fragile ecological environment, where vegetation growth is important. However, the vegetation’s reaction to climate change (CC) and human activity (HA), and the potential driving mechanisms underlying such changes in the MYRB, have not yet been clarified. Thus, based on remote sensing data, combined with trend analysis and the Hurst method and supplemented by the structural equation model (SEM) and residual analysis method, we aimed to conduct an analysis of the spatio-temporal evolution of the normalized difference vegetation index (NDVI) in the MYRB from 2000 to 2020. Additionally, we explored how climate and human factors together affect the NDVI and quantified the proportion of their respective contributions to NDVI change. The NDVI exhibited a fluctuating upward trend in the MYRB. Moreover, approximately 97.7% of the area showed an improving trend, with nearly 50% of the area continuing to maintain an improving trend. Precipitation and temperature had positive effects on the NDVI, while vapor pressure deficit (VPD) and land use intensity (LUI) had negative effects. HA played a pivotal role in the vegetation improvement area with a contribution rate of 67.53%. The study revealed NDVI variations and emphasized the influence of HA on the NDVI in the MYRB. The findings are vital in comprehending the response mechanism of ecosystems and guiding reasonable environmental protection policies, which is beneficial for the sustainable development of the region.</jats:p>"
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v2/review2",
+        "title": [
+          "Review for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              17
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "Sean Grant",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1016/j.evalprogplan.2023.102274",
+        "title": [
+          "Consequences of survey modification in a program evaluation: An exploratory research on evaluation study"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              6
+            ]
+          ]
+        },
+        "container-title": [
+          "Evaluation and Program Planning"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-5463-3271",
+            "authenticated-orcid": false,
+            "given": "Colin",
+            "family": "Braman",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3864-0217",
+            "authenticated-orcid": false,
+            "given": "Tarek",
+            "family": "Azzam",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v1/decision1",
+        "title": [
+          "Decision letter for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              29
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v3/decision1",
+        "title": [
+          "Decision letter for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              25
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1079/9781800620575.0095",
+        "title": [
+          "Baseline evaluation survey"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Fungal Plant Pathogens"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1098/rsos.240125/v2/decision1",
+        "title": [
+          "Decision letter for \"Subjective evidence evaluation survey for many-analysts studies\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              19
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.59161/rapportbipm202301",
+        "title": [
+          "Evaluation report - Survey on digital transformation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "BIPM",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2317-3436",
+            "authenticated-orcid": false,
+            "given": "Olav",
+            "family": "Werhahn",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Gregor",
+            "family": "Dudle",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.59161/rapport202301",
+        "title": [
+          "Evaluation report - Survey on digital transformation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "BIPM",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2317-3436",
+            "authenticated-orcid": false,
+            "given": "Olav",
+            "family": "Werhahn",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Gregor",
+            "family": "Dudle",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmarking practices",
+    "results": [
+      {
+        "DOI": "10.1108/s2055-364120230000053001",
+        "title": [
+          "Introduction to Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Enakshi",
+            "family": "Sengupta",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Independent Researcher and Scholar, India"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Education in an emergency refers to the accessibility of education among populations that have faced an unforeseen situation in their home country resulting in disruption of their normal lives, including the deterioration of the educational system prevalent in that country. Emergency typically arises from armed conflict or natural disasters. The world has been disrupted by more than 50 armed conflicts since the World War. In recent times, the entire world came to a halt due to the COVID-19 pandemic, which in severely disrupted the prevalent education system. Emergency also affects the economic system of a country, and higher educational institution (HEI) struggles due to lack of funds. Lack of funds and other educational resources, as well as lack of physical security or environmental disasters, lead to a sudden halt in the educational system, throwing students into limbo. The book volume discusses how curriculum needs to be adaptive and collaborate with stakeholders to formulate a teaching learning method that is cognizant of the latest technologies and scientific discoveries. Several interventions have been successfully implemented across the globe and have been discussed in chapters contributed by well-known academics working in the arena of imparting education that is resilient and can deliver quality education in times of crisis.</jats:p>"
+      },
+      {
+        "DOI": "10.1201/9781003593645-11",
+        "title": [
+          "Project Best Practices and Benchmarking"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "Understanding Project Practices and Processes"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Mel",
+            "family": "Bost",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.4324/9781003578871-13",
+        "title": [
+          "Beyond Benchmarking"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmarking"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Robert C.",
+            "family": "Camp",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.54675/wdym7940",
+        "title": [
+          "Benchmarking for Open Universities: guidelines and good practices"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1108/bij-12-2025-1132",
+        "title": [
+          "Benchmarking supply chain due diligence practices in agri-food supply chains"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmarking: An International Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9433-7389",
+            "authenticated-orcid": true,
+            "given": "Isha",
+            "family": "Sharma",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Symbiosis Institute of Operations Management, Symbiosis International (Deemed) University , ,",
+                "place": [
+                  "Nashik, India"
+                ]
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>This study examines how supply chain due diligence (SCDD) is institutionalized in agri-food supply chains and how it contributes to sustainability performance and supply chain resilience. It responds to the growing regulatory and operational complexity confronting agri-food firms by empirically developing a benchmarking framework for due diligence implementation.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>A cross-sectional survey was conducted among 230 professionals from agri-food organizations. Data were analyzed using covariance-based structural equation modeling (CB-SEM) to validate the measurement model and test the hypothesized relationships between regulatory pressure, technological transparency, supply chain complexity, due diligence, sustainability performance and resilience.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The results show that regulatory pressure, technological transparency, and supply chain complexity significantly influence the adoption of supply chain due diligence practices. Supply chain due diligence has a strong positive impact on sustainability performance, which in turn significantly enhances supply chain resilience. Sustainability performance partially mediates the relationship between due diligence and resilience, indicating that governance mechanisms improve adaptability primarily through sustainability execution.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Practical implications</jats:title>\n                    <jats:p>The findings suggest that due diligence should be viewed as a strategic governance capability rather than a compliance tool. Managers should integrate due diligence into operational routines and leverage transparency technologies to improve governance effectiveness. For policymakers, the results highlight the need to promote capability-building regulatory frameworks rather than symbolic compliance mechanisms.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>This study provides one of the first governance-based benchmarking frameworks for supply chain due diligence in agri-food supply chains. It reconceptualizes due diligence from a compliance activity to a strategic capability that drives sustainability and resilience. By proposing a practical due diligence benchmarking roadmap and identifying sustainability performance as the mechanism through which due diligence enhances resilience, the study advances theory beyond procedural compliance toward performance-oriented governance.</jats:p>\n                  </jats:sec>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5434836",
+        "title": [
+          "The State of Gifted Education in Saudi Universities: Policies, Practices, and Cultural Influences: Benchmarking Best Practices"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Yusra",
+            "family": "Aboud",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1108/bij-12-2024-1096",
+        "title": [
+          "Benchmarking inventory management practices and organizational performance"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              8
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmarking: An International Journal"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3002-9114",
+            "authenticated-orcid": true,
+            "given": "Aamir",
+            "family": "Rashid",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Business and Economics, School of Business and Information Systems, York College, City University of New York , , ,",
+                "place": [
+                  "Jamaica, New York, USA"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Rizwana",
+            "family": "Rasheed",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Management, Lucille and Jay Chazanoff School of Business, College of Staten Island, City University of New York , , ,",
+                "place": [
+                  "Staten Island, New York, USA"
+                ]
+              },
+              {
+                "name": "Department of Business Administration, IQRA University , ,",
+                "place": [
+                  "Karachi, Pakistan"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Noor Aina",
+            "family": "Amirah",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Operation Research and Management Sciences Research Group, Faculty of Business and Management, Universiti Sultan Zainal Abidin , ,",
+                "place": [
+                  "Kuala Nerus, Malaysia"
+                ]
+              },
+              {
+                "name": "Centre of Excellence, Artificial Intelligence for Sustainability and Islamic Research (AISIR), Universiti Sultan Zainal Abidin , ,",
+                "place": [
+                  "Kuala Nerus, Malaysia"
+                ]
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>Given the critical role of public healthcare performance in safeguarding human lives, effective inventory management is essential for ensuring cost efficiency, product availability, and service quality rather than profit generation. Drawing on Control Theory and the Resource-Based View, this study examines how inventory management determinants influence organizational performance in public-sector healthcare facilities in a developing economy, thereby contributing to theory by clarifying the role of inventory management as a capability and control mechanism linking organizational practices to performance outcomes.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>A quantitative approach was employed to test the hypotheses using survey data collected from 200 inventory managers working in public healthcare facilities in Pakistan during 2022, with Structural Equation Modeling conducted using Analysis of Moment Structures (AMOS).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The results suggest that six direct and four mediation hypotheses are supported. Furthermore, the findings revealed that each disruptive factor has a significant positive effect on inventory management and organizational performance, with inventory management fully mediating these relationships. The study illustrated that implementing standard operating procedures, integrated management systems, employing competent employees, maintaining stock availability, and ensuring inventory accuracy can minimize costs and reduce the average patient bed occupancy rate.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Research limitations/implications</jats:title>\n                    <jats:p>This study advances theory by integrating study variables with inventory management (IM) and organizational performance (OP), highlighting IM’s mediating role through SEM and extending Control Theory and the Resource-Based View. Organizationally, the model explains 63% of OP, emphasizing the importance of standardized procedures, Information and Communication Technology integration, and staff proficiency in improving inventory efficiency and service quality. The study also offers a benchmarking framework applicable across healthcare, service, and manufacturing sectors to guide performance improvement.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>This study integrates Control Theory and the Resource-Based View within an explicit, evidence-based benchmarking design to examine inventory management and organizational performance in public healthcare. Using multidimensional comparative analysis, the study identifies performance gaps and best-practice configurations across facilities that differ in digital integration, staff proficiency, inventory management effectiveness, and facility type. By moving beyond single-sample analysis, the study provides transferable benchmarking insights and actionable guidance for enhancing performance in resource-constrained public-sector healthcare systems.</jats:p>\n                  </jats:sec>"
+      },
+      {
+        "DOI": "10.4324/9781003578871-4",
+        "title": [
+          "Identifying Comparative Companies (Benchmarking Partners) (Step 2)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmarking"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Robert C.",
+            "family": "Camp",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.5596150",
+        "title": [
+          "Benchmarking Of Performances and Practices: Field Experiment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Yun",
+            "family": "Hou",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Ivan P. L.",
+            "family": "Png",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1108/s2055-364120230000053008",
+        "title": [
+          "Prelims"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1108/s2055-364120230000053014",
+        "title": [
+          "Name Index"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1108/s2055-364120230000053011",
+        "title": [
+          "Subject Index"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.4324/9781003578871",
+        "title": [
+          "Benchmarking"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 17,
+        "author": [
+          {
+            "given": "Robert C.",
+            "family": "Camp",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.5040/9798881846305.ch4",
+        "title": [
+          "Benchmarking"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Museum Master Planning"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1108/s2055-364120230000053012",
+        "title": [
+          "About the Authors"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Higher Education in Emergencies: Best Practices and Benchmarking"
+        ],
+        "is-referenced-by-count": 0
+      }
+    ],
+    "status": 200
+  }
+]

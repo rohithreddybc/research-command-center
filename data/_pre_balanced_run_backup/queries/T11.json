@@ -1,0 +1,114 @@
+{
+  "topic": {
+    "topic_id": "T11",
+    "title": "Format sensitivity benchmark on LLM evaluations",
+    "category": "prompt",
+    "keywords": "format sensitivity|JSON YAML prose|benchmark variance",
+    "synonyms": "output format;structured output",
+    "negative_keywords": "unrelated UI",
+    "target_artifact": "benchmark",
+    "prelim_priority": "4"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance",
+      "output format",
+      "structured output",
+      "format sensitivity benchmark",
+      "format sensitivity evaluation",
+      "format sensitivity robustness",
+      "format sensitivity reproducibility",
+      "JSON YAML prose benchmark",
+      "JSON YAML prose evaluation"
+    ],
+    "openalex": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance",
+      "output format",
+      "structured output",
+      "format sensitivity benchmark",
+      "format sensitivity evaluation",
+      "format sensitivity robustness",
+      "format sensitivity reproducibility",
+      "JSON YAML prose benchmark",
+      "JSON YAML prose evaluation"
+    ],
+    "crossref": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance",
+      "output format"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22format%20sensitivity%22+AND+all:%22JSON%20YAML%20prose%22+AND+all:%22benchmark%20variance%22)",
+      "all:format%20sensitivity"
+    ],
+    "github": [
+      "format sensitivity in:readme,description",
+      "format sensitivity benchmark in:name,description",
+      "format sensitivity evaluation in:name,description",
+      "JSON YAML prose in:readme,description",
+      "JSON YAML prose benchmark in:name,description",
+      "JSON YAML prose evaluation in:name,description",
+      "benchmark variance in:readme,description",
+      "benchmark variance benchmark in:name,description",
+      "benchmark variance evaluation in:name,description"
+    ],
+    "huggingface": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance",
+      "output format",
+      "structured output",
+      "format sensitivity benchmark",
+      "JSON YAML prose benchmark"
+    ],
+    "doaj": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance"
+    ],
+    "pwc": [
+      "format sensitivity",
+      "JSON YAML prose",
+      "benchmark variance"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "format sensitivity",
+        "url": "https://scholar.google.com/scholar?q=%22format%20sensitivity%22%202024..2026"
+      },
+      {
+        "label": "JSON YAML prose",
+        "url": "https://scholar.google.com/scholar?q=%22JSON%20YAML%20prose%22%202024..2026"
+      },
+      {
+        "label": "benchmark variance",
+        "url": "https://scholar.google.com/scholar?q=%22benchmark%20variance%22%202024..2026"
+      },
+      {
+        "label": "output format",
+        "url": "https://scholar.google.com/scholar?q=%22output%20format%22%202024..2026"
+      },
+      {
+        "label": "structured output",
+        "url": "https://scholar.google.com/scholar?q=%22structured%20output%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

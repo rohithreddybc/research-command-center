@@ -1,0 +1,224 @@
+[
+  {
+    "query": "LLM evaluation methodology",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "metadata",
+    "results": [
+      {
+        "title": "Economic Sustainability and Business Practices",
+        "issn": [],
+        "publisher": "Sumy State University",
+        "subject": [
+          "Economics as a science",
+          "Business"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 30,
+            "currency": "USD"
+          },
+          {
+            "price": 1000,
+            "currency": "UAH"
+          }
+        ],
+        "license": [
+          "CC BY"
+        ],
+        "url": "https://esbp.sumdu.edu.ua/",
+        "country": "UA"
+      },
+      {
+        "title": "Library Resources & Technical Services",
+        "issn": [],
+        "publisher": "American Library Association",
+        "subject": [
+          "Bibliography. Library science. Information resources"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY-NC"
+        ],
+        "url": "https://journals.ala.org/index.php/lrts/index",
+        "country": "US"
+      },
+      {
+        "title": "Rocznik Andragogiczny",
+        "issn": [],
+        "publisher": "Wydawnictwo Naukowe Uniwersytetu Mikołaja Kopernika",
+        "subject": [
+          "Education"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY-ND"
+        ],
+        "url": "https://apcz.umk.pl/RA/index",
+        "country": "PL"
+      },
+      {
+        "title": "Journal of Biomedical Semantics",
+        "issn": [],
+        "publisher": "BMC",
+        "subject": [
+          "Computer applications to medicine. Medical informatics"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 1440,
+            "currency": "EUR"
+          },
+          {
+            "price": 1690,
+            "currency": "USD"
+          },
+          {
+            "price": 1340,
+            "currency": "GBP"
+          }
+        ],
+        "license": [
+          "CC BY",
+          "CC BY-NC-ND"
+        ],
+        "url": "https://jbiomedsem.biomedcentral.com",
+        "country": "GB"
+      },
+      {
+        "title": "PORTAL: Journal of Multidisciplinary International Studies",
+        "issn": [],
+        "publisher": "UTS ePRESS",
+        "subject": [
+          "Colonies and colonization. Emigration and immigration. International migration",
+          "Sociology (General)"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY"
+        ],
+        "url": "https://epress.lib.uts.edu.au/journals/index.php/portal",
+        "country": "AU"
+      },
+      {
+        "title": "The Philippine Journal of Fisheries",
+        "issn": [],
+        "publisher": "National Fisheries Research and Development Institute",
+        "subject": [
+          "Aquaculture. Fisheries. Angling"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY-NC"
+        ],
+        "url": "https://www.nfrdi.da.gov.ph/tpjf/",
+        "country": "PH"
+      },
+      {
+        "title": "Novedades en Población",
+        "issn": [],
+        "publisher": "Universidad de La Habana",
+        "subject": [
+          "Public aspects of medicine",
+          "Economic theory. Demography"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY"
+        ],
+        "url": "http://www.novpob.uh.cu",
+        "country": "CU"
+      },
+      {
+        "title": "Construction Economics and Building",
+        "issn": [],
+        "publisher": "UTS ePRESS",
+        "subject": [
+          "Engineering economy",
+          "Building construction"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY"
+        ],
+        "url": "http://epress.lib.uts.edu.au/journals/index.php/AJCEB",
+        "country": "AU"
+      },
+      {
+        "title": "IASSIST Quarterly",
+        "issn": [],
+        "publisher": "International Association for Social Science Information Service and Technology",
+        "subject": [
+          "Social Sciences"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY-NC"
+        ],
+        "url": "https://iassistquarterly.com",
+        "country": "US"
+      },
+      {
+        "title": "Catalogue and Index",
+        "issn": [],
+        "publisher": "Chartered Institute of Library and Information Professionals (CILIP)",
+        "subject": [
+          "Information resources (General)"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY"
+        ],
+        "url": "https://www.cilip.org.uk/members/group_content_view.asp?group=201298&id=764614",
+        "country": "GB"
+      },
+      {
+        "title": "Scientific Data",
+        "issn": [],
+        "publisher": "Nature Portfolio",
+        "subject": [
+          "Science"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 2390,
+            "currency": "EUR"
+          },
+          {
+            "price": 2690,
+            "currency": "USD"
+          },
+          {
+            "price": 2150,
+            "currency": "GBP"
+          }
+        ],
+        "license": [
+          "CC BY",
+          "CC BY-NC-ND"
+        ],
+        "url": "https://www.nature.com/sdata/",
+        "country": "GB"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "systematic mapping",
+    "results": [],
+    "status": 200
+  }
+]

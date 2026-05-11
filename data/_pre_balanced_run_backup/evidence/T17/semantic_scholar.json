@@ -1,0 +1,2331 @@
+[
+  {
+    "query": "tokenizer",
+    "results": [
+      {
+        "paperId": "289d46628d721374535e8e4b45abd7408249cda7",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-20321",
+          "ArXiv": "2502.20321",
+          "DOI": "10.48550/arXiv.2502.20321",
+          "CorpusId": 276647643
+        },
+        "title": "UniTok: A Unified Tokenizer for Visual Generation and Understanding",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 107,
+        "influentialCitationCount": 23,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.20321, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2186151254",
+            "name": "Chuofan Ma"
+          },
+          {
+            "authorId": "2294789302",
+            "name": "Yi Jiang"
+          },
+          {
+            "authorId": "2146667089",
+            "name": "Junfeng Wu"
+          },
+          {
+            "authorId": "47987749",
+            "name": "Jihan Yang"
+          },
+          {
+            "authorId": "2349543653",
+            "name": "Xin Yu"
+          },
+          {
+            "authorId": "2244754235",
+            "name": "Zehuan Yuan"
+          },
+          {
+            "authorId": "2294806434",
+            "name": "Bingyue Peng"
+          },
+          {
+            "authorId": "2283520411",
+            "name": "Xiaojuan Qi"
+          }
+        ],
+        "abstract": "Visual generative and understanding models typically rely on distinct tokenizers to process images, presenting a key challenge for unifying them within a single framework. Recent studies attempt to address this by connecting the training of VQVAE (for autoregressive generation) and CLIP (for understanding) to build a unified tokenizer. However, directly combining these training objectives has been observed to cause severe loss conflicts. In this paper, we show that reconstruction and semantic supervision do not inherently conflict. Instead, the underlying bottleneck stems from limited representational capacity of discrete token space. Building on these insights, we introduce UniTok, a unified tokenizer featuring a novel multi-codebook quantization mechanism that effectively scales up the vocabulary size and bottleneck dimension. In terms of final performance, UniTok sets a new record of 0.38 rFID and 78.6% zero-shot accuracy on ImageNet. Besides, UniTok can be seamlessly integrated into MLLMs to unlock native visual generation capability, without compromising the understanding performance. Additionally, we show that UniTok favors cfg-free generation, reducing gFID from 14.6 to 2.5 on ImageNet 256$\\times$256 benchmark. GitHub: https://github.com/FoundationVision/UniTok."
+      },
+      {
+        "paperId": "985f0c89c5a607742ec43c1fdc2cbfe54541cbad",
+        "externalIds": {
+          "ArXiv": "2310.05737",
+          "CorpusId": 263830733
+        },
+        "title": "Language Model Beats Diffusion -- Tokenizer is Key to Visual Generation",
+        "venue": "",
+        "year": 2023,
+        "citationCount": 609,
+        "influentialCitationCount": 78,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.05737, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "8547960",
+            "name": "Lijun Yu"
+          },
+          {
+            "authorId": "2256999290",
+            "name": "José Lezama"
+          },
+          {
+            "authorId": "1387987945",
+            "name": "N. B. Gundavarapu"
+          },
+          {
+            "authorId": "2256995349",
+            "name": "Luca Versari"
+          },
+          {
+            "authorId": "2256996545",
+            "name": "Kihyuk Sohn"
+          },
+          {
+            "authorId": "3144223",
+            "name": "David C. Minnen"
+          },
+          {
+            "authorId": "2198464317",
+            "name": "Yong Cheng"
+          },
+          {
+            "authorId": "2265716291",
+            "name": "Agrim Gupta"
+          },
+          {
+            "authorId": "2257336985",
+            "name": "Xiuye Gu"
+          },
+          {
+            "authorId": "2257000091",
+            "name": "Alexander G. Hauptmann"
+          },
+          {
+            "authorId": "2257000670",
+            "name": "Boqing Gong"
+          },
+          {
+            "authorId": "2257132345",
+            "name": "Ming-Hsuan Yang"
+          },
+          {
+            "authorId": "145955800",
+            "name": "Irfan Essa"
+          },
+          {
+            "authorId": "2257003564",
+            "name": "David A. Ross"
+          },
+          {
+            "authorId": "39978626",
+            "name": "Lu Jiang"
+          }
+        ],
+        "abstract": "While Large Language Models (LLMs) are the dominant models for generative tasks in language, they do not perform as well as diffusion models on image and video generation. To effectively use LLMs for visual generation, one crucial component is the visual tokenizer that maps pixel-space inputs to discrete tokens appropriate for LLM learning. In this paper, we introduce MAGVIT-v2, a video tokenizer designed to generate concise and expressive tokens for both videos and images using a common token vocabulary. Equipped with this new tokenizer, we show that LLMs outperform diffusion models on standard image and video generation benchmarks including ImageNet and Kinetics. In addition, we demonstrate that our tokenizer surpasses the previously top-performing video tokenizer on two more tasks: (1) video compression comparable to the next-generation video codec (VCC) according to human evaluations, and (2) learning effective representations for action recognition tasks."
+      },
+      {
+        "paperId": "829ecf5fa63497e95b7ae8dd6e60d989685dea92",
+        "externalIds": {
+          "ArXiv": "2501.10064",
+          "DBLP": "journals/corr/abs-2501-10064",
+          "DOI": "10.48550/arXiv.2501.10064",
+          "CorpusId": 275606373
+        },
+        "title": "One-D-Piece: Image Tokenizer Meets Quality-Controllable Compression",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 37,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.10064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2217526891",
+            "name": "Keita Miwa"
+          },
+          {
+            "authorId": "2296026459",
+            "name": "Kento Sasaki"
+          },
+          {
+            "authorId": "2316489029",
+            "name": "Hidehisa Arai"
+          },
+          {
+            "authorId": "1477964506",
+            "name": "Tsubasa Takahashi"
+          },
+          {
+            "authorId": "2334478867",
+            "name": "Yu Yamaguchi"
+          }
+        ],
+        "abstract": "Current image tokenization methods require a large number of tokens to capture the information contained within images. Although the amount of information varies across images, most image tokenizers only support fixed-length tokenization, leading to inefficiency in token allocation. In this study, we introduce One-D-Piece, a discrete image tokenizer designed for variable-length tokenization, achieving quality-controllable mechanism. To enable variable compression rate, we introduce a simple but effective regularization mechanism named\"Tail Token Drop\"into discrete one-dimensional image tokenizers. This method encourages critical information to concentrate at the head of the token sequence, enabling support of variadic tokenization, while preserving state-of-the-art reconstruction quality. We evaluate our tokenizer across multiple reconstruction quality metrics and find that it delivers significantly better perceptual quality than existing quality-controllable compression methods, including JPEG and WebP, at smaller byte sizes. Furthermore, we assess our tokenizer on various downstream computer vision tasks, including image classification, object detection, semantic segmentation, and depth estimation, confirming its adaptability to numerous applications compared to other variable-rate methods. Our approach demonstrates the versatility of variable-length discrete image tokenization, establishing a new paradigm in both compression efficiency and reconstruction performance. Finally, we validate the effectiveness of tail token drop via detailed analysis of tokenizers."
+      },
+      {
+        "paperId": "186a609b3cabc698d53c006425d5b9e5eeb6961e",
+        "externalIds": {
+          "ArXiv": "2506.23325",
+          "DBLP": "journals/corr/abs-2506-23325",
+          "DOI": "10.48550/arXiv.2506.23325",
+          "CorpusId": 280011818
+        },
+        "title": "XY-Tokenizer: Mitigating the Semantic-Acoustic Conflict in Low-Bitrate Speech Codecs",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 30,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.23325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2371155453",
+            "name": "Y. Gong"
+          },
+          {
+            "authorId": "2346900719",
+            "name": "Luozhijie Jin"
+          },
+          {
+            "authorId": "2322502736",
+            "name": "Ruifan Deng"
+          },
+          {
+            "authorId": "2109797247",
+            "name": "Dong Zhang"
+          },
+          {
+            "authorId": "2278615698",
+            "name": "Xin Zhang"
+          },
+          {
+            "authorId": "1834133",
+            "name": "Qinyuan Cheng"
+          },
+          {
+            "authorId": "2132200788",
+            "name": "Zhaoye Fei"
+          },
+          {
+            "authorId": "2278813969",
+            "name": "Shimin Li"
+          },
+          {
+            "authorId": "2350155100",
+            "name": "Xipeng Qiu"
+          }
+        ],
+        "abstract": "Speech codecs serve as bridges between speech signals and large language models. An ideal codec for speech language models should not only preserve acoustic information but also capture rich semantic information. However, existing speech codecs struggle to balance high-quality audio reconstruction with ease of modeling by language models. In this study, we analyze the limitations of previous codecs in balancing semantic richness and acoustic fidelity. We propose XY-Tokenizer, a novel codec that mitigates the conflict between semantic and acoustic capabilities through multi-stage, multi-task learning. Experimental results demonstrate that XY-Tokenizer achieves performance in both semantic and acoustic tasks comparable to that of state-of-the-art codecs operating at similar bitrates, even though those existing codecs typically excel in only one aspect. Specifically, XY-Tokenizer achieves strong text alignment, surpassing distillation-based semantic modeling methods such as SpeechTokenizer and Mimi, while maintaining a speaker similarity score of 0.83 between reconstructed and original audio. The reconstruction performance of XY-Tokenizer is comparable to that of BigCodec, the current state-of-the-art among acoustic-only codecs, which achieves a speaker similarity score of 0.84 at a similar bitrate. Code and models are available at https://github.com/gyt1145028706/XY-Tokenizer."
+      },
+      {
+        "paperId": "ebdbded60f48131ed7ba73807c3c086993a96f89",
+        "externalIds": {
+          "DBLP": "conf/iclr/Ji00C0Z0C0LZY0J25",
+          "ArXiv": "2408.16532",
+          "DOI": "10.48550/arXiv.2408.16532",
+          "CorpusId": 272146429
+        },
+        "title": "WavTokenizer: an Efficient Acoustic Discrete Codec Tokenizer for Audio Language Modeling",
+        "venue": "International Conference on Learning Representations",
+        "year": 2024,
+        "citationCount": 158,
+        "influentialCitationCount": 24,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2408.16532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "72890649",
+            "name": "Shengpeng Ji"
+          },
+          {
+            "authorId": "2112347676",
+            "name": "Ziyue Jiang"
+          },
+          {
+            "authorId": "2191618494",
+            "name": "Xize Cheng"
+          },
+          {
+            "authorId": "2318012880",
+            "name": "Yifu Chen"
+          },
+          {
+            "authorId": "2234355048",
+            "name": "Minghui Fang"
+          },
+          {
+            "authorId": "2199136449",
+            "name": "Jialong Zuo"
+          },
+          {
+            "authorId": "2312341123",
+            "name": "Qian Yang"
+          },
+          {
+            "authorId": "2181010470",
+            "name": "Ruiqi Li"
+          },
+          {
+            "authorId": "2116461847",
+            "name": "Ziang Zhang"
+          },
+          {
+            "authorId": "2308224151",
+            "name": "Xiaoda Yang"
+          },
+          {
+            "authorId": "2048021099",
+            "name": "Rongjie Huang"
+          },
+          {
+            "authorId": "2317908181",
+            "name": "Yidi Jiang"
+          },
+          {
+            "authorId": "2257010473",
+            "name": "Qian Chen"
+          },
+          {
+            "authorId": "2307567397",
+            "name": "Siqi Zheng"
+          },
+          {
+            "authorId": "2144329841",
+            "name": "Wen Wang"
+          },
+          {
+            "authorId": "2304453961",
+            "name": "Zhou Zhao"
+          }
+        ],
+        "abstract": "Language models have been effectively applied to modeling natural signals, such as images, video, speech, and audio. A crucial component of these models is the codec tokenizer, which compresses high-dimensional natural signals into lower-dimensional discrete tokens. In this paper, we introduce WavTokenizer, which offers several advantages over previous SOTA acoustic codec models in the audio domain: 1)extreme compression. By compressing the layers of quantizers and the temporal dimension of the discrete codec, one-second audio of 24kHz sampling rate requires only a single quantizer with 40 or 75 tokens. 2)improved subjective quality. Despite the reduced number of tokens, WavTokenizer achieves state-of-the-art reconstruction quality with outstanding UTMOS scores and inherently contains richer semantic information. Specifically, we achieve these results by designing a broader VQ space, extended contextual windows, and improved attention networks, as well as introducing a powerful multi-scale discriminator and an inverse Fourier transform structure. We conducted extensive reconstruction experiments in the domains of speech, audio, and music. WavTokenizer exhibited strong performance across various objective and subjective metrics compared to state-of-the-art models. We also tested semantic information, VQ utilization, and adaptability to generative models. Comprehensive ablation studies confirm the necessity of each module in WavTokenizer. The related code, demos, and pre-trained models are available at https://github.com/jishengpeng/WavTokenizer."
+      },
+      {
+        "paperId": "5d9a7165fcbc756d514d08aad2eff1775afdbaaf",
+        "externalIds": {
+          "ArXiv": "2412.03069",
+          "DBLP": "journals/corr/abs-2412-03069",
+          "DOI": "10.1109/CVPR52734.2025.00243",
+          "CorpusId": 274465079
+        },
+        "title": "TokenFlow: Unified Image Tokenizer for Multimodal Understanding and Generation",
+        "venue": "Computer Vision and Pattern Recognition",
+        "year": 2024,
+        "citationCount": 160,
+        "influentialCitationCount": 10,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2412.03069, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2125181846",
+            "name": "Liao Qu"
+          },
+          {
+            "authorId": "2333762356",
+            "name": "Huichao Zhang"
+          },
+          {
+            "authorId": "2239168746",
+            "name": "Yiheng Liu"
+          },
+          {
+            "authorId": "2333895198",
+            "name": "Xu Wang"
+          },
+          {
+            "authorId": "2294789302",
+            "name": "Yi Jiang"
+          },
+          {
+            "authorId": "2333662891",
+            "name": "Yiming Gao"
+          },
+          {
+            "authorId": "2333880257",
+            "name": "Hu Ye"
+          },
+          {
+            "authorId": "2279725543",
+            "name": "Daniel K. Du"
+          },
+          {
+            "authorId": "2244754235",
+            "name": "Zehuan Yuan"
+          },
+          {
+            "authorId": "2333756713",
+            "name": "Xinglong Wu"
+          }
+        ],
+        "abstract": "We present TokenFlow, a novel unified image tokenizer that bridges the long-standing gap between multimodal understanding and generation. Prior research attempt to employ a single reconstruction-targeted Vector Quantization (VQ) encoder for unifying these two tasks. We observe that understanding and generation require fundamentally different granularities of visual information. This leads to a critical trade-off, particularly compromising performance in multimodal understanding tasks. TokenFlow addresses this challenge through an innovative dual-codebook architecture that decouples semantic and pixel-level feature learning while maintaining their alignment via a shared mapping mechanism. This design enables direct access to both high-level semantic representations crucial for understanding tasks and fine-grained visual features essential for generation through shared indices. Our extensive experiments demonstrate TokenFlow’s superiority across multiple dimensions. Leveraging TokenFlow, we demonstrate for the first time that discrete visual input can surpass LLaVA-1.5 13B in understanding performance, achieving a 7.2% average improvement. For image reconstruction, we achieve a strong FID score of 0.63 at 384×384 resolution. Moreover, TokenFlow establishes state-of-the-art performance in autoregressive image generation with a GenEval score of 0.55 at 256×256 resolution, achieving comparable results to SDXL. Our code and models are released at https://github.com/ByteFlow-Ai/TokenFlow."
+      },
+      {
+        "paperId": "e949b844426c772d4f83ce286462fd76a5b484fd",
+        "externalIds": {
+          "ArXiv": "2503.20083",
+          "CorpusId": 277322539
+        },
+        "title": "Universal Cross-Tokenizer Distillation via Approximate Likelihood Matching",
+        "venue": "",
+        "year": 2025,
+        "citationCount": 27,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.20083, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2090357303",
+            "name": "Benjamin Minixhofer"
+          },
+          {
+            "authorId": "3381663",
+            "name": "E. Ponti"
+          },
+          {
+            "authorId": "2349639074",
+            "name": "Ivan Vuli'c"
+          }
+        ],
+        "abstract": "Distillation has shown remarkable success in transferring knowledge from a Large Language Model (LLM) teacher to a student LLM. However, current distillation methods require similar tokenizers between the teacher and the student, restricting their applicability to only a small subset of teacher-student pairs. In this work, we develop a principled cross-tokenizer distillation method to solve this crucial deficiency. Our method is the first to enable effective distillation across fundamentally different tokenizers, while also substantially outperforming prior methods in all other cases. We verify the efficacy of our method on three distinct use cases. First, we show that viewing tokenizer transfer as self-distillation enables unprecedentedly effective transfer across tokenizers, including rapid transfer of subword models to the byte-level. Transferring different models to the same tokenizer also enables ensembling to boost performance. Secondly, we distil a large maths-specialised LLM into a small general-purpose model with a different tokenizer, achieving competitive maths problem-solving performance. Thirdly, we use our method to train state-of-the-art embedding prediction hypernetworks for training-free tokenizer transfer. Our results unlock an expanded range of teacher-student pairs for distillation, enabling new ways to adapt and enhance interaction between LLMs."
+      },
+      {
+        "paperId": "dfa3013f9b9af4053e57d6250e0f2b7dc7ff6258",
+        "externalIds": {
+          "ArXiv": "2504.10344",
+          "DBLP": "journals/corr/abs-2504-10344",
+          "DOI": "10.48550/arXiv.2504.10344",
+          "CorpusId": 277781622
+        },
+        "title": "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 18,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.10344, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2238138795",
+            "name": "Dongchao Yang"
+          },
+          {
+            "authorId": "2322455546",
+            "name": "Songxiang Liu"
+          },
+          {
+            "authorId": "2346957017",
+            "name": "Haohan Guo"
+          },
+          {
+            "authorId": "2355462366",
+            "name": "Jiankun Zhao"
+          },
+          {
+            "authorId": "2307148701",
+            "name": "Yuanyuan Wang"
+          },
+          {
+            "authorId": "2308035916",
+            "name": "Helin Wang"
+          },
+          {
+            "authorId": "1613055688",
+            "name": "Zeqian Ju"
+          },
+          {
+            "authorId": "2336747093",
+            "name": "Xubo Liu"
+          },
+          {
+            "authorId": "2275771506",
+            "name": "Xueyuan Chen"
+          },
+          {
+            "authorId": "2307994257",
+            "name": "Xu Tan"
+          },
+          {
+            "authorId": "2107999711",
+            "name": "Xixin Wu"
+          },
+          {
+            "authorId": "2273659859",
+            "name": "Helen M. Meng"
+          }
+        ],
+        "abstract": "Recent advancements in audio language models have underscored the pivotal role of audio tokenization, which converts audio signals into discrete tokens, thereby facilitating the application of language model architectures to the audio domain. In this study, we introduce ALMTokenizer, a novel low-bitrate and semantically rich audio codec tokenizer for audio language models. Prior methods, such as Encodec, typically encode individual audio frames into discrete tokens without considering the use of context information across frames. Unlike these methods, we introduce a novel query-based compression strategy to capture holistic information with a set of learnable query tokens by explicitly modeling the context information across frames. This design not only enables the codec model to capture more semantic information but also encodes the audio signal with fewer token sequences. Additionally, to enhance the semantic information in audio codec models, we introduce the following: (1) A masked autoencoder (MAE) loss, (2) Vector quantization based on semantic priors, and (3) An autoregressive (AR) prediction loss. As a result, ALMTokenizer achieves competitive reconstruction performance relative to state-of-the-art approaches while operating at a lower bitrate. Within the same audio language model framework, ALMTokenizer outperforms previous tokenizers in audio understanding and generation tasks."
+      },
+      {
+        "paperId": "c314d1841915ad3343eb0a247a9d782961d9e2df",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2506-05289",
+          "ArXiv": "2506.05289",
+          "DOI": "10.48550/arXiv.2506.05289",
+          "CorpusId": 279243864
+        },
+        "title": "AliTok: Towards Sequence Modeling Alignment between Tokenizer and Autoregressive Model",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 15,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.05289, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2143778284",
+            "name": "Ping Wu"
+          },
+          {
+            "authorId": "2247678533",
+            "name": "Kai Zhu"
+          },
+          {
+            "authorId": "2330238904",
+            "name": "Yu Liu"
+          },
+          {
+            "authorId": "2350317956",
+            "name": "Longxiang Tang"
+          },
+          {
+            "authorId": "2325915085",
+            "name": "Jian Yang"
+          },
+          {
+            "authorId": "2253853798",
+            "name": "Yansong Peng"
+          },
+          {
+            "authorId": "2000495780",
+            "name": "Wei Zhai"
+          },
+          {
+            "authorId": "2297002544",
+            "name": "Yang Cao"
+          },
+          {
+            "authorId": "2289018296",
+            "name": "Zhengjun Zha"
+          }
+        ],
+        "abstract": "Autoregressive image generation aims to predict the next token based on previous ones. However, this process is challenged by the bidirectional dependencies inherent in conventional image tokenizations, which creates a fundamental misalignment with the unidirectional nature of autoregressive models. To resolve this, we introduce AliTok, a novel Aligned Tokenizer that alters the dependency structure of the token sequence. AliTok employs a bidirectional encoder constrained by a causal decoder, a design that compels the encoder to produce a token sequence with both semantic richness and forward-dependency. Furthermore, by incorporating prefix tokens and employing a two-stage tokenizer training process to enhance reconstruction performance, AliTok achieves high fidelity and predictability simultaneously. Building upon AliTok, a standard decoder-only autoregressive model with just 177M parameters achieves a gFID of 1.44 and an IS of 319.5 on ImageNet-256. Scaling to 662M, our model reaches a gFID of 1.28, surpassing the SOTA diffusion method with 10x faster sampling. On ImageNet-512, our 318M model also achieves a SOTA gFID of 1.39. Code and weights at https://github.com/ali-vilab/alitok."
+      },
+      {
+        "paperId": "454e552832ae0008f2c20b617ded6a6862180e79",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2509-14476",
+          "ArXiv": "2509.14476",
+          "DOI": "10.48550/arXiv.2509.14476",
+          "CorpusId": 281394841
+        },
+        "title": "AToken: A Unified Tokenizer for Vision",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 18,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.14476, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2286022498",
+            "name": "Jiasen Lu"
+          },
+          {
+            "authorId": "2325916999",
+            "name": "Liangchen Song"
+          },
+          {
+            "authorId": "2312654785",
+            "name": "Mingze Xu"
+          },
+          {
+            "authorId": "2910200",
+            "name": "Byeongjoo Ahn"
+          },
+          {
+            "authorId": "2381062906",
+            "name": "Yanjun Wang"
+          },
+          {
+            "authorId": "2381413677",
+            "name": "Chen Chen"
+          },
+          {
+            "authorId": "2273361790",
+            "name": "Afshin Dehghan"
+          },
+          {
+            "authorId": "2249897805",
+            "name": "Yinfei Yang"
+          }
+        ],
+        "abstract": "We present AToken, the first unified visual tokenizer that achieves both high-fidelity reconstruction and semantic understanding across images, videos, and 3D assets. Unlike existing tokenizers that specialize in either reconstruction or understanding for single modalities, AToken encodes these diverse visual inputs into a shared 4D latent space, unifying both tasks and modalities in a single framework. Specifically, we introduce a pure transformer architecture with 4D rotary position embeddings to process visual inputs of arbitrary resolutions and temporal durations. To ensure stable training, we introduce an adversarial-free training objective that combines perceptual and Gram matrix losses, achieving state-of-the-art reconstruction quality. By employing a progressive training curriculum, AToken gradually expands from single images, videos, and 3D, and supports both continuous and discrete latent tokens. AToken achieves 0.21 rFID with 82.2% ImageNet accuracy for images, 3.01 rFVD with 40.2% MSRVTT retrieval for videos, and 28.28 PSNR with 90.9% classification accuracy for 3D.. In downstream applications, AToken enables both visual generation tasks (e.g., image generation with continuous and discrete tokens, text-to-video generation, image-to-3D synthesis) and understanding tasks (e.g., multimodal LLMs), achieving competitive performance across all benchmarks. These results shed light on the next-generation multimodal AI systems built upon unified visual tokenization."
+      },
+      {
+        "paperId": "3b6350a7a53911767f50ca3f17f99619470bf997",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2503-06764",
+          "ArXiv": "2503.06764",
+          "DOI": "10.48550/arXiv.2503.06764",
+          "CorpusId": 276903179
+        },
+        "title": "SemHiTok: A Unified Image Tokenizer via Semantic-Guided Hierarchical Codebook for Multimodal Understanding and Generation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 17,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.06764, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2347655946",
+            "name": "Zisheng Chen"
+          },
+          {
+            "authorId": "2258786929",
+            "name": "Chunwei Wang"
+          },
+          {
+            "authorId": "2346900385",
+            "name": "Xiuwei Chen"
+          },
+          {
+            "authorId": "2320227478",
+            "name": "Hang Xu"
+          },
+          {
+            "authorId": "47180442",
+            "name": "Jianhua Han"
+          },
+          {
+            "authorId": "2349967147",
+            "name": "Xiandan Liang"
+          }
+        ],
+        "abstract": "In this paper, we introduce SemHiTok, a unified image Tokenizer via Semantic-Guided Hierarchical codebook that provides consistent discrete representations for multimodal understanding and generation. Recently, unified image tokenizers have sparked exploration within the research community, which is designed to capture high-level semantic features for understanding and retaining low-level pixel features for generation. Previous works attempt to train a unified image tokenizer by combining loss for semantic distillation and pixel reconstruction. However, due to the differing levels of features prioritized by multimodal understanding and generation, joint training methods face significant challenges in achieving a good trade-off. SemHiTok addresses this challenge through a novel semantic-guided hierarchical codebook, which builds pixel sub-codebooks on a pretrained semantic codebook. This design decouples the semantic and pixel in terms of structure and training strategy, enabling the tokenizer to capture pixel features while retaining its ability to comprehend high-level semantic information. Our experiments demonstrate that SemHiTok achieves leading performance in image reconstruction and multimodal understanding under the LLaVA-v1.5 setting. Further, we develop a unified MLLM with SemHiTok, which exhibits superior performance across multimodal understanding and generation tasks. Extensive experiments confirm our analysis, showing that our unified image tokenizer architecture achieves a better trade-off."
+      },
+      {
+        "paperId": "7f46dc856d7f7baa49878166236a5353c12988a2",
+        "externalIds": {
+          "ArXiv": "2509.24650",
+          "DBLP": "journals/corr/abs-2509-24650",
+          "DOI": "10.48550/arXiv.2509.24650",
+          "CorpusId": 281675932
+        },
+        "title": "VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 17,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.24650, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2277166036",
+            "name": "Yixuan Zhou"
+          },
+          {
+            "authorId": "2375138771",
+            "name": "Guoyang Zeng"
+          },
+          {
+            "authorId": "2375283625",
+            "name": "Xin Liu"
+          },
+          {
+            "authorId": "2375285819",
+            "name": "Xiang Li"
+          },
+          {
+            "authorId": "2375248548",
+            "name": "Renjie Yu"
+          },
+          {
+            "authorId": "2383460144",
+            "name": "Ziyang Wang"
+          },
+          {
+            "authorId": "2327348721",
+            "name": "Runchuan Ye"
+          },
+          {
+            "authorId": "2378112006",
+            "name": "Weiyu Sun"
+          },
+          {
+            "authorId": "2168580542",
+            "name": "Jiancheng Gui"
+          },
+          {
+            "authorId": "2317031845",
+            "name": "Kehan Li"
+          },
+          {
+            "authorId": "2376021824",
+            "name": "Zhiyong Wu"
+          },
+          {
+            "authorId": "2316519794",
+            "name": "Zhiyuan Liu"
+          }
+        ],
+        "abstract": "Generative models for speech synthesis face a fundamental trade-off: discrete tokens ensure stability but sacrifice expressivity, while continuous signals retain acoustic richness but suffer from error accumulation due to task entanglement. This challenge has driven the field towards multi-stage pipelines that rely on pre-trained speech tokenizers, but these create a semantic-acoustic divide, limiting holistic and expressive speech generation. We resolve these dilemma through hierarchical semantic-acoustic modeling with semi-discrete residual representations and present a novel tokenizer-free TTS model VoxCPM. Our framework introduces a differentiable quantization bottleneck that induces natural specialization: a Text-Semantic Language Model (TSLM) generates semantic-prosodic plans, while a Residual Acoustic Model (RALM) recovers fine-grained acoustic details. This hierarchical semantic-acoustic representation guides a local diffusion-based decoder to generate high-fidelity speech latents. Critically, the entire architecture is trained end-to-end under a simple diffusion objective, eliminating dependency on external speech tokenizers. Trained on a massive 1.8 million hours of bilingual corpus, our VoxCPM-0.5B model achieves state-of-the-art zero-shot TTS performance among open-source systems, demonstrating that our approach delivers expressive and stable synthesis. Besides, VoxCPM shows the capability to comprehend text to infer and generate appropriate prosody and style, delivering speech with context-aware expressiveness and natural flow. To facilitate community-driven research and development, VoxCPM is publicly accessible under Apache 2.0."
+      },
+      {
+        "paperId": "0e87337c51dd87d13b69c81f8cd084356f2d1ae7",
+        "externalIds": {
+          "DBLP": "conf/icml/0001MHJFGSZ25",
+          "ArXiv": "2502.04397",
+          "DOI": "10.48550/arXiv.2502.04397",
+          "CorpusId": 276235520
+        },
+        "title": "Multimodal Medical Code Tokenizer",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 16,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.04397, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2325854342",
+            "name": "Xiaorui Su"
+          },
+          {
+            "authorId": "2221638941",
+            "name": "Shvat Messica"
+          },
+          {
+            "authorId": "2224124207",
+            "name": "Yepeng Huang"
+          },
+          {
+            "authorId": "2261364482",
+            "name": "Ruth Johnson"
+          },
+          {
+            "authorId": "2007770670",
+            "name": "Lukas Fesser"
+          },
+          {
+            "authorId": "2269765109",
+            "name": "Shanghua Gao"
+          },
+          {
+            "authorId": "2695554",
+            "name": "F. Sahneh"
+          },
+          {
+            "authorId": "2095762",
+            "name": "M. Zitnik"
+          }
+        ],
+        "abstract": "Foundation models trained on patient electronic health records (EHRs) require tokenizing medical data into sequences of discrete vocabulary items. Existing tokenizers treat medical codes from EHRs as isolated textual tokens. However, each medical code is defined by its textual description, its position in ontological hierarchies, and its relationships to other codes, such as disease co-occurrences and drug-treatment associations. Medical vocabularies contain more than 600,000 codes with critical information for clinical reasoning. We introduce MedTok, a multimodal medical code tokenizer that uses the text descriptions and relational context of codes. MedTok processes text using a language model encoder and encodes the relational structure with a graph encoder. It then quantizes both modalities into a unified token space, preserving modality-specific and cross-modality information. We integrate MedTok into five EHR models and evaluate it on operational and clinical tasks across in-patient and out-patient datasets, including outcome prediction, diagnosis classification, drug recommendation, and risk stratification. Swapping standard EHR tokenizers with MedTok improves AUPRC across all EHR models, by 4.10% on MIMIC-III, 4.78% on MIMIC-IV, and 11.32% on EHRShot, with the largest gains in drug recommendation. Beyond EHR modeling, we demonstrate using MedTok tokenizer with medical QA systems. Our results demonstrate the potential of MedTok as a unified tokenizer for medical codes, improving tokenization for medical foundation models."
+      },
+      {
+        "paperId": "8613c1081a6ab34e2f980e35c06a1af461d7314e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2406-09399",
+          "ArXiv": "2406.09399",
+          "DOI": "10.48550/arXiv.2406.09399",
+          "CorpusId": 270440676
+        },
+        "title": "OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation",
+        "venue": "Neural Information Processing Systems",
+        "year": 2024,
+        "citationCount": 101,
+        "influentialCitationCount": 13,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.09399, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2124919221",
+            "name": "Junke Wang"
+          },
+          {
+            "authorId": "2294789302",
+            "name": "Yi Jiang"
+          },
+          {
+            "authorId": "2244754235",
+            "name": "Zehuan Yuan"
+          },
+          {
+            "authorId": "2306202380",
+            "name": "Binyue Peng"
+          },
+          {
+            "authorId": "3099139",
+            "name": "Zuxuan Wu"
+          },
+          {
+            "authorId": "1717861",
+            "name": "Yu-Gang Jiang"
+          }
+        ],
+        "abstract": "Tokenizer, serving as a translator to map the intricate visual data into a compact latent space, lies at the core of visual generative models. Based on the finding that existing tokenizers are tailored to image or video inputs, this paper presents OmniTokenizer, a transformer-based tokenizer for joint image and video tokenization. OmniTokenizer is designed with a spatial-temporal decoupled architecture, which integrates window and causal attention for spatial and temporal modeling. To exploit the complementary nature of image and video data, we further propose a progressive training strategy, where OmniTokenizer is first trained on image data on a fixed resolution to develop the spatial encoding capacity and then jointly trained on image and video data on multiple resolutions to learn the temporal dynamics. OmniTokenizer, for the first time, handles both image and video inputs within a unified framework and proves the possibility of realizing their synergy. Extensive experiments demonstrate that OmniTokenizer achieves state-of-the-art (SOTA) reconstruction performance on various image and video datasets, e.g., 1.11 reconstruction FID on ImageNet and 42 reconstruction FVD on UCF-101, beating the previous SOTA methods by 13% and 26%, respectively. Additionally, we also show that when integrated with OmniTokenizer, both language model-based approaches and diffusion models can realize advanced visual synthesis performance, underscoring the superiority and versatility of our method. Code is available at https://github.com/FoundationVision/OmniTokenizer."
+      },
+      {
+        "paperId": "0a17cab809062aeabf4f6e3710aec88945c98e04",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-00894",
+          "ArXiv": "2502.00894",
+          "DOI": "10.48550/arXiv.2502.00894",
+          "CorpusId": 276095035
+        },
+        "title": "MorphBPE: A Morpho-Aware Tokenizer Bridging Linguistic Complexity for Efficient LLM Training Across Morphologies",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 24,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.00894, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2257284203",
+            "name": "Ehsaneddin Asgari"
+          },
+          {
+            "authorId": "2189476655",
+            "name": "Y. E. Kheir"
+          },
+          {
+            "authorId": "2343637804",
+            "name": "Mohammad Ali Sadraei Javaheri"
+          }
+        ],
+        "abstract": "Tokenization is fundamental to Natural Language Processing (NLP), directly impacting model efficiency and linguistic fidelity. While Byte Pair Encoding (BPE) is widely used in Large Language Models (LLMs), it often disregards morpheme boundaries, leading to suboptimal segmentation, particularly in morphologically rich languages. We introduce MorphBPE, a morphology-aware extension of BPE that integrates linguistic structure into subword tokenization while preserving statistical efficiency. Additionally, we propose two morphology-based evaluation metrics: (i) Morphological Consistency F1-Score, which quantifies the consistency between morpheme sharing and token sharing, contributing to LLM training convergence, and (ii) Morphological Edit Distance, which measures alignment between morphemes and tokens concerning interpretability. Experiments on English, Russian, Hungarian, and Arabic across 300M and 1B parameter LLMs demonstrate that MorphBPE consistently reduces cross-entropy loss, accelerates convergence, and improves morphological alignment scores. Fully compatible with existing LLM pipelines, MorphBPE requires minimal modifications for integration. The MorphBPE codebase and tokenizer playground will be available at: https://github.com/llm-lab-org/MorphBPE and https://tokenizer.llm-lab.org"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "BPE",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "leaderboard variance",
+    "results": [
+      {
+        "paperId": "14e49e0e423543e02b89b588fdabad3ec1e1e0e8",
+        "externalIds": {
+          "DBLP": "conf/acl/WeinHAW23",
+          "DOI": "10.18653/v1/2023.findings-acl.196",
+          "CorpusId": 259858948
+        },
+        "title": "Follow the leader(board) with confidence: Estimating p-values from a single test set with item and response variance",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2023,
+        "citationCount": 4,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "https://aclanthology.org/2023.findings-acl.196.pdf",
+          "status": "HYBRID",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2023.findings-acl.196?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2023.findings-acl.196, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1387852377",
+            "name": "Shira Wein"
+          },
+          {
+            "authorId": "2300795",
+            "name": "Christopher Homan"
+          },
+          {
+            "authorId": "1745337",
+            "name": "Lora Aroyo"
+          },
+          {
+            "authorId": "143778120",
+            "name": "Chris Welty"
+          }
+        ],
+        "abstract": "Among the problems with leaderboard culture in NLP has been the widespread lack of confidence estimation in reported results. In this work, we present a framework and simulator for estimating p -values for comparisons between the results of two systems, in order to understand the confidence that one is actually better (i.e. ranked higher) than the other. What has made this difficult in the past is that each sys-tem must itself be evaluated by comparison to a gold standard. We define a null hypothesis that each system’s metric scores are drawn from the same distribution, using variance found naturally (though rarely reported) in test set items and individual labels on an item (responses) to produce the metric distributions. We create a test set that evenly mixes the responses of the two systems under the assumption the null hypothesis is true. Exploring how to best estimate the true p -value from a single test set under different metrics, tests, and sampling methods, we find that the presence of response variance (from multiple raters or multiple model versions) has a profound impact on p -value estimates for model comparison, and that choice of metric and sampling method is critical to providing statistical guarantees on model comparisons."
+      },
+      {
+        "paperId": "f2d95572cde472fedeaaae78c27b51304fe19ef2",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2501-18578",
+          "ArXiv": "2501.18578",
+          "DOI": "10.48550/arXiv.2501.18578",
+          "CorpusId": 275993775
+        },
+        "title": "R.I.P.: Better Models by Survival of the Fittest Prompts",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 11,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.18578, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2308246369",
+            "name": "Ping Yu"
+          },
+          {
+            "authorId": "2281387619",
+            "name": "Weizhe Yuan"
+          },
+          {
+            "authorId": "2290916129",
+            "name": "Olga Golovneva"
+          },
+          {
+            "authorId": "2341581801",
+            "name": "Tianhao Wu"
+          },
+          {
+            "authorId": "2396486061",
+            "name": "Sainbayar Sukhbaatar"
+          },
+          {
+            "authorId": "2267341626",
+            "name": "J. Weston"
+          },
+          {
+            "authorId": "2276766957",
+            "name": "Jing Xu"
+          }
+        ],
+        "abstract": "Training data quality is one of the most important drivers of final model quality. In this work, we introduce a method for evaluating data integrity based on the assumption that low-quality input prompts result in high variance and low quality responses. This is achieved by measuring the rejected response quality and the reward gap between the chosen and rejected preference pair. Our method, Rejecting Instruction Preferences (RIP) can be used to filter prompts from existing training sets, or to make high quality synthetic datasets, yielding large performance gains across various benchmarks compared to unfiltered data. Using Llama 3.1-8B-Instruct, RIP improves AlpacaEval2 LC Win Rate by 9.4%, Arena-Hard by 8.7%, and WildBench by 9.9%. Using Llama 3.3-70B-Instruct, RIP improves Arena-Hard from 67.5 to 82.9, which is from 18th place to 6th overall in the leaderboard."
+      },
+      {
+        "paperId": "4bf522beb61263b5261d82f779f6bf77cd945348",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2512-07795",
+          "ArXiv": "2512.07795",
+          "DOI": "10.48550/arXiv.2512.07795",
+          "CorpusId": 283694336
+        },
+        "title": "ReasonBENCH: Benchmarking the (In)Stability of LLM Reasoning",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.07795, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2301151927",
+            "name": "Nearchos Potamitis"
+          },
+          {
+            "authorId": "2290073204",
+            "name": "L. Klein"
+          },
+          {
+            "authorId": "2380609860",
+            "name": "Akhil Arora"
+          }
+        ],
+        "abstract": "Large language models (LLMs) are increasingly deployed in settings where reasoning, such as multi-step problem solving and chain-of-thought, is essential. Yet, current evaluation practices overwhelmingly report single-run accuracy while ignoring the intrinsic uncertainty that naturally arises from stochastic decoding. This omission creates a blind spot because practitioners cannot reliably assess whether a method's reported performance is stable, reproducible, or cost-consistent. We introduce ReasonBENCH, the first benchmark designed to quantify the underlying instability in LLM reasoning. ReasonBENCH provides (i) a modular evaluation library that standardizes reasoning frameworks, models, and tasks, (ii) a multi-run protocol that reports statistically reliable metrics for both quality and cost, and (iii) a public leaderboard to encourage variance-aware reporting. Across tasks from different domains, we find that the vast majority of reasoning strategies and models exhibit high instability. Notably, even strategies with similar average performance can display confidence intervals up to four times wider, and the top-performing methods often incur higher and less stable costs. Such instability compromises reproducibility across runs and, consequently, the reliability of reported performance. To better understand these dynamics, we further analyze the impact of prompts, model families, and scale on the trade-off between solve rate and stability. Our results highlight reproducibility as a critical dimension for reliable LLM reasoning and provide a foundation for future reasoning methods and uncertainty quantification techniques. ReasonBENCH is publicly available at https://github.com/au-clan/ReasonBench ."
+      },
+      {
+        "paperId": "51f161ad1bfa54debb7cbab1b8840e90d39ef068",
+        "externalIds": {
+          "ArXiv": "2509.25779",
+          "DBLP": "journals/corr/abs-2509-25779",
+          "DOI": "10.48550/arXiv.2509.25779",
+          "CorpusId": 281682026
+        },
+        "title": "Planner-R1: Reward Shaping Enables Efficient Agentic RL with Smaller LLMs",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.25779, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2269355329",
+            "name": "Siyu Zhu"
+          },
+          {
+            "authorId": "2219041182",
+            "name": "Yanbing Jiang"
+          },
+          {
+            "authorId": "2360382247",
+            "name": "Hejian Sang"
+          },
+          {
+            "authorId": "2376158490",
+            "name": "Shao Tang"
+          },
+          {
+            "authorId": "2326443658",
+            "name": "Qingquan Song"
+          },
+          {
+            "authorId": "2350342705",
+            "name": "Biao He"
+          },
+          {
+            "authorId": "2383877187",
+            "name": "Rohit Jain"
+          },
+          {
+            "authorId": "2374482356",
+            "name": "Zhipeng Wang"
+          },
+          {
+            "authorId": "1979505",
+            "name": "A. Geramifard"
+          }
+        ],
+        "abstract": "We investigated Agentic RL with large language models on the \\textsc{TravelPlanner} benchmark. Our approach, \\textsc{Planner-R1}, achieved a \\textbf{56.9\\%} final-pass rate with only 180 training queries, a $2.7\\times$ improvement over GPT-5's $21.2\\%$ baseline and the strongest agentic result on the public leaderboard. A central finding was that smaller models (8B) were highly responsive to reward shaping: with dense process-level signals, they reached competitive performance while being $3.5\\times$ more compute-efficient and $1.5\\times$ more memory-efficient than 32B models. Larger models were more robust under sparse rewards but exhibited smaller relative gains from shaping and higher variance across runs. While curriculum learning offered no significant benefit, shaped rewards consistently amplified learning dynamics, making 8B models the most efficient setting for agentic RL. Crucially, these gains did not come at the cost of overfitting: fine-tuned models mostly maintained or exceeded baseline performance on out-of-domain tasks, including \\textsc{Multi-IF}, \\textsc{NaturalPlan}, and $\\tau$-\\textsc{Bench}. These results establish reward shaping as a decisive lever for scaling agentic RL, highlight the competitive strength of smaller models, and demonstrate that efficiency can be achieved without sacrificing generalization."
+      },
+      {
+        "paperId": "f488be5657bd663d9a5cc0f211a8e5c5092c6f1e",
+        "externalIds": {
+          "DOI": "10.33364/algoritma/v.22-2.2540",
+          "CorpusId": 283857153
+        },
+        "title": "Penerapan Forward Chaining Dalam Pengembangan Simulasi Gamifikasi Interaktif Untuk Pelatihan Operasional Logistik Menggunakan Unity",
+        "venue": "Jurnal Algoritma",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33364/algoritma/v.22-2.2540?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33364/algoritma/v.22-2.2540, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2398324062",
+            "name": "Al Novianti Ramadhani Sulaksono"
+          },
+          {
+            "authorId": "81603412",
+            "name": "Cahyo Prianto"
+          },
+          {
+            "authorId": "2258236177",
+            "name": "Mohamad Nurkamal Fauzan"
+          }
+        ],
+        "abstract": "Pelatihan kerja di bidang logistik memerlukan pendekatan interaktif yang mampu merepresentasikan kompleksitas proses operasional secara realistis. Penelitian ini bertujuan untuk mengembangkan sistem pelatihan logistik berbasis simulasi gamifikasi menggunakan Unity dengan integrasi metode inferensi forward chaining. Sistem dirancang menggunakan model pengembangan ADDIE dan menerapkan aturan logika IF–THEN sebagai dasar evaluasi otomatis untuk setiap keputusan pengguna. Aplikasi bernama SIMBA dikembangkan dalam empat level pelatihan dengan elemen gamifikasi seperti poin, badges, leaderboard, dan tantangan bertingkat. Evaluasi terhadap 30 responden menggunakan kuesioner skala Likert lima poin yang dirancang untuk mengukur efektivitas elemen gamifikasi dan pengalaman pengguna menunjukkan bahwa instrumen penilaian memenuhi kriteria reliabilitas dan validitas berdasarkan Cronbach’s Alpha, Average Variance Extracted (AVE), dan Composite Reliability (CR). Hasil pengujian menunjukkan nilai Cronbach’s Alpha sebesar 0,896, AVE berkisar antara 0,777 hingga 0,869, dan CR antara 0,913 hingga 0,952, yang menandakan konsistensi dan keandalan instrumen sangat baik. Hasil ini membuktikan bahwa forward chaining efektif digunakan sebagai mekanisme evaluasi berbasis aturan dalam pelatihan digital berbasis simulasi, dan menunjukkan bahwa pendekatan serupa dapat diadaptasi pada pelatihan berbasis simulasi untuk sektor industri lainnya. Kontribusi orisinal penelitian ini terletak pada integrasi menyeluruh antara forward chaining dan gamifikasi dalam pelatihan logistik berbasis simulasi, yang belum banyak diimplementasikan pada penelitian sebelumnya."
+      },
+      {
+        "paperId": "bad43b93475a2f9a9edbe9fdbaa01d8e6da360db",
+        "externalIds": {
+          "DOI": "10.1109/ICSPS66615.2025.11347973",
+          "CorpusId": 285108737
+        },
+        "title": "Infrared-guided Adaptive Low-light Image Enhancement for Multi-modal Anti-UAV Detection",
+        "venue": "International Conference on Signal Processing Systems",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSPS66615.2025.11347973?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSPS66615.2025.11347973, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2407460654",
+            "name": "Li Yan"
+          },
+          {
+            "authorId": "2146237823",
+            "name": "Jian Yang"
+          },
+          {
+            "authorId": "2192331691",
+            "name": "Zhong Wang"
+          },
+          {
+            "authorId": "2300247964",
+            "name": "Chuanxiang Li"
+          },
+          {
+            "authorId": "2407408840",
+            "name": "Xueyan Dong"
+          }
+        ],
+        "abstract": "Low-light conditions severely degrade visible (RGB) image in anti-UAV applications, limiting robust detection at night. We propose an infrared-guided adaptive gamma correction framework that enhances RGB images by leveraging an IR visibility prior to regulate target luminance, and preserve structure. Building on local adaptive gamma correction, our method integrates variance gating, spatial smoothing, and a highlight-protection mechanism that progressively attenuates enhancement in bright regions. To improve generalization, we further use the correction as probabilistic data augmentation so detectors learn invariance to enhancement. Evaluated on the multi-modal dataset from the “Multi-modal Low Slow Small Target Detection Competition,” the approach improves performance on two architectures, yielding higher recall and notable gains. Our submission ranked first on the official leaderboard, indicating strong real-world applicability. The results show that IR-guided, artifact-aware enhancement coupled with augmentation is an effective recipe for reliable anti-UAV detection under challenging conditions."
+      },
+      {
+        "paperId": "65a7fc689fce714cb51d1e3d9305d997a2f5169b",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2602-08229",
+          "ArXiv": "2602.08229",
+          "DOI": "10.48550/arXiv.2602.08229",
+          "CorpusId": 285451752
+        },
+        "title": "InfiCoEvalChain: A Blockchain-Based Decentralized Framework for Collaborative LLM Evaluation",
+        "venue": "arXiv.org",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.08229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2361894351",
+            "name": "Yifan Yang"
+          },
+          {
+            "authorId": "2353413771",
+            "name": "Jinjian Li"
+          },
+          {
+            "authorId": "2410496875",
+            "name": "Kunxi Li"
+          },
+          {
+            "authorId": "2409824706",
+            "name": "Puhao Zheng"
+          },
+          {
+            "authorId": "2362636826",
+            "name": "Yuanyi Wang"
+          },
+          {
+            "authorId": "2378279170",
+            "name": "Zhe Qu"
+          },
+          {
+            "authorId": "2383567495",
+            "name": "Yang Yu"
+          },
+          {
+            "authorId": "2409877232",
+            "name": "Jianmin Wu"
+          },
+          {
+            "authorId": "2362514471",
+            "name": "Ming Li"
+          },
+          {
+            "authorId": "2383948719",
+            "name": "Hongxia Yang"
+          }
+        ],
+        "abstract": "The rapid advancement of large language models (LLMs) demands increasingly reliable evaluation, yet current centralized evaluation suffers from opacity, overfitting, and hardware-induced variance. Our empirical analysis reveals an alarming inconsistency in existing evaluations: the standard deviation across ten repeated runs of a single model on HumanEval (1.67) actually exceeds the performance gap among the top-10 models on the official leaderboard (0.91), rendering current rankings statistically precarious. To mitigate these instabilities, we propose a decentralized evaluation framework that enables hardware and parameter diversity through large-scale benchmarking across heterogeneous compute nodes. By leveraging the blockchain-based protocol, the framework incentivizes global contributors to act as independent validators, using a robust reward system to ensure evaluation integrity and discourage dishonest participation. This collective verification transforms evaluation from a\"centralized black box\"into a\"decentralized endorsement\"where multi-party consensus and diverse inference environments yield a more stable, representative metric. Experimental results demonstrate that the decentralized evaluation framework reduces the standard deviation across ten runs on the same model to 0.28. This significant improvement over conventional frameworks ensures higher statistical confidence in model rankings. We have completely implemented this platform and will soon release it to the community."
+      },
+      {
+        "paperId": "4a9606c280feb815c6e2534a07c6ce4eefbb3d6f",
+        "externalIds": {
+          "ArXiv": "2603.20724",
+          "CorpusId": 286762304
+        },
+        "title": "Multi-RF Fusion with Multi-GNN Blending for Molecular Property Prediction",
+        "venue": "",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.20724, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2395541920",
+            "name": "Zacharie Bugaud"
+          }
+        ],
+        "abstract": "Multi-RF Fusion achieves a test ROC-AUC of 0.8476 +/- 0.0002 on ogbg-molhiv (10 seeds), placing #1 on the OGB leaderboard ahead of HyperFusion (0.8475 +/- 0.0003). The core of the method is a rank-averaged ensemble of 12 Random Forest models trained on concatenated molecular fingerprints (FCFP, ECFP, MACCS, atom pairs -- 4,263 dimensions total), blended with deep-ensembled GNN predictions at 12% weight. Two findings drive the result: (1) setting max_features to 0.20 instead of the default sqrt(d) gives a +0.008 AUC gain on this scaffold split, and (2) averaging GNN predictions across 10 seeds before blending with the RF eliminates GNN seed variance entirely, dropping the final standard deviation from 0.0008 to 0.0002. No external data or pre-training is used."
+      },
+      {
+        "paperId": "655fa97b954b6f87bed7e6fa61f318e2576f6c2c",
+        "externalIds": {
+          "ArXiv": "2604.21481",
+          "CorpusId": 287702190
+        },
+        "title": "Preferences of a Voice-First Nation: Large-Scale Pairwise Evaluation and Preference Analysis for TTS in Indian Languages",
+        "venue": "",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.21481, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2311881163",
+            "name": "Srija Anand"
+          },
+          {
+            "authorId": "2311879762",
+            "name": "Ashwin Sankar"
+          },
+          {
+            "authorId": "2290017285",
+            "name": "I. Sethi"
+          },
+          {
+            "authorId": "2430728612",
+            "name": "Aaditya Pareek"
+          },
+          {
+            "authorId": "2196991589",
+            "name": "Kartik Rajput"
+          },
+          {
+            "authorId": "2318510469",
+            "name": "Gaurav Yadav"
+          },
+          {
+            "authorId": "2329557684",
+            "name": "N. Narasimhan"
+          },
+          {
+            "authorId": "2431186558",
+            "name": "Adish Pandya"
+          },
+          {
+            "authorId": "2370937678",
+            "name": "Deepon Halder"
+          },
+          {
+            "authorId": "2431187795",
+            "name": "Mohammed Safi Ur"
+          },
+          {
+            "authorId": "123442674",
+            "name": "Rahman Khan"
+          },
+          {
+            "authorId": "2421691329",
+            "name": "Shobhit Banga"
+          },
+          {
+            "authorId": "2361078",
+            "name": "Mitesh M. Khapra"
+          }
+        ],
+        "abstract": "Crowdsourced pairwise evaluation has emerged as a scalable approach for assessing foundation models. However, applying it to Text to Speech(TTS) introduces high variance due to linguistic diversity and multidimensional nature of speech perception. We present a controlled multidimensional pairwise evaluation framework for multilingual TTS that combines linguistic control with perceptually grounded annotation. Using 5K+ native and code-mixed sentences across 10 Indic languages, we evaluate 7 state-of-the-art TTS systems and collect over 120K pairwise comparisons from over 1900 native raters. In addition to overall preference, raters provide judgments across 6 perceptual dimensions: intelligibility, expressiveness, voice quality, liveliness, noise, and hallucinations. Using Bradley-Terry modeling, we construct a multilingual leaderboard, interpret human preference using SHAP analysis and analyze leaderboard reliability alongside model strengths and trade-offs across perceptual dimensions."
+      },
+      {
+        "paperId": "2f87e7240391cd973722aa68475fb2f071d6e600",
+        "externalIds": {
+          "DOI": "10.1177/15248399231160152",
+          "CorpusId": 257604061,
+          "PubMed": "36932690"
+        },
+        "title": "Physical Activity and Social Comparison: The Importance of Group Composition in an Employee Fitbit Intervention",
+        "venue": "Health Promotion Practice",
+        "year": 2023,
+        "citationCount": 6,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/15248399231160152?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/15248399231160152, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2212264794",
+            "name": "Jennifer R Wentz"
+          },
+          {
+            "authorId": "2391630412",
+            "name": "Sonja A Wilhelm Stanis"
+          }
+        ],
+        "abstract": "This study examined the impact of group composition of a 6-week group-based employee Fitbit intervention on daily physical activity steps. Group composition comprised heterogenous and homogeneous groupings based on variations in baseline high, medium, and low steppers. The intervention included weekly step leaderboard information, motivational and informative messages, and the ability to participate in group step challenges. Repeated measures analysis of variance (ANOVA) examined differences in change of steps across time, step-level groups (low, medium, and high), and group composition (low/high, similar, and mixed), and replicated with a subgroup of participants who participated in group step challenges. While group and step level did not emerge as significant interactions in the overall sample, when focused within the group step challenge subsample, relationships among time, the group composition, and participant step-level categories emerged. Overall, the greatest increases in steps occurred at the mid-point time period, among lower steppers, and within the low/high comparison group. This study provides evidence of the importance of group composition in physical activity interventions as well as the fidelity of intervention design in facilitating group comparisons."
+      },
+      {
+        "paperId": "d67976e4cd3ddc541172455c854c2be76d15baae",
+        "externalIds": {
+          "DBLP": "conf/icml/PatilMYJSSG25",
+          "CorpusId": 283567780
+        },
+        "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 238,
+        "influentialCitationCount": 45,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/forum?id=2GmDdhBdDk, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2257979820",
+            "name": "Shishir G. Patil"
+          },
+          {
+            "authorId": "2345007132",
+            "name": "Huanzhi Mao"
+          },
+          {
+            "authorId": "2291072588",
+            "name": "Fanjia Yan"
+          },
+          {
+            "authorId": "2397455682",
+            "name": "Charlie Cheng-Jie Ji"
+          },
+          {
+            "authorId": "2396492547",
+            "name": "Vishnu Suresh"
+          },
+          {
+            "authorId": "2055174324",
+            "name": "Ion Stoica"
+          },
+          {
+            "authorId": "2397587559",
+            "name": "Joseph Gonzalez"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "2fe6bdf13d748d02cf2cf087c6d51a3d283f49f0",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2501-03200",
+          "ArXiv": "2501.03200",
+          "DOI": "10.48550/arXiv.2501.03200",
+          "CorpusId": 274977904
+        },
+        "title": "The FACTS Grounding Leaderboard: Benchmarking LLMs' Ability to Ground Responses to Long-Form Input",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 42,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.03200, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "41016275",
+            "name": "Alon Jacovi"
+          },
+          {
+            "authorId": "2336876301",
+            "name": "Andrew Wang"
+          },
+          {
+            "authorId": "114577307",
+            "name": "Chris Alberti"
+          },
+          {
+            "authorId": "2218112465",
+            "name": "Connie Tao"
+          },
+          {
+            "authorId": "2336819290",
+            "name": "Jon Lipovetz"
+          },
+          {
+            "authorId": "2275180557",
+            "name": "Kate Olszewska"
+          },
+          {
+            "authorId": "2336820230",
+            "name": "Lukas Haas"
+          },
+          {
+            "authorId": "2336829596",
+            "name": "Michelle Liu"
+          },
+          {
+            "authorId": "2336820056",
+            "name": "Nate Keating"
+          },
+          {
+            "authorId": "2728564",
+            "name": "Adam E. Bloniarz"
+          },
+          {
+            "authorId": "2275186597",
+            "name": "Carl Saroufim"
+          },
+          {
+            "authorId": "2336816667",
+            "name": "Corey Fry"
+          },
+          {
+            "authorId": "2771709",
+            "name": "Doron Kukliansky"
+          },
+          {
+            "authorId": "2336816537",
+            "name": "Gaurav ♠"
+          },
+          {
+            "authorId": "2287241038",
+            "name": "Singh Tomar"
+          },
+          {
+            "authorId": "2336819438",
+            "name": "James Swirhun"
+          },
+          {
+            "authorId": "2275169067",
+            "name": "Jinwei Xing"
+          },
+          {
+            "authorId": "2336829198",
+            "name": "Lily Wang"
+          },
+          {
+            "authorId": "2275187445",
+            "name": "Madhu Gurumurthy"
+          },
+          {
+            "authorId": "2336819607",
+            "name": "Michael Aaron"
+          },
+          {
+            "authorId": "2311700543",
+            "name": "Moran Ambar"
+          },
+          {
+            "authorId": "2203789378",
+            "name": "Rachana Fellinger"
+          },
+          {
+            "authorId": "2337079313",
+            "name": "Rui Wang"
+          },
+          {
+            "authorId": "2128158461",
+            "name": "Zizhao Zhang"
+          },
+          {
+            "authorId": "35540270",
+            "name": "S. Goldshtein"
+          },
+          {
+            "authorId": "2275184585",
+            "name": "D. Das"
+          },
+          {
+            "authorId": "2082718010",
+            "name": "Equal Contribution"
+          },
+          {
+            "authorId": "2135683701",
+            "name": "Google DeepMind"
+          },
+          {
+            "authorId": "2272567229",
+            "name": "G. Research"
+          },
+          {
+            "authorId": "2336819309",
+            "name": "Google Cloud"
+          },
+          {
+            "authorId": "2336819497",
+            "name": "♣. Kaggle"
+          }
+        ],
+        "abstract": "We introduce FACTS Grounding, an online leaderboard and associated benchmark that evaluates language models' ability to generate text that is factually accurate with respect to given context in the user prompt. In our benchmark, each prompt includes a user request and a full document, with a maximum length of 32k tokens, requiring long-form responses. The long-form responses are required to be fully grounded in the provided context document while fulfilling the user request. Models are evaluated using automated judge models in two phases: (1) responses are disqualified if they do not fulfill the user request; (2) they are judged as accurate if the response is fully grounded in the provided document. The automated judge models were comprehensively evaluated against a held-out test-set to pick the best prompt template, and the final factuality score is an aggregate of multiple judge models to mitigate evaluation bias. The FACTS Grounding leaderboard will be actively maintained over time, and contains both public and private splits to allow for external participation while guarding the integrity of the leaderboard. It can be found at https://www.kaggle.com/facts-leaderboard."
+      },
+      {
+        "paperId": "c6f896aa698b2d65160372bce057ea5f081904de",
+        "externalIds": {
+          "ArXiv": "2505.19223",
+          "DBLP": "journals/corr/abs-2505-19223",
+          "DOI": "10.48550/arXiv.2505.19223",
+          "CorpusId": 278905103
+        },
+        "title": "LLaDA 1.5: Variance-Reduced Preference Optimization for Large Language Diffusion Models",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 175,
+        "influentialCitationCount": 18,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.19223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2305318534",
+            "name": "Fengqi Zhu"
+          },
+          {
+            "authorId": "2161459752",
+            "name": "Rongzheng Wang"
+          },
+          {
+            "authorId": "2191077545",
+            "name": "Shen Nie"
+          },
+          {
+            "authorId": "2344830091",
+            "name": "Xiaolu Zhang"
+          },
+          {
+            "authorId": "2355076329",
+            "name": "Chunwei Wu"
+          },
+          {
+            "authorId": "2243783450",
+            "name": "Jun Hu"
+          },
+          {
+            "authorId": "2344081478",
+            "name": "Jun Zhou"
+          },
+          {
+            "authorId": "2316961675",
+            "name": "Jianfei Chen"
+          },
+          {
+            "authorId": "2257310922",
+            "name": "Yankai Lin"
+          },
+          {
+            "authorId": "2266834033",
+            "name": "Jirong Wen"
+          },
+          {
+            "authorId": "2253823025",
+            "name": "Chongxuan Li"
+          }
+        ],
+        "abstract": "While Masked Diffusion Models (MDMs), such as LLaDA, present a promising paradigm for language modeling, there has been relatively little effort in aligning these models with human preferences via reinforcement learning. The challenge primarily arises from the high variance in Evidence Lower Bound (ELBO)-based likelihood estimates required for preference optimization. To address this issue, we propose Variance-Reduced Preference Optimization (VRPO), a framework that formally analyzes the variance of ELBO estimators and derives bounds on both the bias and variance of preference optimization gradients. Building on this theoretical foundation, we introduce unbiased variance reduction strategies, including optimal Monte Carlo budget allocation and antithetic sampling, that significantly improve the performance of MDM alignment. We demonstrate the effectiveness of VRPO by applying it to LLaDA, and the resulting model, LLaDA 1.5, outperforms its SFT-only predecessor consistently and significantly across mathematical (GSM8K +4.7), code (HumanEval +3.0, MBPP +1.8), and alignment benchmarks (IFEval +4.0, Arena-Hard +4.3). Furthermore, LLaDA 1.5 demonstrates a highly competitive mathematical performance compared to strong language MDMs and ARMs. Project page: https://ml-gsai.github.io/LLaDA-1.5-Demo/."
+      },
+      {
+        "paperId": "dc3b7ca920f25223101ba36227a894d37c238df1",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2504-20879",
+          "ArXiv": "2504.20879",
+          "DOI": "10.48550/arXiv.2504.20879",
+          "CorpusId": 278171127
+        },
+        "title": "The Leaderboard Illusion",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 46,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.20879, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2283844788",
+            "name": "Shivalika Singh"
+          },
+          {
+            "authorId": "2209282547",
+            "name": "Yiyang Nan"
+          },
+          {
+            "authorId": "2353206385",
+            "name": "Alex Wang"
+          },
+          {
+            "authorId": "1432838153",
+            "name": "Daniel D'souza"
+          },
+          {
+            "authorId": "39893263",
+            "name": "Sayash Kapoor"
+          },
+          {
+            "authorId": "82290814",
+            "name": "A. Ustun"
+          },
+          {
+            "authorId": "123593472",
+            "name": "Sanmi Koyejo"
+          },
+          {
+            "authorId": "2268298457",
+            "name": "Yuntian Deng"
+          },
+          {
+            "authorId": "2283848744",
+            "name": "Shayne Longpre"
+          },
+          {
+            "authorId": "2288092286",
+            "name": "Noah Smith"
+          },
+          {
+            "authorId": "2445273",
+            "name": "B. Ermiş"
+          },
+          {
+            "authorId": "2818759",
+            "name": "Marzieh Fadaee"
+          },
+          {
+            "authorId": "2257040307",
+            "name": "Sara Hooker"
+          }
+        ],
+        "abstract": "Measuring progress is fundamental to the advancement of any scientific field. As benchmarks play an increasingly central role, they also grow more susceptible to distortion. Chatbot Arena has emerged as the go-to leaderboard for ranking the most capable AI systems. Yet, in this work we identify systematic issues that have resulted in a distorted playing field. We find that undisclosed private testing practices benefit a handful of providers who are able to test multiple variants before public release and retract scores if desired. We establish that the ability of these providers to choose the best score leads to biased Arena scores due to selective disclosure of performance results. At an extreme, we identify 27 private LLM variants tested by Meta in the lead-up to the Llama-4 release. We also establish that proprietary closed models are sampled at higher rates (number of battles) and have fewer models removed from the arena than open-weight and open-source alternatives. Both these policies lead to large data access asymmetries over time. Providers like Google and OpenAI have received an estimated 19.2% and 20.4% of all data on the arena, respectively. In contrast, a combined 83 open-weight models have only received an estimated 29.7% of the total data. We show that access to Chatbot Arena data yields substantial benefits; even limited additional data can result in relative performance gains of up to 112% on the arena distribution, based on our conservative estimates. Together, these dynamics result in overfitting to Arena-specific dynamics rather than general model quality. The Arena builds on the substantial efforts of both the organizers and an open community that maintains this valuable evaluation platform. We offer actionable recommendations to reform the Chatbot Arena's evaluation framework and promote fairer, more transparent benchmarking for the field"
+      },
+      {
+        "paperId": "5ce122aad391b843fb55ab92de2fdf6ae955095f",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-14855",
+          "ArXiv": "2502.14855",
+          "DOI": "10.48550/arXiv.2502.14855",
+          "CorpusId": 276482184
+        },
+        "title": "Prompt-to-Leaderboard",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 23,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.14855, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2307086809",
+            "name": "Evan Frick"
+          },
+          {
+            "authorId": "2327004346",
+            "name": "Connor Chen"
+          },
+          {
+            "authorId": "2346328040",
+            "name": "Joseph Tennyson"
+          },
+          {
+            "authorId": "2243906678",
+            "name": "Tianle Li"
+          },
+          {
+            "authorId": "2537924",
+            "name": "Wei-Lin Chiang"
+          },
+          {
+            "authorId": "2211847761",
+            "name": "A. Angelopoulos"
+          },
+          {
+            "authorId": "2316153057",
+            "name": "Ion Stoica"
+          }
+        ],
+        "abstract": "Large language model (LLM) evaluations typically rely on aggregated metrics like accuracy or human preference, averaging across users and prompts. This averaging obscures user- and prompt-specific variations in model performance. To address this, we propose Prompt-to-Leaderboard (P2L), a method that produces leaderboards specific to a prompt. The core idea is to train an LLM taking natural language prompts as input to output a vector of Bradley-Terry coefficients which are then used to predict the human preference vote. The resulting prompt-dependent leaderboards allow for unsupervised task-specific evaluation, optimal routing of queries to models, personalization, and automated evaluation of model strengths and weaknesses. Data from Chatbot Arena suggest that P2L better captures the nuanced landscape of language model performance than the averaged leaderboard. Furthermore, our findings suggest that P2L's ability to produce prompt-specific evaluations follows a power law scaling similar to that observed in LLMs themselves. In January 2025, the router we trained based on this methodology achieved the #1 spot on the Chatbot Arena leaderboard. Our code is available on GitHub at https://github.com/lmarena/p2l."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "evaluation noise",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "subword",
+    "results": [
+      {
+        "paperId": "f4a6b2d967c727c0e777d2d9e4e08f490e32dd2a",
+        "externalIds": {
+          "DBLP": "conf/emnlp/OhS24",
+          "ACL": "2024.emnlp-main.202",
+          "ArXiv": "2406.10851",
+          "DOI": "10.48550/arXiv.2406.10851",
+          "CorpusId": 270560538
+        },
+        "title": "Leading Whitespaces of Language Models’ Subword Vocabulary Pose a Confound for Calculating Word Probabilities",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2024,
+        "citationCount": 36,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.10851, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "71829539",
+            "name": "Byung-Doh Oh"
+          },
+          {
+            "authorId": "2282540236",
+            "name": "William Schuler"
+          }
+        ],
+        "abstract": "Predictions of word-by-word conditional probabilities from Transformer-based language models are often evaluated to model the incremental processing difficulty of human readers. In this paper, we argue that there is a confound posed by the most common method of aggregating subword probabilities of such language models into word probabilities. This is due to the fact that tokens in the subword vocabulary of most language models have leading whitespaces and therefore do not naturally define stop probabilities of words. We first prove that this can result in distributions over word probabilities that sum to more than one, thereby violating the axiom that $\\mathsf{P}(\\Omega) = 1$. This property results in a misallocation of word-by-word surprisal, where the unacceptability of the end of the current word is incorrectly carried over to the next word. Additionally, this implicit prediction of word boundaries incorrectly models psycholinguistic experiments where human subjects directly observe upcoming word boundaries. We present a simple decoding technique to reaccount the probability of the trailing whitespace into that of the current word, which resolves this confound. Experiments show that this correction reveals lower estimates of garden-path effects in transitive/intransitive sentences and poorer fits to naturalistic reading times."
+      },
+      {
+        "paperId": "9fe84d384a566ba4dbc6fa33ac2c7ddcc0f8b222",
+        "externalIds": {
+          "ArXiv": "2506.01687",
+          "DBLP": "journals/corr/abs-2506-01687",
+          "DOI": "10.48550/arXiv.2506.01687",
+          "CorpusId": 279119551
+        },
+        "title": "StochasTok: Improving Fine-Grained Subword Understanding in LLMs",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.01687, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2284762450",
+            "name": "Anya Sims"
+          },
+          {
+            "authorId": "2365039349",
+            "name": "Thom Foster"
+          },
+          {
+            "authorId": "35313071",
+            "name": "Klara Kaleb"
+          },
+          {
+            "authorId": "2300163115",
+            "name": "Tuan Nguyen"
+          },
+          {
+            "authorId": "2364946392",
+            "name": "Joseph Lee"
+          },
+          {
+            "authorId": "2330187322",
+            "name": "Jakob N. Foerster"
+          },
+          {
+            "authorId": "2265550761",
+            "name": "Yee Whye Teh"
+          },
+          {
+            "authorId": "2344954958",
+            "name": "Cong Lu"
+          }
+        ],
+        "abstract": "Subword-level understanding is integral to numerous tasks, including understanding multi-digit numbers, spelling mistakes, abbreviations, rhyming, and wordplay. Despite this, current large language models (LLMs) still struggle disproportionally with simple subword-level tasks like'How many r's in strawberry?'. A key factor behind these failures is tokenization, which obscures the fine-grained structure of words. Current alternatives, such as character-level and dropout tokenization methods, significantly increase computational costs and provide inconsistent improvements. In this paper we revisit tokenization and introduce StochasTok, a simple, efficient stochastic tokenization scheme that randomly splits tokens during training, allowing LLMs to'see'their internal structure. Our experiments show that pretraining with StochasTok substantially improves LLMs'downstream performance across multiple subword-level language games, including character counting, substring identification, and math tasks. Furthermore, StochasTok's simplicity allows seamless integration at any stage of the training pipeline; and we demonstrate that post-training with StochasTok can instill improved subword understanding into existing pretrained models, thus avoiding costly pretraining from scratch. These dramatic improvements achieved with a minimal change suggest StochasTok holds exciting potential when applied to larger, more capable models. Code open-sourced at: github.com/anyasims/stochastok."
+      },
+      {
+        "paperId": "82f140fc0e50113f52451ddd48a5d547ac7ff0d0",
+        "externalIds": {
+          "DOI": "10.1007/s11856-025-2774-6",
+          "CorpusId": 251223598
+        },
+        "title": "A Pansiot-type subword complexity theorem for automorphisms of free groups",
+        "venue": "Israel Journal of Mathematics",
+        "year": 2025,
+        "citationCount": 4,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11856-025-2774-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11856-025-2774-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "100611589",
+            "name": "A. Hilion"
+          },
+          {
+            "authorId": "37589920",
+            "name": "G. Levitt"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "b20531c07fa8517ae0d2eace3cf6b431ee1e3e31",
+        "externalIds": {
+          "ArXiv": "2502.12835",
+          "DBLP": "conf/acl/BunzeckZ25",
+          "DOI": "10.48550/arXiv.2502.12835",
+          "CorpusId": 276422320
+        },
+        "title": "Subword models struggle with word learning, but surprisal hides it",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2025,
+        "citationCount": 4,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.12835, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2217051437",
+            "name": "Bastian Bunzeck"
+          },
+          {
+            "authorId": "2333423361",
+            "name": "Sina Zarrieß"
+          }
+        ],
+        "abstract": "We study word learning in subword and character language models with the psycholinguistic lexical decision task. While subword LMs struggle to discern words and non-words with high accuracy, character LMs solve this task easily and consistently. Only when supplied with further contexts do subword LMs perform similarly to character models. Additionally, when looking at word-level and syntactic learning trajectories, we find that both processes are separable in character LMs. Word learning happens before syntactic learning, whereas both occur simultaneously in subword LMs. This raises questions about the adequacy of subword LMs for modeling language acquisition and positions character LMs as a viable alternative to study processes below the syntactic level."
+      },
+      {
+        "paperId": "8147a33a7bcb94b029a21ecf5a51ba3e15f50e25",
+        "externalIds": {
+          "ArXiv": "2508.17953",
+          "DBLP": "conf/emnlp/PengCS25",
+          "DOI": "10.48550/arXiv.2508.17953",
+          "CorpusId": 280711384
+        },
+        "title": "Understanding Subword Compositionality of Large Language Models",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 3,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.17953, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1884835955",
+            "name": "Qiwei Peng"
+          },
+          {
+            "authorId": "1395701436",
+            "name": "Yekun Chai"
+          },
+          {
+            "authorId": "2323797040",
+            "name": "Anders Sogaard"
+          }
+        ],
+        "abstract": "Large language models (LLMs) take sequences of subwords as input, requiring them to effective compose subword representations into meaningful word-level representations. In this paper, we present a comprehensive set of experiments to probe how LLMs compose subword information, focusing on three key aspects: structural similarity, semantic decomposability, and form retention. Our analysis of the experiments suggests that these five LLM families can be classified into three distinct groups, likely reflecting difference in their underlying composition strategies. Specifically, we observe (i) three distinct patterns in the evolution of structural similarity between subword compositions and whole-word representations across layers; (ii) great performance when probing layer by layer their sensitivity to semantic decompositionality; and (iii) three distinct patterns when probing sensitivity to formal features, e.g., character sequence length. These findings provide valuable insights into the compositional dynamics of LLMs and highlight different compositional pattens in how LLMs encode and integrate subword information."
+      },
+      {
+        "paperId": "c669f991632b2c9697d274dba3b7bab0ef87eee4",
+        "externalIds": {
+          "ArXiv": "2406.11687",
+          "DBLP": "conf/emnlp/ChaiF0024",
+          "DOI": "10.18653/v1/2024.findings-emnlp.86",
+          "CorpusId": 273163710
+        },
+        "title": "Tokenization Falling Short: On Subword Robustness in Large Language Models",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2024,
+        "citationCount": 20,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.11687, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1395701436",
+            "name": "Yekun Chai"
+          },
+          {
+            "authorId": "2307035173",
+            "name": "Yewei Fang"
+          },
+          {
+            "authorId": "1884835955",
+            "name": "Qiwei Peng"
+          },
+          {
+            "authorId": "2287849433",
+            "name": "Xuhong Li"
+          }
+        ],
+        "abstract": "Language models typically tokenize raw text into sequences of subword identifiers from a predefined vocabulary, a process inherently sensitive to typographical errors, length variations, and largely oblivious to the internal structure of tokens--issues we term the curse of tokenization. In this study, we delve into these drawbacks and demonstrate that large language models (LLMs) remain susceptible to these problems. This study systematically investigates these challenges and their impact on LLMs through three critical research questions: (1) complex problem solving, (2) token structure probing, and (3) resilience to typographical variation. Our findings reveal that scaling model parameters can mitigate the issue of tokenization; however, LLMs still suffer from biases induced by typos and other text format variations. Our experiments show that subword regularization such as BPE-dropout can mitigate this issue. We release our evaluation code and data at https://github.com/FloatAI/TKEval."
+      },
+      {
+        "paperId": "77d99ac444738f3dec5d4174c1a3b1cd4c476386",
+        "externalIds": {
+          "DBLP": "conf/naacl/HoptonSS25",
+          "DOI": "10.18653/v1/2025.naacl-long.398",
+          "CorpusId": 278456868
+        },
+        "title": "Functional Lexicon in Subword Tokenization",
+        "venue": "North American Chapter of the Association for Computational Linguistics",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2025.naacl-long.398?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2025.naacl-long.398, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2308475196",
+            "name": "Zachary Hopton"
+          },
+          {
+            "authorId": "2308472488",
+            "name": "Yves Scherrer"
+          },
+          {
+            "authorId": "2308477392",
+            "name": "Tanja Samardžić"
+          }
+        ],
+        "abstract": "The distinction between function and content units of the lexicon has been somewhat neglected in recent NLP work, but it could still be useful when working with low-resource languages, and, in particular, to improve cross-lingual transfer. In this paper, we investigate to what extent BPE subword tokenization can be used to identify units of the functional lexicon in a language without any annotated data. We analyze subword tokens in terms of their productivity and attempt to find thresholds that best distinguish function from content tokens. On a sample of seven diverse languages, we find that the best results are obtained with 50 BPE merges. We also show that this subword tokenization setting can be beneficial for the interlinear glossing task."
+      },
+      {
+        "paperId": "aac9d2899bfde049bc4b699c04f57de4200c977f",
+        "externalIds": {
+          "DBLP": "journals/es/LiangFYLH25",
+          "DOI": "10.1111/exsy.13835",
+          "CorpusId": 275424960
+        },
+        "title": "Automatic Code Summarization Using Abbreviation Expansion and Subword Segmentation",
+        "venue": "Expert Syst. J. Knowl. Eng.",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/exsy.13835?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/exsy.13835, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2249089104",
+            "name": "Yuguo Liang"
+          },
+          {
+            "authorId": "2198381888",
+            "name": "Guisheng Fan"
+          },
+          {
+            "authorId": "2318335741",
+            "name": "Huiqun Yu"
+          },
+          {
+            "authorId": "2237955385",
+            "name": "Mingchen Li"
+          },
+          {
+            "authorId": "2318542604",
+            "name": "Zijie Huang"
+          }
+        ],
+        "abstract": "Automatic code summarization refers to generating concise natural language descriptions for code snippets. It is vital for improving the efficiency of program understanding among software developers and maintainers. Despite the impressive strides made by deep learning‐based methods, limitations still exist in their ability to understand and model semantic information due to the unique nature of programming languages. We propose two methods to boost code summarization models: context‐based abbreviation expansion and unigram language model‐based subword segmentation. We use heuristics to expand abbreviations within identifiers, reducing semantic ambiguity and improving the language alignment of code summarization models. Furthermore, we leverage subword segmentation to tokenize code into finer subword sequences, providing more semantic information during training and inference, thereby enhancing program understanding. These methods are model‐agnostic and can be readily integrated into existing automatic code summarization approaches. Experiments conducted on two widely used Java code summarization datasets demonstrated the effectiveness of our approach. Specifically, by fusing original and modified code representations into the Transformer model, our Semantic Enhanced Transformer for Code Summarizsation (SETCS) serves as a robust semantic‐level baseline. By simply modifying the datasets, our methods achieved performance improvements of up to 7.3%, 10.0%, 6.7%, and 3.2% for representative code summarization models in terms of BLEU‐4, METEOR, ROUGE‐L and SIDE, respectively."
+      },
+      {
+        "paperId": "d26db1e6d8a3f081a0d640bd74666b6f51426c00",
+        "externalIds": {
+          "DBLP": "journals/cogcom/XueXTLL25",
+          "DOI": "10.1007/s12559-025-10431-3",
+          "CorpusId": 276762058
+        },
+        "title": "Attention-Enabled Multi-layer Subword Joint Learning for Chinese Word Embedding",
+        "venue": "Cognitive Computation",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.21203/rs.3.rs-4608376/v1",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s12559-025-10431-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s12559-025-10431-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2280669098",
+            "name": "Pengpeng Xue"
+          },
+          {
+            "authorId": "2324168511",
+            "name": "Jing Xiong"
+          },
+          {
+            "authorId": "2313924605",
+            "name": "Liang Tan"
+          },
+          {
+            "authorId": "2204637965",
+            "name": "Zhongzhu Liu"
+          },
+          {
+            "authorId": "2319118272",
+            "name": "Kanglong Liu"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "fc9d54a69737cf4b2385fc365ca96e0b93d953fa",
+        "externalIds": {
+          "ArXiv": "2503.08550",
+          "DBLP": "journals/corr/abs-2503-08550",
+          "DOI": "10.18653/v1/2025.nlp4dh-1.24",
+          "CorpusId": 276929222
+        },
+        "title": "Transferring Extreme Subword Style Using Ngram Model-Based Logit Scaling",
+        "venue": "Proceedings of the 5th International Conference on Natural Language Processing for Digital Humanities",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.08550, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2281642081",
+            "name": "C. Messner"
+          },
+          {
+            "authorId": "2322282687",
+            "name": "Tom Lippincott"
+          }
+        ],
+        "abstract": "We present an ngram model-based logit scaling technique that effectively transfers extreme subword stylistic variation to large language models at inference time. We demonstrate its efficacy by tracking the perplexity of generated text with respect to the ngram interpolated and original versions of an evaluation model. Minimizing the former measure while the latter approaches the perplexity of a text produced by a target author or character lets us select a sufficient degree of adaptation while retaining fluency."
+      },
+      {
+        "paperId": "9bd6cd6fdc95345e2c7f44a21338faceaa0d8e31",
+        "externalIds": {
+          "ArXiv": "2509.08812",
+          "DBLP": "conf/emnlp/TeklehaymanotFN25",
+          "DOI": "10.48550/arXiv.2509.08812",
+          "CorpusId": 281243899
+        },
+        "title": "MoVoC: Morphology-Aware Subword Construction for Geez Script Languages",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.08812, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2298756123",
+            "name": "H. Teklehaymanot"
+          },
+          {
+            "authorId": "2205658867",
+            "name": "Dren Fazlija"
+          },
+          {
+            "authorId": "2237628085",
+            "name": "Wolfgang Nejdl"
+          }
+        ],
+        "abstract": "Subword-based tokenization methods often fail to preserve morphological boundaries, a limitation especially pronounced in low-resource, morphologically complex languages such as those written in the Geez script. To address this, we present MoVoC (Morpheme-aware Subword Vocabulary Construction) and train MoVoC-Tok, a tokenizer that integrates supervised morphological analysis into the subword vocabulary. This hybrid segmentation approach combines morpheme-based and Byte Pair Encoding (BPE) tokens to preserve morphological integrity while maintaining lexical meaning. To tackle resource scarcity, we curate and release manually annotated morpheme data for four Geez script languages and a morpheme-aware vocabulary for two of them. While the proposed tokenization method does not lead to significant gains in automatic translation quality, we observe consistent improvements in intrinsic metrics, MorphoScore, and Boundary Precision, highlighting the value of morphology-aware segmentation in enhancing linguistic fidelity and token efficiency. Our morpheme-annotated datasets and tokenizer will be publicly available to support further research in low-resource, morphologically rich languages. Our code and data are available on GitHub: https://github.com/hailaykidu/MoVoC"
+      },
+      {
+        "paperId": "e9ea5cd6835bdfdaba0271ac29415795614641cf",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2505-16868",
+          "ArXiv": "2505.16868",
+          "DOI": "10.48550/arXiv.2505.16868",
+          "CorpusId": 278788948
+        },
+        "title": "Comparative analysis of subword tokenization approaches for Indian languages",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.16868, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2109620883",
+            "name": "Sudhansu Bala Das"
+          },
+          {
+            "authorId": "2359155646",
+            "name": "Samujjal Choudhury"
+          },
+          {
+            "authorId": "2274339166",
+            "name": "Tapas Kumar Mishra"
+          },
+          {
+            "authorId": "8943033",
+            "name": "Bidyut Kr. Patra"
+          }
+        ],
+        "abstract": "Tokenization is the act of breaking down text into smaller parts, or tokens, that are easier for machines to process. This is a key phase in machine translation (MT) models. Subword tokenization enhances this process by breaking down words into smaller subword units, which is especially beneficial in languages with complicated morphology or a vast vocabulary. It is useful in capturing the intricate structure of words in Indian languages (ILs), such as prefixes, suffixes, and other morphological variations. These languages frequently use agglutinative structures, in which words are formed by the combination of multiple morphemes such as suffixes, prefixes, and stems. As a result, a suitable tokenization strategy must be chosen to address these scenarios. This paper examines how different subword tokenization techniques, such as SentencePiece, Byte Pair Encoding (BPE), and WordPiece Tokenization, affect ILs. The effectiveness of these subword tokenization techniques is investigated in statistical, neural, and multilingual neural machine translation models. All models are examined using standard evaluation metrics, such as the Bilingual Evaluation Understudy (BLEU) score, TER, METEOR, CHRF, RIBES, and COMET. Based on the results, it appears that for the majority of language pairs for the Statistical and Neural MT models, the SentencePiece tokenizer continuously performed better than other tokenizers in terms of BLEU score. However, BPE tokenization outperformed other tokenization techniques in the context of Multilingual Neural Machine Translation model. The results show that, despite using the same tokenizer and dataset for each model, translations from ILs to English surpassed translations from English to ILs."
+      },
+      {
+        "paperId": "064c4b1b07ea637cc02de0ba9a91281e6a1dee82",
+        "externalIds": {
+          "ArXiv": "2404.13292",
+          "DBLP": "journals/corr/abs-2404-13292",
+          "DOI": "10.48550/arXiv.2404.13292",
+          "CorpusId": 269293110
+        },
+        "title": "Evaluating Subword Tokenization: Alien Subword Composition and OOV Generalization Challenge",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 16,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.13292, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2049136",
+            "name": "Khuyagbaatar Batsuren"
+          },
+          {
+            "authorId": "2311126",
+            "name": "Ekaterina Vylomova"
+          },
+          {
+            "authorId": "74461595",
+            "name": "Verna Dankers"
+          },
+          {
+            "authorId": "2297770126",
+            "name": "Tsetsuukhei Delgerbaatar"
+          },
+          {
+            "authorId": "2287928365",
+            "name": "Omri Uzan"
+          },
+          {
+            "authorId": "1826312",
+            "name": "Yuval Pinter"
+          },
+          {
+            "authorId": "2297812276",
+            "name": "Gábor Bella"
+          }
+        ],
+        "abstract": "The popular subword tokenizers of current language models, such as Byte-Pair Encoding (BPE), are known not to respect morpheme boundaries, which affects the downstream performance of the models. While many improved tokenization algorithms have been proposed, their evaluation and cross-comparison is still an open problem. As a solution, we propose a combined intrinsic-extrinsic evaluation framework for subword tokenization. Intrinsic evaluation is based on our new UniMorph Labeller tool that classifies subword tokenization as either morphological or alien. Extrinsic evaluation, in turn, is performed via the Out-of-Vocabulary Generalization Challenge 1.0 benchmark, which consists of three newly specified downstream text classification tasks. Our empirical findings show that the accuracy of UniMorph Labeller is 98%, and that, in all language models studied (including ALBERT, BERT, RoBERTa, and DeBERTa), alien tokenization leads to poorer generalizations compared to morphological tokenization for semantic compositionality of word meanings."
+      },
+      {
+        "paperId": "3597148d33e9147a0983e995a8abf023ce529e45",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2403-08688",
+          "ArXiv": "2403.08688",
+          "DOI": "10.48550/arXiv.2403.08688",
+          "CorpusId": 268378952
+        },
+        "title": "Token Alignment via Character Matching for Subword Completion",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 11,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.08688, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2095707",
+            "name": "Ben Athiwaratkun"
+          },
+          {
+            "authorId": "2291074711",
+            "name": "Shiqi Wang"
+          },
+          {
+            "authorId": "2282138397",
+            "name": "Mingyue Shang"
+          },
+          {
+            "authorId": "2152947965",
+            "name": "Yuchen Tian"
+          },
+          {
+            "authorId": "2259065741",
+            "name": "Zijian Wang"
+          },
+          {
+            "authorId": "1913939",
+            "name": "Sujan Kumar Gonugondla"
+          },
+          {
+            "authorId": "40892818",
+            "name": "Sanjay Krishna Gouda"
+          },
+          {
+            "authorId": "2291064823",
+            "name": "Rob Kwiatowski"
+          },
+          {
+            "authorId": "1701451",
+            "name": "Ramesh Nallapati"
+          },
+          {
+            "authorId": "2258965075",
+            "name": "Bing Xiang"
+          }
+        ],
+        "abstract": "Generative models, widely utilized in various applications, can often struggle with prompts corresponding to partial tokens. This struggle stems from tokenization, where partial tokens fall out of distribution during inference, leading to incorrect or nonsensical outputs. This paper examines a technique to alleviate the tokenization artifact on text completion in generative models, maintaining performance even in regular non-subword cases. The method, termed token alignment, involves backtracking to the last complete tokens and ensuring the model's generation aligns with the prompt. This approach showcases marked improvement across many partial token scenarios, including nuanced cases like space-prefix and partial indentation, with only a minor time increase. The technique and analysis detailed in this paper contribute to the continuous advancement of generative models in handling partial inputs, bearing relevance for applications like code completion and text autocompletion."
+      },
+      {
+        "paperId": "50307d71923b4a3b7ae08f39e5165c7c0ea8a121",
+        "externalIds": {
+          "DOI": "10.18653/v1/2025.loresmt-1.8",
+          "CorpusId": 279232594
+        },
+        "title": "Jamo-Level Subword Tokenization in Low-Resource Korean Machine Translation",
+        "venue": "Proceedings of the Eighth Workshop on Technologies for Machine Translation of Low-Resource Languages (LoResMT 2025)",
+        "year": 2025,
+        "citationCount": 3,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2025.loresmt-1.8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2025.loresmt-1.8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2365979593",
+            "name": "Junyoung Lee"
+          },
+          {
+            "authorId": "51122261",
+            "name": "Marco Cognetta"
+          },
+          {
+            "authorId": "2981343",
+            "name": "Sangwhan Moon"
+          },
+          {
+            "authorId": "2273486561",
+            "name": "Naoaki Okazaki"
+          }
+        ],
+        "abstract": ","
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "tokenizer benchmark",
+    "results": [],
+    "status": 0,
+    "error": null
+  }
+]

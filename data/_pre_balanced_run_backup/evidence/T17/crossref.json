@@ -1,0 +1,2212 @@
+[
+  {
+    "query": "tokenizer",
+    "results": [
+      {
+        "DOI": "10.21437/interspeech.2025-669",
+        "title": [
+          "PAST: Phonetic-Acoustic Speech Tokenizer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              17
+            ]
+          ]
+        },
+        "container-title": [
+          "Interspeech 2025"
+        ],
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "given": "Nadav",
+            "family": "Har-Tuv",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Or",
+            "family": "Tal",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yossi",
+            "family": "Adi",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1609/aaai.v40i39.40637",
+        "title": [
+          "Bridging the Tokenizer Gap: Semantics and Distribution-aware Knowledge Transfer for Unbiased Cross-Tokenizer Distillation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the AAAI Conference on Artificial Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Huazheng",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Yongcheng",
+            "family": "Jing",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Haifeng",
+            "family": "Sun",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jingyu",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jianxin",
+            "family": "Liao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Leszek",
+            "family": "Rutkowski",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Dacheng",
+            "family": "Tao",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Cross-tokenizer knowledge distillation, where the teacher and student employ different tokenizers, is becoming increasingly prevalent, yet it poses underexplored challenges: existing methods fail to capture the rich knowledge encoded in teacher logits, as evidenced by the neglect of semantic information, inaccurate and biased logit alignment, and discarding distributional structure—ultimately leading to unfavorable distillation. To address these issues, we propose SeDi, a semantics and distribution-aware knowledge transfer framework tailored for cross-tokenizer distillation. To preserve factual knowledge, SeDi employs bipartite graph-based alignment at the tokenization level and a sliding window re-encoding strategy at the vocabulary level, enabling unbiased transfer of the teacher’s next-token predictions into the student’s vocabulary space. To further retain distributional information, we align the student’s entropy with that of the teacher by incorporating the student’s own logits during training, which helps to mitigate the exposure bias problem. Experiments on ten datasets across three task domains and five different teacher-student model pairs with varying vocabulary sizes demonstrate that SeDi delivers substantial improvements, with gains of up to 19.8%.</jats:p>"
+      },
+      {
+        "DOI": "10.21437/interspeech.2024-2366",
+        "title": [
+          "Low Bitrate High-Quality RVQGAN-based Discrete Speech Tokenizer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Interspeech 2024"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Slava",
+            "family": "Shechtman",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Avihu",
+            "family": "Dekel",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1101/2025.04.02.646836",
+        "title": [
+          "Genomic Tokenizer: Toward a biology-driven tokenization in transformer models for DNA sequences"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3208-4977",
+            "authenticated-orcid": false,
+            "given": "Bell Raj",
+            "family": "Eapen",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:sec>\n                  <jats:title>Summary</jats:title>\n                  <jats:p>Transformer models are revolutionizing sequence analysis across various domains, from natural language processing to genomics. These models rely on tokenizers to split input sequences into manageable chunks — a straightforward task in natural language but more challenging for long DNA sequences that lack distinct “words.” Most biological tokenizers are data-driven and do not align with the “central dogma of molecular biology”: DNA is transcribed into RNA, which is then translated into proteins, with each three-letter codon specifying a particular amino acid, some of which are synonymous for the amino acids they represent. Start codons signal the beginning of protein synthesis, while stop codons signal its termination. The Genomic Tokenizer (GT) incorporates this biological process flow into a standard tokenizer interface within the HuggingFace transformer package. GT can be used to pre-train foundational transformer models on DNA sequences. We compare the performance of GT with two alternate tokenization strategies and discuss its potential applications.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Availability and implementation</jats:title>\n                  <jats:p>\n                    The source code of GT is available from\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/dermatologist/genomic-tokenizer\">https://github.com/dermatologist/genomic-tokenizer</jats:ext-link>\n                    under the MPL-2.0 license. It can be installed from Python Package Index (PyPI) and used as a tokenizer in transformer model training pipelines.\n                  </jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.1016/j.isprsjprs.2024.09.009",
+        "title": [
+          "Homogeneous tokenizer matters: Homogeneous visual tokenizer for remote sensing image understanding"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              12
+            ]
+          ]
+        },
+        "container-title": [
+          "ISPRS Journal of Photogrammetry and Remote Sensing"
+        ],
+        "is-referenced-by-count": 18,
+        "author": [
+          {
+            "given": "Run",
+            "family": "Shao",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0001-2135-5842",
+            "authenticated-orcid": false,
+            "given": "Zhaoyang",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Chao",
+            "family": "Tao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yunsheng",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Chengli",
+            "family": "Peng",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1173-6593",
+            "authenticated-orcid": false,
+            "given": "Haifeng",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.52202/079017-1484",
+        "title": [
+          "Zero-Shot Tokenizer Transfer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Advances in Neural Information Processing Systems 37"
+        ],
+        "is-referenced-by-count": 3,
+        "author": [
+          {
+            "given": "Benjamin",
+            "family": "Minixhofer",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Edoardo",
+            "family": "Ponti",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Ivan",
+            "family": "Vulić",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/gcce59613.2023.10315472",
+        "title": [
+          "Robust Tokenizer for Vision Transformer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "2023 IEEE 12th Global Conference on Consumer Electronics (GCCE)"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Rinka",
+            "family": "Kiriyama",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Tokyo University of Agriculture and Technology"
+              }
+            ]
+          },
+          {
+            "given": "Akio",
+            "family": "Sashima",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "National Institute of Advanced Industrial Science and Technology"
+              }
+            ]
+          },
+          {
+            "given": "Ikuko",
+            "family": "Shimizu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Tokyo University of Agriculture and Technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/iccect64621.2025.11339671",
+        "title": [
+          "Dynamic Tokenizer for Robust Face Recognition"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              25
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE 3rd International Conference on Control, Electronics and Computer Technology (ICCECT)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Himanshu",
+            "family": "Kumar",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Bharti Airtel,Gurugram,India"
+              }
+            ]
+          },
+          {
+            "given": "Shubham",
+            "family": "Gautam",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Bharti Airtel,Gurugram,India"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/khpiweek61436.2025.11288603",
+        "title": [
+          "Improved Feature Tokenizer Transformer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              6
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE 6th KhPI Week on Advanced Technology (KhPIWeek)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Vadim",
+            "family": "Poltoratskyi",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "National Technical University \"Kharkiv Polytechnic Institute\",Department of Computer Engineering and Programming,Kharkiv,Ukraine"
+              }
+            ]
+          },
+          {
+            "given": "Svitlana",
+            "family": "Gavrylenko",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "National Technical University \"Kharkiv Polytechnic Institute\",Department of Computer Engineering and Programming,Kharkiv,Ukraine"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/978-3-032-04971-1_1",
+        "title": [
+          "$${\\mu }^2$$ Tokenizer: Differentiable Multi-Scale Multi-Modal Tokenizer for Radiology Report Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              20
+            ]
+          ]
+        },
+        "container-title": [
+          "Lecture Notes in Computer Science",
+          "Medical Image Computing and Computer Assisted Intervention – MICCAI 2025"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Siyou",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Pengyao",
+            "family": "Qin",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Huanan",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Dong",
+            "family": "Nie",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Arun J.",
+            "family": "Thirunavukarasu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Juntao",
+            "family": "Yu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Le",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/iccv51701.2025.01596",
+        "title": [
+          "Spectral Image Tokenizer"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE/CVF International Conference on Computer Vision (ICCV)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Carlos",
+            "family": "Esteves",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Google Research"
+              }
+            ]
+          },
+          {
+            "given": "Mohammed",
+            "family": "Suhail",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Google Research"
+              }
+            ]
+          },
+          {
+            "given": "Ameesh",
+            "family": "Makadia",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Google Research"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.21437/interspeech.2025-2722",
+        "title": [
+          "Language-Agnostic Speech Tokenizer for Spoken Term Detection with Efficient Retrieval"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              17
+            ]
+          ]
+        },
+        "container-title": [
+          "Interspeech 2025"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Anup",
+            "family": "Singh",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Kris",
+            "family": "Demuynck",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Vipul",
+            "family": "Arora",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/icecer65523.2025.11401129",
+        "title": [
+          "Dictionary-based Byte-Pair Encoding tokenizer for morphologically rich languages"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              6
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 International Conference on Electrical and Computer Engineering Researches (ICECER)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Dávid",
+            "family": "Držík",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Constantine the Philosopher University in Nitra,Faculty of Natural Sciences and Informatics,Department of Informatics,Nitra,Slovakia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/sips66314.2025.11261258",
+        "title": [
+          "TokenMIMO: Tokenizer-Enhanced Transformer for MIMO Algorithm Prediction"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE Workshop on Signal Processing Systems (SiPS)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Hantang",
+            "family": "Liuli",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Southeast University,Lab of Efficient Architectures for Digital-communication and Signal-processing (LEADS), National Mobile Communications Research Laboratory,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Hao",
+            "family": "Ning",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Southeast University,Lab of Efficient Architectures for Digital-communication and Signal-processing (LEADS), National Mobile Communications Research Laboratory,Nanjing,China"
+              }
+            ]
+          },
+          {
+            "given": "Chuan",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Southeast University,Lab of Efficient Architectures for Digital-communication and Signal-processing (LEADS), National Mobile Communications Research Laboratory,Nanjing,China"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2026.findings-eacl.341",
+        "title": [
+          "Teaching Old Tokenizers New Words: Efficient Tokenizer Adaptation for Pretrained Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Findings of the Association for Computational Linguistics: EACL 2026"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Taido",
+            "family": "Purason",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Pavel",
+            "family": "Chizhov",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Ivan P.",
+            "family": "Yamshchikov",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mark",
+            "family": "Fishel",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "BPE",
+    "results": [
+      {
+        "DOI": "10.2210/pdb8vw7/pdb",
+        "title": [
+          "UIC-11-BPE-AgNO3 silver binding with UIC-11-BPE"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              7
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "P.",
+            "family": "Ganatra",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2210/pdb8vw8/pdb",
+        "title": [
+          "UIC-13-BPE-AgNO3 silver binding with UIC-13-BPE"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Worldwide Protein Data Bank"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "P.",
+            "family": "Ganatra",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1101/2025.12.01.691503",
+        "title": [
+          "Mut-BPE: A Modified BPE Strategy Improves Variant Effect Prediction"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Yucheng",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Weicai",
+            "family": "Long",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yawen",
+            "family": "Lu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Xu",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yanlin",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n                <jats:p>\n                  Byte Pair Encoding (BPE) is widely used in genome foundation models for its ability to compress long DNA sequences into fewer tokens. However, its variable-length tokens often span multiple nucleotides, limiting the model’s sensitivity to single-nucleotide variations—an essential requirement for accurate Variant Effect Prediction (VEP). We introduce Mut-BPE, a training-free, plug-and-play tokenization strategy that augments BPE with explicit single-nucleotide resolution at variant sites. Mut-BPE preserves the efficiency of BPE while enhancing its ability to represent subtle genomic alterations. To evaluate its effectiveness, we applied Mut-BPE to DNABERT-2 and conducted extensive experiments across six diverse datasets spanning gene expression, pathogenicity, and trait-associated variants, under zero-shot and fine-tuning settings. Mut-BPE consistently outperformed conventional BPE tokenization, yielding significant improvements in both AUROC and AUPRC, particularly in imbalanced datasets. These results highlight Mut-BPE as a practical enhancement for genomic foundation models in VEP tasks. Code availability:\n                  <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://anonymous.4open.science/r/Mut-BPE-1182\">https://anonymous.4open.science/r/Mut-BPE-1182</jats:ext-link>\n                </jats:p>"
+      },
+      {
+        "DOI": "10.24084/eqj24.296",
+        "title": [
+          "Distributed Insulation Monitoring Strategy (DIMS) for High Stray Capacitance Systems"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "Energies and Quality Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "H.",
+            "family": "Balanzategui",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Energy Storage and Power Electronics (BPE). Spain",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "R.",
+            "family": "Moreno",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "A.",
+            "family": "Sánchez",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "V.M.",
+            "family": "López",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "E.",
+            "family": "Bilbao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "A.",
+            "family": "Rujas",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Electronic Embedded Systems (SET). Ikerlan S. Coop. Arrasate.",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Energy Storage and Power Electronics (BPE). Spain",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Energy Storage and Power Electronics (BPE). Spain",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Energy Storage and Power Electronics (BPE). Spain",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "name": "Department of Energy Storage and Power Electronics (BPE). Spain",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Climate change is a global phenomenon which is becoming increasingly concerning. International efforts, such as the Paris Agreement [1] lead to transport electrification initiatives. HYPOBATT [2], in marine sector, aims for the charger that will enable a full electric vessel to be a reality. These systems have great amounts of energy storage. Together with electric machinery, EMI filters and distribution grids usually can sum up to some mF capacitance to earth, becoming a problem when detecting faults to ground, and therefore, a safety issue. To detect earthing faults insulation monitoring devices (IMD) are used, but as of Jan. 2024, the commercial IMDs available are not able to make a good measurement at stray capacitances (CS) above 3000µF [3], and all the devices in the mF range have response times of &gt;100s. A new Distributed Insulation Monitoring Strategy (DIMS) approach is proposed in this paper, with simulation results, to make a faster and more reliable measurement of earthing faults in isolated terra (IT) systems with stray capacitances in the range of the hundreds of µF. The impedance to ground is measured in isolated parts of the whole system and then a higher-level logic is implemented to compute a total safety status. Key words. Stray capacitance, modular insulation monitoring, IT systems, marine transport electrification, energy storage system.</jats:p>"
+      },
+      {
+        "DOI": "10.18653/v1/2025.emnlp-main.1169",
+        "title": [
+          "R-BPE: Improving BPE-Tokenizers with Token Reuse"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Nancy",
+            "family": "Hamdan",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Osama",
+            "family": "Rakan Al Mraikhat",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Fadi A.",
+            "family": "Zaraket",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31599/tv4j1t95",
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Jurnal Bhara Petro Energi"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1148/radiol.251041.podcast",
+        "title": [
+          "Black-White Racial Differences in BPE at Breast MRI"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              17
+            ]
+          ]
+        },
+        "container-title": [
+          "Radiology"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31599/bpe.v1i2",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              26
+            ]
+          ]
+        },
+        "container-title": [
+          "JURNAL BHARA PETRO ENERGI"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31599/spy2f969",
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Jurnal Bhara Petro Energi"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31599/9v3hn587",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              11,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Jurnal Bhara Petro Energi"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31599/bpe.v1i3",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "JURNAL BHARA PETRO ENERGI"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.31599/a5stq527",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              5,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Jurnal Bhara Petro Energi"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-4196947/v1",
+        "title": [
+          "Formalizing BPE Tokenization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Martin",
+            "family": "Berglund",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Umeå University"
+              }
+            ]
+          },
+          {
+            "given": "Brink van der",
+            "family": "Merwe",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Stellenbosch University"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title>\n        <p>In this paper, we formalize practical byte pair encoding tokenization as it is used in large language models and other NLP systems. There are subtle differences between implementations, so we in particular formally define and investigate the semantics of the SentencePiece and HuggingFace tokenizers, and how they relate to each other. These differences depend on the details of how the dictionary of tokenization rules is constructed. Beyond this, we consider how tokenization can be performed in an incremental fashion, as well as doing it left-to-right using an amount of memory constant in the length of the string, enabling e.g. using a finite state string-to-string transducer.</p>"
+      },
+      {
+        "DOI": "10.31599/3nxv7720",
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Jurnal Bhara Petro Energi"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1016/j.ejrad.2025.112291",
+        "title": [
+          "Comment on the diagnostic impact of BPE in contrast-enhanced mammography: is BPE in CEM really that problematic?"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "container-title": [
+          "European Journal of Radiology"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Deniz Esin",
+            "family": "Tekcan Sanli",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "leaderboard variance",
+    "results": [
+      {
+        "DOI": "10.55277/researchhub.5xrgg7q5",
+        "title": [
+          "Endaoment DAF Contributions, Funder Dashboard, and Leaderboard"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              5
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6371-9424",
+            "authenticated-orcid": true,
+            "given": "Tyler",
+            "family": "Diorio",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1101/2025.05.12.653449",
+        "title": [
+          "Beyond the Leaderboard: Leveraging Predictive Modeling for Protein-Ligand Insights and Discovery"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              14
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-6459-6833",
+            "authenticated-orcid": false,
+            "given": "Dan",
+            "family": "Kalifa",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Technion"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0009-0007-7918-2204",
+            "authenticated-orcid": false,
+            "given": "Kira",
+            "family": "Radinsky",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Technion"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8823-0614",
+            "authenticated-orcid": false,
+            "given": "Eric",
+            "family": "Horvitz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Microsoft"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>ABSTRACT</jats:title>\n                <jats:sec>\n                  <jats:title>Motivation</jats:title>\n                  <jats:p>Ligands are biomolecules that bind to specific sites on target proteins, often inducing conformational changes important in the protein’s function. Knowledge about ligand interactions with proteins is fundamental to understanding biological mechanisms and advancing drug discovery. Traditional protein language models focus on amino acid sequences and three-dimensional structures, overlooking the structural and functional changes induced by protein-ligand interactions. We investigate the value of integrating ligand-protein binding data in several predictive challenges and leverage findings to frame research directions and questions.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>We show how the integration of protein-ligand interaction data in protein representation learning can increase predictive power. We evaluate the methodology across diverse biological tasks, demonstrating consistent improvements over state-of-the-art models. We further demonstrate how the study of the specific boosts in predictive capabilities coming with the introduction of the lig- and modality can serve to focus attention and provide insights on biological mechanisms. By leveraging large pretrained protein language models and enriching them with interaction-specific features through a tailored learning process, we capture functional and structural nuances of proteins in their biochemical context.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Availability and implementation</jats:title>\n                  <jats:p>\n                    The full code and data are freely available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/kalifadan/ProtLigand\">https://github.com/kalifadan/ProtLigand</jats:ext-link>\n                    .\n                  </jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Contact</jats:title>\n                  <jats:p>\n                    <jats:email>kalifadan@cs.technion.ac.il</jats:email>\n                  </jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.36227/techrxiv.177222998.81018836/v1",
+        "title": [
+          "A Simulation Framework for Evaluating Public Leaderboard Mitigations under Adaptivity"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0009-1881-8808",
+            "authenticated-orcid": false,
+            "given": "Indrajith P.",
+            "family": "Karunanayaka",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Independent Researcher in Artificial Intelligence"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.64628/ab.ejrcutp54",
+        "title": [
+          "We ranked all 34 Olympic sports by sustainability – here’s the leaderboard"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Thomas",
+            "family": "Cuckston",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Birmingham"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.21437/interspeech.2025-184",
+        "title": [
+          "Open Universal Arabic ASR Leaderboard"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              17
+            ]
+          ]
+        },
+        "container-title": [
+          "Interspeech 2025"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Yingzhi",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Anas",
+            "family": "Alhmoud",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Muhammad",
+            "family": "Alqurishi",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3102/ip.25.2184157",
+        "title": [
+          "The role of personality traits in leaderboard-based gamified learning (Poster 12)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "AERA 2025"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Jin",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Texas - Arlington"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.20944/preprints202511.1572.v1",
+        "title": [
+          "Beyond the Leaderboard: The Limitations of LLM Benchmarks and the Case for Real-World Clinical Evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              20
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-5824-4900",
+            "authenticated-orcid": false,
+            "given": "Sandeep",
+            "family": "Reddy",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This article critically examines the limitations of current large language model (LLM) benchmarks, particularly in healthcare and clinical evaluation. While standardised leaderboards and benchmarks have driven rapid technical progress and shaped industry perceptions, they are increasingly undermined by issues like benchmark data contamination and narrow assessment criteria. The article explains that benchmark leakage can overstate results, and traditional evaluation using multiple-choice questions does not reflect the complexity of clinical practice. Specialised medical benchmarks, though more targeted, still overlook essential attributes such as reliability, calibration, and safety, and often lack representation of diverse healthcare contexts and languages. A shift toward real-world evaluation frameworks, emphasising scenario-based simulations, multisite validation, and comprehensive translational assessment, is required. The Translational Evaluation of Healthcare AI (TEHAI) framework is presented as a robust alternative that integrates technical, utility, and adoption criteria and explicitly addresses ethical and contextual factors. Genuine clinical benefit and patient safety can be ensured only through continuous, context-specific evaluation that transcends traditional benchmarking.</jats:p>"
+      },
+      {
+        "DOI": "10.1111/ejn.70424/v2/review1",
+        "title": [
+          "Review for \"Beyond the Leaderboard: Evaluating the Robustness of Deep Learning Models for Detecting Freezing of Gait\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              20
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "J. Lucas McKay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1111/ejn.70424/v1/decision1",
+        "title": [
+          "Decision letter for \"Beyond the Leaderboard: Evaluating the Robustness of Deep Learning Models for Detecting Freezing of Gait\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.1111/ejn.70424/v1/review1",
+        "title": [
+          "Review for \"Beyond the Leaderboard: Evaluating the Robustness of Deep Learning Models for Detecting Freezing of Gait\""
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "family": "J. Lucas McKay",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.2139/ssrn.4831537",
+        "title": [
+          "Examining the Role of Personality Traits in Leaderboard-Based Gamified Learning"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Fei",
+            "family": "Gao",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Jin",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Kimberly  Cervello",
+            "family": "Rogers",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Rong",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.5210/fm.v30i12.14266",
+        "title": [
+          "Students' perception of a leaderboard-based mathematics game"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "First Monday"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Camryn E.",
+            "family": "Thompson",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "family": "Kimberly Cervello Rogers",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "family": "Fei Gao",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>In gamification, the leaderboard is a game design element that visually displays rankings based on relative progress during an activity. Through the lens of self-determination theory (SDT), a study was designed around the leaderboard to examine the intersections between students’ perceived competence, autonomy, relatedness, and enjoyment during a leaderboard-based mathematics game. After participating in a leaderboard activity during a quantitative reasoning class, students responded to open-ended questions to articulate their perceptions. These responses reveal a correlation between students’ perceived need satisfaction and their enjoyment, aligning with SDT and informing what types of students benefit from the use of a leaderboard and what characteristics need to be considered during design. In particular, our findings support that team-based leaderboard activities may be more effective, and practitioners should exclude any type of time restraint.</jats:p>"
+      },
+      {
+        "DOI": "10.31224/3656",
+        "title": [
+          "Analysis of a Modular Autonomous Driving Architecture: The Top Submission to CARLA Leaderboard 2.0 Challenge"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              4
+            ]
+          ]
+        },
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Weize",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>In this paper we present the architecture of the Kyber-E2E submission to the map track of CARLA Leaderboard 2.0 Autonomous Driving (AD) challenge 2023, which achieved first place. We employed a modular architecture for our solution consists of five main components: sensing, localization, perception, tracking/prediction, and planning/control. Our solution leverages state-of-the-art language-assisted perception models to help our planner perform more reliably in highly challenging traffic scenarios. We use open-source driving datasets in conjunction with Inverse Reinforcement Learning (IRL) to enhance the performance of our motion planner. We provide insight into our design choices and trade-offs made to achieve this solution. We also explore the impact of each component in the overall performance of our solution, with the intent of providing a guideline where allocation of resources can have the greatest impact.</jats:p>"
+      },
+      {
+        "DOI": "10.3390/cryst15030262",
+        "title": [
+          "Modification of Lithium-Rich Layered Material Li1.5Ni0.17Co0.16Mn0.67O2.5 Coated with Solid Electrolyte (Li2ZrO3)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Crystals"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Bo",
+            "family": "Liao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Han",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Siqin",
+            "family": "Bator",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              },
+              {
+                "name": "Inner Mongolia Key Laboratory of Applied Condensed Matter Physics, Hohhot 010022, China"
+              },
+              {
+                "name": "Engineering Research Center of New Energy Storage Materials, Universities of Inner Mongolia Autonomous Region, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Wei",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              },
+              {
+                "name": "Inner Mongolia Key Laboratory of Applied Condensed Matter Physics, Hohhot 010022, China"
+              },
+              {
+                "name": "Engineering Research Center of New Energy Storage Materials, Universities of Inner Mongolia Autonomous Region, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Xiaotao",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Jinyu",
+            "family": "Tan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Shixiang",
+            "family": "Sun",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Jingwen",
+            "family": "Cui",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Yingqun",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              }
+            ]
+          },
+          {
+            "given": "Xiao",
+            "family": "Tian",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Information, Inner Mongolia Normal University, Hohhot 010022, China"
+              },
+              {
+                "name": "Inner Mongolia Key Laboratory of Applied Condensed Matter Physics, Hohhot 010022, China"
+              },
+              {
+                "name": "Engineering Research Center of New Energy Storage Materials, Universities of Inner Mongolia Autonomous Region, Hohhot 010022, China"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>With the rising popularity of electric vehicles and the widespread deployment of energy storage power stations. The demand for high-energy-density lithium-ion batteries is increasing day by day. Lithium-rich layered materials are among the most promising candidates for the cathode of next-generation lithium-ion batteries due to their high energy density, cost-effectiveness, and advantages in safety and environmental protection. However, the occurrence of side reactions between lithium-rich layered materials and electrolytes has led to poor performance in later stages, posing challenges to their commercial viability. In this study, we enhance the electrochemical performance of lithium-rich layered cathode materials by applying varying amounts of solid electrolyte Li2ZrO3 as a coating on their surfaces. By precipitating ZrO2 onto the surface of the precursor, we successfully sinter both the lithium-rich layered material and the coated material simultaneously, thereby reducing processing costs. The experimental results show that the coated material has more excellent electrochemical performance, specifically, when the coating amount is 1%, compared with the uncoated sample, the first Coulombic efficiency is improved from 56.9% to 63%, and after 500 charge/discharge cycles, the coated sample still has a capacity retention rate of more than 60%; Additionally, the Li2ZrO3 coating significantly improves the rate performance of the material, at a rate of 5 C, the specific discharge capacity improved from 102.2 mAh·g−1 for the uncoated material to 137.3 mAh·g−1. The reaction mechanism was investigated by cyclic voltammetry and AC impedance test, and the results showed that the appropriate amount of Li2ZrO3 coating can effectively reduce the side reaction between the material and the electrolyte, improve the transport performance of lithium ions in the material, and then enhance the overall electrochemical performance of the material.</jats:p>"
+      },
+      {
+        "DOI": "10.26226/m.62a1f25ce8c1e87bf8a12baf",
+        "title": [
+          "The Leaderboard: A novel method of enhancing team collaboration and encouraging peer support networks within the hybrid learning environment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              13
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Rebecca",
+            "family": "Stout",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "evaluation noise",
+    "results": [
+      {
+        "DOI": "10.3397/in_2023_0570",
+        "title": [
+          "Shin-Sound Quality Evaluation: Image recognition AI for sound quality evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Norio",
+            "family": "Kubo",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Yokohama Institute of Acoustics, LLC"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Sound quality evaluation are historically based on psychoacoustical parameters, namely loudness, sharpness and so on. From awake of massive progress of Artificial Intelligence, analysis of sound should be affected by this novel technology. Therefore, in this paper the author introduces\n an approach with image recognition AI into sound quality evaluation. It results in showing advantages over complex and non-linear sound evaluation. Thus, the idea of \"eyes to ears\" could lead new application to this type of solutions.</jats:p>"
+      },
+      {
+        "DOI": "10.25144/19735",
+        "title": [
+          "FAI PROPOSAL FOR NOISE EVALUATION OF SMALLER AIRPORTS"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "NOISE CONTROL - THE NEXT 25 YEARS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "PV",
+            "family": "BRUEL",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.25144/19443",
+        "title": [
+          "SUBJECTIVE EVALUATION OF NOISE IMMISSIONS FROM TRANSRAPID"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              7
+            ]
+          ]
+        },
+        "container-title": [
+          "NOISE CONTROL - THE NEXT 25 YEARS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "H",
+            "family": "FASTL",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "G",
+            "family": "GOLTSCHLING",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.25144/19882",
+        "title": [
+          "EVALUATION OF NOISE EMISSIONS OF CARS BASED ON LOUDNESS"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              21
+            ]
+          ]
+        },
+        "container-title": [
+          "NOISE CONTROL - THE NEXT 25 YEARS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "U",
+            "family": "WIDMANN",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.31234/osf.io/d7n5m_v1",
+        "title": [
+          "Judgement Noise in a Complex Evaluation System: Why the REF Needs a Noise Audit"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              25
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-1917-2035",
+            "authenticated-orcid": true,
+            "given": "Robert",
+            "family": "Ward",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<p>Expert judgement is inherently noisy, but the consequences of this variability are often underestimated. Here I examine the UK Research Excellence Framework (REF) as a case study illustrating how judgment noise can interact with structural features of a multi-stage evaluation system. Simulations show that noise in both internal departmental reviews and REF panel reviews, in conjunction with the bounded REF rating scale, produces systematic underestimation of the highest-performing departments. Panel noise, rather than internal noise, had a disproportionate impact on department rankings, with even moderate noise producing severe distortions. At a policy level, these results underscore the need for a noise audit of REF panel ratings. More broadly, the case of REF demonstrates that noise embedded in sequential evaluation, for example, in hiring and grant review decisions, does not “cancel out”, but instead can propagate in potentially surprising ways.</p>"
+      },
+      {
+        "DOI": "10.25144/14610",
+        "title": [
+          "FLYOVER NOISE EVALUATION OF LOW-NOISE TECHNOLOGIES APPLIED TO A BLENDED WING BODY AIRCRAFT"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "Inter-Noise 2022"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "I",
+            "family": "LEGRIFFON",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "L",
+            "family": "BERTSCH",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "F",
+            "family": "CENTRACCHIO",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "D",
+            "family": "WEINTRAUB",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.25144/19662",
+        "title": [
+          "ANALYSIS OF REFRIGERATOR NOISE FOR SOUND QUALITY EVALUATION"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              14
+            ]
+          ]
+        },
+        "container-title": [
+          "NOISE CONTROL - THE NEXT 25 YEARS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "MY",
+            "family": "BURUK",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "H",
+            "family": "SERAFETTINOGLU",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3397/nc-2022-791",
+        "title": [
+          "Preliminary evaluation of transportation noise masking of UAV Noise"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              24
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Judith",
+            "family": "Rochat",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Cross-Spectrum Acoustics"
+              }
+            ]
+          },
+          {
+            "given": "Herbert",
+            "family": "Singleton",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Cross-Spectrum Acoustics"
+              }
+            ]
+          },
+          {
+            "given": "Keith",
+            "family": "Yoerg",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Cross-Spectrum Acoustics"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Unmanned aerial vehicles (UAVs) and unmanned mobility vehicles (UAMs) can be used for many purposes, ranging from package delivery to transporting people. Flight paths for these vehicles may be over or near transportation corridors. Communities near these corridors may be exposed to\n a type of noise not currently experienced, with current noise sources typically related to aircraft, rail, and road operations. This paper focuses on audibility of UAV noise in the presence of transportation noise, specifically highway traffic noise with varying parameters, including pavement\n type, percentage of heavy trucks, noise wall, and distance from the highway. Noise data from a single UAV event and multiple highway noise measurements are used to explore potential masking and audibility.</jats:p>"
+      },
+      {
+        "DOI": "10.3397/in_2024_3872",
+        "title": [
+          "Prediction and evaluation of the low-frequency noise impact from industrial noise sources"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Heiko",
+            "family": "HANSEN",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Müller-BBM Industry Solutions GmbH"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>German legislation requires an assessment of low-frequency noise in addition to the regular noise assessment for industrial plants. The detailed prediction and assessment of low-frequency noise immissions is carried out according to the administrative regulation for noise TA Lärm\n and the German standard DIN 45680. However, a standardised procedure for predictions of low-frequency noise does not exist. For this reason, different approaches for the prediction of low-frequency noise immissions have been developed over the last two decades. Typically, the method according\n to DIN ISO 9613-2 for sound propagation outside is extended heuristically to the lower frequency range. The predicted low-frequency noise level outside the room is taken as a basis for determining the noise immission level inside the room. The level of knowledge about the quality of sound\n propagation modeling of low-frequency noise is still debatable. A forecast method of low-frequency noise components should be on the \"safe side\" in terms of noise control; however, the scope of the required measures to meet the noise requirements must be comprehensible and proportionate.\n We present an overview of the building blocks of a forecasting process and the challenges that arise. The topic is illustrated by a practical example.</jats:p>"
+      },
+      {
+        "DOI": "10.25144/17322",
+        "title": [
+          "EVALUATION OF ENVIRONMENTAL TRAFFIC NOISE POLLUTION AND IN URBAN COMMUNITY"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              23
+            ]
+          ]
+        },
+        "container-title": [
+          "8th European Conference on Noise Control 2009"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "G",
+            "family": "MOHAMMADI",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3397/in_2025_1076408",
+        "title": [
+          "Developing definitions for maximum noise level in environmental noise evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              22
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Wayland",
+            "family": "Dong",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Westside Acoustics and Vibration Engineering"
+              }
+            ]
+          },
+          {
+            "given": "John",
+            "family": "LoVerde",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Westside Acoustics and Vibration Engineering"
+              }
+            ]
+          },
+          {
+            "given": "Samantha",
+            "family": "Rawlings",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Westside Acoustics and Vibration Engineering"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Requirements for exterior noise are commonly based on average or equivalent noise levels, such as Ldn. Modern standards and design requirements increasingly include maximum hourly level criteria, such as certain ANSI and ASHRAE standards, and CHPS and LEED design guidelines. Some cities\n have code requirements for maximum noise level from short events, such as trains. However, there is no definition of the maximum noise level in most of these cases. There is no shortage of candidate ratings, most based on statistical measures of the noise distribution, and the choice of rating\n will greatly affect the evaluation. The authors have analyzed a long-running dataset of traffic noise and additional long-term monitoring of sites exposed to railroads to evaluate candidate maximum noise level ratings. Definitions for maximum noise level are suggested for several conditions.</jats:p>"
+      },
+      {
+        "DOI": "10.25144/19555",
+        "title": [
+          "EVALUATION OF ACTIVE HEARING PROTECTORS WITH HIGH LEVEL IMPULSE NOISE"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              13
+            ]
+          ]
+        },
+        "container-title": [
+          "NOISE CONTROL - THE NEXT 25 YEARS"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "K",
+            "family": "BUCK",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "G",
+            "family": "PARMENTIER",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3397/in_2024_3295",
+        "title": [
+          "\"Tasting\" sounds by A.I. Sommelier - Unsupervised machine learning of wine evaluation applied for sound quality evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Norio",
+            "family": "KUBO",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Yokohama Institute of Acoustics, Inc."
+              }
+            ]
+          },
+          {
+            "given": "Serkan",
+            "family": "ATAMER",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "TU Dresden"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Wine produced countries in European Union categorize quality of wine as three classes by subjective judgements (called as \"Appellation\" in French) like taste, land of producer, type of grape seed and so on. In order to evaluate those wine quality, unsupervised machine learning\n with measured optical and chemical data of wine enables to categorize those 3 subjective classes at high accuracies. With those \"A.I. Sommelier\" techniques, vacuum cleaner sounds are categorized with psychoacoustic parameters and then modeling by image recognition AI of sFFT images\n correlate with annoyance rating at high rate. Although unsupervised machine learning technique is uncommon, it shows unsupervised machine learning technique is useful for sound quality evaluation</jats:p>"
+      },
+      {
+        "DOI": "10.55162/mcaes.02.012",
+        "title": [
+          "Evaluation of Environmental Noise in Urban areas: A Noise Pollution Assessment Approach"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Medicon Agriculture &amp; Environmental Sciences"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Misha",
+            "family": "Roy",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.3397/nc-2022-779",
+        "title": [
+          "Evaluation of nighttime helicopter noise in an urban neighborhood"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              24
+            ]
+          ]
+        },
+        "container-title": [
+          "INTER-NOISE and NOISE-CON Congress and Conference Proceedings"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "AnnMarie",
+            "family": "Hirsh",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Babich Acoustics"
+              }
+            ]
+          },
+          {
+            "given": "Jeffrey",
+            "family": "Babich",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Babich Acoustics"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Sound level measurements were gathered at two locations within an urban neighborhood close to a helipad. A sound level meter was placed at each location for approximately one week, where data were collected continuously from 10:00 PM to 6:00 AM in fifteen-minute intervals. L90 was measured\n to establish existing background levels and LAFmax was measured to capture the helicopter noise. Additionally, a sound level trigger was set up to capture details and audio recordings of elevated levels associated with helicopter flights. Due to the lengthy data collection period, care was\n taken to collect as much data as needed without exceeding the storage capacity of the meter. Based on preliminary data, the trigger was set to capture only events with a minimum sound pressure level and a minimum time duration, ensuring shorter noise events not of interest (barking dogs, passing\n cars, etc.) were not captured. Audio files for each sound event were used to identify helicopter events, which were confirmed by comparing timestamps with the helicopter flight logs. This case study describes the details of unattended long-term data collection for this application and evaluation\n of the helicopter noise measurements.</jats:p>"
+      }
+    ],
+    "status": 200
+  }
+]

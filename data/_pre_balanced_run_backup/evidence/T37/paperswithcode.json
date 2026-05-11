@@ -1,0 +1,16 @@
+[
+  {
+    "query": "clinical guideline",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  },
+  {
+    "query": "model drift",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  }
+]

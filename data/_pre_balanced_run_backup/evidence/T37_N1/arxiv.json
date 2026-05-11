@@ -1,0 +1,12 @@
+[
+  {
+    "query": "(cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.AI)+AND+(all:%22clinical%20guideline%22+AND+all:%22model%20drift%22+AND+all:%22LLM%20versioning%22)",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "all:clinical%20guideline",
+    "results": [],
+    "status": 200
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "query": "format sensitivity",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  },
+  {
+    "query": "JSON YAML prose",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  }
+]

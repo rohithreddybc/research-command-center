@@ -1,0 +1,47 @@
+[
+  {
+    "query": "data contamination",
+    "results": [
+      {
+        "title": "International Journal of Food Contamination",
+        "issn": [],
+        "publisher": "BMC",
+        "subject": [
+          "Food processing and manufacture"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 2190,
+            "currency": "EUR"
+          },
+          {
+            "price": 2490,
+            "currency": "USD"
+          },
+          {
+            "price": 1890,
+            "currency": "GBP"
+          }
+        ],
+        "license": [
+          "CC BY",
+          "CC0"
+        ],
+        "url": "https://foodsafetyandrisk.biomedcentral.com/",
+        "country": "GB"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "PubMedQA",
+    "results": [],
+    "status": 200
+  }
+]

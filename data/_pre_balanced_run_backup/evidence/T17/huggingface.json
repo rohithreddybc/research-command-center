@@ -1,0 +1,601 @@
+[
+  {
+    "query": "tokenizer",
+    "results": [
+      {
+        "id": "Biomedical-TeMU/SPACCC_Tokenizer",
+        "downloads": 395,
+        "likes": 0,
+        "tags": [
+          "license:cc-by-4.0",
+          "size_categories:10K<n<100K",
+          "format:text",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tThe Tokenizer for Clinical Cases Written in Spanish\n\t\n\n\n\t\n\t\t\n\t\tIntroduction\n\t\n\nThis repository contains the tokenization model trained using the SPACCC_TOKEN corpus (https://github.com/PlanTL-SANIDAD/SPACCC_TOKEN). The model was trained using the 90% of the corpus (900 clinical cases) and tested against the 10% (100 clinical cases). This model is a great resource to tokenize biomedical documents, specially clinical cases written in Spanish.\nThis model was created using the Apache… See th"
+      },
+      {
+        "id": "pbwt/public-data-tokenizer",
+        "downloads": 12,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "bigscience/tokenizer-probing-ud2.10",
+        "downloads": 41,
+        "likes": 1,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "open-source-metrics/tokenizers-dependents",
+        "downloads": 601,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us",
+          "github-stars"
+        ],
+        "description": "\n\t\n\t\t\n\t\ttokenizers metrics\n\t\n\nThis dataset contains metrics about the huggingface/tokenizers package.\nNumber of repositories in the dataset: 11460\nNumber of packages in the dataset: 124\n\n\t\n\t\t\n\t\tPackage dependents\n\t\n\nThis contains the data available in the used-by\ntab on GitHub.\n\n\t\n\t\t\n\t\tPackage & Repository star count\n\t\n\nThis section shows the package and repository star count, individually. \n\n\t\n\t\t\nPackage\nRepository\n\n\n\t\t\n\nThere are 14 packages that have more than 1000 stars.\nThere are 41… See th"
+      },
+      {
+        "id": "Nma/tokenize_resume_dataset",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"tokenize_resume_dataset\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "thewall/tokenizer",
+        "downloads": 78,
+        "likes": 0,
+        "tags": [
+          "license:openrail",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "livinNector/tawikidump-20230320-tokenizer-clean",
+        "downloads": 18,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"tawikidump-20230320-tokenizer-clean\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "livinNector/ta-oscar-tokenizer-clean",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"ta-oscar-tokenizer-clean\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "TurboPascal/tokenizers_example_zh_en",
+        "downloads": 27,
+        "likes": 2,
+        "tags": [
+          "task_categories:text-generation",
+          "language:zh",
+          "language:en",
+          "license:apache-2.0",
+          "size_categories:1M<n<10M",
+          "format:text",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "用于训练分词器的基础文本\n"
+      },
+      {
+        "id": "brackozi/autotrain-data-tokenizer",
+        "downloads": 3,
+        "likes": 1,
+        "tags": [
+          "size_categories:n<1K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "hac541309/polyglot-ko-tokenizer-corpus",
+        "downloads": 388,
+        "likes": 1,
+        "tags": [
+          "language:ko",
+          "size_categories:10M<n<100M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"polyglot-ko-tokenizer-corpus\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "hac541309/polyglot-ko-tokenizer-corpus-merge_ws",
+        "downloads": 77,
+        "likes": 0,
+        "tags": [
+          "size_categories:10M<n<100M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"polyglot-ko-tokenizer-corpus-merge_ws\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "chuckchen/tokenizer-vocab",
+        "downloads": 6,
+        "likes": 1,
+        "tags": [
+          "license:creativeml-openrail-m",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "OpenLLMs/tokenizer-eval",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "breadlicker45/tokenizer-dataset-test",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:text",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "hac541309/multilingual_tokenizers",
+        "downloads": 56,
+        "likes": 0,
+        "tags": [
+          "license:other",
+          "modality:text",
+          "region:us"
+        ],
+        "description": "Collection of tokenizers from various sources.\nMy own are Apache 2.0 but others are not.\nThey are each accompanied by their license. \n"
+      },
+      {
+        "id": "aimona/eng-conversations_no-tokenizer",
+        "downloads": 44,
+        "likes": 1,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"eng-conversations_no-tokenizer\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "aimona/eng-conversations_no-tokenizer_no-time",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"eng-conversations_no-tokenizer_no-time\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "breadlicker45/test-bread-tokenizer",
+        "downloads": 17,
+        "likes": 0,
+        "tags": [
+          "size_categories:10M<n<100M",
+          "format:text",
+          "modality:text",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "JuanKO/custom_tokenizer_littlestories",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "license:openrail",
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "BPE",
+    "results": [
+      {
+        "id": "simecek/Human_DNA_v0_BPEtokenized_vocab30k",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "simecek/Human_DNA_v0_BPEtokenized_vocab10k",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "bperel/inducks-covers",
+        "downloads": 3,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "cyrilzhang/TinyStories2-ascii-bpe-32k",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"TinyStories2-ascii-bpe-32k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/wiki-bpe-48k",
+        "downloads": 24,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"wiki-bpe-48k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/wiki-bpe-64k",
+        "downloads": 63,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"wiki-bpe-64k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/wiki-bpe-32k",
+        "downloads": 979,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"wiki-bpe-32k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/TinyStories2-ascii-bpe-2k",
+        "downloads": 8,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"TinyStories2-ascii-bpe-2k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/TinyStories2-ascii-bpe-1k",
+        "downloads": 84,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"TinyStories2-ascii-bpe-1k\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "cyrilzhang/TinyStories2-ascii-bpe-1600",
+        "downloads": 13,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"TinyStories2-ascii-bpe-1600\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "GregoryD/bigcode-bpe-tokenizer",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "kd-shared/culturax-ar-50M-subset-sp-bpe-32k-just-text",
+        "downloads": 20,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "kd-shared/culturax-de-50M-subset-sp-bpe-32k-just-text",
+        "downloads": 30,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_batiment_groupe_bpe_METROPOLE",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_batiment_groupe_bpe_01",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_rel_batiment_groupe_bpe_01",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_rel_batiment_groupe_bpe_29",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_rel_batiment_groupe_bpe_55",
+        "downloads": 3,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_rel_batiment_groupe_bpe_09",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alihmaou/bdnb_2023-11.a_batiment_groupe_bpe_79",
+        "downloads": 3,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "leaderboard variance",
+    "results": [],
+    "status": 200
+  }
+]

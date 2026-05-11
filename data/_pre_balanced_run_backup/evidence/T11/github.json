@@ -1,0 +1,349 @@
+[
+  {
+    "query": "format sensitivity in:readme,description",
+    "results": [
+      {
+        "name": "awesomedata/awesome-public-datasets",
+        "stars": 75233,
+        "forks": 11421,
+        "description": "A topic-centric list of HQ open datasets.",
+        "url": "https://github.com/awesomedata/awesome-public-datasets",
+        "topics": [
+          "aaron-swartz",
+          "awesome-public-datasets",
+          "datasets",
+          "opendata"
+        ],
+        "pushed_at": "2026-05-05T16:05:59Z",
+        "updated_at": "2026-05-09T07:11:23Z"
+      },
+      {
+        "name": "skylot/jadx",
+        "stars": 48399,
+        "forks": 5509,
+        "description": "Dex to Java decompiler",
+        "url": "https://github.com/skylot/jadx",
+        "topics": [
+          "android",
+          "decompiler",
+          "dex",
+          "java"
+        ],
+        "pushed_at": "2026-05-01T20:30:27Z",
+        "updated_at": "2026-05-09T07:25:41Z"
+      },
+      {
+        "name": "lukasz-madon/awesome-remote-job",
+        "stars": 45640,
+        "forks": 4596,
+        "description": "A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python",
+        "url": "https://github.com/lukasz-madon/awesome-remote-job",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "list"
+        ],
+        "pushed_at": "2026-05-08T22:48:54Z",
+        "updated_at": "2026-05-09T07:29:55Z"
+      },
+      {
+        "name": "danielmiessler/Fabric",
+        "stars": 41607,
+        "forks": 4132,
+        "description": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.",
+        "url": "https://github.com/danielmiessler/Fabric",
+        "topics": [
+          "ai",
+          "augmentation",
+          "flourishing",
+          "life",
+          "work"
+        ],
+        "pushed_at": "2026-05-04T22:18:49Z",
+        "updated_at": "2026-05-09T06:48:34Z"
+      },
+      {
+        "name": "open-guides/og-aws",
+        "stars": 36411,
+        "forks": 3905,
+        "description": "📙 Amazon Web Services — a practical guide",
+        "url": "https://github.com/open-guides/og-aws",
+        "topics": [],
+        "pushed_at": "2024-08-16T02:51:54Z",
+        "updated_at": "2026-05-09T03:50:39Z"
+      },
+      {
+        "name": "google/langextract",
+        "stars": 36409,
+        "forks": 2504,
+        "description": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
+        "url": "https://github.com/google/langextract",
+        "topics": [
+          "gemini",
+          "gemini-ai",
+          "gemini-api",
+          "gemini-flash",
+          "gemini-pro",
+          "information-extration",
+          "large-language-models",
+          "llm",
+          "nlp",
+          "python",
+          "structured-data"
+        ],
+        "pushed_at": "2026-05-01T20:38:50Z",
+        "updated_at": "2026-05-09T04:02:53Z"
+      },
+      {
+        "name": "spf13/viper",
+        "stars": 30243,
+        "forks": 2102,
+        "description": "Go configuration with fangs",
+        "url": "https://github.com/spf13/viper",
+        "topics": [],
+        "pushed_at": "2026-01-12T21:42:47Z",
+        "updated_at": "2026-05-09T01:34:58Z"
+      },
+      {
+        "name": "sirupsen/logrus",
+        "stars": 25717,
+        "forks": 2277,
+        "description": "Structured, pluggable logging for Go.",
+        "url": "https://github.com/sirupsen/logrus",
+        "topics": [
+          "go",
+          "logging",
+          "logrus"
+        ],
+        "pushed_at": "2026-05-08T08:46:02Z",
+        "updated_at": "2026-05-09T04:06:25Z"
+      },
+      {
+        "name": "lukasmasuch/best-of-ml-python",
+        "stars": 23462,
+        "forks": 3114,
+        "description": "🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.",
+        "url": "https://github.com/lukasmasuch/best-of-ml-python",
+        "topics": [
+          "automl",
+          "chatgpt",
+          "data-analysis",
+          "data-science",
+          "data-visualization",
+          "data-visualizations",
+          "deep-learning",
+          "gpt",
+          "gpt-3",
+          "jax",
+          "keras",
+          "machine-learning",
+          "ml",
+          "nlp",
+          "python",
+          "pytorch",
+          "scikit-learn",
+          "tensorflow",
+          "transformer"
+        ],
+        "pushed_at": "2026-05-07T14:59:48Z",
+        "updated_at": "2026-05-09T04:31:24Z"
+      },
+      {
+        "name": "K-Dense-AI/scientific-agent-skills",
+        "stars": 20438,
+        "forks": 2273,
+        "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "topics": [
+          "agent-skills",
+          "ai-scientist",
+          "bioinformatics",
+          "chemoinformatics",
+          "claude",
+          "claude-skills",
+          "claudecode",
+          "clinical-research",
+          "computational-biology",
+          "data-analysis",
+          "drug-discovery",
+          "genomics",
+          "materials-science",
+          "metabolomics",
+          "proteomics",
+          "scientific-computing",
+          "scientific-visualization"
+        ],
+        "pushed_at": "2026-05-06T21:06:12Z",
+        "updated_at": "2026-05-09T07:11:36Z"
+      },
+      {
+        "name": "BradLarson/GPUImage",
+        "stars": 20302,
+        "forks": 4570,
+        "description": "An open source iOS framework for GPU-based image and video processing",
+        "url": "https://github.com/BradLarson/GPUImage",
+        "topics": [],
+        "pushed_at": "2024-02-16T22:29:30Z",
+        "updated_at": "2026-05-09T06:01:00Z"
+      },
+      {
+        "name": "AI4Finance-Foundation/FinGPT",
+        "stars": 19992,
+        "forks": 2839,
+        "description": "FinGPT: Open-Source Financial Large Language Models!  Revolutionize 🔥    We release the trained model on HuggingFace.",
+        "url": "https://github.com/AI4Finance-Foundation/FinGPT",
+        "topics": [
+          "chatgpt",
+          "finance",
+          "fingpt",
+          "fintech",
+          "large-language-models",
+          "machine-learning",
+          "nlp",
+          "prompt-engineering",
+          "pytorch",
+          "reinforcement-learning",
+          "robo-advisor",
+          "sentiment-analysis",
+          "technical-analysis"
+        ],
+        "pushed_at": "2026-04-24T06:21:03Z",
+        "updated_at": "2026-05-09T05:27:54Z"
+      },
+      {
+        "name": "apple/ml-stable-diffusion",
+        "stars": 17849,
+        "forks": 1050,
+        "description": "Stable Diffusion with Core ML on Apple Silicon",
+        "url": "https://github.com/apple/ml-stable-diffusion",
+        "topics": [],
+        "pushed_at": "2025-07-03T18:01:03Z",
+        "updated_at": "2026-05-09T07:04:58Z"
+      },
+      {
+        "name": "sindresorhus/ky",
+        "stars": 16833,
+        "forks": 469,
+        "description": "🌳 Tiny & elegant JavaScript HTTP client based on the Fetch API",
+        "url": "https://github.com/sindresorhus/ky",
+        "topics": [
+          "fetch",
+          "http-client",
+          "http-request",
+          "javascript",
+          "js",
+          "json",
+          "npm-package",
+          "request",
+          "rest",
+          "tiny",
+          "whatwg-fetch"
+        ],
+        "pushed_at": "2026-05-08T06:22:08Z",
+        "updated_at": "2026-05-09T02:26:00Z"
+      },
+      {
+        "name": "leandromoreira/digital_video_introduction",
+        "stars": 16209,
+        "forks": 1384,
+        "description": "A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding). Translations: 🇺🇸 🇨🇳 🇯🇵 🇮🇹 🇰🇷 🇷🇺 🇧🇷 🇪🇸",
+        "url": "https://github.com/leandromoreira/digital_video_introduction",
+        "topics": [
+          "adaptive-streaming",
+          "arithmetic-coding",
+          "audio",
+          "av1",
+          "bitstream",
+          "codec",
+          "compression",
+          "dash",
+          "ffmpeg",
+          "frame-types",
+          "guide",
+          "h264",
+          "h265",
+          "handson",
+          "hls",
+          "learning",
+          "tutorial",
+          "video",
+          "video-codec",
+          "vp9"
+        ],
+        "pushed_at": "2023-09-07T20:03:48Z",
+        "updated_at": "2026-05-09T05:24:33Z"
+      }
+    ],
+    "status": 200,
+    "total": 65195
+  },
+  {
+    "query": "format sensitivity benchmark in:name,description",
+    "results": [
+      {
+        "name": "shubham-1123/Seizure-Detection-using-CNN-on-EEG-data",
+        "stars": 16,
+        "forks": 3,
+        "description": "Electroencephalogram(EEG) benchmark dataset Chb-mit is used for seizure detection. The CHB-MIT  dataset is a publicly available database that contains data from 24 patients. Each patient has many seizure and non-seizure recording files in European data format (.edf). The majority of EEG signals are recorded using 23 channels at a sampling rate of 256 Hz. These signals also contain noise. So EEG signals must be preprocessed before being analysed. A Butter-Worth bandpass filter for removal of undesired noise and various artefacts, where low cut-off frequency is considered as 0.5Hz and high cut-off frequency is considered as 30Hz. EEG signals are segmented into images of window size of 1 sec.And CNN model is applied onto segmented images and the model is trained and tested on four parameters: accuracy , sensitivity , specificity and f1-score.",
+        "url": "https://github.com/shubham-1123/Seizure-Detection-using-CNN-on-EEG-data",
+        "topics": [],
+        "pushed_at": "2022-04-23T20:53:08Z",
+        "updated_at": "2026-02-03T04:29:14Z"
+      },
+      {
+        "name": "aikenkyu001/benchmarking_llm_against_prompt_formats",
+        "stars": 0,
+        "forks": 0,
+        "description": "Official experimental environment for 'Benchmarking LLM Sensitivity to Prompt Formats: A Contamination-Free Approach'.",
+        "url": "https://github.com/aikenkyu001/benchmarking_llm_against_prompt_formats",
+        "topics": [
+          "ai-ethics",
+          "benchmark",
+          "large-language-model",
+          "large-language-models",
+          "llm",
+          "prompt-engineering",
+          "reproducibility",
+          "slm"
+        ],
+        "pushed_at": "2025-12-24T09:32:23Z",
+        "updated_at": "2026-01-08T00:28:48Z"
+      }
+    ],
+    "status": 200,
+    "total": 2
+  },
+  {
+    "query": "format sensitivity evaluation in:name,description",
+    "results": [
+      {
+        "name": "BrianOSullivanGit/vcfView",
+        "stars": 3,
+        "forks": 4,
+        "description": "An interactive Rshiny tool designed to support the evaluation of somatic mutation calls from cancer sequencing data. The tool takes as input a single variant call format (VCF) file and enables  researchers to explore the impacts of analytical choices on the mutant allele frequency spectrum, on mutational signatures and on annotated somatic variants in genes of interest. It allows variants that have failed caller filters to be re-examined in order to improve sensitivity or guide strategies for optimal sample / sequencing preparation. It is extensible allowing other algorithms to take advantage of its VCF preprocessing capabilities.",
+        "url": "https://github.com/BrianOSullivanGit/vcfView",
+        "topics": [],
+        "pushed_at": "2020-10-01T21:57:12Z",
+        "updated_at": "2025-04-09T21:11:27Z"
+      },
+      {
+        "name": "ajayp/embedding-failure-lab",
+        "stars": 1,
+        "forks": 0,
+        "description": "A visual diagnostic lab for evaluating embedding reliability on professional job titles.   Identifies systematic failures in entity resolution including acronym blindspots, seniority conflation, format sensitivity, and functional title drift. Built with Next.js & text-embedding-3-small.",
+        "url": "https://github.com/ajayp/embedding-failure-lab",
+        "topics": [
+          "cosine-similarity",
+          "embedding-vectors",
+          "entity-resolution",
+          "nlp-diagnostics",
+          "openai-embeddings"
+        ],
+        "pushed_at": "2026-05-08T23:25:15Z",
+        "updated_at": "2026-05-08T23:30:44Z"
+      }
+    ],
+    "status": 200,
+    "total": 2
+  }
+]

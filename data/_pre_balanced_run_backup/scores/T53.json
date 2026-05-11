@@ -1,0 +1,137 @@
+{
+  "paper": {
+    "n_papers": 88,
+    "n_papers_24mo": 79,
+    "n_papers_12mo": 55,
+    "median_citations": 1,
+    "top_citation": 841,
+    "growth_yoy_proxy": 1.292
+  },
+  "saturation": {
+    "saturation_score_0to5": 4,
+    "n_papers": 88,
+    "dominant_tools": 15,
+    "big_datasets": 3
+  },
+  "artifact": {
+    "artifact_opportunity_0to5": 2,
+    "existing_artifact_density": 0.65,
+    "differentiator_required": true,
+    "gap_phrase_hits": 19,
+    "n_existing_pwc_datasets": 0,
+    "n_existing_hf_datasets": 23
+  },
+  "venue": {
+    "venue_signal_0to5": 2,
+    "doaj_no_apc_journals": 0,
+    "crossref_active_venues": 5,
+    "openreview_hits": 0
+  },
+  "risk": {
+    "ip_risk_flags": [],
+    "ip_risk_0to5": 0
+  },
+  "citation_signal_0to5": 4,
+  "niw_0to5": 5,
+  "eb1a_0to5": 4,
+  "career_0to5": 3,
+  "tool_potential_0to5": 2,
+  "relevance_purity": 0.5,
+  "kept_papers": 50,
+  "rubric": {
+    "factors": {
+      "A": 4,
+      "B": 5,
+      "C": 1,
+      "D": 2,
+      "E": 5,
+      "F": 2,
+      "G": 3,
+      "H": 2,
+      "I": 3,
+      "J": 1,
+      "K": 3,
+      "L": 5,
+      "M": 4,
+      "N": 3,
+      "O": 4,
+      "P": 3,
+      "Q": 1,
+      "R": 1,
+      "S": 4,
+      "T": 2,
+      "U": 4,
+      "V": 2,
+      "W": 1,
+      "X": 4
+    },
+    "composites": {
+      "CitationPotential": 22.5,
+      "ExecFeasibility": 16.0,
+      "ImmigrationValue": 16.9,
+      "CareerValue": 8.5,
+      "PublicationPath": 4.5,
+      "RiskPenalty": 12.0,
+      "Overall": 10.28
+    }
+  },
+  "topic_id": "T53",
+  "topic_title": "Test-set contamination audit of healthcare LLM benchmarks",
+  "profile_scores": {
+    "blind_citation": {
+      "score": 20.9,
+      "is_personal_goal": false
+    },
+    "academic_long_term": {
+      "score": 20.5,
+      "is_personal_goal": false
+    },
+    "artifact_neutral": {
+      "score": 20.1,
+      "is_personal_goal": false
+    },
+    "healthcare_neutral": {
+      "score": 18.4,
+      "is_personal_goal": false
+    },
+    "llm_eval_neutral": {
+      "score": 17.46,
+      "is_personal_goal": false
+    },
+    "niw_optimized": {
+      "score": 28.5,
+      "is_personal_goal": true
+    },
+    "eb1a_optimized": {
+      "score": 29.78,
+      "is_personal_goal": true
+    },
+    "faang_career": {
+      "score": 24.94,
+      "is_personal_goal": true
+    },
+    "balanced_personal_strategy": {
+      "score": 29.18,
+      "is_personal_goal": true
+    },
+    "immigration_only": {
+      "score": 28.7,
+      "is_personal_goal": true
+    },
+    "career_only": {
+      "score": 11.0,
+      "is_personal_goal": true
+    },
+    "current_strategy": {
+      "score": 25.76,
+      "is_personal_goal": true
+    },
+    "custom": {
+      "score": 0.0,
+      "is_personal_goal": false
+    }
+  },
+  "active_profile": "blind_citation",
+  "active_profile_score": 20.9,
+  "active_profile_is_personal_goal": false
+}

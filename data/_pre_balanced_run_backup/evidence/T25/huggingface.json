@@ -1,0 +1,358 @@
+[
+  {
+    "query": "retrieval augmented generation",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "hallucination taxonomy",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "faithfulness",
+    "results": [
+      {
+        "id": "mtc/frank-test-set-with-faithfulness-annotation",
+        "downloads": 17,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"frank-test-set-with-factuality-annotation\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "mtc/cleaned_xsum-faith-test-set-with-faithfulness-annotation",
+        "downloads": 23,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"cleaned_xsum-faith-test-set-with-faithfulness-annotation\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "mtc/faithfulness_benchmark_sanity_check_factcc",
+        "downloads": 40,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"faithfulness_benchmark_sanity_check_factcc\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "mtc/faithfulness_benchmark_sanity_check_xsum_faith",
+        "downloads": 34,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"faithfulness_benchmark_sanity_check_xsum_faith\"\n\t\n\nMore Information needed\n"
+      },
+      {
+        "id": "mtc/absinth_german_faithfulness_detection_dataset",
+        "downloads": 43,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:de",
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2403.03750",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"Absinth - Hallucination Detection Dataset of German News Summarization\"\n\t\n\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\nAbsinth is a human-annotated dataset for faithfulness detection in the context of German news summarization. \nThe dataset has 4335 instances in total, where each instance consists of:\n\nNews Article: The original news article from the 20Minuten dataset. Please note that original source articles are not included in the dataset and need to be downloaded seperately… See"
+      },
+      {
+        "id": "onepaneai/faithfulness-precision-spl-context-gpt-benchmarking",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-precision-spl-prompt-falcon-benchmarking",
+        "downloads": 5,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "mtc/span_absinth_german_faithfulness_detection_dataset",
+        "downloads": 26,
+        "likes": 0,
+        "tags": [
+          "task_categories:text-classification",
+          "language:de",
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2403.03750",
+          "region:us",
+          "croissant"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for \"Span Absinth - Hallucination Detection Dataset of German News Summarization\"\n\t\n\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\nSpan Absinth is an extension of the Absinth dataset, where each hallucinated summary-sentence has been augmented with span annotations, that define which part of the sentence is hallucinated. Span annotations have the advantage of\neffectively isolating hallucinations at the token level.\nPlease refer to our paper and Absinth, for more details about the… See the "
+      },
+      {
+        "id": "onepaneai/faithfulness-precision-spl-prompt-gpt-benchmarking",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-f1score-spl-prompt-gpt-benchmarking-old",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-f1score-spl-prompt-benchmarking-old",
+        "downloads": 9,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-f1score-spl-prompt-falcon-benchmarking-old2",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-f1score-spl-prompt-falcon-benchmarking",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-f1score-spl-prompt-gpt-benchmarking",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-check-dolly-datasets",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/unfaithfulness-answer-faithfulness-check-dolly-dataset.ipynb",
+        "downloads": 8,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/unfaithfulness-answer-faithfulness-check-dolly-dataset",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "arjun3103/haystack_faithfulness_evaluation",
+        "downloads": 8,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "onepaneai/faithfulness-check-bert_score",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "yeok/faithfulness-comve-old",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  }
+]

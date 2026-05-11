@@ -1,0 +1,16 @@
+[
+  {
+    "query": "prompt injection",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  },
+  {
+    "query": "LLM judge",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  }
+]

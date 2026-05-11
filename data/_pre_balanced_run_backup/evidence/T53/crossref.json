@@ -1,0 +1,1622 @@
+[
+  {
+    "query": "data contamination",
+    "results": [
+      {
+        "DOI": "10.18653/v1/2024.conda-1.3",
+        "title": [
+          "A Taxonomy for Data Contamination in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 1st Workshop on Data Contamination (CONDA)"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Medha",
+            "family": "Palavalli",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Amanda",
+            "family": "Bertsch",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Matthew",
+            "family": "Gormley",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2024.conda-1.2",
+        "title": [
+          "Confounders in Instance Variation for the Analysis of Data Contamination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 1st Workshop on Data Contamination (CONDA)"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Behzad",
+            "family": "Mehrbakhsh",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Dario",
+            "family": "Garigliotti",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Fernando",
+            "family": "Martínez-Plumed",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jose",
+            "family": "Hernandez-Orallo",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2024.conda-1",
+        "title": [
+          "Proceedings of the 1st Workshop on Data Contamination (CONDA)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.2196/preprints.80987",
+        "title": [
+          "Data Contamination in AI Evaluation (Preprint)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              20
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-0417-6785",
+            "authenticated-orcid": false,
+            "given": "Alaeddin",
+            "family": "Acar",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<sec>\n                    <title>UNSTRUCTURED</title>\n                        <p>-</p>\n                </sec>"
+      },
+      {
+        "DOI": "10.37727/jkdas.2022.24.3.919",
+        "title": [
+          "A Bayesian Spatial Contamination Model"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "The Korean Data Analysis Society"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "name": "The Korean Data Analysis Society",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Jonghyun",
+            "family": "Na",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Taekseon",
+            "family": "Ryu",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Joonmyoung",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Hansuk",
+            "family": "Kim",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Manjae",
+            "family": "Kwon",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Yongsung",
+            "family": "Joo",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>In environmental research, it is often the case that to cluster observations into environmentally polluted and natural groups is an important issue. The Bayesian contamination model which adopts a multivariate mixture regression model has been developed in that it aims to cluster observations and estimate the average amount of pollution. However, because the Bayesian contamination model does not take spatial correlations between observations into consideration, a Bayesian spatial contamination model is proposed. A simulation study was conducted showing that the proposed model has an advantage over the Bayesian contamination model in terms of biases and RMSE of estimators of the logistic regression parameters. We applied the proposed model into environmental data and confirmed the improvement on the model fit. Also, the clustering was reasonably performed from the environmental perspective, which was coherent with the fact that the underground water flows from the southwest side to the northeast side. This model is expected to be utilized effectively to monitor the quality of a ground or groundwater and capture the heterogeneity in it which is suspected of environmental pollution especially when the interested site consists of areas with strong spatial dependency.</jats:p>"
+      },
+      {
+        "DOI": "10.56294/dm2025770",
+        "title": [
+          "Microclimate condition monitoring system for the prevention of methane contamination in the methane contamination in compost production in Microfarms"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              28
+            ]
+          ]
+        },
+        "container-title": [
+          "Data and Metadata"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Blanca",
+            "family": "Segovia-Rosero",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8819-8167",
+            "authenticated-orcid": false,
+            "given": "Jaime",
+            "family": "Michilena-Calderón",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0382-6241",
+            "authenticated-orcid": false,
+            "given": "Carlos",
+            "family": "Vásquez-Ayala",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1860-5924",
+            "authenticated-orcid": false,
+            "given": "Alejandra",
+            "family": "Pinto-Erazo",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8538-2735",
+            "authenticated-orcid": false,
+            "given": "Luis",
+            "family": "Suárez-Zambrano",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This work focuses on the development and implementation of a microclimate variable control system to prevent microbial contaminants in compost production, with the objective of investigating composting methods and how they can help reduce the production of methane, a greenhouse gas, and thus contribute to environmental care. The Action-Research methodology is used with the use of sensors that monitor data on environmental variables of ambient temperature, relative humidity and soil moisture, which are sent to an IoT platform where the necessary data are processed and generated. A specific infrastructure is designed for compost production, which includes a closed box lined with greenhouse plastic, a container for the compost, a piping system to maintain humidity, a heater to raise the temperature and a protective box for the sensors. Also included is the development and training of a neural network model that predicts methane production based on the above variables. The data show that composting at temperatures between 55-65 degrees Celsius, using aerobic biological methods, significantly reduces methane production by eliminating bacteria responsible for methane generation. The data collected and model predictions can be monitored remotely through the IoT platform. At the conclusion of the work, the compost generated was found to be suitable for micronization.</jats:p>"
+      },
+      {
+        "DOI": "10.1101/2023.12.21.572882",
+        "title": [
+          "Assessing cross-contamination in spike-sorted electrophysiology data"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              23
+            ]
+          ]
+        },
+        "is-referenced-by-count": 4,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9066-2494",
+            "authenticated-orcid": false,
+            "given": "Jack P.",
+            "family": "Vincent",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-9893-1505",
+            "authenticated-orcid": false,
+            "given": "Michael N.",
+            "family": "Economo",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:title>ABSTRACT</jats:title>\n                <jats:p>Recent advances in extracellular electrophysiology now facilitate the recording of spikes from hundreds or thousands of neurons simultaneously. This has necessitated both the development of new computational methods for spike sorting and better methods to determine spike sorting accuracy. One longstanding method of assessing the false discovery rate (FDR) of spike sorting – the rate at which spikes are misassigned to the wrong cluster – has been the rate of inter-spike-interval (ISI) violations. Despite their near ubiquitous usage in spike sorting, our understanding of how exactly ISI violations relate to FDR, as well as best practices for using ISI violations as a quality metric, remain limited. Here, we describe an analytical solution that can be used to predict FDR from ISI violation rate. We test this model in silico through Monte Carlo simulation, and apply it to publicly available spike-sorted electrophysiology datasets. We find that the relationship between ISI violation rate and FDR is highly nonlinear, with additional dependencies on firing rate, the correlation in activity between neurons, and contaminant neuron count. Predicted median FDRs in public datasets were found to range from 3.1% to 50.0%. We find that stochasticity in the occurrence of ISI violations as well as uncertainty in cluster-specific parameters make it difficult to predict FDR for single clusters with high confidence, but that FDR can be estimated accurately across a population of clusters. Our findings will help the growing community of researchers using extracellular electrophysiology assess spike sorting accuracy in a principled manner.</jats:p>\n                <jats:sec>\n                  <jats:title>SIGNIFICANCE STATEMENT</jats:title>\n                  <jats:p>High-density silicon probes are widely used to record the activity of large populations of neurons while animals are engaged in complex behavior. In this approach, each electrode records spikes from many neurons, and “spike sorting” algorithms are used to group the spikes originating from each neuron together. This process is error-prone, however, and so the ability to assess spike sorting accuracy is essential for properly interpreting neural activity. The rate of inter-spike-interval (ISI) violations is commonly used to assess spike sorting accuracy, but the relationship between ISI violation rate and sorting accuracy is complex and poorly understood. Here, we describe this relationship in detail and provide guidelines for how to properly use ISI violation rate to assess spike sorting accuracy.</jats:p>\n                </jats:sec>"
+      },
+      {
+        "DOI": "10.2139/ssrn.4916179",
+        "title": [
+          "Density Deconvolution with Limited Data Contamination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "container-title": [
+          "SSRN Electronic Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Jerome",
+            "family": "Krief",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1162/tacl.a.20",
+        "title": [
+          "Data Contamination Quiz: A Tool to Detect and Estimate Contamination in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Transactions of the Association for Computational Linguistics"
+        ],
+        "is-referenced-by-count": 7,
+        "author": [
+          {
+            "given": "Shahriar",
+            "family": "Golchin",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, University of Arizona, USA. golchin@arizona.edu"
+              }
+            ]
+          },
+          {
+            "given": "Mihai",
+            "family": "Surdeanu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, University of Arizona, USA. msurdeanu@arizona.edu"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We propose the Data Contamination Quiz (DCQ), a simple and effective approach to detect data contamination in large language models (LLMs) and estimate the amount of it. Specifically, we frame data contamination detection as a series of multiple-choice questions, devising a quiz format wherein three perturbed versions of each instance, subsampled from a specific dataset partition, are created. These changes only include word-level perturbations. The generated perturbations, along with the original dataset instance, form the options in the DCQ, with an extra option accommodating the selection of none of the provided options. Given that the only distinguishing signal among the options is the exact wording with respect to the original dataset instance, an LLM, when tasked with identifying the original dataset instance, gravitates towards selecting the original one if it has been exposed to it. While accounting for positional biases in LLMs, the quiz performance reveals the contamination level for the tested model with the dataset partition to which the quiz pertains. Applied to various datasets and LLMs, under controlled and uncontrolled contamination, our findings—while fully lacking access to training data and model parameters—suggest that DCQ achieves state-of-the-art results and uncovers greater contamination levels through memorization compared to existing methods. Also, it proficiently bypasses more safety filters, especially those set to avoid generating copyrighted content.1</jats:p>"
+      },
+      {
+        "DOI": "10.1101/2024.05.30.596622",
+        "title": [
+          "Disentangling Cobionts and Contamination in Long-Read Genomic Data using Sequence Composition"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              3
+            ]
+          ]
+        },
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-5910-8898",
+            "authenticated-orcid": false,
+            "given": "Claudia C",
+            "family": "Weber",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>The recent acceleration in genome sequencing targeting previously unexplored parts of the tree of life presents computational challenges. Samples collected from the wild often contain sequences from several organisms, including the target, its cobionts, and contaminants. Effective methods are therefore needed to separate sequences. Though advances in sequencing technology make this task easier, it remains difficult to taxonomically assign sequences from eukaryotic taxa that are not well-represented in databases. Therefore, reference-based methods alone are insufficient. Here, I examine how we can take advantage of differences in sequence composition between organisms to identify symbionts, parasites and contaminants in samples, with minimal reliance on reference data. To this end, I explore data from the Darwin Tree of Life project, including hundreds of high-quality HiFi read sets from insects. Visualising two-dimensional representations of read tetranucleotide composition learned by a Variational Autoencoder can reveal distinct components of a sample. Annotating the embeddings with additional information, such as coding density, estimated coverage, or taxonomic labels allows rapid assessment of the contents of a dataset. The approach scales to millions of sequences, making it possible to explore unassembled read sets, even for large genomes. Combined with interactive visualisation tools, it allows a large fraction of cobionts reported by reference-based screening to be identified. Crucially, it also facilitates retrieving genomes for which suitable reference data are absent.</jats:p>"
+      },
+      {
+        "DOI": "10.2196/80987",
+        "title": [
+          "Data Contamination in AI Evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              29
+            ]
+          ]
+        },
+        "container-title": [
+          "JMIR Medical Informatics"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0006-0417-6785",
+            "authenticated-orcid": false,
+            "given": "Alaeddin",
+            "family": "Acar",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p/>"
+      },
+      {
+        "DOI": "10.1117/12.2634154",
+        "title": [
+          "Predicting contamination accumulation in facilities with limited data"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              3
+            ]
+          ]
+        },
+        "container-title": [
+          "Space Systems Contamination: Prediction, Control, and Performance 2022"
+        ],
+        "is-referenced-by-count": 2,
+        "author": [
+          {
+            "given": "Elaine Maria",
+            "family": "Stewart",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Eve M.",
+            "family": "Wooldridge",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Joseph",
+            "family": "Ward",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.37766/inplasy2025.11.0050",
+        "title": [
+          "Data Contamination in LLMs: A Scoping Literature Review"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              17
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-8782-5037",
+            "authenticated-orcid": false,
+            "given": "Mihai-Cristian",
+            "family": "Tudose",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0380-6814",
+            "authenticated-orcid": false,
+            "given": "Ruseti",
+            "family": "Stefan",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4815-9227",
+            "authenticated-orcid": false,
+            "given": "Mihai",
+            "family": "Dascalu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5664-2163",
+            "authenticated-orcid": false,
+            "given": "Cornelia",
+            "family": "Caragea",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/sds66131.2025.00013",
+        "title": [
+          "Fully Unsupervised Anomaly Detection in Industrial Images with Unknown Data Contamination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              26
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE Swiss Conference on Data Science (SDS)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Matthias",
+            "family": "Wüest",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Engineering, Zurich University of Applied Sciences,Winterthur,Switzerland"
+              }
+            ]
+          },
+          {
+            "given": "Lilach Goren",
+            "family": "Huber",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Engineering, Zurich University of Applied Sciences,Winterthur,Switzerland"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1101/2023.01.23.525161",
+        "title": [
+          "Cont-ID: Detection of samples cross-contamination in viral metagenomic data"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              23
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9564-7872",
+            "authenticated-orcid": false,
+            "given": "Johan",
+            "family": "Rollin",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Wei",
+            "family": "Rong",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sébastien",
+            "family": "Massart",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:sec>\n                  <jats:title>Background</jats:title>\n                  <jats:p>High Throughput sequencing (HTS) technologies completed by the bioinformatic analysis of the generated data are becoming an important detection technique for virus diagnostics. They have the potential to replace or complement the current PCR-based methods thanks to their improved inclusivity and analytical sensitivity, as well as their overall good repeatability and reproducibility. Cross-contamination is a well-known phenomenon in molecular diagnostics and corresponds to the exchange of genetic material between samples. Cross-contamination management was a key drawback during the development of PCR-based detection and is now adequately monitored in routine diagnostics. HTS technologies are facing similar difficulties due to their very high analytical sensitivity. As a single viral read could be detected in millions of sequencing reads, it is mandatory to fix a detection threshold that will be influenced by cross-contamination. Cross-contamination monitoring should therefore be a priority when detecting viruses by HTS technologies.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>We present Cont-ID, a bioinformatic tool designed to check for cross-contamination by analysing the relative abundance of virus sequencing reads identified in sequence metagenomic datasets and their duplication between samples. It can be applied when the samples in a sequencing batch have been processed in parallel in the laboratory and with at least one external alien control. Using 273 real datasets, including 68 virus species from different hosts (fruit tree, plant, human) and several library preparation protocols (Ribodepleted total RNA, small RNA and double stranded RNA), we demonstrated that Cont-ID classifies with high accuracy (91%) viral species detection into (true) infection or (cross) contamination. This classification raises confidence in the detection and facilitates the downstream interpretation and confirmation of the results by prioritising the virus detections that should be confirmed.</jats:p>\n                </jats:sec>\n                <jats:sec>\n                  <jats:title>Conclusions</jats:title>\n                  <jats:p>Cross-contamination between samples when detecting viruses using HTS can be monitored and highlighted by Cont-ID (provided an alien control is present). Cont-ID is based on a flexible methodology relying on the output of bioinformatics analyses of the sequencing reads and considering the contamination pattern specific to each batch of samples. The Cont-ID method is adaptable so that each laboratory can optimise it before its validation and routine use.</jats:p>\n                </jats:sec>"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [
+      {
+        "DOI": "10.2139/ssrn.6715869",
+        "title": [
+          "Inter-Model Disagreement in Kepler Exoplanet Classification: A Leakage-Aware Benchmark"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Andrii",
+            "family": "Mykuliak",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Andrii",
+            "family": "Vovk",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This paper presents a reproducible, leakage-aware machine learning benchmark for the tabular classification of Kepler Objects of Interest (KOI) dispositions — confirmed exoplanets versus false positives — on twelve physically motivated transit, stellar, and signal-quality features. The study addresses disposition classification on pre-computed tabular features rather than exoplanet detection from raw light curves. Diagnostic flags and model confidence scores are deliberately excluded, distinguishing this benchmark from leakage-prone tabular baselines that include vetting-derived features. Five classifiers — Logistic Regression, Decision Tree, Random Forest, XGBoost, and Support Vector Machine — are evaluated under a standardised protocol with group-aware train/test splitting and cross-validated stability analysis. XGBoost achieves the highest performance (ROC AUC = 0.9793, 95% bootstrap CI: [0.973, 0.985]; F1 = 0.9189), though its difference from Random Forest (ROC AUC = 0.9769 [0.969, 0.984]) is not statistically conclusive. The trained models are applied to 1979 unclassified candidates via the Inter-Model Disagreement Analysis (IMDA) framework — a three-step diagnostic protocol comprising voting analysis, pairwise consistency analysis, and grey zone characterisation. IMDA reveals two empirical algorithmic groupings — tree-based and linear/kernel methods — with within-group agreement of 82.0–91.3% and cross-group agreement of 58.9–64.6%. The grey zone — candidates where models systematically disagree — comprises 35.2% of CANDIDATE objects at the default threshold (32.3–37.2% across thresholds 0.40–0.60). Low signal-to-noise ratio and small planetary radius are identified as the primary observed correlates of classification uncertainty. A second pattern is the convergent unanimous rejection of long-period candidates, consistent with training data underrepresentation.</jats:p>"
+      },
+      {
+        "DOI": "10.20944/preprints202603.1925.v1",
+        "title": [
+          "Leakage-Safe Benchmark Design for Market-Stress Early Warning: An Economically Credible Evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              25
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0003-5007-5019",
+            "authenticated-orcid": false,
+            "given": "Ting",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Market-stress early-warning systems are often evaluated under benchmark settings that permit information leakage or obscure the operational tradeoffs relevant to monitoring decisions. This paper develops a leakage-safe benchmark design for assessing machine-learning-based early-warning models in a financially meaningful and reproducible way. Using a unified walk-forward evaluation framework, the study compares alternative warning systems across benchmark specifications that vary in feature sets, forecast horizons, stress-event definitions, and threshold-selection rules. Performance is evaluated not only with conventional statistical measures, including ROC-AUC and PR-AUC, but also with operational criteria directly relevant to real-time monitoring, such as false alarms per year, event hit rate, median lead time, and alert-budget diagnostics. The results show that benchmark design materially affects model rankings and that systems appearing strong under conventional statistical metrics are not always preferred once operational tradeoffs are taken into account. Across specifications, leakage-safe evaluation reveals substantial heterogeneity in performance and highlights the importance of aligning model assessment with the practical objectives of early-warning use. These findings suggest that benchmark specification should be treated as part of the empirical question rather than as a neutral background choice. The paper contributes to the computational evaluation of financial early-warning systems by providing a transparent and economically credible framework for model comparison under temporal dependence.</jats:p>"
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-8251575/v1",
+        "title": [
+          "SCALER: A Procedurally Generated, Leakage-Resistant Benchmark for Evaluating Multi-Step Reasoning in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              8
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Amirali",
+            "family": "Ghajari",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "European University of Madrid"
+              }
+            ]
+          }
+        ],
+        "abstract": "<title>Abstract</title>\n                <p>The evaluation of multi-step reasoning capabilities in Large Language Models (LLMs) faces three fundamental challenges that threaten the validity of current benchmarking paradigms: pervasive benchmark contamination through training data leakage, ceiling effects that eliminate discriminative power on static test sets, and the absence of principled methods to systematically characterize how reasoning accuracy degrades with task complexity. We introduce SCALER (Systematic Complexity Assessment for Language-based Evaluation of Reasoning), a comprehensive theoretical framework and practical system for procedurally generating reasoning tasks with precisely controlled and mathematically grounded difficulty parameters. Our framework leverages established computational libraries including SymPy for symbolic computation and NetworkX for graph-theoretic operations to produce problems across six diverse reasoning domains: arithmetic chains, symbolic algebra, graph traversal, logical deduction, constraint satisfaction, and compositional reasoning. Each generated instance comes with mathematically verified solutions and complete ground-truth reasoning traces derived from the generation process itself.\nWe formalize task difficulty through a multi-dimensional complexity metric $\\complexity(\\task)$ that decomposes reasoning demands into interpretable components: reasoning depth (chain length), branching factor (search space size), working memory load (cognitive state requirements), and domain-specific parameters. This metric is calibrated through a novel model-agnostic optimization protocol that ensures objectivity and cross-model validity. Through extensive evaluation of seven frontier LLMs---including GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3.1 405B---across 12,000 unique, on-demand generated instances, we establish robust empirical scaling relationships between task complexity and model accuracy.\nOur results reveal several critical findings: (1) reasoning accuracy follows a sigmoidal decay pattern characterized by a critical complexity threshold $\\complexity^*$ beyond which performance collapses; (2) this threshold varies significantly by reasoning domain, with compositional tasks showing the steepest degradation; (3) there exists a substantial ''fidelity gap'' between outcome accuracy and procedural correctness, indicating models often succeed through flawed reasoning. We introduce Reasoning Trace Fidelity (RTF), a novel process-based evaluation metric that quantifies alignment between model-generated reasoning chains and ground-truth derivations. Through detailed case studies and failure mode analysis, we identify specific architectural and algorithmic limitations that manifest at different complexity scales.</p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6084208",
+        "title": [
+          "Benchmark Leakage, Plasticity Loss, and Regime Transitions in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0003-4876-2610",
+            "authenticated-orcid": true,
+            "given": "Truong Xuan",
+            "family": "Khanh",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Truong",
+            "family": "Quynh Hoa",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Luu Duc",
+            "family": "Trung",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Large language models (LLMs) continue to achieve state-of-the-art (SOTA) performance across a growing range of benchmarks, often taken as evidence of sustained progress in artificial intelligence. In this work, we argue that such interpretations warrant caution. We examine benchmark leakage and contamination as structural phenomena arising from static evaluation interacting with large-scale optimization, rather than as isolated data handling issues. We introduce a conceptual and operational framework that views LLMs as informationbinding systems, distinguishing surface-level information adhesion from robustness under environmental variation. Within this framework, benchmark contamination can induce entropy shortcuts that inflate apparent performance while accelerating representational crystallization and loss of plasticity. To ground these ideas, we propose a stress-test matrix and a set of measurable indicators for adhesion, brittleness, regime separation, plasticity, and irreversibility. These indicators are intended as diagnostic tools rather than universal laws. Overall, this work provides a diagnostic toolkit for assessing robustness, brittleness, and plasticity in large language models, while cautioning that benchmark-driven SOTA gains may come at the expense of long-term adaptive capacity.</jats:p>"
+      },
+      {
+        "DOI": "10.3390/s24248201",
+        "title": [
+          "Mitigating Data Leakage in a WiFi CSI Benchmark for Human Action Recognition"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              22
+            ]
+          ]
+        },
+        "container-title": [
+          "Sensors"
+        ],
+        "is-referenced-by-count": 5,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3265-5047",
+            "authenticated-orcid": false,
+            "given": "Domonkos",
+            "family": "Varga",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Nokia Bell Labs, 1082 Budapest, Hungary"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Human action recognition using WiFi channel state information (CSI) has gained attention due to its non-intrusive nature and potential applications in healthcare, smart environments, and security. However, the reliability of methods developed for CSI-based action recognition is often contingent on the quality of the datasets and evaluation protocols used. In this paper, we uncovered a critical data leakage issue, which arises from improper data partitioning, in a widely used WiFi CSI benchmark dataset. Specifically, the benchmark fails to separate individuals between the training and test sets, leading to inflated performance metrics as models inadvertently learn individual-specific features rather than generalizable action patterns. We analyzed this issue in depth, retrained several benchmarked models using corrected data partitioning methods, and demonstrated a significant drop in accuracy when individuals were properly separated across training and testing. Our findings highlight the importance of rigorous data partitioning in CSI-based action recognition and provide recommendations for mitigating data leakage in future research. This work contributes to the development of more robust and reliable human action recognition systems using WiFi CSI.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6503118",
+        "title": [
+          "Leakage-Safe Benchmark Design for Market-Stress Early Warning: An Economically Credible Evaluation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "SSRN Electronic Journal"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ting",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This study develops a leakage-safe benchmark design for market-stress early warning and examines whether conclusions about model usefulness remain stable under temporally ordered, economically credible evaluation. The analysis compares alternative models across feature sets, forecast horizons, drawdown thresholds, walk-forward schemes, and threshold-selection rules within a unified out-of-sample framework. Performance is assessed using standard discrimination measures, including PR-AUC and ROC-AUC, together with operational criteria relevant to monitoring decisions, including false alarms per year, event hit rate, median lead time, and alert-budget diagnostics. The results show that benchmark design materially affects model rankings and that systems appearing strong under conventional statistical metrics are not always preferred once operational tradeoffs are taken into account. These findings suggest that benchmark specification should be treated as part of the empirical question rather than as a neutral background choice. The paper contributes to the computational evaluation of financial early-warning systems by showing how leakage-safe benchmark design shapes model comparison and decision-relevant conclusions.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.6556947",
+        "title": [
+          "UZ-EDBench: A Leakage-Aware Benchmark for Uzbek Symptom-to-Specialist Triage from Raw and Normalized Patient Narratives"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Botir",
+            "family": "Elov",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3757-7711",
+            "authenticated-orcid": true,
+            "given": "Ruhillo",
+            "family": "Alayev",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>Objective. To develop and evaluate a leakage-aware benchmark for Uzbek symptom-to-specialist triage from raw and normalized patient-authored health narratives. Materials and methods. UZ-EDBench was constructed from paired raw and cleaned complaint texts with structured triage annotations. After repeated-header removal, malformed-row filtering, ambiguous-label exclusion, semantic deduplication, and canonicalization, the strict benchmark contained 2,480 instances, 24 specialist-routing classes, and 4 urgency levels. Baselines included majority, linear lexical, character-level, and text-plus-safe-metadata models. Routing was evaluated under both a realistic Full24 regime and a more stable Core19 regime. Results. The best Core19 routing model achieved 0.7805 Macro-F1. In the more realistic Full24 setting, the strongest model achieved 0.7210 ± 0.0246 Macro-F1. For urgency prediction, the best leakage-safe model achieved 0.6949 Macro-F1. Leakage analysis showed that target-proximal fields substantially inflated apparent performance, with suspected_system increasing routing Macro-F1 to 0.8666 and severity increasing urgency Macro-F1 to 0.9139. Conclusion. UZ-EDBench is a practical low-resource benchmark for Uzbek clinical NLP and triage modeling. Its main methodological contribution is an explicit separation between official evaluation and leakage-prone upper-bound analysis.</jats:p>"
+      },
+      {
+        "DOI": "10.2139/ssrn.5692142",
+        "title": [
+          "How Temporal Data Leakage Distorts Wind Power Forecasting Accuracy: A Benchmark Study Using Unfiltered SCADA Data"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Emrah",
+            "family": "Akbulut",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Halit Alper",
+            "family": "Tayalı",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Birgül",
+            "family": "Küçük Çırpın",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/icecs61496.2024.10848946",
+        "title": [
+          "Design and Benchmark of Iso-Area High Cell Current 5T Asymmetric (5TA) SRAM Cell with Up to 10X Lower Leakage"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              18
+            ]
+          ]
+        },
+        "container-title": [
+          "2024 31st IEEE International Conference on Electronics, Circuits and Systems (ICECS)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Ajay",
+            "family": "Shroti",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "IIIT Delhi,Dept. of Electronics and Communication Engineering,New Delhi,India,110020"
+              }
+            ]
+          },
+          {
+            "given": "Anuj",
+            "family": "Grover",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "IIIT Delhi,Dept. of Electronics and Communication Engineering,New Delhi,India,110020"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.46821/benchmark.v2i2",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.46821/benchmark.v4i2",
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              11
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.46821/benchmark.v5i1",
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.46821/benchmark.v3i1",
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              28
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.46821/benchmark.v6i1",
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      },
+      {
+        "DOI": "10.46821/benchmark.v4i1",
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              3
+            ]
+          ]
+        },
+        "container-title": [
+          "Benchmark"
+        ],
+        "is-referenced-by-count": 0
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "MedQA",
+    "results": [
+      {
+        "DOI": "10.36227/techrxiv.176531815.53078915/v1",
+        "title": [
+          "A Compact 3B Language Model Achieving Competitive MedQA Performance with Minimal Supervision"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              9
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0001-5238-3192",
+            "authenticated-orcid": false,
+            "given": "Sukesh",
+            "family": "Subaharan",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Independent Researcher"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.2196/preprints.92241",
+        "title": [
+          "Integrating Knowledge Graph with Retrieval-Augmented Generation in Medical Question Answering: Development and Usability Study with MEDQA (Preprint)"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              27
+            ]
+          ]
+        },
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1426-670X",
+            "authenticated-orcid": false,
+            "given": "Lou",
+            "family": "Pei",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4352-3250",
+            "authenticated-orcid": false,
+            "given": "Hu",
+            "family": "Jiahui",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3705-5737",
+            "authenticated-orcid": false,
+            "given": "Zhao",
+            "family": "Wanqing",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Wang",
+            "family": "Qian",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9526-9306",
+            "authenticated-orcid": false,
+            "given": "Fang",
+            "family": "An",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<sec>\n                  <title>BACKGROUND</title>\n                  <p>Large language models (LLMs) have demonstrated superior performance and are widely applied across various domains. However, LLMs face challenges such as outdated knowledge, insufficient knowledge, and hallucinations, particularly in specialized fields like medical.</p>\n                </sec>\n                <sec>\n                  <title>OBJECTIVE</title>\n                  <p>Our study aims to address these challenges by designing a medical question answering model, MEDQA, which based on multimodal knowledge fusion and logic enhancement. Through medical knowledge base, knowledge graph and retrieval augmented, accurate expression and reliable reasoning of professional knowledge are realized.</p>\n                </sec>\n                <sec>\n                  <title>METHODS</title>\n                  <p>A semi-structured knowledge retrieval system is constructed, and the semantic block technology is used to transform the semi-structured text into a high-dimensional vector representation to form a vector base that supports fast retrieval. And a knowledge graph was constructed based on the medical ontology. A Text2SPARQL method combined with chain of thought (CoT) is proposed to improve the accuracy of retrieval results by converting user's natural language questions into structured query language. The vector base and knowledge graph are retrieved in parallel to provide richer prompt for LLM.</p>\n                </sec>\n                <sec>\n                  <title>RESULTS</title>\n                  <p>Our medical knowledge retrieval system comprises 12,184 concept-related knowledge, and the knowledge graph contains 73,000 entities and more than 350,000 triples. After using MEDQA, the accuracy of QA was 95% and the recall was 94.7%, which was significantly better than the effect of using LLM, knowledge base and knowledge graph alone.</p>\n                </sec>\n                <sec>\n                  <title>CONCLUSIONS</title>\n                  <p>MEDQA has broken through the single knowledge model of the traditional Retrieval-Augmented Generation architecture, and formed a multi-level knowledge processing process of text representation, graph retrieval and traceability, which enhances the adaptability of LLM and provides a cost-effective solution to meet the challenges in the medical field.</p>\n                </sec>"
+      },
+      {
+        "DOI": "10.1016/j.dib.2026.112537",
+        "title": [
+          "MedQA-MA: A Moroccan Arabic medical question-answering dataset for virtual healthcare assistants and large language models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              4
+            ]
+          ]
+        },
+        "container-title": [
+          "Data in Brief"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0003-5257-8445",
+            "authenticated-orcid": false,
+            "given": "Soufiyan",
+            "family": "Ouali",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Said El",
+            "family": "Garouani",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/access.2026.3656396",
+        "title": [
+          "Auditing Demographic Bias in Mistral: An Open-Source LLM’s Diagnostic Performance on the MedQA Benchmark"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "IEEE Access"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8523-1099",
+            "authenticated-orcid": false,
+            "given": "Hosameldin O. A.",
+            "family": "Ahmed",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "The Sir Peter Rigby Digital Futures Institute, Aston University, Birmingham, U.K."
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9825-5911",
+            "authenticated-orcid": false,
+            "given": "Abdul",
+            "family": "Hamid Sadka",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The Sir Peter Rigby Digital Futures Institute, Aston University, Birmingham, U.K."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.71448/bcds2671-5",
+        "title": [
+          "MedQA-FoRA-MultiHospital: A Non-IID Multihospital Benchmark and Adaptive Federated Low-Rank Framework for Privacy-Preserving Medical Question Answering and Clinical Report Generation"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              31
+            ]
+          ]
+        },
+        "container-title": [
+          "Bulletin of Computer and Data Sciences"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Zhen",
+            "family": "Xiong",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Computer Science and Engineering, Beihang University, China"
+              }
+            ]
+          }
+        ],
+        "abstract": "<jats:p>Large language models are increasingly attractive for healthcare question answering, longitudinal note generation, discharge communication, and specialty-specific decision support, but their direct deployment in hospitals remains constrained by privacy regulation, compute limitations, heterogeneous local data, and the risk of destructive domain adaptation. This paper introduces \\textit{MedQA-FoRA-MultiHospital}, a new multihospital benchmark designed for privacy-preserving adaptation of medical language models under realistic non-identically distributed client partitions. The benchmark contains 50{,}000 medical question–answer pairs and 15{,}000 clinical report-generation instances distributed across five simulated hospital clients with distinct specialty profiles: cardiology, respiratory medicine, neurology, general medicine, and pediatrics. Building on the micro–meso–macro philosophy of efficient federated low-rank fine-tuning, we formulate \\textit{Adaptive FoRA}, a heterogeneity-aware extension that preserves the frozen backbone, inserts structured low-rank operators across all major linear maps, and aggregates client updates through divergence-sensitive weighting. Rather than inventing unverified empirical scores, this manuscript contributes a complete benchmark specification, a mathematically explicit training framework, communication and parameter analyses, a privacy threat model, a full experimental protocol, and a reproducibility package structure suitable for subsequent leaderboard development. The paper is intentionally written as a stand-alone benchmark-and-methodology manuscript: it defines the dataset, the task suite, the optimization design, the ablation roadmap, and the evaluation criteria required for rigorous future implementation. We argue that the proposed benchmark fills an important gap between generic medical instruction datasets and privacy-preserving federated adaptation studies by unifying question answering, structured reasoning, and clinical report generation within a single non-IID multihospital setting.</jats:p>"
+      },
+      {
+        "DOI": "10.1609/aaai.v40i39.40550",
+        "title": [
+          "Small Models Exhibit Limited Answer Consistency in Repetition Trials of the Multiple-Choice MMLU-Redux and MedQA Benchmarks"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the AAAI Conference on Artificial Intelligence"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Claudio",
+            "family": "Pinhanez",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Paulo",
+            "family": "Cavalin",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Cassia",
+            "family": "Sanctos",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Marcelo Carpinette",
+            "family": "Grave",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "abstract": "<jats:p>This work explores the consistency of LLMs in answering multiple times the same question. In particular, we study how known, open-source LLMs respond to 10 repetitions of questions from the multiple-choice benchmarks MMLU-Redux and MedQA, considering  different inference temperatures, small (2B-10B parameters) vs. medium models (50B-80B), finetuned vs. base models, and other parameters.  The paper also examines the effects of requiring answer consistency in repetitive inferences on accuracy and the trade-offs involved in deciding which model best provides both of them, for what we propose some new representations. Results show that the number of questions which can be answered consistently vary wildly among models but typically is in the 50%-85%  range for small models and that accuracy among consistent answers correlates to overall accuracy at low inference temperatures. Results for medium-sized models seem to indicate much higher levels of answer consistency.</jats:p>"
+      },
+      {
+        "DOI": "10.1109/ijcnn64981.2025.11228647",
+        "title": [
+          "LLM-MedQA: Enhancing Medical Question Answering through Case Studies in Large Language Models"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              30
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 International Joint Conference on Neural Networks (IJCNN)"
+        ],
+        "is-referenced-by-count": 4,
+        "author": [
+          {
+            "given": "Hang",
+            "family": "Yang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Chengdu University of Information Technology"
+              }
+            ]
+          },
+          {
+            "given": "Hao",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Chengdu University of Information Technology"
+              }
+            ]
+          },
+          {
+            "given": "Hui",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University at Buffalo, SUNY"
+              }
+            ]
+          },
+          {
+            "given": "Yineng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University at Albany, SUNY"
+              }
+            ]
+          },
+          {
+            "given": "Ching-Sheng",
+            "family": "Lin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Tunghai University"
+              }
+            ]
+          },
+          {
+            "given": "Shu",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Purdue University"
+              }
+            ]
+          },
+          {
+            "given": "Jinrong",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Chengdu University of Information Technology"
+              }
+            ]
+          },
+          {
+            "given": "Xi",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Chengdu University of Information Technology"
+              }
+            ]
+          },
+          {
+            "given": "Xin",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University at Albany, SUNY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.63317/4ckcc2pepdd3",
+        "title": [
+          "MedQA-SWE - a Clinical Question &amp; Answer Dataset for Swedish"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              5
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the Language Resources and Evaluation Conference",
+          "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)"
+        ],
+        "is-referenced-by-count": 1,
+        "author": [
+          {
+            "given": "Niclas",
+            "family": "Hertzberg",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Anna",
+            "family": "Lokrantz",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      },
+      {
+        "DOI": "10.18653/v1/2026.eacl-long.292",
+        "title": [
+          "MedQA-CS: Objective Structured Clinical Examination (OSCE)-Style Benchmark for Evaluating LLM Clinical Skills"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container-title": [
+          "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Zonghai",
+            "family": "Yao",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Zihao",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Chaolong",
+            "family": "Tang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Xingyu",
+            "family": "Bian",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Youxia",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Zhichao",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Junda",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Huixue",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Won Seok",
+            "family": "Jang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Feiyun",
+            "family": "Ouyang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Hong",
+            "family": "Yu",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "PubMedQA",
+    "results": [
+      {
+        "DOI": "10.1109/icec2nt65402.2025.11380163",
+        "title": [
+          "Interpretable Biomedical QA: Customizing Models for PubMedQA with Knowledge Distillation and XAI"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              3
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 International Conference on Electronics and Computing, Communication Networking Automation Technologies (ICEC2NT)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Sanjeev",
+            "family": "Malik",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Army Institute of Technology,CSE Department,Maharashtra,India"
+              }
+            ]
+          },
+          {
+            "given": "Nikita",
+            "family": "Singhal",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Army Institute of Technology,CSE Department,Maharashtra,India"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/icecte69292.2026.11429214",
+        "title": [
+          "Balancing Binary Biomedical QA: Parameter-Efficient Instruction Tuning on BioASQ and PubMedQA"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              29
+            ]
+          ]
+        },
+        "container-title": [
+          "2026 5th International Conference on Electrical, Computer &amp;amp; Telecommunication Engineering (ICECTE)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Tamal Kumar",
+            "family": "Sarker",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "United International University,Dept. of Computer Science and Engineering,Dhaka,Bangladesh"
+              }
+            ]
+          },
+          {
+            "given": "Khandakar Jahidul",
+            "family": "Islam",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "United International University,Dept. of Computer Science and Engineering,Dhaka,Bangladesh"
+              }
+            ]
+          },
+          {
+            "given": "Utpaul",
+            "family": "Sarker",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Daffodil International University,Dept. of Computer Science and Engineering,Dhaka,Bangladesh"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1109/aiccsa66935.2025.11315481",
+        "title": [
+          "Information Reasoning and Question Answering in Healthcare: A PubMedQA Benchmark Study"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              19
+            ]
+          ]
+        },
+        "container-title": [
+          "2025 IEEE/ACS 22nd International Conference on Computer Systems and Applications (AICCSA)"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Dina",
+            "family": "Sayed",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Basel,Databases and Information Systems Research Group,Basel,Switzerland"
+              }
+            ]
+          },
+          {
+            "given": "Heiko",
+            "family": "Schuldt",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Basel,Databases and Information Systems Research Group,Basel,Switzerland"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.1007/978-3-031-94892-3_31",
+        "title": [
+          "Are Small Language Models Enough for Biomedical QA Tasks?"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "container-title": [
+          "Lecture Notes in Networks and Systems",
+          "Proceedings of 17th International Conference on Machine Learning and Computing"
+        ],
+        "is-referenced-by-count": 0,
+        "author": [
+          {
+            "given": "Javier Lamar",
+            "family": "Léon",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Vitor Beires",
+            "family": "Nogueira",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Paulo",
+            "family": "Quaresma",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ]
+      }
+    ],
+    "status": 200
+  }
+]

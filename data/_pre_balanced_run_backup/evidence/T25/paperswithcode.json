@@ -1,0 +1,16 @@
+[
+  {
+    "query": "retrieval augmented generation",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  },
+  {
+    "query": "hallucination taxonomy",
+    "papers": [],
+    "datasets": [],
+    "status_p": 200,
+    "status_d": 200
+  }
+]

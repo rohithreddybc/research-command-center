@@ -1,0 +1,27 @@
+[
+  {
+    "query": "data contamination",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "MedQA",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "PubMedQA",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "MMLU clinical",
+    "results": [],
+    "status": 400
+  }
+]

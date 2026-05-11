@@ -1,15 +1,37 @@
 topic_id,title,rank_min,rank_max,rank_range,rank_mean
-T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,1,12,11,3.62
-T43,Reproducibility audit of clinical LLM papers,1,14,13,4.08
-T10,Reproducibility audit of LLM-judge papers,1,9,8,4.69
-T53_N4,Test-set contamination audit of healthcare LLM benchmarks — noise-pruned,2,12,10,5.92
-T74_N1,Open structured-metadata dataset of LLM-eval papers — noise-pruned,1,14,13,6.46
-T37,Clinical-guideline consistency across LLM versions over time,2,13,11,6.92
-T07,Judge robustness to candidate-side prompt injection,2,13,11,7.62
-T25,Hallucination taxonomy: RAG vs no-RAG,2,13,11,7.69
-T11,Format sensitivity benchmark on LLM evaluations,2,13,11,8.31
-T37_N1,Clinical-guideline consistency across LLM versions over time — noise-pruned,4,14,10,8.85
-T17,Tokenization-induced leaderboard variance,4,13,9,9.0
-T53,Test-set contamination audit of healthcare LLM benchmarks,6,14,8,9.54
-T07_N1,Judge robustness to candidate-side prompt injection — noise-pruned,3,14,11,9.85
-T74,Open structured-metadata dataset of LLM-eval papers,7,14,7,12.46
+B05,Synthetic data quality evaluation metrics,1,15,14,4.23
+B01,Tool-calling reliability benchmark for autonomous agents,1,16,15,7.31
+T07,Judge robustness to candidate-side prompt injection,1,31,30,7.54
+T10,Reproducibility audit of LLM-judge papers,2,34,32,8.15
+B08,Public health informatics: outbreak signal detection,4,19,15,8.85
+T01,Cross-judge agreement on long-context QA,4,25,21,8.85
+B12,Multi-lingual factuality benchmark for low-resource languages,2,24,22,9.31
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,1,33,32,10.08
+B11,Distribution-shift detection methods for production ML,3,17,14,10.31
+B13,Citation-context mining for scientific literature,5,19,14,12.31
+B16,Reproducibility in healthcare AI deployment studies,6,29,23,13.15
+T05,Judge confidence calibration vs human gold,9,29,20,15.38
+T02,Position-bias quantification across judge models,8,26,18,15.46
+T22,Clinical-guideline RAG eval benchmark,1,36,35,16.0
+B03,Data-centric AI: dataset auditing methodology,3,21,18,16.23
+T09,Judge consistency under temperature/seed variation,6,33,27,16.46
+NC07_NC,RAG for question answering [NEGATIVE_CONTROL],3,29,26,18.54
+T08,Cost-quality Pareto small open judges vs frontier,7,32,25,18.62
+B15,Clinical decision support: alert fatigue measurement,4,35,31,19.54
+B02,Long-horizon agent planning failure modes,2,27,25,19.92
+B10,Responsible AI: counterfactual fairness audit toolkit,9,28,19,20.08
+NC01_NC,Machine learning for healthcare [NEGATIVE_CONTROL],9,36,27,21.08
+T03,Self-preference bias in same-family judges,13,30,17,21.08
+NC05_NC,AI for business analytics [NEGATIVE_CONTROL],12,33,21,22.0
+B09,Human-AI decision support: confidence calibration in interfaces,9,28,19,22.15
+NC06_NC,Predictive modeling in healthcare [NEGATIVE_CONTROL],7,34,27,22.69
+B04,Causal inference benchmarks for ML evaluation,4,30,26,23.15
+T14,Few-shot order effects on healthcare-domain prompts,3,35,32,25.15
+NC04_NC,Data science dashboards [NEGATIVE_CONTROL],15,32,17,25.62
+B07,ML serving system latency-quality tradeoff benchmark,7,32,25,26.38
+T06,Pairwise vs pointwise judge agreement under perturbation,21,31,10,26.38
+B06,Cross-task contamination in foundation model benchmarks,6,33,27,29.0
+B17,Reproducibility of LLM training: hyperparameter sensitivity,14,35,21,30.38
+NC03_NC,LLMs for education [NEGATIVE_CONTROL],20,36,16,30.54
+B14,Refusal behavior consistency across LLM updates,10,36,26,31.54
+NC02_NC,AI in finance [NEGATIVE_CONTROL],19,36,17,32.54

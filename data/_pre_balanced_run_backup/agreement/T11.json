@@ -1,0 +1,27 @@
+{
+  "topic_id": "T11",
+  "n_reviews": 8,
+  "providers": {
+    "claude_cli": 8
+  },
+  "scores": {
+    "mean": 2.88,
+    "stdev": 0.93,
+    "n": 8
+  },
+  "decisions": {
+    "NEEDS_MORE_EVIDENCE": 2,
+    "NARROW": 5,
+    "GO": 1
+  },
+  "plurality_decision": "NARROW",
+  "plurality_count": 5,
+  "decision_score_mean_0to3": 1.88,
+  "confidences": {
+    "HIGH": 2,
+    "MEDIUM": 6
+  },
+  "high_confidence_drops": 0,
+  "per_role_disagreements": [],
+  "high_disagreement_flag": false
+}

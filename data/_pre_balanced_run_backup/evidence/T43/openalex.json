@@ -1,0 +1,27 @@
+[
+  {
+    "query": "clinical LLM",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "reproducibility",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "methodology disclosure",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "medical NLP",
+    "results": [],
+    "status": 400
+  },
+  {
+    "query": "clinical NLP",
+    "results": [],
+    "status": 400
+  }
+]

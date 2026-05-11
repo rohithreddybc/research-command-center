@@ -1,0 +1,86 @@
+[
+  {
+    "query": "clinical LLM",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "reproducibility",
+    "results": [
+      {
+        "title": "Polish Journal of Pathology",
+        "issn": [],
+        "publisher": "Termedia Publishing House",
+        "subject": [
+          "Medicine"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 1800,
+            "currency": "PLN"
+          },
+          {
+            "price": 380,
+            "currency": "EUR"
+          }
+        ],
+        "license": [
+          "CC BY-NC-SA"
+        ],
+        "url": "https://www.termedia.pl/Journal/Polish_Journal_of_Pathology-55/Info",
+        "country": "PL"
+      },
+      {
+        "title": "FASEB BioAdvances",
+        "issn": [],
+        "publisher": "Wiley",
+        "subject": [
+          "Biology (General)"
+        ],
+        "no_apc": false,
+        "apc_charges": [
+          {
+            "price": 3170,
+            "currency": "USD"
+          },
+          {
+            "price": 2890,
+            "currency": "GBP"
+          },
+          {
+            "price": 3540,
+            "currency": "EUR"
+          }
+        ],
+        "license": [
+          "CC BY",
+          "CC BY-NC"
+        ],
+        "url": "https://onlinelibrary.wiley.com/journal/25739832",
+        "country": "US"
+      },
+      {
+        "title": "Computo",
+        "issn": [],
+        "publisher": "société française de statistique",
+        "subject": [
+          "Probabilities. Mathematical statistics"
+        ],
+        "no_apc": true,
+        "apc_charges": [],
+        "license": [
+          "CC BY"
+        ],
+        "url": "https://computo-journal.org/",
+        "country": "FR"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "methodology disclosure",
+    "results": [],
+    "status": 200
+  }
+]

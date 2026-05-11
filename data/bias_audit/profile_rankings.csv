@@ -1,15 +1,37 @@
 topic_id,title,rank_blind_citation,score_blind_citation,rank_academic_long_term,score_academic_long_term,rank_artifact_neutral,score_artifact_neutral,rank_healthcare_neutral,score_healthcare_neutral,rank_llm_eval_neutral,score_llm_eval_neutral,rank_niw_optimized,score_niw_optimized,rank_eb1a_optimized,score_eb1a_optimized,rank_faang_career,score_faang_career,rank_balanced_personal_strategy,score_balanced_personal_strategy,rank_immigration_only,score_immigration_only,rank_career_only,score_career_only,rank_current_strategy,score_current_strategy,rank_custom,score_custom,rank_min,rank_max,rank_range,rank_mean
-T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,3,23.3,3,23.75,3,22.5,6,21.8,12,14.56,5,29.4,2,33.41,3,30.98,1,32.81,3,30.4,3,16.8,2,28.32,1,0.0,1,12,11,3.62
-T43,Reproducibility audit of clinical LLM papers,2,24.3,2,25.15,2,23.5,5,22.05,1,20.97,1,31.2,1,34.86,11,25.28,2,32.46,1,31.9,14,7.8,1,28.62,10,0.0,1,14,13,4.08
-T10,Reproducibility audit of LLM-judge papers,1,24.3,1,25.15,1,23.5,1,24.3,9,15.61,8,21.2,4,31.55,5,29.7,5,29.75,9,20.0,6,13.8,7,25.3,4,0.0,1,9,8,4.69
-T53_N4,Test-set contamination audit of healthcare LLM benchmarks — noise-pruned,6,22.4,6,22.3,5,21.6,10,19.9,4,18.81,3,29.8,3,32.98,10,26.04,3,31.18,2,31.2,10,11.0,3,27.56,12,0.0,2,12,10,5.92
-T74_N1,Open structured-metadata dataset of LLM-eval papers — noise-pruned,5,23.18,5,23.4,6,21.58,3,23.18,5,18.612,10,18.74,5,31.36,1,32.74,9,28.86,11,17.5,1,17.8,9,24.84,14,0.0,1,14,13,6.46
-T37,Clinical-guideline consistency across LLM versions over time,8,22.1,7,22.25,8,21.3,11,19.6,3,18.99,2,29.9,6,31.21,13,23.68,4,30.01,4,29.9,12,7.8,4,26.62,8,0.0,2,13,11,6.92
-T07,Judge robustness to candidate-side prompt injection,10,21.5,10,21.5,9,20.7,8,21.5,13,13.3,7,21.7,9,29.85,4,30.2,8,28.95,7,22.5,4,16.8,8,24.85,2,0.0,2,13,11,7.62
-T25,Hallucination taxonomy: RAG vs no-RAG,4,23.3,4,23.75,4,22.5,2,23.3,2,19.62,11,18.1,11,28.05,7,26.8,12,26.55,13,15.0,11,10.8,12,22.4,7,0.0,2,13,11,7.69
-T11,Format sensitivity benchmark on LLM evaluations,9,21.52,9,21.65,12,19.92,7,21.52,11,15.216,13,17.66,8,29.99,2,31.56,10,27.39,10,17.5,2,17.6,10,23.56,5,0.0,2,13,11,8.31
-T37_N1,Clinical-guideline consistency across LLM versions over time — noise-pruned,11,21.5,11,21.5,10,20.7,13,19.0,7,18.45,4,29.6,7,30.81,14,23.38,6,29.61,5,29.9,13,7.8,5,26.37,9,0.0,4,14,10,8.85
-T17,Tokenization-induced leaderboard variance,7,22.1,8,22.0,7,21.3,4,22.1,6,18.54,12,17.7,12,27.4,9,26.5,13,26.0,12,15.0,8,11.0,13,22.2,6,0.0,4,13,9,9.0
-T53,Test-set contamination audit of healthcare LLM benchmarks,12,20.9,12,20.5,11,20.1,14,18.4,8,17.46,6,28.5,10,29.78,12,24.94,7,29.18,6,28.7,9,11.0,6,25.76,11,0.0,6,14,8,9.54
-T07_N1,Judge robustness to candidate-side prompt injection — noise-pruned,13,20.2,13,19.65,13,19.8,9,20.2,14,12.39,9,20.9,13,26.3,6,28.4,11,27.0,8,20.0,5,16.5,11,22.85,3,0.0,3,14,11,9.85
-T74,Open structured-metadata dataset of LLM-eval papers,14,19.24,14,19.05,14,18.44,12,19.24,10,15.516,14,16.42,14,25.48,8,26.72,14,25.08,14,15.0,7,13.8,14,21.87,13,0.0,7,14,7,12.46
+B05,Synthetic data quality evaluation metrics,1,26.5,1,27.8,1,25.7,1,26.5,1,25.0,9,20.6,1,33.0,5,29.2,2,30.6,10,17.5,15,11.0,3,26.1,5,0.0,1,15,14,4.23
+B01,Tool-calling reliability benchmark for autonomous agents,6,23.24,4,24.684,6,22.44,6,23.24,8,19.116,16,18.056,10,28.634,6,28.64,7,28.262,13,15.0,5,13.8,7,24.52,1,0.0,1,16,15,7.31
+T07,Judge robustness to candidate-side prompt injection,4,23.8,5,24.375,4,23.0,4,23.8,28,14.91,5,22.85,3,31.425,1,31.35,3,30.525,4,22.5,2,16.8,4,25.85,31,0.0,1,31,30,7.54
+T10,Reproducibility audit of LLM-judge papers,2,24.3,2,25.15,3,23.5,2,24.3,23,15.61,8,21.2,2,31.55,3,29.7,5,29.75,8,20.0,8,13.8,6,25.3,34,0.0,2,34,32,8.15
+B08,Public health informatics: outbreak signal detection,9,22.5,8,23.665,9,21.7,12,21.75,4,21.0,6,22.81,6,29.415,17,26.05,6,29.095,6,21.5,19,10.8,5,25.7,8,0.0,4,19,15,8.85
+T01,Cross-judge agreement on long-context QA,5,23.46,7,23.7,5,22.66,5,23.46,14,17.168,12,18.88,4,30.22,4,29.48,8,28.22,11,17.5,4,14.0,11,23.88,25,0.0,4,25,21,8.85
+B12,Multi-lingual factuality benchmark for low-resource languages,3,24.0,3,24.7,2,23.6,3,24.0,2,22.5,11,19.0,11,28.5,13,26.5,9,28.0,18,15.0,24,10.5,10,23.9,12,0.0,2,24,22,9.31
+T04,Prompt-template sensitivity benchmark for clinical-domain LLM judges,13,21.8,14,21.95,11,21.0,17,20.3,33,13.51,2,28.1,5,30.21,2,29.88,1,30.81,2,27.9,1,16.8,2,26.52,28,0.0,1,33,32,10.08
+B11,Distribution-shift detection methods for production ML,7,23.0,9,23.63,7,22.2,7,23.0,3,21.5,15,18.32,12,28.48,11,27.0,10,27.64,17,15.0,16,11.0,9,24.05,11,0.0,3,17,14,10.31
+B13,Citation-context mining for scientific literature,12,21.82,12,22.176,16,20.22,11,21.82,5,20.32,19,17.664,8,28.796,7,28.14,14,26.488,19,15.0,12,11.8,12,23.26,13,0.0,5,19,14,12.31
+B16,Reproducibility in healthcare AI deployment studies,15,21.07,11,22.212,14,20.27,16,20.32,6,20.07,7,22.208,9,28.662,22,23.07,11,27.216,7,21.5,29,7.8,8,24.385,16,0.0,6,29,23,13.15
+T05,Judge confidence calibration vs human gold,10,22.3,10,22.8,10,21.5,9,22.3,19,16.64,17,17.8,13,28.05,14,26.5,12,26.75,23,15.0,21,10.8,13,23.25,29,0.0,9,29,20,15.38
+T02,Position-bias quantification across judge models,11,22.16,13,22.05,12,20.96,10,22.16,21,16.528,18,17.78,14,27.92,8,27.48,15,26.12,22,15.0,13,11.5,18,22.43,26,0.0,8,26,18,15.46
+T22,Clinical-guideline RAG eval benchmark,26,18.948,27,18.76,26,18.148,30,16.448,25,15.253,1,28.424,7,29.396,15,26.204,4,29.996,1,29.9,9,13.8,1,27.244,36,0.0,1,36,35,16.0
+B03,Data-centric AI: dataset auditing methodology,18,20.03,18,20.928,19,19.23,18,20.03,13,18.53,21,16.752,15,26.428,19,24.63,17,25.254,14,15.0,17,10.8,19,22.415,3,0.0,3,21,18,16.23
+T09,Judge consistency under temperature/seed variation,8,22.74,6,23.994,8,21.94,8,22.74,16,16.992,20,17.296,16,26.294,16,26.14,13,26.542,33,12.5,23,10.8,14,23.12,33,0.0,6,33,27,16.46
+NC07_NC,RAG for question answering [NEGATIVE_CONTROL],17,20.86,17,21.186,17,20.06,15,20.86,17,16.974,25,16.324,25,24.436,9,27.46,19,24.848,29,12.5,3,14.0,24,20.93,24,0.0,3,29,26,18.54
+T08,Cost-quality Pareto small open judges vs frontier,16,21.04,15,21.69,15,20.24,14,21.04,26,15.232,22,16.68,21,25.02,10,27.22,16,25.8,32,12.5,7,13.8,16,22.47,32,0.0,7,32,25,18.62
+B15,Clinical decision support: alert fatigue measurement,25,19.46,26,19.331,24,18.66,27,17.96,10,18.96,4,23.354,17,26.061,33,20.15,18,25.113,5,21.7,35,4.8,15,22.49,15,0.0,4,35,31,19.54
+B02,Long-horizon agent planning failure modes,19,19.9,25,19.45,25,18.3,19,19.9,20,16.56,26,16.0,22,24.85,12,26.7,26,23.75,25,12.5,11,11.8,27,20.7,2,0.0,2,27,25,19.92
+B10,Responsible AI: counterfactual fairness audit toolkit,27,18.24,20,20.204,28,17.44,25,18.24,18,16.74,14,18.336,18,25.454,27,21.94,20,24.422,9,19.2,25,9.6,20,22.07,10,0.0,9,28,19,20.08
+NC01_NC,Machine learning for healthcare [NEGATIVE_CONTROL],24,19.54,21,20.104,20,19.14,24,18.79,9,19.04,10,19.036,23,24.554,35,19.34,21,24.322,12,16.5,36,4.5,21,22.02,18,0.0,9,36,27,21.08
+T03,Self-preference bias in same-family judges,14,21.229,16,21.236,13,20.429,13,21.229,22,15.783,23,16.514,26,24.422,18,25.414,24,24.122,30,12.5,20,10.8,28,20.314,27,0.0,13,30,17,21.08
+NC05_NC,AI for business analytics [NEGATIVE_CONTROL],22,19.688,23,19.944,18,19.288,21,19.688,12,18.688,24,16.38,19,25.42,26,21.964,23,24.248,21,15.0,33,7.3,22,21.344,22,0.0,12,33,21,22.0
+B09,Human-AI decision support: confidence calibration in interfaces,20,19.9,22,19.95,21,19.1,20,19.9,11,18.9,27,16.0,28,24.05,23,22.9,27,23.75,27,12.5,28,7.8,25,20.9,9,0.0,9,28,19,22.15
+NC06_NC,Predictive modeling in healthcare [NEGATIVE_CONTROL],21,19.9,19,20.24,22,19.1,23,19.15,7,19.4,13,18.66,31,23.09,30,20.4,25,23.77,24,14.0,34,5.0,23,21.3,23,0.0,7,34,27,22.69
+B04,Causal inference benchmarks for ML evaluation,29,17.45,28,18.46,30,16.65,28,17.45,24,15.45,30,15.44,27,24.26,20,24.55,30,22.83,15,15.0,6,13.8,30,19.875,4,0.0,4,30,26,23.15
+T14,Few-shot order effects on healthcare-domain prompts,33,15.86,31,16.268,34,14.66,35,13.61,34,13.374,3,25.652,20,25.338,34,19.7,22,24.294,3,26.9,26,8.1,17,22.45,35,0.0,3,35,32,25.15
+NC04_NC,Data science dashboards [NEGATIVE_CONTROL],28,18.04,29,18.154,27,17.64,26,18.04,15,17.04,28,15.836,24,24.504,29,21.04,28,23.272,20,15.0,32,7.5,26,20.87,21,0.0,15,32,17,25.62
+B07,ML serving system latency-quality tradeoff benchmark,31,16.16,32,16.226,31,15.36,31,16.16,29,14.66,31,14.684,30,23.226,25,22.16,31,21.318,16,15.0,18,10.8,31,18.88,7,0.0,7,32,25,26.38
+T06,Pairwise vs pointwise judge agreement under perturbation,23,19.66,24,19.766,23,18.86,22,19.66,31,14.528,29,15.544,29,23.566,21,24.46,29,23.238,31,12.5,22,10.8,29,19.98,30,0.0,21,31,10,26.38
+B06,Cross-task contamination in foundation model benchmarks,32,16.0,33,15.526,32,15.2,32,16.0,27,15.0,33,13.704,32,20.906,31,20.38,33,19.898,26,12.5,27,7.8,33,17.6,6,0.0,6,33,27,29.0
+B17,Reproducibility of LLM training: hyperparameter sensitivity,35,14.28,35,13.068,35,13.08,34,14.28,35,11.502,35,13.112,33,20.218,24,22.48,35,19.374,28,12.5,14,11.3,35,17.29,17,0.0,14,35,21,30.38
+NC03_NC,LLMs for education [NEGATIVE_CONTROL],30,17.28,30,17.068,29,16.88,29,17.28,30,14.652,32,14.312,34,19.568,32,20.18,32,20.824,36,10.0,31,7.5,32,18.24,20,0.0,20,36,16,30.54
+B14,Refusal behavior consistency across LLM updates,36,12.448,36,10.735,36,12.048,36,12.448,36,8.358,36,11.874,36,16.061,28,21.674,36,18.461,34,10.0,10,13.3,36,16.474,14,0.0,10,36,26,31.54
+NC02_NC,AI in finance [NEGATIVE_CONTROL],34,15.28,34,14.49,33,14.88,33,15.28,32,14.28,34,13.3,35,18.2,36,19.24,34,19.48,35,10.0,30,7.5,34,17.39,19,0.0,19,36,17,32.54

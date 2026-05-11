@@ -1,0 +1,2293 @@
+[
+  {
+    "query": "data contamination",
+    "results": [
+      {
+        "paperId": "24a35803e943a1b70a7620e9493949c5016a1e21",
+        "externalIds": {
+          "ArXiv": "2507.10532",
+          "DBLP": "journals/corr/abs-2507-10532",
+          "DOI": "10.48550/arXiv.2507.10532",
+          "CorpusId": 280293150
+        },
+        "title": "Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to Data Contamination",
+        "venue": "AAAI Conference on Artificial Intelligence",
+        "year": 2025,
+        "citationCount": 67,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.10532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2374274013",
+            "name": "Mingqi Wu"
+          },
+          {
+            "authorId": "2262654002",
+            "name": "Zhihao Zhang"
+          },
+          {
+            "authorId": "2156930638",
+            "name": "Qiaole Dong"
+          },
+          {
+            "authorId": "2218237934",
+            "name": "Zhiheng Xi"
+          },
+          {
+            "authorId": "2257315251",
+            "name": "Jun Zhao"
+          },
+          {
+            "authorId": "2219131195",
+            "name": "Senjie Jin"
+          },
+          {
+            "authorId": "2241140630",
+            "name": "Xiaoran Fan"
+          },
+          {
+            "authorId": "2212175381",
+            "name": "Yuhao Zhou"
+          },
+          {
+            "authorId": "2240574799",
+            "name": "Ming Zhang"
+          },
+          {
+            "authorId": "2371140837",
+            "name": "Yanwei Fu"
+          },
+          {
+            "authorId": "2373314870",
+            "name": "Qin Liu"
+          },
+          {
+            "authorId": "2372762403",
+            "name": "Songyang Zhang"
+          },
+          {
+            "authorId": "2374299112",
+            "name": "Qi Zhang"
+          }
+        ],
+        "abstract": "Reasoning in large language models has long been a central research focus, and recent studies employing reinforcement learning (RL) have introduced diverse methods that yield substantial performance gains with minimal or even no external supervision. Surprisingly, some studies even suggest that random or incorrect reward signals can enhance performance. However, these breakthroughs are predominantly observed for the mathematically strong Qwen2.5 series on benchmarks such as MATH-500, AMC, and AIME, and seldom transfer to models like Llama, which warrants a more in-depth investigation. In this work, our empirical analysis reveals that pre-training on massive web-scale corpora leaves Qwen2.5 susceptible to data contamination in widely used benchmarks. Consequently, conclusions derived from contaminated benchmarks on Qwen2.5 series may be unreliable. To obtain trustworthy evaluation results, we introduce a generator that creates fully clean arithmetic problems of arbitrary length and difficulty, dubbed RandomCalculation. Using this leakage-free dataset, we show that only accurate reward signals yield steady improvements that surpass the base model’s performance boundary in mathematical reasoning, whereas random or incorrect rewards do not. Moreover, we conduct more fine-grained analyses to elucidate the factors underlying the different performance observed on the MATH-500 and RandomCalculation benchmarks. Consequently, we recommend that future studies evaluate models on uncontaminated benchmarks and, when feasible, test various model series to ensure trustworthy conclusions about RL and related methods."
+      },
+      {
+        "paperId": "c2f59336182fc951c2af90416c3e0b02f0552527",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-17521",
+          "ArXiv": "2502.17521",
+          "DOI": "10.48550/arXiv.2502.17521",
+          "CorpusId": 276580336
+        },
+        "title": "Recent Advances in Large Langauge Model Benchmarks against Data Contamination: From Static to Dynamic Evaluation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 27,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.17521, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2347695427",
+            "name": "Simin Chen"
+          },
+          {
+            "authorId": "2188651547",
+            "name": "Yiming Chen"
+          },
+          {
+            "authorId": "2109967407",
+            "name": "Zexin Li"
+          },
+          {
+            "authorId": "2347050558",
+            "name": "Yifan Jiang"
+          },
+          {
+            "authorId": "2347120431",
+            "name": "Zhongwei Wan"
+          },
+          {
+            "authorId": "2347348468",
+            "name": "Yixin He"
+          },
+          {
+            "authorId": "2038503437",
+            "name": "Dezhi Ran"
+          },
+          {
+            "authorId": "2347092305",
+            "name": "Tianle Gu"
+          },
+          {
+            "authorId": "2287269266",
+            "name": "Haizhou Li"
+          },
+          {
+            "authorId": "2304599644",
+            "name": "Tao Xie"
+          },
+          {
+            "authorId": "2347039050",
+            "name": "Baishakhi Ray"
+          }
+        ],
+        "abstract": "Data contamination has received increasing attention in the era of large language models (LLMs) due to their reliance on vast Internet-derived training corpora. To mitigate the risk of potential data contamination, LLM benchmarking has undergone a transformation from static to dynamic benchmarking. In this work, we conduct an in-depth analysis of existing static to dynamic benchmarking methods aimed at reducing data contamination risks. We first examine methods that enhance static benchmarks and identify their inherent limitations. We then highlight a critical gap-the lack of standardized criteria for evaluating dynamic benchmarks. Based on this observation, we propose a series of optimal design principles for dynamic benchmarking and analyze the limitations of existing dynamic benchmarks. This survey provides a concise yet comprehensive overview of recent advancements in data contamination research, offering valuable insights and a clear guide for future research efforts. We maintain a GitHub repository to continuously collect both static and dynamic benchmarking methods for LLMs. The repository can be found at this link."
+      },
+      {
+        "paperId": "851fd194581bb31e9cf55d0776b1e34763d3ad7a",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-14425",
+          "ArXiv": "2502.14425",
+          "DOI": "10.48550/arXiv.2502.14425",
+          "CorpusId": 276482755
+        },
+        "title": "A Survey on Data Contamination for Large Language Models",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 23,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.14425, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2280875270",
+            "name": "Yu Cheng"
+          },
+          {
+            "authorId": "2281762754",
+            "name": "Yi Chang"
+          },
+          {
+            "authorId": "2280899184",
+            "name": "Yuan Wu"
+          }
+        ],
+        "abstract": "Recent advancements in Large Language Models (LLMs) have demonstrated significant progress in various areas, such as text generation and code synthesis. However, the reliability of performance evaluation has come under scrutiny due to data contamination-the unintended overlap between training and test datasets. This overlap has the potential to artificially inflate model performance, as LLMs are typically trained on extensive datasets scraped from publicly available sources. These datasets often inadvertently overlap with the benchmarks used for evaluation, leading to an overestimation of the models' true generalization capabilities. In this paper, we first examine the definition and impacts of data contamination. Secondly, we review methods for contamination-free evaluation, focusing on three strategies: data updating-based methods, data rewriting-based methods, and prevention-based methods. Specifically, we highlight dynamic benchmarks and LLM-driven evaluation methods. Finally, we categorize contamination detecting methods based on model information dependency: white-Box, gray-Box, and black-Box detection approaches. Our survey highlights the requirements for more rigorous evaluation protocols and proposes future directions for addressing data contamination challenges."
+      },
+      {
+        "paperId": "ce2cda821b4c6a28c9477aac03ca918f7319b9cb",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2503-04149",
+          "ArXiv": "2503.04149",
+          "DOI": "10.48550/arXiv.2503.04149",
+          "CorpusId": 276812912
+        },
+        "title": "Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 22,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.04149, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2347695427",
+            "name": "Simin Chen"
+          },
+          {
+            "authorId": "2182607680",
+            "name": "Pranav Pusarla"
+          },
+          {
+            "authorId": "2347039050",
+            "name": "Baishakhi Ray"
+          }
+        ],
+        "abstract": "The rapid evolution of code largelanguage models underscores the need for effective and transparent benchmarking of their reasoning capabilities. However, the current benchmarking approach heavily depends on publicly available, human-created datasets. The widespread use of these fixed benchmark datasets makes the benchmarking process to be static and thus particularly susceptible to data contamination, an unavoidable consequence of the extensive data collection processes used to train Code LLMs. Existing approaches that address data contamination often suffer from human effort limitations and imbalanced problem complexity. To tackle these challenges, we propose \\tool, a novel benchmarking suite for evaluating Code LLMs under potential data contamination. Given a seed programming problem, \\tool employs multiple agents to extract and modify the context without altering the core logic, generating semantically equivalent variations. We introduce a dynamic data generation methods and conduct empirical studies on two seed datasets across 21 Code LLMs. Results show that \\tool effectively benchmarks reasoning capabilities under contamination risks while generating diverse problem sets to ensure consistent and reliable evaluations."
+      },
+      {
+        "paperId": "798feda076ad710df65d509a7884bd15937c8056",
+        "externalIds": {
+          "ACL": "2024.eacl-long.5",
+          "DBLP": "journals/corr/abs-2402-03927",
+          "ArXiv": "2402.03927",
+          "DOI": "10.48550/arXiv.2402.03927",
+          "CorpusId": 267499939
+        },
+        "title": "Leak, Cheat, Repeat: Data Contamination and Evaluation Malpractices in Closed-Source LLMs",
+        "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 306,
+        "influentialCitationCount": 11,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.03927, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2282977985",
+            "name": "Simone Balloccu"
+          },
+          {
+            "authorId": "2065780715",
+            "name": "Patrícia Schmidtová"
+          },
+          {
+            "authorId": "11538960",
+            "name": "Mateusz Lango"
+          },
+          {
+            "authorId": "2544049",
+            "name": "Ondrej Dusek"
+          }
+        ],
+        "abstract": "Natural Language Processing (NLP) research is increasingly focusing on the use of Large Language Models (LLMs), with some of the most popular ones being either fully or partially closed-source. The lack of access to model details, especially regarding training data, has repeatedly raised concerns about data contamination among researchers. Several attempts have been made to address this issue, but they are limited to anecdotal evidence and trial and error. Additionally, they overlook the problem of indirect data leaking, where modelsare iteratively improved by using data coming from users. In this work, we conduct the first systematic analysis of work using OpenAI’s GPT-3.5 and GPT-4, the most prominently used LLMs today, in the context of data contamination. By analysing 255 papers and considering OpenAI’s data usage policy, we extensively document the amount of data leaked to these models during the first year after the model’s release. We report that these models have been globally exposed to ∼4.7M samples from 263 benchmarks. At the same time, we document a number of evaluation malpractices emerging in the reviewed papers, such as unfair or missing baseline comparisons and reproducibility issues. We release our results as a collaborative project on https://leak-llm.github.io/, where other researchers can contribute to our efforts."
+      },
+      {
+        "paperId": "1ea243f1b697aae22e6f0349fa64857780a6108a",
+        "externalIds": {
+          "ArXiv": "2402.15938",
+          "DBLP": "conf/acl/DongJLJGYL24",
+          "DOI": "10.48550/arXiv.2402.15938",
+          "CorpusId": 267938621
+        },
+        "title": "Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 151,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.15938, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "26845858",
+            "name": "Yihong Dong"
+          },
+          {
+            "authorId": "2199808863",
+            "name": "Xue Jiang"
+          },
+          {
+            "authorId": "2279435524",
+            "name": "Huanyu Liu"
+          },
+          {
+            "authorId": "2152843753",
+            "name": "Zhi Jin"
+          },
+          {
+            "authorId": "2254313986",
+            "name": "Ge Li"
+          }
+        ],
+        "abstract": "Recent statements about the impressive capabilities of large language models (LLMs) are usually supported by evaluating on open-access benchmarks. Considering the vast size and wide-ranging sources of LLMs' training data, it could explicitly or implicitly include test data, leading to LLMs being more susceptible to data contamination. However, due to the opacity of training data, the black-box access of models, and the rapid growth of synthetic training data, detecting and mitigating data contamination for LLMs faces significant challenges. In this paper, we propose CDD, which stands for Contamination Detection via output Distribution for LLMs. CDD necessitates only the sampled texts to detect data contamination, by identifying the peakedness of LLM's output distribution. To mitigate the impact of data contamination in evaluation, we also present TED: Trustworthy Evaluation via output Distribution, based on the correction of LLM's output distribution. To facilitate this study, we introduce two benchmarks, i.e., DetCon and ComiEval, for data contamination detection and contamination mitigation evaluation tasks. Extensive experimental results show that CDD achieves the average relative improvements of 21.8\\%-30.2\\% over other contamination detection approaches in terms of Accuracy, F1 Score, and AUC metrics, and can effectively detect implicit contamination. TED substantially mitigates performance improvements up to 66.9\\% attributed to data contamination across various contamination setups. In real-world applications, we reveal that ChatGPT exhibits a high potential to suffer from data contamination on HumanEval benchmark."
+      },
+      {
+        "paperId": "8b6899dea6864910e37a70fe8669a6682e68513c",
+        "externalIds": {
+          "ArXiv": "2503.13572",
+          "DBLP": "journals/corr/abs-2503-13572",
+          "DOI": "10.1109/ICLAD65226.2025.00017",
+          "CorpusId": 277104921
+        },
+        "title": "VeriContaminated: Assessing LLM-Driven Verilog Coding for Data Contamination",
+        "venue": "2025 IEEE International Conference on LLM-Aided Design (ICLAD)",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.13572, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2215988074",
+            "name": "Zeng Wang"
+          },
+          {
+            "authorId": "2284694862",
+            "name": "Minghao Shao"
+          },
+          {
+            "authorId": "1387178280",
+            "name": "Jitendra Bhandari"
+          },
+          {
+            "authorId": "2189847970",
+            "name": "Likhitha Mankali"
+          },
+          {
+            "authorId": "2270779547",
+            "name": "Ramesh Karri"
+          },
+          {
+            "authorId": "2253600910",
+            "name": "Ozgur Sinanoglu"
+          },
+          {
+            "authorId": "2350632298",
+            "name": "Muhammad Shafique"
+          },
+          {
+            "authorId": "1978598",
+            "name": "J. Knechtel"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have revolutionized code generation, achieving exceptional results on various established benchmarking frameworks. However, concerns about data contamination—where benchmark data inadvertently leaks into pre-training or fine-tuning datasets—raise questions about the validity of these evaluations. While this issue is known, limiting the industrial adoption of LLM-driven software engineering, hardware coding has received little to no attention regarding these risks. For the first time, we analyze state-of-the-art (SOTA) evaluation frameworks for Verilog code generation (VerilogEval and RTLLM), using established methods for contamination detection (CCD and Min-K% Prob). We cover SOTA commercial and open-source LLMs (CodeGen2.5, Minitron 4b, Mistral 7b, phi-4 mini, LLaMA-{1,2,3.1}, GPT- {2,3.5,4o} , Deepseek-Coder, and CodeQwen 1.5), in baseline and fine-tuned models (RTLCoder and Verigen). Our study confirms that data contamination is a critical concern. We explore mitigations and the resulting trade-offs for code quality vs fairness (i.e., reducing contamination toward unbiased benchmarking). Codes are open-sourced at https://github.com/DfX-NYUAD/VeriContaminated."
+      },
+      {
+        "paperId": "b6846ea6dc98f86e6cad8080f462f5d03276a890",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2501-18771",
+          "ArXiv": "2501.18771",
+          "DOI": "10.48550/arXiv.2501.18771",
+          "CorpusId": 276079893
+        },
+        "title": "Overestimation in LLM Evaluation: A Controlled Large-Scale Study on Data Contamination's Impact on Machine Translation",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.18771, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1665851460",
+            "name": "Muhammed Yusuf Kocyigit"
+          },
+          {
+            "authorId": "2343507548",
+            "name": "Eleftheria Briakou"
+          },
+          {
+            "authorId": "2258954267",
+            "name": "Daniel Deutsch"
+          },
+          {
+            "authorId": "19236313",
+            "name": "Jiaming Luo"
+          },
+          {
+            "authorId": "2257002653",
+            "name": "Colin Cherry"
+          },
+          {
+            "authorId": "2284596453",
+            "name": "Markus Freitag"
+          }
+        ],
+        "abstract": "Data contamination -- the accidental consumption of evaluation examples within the pre-training data -- can undermine the validity of evaluation benchmarks. In this paper, we present a rigorous analysis of the effects of contamination on language models at 1B and 8B scales on the machine translation task. Starting from a carefully decontaminated train-test split, we systematically introduce contamination at various stages, scales, and data formats to isolate its effect and measure its impact on performance metrics. Our experiments reveal that contamination with both source and target substantially inflates BLEU scores, and this inflation is 2.5 times larger (up to 30 BLEU points) for 8B compared to 1B models. In contrast, source-only and target-only contamination generally produce smaller, less consistent over-estimations. Finally, we study how the temporal distribution and frequency of contaminated samples influence performance over-estimation across languages with varying degrees of data resources."
+      },
+      {
+        "paperId": "0fad9dd4f0ea41732594f90209907bfad1ba506e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2406-04244",
+          "ArXiv": "2406.04244",
+          "DOI": "10.48550/arXiv.2406.04244",
+          "CorpusId": 270285708
+        },
+        "title": "Benchmark Data Contamination of Large Language Models: A Survey",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 106,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.04244, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2153079650",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2304954016",
+            "name": "Shuhao Guan"
+          },
+          {
+            "authorId": "2304952028",
+            "name": "Derek Greene"
+          },
+          {
+            "authorId": "2266906186",
+            "name": "Mohand-Tahar Kechadi"
+          }
+        ],
+        "abstract": "The rapid development of Large Language Models (LLMs) like GPT-4, Claude-3, and Gemini has transformed the field of natural language processing. However, it has also resulted in a significant issue known as Benchmark Data Contamination (BDC). This occurs when language models inadvertently incorporate evaluation benchmark information from their training data, leading to inaccurate or unreliable performance during the evaluation phase of the process. This paper reviews the complex challenge of BDC in LLM evaluation and explores alternative assessment methods to mitigate the risks associated with traditional benchmarks. The paper also examines challenges and future directions in mitigating BDC risks, highlighting the complexity of the issue and the need for innovative solutions to ensure the reliability of LLM evaluation in real-world applications."
+      },
+      {
+        "paperId": "b2fda33b7c122c044a7faa185d250d59ce9e4453",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2401-06059",
+          "ArXiv": "2401.06059",
+          "DOI": "10.48550/arXiv.2401.06059",
+          "CorpusId": 266933004
+        },
+        "title": "Investigating Data Contamination for Pre-training Language Models",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 100,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2401.06059, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2800541",
+            "name": "Minhao Jiang"
+          },
+          {
+            "authorId": "2298016051",
+            "name": "Ken Ziyu Liu"
+          },
+          {
+            "authorId": "1606040932",
+            "name": "Ming Zhong"
+          },
+          {
+            "authorId": "1749176844",
+            "name": "Rylan Schaeffer"
+          },
+          {
+            "authorId": "2260339714",
+            "name": "Siru Ouyang"
+          },
+          {
+            "authorId": "2259869648",
+            "name": "Jiawei Han"
+          },
+          {
+            "authorId": "123593472",
+            "name": "Sanmi Koyejo"
+          }
+        ],
+        "abstract": "Language models pre-trained on web-scale corpora demonstrate impressive capabilities on diverse downstream tasks. However, there is increasing concern whether such capabilities might arise from evaluation datasets being included in the pre-training corpus -- a phenomenon known as \\textit{data contamination} -- in a manner that artificially increases performance. There has been little understanding of how this potential contamination might influence LMs' performance on downstream tasks. In this paper, we explore the impact of data contamination at the pre-training stage by pre-training a series of GPT-2 models \\textit{from scratch}. We highlight the effect of both text contamination (\\textit{i.e.}\\ input text of the evaluation samples) and ground-truth contamination (\\textit{i.e.}\\ the prompts asked on the input and the desired outputs) from evaluation data. We also investigate the effects of repeating contamination for various downstream tasks. Additionally, we examine the prevailing n-gram-based definitions of contamination within current LLM reports, pinpointing their limitations and inadequacy. Our findings offer new insights into data contamination's effects on language model capabilities and underscore the need for independent, comprehensive contamination assessments in LLM studies."
+      },
+      {
+        "paperId": "92687d99afd4f5b84f0361fb78eae8584d41c3c0",
+        "externalIds": {
+          "DBLP": "conf/emnlp/ChenCLJWHRGLXR25",
+          "DOI": "10.18653/v1/2025.emnlp-main.511",
+          "CorpusId": 282906361
+        },
+        "title": "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 14,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.18653/v1/2025.emnlp-main.511?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.18653/v1/2025.emnlp-main.511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2347695427",
+            "name": "Simin Chen"
+          },
+          {
+            "authorId": "2188651547",
+            "name": "Yiming Chen"
+          },
+          {
+            "authorId": "2374478896",
+            "name": "Zexin Li"
+          },
+          {
+            "authorId": "2347050558",
+            "name": "Yifan Jiang"
+          },
+          {
+            "authorId": "2347120431",
+            "name": "Zhongwei Wan"
+          },
+          {
+            "authorId": "2347348468",
+            "name": "Yixin He"
+          },
+          {
+            "authorId": "2038503437",
+            "name": "Dezhi Ran"
+          },
+          {
+            "authorId": "2347092305",
+            "name": "Tianle Gu"
+          },
+          {
+            "authorId": "2271398110",
+            "name": "Haizhou Li"
+          },
+          {
+            "authorId": "2275614592",
+            "name": "Tao Xie"
+          },
+          {
+            "authorId": "2347039050",
+            "name": "Baishakhi Ray"
+          }
+        ],
+        "abstract": ","
+      },
+      {
+        "paperId": "8dc806b5b8b73bd56bde4fa15f17eef3d03a9858",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2508-13180",
+          "ArXiv": "2508.13180",
+          "DOI": "10.48550/arXiv.2508.13180",
+          "CorpusId": 280686001
+        },
+        "title": "Search-Time Data Contamination",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 10,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.13180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2321169632",
+            "name": "Ziwen Han"
+          },
+          {
+            "authorId": "2367520383",
+            "name": "Meher Mankikar"
+          },
+          {
+            "authorId": "2366010951",
+            "name": "Julian Michael"
+          },
+          {
+            "authorId": "2365977483",
+            "name": "Zifan Wang"
+          }
+        ],
+        "abstract": "Data contamination refers to the leakage of evaluation data into model training data, resulting in overfitting to supposedly held-out test sets and compromising test validity. We identify an analogous issue, search-time contamination (STC), in evaluating search-based LLM agents which use tools to gather information from online sources when answering user queries. STC occurs when the retrieval step surfaces a source containing the test question (or a near-duplicate) alongside its answer, enabling agents to copy rather than genuinely infer or reason, undermining benchmark integrity. We find that HuggingFace, an online platform hosting evaluation datasets, appears among retrieved sources in search based agent logs. Consequently, agents often explicitly acknowledge discovering question answer pairs from HuggingFace within their reasoning chains. On three commonly used capability benchmarks: Humanity's Last Exam (HLE), SimpleQA, and GPQA, we demonstrate that for approximately 3% of questions, search-based agents directly find the datasets with ground truth labels on HuggingFace. When millions of evaluation queries target the same benchmark, even small, repeated leaks can accelerate the benchmark's obsolescence, shortening its intended lifecycle. After HuggingFace is blocked, we observe a drop in accuracy on the contaminated subset of approximately 15%. We further show through ablation experiments that publicly accessible evaluation datasets on HuggingFace may not be the sole source of STC. To this end, we conclude by proposing best practices for benchmark design and result reporting to address this novel form of leakage and ensure trustworthy evaluation of search-based LLM agents. To facilitate the auditing of evaluation results, we also publicly release the complete logs from our experiments."
+      },
+      {
+        "paperId": "b0dbcb0aa35c919e1bc75ebc3d0f8a86a7cd3692",
+        "externalIds": {
+          "DBLP": "conf/icml/00100L0025",
+          "ArXiv": "2503.16402",
+          "DOI": "10.48550/arXiv.2503.16402",
+          "CorpusId": 277150897
+        },
+        "title": "The Emperor's New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 9,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.16402, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2256179004",
+            "name": "Yifan Sun"
+          },
+          {
+            "authorId": "2276765112",
+            "name": "Hanru Wang"
+          },
+          {
+            "authorId": "2319217568",
+            "name": "Dongbai Li"
+          },
+          {
+            "authorId": "2318471548",
+            "name": "Ganghui Wang"
+          },
+          {
+            "authorId": "2332446768",
+            "name": "Huan Zhang"
+          }
+        ],
+        "abstract": "Benchmark Data Contamination (BDC)-the inclusion of benchmark testing samples in the training set-has raised increasing concerns in Large Language Model (LLM) evaluation, leading to falsely inflated performance estimates and undermining evaluation reliability. To address this, researchers have proposed various mitigation strategies to update existing benchmarks, including modifying original questions or generating new ones based on them. However, a rigorous examination of the effectiveness of these mitigation strategies remains lacking. In this paper, we design a systematic and controlled pipeline along with two novel metrics-fidelity and contamination resistance-to provide a fine-grained and comprehensive assessment of existing BDC mitigation strategies. Previous assessment methods, such as accuracy drop and accuracy matching, focus solely on aggregate accuracy, often leading to incomplete or misleading conclusions. Our metrics address this limitation by emphasizing question-level evaluation result matching. Extensive experiments with 10 LLMs, 5 benchmarks, 20 BDC mitigation strategies, and 2 contamination scenarios reveal that no existing strategy significantly improves resistance over the vanilla case (i.e., no benchmark update) across all benchmarks, and none effectively balances fidelity and contamination resistance. These findings underscore the urgent need for designing more effective BDC mitigation strategies. Our code repository is available at https://github.com/ASTRAL-Group/BDC_mitigation_assessment."
+      },
+      {
+        "paperId": "e4e9934927a3d9cdb495e608a0792e95b1ad0fc1",
+        "externalIds": {
+          "DBLP": "conf/aaai/Bar-ShalomFLGZE26",
+          "ArXiv": "2503.14043",
+          "DOI": "10.1609/aaai.v40i36.40254",
+          "CorpusId": 277103623
+        },
+        "title": "Beyond Next Token Probabilities: Learnable, Fast Detection of Hallucinations and Data Contamination on LLM Output Distributions",
+        "venue": "AAAI Conference on Artificial Intelligence",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.14043, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2283934171",
+            "name": "Guy Bar-Shalom"
+          },
+          {
+            "authorId": "51484149",
+            "name": "Fabrizio Frasca"
+          },
+          {
+            "authorId": "2269735974",
+            "name": "D. Lim"
+          },
+          {
+            "authorId": "2315922099",
+            "name": "Yoav Gelberg"
+          },
+          {
+            "authorId": "7264689",
+            "name": "Yftah Ziser"
+          },
+          {
+            "authorId": "2237634071",
+            "name": "Ran El-Yaniv"
+          },
+          {
+            "authorId": "2065001062",
+            "name": "Gal Chechik"
+          },
+          {
+            "authorId": "2341437409",
+            "name": "Haggai Maron"
+          }
+        ],
+        "abstract": "The automated detection of hallucinations and training data contamination is pivotal to the safe deployment of Large Language Models (LLMs). These tasks are particularly challenging in settings where no access to model internals is available. Current approaches in this setup typically leverage only the probabilities of actual tokens in the text, relying on simple task-specific heuristics. Crucially, they overlook the information contained in the full sequence of next-token probability distributions. We propose to go beyond hand-crafted decision rules by learning directly from the complete observable output of LLMs — consisting not only of next-token probabilities, but also the full sequence of next-token distributions. We refer to this as the LLM Output Signature (LOS), and treat it as a reference data type for detecting hallucinations and data contamination. To that end, we introduce LOS-Net, a lightweight attention-based architecture trained on an efficient encoding of the LOS, which can provably approximate a broad class of existing techniques for both tasks. Empirically, LOS-Net achieves superior performance across diverse benchmarks and LLMs, while maintaining extremely low detection latency. Furthermore, it demonstrates promising transfer capabilities across datasets and LLMs."
+      },
+      {
+        "paperId": "3acaa8592735cd7fed7e4d1d251bfa894141e81b",
+        "externalIds": {
+          "DBLP": "conf/emnlp/XuYGJMGK25",
+          "ArXiv": "2507.11405",
+          "DOI": "10.48550/arXiv.2507.11405",
+          "CorpusId": 280291401
+        },
+        "title": "DCR: Quantifying Data Contamination in LLMs Evaluation",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.11405, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2153079650",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2238001867",
+            "name": "Nan Yan"
+          },
+          {
+            "authorId": "2304954016",
+            "name": "Shuhao Guan"
+          },
+          {
+            "authorId": "2278654158",
+            "name": "Changhong Jin"
+          },
+          {
+            "authorId": "2329737085",
+            "name": "Yuke Mei"
+          },
+          {
+            "authorId": "2403462252",
+            "name": "Yi Guo"
+          },
+          {
+            "authorId": "2266906186",
+            "name": "Mohand-Tahar Kechadi"
+          }
+        ],
+        "abstract": "The rapid advancement of large language models (LLMs) has heightened concerns about benchmark data contamination (BDC), where models inadvertently memorize evaluation data during the training process, inflating performance metrics, and undermining genuine generalization assessment. This paper introduces the Data Contamination Risk (DCR) framework, a lightweight, interpretable pipeline designed to detect and quantify BDC risk across four granular levels: semantic, informational, data, and label. By synthesizing contamination scores via a fuzzy inference system, DCR produces a unified DCR Factor that adjusts raw accuracy to reflect contamination-aware performance. Validated on 9 LLMs (0.5B-72B) across sentiment analysis, fake news detection, and arithmetic reasoning tasks, the DCR framework reliably diagnoses contamination severity and with accuracy adjusted using the DCR Factor to within 4% average error across the three benchmarks compared to the uncontaminated baseline. Emphasizing computational efficiency and transparency, DCR provides a practical tool for integrating contamination assessment into routine evaluations, fostering fairer comparisons and enhancing the credibility of LLM benchmarking practices."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "benchmark leakage",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "PubMedQA",
+    "results": [
+      {
+        "paperId": "f4bb7931e3eff050287989f2a8481f676479ff25",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2504-05074",
+          "ArXiv": "2504.05074",
+          "DOI": "10.48550/arXiv.2504.05074",
+          "CorpusId": 277622152
+        },
+        "title": "On the Performance of an Explainable Language Model on PubMedQA",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.05074, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2376331613",
+            "name": "V. Srinivasan"
+          },
+          {
+            "authorId": "40563018",
+            "name": "Vishaal Jatav"
+          },
+          {
+            "authorId": "52179979",
+            "name": "A. Chandrababu"
+          },
+          {
+            "authorId": "2146350083",
+            "name": "Geetika Sharma"
+          }
+        ],
+        "abstract": "Large language models (LLMs) have shown significant abilities in retrieving medical knowledge, reasoning over it and answering medical questions comparably to physicians. However, these models are not interpretable, hallucinate, are difficult to maintain and require enormous compute resources for training and inference. In this paper, we report results from Gyan, an explainable language model based on an alternative architecture, on the PubmedQA data set. The Gyan LLM is a compositional language model and the model is decoupled from knowledge. Gyan is trustable, transparent, does not hallucinate and does not require significant training or compute resources. Gyan is easily transferable across domains. Gyan-4.3 achieves SOTA results on PubmedQA with 87.1% accuracy compared to 82% by MedPrompt based on GPT-4 and 81.8% by Med-PaLM 2 (Google and DeepMind). We will be reporting results for other medical data sets - MedQA, MedMCQA, MMLU - Medicine in the future."
+      },
+      {
+        "paperId": "32c258f5f00463baee4c7e8610d3d170b2e0cb2b",
+        "externalIds": {
+          "DOI": "10.1109/AICCSA66935.2025.11315481",
+          "CorpusId": 284522686
+        },
+        "title": "Information Reasoning and Question Answering in Healthcare: A PubMedQA Benchmark Study",
+        "venue": "ACS/IEEE International Conference on Computer Systems and Applications",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AICCSA66935.2025.11315481?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AICCSA66935.2025.11315481, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2092365009",
+            "name": "Dina Sayed"
+          },
+          {
+            "authorId": "2257164235",
+            "name": "Heiko Schuldt"
+          }
+        ],
+        "abstract": "Information extraction and analysis in healthcare have benefited significantly from advances in the AI and NLP community in recent years, often directly impacting human lives or at least their well-being. However, processing and analyzing mostly unstructured and semi-structured health and biomedical information presents substantial challenges to researchers. The inherent complexity of the domain, limited data availability, data ambiguity, and the high cost of involving medical experts make supporting healthcare difficult. With the recent revolution in AI, particularly in Large Language Models (LLMs), the quality of analyses of these data has increased significantly - though it has not yet reached the level required by medical practitioners. In this work, we address the challenge of information reasoning and question answering, with a particular focus on healthcare. We conduct a detailed analysis of PubMedQA, one of the most challenging and prominent benchmarks. We design, implement, and evaluate Med-RCQ (Medical Reasoning by Concluding and Questioning), a novel LLM-based method to analyze health and biomedical information with the objective of supporting informed decisions. Our PubMedQA benchmark results show that MedRCQ outperforms most competing open approaches in terms of result quality and even provides similar results compared to large commercial models, while outperforming all other benchmark results in an ‘accuracy per number of model parameters’ metric."
+      },
+      {
+        "paperId": "aa9cb1e2244497aa8d6a6eafc7deb4beae0319ab",
+        "externalIds": {
+          "DOI": "10.1109/ICEC2NT65402.2025.11380163",
+          "CorpusId": 285805265
+        },
+        "title": "Interpretable Biomedical QA: Customizing Models for PubMedQA with Knowledge Distillation and XAI",
+        "venue": "2025 International Conference on Electronics and Computing, Communication Networking Automation Technologies (ICEC2NT)",
+        "year": 2025,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICEC2NT65402.2025.11380163?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICEC2NT65402.2025.11380163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "12243316",
+            "name": "Sanjeev Malik"
+          },
+          {
+            "authorId": "2355460886",
+            "name": "Nikita Singhal"
+          }
+        ],
+        "abstract": "Biomedical question answering (QA) is pivotal for advancing clinical decision-making, with PubMedQA serving as a critical benchmark to evaluate model performance in understanding complex medical texts. This paper presents a comprehensive study on customizing and evaluating state-of-the-art language models for PubMedQA, focusing on domainspecific pretraining and architectural optimizations. This study introduced novel experimental results from an extensive evaluation of models including BioMedBERT, PubMedBERT, SciBERT, BioBERT, and others, using the PubMedQA-Labeled (PQA-L) and PubMedQA-Artificial datasets. Our findings demonstrate significant performance improvements through techniques such as knowledge distillation, ensemble methods, Explainable AI and architectural modifications. The results underscore the potential of tailored models to democratize access to medical AI, particularly in resource-constrained settings. Leveraging Explainable AI (XAI), this research analyzed token-level attention weights to uncover critical factors influencing predictions, enhancing model interpretability. This approach challenges the black-box perception of AI, providing deeper insights into decision-making processes for biomedical QA."
+      },
+      {
+        "paperId": "6a6cbcc596758dd214120a1d51528ce55daa333d",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2305-07804",
+          "ArXiv": "2305.07804",
+          "DOI": "10.48550/arXiv.2305.07804",
+          "CorpusId": 258685548
+        },
+        "title": "Dr. LLaMA: Improving Small Language Models on PubMedQA via Generative Data Augmentation",
+        "venue": "arXiv.org",
+        "year": 2023,
+        "citationCount": 24,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2305.07804",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.07804, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2149504787",
+            "name": "Zhen Guo"
+          },
+          {
+            "authorId": "46808681",
+            "name": "Peiqi Wang"
+          },
+          {
+            "authorId": "2214531201",
+            "name": "Yanwei Wang"
+          },
+          {
+            "authorId": "19258777",
+            "name": "Shangdi Yu"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have made remarkable advancements in the field of natural language processing. However, their increasing size poses challenges in terms of computational cost. On the other hand, Small Language Models (SLMs) are known for their efficiency, but they often struggle with limited capacity and training data, especially in specific domains. In this paper, we introduce a novel method aimed at improving SLMs in the medical domain using LLM-based generative data augmentation. The objective of our approach is to develop more efficient and capable models that are specifically tailored for specialized applications. Through experiments conducted on the PubMedQA dataset, we demonstrate the effectiveness of LLMs in refining and diversifying existing question-answer pairs. This refinement process leads to improved performance in a significantly smaller model after fine-tuning. Notably, our best SLM, with under 1.6 billion parameters, outperforms the few-shot GPT-4 on the PubMedQA dataset. Our code and generated data are publicly available to facilitate further explorations."
+      },
+      {
+        "paperId": "dd98356d035d4ce501b866e1737ef9ff4ab1ffe0",
+        "externalIds": {
+          "DOI": "10.1109/ICECTE69292.2026.11429214",
+          "CorpusId": 286605488
+        },
+        "title": "Balancing Binary Biomedical QA: Parameter-Efficient Instruction Tuning on BioASQ and PubMedQA",
+        "venue": "2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)",
+        "year": 2026,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICECTE69292.2026.11429214?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICECTE69292.2026.11429214, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2424290420",
+            "name": "Tamal Kumar Sarker"
+          },
+          {
+            "authorId": "2424287569",
+            "name": "Khandakar Jahidul Islam"
+          },
+          {
+            "authorId": "2089430755",
+            "name": "Utpaul Sarker"
+          }
+        ],
+        "abstract": "Large language models (LLMs) are prone to class imbalance bias, often overpredicting \"Yes\" or \"No\" due to skewed data arrangements, endangering in safety-critical biomedical QA tasks. In clinical contexts, such bias is particularly troublesome in clinical applications, as it may misinform medical decisions by incorrectly classifying negative cases as positive. In this work, We propose a parameter-efficient instruction-tuning framework for biomedical Yes/No QA, employing 4-bit quantized LoRA adapters to fine-tune three key models - Phi-3 Mini Instruct, Qwen2.5-1.5B, and BioGPT.We use two separate biomedical QA benchmarks to evaluate our models: We utilize two benchmark datasets: BioASQ Yes/No, which provides finely crafted QA pairs with brief explanations, and PubMedQA Yes/No, built from questions constructed over full research abstracts. To ensure fairness and consistency, we use set segmented splits and a single prompt template for every model. Evaluation is conducted using four metrics: Accuracy, Balanced Accuracy, Cohen’s κ, and Matthews Correlation Coefficient (MCC). phi3_mini_instruct performs best on PubMedQA (89% accuracy, MCC = 0.77), whereas Qwen2.5-1.5B provides the most consistent performance on BioASQ (72% accuracy, MCC = 0.08). In contrast, BioGPT shows bias and underachieves the general-purpose models, even after being pretrained on biomedical text."
+      },
+      {
+        "paperId": "b34c0b0169925a6c7f14e3de9764ed9505f30de3",
+        "externalIds": {
+          "PubMedCentral": "11922739",
+          "DOI": "10.1038/s41591-024-03423-7",
+          "CorpusId": 275427710,
+          "PubMed": "39779926"
+        },
+        "title": "Toward expert-level medical question answering with large language models",
+        "venue": "Nature Medicine",
+        "year": 2025,
+        "citationCount": 841,
+        "influentialCitationCount": 48,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBYNCND",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11922739, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2268759673",
+            "name": "Karan Singhal"
+          },
+          {
+            "authorId": "2244651851",
+            "name": "Tao Tu"
+          },
+          {
+            "authorId": "2051681709",
+            "name": "Juraj Gottweis"
+          },
+          {
+            "authorId": "144042306",
+            "name": "R. Sayres"
+          },
+          {
+            "authorId": "2618745",
+            "name": "Ellery Wulczyn"
+          },
+          {
+            "authorId": "2224893214",
+            "name": "Mohamed Amin"
+          },
+          {
+            "authorId": "2269258459",
+            "name": "Le Hou"
+          },
+          {
+            "authorId": "2339397666",
+            "name": "Kevin Clark"
+          },
+          {
+            "authorId": "2261926298",
+            "name": "Stephen R. Pfohl"
+          },
+          {
+            "authorId": "2225551602",
+            "name": "Heather Cole-Lewis"
+          },
+          {
+            "authorId": "2217366399",
+            "name": "Darlene Neal"
+          },
+          {
+            "authorId": "2211605631",
+            "name": "Q. Rashid"
+          },
+          {
+            "authorId": "10685155",
+            "name": "Mike Schaekermann"
+          },
+          {
+            "authorId": "2217861514",
+            "name": "Amy Wang"
+          },
+          {
+            "authorId": "2156939237",
+            "name": "D. Dash"
+          },
+          {
+            "authorId": "2249529786",
+            "name": "Jonathan H. Chen"
+          },
+          {
+            "authorId": "2258980963",
+            "name": "Nigam H. Shah"
+          },
+          {
+            "authorId": "2301063374",
+            "name": "Sami Lachgar"
+          },
+          {
+            "authorId": "2265578964",
+            "name": "P. Mansfield"
+          },
+          {
+            "authorId": "28612243",
+            "name": "Sushant Prakash"
+          },
+          {
+            "authorId": "2153302910",
+            "name": "Bradley Green"
+          },
+          {
+            "authorId": "1896724",
+            "name": "Ewa Dominowska"
+          },
+          {
+            "authorId": "2086857127",
+            "name": "Blaise Agüera y Arcas"
+          },
+          {
+            "authorId": "2213266",
+            "name": "Nenad Tomašev"
+          },
+          {
+            "authorId": "2144443888",
+            "name": "Yun Liu"
+          },
+          {
+            "authorId": "2288184229",
+            "name": "Renee Wong"
+          },
+          {
+            "authorId": "52326632",
+            "name": "Christopher Semturs"
+          },
+          {
+            "authorId": "2268760043",
+            "name": "S. Mahdavi"
+          },
+          {
+            "authorId": "2269147696",
+            "name": "Joelle K. Barral"
+          },
+          {
+            "authorId": "2324791213",
+            "name": "Dale R. Webster"
+          },
+          {
+            "authorId": "102388768",
+            "name": "G. Corrado"
+          },
+          {
+            "authorId": "2269148232",
+            "name": "Yossi Matias"
+          },
+          {
+            "authorId": "40151244",
+            "name": "Shekoofeh Azizi"
+          },
+          {
+            "authorId": "2213433382",
+            "name": "A. Karthikesalingam"
+          },
+          {
+            "authorId": "144223091",
+            "name": "Vivek Natarajan"
+          }
+        ],
+        "abstract": "Large language models (LLMs) have shown promise in medical question answering, with Med-PaLM being the first to exceed a ‘passing’ score in United States Medical Licensing Examination style questions. However, challenges remain in long-form medical question answering and handling real-world workflows. Here, we present Med-PaLM 2, which bridges these gaps with a combination of base LLM improvements, medical domain fine-tuning and new strategies for improving reasoning and grounding through ensemble refinement and chain of retrieval. Med-PaLM 2 scores up to 86.5% on the MedQA dataset, improving upon Med-PaLM by over 19%, and demonstrates dramatic performance increases across MedMCQA, PubMedQA and MMLU clinical topics datasets. Our detailed human evaluations framework shows that physicians prefer Med-PaLM 2 answers to those from other physicians on eight of nine clinical axes. Med-PaLM 2 also demonstrates significant improvements over its predecessor across all evaluation metrics, particularly on new adversarial datasets designed to probe LLM limitations (P < 0.001). In a pilot study using real-world medical questions, specialists preferred Med-PaLM 2 answers to generalist physician answers 65% of the time. While specialist answers were still preferred overall, both specialists and generalists rated Med-PaLM 2 to be as safe as physician answers, demonstrating its growing potential in real-world medical applications. With an improved framework for model development and evaluation, a large language model is shown to provide answers to medical questions that are comparable or preferred with respect to those provided by human physicians."
+      },
+      {
+        "paperId": "44279244407a64431810f982be6d0c7da4429dd7",
+        "externalIds": {
+          "ArXiv": "2210.10341",
+          "DBLP": "journals/bib/LuoSXQZPL22",
+          "DOI": "10.1093/bib/bbac409",
+          "CorpusId": 252542956,
+          "PubMed": "36156661"
+        },
+        "title": "BioGPT: Generative Pre-trained Transformer for Biomedical Text Generation and Mining",
+        "venue": "Briefings Bioinform.",
+        "year": 2022,
+        "citationCount": 1329,
+        "influentialCitationCount": 88,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2210.10341",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2210.10341, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "3440939",
+            "name": "Renqian Luo"
+          },
+          {
+            "authorId": "2186266093",
+            "name": "Liai Sun"
+          },
+          {
+            "authorId": "2111056280",
+            "name": "Yingce Xia"
+          },
+          {
+            "authorId": "143826491",
+            "name": "Tao Qin"
+          },
+          {
+            "authorId": "72655349",
+            "name": "Sheng Zhang"
+          },
+          {
+            "authorId": "1759772",
+            "name": "Hoifung Poon"
+          },
+          {
+            "authorId": "2110264337",
+            "name": "Tie-Yan Liu"
+          }
+        ],
+        "abstract": "Pre-trained language models have attracted increasing attention in the biomedical domain, inspired by their great success in the general natural language domain. Among the two main branches of pre-trained language models in the general language domain, i.e. BERT (and its variants) and GPT (and its variants), the first one has been extensively studied in the biomedical domain, such as BioBERT and PubMedBERT. While they have achieved great success on a variety of discriminative downstream biomedical tasks, the lack of generation ability constrains their application scope. In this paper, we propose BioGPT, a domain-specific generative Transformer language model pre-trained on large-scale biomedical literature. We evaluate BioGPT on six biomedical natural language processing tasks and demonstrate that our model outperforms previous models on most tasks. Especially, we get 44.98%, 38.42% and 40.76% F1 score on BC5CDR, KD-DTI and DDI end-to-end relation extraction tasks, respectively, and 78.2% accuracy on PubMedQA, creating a new record. Our case study on text generation further demonstrates the advantage of BioGPT on biomedical literature to generate fluent descriptions for biomedical terms."
+      },
+      {
+        "paperId": "7d645a3fd276918374fd9483fd675c28e46506d1",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2211-09085",
+          "ArXiv": "2211.09085",
+          "CorpusId": 253553203
+        },
+        "title": "Galactica: A Large Language Model for Science",
+        "venue": "arXiv.org",
+        "year": 2022,
+        "citationCount": 1006,
+        "influentialCitationCount": 98,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.09085, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2110697298",
+            "name": "Ross Taylor"
+          },
+          {
+            "authorId": "2059886128",
+            "name": "Marcin Kardas"
+          },
+          {
+            "authorId": "7153363",
+            "name": "Guillem Cucurull"
+          },
+          {
+            "authorId": "90745780",
+            "name": "Thomas Scialom"
+          },
+          {
+            "authorId": "4305645",
+            "name": "A. Hartshorn"
+          },
+          {
+            "authorId": "2018367",
+            "name": "Elvis Saravia"
+          },
+          {
+            "authorId": "38579672",
+            "name": "Andrew Poulton"
+          },
+          {
+            "authorId": "2190957318",
+            "name": "Viktor Kerkez"
+          },
+          {
+            "authorId": "1962768",
+            "name": "Robert Stojnic"
+          }
+        ],
+        "abstract": "Information overload is a major obstacle to scientific progress. The explosive growth in scientific literature and data has made it ever harder to discover useful insights in a large mass of information. Today scientific knowledge is accessed through search engines, but they are unable to organize scientific knowledge alone. In this paper we introduce Galactica: a large language model that can store, combine and reason about scientific knowledge. We train on a large scientific corpus of papers, reference material, knowledge bases and many other sources. We outperform existing models on a range of scientific tasks. On technical knowledge probes such as LaTeX equations, Galactica outperforms the latest GPT-3 by 68.2% versus 49.0%. Galactica also performs well on reasoning, outperforming Chinchilla on mathematical MMLU by 41.3% to 35.7%, and PaLM 540B on MATH with a score of 20.4% versus 8.8%. It also sets a new state-of-the-art on downstream tasks such as PubMedQA and MedMCQA dev of 77.6% and 52.9%. And despite not being trained on a general corpus, Galactica outperforms BLOOM and OPT-175B on BIG-bench. We believe these results demonstrate the potential for language models as a new interface for science. We open source the model for the benefit of the scientific community."
+      },
+      {
+        "paperId": "3362b6251b66a74afb034c834b189581b15d6836",
+        "externalIds": {
+          "DBLP": "journals/npjdm/XieCCPHLPHZKZQHSOWXB25",
+          "PubMedCentral": "11882967",
+          "DOI": "10.1038/s41746-025-01533-1",
+          "CorpusId": 276810708,
+          "PubMed": "40044845"
+        },
+        "title": "Medical foundation large language models for comprehensive text analysis and beyond",
+        "venue": "npj Digital Medicine",
+        "year": 2025,
+        "citationCount": 63,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBYNCND",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11882967, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2292723737",
+            "name": "Qianqian Xie"
+          },
+          {
+            "authorId": "2256591935",
+            "name": "Qingyu Chen"
+          },
+          {
+            "authorId": "7785729",
+            "name": "Aokun Chen"
+          },
+          {
+            "authorId": "2113568188",
+            "name": "Cheng Peng"
+          },
+          {
+            "authorId": "2327181597",
+            "name": "Yan Hu"
+          },
+          {
+            "authorId": "2284949222",
+            "name": "Fongci Lin"
+          },
+          {
+            "authorId": "2274126492",
+            "name": "Xueqing Peng"
+          },
+          {
+            "authorId": "2316786271",
+            "name": "Jimin Huang"
+          },
+          {
+            "authorId": "2284829530",
+            "name": "Jeffrey Zhang"
+          },
+          {
+            "authorId": "65893930",
+            "name": "V. Keloth"
+          },
+          {
+            "authorId": "2298414671",
+            "name": "Xinyu Zhou"
+          },
+          {
+            "authorId": "2329906511",
+            "name": "Lingfei Qian"
+          },
+          {
+            "authorId": "2284834705",
+            "name": "Huan He"
+          },
+          {
+            "authorId": "2298834107",
+            "name": "Dennis Shung"
+          },
+          {
+            "authorId": "2233274533",
+            "name": "L. Ohno-Machado"
+          },
+          {
+            "authorId": "2150154928",
+            "name": "Yonghui Wu"
+          },
+          {
+            "authorId": "2274744074",
+            "name": "Hua Xu"
+          },
+          {
+            "authorId": "2256980570",
+            "name": "Jiang Bian"
+          }
+        ],
+        "abstract": "Recent advancements in large language models (LLMs) show significant potential in medical applications but are hindered by limited specialized medical knowledge. We present Me-LLaMA, a family of open-source medical LLMs integrating extensive domain-specific knowledge with robust instruction-following capabilities. Me-LLaMA is developed through continual pretraining and instruction tuning of LLaMA2 models using diverse biomedical and clinical data sources (e.g., biomedical literature and clinical notes). We evaluated Me-LLaMA on six text analysis tasks using 12 benchmarks (e.g., PubMedQA and MIMIC-CXR) and assessed its clinical utility in complex case diagnosis through automatic and human evaluations. Me-LLaMA outperforms existing open medical LLMs in zero-shot and supervised settings and surpasses ChatGPT and GPT-4 after task-specific instruction tuning for most text analysis tasks. Its performance is also comparable to ChatGPT and GPT-4 for diagnosing complex clinical cases. Our findings highlight the importance of combining domain-specific continual pretraining with instruction tuning to enhance performance in medical LLMs."
+      },
+      {
+        "paperId": "5ccaab6b8ec0811ffd020abdcb98aee3ea9119eb",
+        "externalIds": {
+          "DBLP": "journals/frai/TangsrivimolDVWEWHGSK25",
+          "PubMedCentral": "11821943",
+          "DOI": "10.3389/frai.2025.1518049",
+          "CorpusId": 276032214,
+          "PubMed": "39949509"
+        },
+        "title": "Benefits, limits, and risks of ChatGPT in medicine",
+        "venue": "Frontiers Artif. Intell.",
+        "year": 2025,
+        "citationCount": 49,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.3389/frai.2025.1518049",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11821943, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2346657444",
+            "name": "Jonathan A. Tangsrivimol"
+          },
+          {
+            "authorId": "2150572819",
+            "name": "Erfan Darzidehkalani"
+          },
+          {
+            "authorId": "2073655551",
+            "name": "H. H. Virk"
+          },
+          {
+            "authorId": "2305211938",
+            "name": "Zhen Wang"
+          },
+          {
+            "authorId": "2343193517",
+            "name": "Jan Egger"
+          },
+          {
+            "authorId": "2285929825",
+            "name": "Michelle Wang"
+          },
+          {
+            "authorId": "2243196164",
+            "name": "Sean Hacking"
+          },
+          {
+            "authorId": "2121562557",
+            "name": "B. Glicksberg"
+          },
+          {
+            "authorId": "2334286527",
+            "name": "Markus Strauss"
+          },
+          {
+            "authorId": "8633608",
+            "name": "C. Krittanawong"
+          }
+        ],
+        "abstract": "ChatGPT represents a transformative technology in healthcare, with demonstrated impacts across clinical practice, medical education, and research. Studies show significant efficiency gains, including 70% reduction in administrative time for discharge summaries and achievement of medical professional-level performance on standardized tests (60% accuracy on USMLE, 78.2% on PubMedQA). ChatGPT offers personalized learning platforms, automated scoring, and instant access to vast medical knowledge in medical education, addressing resource limitations and enhancing training efficiency. It streamlines clinical workflows by supporting triage processes, generating discharge summaries, and alleviating administrative burdens, allowing healthcare professionals to focus more on patient care. Additionally, ChatGPT facilitates remote monitoring and chronic disease management, providing personalized advice, medication reminders, and emotional support, thus bridging gaps between clinical visits. Its ability to process and synthesize vast amounts of data accelerates research workflows, aiding in literature reviews, hypothesis generation, and clinical trial designs. This paper aims to gather and analyze published studies involving ChatGPT, focusing on exploring its advantages and disadvantages within the healthcare context. To aid in understanding and progress, our analysis is organized into six key areas: (1) Information and Education, (2) Triage and Symptom Assessment, (3) Remote Monitoring and Support, (4) Mental Healthcare Assistance, (5) Research and Decision Support, and (6) Language Translation. Realizing ChatGPT’s full potential in healthcare requires addressing key limitations, such as its lack of clinical experience, inability to process visual data, and absence of emotional intelligence. Ethical, privacy, and regulatory challenges further complicate its integration. Future improvements should focus on enhancing accuracy, developing multimodal AI models, improving empathy through sentiment analysis, and safeguarding against artificial hallucination. While not a replacement for healthcare professionals, ChatGPT can serve as a powerful assistant, augmenting their expertise to improve efficiency, accessibility, and quality of care. This collaboration ensures responsible adoption of AI in transforming healthcare delivery. While ChatGPT demonstrates significant potential in healthcare transformation, systematic evaluation of its implementation across different healthcare settings reveals varying levels of evidence quality–from robust randomized trials in medical education to preliminary observational studies in clinical practice. This heterogeneity in evidence quality necessitates a structured approach to future research and implementation."
+      },
+      {
+        "paperId": "44d16a076c00ecada3d425203377e4ec951c4ed0",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2311-10537",
+          "ArXiv": "2311.10537",
+          "DOI": "10.48550/arXiv.2311.10537",
+          "CorpusId": 265281260
+        },
+        "title": "MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2023,
+        "citationCount": 399,
+        "influentialCitationCount": 34,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2311.10537, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "47274259",
+            "name": "Xiangru Tang"
+          },
+          {
+            "authorId": "2187586628",
+            "name": "Anni Zou"
+          },
+          {
+            "authorId": "3322871",
+            "name": "Zhuosheng Zhang"
+          },
+          {
+            "authorId": "46316984",
+            "name": "Yilun Zhao"
+          },
+          {
+            "authorId": "2267545169",
+            "name": "Xingyao Zhang"
+          },
+          {
+            "authorId": "2266838179",
+            "name": "Arman Cohan"
+          },
+          {
+            "authorId": "2201323142",
+            "name": "Mark B. Gerstein"
+          }
+        ],
+        "abstract": "Large language models (LLMs), despite their remarkable progress across various general domains, encounter significant barriers in medicine and healthcare. This field faces unique challenges such as domain-specific terminologies and reasoning over specialized knowledge. To address these issues, we propose MedAgents, a novel multi-disciplinary collaboration framework for the medical domain. MedAgents leverages LLM-based agents in a role-playing setting that participate in a collaborative multi-round discussion, thereby enhancing LLM proficiency and reasoning capabilities. This training-free framework encompasses five critical steps: gathering domain experts, proposing individual analyses, summarising these analyses into a report, iterating over discussions until a consensus is reached, and ultimately making a decision. Our work focuses on the zero-shot setting, which is applicable in real-world scenarios. Experimental results on nine datasets (MedQA, MedMCQA, PubMedQA, and six subtasks from MMLU) establish that our proposed MedAgents framework excels at mining and harnessing the medical expertise within LLMs, as well as extending its reasoning abilities. Our code can be found at https://github.com/gersteinlab/MedAgents."
+      },
+      {
+        "paperId": "910d26adcd83c4ec36f365198f8b2224b14ad6c9",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-14302",
+          "ArXiv": "2502.14302",
+          "DOI": "10.48550/arXiv.2502.14302",
+          "CorpusId": 276482288
+        },
+        "title": "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 30,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.14302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1824294087",
+            "name": "Shrey Pandit"
+          },
+          {
+            "authorId": "2144295598",
+            "name": "Jiawei Xu"
+          },
+          {
+            "authorId": "2344392852",
+            "name": "Junyuan Hong"
+          },
+          {
+            "authorId": "2237946662",
+            "name": "Zhangyang Wang"
+          },
+          {
+            "authorId": "2034263179",
+            "name": "Tianlong Chen"
+          },
+          {
+            "authorId": "2267887786",
+            "name": "Kaidi Xu"
+          },
+          {
+            "authorId": "2345318931",
+            "name": "Ying Ding"
+          }
+        ],
+        "abstract": "Advancements in Large Language Models (LLMs) and their increasing use in medical question-answering necessitate rigorous evaluation of their reliability. A critical challenge lies in hallucination, where models generate plausible yet factually incorrect outputs. In the medical domain, this poses serious risks to patient safety and clinical decision-making. To address this, we introduce MedHallu, the first benchmark specifically designed for medical hallucination detection. MedHallu comprises 10,000 high-quality question-answer pairs derived from PubMedQA, with hallucinated answers systematically generated through a controlled pipeline. Our experiments show that state-of-the-art LLMs, including GPT-4o, Llama-3.1, and the medically fine-tuned UltraMedical, struggle with this binary hallucination detection task, with the best model achieving an F1 score as low as 0.625 for detecting\"hard\"category hallucinations. Using bidirectional entailment clustering, we show that harder-to-detect hallucinations are semantically closer to ground truth. Through experiments, we also show incorporating domain-specific knowledge and introducing a\"not sure\"category as one of the answer categories improves the precision and F1 scores by up to 38% relative to baselines."
+      },
+      {
+        "paperId": "45314de9beef18dcce99f0bc5e067446a0196505",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2402-19371",
+          "PubMedCentral": "11187169",
+          "ArXiv": "2402.19371",
+          "DOI": "10.1038/s41598-024-64827-6",
+          "CorpusId": 268091253,
+          "PubMed": "38898116"
+        },
+        "title": "OpenMedLM: prompt engineering can out-perform fine-tuning in medical question-answering with open-source large language models",
+        "venue": "Scientific Reports",
+        "year": 2024,
+        "citationCount": 90,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "https://www.nature.com/articles/s41598-024-64827-6.pdf",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.19371, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2123677328",
+            "name": "Jenish Maharjan"
+          },
+          {
+            "authorId": "2007514579",
+            "name": "A. Garikipati"
+          },
+          {
+            "authorId": "2164722345",
+            "name": "N. Singh"
+          },
+          {
+            "authorId": "2288528711",
+            "name": "Leo Cyrus"
+          },
+          {
+            "authorId": "2237306653",
+            "name": "Mayank Sharma"
+          },
+          {
+            "authorId": "2247184199",
+            "name": "M. Ciobanu"
+          },
+          {
+            "authorId": "1396456805",
+            "name": "G. Barnes"
+          },
+          {
+            "authorId": "2240584119",
+            "name": "R. Thapa"
+          },
+          {
+            "authorId": "33697980",
+            "name": "Q. Mao"
+          },
+          {
+            "authorId": "2261527",
+            "name": "R. Das"
+          }
+        ],
+        "abstract": "LLMs can accomplish specialized medical knowledge tasks, however, equitable access is hindered by the extensive fine-tuning, specialized medical data requirement, and limited access to proprietary models. Open-source (OS) medical LLMs show performance improvements and provide the transparency and compliance required in healthcare. We present OpenMedLM, a prompting platform delivering state-of-the-art (SOTA) performance for OS LLMs on medical benchmarks. We evaluated OS foundation LLMs (7B-70B) on medical benchmarks (MedQA, MedMCQA, PubMedQA, MMLU medical-subset) and selected Yi34B for developing OpenMedLM. Prompting strategies included zero-shot, few-shot, chain-of-thought, and ensemble/self-consistency voting. OpenMedLM delivered OS SOTA results on three medical LLM benchmarks, surpassing previous best-performing OS models that leveraged costly and extensive fine-tuning. OpenMedLM displays the first results to date demonstrating the ability of OS foundation models to optimize performance, absent specialized fine-tuning. The model achieved 72.6% accuracy on MedQA, outperforming the previous SOTA by 2.4%, and 81.7% accuracy on MMLU medical-subset, establishing itself as the first OS LLM to surpass 80% accuracy on this benchmark. Our results highlight medical-specific emergent properties in OS LLMs not documented elsewhere to date and validate the ability of OS models to accomplish healthcare tasks, highlighting the benefits of prompt engineering to improve performance of accessible LLMs for medical applications."
+      },
+      {
+        "paperId": "d697b440dd0e65a05fe027e4c0ea85f62dcba033",
+        "externalIds": {
+          "DBLP": "journals/patterns/LievinHMW24",
+          "ArXiv": "2207.08143",
+          "PubMedCentral": "10935498",
+          "DOI": "10.1016/j.patter.2024.100943",
+          "CorpusId": 250627547,
+          "PubMed": "38487804"
+        },
+        "title": "Can large language models reason about medical questions?",
+        "venue": "Patterns",
+        "year": 2022,
+        "citationCount": 443,
+        "influentialCitationCount": 22,
+        "openAccessPdf": {
+          "url": "http://www.cell.com/article/S2666389924000424/pdf",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2207.08143, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2067078585",
+            "name": "Valentin Li'evin"
+          },
+          {
+            "authorId": "4475692",
+            "name": "C. Hother"
+          },
+          {
+            "authorId": "2187580291",
+            "name": "A. Motzfeldt"
+          },
+          {
+            "authorId": "1724252",
+            "name": "O. Winther"
+          }
+        ],
+        "abstract": "Summary Although large language models often produce impressive outputs, it remains unclear how they perform in real-world scenarios requiring strong reasoning skills and expert domain knowledge. We set out to investigate whether closed- and open-source models (GPT-3.5, Llama 2, etc.) can be applied to answer and reason about difficult real-world-based questions. We focus on three popular medical benchmarks (MedQA-US Medical Licensing Examination [USMLE], MedMCQA, and PubMedQA) and multiple prompting scenarios: chain of thought (CoT; think step by step), few shot, and retrieval augmentation. Based on an expert annotation of the generated CoTs, we found that InstructGPT can often read, reason, and recall expert knowledge. Last, by leveraging advances in prompt engineering (few-shot and ensemble methods), we demonstrated that GPT-3.5 not only yields calibrated predictive distributions but also reaches the passing score on three datasets: MedQA-USMLE (60.2%), MedMCQA (62.7%), and PubMedQA (78.2%). Open-source models are closing the gap: Llama 2 70B also passed the MedQA-USMLE with 62.5% accuracy."
+      },
+      {
+        "paperId": "cd2d1a0f73ba8c40f882a386cd367899785fb877",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2304-14454",
+          "DOI": "10.48550/arXiv.2304.14454",
+          "CorpusId": 263888272
+        },
+        "title": "PMC-LLaMA: Further Finetuning LLaMA on Medical Papers",
+        "venue": "arXiv.org",
+        "year": 2023,
+        "citationCount": 170,
+        "influentialCitationCount": 17,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2304.14454",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2304.14454?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2304.14454, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2146289861",
+            "name": "Chaoyi Wu"
+          },
+          {
+            "authorId": "46448559",
+            "name": "Xiaoman Zhang"
+          },
+          {
+            "authorId": "2254854742",
+            "name": "Ya Zhang"
+          },
+          {
+            "authorId": "2108846176",
+            "name": "Yanfeng Wang"
+          },
+          {
+            "authorId": "2239247182",
+            "name": "Weidi Xie"
+          }
+        ],
+        "abstract": null
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "MMLU clinical",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "training data leakage",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "data contamination benchmark",
+    "results": [
+      {
+        "paperId": "0fad9dd4f0ea41732594f90209907bfad1ba506e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2406-04244",
+          "ArXiv": "2406.04244",
+          "DOI": "10.48550/arXiv.2406.04244",
+          "CorpusId": 270285708
+        },
+        "title": "Benchmark Data Contamination of Large Language Models: A Survey",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 106,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.04244, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2153079650",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2304954016",
+            "name": "Shuhao Guan"
+          },
+          {
+            "authorId": "2304952028",
+            "name": "Derek Greene"
+          },
+          {
+            "authorId": "2266906186",
+            "name": "Mohand-Tahar Kechadi"
+          }
+        ],
+        "abstract": "The rapid development of Large Language Models (LLMs) like GPT-4, Claude-3, and Gemini has transformed the field of natural language processing. However, it has also resulted in a significant issue known as Benchmark Data Contamination (BDC). This occurs when language models inadvertently incorporate evaluation benchmark information from their training data, leading to inaccurate or unreliable performance during the evaluation phase of the process. This paper reviews the complex challenge of BDC in LLM evaluation and explores alternative assessment methods to mitigate the risks associated with traditional benchmarks. The paper also examines challenges and future directions in mitigating BDC risks, highlighting the complexity of the issue and the need for innovative solutions to ensure the reliability of LLM evaluation in real-world applications."
+      },
+      {
+        "paperId": "b0dbcb0aa35c919e1bc75ebc3d0f8a86a7cd3692",
+        "externalIds": {
+          "DBLP": "conf/icml/00100L0025",
+          "ArXiv": "2503.16402",
+          "DOI": "10.48550/arXiv.2503.16402",
+          "CorpusId": 277150897
+        },
+        "title": "The Emperor's New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 9,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.16402, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2256179004",
+            "name": "Yifan Sun"
+          },
+          {
+            "authorId": "2276765112",
+            "name": "Hanru Wang"
+          },
+          {
+            "authorId": "2319217568",
+            "name": "Dongbai Li"
+          },
+          {
+            "authorId": "2318471548",
+            "name": "Ganghui Wang"
+          },
+          {
+            "authorId": "2332446768",
+            "name": "Huan Zhang"
+          }
+        ],
+        "abstract": "Benchmark Data Contamination (BDC)-the inclusion of benchmark testing samples in the training set-has raised increasing concerns in Large Language Model (LLM) evaluation, leading to falsely inflated performance estimates and undermining evaluation reliability. To address this, researchers have proposed various mitigation strategies to update existing benchmarks, including modifying original questions or generating new ones based on them. However, a rigorous examination of the effectiveness of these mitigation strategies remains lacking. In this paper, we design a systematic and controlled pipeline along with two novel metrics-fidelity and contamination resistance-to provide a fine-grained and comprehensive assessment of existing BDC mitigation strategies. Previous assessment methods, such as accuracy drop and accuracy matching, focus solely on aggregate accuracy, often leading to incomplete or misleading conclusions. Our metrics address this limitation by emphasizing question-level evaluation result matching. Extensive experiments with 10 LLMs, 5 benchmarks, 20 BDC mitigation strategies, and 2 contamination scenarios reveal that no existing strategy significantly improves resistance over the vanilla case (i.e., no benchmark update) across all benchmarks, and none effectively balances fidelity and contamination resistance. These findings underscore the urgent need for designing more effective BDC mitigation strategies. Our code repository is available at https://github.com/ASTRAL-Group/BDC_mitigation_assessment."
+      },
+      {
+        "paperId": "0c0116a9f00bca1ba7f5d117fc3991aced84cd84",
+        "externalIds": {
+          "DBLP": "conf/bigdataconf/XuK25",
+          "DOI": "10.1109/BigData66926.2025.11402039",
+          "CorpusId": 286328469
+        },
+        "title": "Analysis of Semantic Benchmark Data Contamination Attack for LLM-Driven Fake News Detection",
+        "venue": "BigData Congress [Services Society]",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData66926.2025.11402039?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData66926.2025.11402039, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2153079650",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2266906186",
+            "name": "Mohand-Tahar Kechadi"
+          }
+        ],
+        "abstract": "Large Language Model (LLM) benchmarks are critical for measuring progress, but their integrity is at risk due to data contamination, which can be maliciously used to inflate performance. This paper assesses the effectiveness of semantic-level data contamination attacks, where attackers inject topically related, unlabeled data into a pre-training corpus to increase the model's scores on a specific benchmark artificially. We conduct a large-scale empirical study focusing on fake news detection, simulating this attack on nine LLMs (ranging from 0.5B to 72B parameters) using both open-source (InstructLM) and closed-source (Qwen2.5) training data, based on the LIAR2 dataset. Our findings show that the attack is highly effective, as increasing the proportion of semantic contaminants systematically and significantly boosts accuracy across all models and scenarios. This artificial performance boost results not from improved reasoning but from the model learning topical shortcuts, creating a dangerous illusion of capability. These results reveal a key vulnerability in static evaluation methods, indicating that leaderboard scores can be manipulated and may not accurately reflect a model's true, generalizable skills, highlighting the urgent need for more robust, attack-resistant evaluation methods."
+      },
+      {
+        "paperId": "cd2f4aaf98bb1e020cff310000c8049d3460c54e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2310-18018",
+          "ArXiv": "2310.18018",
+          "DOI": "10.48550/arXiv.2310.18018",
+          "CorpusId": 264555419
+        },
+        "title": "NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2023,
+        "citationCount": 316,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.18018, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1724648481",
+            "name": "Oscar Sainz"
+          },
+          {
+            "authorId": "1602998334",
+            "name": "Jon Ander Campos"
+          },
+          {
+            "authorId": "1453724884",
+            "name": "Iker García-Ferrero"
+          },
+          {
+            "authorId": "2226458991",
+            "name": "Julen Etxaniz"
+          },
+          {
+            "authorId": "2251043402",
+            "name": "Oier López de Lacalle"
+          },
+          {
+            "authorId": "2064112151",
+            "name": "Eneko Agirre"
+          }
+        ],
+        "abstract": "In this position paper, we argue that the classical evaluation on Natural Language Processing (NLP) tasks using annotated benchmarks is in trouble. The worst kind of data contamination happens when a Large Language Model (LLM) is trained on the test split of a benchmark, and then evaluated in the same benchmark. The extent of the problem is unknown, as it is not straightforward to measure. Contamination causes an overestimation of the performance of a contaminated model in a target benchmark and associated task with respect to their non-contaminated counterparts. The consequences can be very harmful, with wrong scientific conclusions being published while other correct ones are discarded. This position paper defines different levels of data contamination and argues for a community effort, including the development of automatic and semi-automatic measures to detect when data from a benchmark was exposed to a model, and suggestions for flagging papers with conclusions that are compromised by data contamination."
+      },
+      {
+        "paperId": "ce2cda821b4c6a28c9477aac03ca918f7319b9cb",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2503-04149",
+          "ArXiv": "2503.04149",
+          "DOI": "10.48550/arXiv.2503.04149",
+          "CorpusId": 276812912
+        },
+        "title": "Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 22,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.04149, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2347695427",
+            "name": "Simin Chen"
+          },
+          {
+            "authorId": "2182607680",
+            "name": "Pranav Pusarla"
+          },
+          {
+            "authorId": "2347039050",
+            "name": "Baishakhi Ray"
+          }
+        ],
+        "abstract": "The rapid evolution of code largelanguage models underscores the need for effective and transparent benchmarking of their reasoning capabilities. However, the current benchmarking approach heavily depends on publicly available, human-created datasets. The widespread use of these fixed benchmark datasets makes the benchmarking process to be static and thus particularly susceptible to data contamination, an unavoidable consequence of the extensive data collection processes used to train Code LLMs. Existing approaches that address data contamination often suffer from human effort limitations and imbalanced problem complexity. To tackle these challenges, we propose \\tool, a novel benchmarking suite for evaluating Code LLMs under potential data contamination. Given a seed programming problem, \\tool employs multiple agents to extract and modify the context without altering the core logic, generating semantically equivalent variations. We introduce a dynamic data generation methods and conduct empirical studies on two seed datasets across 21 Code LLMs. Results show that \\tool effectively benchmarks reasoning capabilities under contamination risks while generating diverse problem sets to ensure consistent and reliable evaluations."
+      },
+      {
+        "paperId": "8b6899dea6864910e37a70fe8669a6682e68513c",
+        "externalIds": {
+          "ArXiv": "2503.13572",
+          "DBLP": "journals/corr/abs-2503-13572",
+          "DOI": "10.1109/ICLAD65226.2025.00017",
+          "CorpusId": 277104921
+        },
+        "title": "VeriContaminated: Assessing LLM-Driven Verilog Coding for Data Contamination",
+        "venue": "2025 IEEE International Conference on LLM-Aided Design (ICLAD)",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.13572, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2215988074",
+            "name": "Zeng Wang"
+          },
+          {
+            "authorId": "2284694862",
+            "name": "Minghao Shao"
+          },
+          {
+            "authorId": "1387178280",
+            "name": "Jitendra Bhandari"
+          },
+          {
+            "authorId": "2189847970",
+            "name": "Likhitha Mankali"
+          },
+          {
+            "authorId": "2270779547",
+            "name": "Ramesh Karri"
+          },
+          {
+            "authorId": "2253600910",
+            "name": "Ozgur Sinanoglu"
+          },
+          {
+            "authorId": "2350632298",
+            "name": "Muhammad Shafique"
+          },
+          {
+            "authorId": "1978598",
+            "name": "J. Knechtel"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have revolutionized code generation, achieving exceptional results on various established benchmarking frameworks. However, concerns about data contamination—where benchmark data inadvertently leaks into pre-training or fine-tuning datasets—raise questions about the validity of these evaluations. While this issue is known, limiting the industrial adoption of LLM-driven software engineering, hardware coding has received little to no attention regarding these risks. For the first time, we analyze state-of-the-art (SOTA) evaluation frameworks for Verilog code generation (VerilogEval and RTLLM), using established methods for contamination detection (CCD and Min-K% Prob). We cover SOTA commercial and open-source LLMs (CodeGen2.5, Minitron 4b, Mistral 7b, phi-4 mini, LLaMA-{1,2,3.1}, GPT- {2,3.5,4o} , Deepseek-Coder, and CodeQwen 1.5), in baseline and fine-tuned models (RTLCoder and Verigen). Our study confirms that data contamination is a critical concern. We explore mitigations and the resulting trade-offs for code quality vs fairness (i.e., reducing contamination toward unbiased benchmarking). Codes are open-sourced at https://github.com/DfX-NYUAD/VeriContaminated."
+      },
+      {
+        "paperId": "8dc806b5b8b73bd56bde4fa15f17eef3d03a9858",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2508-13180",
+          "ArXiv": "2508.13180",
+          "DOI": "10.48550/arXiv.2508.13180",
+          "CorpusId": 280686001
+        },
+        "title": "Search-Time Data Contamination",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 10,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.13180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2321169632",
+            "name": "Ziwen Han"
+          },
+          {
+            "authorId": "2367520383",
+            "name": "Meher Mankikar"
+          },
+          {
+            "authorId": "2366010951",
+            "name": "Julian Michael"
+          },
+          {
+            "authorId": "2365977483",
+            "name": "Zifan Wang"
+          }
+        ],
+        "abstract": "Data contamination refers to the leakage of evaluation data into model training data, resulting in overfitting to supposedly held-out test sets and compromising test validity. We identify an analogous issue, search-time contamination (STC), in evaluating search-based LLM agents which use tools to gather information from online sources when answering user queries. STC occurs when the retrieval step surfaces a source containing the test question (or a near-duplicate) alongside its answer, enabling agents to copy rather than genuinely infer or reason, undermining benchmark integrity. We find that HuggingFace, an online platform hosting evaluation datasets, appears among retrieved sources in search based agent logs. Consequently, agents often explicitly acknowledge discovering question answer pairs from HuggingFace within their reasoning chains. On three commonly used capability benchmarks: Humanity's Last Exam (HLE), SimpleQA, and GPQA, we demonstrate that for approximately 3% of questions, search-based agents directly find the datasets with ground truth labels on HuggingFace. When millions of evaluation queries target the same benchmark, even small, repeated leaks can accelerate the benchmark's obsolescence, shortening its intended lifecycle. After HuggingFace is blocked, we observe a drop in accuracy on the contaminated subset of approximately 15%. We further show through ablation experiments that publicly accessible evaluation datasets on HuggingFace may not be the sole source of STC. To this end, we conclude by proposing best practices for benchmark design and result reporting to address this novel form of leakage and ensure trustworthy evaluation of search-based LLM agents. To facilitate the auditing of evaluation results, we also publicly release the complete logs from our experiments."
+      },
+      {
+        "paperId": "3acaa8592735cd7fed7e4d1d251bfa894141e81b",
+        "externalIds": {
+          "DBLP": "conf/emnlp/XuYGJMGK25",
+          "ArXiv": "2507.11405",
+          "DOI": "10.48550/arXiv.2507.11405",
+          "CorpusId": 280291401
+        },
+        "title": "DCR: Quantifying Data Contamination in LLMs Evaluation",
+        "venue": "Conference on Empirical Methods in Natural Language Processing",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.11405, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2153079650",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2238001867",
+            "name": "Nan Yan"
+          },
+          {
+            "authorId": "2304954016",
+            "name": "Shuhao Guan"
+          },
+          {
+            "authorId": "2278654158",
+            "name": "Changhong Jin"
+          },
+          {
+            "authorId": "2329737085",
+            "name": "Yuke Mei"
+          },
+          {
+            "authorId": "2403462252",
+            "name": "Yi Guo"
+          },
+          {
+            "authorId": "2266906186",
+            "name": "Mohand-Tahar Kechadi"
+          }
+        ],
+        "abstract": "The rapid advancement of large language models (LLMs) has heightened concerns about benchmark data contamination (BDC), where models inadvertently memorize evaluation data during the training process, inflating performance metrics, and undermining genuine generalization assessment. This paper introduces the Data Contamination Risk (DCR) framework, a lightweight, interpretable pipeline designed to detect and quantify BDC risk across four granular levels: semantic, informational, data, and label. By synthesizing contamination scores via a fuzzy inference system, DCR produces a unified DCR Factor that adjusts raw accuracy to reflect contamination-aware performance. Validated on 9 LLMs (0.5B-72B) across sentiment analysis, fake news detection, and arithmetic reasoning tasks, the DCR framework reliably diagnoses contamination severity and with accuracy adjusted using the DCR Factor to within 4% average error across the three benchmarks compared to the uncontaminated baseline. Emphasizing computational efficiency and transparency, DCR provides a practical tool for integrating contamination assessment into routine evaluations, fostering fairer comparisons and enhancing the credibility of LLM benchmarking practices."
+      },
+      {
+        "paperId": "b4a803ee85bf10f7b458324fb0998e77bdfdfb3c",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2405-11930",
+          "ArXiv": "2405.11930",
+          "DOI": "10.48550/arXiv.2405.11930",
+          "CorpusId": 269921283
+        },
+        "title": "Data Contamination Calibration for Black-box LLMs",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 25,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.11930, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2052980502",
+            "name": "Wen-song Ye"
+          },
+          {
+            "authorId": "2302332408",
+            "name": "Jiaqi Hu"
+          },
+          {
+            "authorId": "2107939338",
+            "name": "Liyao Li"
+          },
+          {
+            "authorId": "2264450699",
+            "name": "Haobo Wang"
+          },
+          {
+            "authorId": "2261891330",
+            "name": "Gang Chen"
+          },
+          {
+            "authorId": "2261754498",
+            "name": "Junbo Zhao"
+          }
+        ],
+        "abstract": "The rapid advancements of Large Language Models (LLMs) tightly associate with the expansion of the training data size. However, the unchecked ultra-large-scale training sets introduce a series of potential risks like data contamination, i.e. the benchmark data is used for training. In this work, we propose a holistic method named Polarized Augment Calibration (PAC) along with a new to-be-released dataset to detect the contaminated data and diminish the contamination effect. PAC extends the popular MIA (Membership Inference Attack) -- from machine learning community -- by forming a more global target at detecting training data to Clarify invisible training data. As a pioneering work, PAC is very much plug-and-play that can be integrated with most (if not all) current white- and black-box LLMs. By extensive experiments, PAC outperforms existing methods by at least 4.5%, towards data contamination detection on more 4 dataset formats, with more than 10 base LLMs. Besides, our application in real-world scenarios highlights the prominent presence of contamination and related issues."
+      },
+      {
+        "paperId": "e8b3f92bd5b09ee90f74d3b82b60b3c2c796df33",
+        "externalIds": {
+          "DBLP": "conf/acl/WuPXZ0MD0LW25",
+          "ArXiv": "2412.13670",
+          "DOI": "10.48550/arXiv.2412.13670",
+          "CorpusId": 274822281
+        },
+        "title": "AntiLeak-Bench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 35,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2412.13670, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2325887390",
+            "name": "Xiaobao Wu"
+          },
+          {
+            "authorId": "2304300629",
+            "name": "Liangming Pan"
+          },
+          {
+            "authorId": "2335924922",
+            "name": "Yuxi Xie"
+          },
+          {
+            "authorId": "2257377292",
+            "name": "Ruiwen Zhou"
+          },
+          {
+            "authorId": "2324893886",
+            "name": "Shuai Zhao"
+          },
+          {
+            "authorId": "2321684811",
+            "name": "Yubo Ma"
+          },
+          {
+            "authorId": "2332539982",
+            "name": "Mingzhe Du"
+          },
+          {
+            "authorId": "2404466072",
+            "name": "Rui Mao"
+          },
+          {
+            "authorId": "1755919",
+            "name": "A. Luu"
+          },
+          {
+            "authorId": "2303615873",
+            "name": "William Yang Wang"
+          }
+        ],
+        "abstract": "Data contamination hinders fair LLM evaluation by introducing test data into newer models' training sets. Existing studies solve this challenge by updating benchmarks with newly collected data. However, they fail to guarantee contamination-free evaluation as the newly collected data may contain pre-existing knowledge, and their benchmark updates rely on intensive human labor. To address these issues, we in this paper propose AntiLeak-Bench, an automated anti-leakage benchmarking framework. Instead of simply using newly collected data, we construct samples with explicitly new knowledge absent from LLMs' training sets, which thus ensures strictly contamination-free evaluation. We further design a fully automated workflow to build and update our benchmark without human labor. This significantly reduces the cost of benchmark maintenance to accommodate emerging LLMs. Through extensive experiments, we highlight that data contamination likely exists before LLMs' cutoff time and demonstrate AntiLeak-Bench effectively overcomes this challenge."
+      },
+      {
+        "paperId": "4d249bbfc172d5d4360244447f9e2245e318803d",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2402-02823",
+          "ArXiv": "2402.02823",
+          "DOI": "10.48550/arXiv.2402.02823",
+          "CorpusId": 267412617
+        },
+        "title": "Evading Data Contamination Detection for Language Models is (too) Easy",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 31,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.02823, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2268310707",
+            "name": "Jasper Dekoninck"
+          },
+          {
+            "authorId": "2161242474",
+            "name": "M. Muller"
+          },
+          {
+            "authorId": "1389559318",
+            "name": "Maximilian Baader"
+          },
+          {
+            "authorId": "48849093",
+            "name": "Marc Fischer"
+          },
+          {
+            "authorId": "1736447",
+            "name": "Martin T. Vechev"
+          }
+        ],
+        "abstract": "Large language models are widespread, with their performance on benchmarks frequently guiding user preferences for one model over another. However, the vast amount of data these models are trained on can inadvertently lead to contamination with public benchmarks, thus compromising performance measurements. While recently developed contamination detection methods try to address this issue, they overlook the possibility of deliberate contamination by malicious model providers aiming to evade detection. We argue that this setting is of crucial importance as it casts doubt on the reliability of public benchmarks. To more rigorously study this issue, we propose a categorization of both model providers and contamination detection methods. This reveals vulnerabilities in existing methods that we exploit with EAL, a simple yet effective contamination technique that significantly inflates benchmark performance while completely evading current detection methods."
+      },
+      {
+        "paperId": "0af99fac300a5477adbd9f7e1f9de49cdfde751e",
+        "externalIds": {
+          "ArXiv": "2510.09259",
+          "DBLP": "journals/corr/abs-2510-09259",
+          "DOI": "10.48550/arXiv.2510.09259",
+          "CorpusId": 282055892
+        },
+        "title": "Detecting Data Contamination from Reinforcement Learning Post-training for Large Language Models",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 3,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.09259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2331798285",
+            "name": "Yongding Tao"
+          },
+          {
+            "authorId": "2375041858",
+            "name": "Tian Wang"
+          },
+          {
+            "authorId": "26845858",
+            "name": "Yihong Dong"
+          },
+          {
+            "authorId": "2279435524",
+            "name": "Huanyu Liu"
+          },
+          {
+            "authorId": "2033148496",
+            "name": "Kechi Zhang"
+          },
+          {
+            "authorId": "2375395786",
+            "name": "Xiaolong Hu"
+          },
+          {
+            "authorId": "2325210561",
+            "name": "Ge Li"
+          }
+        ],
+        "abstract": "Data contamination poses a significant threat to the reliable evaluation of Large Language Models (LLMs). This issue arises when benchmark samples may inadvertently appear in training sets, compromising the validity of reported performance. While detection methods have been developed for the pre-training and Supervised Fine-Tuning stages, a critical research gap exists for the increasingly significant phase of Reinforcement Learning (RL) post-training. As RL post-training becomes pivotal for advancing LLM reasoning, the absence of specialized contamination detection methods in this paradigm presents a critical vulnerability. To address this, we conduct the first systematic study of data detection within RL post-training scenario and propose Self-Critique. Our method is motivated by a key observation: after RL phase, the output entropy distribution of LLMs tends to collapse into highly specific and sparse modes. Self-Critique probes for the underlying policy collapse, i.e., the model's convergence to a narrow reasoning path, which causes this entropy reduction. To facilitate this research, we also introduce RL-MIA, a benchmark constructed to simulate this specific contamination scenario. Extensive experiments show that Self-Critique significantly outperforms baseline methods across multiple models and contamination tasks, achieving an AUC improvement of up to 30%. Whereas existing methods are close to a random guess for RL-phase contamination, our method makes detection possible."
+      },
+      {
+        "paperId": "eb7470dd010f43220c4d715c758d08c6a963d35e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2411-03923",
+          "ArXiv": "2411.03923",
+          "DOI": "10.48550/arXiv.2411.03923",
+          "CorpusId": 273850342
+        },
+        "title": "Evaluation data contamination in LLMs: how do we measure it and (when) does it matter?",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 28,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.03923, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2306863572",
+            "name": "Aaditya K. Singh"
+          },
+          {
+            "authorId": "1665851460",
+            "name": "Muhammed Yusuf Kocyigit"
+          },
+          {
+            "authorId": "2282542314",
+            "name": "Andrew Poulton"
+          },
+          {
+            "authorId": "71039937",
+            "name": "David Esiobu"
+          },
+          {
+            "authorId": "2253400960",
+            "name": "Maria Lomeli"
+          },
+          {
+            "authorId": "2253402270",
+            "name": "Gergely Szilvasy"
+          },
+          {
+            "authorId": "3449411",
+            "name": "Dieuwke Hupkes"
+          }
+        ],
+        "abstract": "Hampering the interpretation of benchmark scores, evaluation data contamination has become a growing concern in the evaluation of LLMs, and an active area of research studies its effects. While evaluation data contamination is easily understood intuitively, it is surprisingly difficult to define precisely which samples should be considered contaminated and, consequently, how it impacts benchmark scores. We propose that these questions should be addressed together and that contamination metrics can be assessed based on whether models benefit from the examples they mark contaminated. We propose a novel analysis method called ConTAM, and show with a large scale survey of existing and novel n-gram based contamination metrics across 13 benchmarks and 7 models from 2 different families that ConTAM can be used to better understand evaluation data contamination and its effects. We find that contamination may have a much larger effect than reported in recent LLM releases and benefits models differently at different scales. We also find that considering only the longest contaminated substring provides a better signal than considering a union of all contaminated substrings, and that doing model and benchmark specific threshold analysis greatly increases the specificity of the results. Lastly, we investigate the impact of hyperparameter choices, finding that, among other things, both using larger values of n and disregarding matches that are infrequent in the pre-training data lead to many false negatives. With ConTAM, we provide a method to empirically ground evaluation data contamination metrics in downstream effects. With our exploration, we shed light on how evaluation data contamination can impact LLMs and provide insight into the considerations important when doing contamination analysis. We end our paper by discussing these in more detail and providing concrete suggestions for future work."
+      },
+      {
+        "paperId": "cd36424dba678d8c7ae404ca9ba90cb8702d175e",
+        "externalIds": {
+          "ArXiv": "2510.27055",
+          "DBLP": "journals/corr/abs-2510-27055",
+          "DOI": "10.48550/arXiv.2510.27055",
+          "CorpusId": 282719049
+        },
+        "title": "Detecting Data Contamination in LLMs via In-Context Learning",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.27055, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2376191965",
+            "name": "Michał Zawalski"
+          },
+          {
+            "authorId": "152601676",
+            "name": "Meriem Boubdir"
+          },
+          {
+            "authorId": "2368729912",
+            "name": "Klaudia Balazy"
+          },
+          {
+            "authorId": "2571049",
+            "name": "Besmira Nushi"
+          },
+          {
+            "authorId": "2130572149",
+            "name": "Pablo Ribalta"
+          }
+        ],
+        "abstract": "We present Contamination Detection via Context (CoDeC), a practical and accurate method to detect and quantify training data contamination in large language models. CoDeC distinguishes between data memorized during training and data outside the training distribution by measuring how in-context learning affects model performance. We find that in-context examples typically boost confidence for unseen datasets but may reduce it when the dataset was part of training, due to disrupted memorization patterns. Experiments show that CoDeC produces interpretable contamination scores that clearly separate seen and unseen datasets, and reveals strong evidence of memorization in open-weight models with undisclosed training corpora. The method is simple, automated, and both model- and dataset-agnostic, making it easy to integrate with benchmark evaluations."
+      },
+      {
+        "paperId": "2872ea75e202b35554ff8d60032e892d3bef8c18",
+        "externalIds": {
+          "DOI": "10.70393/616a6e73.323836",
+          "CorpusId": 277795889
+        },
+        "title": "Data Contamination or Genuine Generalization? Disentangling LLM Performance on Benchmarks",
+        "venue": "Academic Journal of Natural Science",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.70393/616a6e73.323836?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.70393/616a6e73.323836, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "28748767",
+            "name": "Yui Ishikawa"
+          }
+        ],
+        "abstract": "Large language models (LLMs) achieve high benchmark performance, but whether this stems from genuine generalization or data contamination remains unclear. This paper proposes a three-tier framework to disentangle these effects, combining n-gram alignment, canary insertion, and perturbation testing across open (Llama 2, Mistral) and closed (GPT-4) models. Our analysis reveals that: (1) Larger models exhibit higher contamination (18.1% n-gram overlap for Llama 2-70B) but smaller out-of-distribution (OOD) drops (−9.4%), suggesting scale mitigates memorization’s impact; (2) Perturbation experiments show factual recall is most vulnerable (e.g., −22.4% accuracy drop for entity swaps); (3) Chain-of-thought (CoT) evaluation uncovers hidden generalization (+21.3% gap for GPT-4), though humans outperform LLMs in robustness (e.g., −4.3% vs. −9.8% on swaps). We advocate for contamination-aware benchmarks and CoT-enhanced evaluation."
+      }
+    ],
+    "status": 200
+  }
+]

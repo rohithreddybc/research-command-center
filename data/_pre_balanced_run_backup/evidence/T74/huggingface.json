@@ -1,0 +1,334 @@
+[
+  {
+    "query": "LLM evaluation methodology",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "metadata",
+    "results": [
+      {
+        "id": "trojblue/danbooru2025-metadata",
+        "downloads": 1298,
+        "likes": 33,
+        "tags": [
+          "task_categories:text-to-image",
+          "task_categories:image-classification",
+          "language:en",
+          "language:ja",
+          "license:mit",
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "modality:image",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": " \n   \n \n\n🎨 Danbooru 2025 Metadata \n\n\n  Latest Post ID: 9,158,800\n  (as of Apr 16, 2025)\n\n\n\n📁 About the DatasetThis dataset provides structured metadata for user-submitted images on Danbooru, a large-scale imageboard focused on anime-style artwork.\nScraping began on January 2, 2025, and the data are stored in Parquet format for efficient programmatic access.Compared to earlier versions, this snapshot includes:\n\nMore consistent tag history tracking  \nBetter coverage of older or previously… See the"
+      },
+      {
+        "id": "bs-modeling-metadata/c4-en-html-with-metadata",
+        "downloads": 113,
+        "likes": 13,
+        "tags": [
+          "size_categories:10M<n<100M",
+          "format:json",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "bigcode/the-stack-metadata",
+        "downloads": 9693,
+        "likes": 10,
+        "tags": [
+          "task_categories:text-generation",
+          "language_creators:crowdsourced",
+          "language_creators:expert-generated",
+          "multilinguality:multilingual",
+          "language:code",
+          "license:other",
+          "size_categories:10B<n<100B",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2211.15533",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for The Stack Metadata\n\t\n\n\n\t\n\t\t\n\t\tChangelog\n\t\n\n\n\t\n\t\t\nRelease\nDescription\n\n\n\t\t\nv1.1\nThis is the first release of the metadata. It is for The Stack v1.1\n\n\nv1.2\nMetadata dataset matching The Stack v1.2\n\n\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nThis is a set of additional information for repositories used for The Stack. It contains file paths, detected licenes as well as some other information for the repositories.\n\n\t\n\t\t\n\t\tSupported Tasks and Leaderboards\n\t\n\nThe main task is to recreate… "
+      },
+      {
+        "id": "librarian-bots/model_cards_with_metadata",
+        "downloads": 516,
+        "likes": 22,
+        "tags": [
+          "task_categories:text-retrieval",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "format:optimized-parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us",
+          "ethics"
+        ],
+        "description": "\n\t\n\t\t\n\t\tDataset Card for Hugging Face Hub Model Cards\n\t\n\nThis datasets consists of model cards for models hosted on the Hugging Face Hub. The model cards are created by the community and provide information about the model, its performance, its intended uses, and more. \nThis dataset is updated on a daily basis and includes publicly available models on the Hugging Face Hub.\nThis dataset is made available to help support users wanting to work with a large number of Model Cards from the Hub. We… Se"
+      },
+      {
+        "id": "histai/HISTAI-metadata",
+        "downloads": 135,
+        "likes": 98,
+        "tags": [
+          "license:cc-by-nc-4.0",
+          "arxiv:2505.12120",
+          "region:us"
+        ],
+        "description": "Dear researchers and engineers, you're accessing a dataset that would cost millions of dollars to build and took millions of nerves to negotiate favorable terms for its use. Your support, by liking the repositories and upvoting the collection, costs nothing but gives us valuable motivation to continue our contributions to the community. We reserve the right not to approve the request if you don't support our efforts. Thank you very much for collaboration!\n\n\t\n\t\t\n\t\tHISTAI Dataset\n\t\n\nHISTAI is a… S"
+      },
+      {
+        "id": "litagin/VisualNovel_Dataset_Metadata",
+        "downloads": 139,
+        "likes": 11,
+        "tags": [
+          "license:mit",
+          "size_categories:1K<n<10K",
+          "format:csv",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tVisualNovel Dataset Metadata\n\t\n\nThis dataset repository contains metadata for OOPPEENN/56697375616C4E6F76656C5F44617461736574.\n\nmaker_game_vnid.tsv: Contains the mapping of maker names, game names, and their corresponding Visual Novel IDs in vndb. Here the column maker and game correspond to {maker}_{game} in the file names of 7z (or directory names of extracted files) in OOPPEENN/VisualNovel_Dataset.\nvoice_actor_info.tsvmaps maker game character to vndb char id, vndb voice actor id… See"
+      },
+      {
+        "id": "Shio-Koube/Danbooru-2026-parquet-metadata",
+        "downloads": 198,
+        "likes": 7,
+        "tags": [
+          "size_categories:10M<n<100M",
+          "format:parquet",
+          "modality:image",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "TheBritishLibrary/EThOS-PhD-metadata",
+        "downloads": 325,
+        "likes": 2,
+        "tags": [
+          "task_categories:text-classification",
+          "task_categories:fill-mask",
+          "task_ids:multi-label-classification",
+          "task_ids:masked-language-modeling",
+          "multilinguality:monolingual",
+          "language:en",
+          "region:us"
+        ],
+        "description": "The data in this collection comprises the bibliographic metadata for all UK doctoral theses listed in EThOS, the UK's national thesis service.\nWe estimate the data covers around 98% of all PhDs ever awarded by UK Higher Education institutions, dating back to 1787.\nThesis metadata from every PhD-awarding university in the UK is included."
+      },
+      {
+        "id": "bs-modeling-metadata/OSCAR_Entity_13_000",
+        "downloads": 187,
+        "likes": 1,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "The dataset is in the form of a json lines file with 10,657 examples, where an example consists of text (extracted from the first 13,000 rows of OSCAR unshuffled English dataset) and metadata fields (entities).\nStructure of an example.\n{\n    \"text\": \"This is exactly the sort of article to raise the profile of the club around the Midlands. Very positive and really focusses on how the club has improved over a short period of time and the bright prospects for the future \\n\\\"Oxford Town\\\" -… See t"
+      },
+      {
+        "id": "bs-modeling-metadata/c4_newslike_url_only",
+        "downloads": 93,
+        "likes": 0,
+        "tags": [
+          "size_categories:10M<n<100M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "bs-modeling-metadata/website_metadata_c4",
+        "downloads": 268,
+        "likes": 3,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "The dataset is in the form of a json lines file with 1,20,000 examples, where an example consists of text (extracted from C4 English dataset) and metadata fields (website description extracted from Wikipedia).\nExample:\n{\n    \"text\": \"US10289222B2 - Handling of touch events in a browser environment - Google Patents\\nHandling of touch events in a browser environment Download PDF\\nUS10289222B2\\nUS10289222B2 US13/857,848 US201313857848A US10289222B2 US 10289222 B2 US10289222 B2 US 10289222B2 US… See"
+      },
+      {
+        "id": "bs-modeling-metadata/wiki_dump",
+        "downloads": 88,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "hf-internal-testing/transformers-metadata",
+        "downloads": 23,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "huggingface/transformers-metadata",
+        "downloads": 1479,
+        "likes": 38,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tTransformers metadata\n\t\n\n"
+      },
+      {
+        "id": "shanya/website_metadata_c4_toy",
+        "downloads": 55,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": "A smaller version (100 samples) of https://huggingface.co/datasets/bs-modeling-metadata/website_metadata_c4\n"
+      },
+      {
+        "id": "ttj/metadata_arxiv",
+        "downloads": 21802,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "malteos/aspect-paper-metadata",
+        "downloads": 37,
+        "likes": 2,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "nateraw/test-imagefolder-metadata",
+        "downloads": 53,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:imagefolder",
+          "modality:image",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\ttest-imagefolder-metadata\n\t\n\n"
+      },
+      {
+        "id": "nateraw/test-imagefolder-metadata-csv",
+        "downloads": 131,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:imagefolder",
+          "modality:image",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "nateraw/test-imagefolder-metadata-2",
+        "downloads": 13,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:imagefolder",
+          "modality:image",
+          "library:datasets",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "systematic mapping",
+    "results": [],
+    "status": 200
+  }
+]

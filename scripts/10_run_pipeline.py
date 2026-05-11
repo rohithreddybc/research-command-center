@@ -96,6 +96,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--skip-llm", action="store_true", help="Alias for --no-llm")
     ap.add_argument("--allow-go-without-llm", action="store_true",
                     help="Pass through to 08_confidence_gate to permit GO without LLM panel.")
+    ap.add_argument("--llm-review", action="store_true",
+                    help="Explicit flag for LLM panel (LLM is on by default; this is a no-op alias).")
+    ap.add_argument("--profile", default="blind_citation",
+                    help="Scoring profile to pass to 05_score_topics and 08_confidence_gate. "
+                         "Default: blind_citation.")
+    ap.add_argument("--include-personal-goals", action="store_true",
+                    help="Pass through to 06_llm_review_topics to include niw_eb1a + career_faang reviewers.")
     args = ap.parse_args(argv)
     if args.skip_llm:
         args.no_llm = True
@@ -126,25 +133,30 @@ def main(argv: list[str] | None = None) -> int:
     # iterative loop
     for round_idx in range(1, args.max_rounds + 1):
         print(f"--- round {round_idx} ---")
-        print("[5/9] score topics")
-        run_full_collection("05_score_topics")
+        print(f"[5/9] score topics (profile={args.profile})")
+        mod = _load("05_score_topics")
+        sys.argv = ["05", "--profile", args.profile]
+        mod.main()
 
         # 5.5: detect existing work (uses pre-collected evidence; always runs)
         print("[5.5/9] detect existing work")
         run_full_collection("12_detect_existing_work")
 
         if not args.no_llm:
-            print("[6/9] llm review panel")
-            run_full_collection("06_llm_review_topics")
+            print(f"[6/9] llm review panel (include_personal_goals={args.include_personal_goals})")
+            mod = _load("06_llm_review_topics")
+            sys.argv = ["06"] + (["--include-personal-goals"] if args.include_personal_goals else [])
+            mod.main()
         else:
             print("[6/9] llm review SKIPPED")
 
         print("[7/9] compare reviewers")
         run_full_collection("07_compare_reviewers")
 
-        print("[8/9] confidence gate")
+        print(f"[8/9] confidence gate (profile={args.profile})")
         mod = _load("08_confidence_gate")
-        sys.argv = ["08"] + (["--allow-go-without-llm"] if args.allow_go_without_llm else [])
+        sys.argv = ["08", "--profile", args.profile] + (
+            ["--allow-go-without-llm"] if args.allow_go_without_llm else [])
         mod.main()
 
         # who needs another round?

@@ -1,0 +1,731 @@
+[
+  {
+    "query": "tokenizer in:readme,description",
+    "results": [
+      {
+        "name": "public-apis/public-apis",
+        "stars": 433413,
+        "forks": 47426,
+        "description": "A collective list of free APIs",
+        "url": "https://github.com/public-apis/public-apis",
+        "topics": [
+          "api",
+          "apis",
+          "dataset",
+          "development",
+          "free",
+          "list",
+          "lists",
+          "open-source",
+          "public",
+          "public-api",
+          "public-apis",
+          "resources",
+          "software"
+        ],
+        "pushed_at": "2026-05-08T06:18:53Z",
+        "updated_at": "2026-05-09T07:34:24Z"
+      },
+      {
+        "name": "openclaw/openclaw",
+        "stars": 370003,
+        "forks": 76403,
+        "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+        "url": "https://github.com/openclaw/openclaw",
+        "topics": [
+          "ai",
+          "assistant",
+          "crustacean",
+          "molty",
+          "openclaw",
+          "own-your-data",
+          "personal"
+        ],
+        "pushed_at": "2026-05-09T07:35:10Z",
+        "updated_at": "2026-05-09T07:35:22Z"
+      },
+      {
+        "name": "vinta/awesome-python",
+        "stars": 296658,
+        "forks": 27849,
+        "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
+        "url": "https://github.com/vinta/awesome-python",
+        "topics": [
+          "awesome",
+          "collections",
+          "python",
+          "python-frameworks",
+          "python-libraries",
+          "python-tools"
+        ],
+        "pushed_at": "2026-05-07T13:14:48Z",
+        "updated_at": "2026-05-09T07:33:36Z"
+      },
+      {
+        "name": "awesome-selfhosted/awesome-selfhosted",
+        "stars": 291055,
+        "forks": 13431,
+        "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+        "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "cloud",
+          "free-software",
+          "hosting",
+          "privacy",
+          "self-hosted",
+          "selfhosted"
+        ],
+        "pushed_at": "2026-05-07T15:38:55Z",
+        "updated_at": "2026-05-09T07:24:43Z"
+      },
+      {
+        "name": "trimstray/the-book-of-secret-knowledge",
+        "stars": 219364,
+        "forks": 13160,
+        "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+        "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "bsd",
+          "cheatsheets",
+          "devops",
+          "guidelines",
+          "hacking",
+          "hacks",
+          "howtos",
+          "linux",
+          "lists",
+          "manuals",
+          "one-liners",
+          "pentesters",
+          "resources",
+          "search-engines",
+          "security",
+          "security-researchers",
+          "sysops"
+        ],
+        "pushed_at": "2024-11-19T14:00:38Z",
+        "updated_at": "2026-05-09T07:26:43Z"
+      },
+      {
+        "name": "affaan-m/everything-claude-code",
+        "stars": 176148,
+        "forks": 27252,
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "productivity"
+        ],
+        "pushed_at": "2026-05-09T02:14:27Z",
+        "updated_at": "2026-05-09T07:34:22Z"
+      },
+      {
+        "name": "avelino/awesome-go",
+        "stars": 172157,
+        "forks": 13197,
+        "description": "A curated list of awesome Go frameworks, libraries and software",
+        "url": "https://github.com/avelino/awesome-go",
+        "topics": [
+          "awesome",
+          "awesome-list",
+          "go",
+          "golang",
+          "golang-library",
+          "hacktoberfest"
+        ],
+        "pushed_at": "2026-05-06T17:21:46Z",
+        "updated_at": "2026-05-09T07:34:45Z"
+      },
+      {
+        "name": "AUTOMATIC1111/stable-diffusion-webui",
+        "stars": 162785,
+        "forks": 30320,
+        "description": "Stable Diffusion web UI",
+        "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+        "topics": [
+          "ai",
+          "ai-art",
+          "deep-learning",
+          "diffusion",
+          "gradio",
+          "image-generation",
+          "image2image",
+          "img2img",
+          "pytorch",
+          "stable-diffusion",
+          "text2image",
+          "torch",
+          "txt2img",
+          "unstable",
+          "upscaling",
+          "web"
+        ],
+        "pushed_at": "2026-03-02T07:00:53Z",
+        "updated_at": "2026-05-09T07:19:00Z"
+      },
+      {
+        "name": "yt-dlp/yt-dlp",
+        "stars": 161206,
+        "forks": 13395,
+        "description": "A feature-rich command-line audio/video downloader",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "topics": [
+          "cli",
+          "downloader",
+          "python",
+          "sponsorblock",
+          "youtube-dl",
+          "youtube-downloader",
+          "yt-dlp"
+        ],
+        "pushed_at": "2026-05-05T22:54:26Z",
+        "updated_at": "2026-05-09T07:32:27Z"
+      },
+      {
+        "name": "521xueweihan/HelloGitHub",
+        "stars": 155594,
+        "forks": 11862,
+        "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+        "url": "https://github.com/521xueweihan/HelloGitHub",
+        "topics": [
+          "awesome",
+          "github",
+          "hellogithub",
+          "python"
+        ],
+        "pushed_at": "2026-04-28T00:48:03Z",
+        "updated_at": "2026-05-09T07:30:34Z"
+      },
+      {
+        "name": "airbnb/javascript",
+        "stars": 148115,
+        "forks": 26686,
+        "description": "JavaScript Style Guide",
+        "url": "https://github.com/airbnb/javascript",
+        "topics": [
+          "arrow-functions",
+          "es2015",
+          "es2016",
+          "es2017",
+          "es2018",
+          "es6",
+          "eslint",
+          "javascript",
+          "linting",
+          "naming-conventions",
+          "style-guide",
+          "style-linter",
+          "styleguide",
+          "tc39"
+        ],
+        "pushed_at": "2026-04-16T19:24:09Z",
+        "updated_at": "2026-05-09T01:17:50Z"
+      },
+      {
+        "name": "labuladong/fucking-algorithm",
+        "stars": 133408,
+        "forks": 23627,
+        "description": "Crack LeetCode, not only how, but also why. ",
+        "url": "https://github.com/labuladong/fucking-algorithm",
+        "topics": [
+          "algorithms",
+          "computer-science",
+          "data-structures",
+          "dynamic-programming",
+          "dynamic-programming-algorithm",
+          "interview-questions",
+          "kmp",
+          "leetcode"
+        ],
+        "pushed_at": "2026-02-28T10:07:31Z",
+        "updated_at": "2026-05-09T07:07:49Z"
+      },
+      {
+        "name": "microsoft/markitdown",
+        "stars": 122047,
+        "forks": 8222,
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "url": "https://github.com/microsoft/markitdown",
+        "topics": [
+          "autogen",
+          "autogen-extension",
+          "langchain",
+          "markdown",
+          "microsoft-office",
+          "openai",
+          "pdf"
+        ],
+        "pushed_at": "2026-04-20T17:52:20Z",
+        "updated_at": "2026-05-09T07:30:50Z"
+      },
+      {
+        "name": "ripienaar/free-for-dev",
+        "stars": 121632,
+        "forks": 12717,
+        "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+        "url": "https://github.com/ripienaar/free-for-dev",
+        "topics": [
+          "awesome-list",
+          "free-for-developers"
+        ],
+        "pushed_at": "2026-05-09T04:57:36Z",
+        "updated_at": "2026-05-09T07:07:51Z"
+      },
+      {
+        "name": "firecrawl/firecrawl",
+        "stars": 117152,
+        "forks": 7319,
+        "description": "🔥 The API to search, scrape, and interact with the web for AI",
+        "url": "https://github.com/firecrawl/firecrawl",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-crawler",
+          "ai-scraping",
+          "ai-search",
+          "crawler",
+          "data-extraction",
+          "html-to-markdown",
+          "llm",
+          "markdown",
+          "scraper",
+          "scraping",
+          "web-crawler",
+          "web-data",
+          "web-data-extraction",
+          "web-scraper",
+          "web-scraping",
+          "web-search",
+          "webscraping"
+        ],
+        "pushed_at": "2026-05-09T06:50:50Z",
+        "updated_at": "2026-05-09T07:26:17Z"
+      }
+    ],
+    "status": 200,
+    "total": 5530715
+  },
+  {
+    "query": "tokenizer benchmark in:name,description",
+    "results": [
+      {
+        "name": "toon-format/toon",
+        "stars": 24164,
+        "forks": 1071,
+        "description": "🎒 Token-Oriented Object Notation (TOON) – Compact, human-readable, schema-aware JSON for LLM prompts. Spec, benchmarks, TypeScript SDK.",
+        "url": "https://github.com/toon-format/toon",
+        "topics": [
+          "data-format",
+          "llm",
+          "serialization",
+          "tokenization"
+        ],
+        "pushed_at": "2026-05-08T21:24:02Z",
+        "updated_at": "2026-05-09T07:15:24Z"
+      },
+      {
+        "name": "Mibayy/token-savior",
+        "stars": 823,
+        "forks": 61,
+        "description": "The MCP server that turns Claude into the only coding agent hitting 100% on a real benchmark. -77% active tokens, -76% wall time, 0 losses across 96 tasks on Claude Opus 4.7. Structural code navigation + persistent memory. Works with every MCP client.",
+        "url": "https://github.com/Mibayy/token-savior",
+        "topics": [],
+        "pushed_at": "2026-05-04T12:25:18Z",
+        "updated_at": "2026-05-09T03:57:17Z"
+      },
+      {
+        "name": "juyterman1000/entroly",
+        "stars": 353,
+        "forks": 62,
+        "description": "Entroly-Daemon: Self-Evolving Daemon. Compress 2M-token repos into a razor-sharp Principal Engineer's context. 85–99% fewer tokens, 100% accuracy retention (verified by live API benchmarks). Built for Cursor, Claude Code, Opus, Codex, GPT & Custom Providers.",
+        "url": "https://github.com/juyterman1000/entroly",
+        "topics": [
+          "agents-sdk",
+          "ai",
+          "ai-agents",
+          "ai-tools",
+          "anthropic",
+          "chatgpt",
+          "claude",
+          "claude-code",
+          "claude-opus-4-6",
+          "cursor",
+          "developer-tools",
+          "llm",
+          "mcp",
+          "mcp-server",
+          "open-source",
+          "openclaw",
+          "productivity",
+          "rag",
+          "token-optimization"
+        ],
+        "pushed_at": "2026-05-09T03:22:38Z",
+        "updated_at": "2026-05-09T03:22:37Z"
+      },
+      {
+        "name": "sgl-project/genai-bench",
+        "stars": 295,
+        "forks": 51,
+        "description": "Genai-bench is a powerful benchmark tool designed for comprehensive token-level performance evaluation of large language model (LLM) serving systems.",
+        "url": "https://github.com/sgl-project/genai-bench",
+        "topics": [],
+        "pushed_at": "2026-05-05T19:40:39Z",
+        "updated_at": "2026-05-07T16:24:05Z"
+      },
+      {
+        "name": "google-deepmind/loft",
+        "stars": 232,
+        "forks": 17,
+        "description": "LOFT: A 1 Million+ Token Long-Context Benchmark",
+        "url": "https://github.com/google-deepmind/loft",
+        "topics": [],
+        "pushed_at": "2026-04-13T20:45:44Z",
+        "updated_at": "2026-04-27T14:11:19Z"
+      },
+      {
+        "name": "arc53/llm-price-compass",
+        "stars": 224,
+        "forks": 9,
+        "description": "This project collects GPU benchmarks from various cloud providers and compares them to fixed per token costs. Use our tool for efficient LLM GPU selections and cost-effective AI models. LLM provider price comparison, gpu benchmarks to price per token calculation, gpu benchmark table",
+        "url": "https://github.com/arc53/llm-price-compass",
+        "topics": [
+          "benchmark",
+          "gpu",
+          "hacktoberfest",
+          "inference-comparison",
+          "llm",
+          "llm-comparison",
+          "llm-inference",
+          "llm-price"
+        ],
+        "pushed_at": "2024-12-16T05:37:52Z",
+        "updated_at": "2026-02-25T03:13:29Z"
+      },
+      {
+        "name": "LarHope/ollama-benchmark",
+        "stars": 162,
+        "forks": 13,
+        "description": "Ollama based Benchmark with detail I/O token per second. Python with Deepseek R1 example.",
+        "url": "https://github.com/LarHope/ollama-benchmark",
+        "topics": [
+          "benchmark",
+          "deepseek-r1",
+          "llm",
+          "ollama",
+          "token",
+          "tokenspeed"
+        ],
+        "pushed_at": "2026-03-30T04:48:01Z",
+        "updated_at": "2026-04-30T10:24:09Z"
+      },
+      {
+        "name": "CNTRUN/Termux-command",
+        "stars": 110,
+        "forks": 0,
+        "description": "char const* const commands[] = { \"aapt\", \" aapt\", \" zipalign\", \"abduco\", \" abduco\", \"abook\", \" abook\", \"alpine\", \" alpine\", \" pico\", \" pilot\", \" rpdump\", \" rpload\", \"angband\", \" angband\", \"apache2\", \" ab\", \" apachectl\", \" apxs\", \" checkgid\", \" dbmmanage\", \" envvars-std\", \" fcgistarter\", \" htcacheclean\", \" htdbm\", \" htdigest\", \" htpasswd\", \" httpd\", \" httxt2dbm\", \" logresolve\", \" rotatelogs\", \" suexec\", \"apr-dev\", \" apr-1-config\", \"apr-util-dev\", \" apu-1-config\", \"apt\", \" apt\", \" apt-cache\", \" apt-config\", \" apt-get\", \" apt-key\", \" apt-mark\", \"aria2\", \" aria2c\", \"atomicparsley\", \" AtomicParsley\", \"attr\", \" attr\", \" getfattr\", \" setfattr\", \"autossh\", \" autossh\", \"bash\", \" bash\", \"bc\", \" bc\", \" dc\", \"binutils\", \" addr2line\", \" ar\", \" arm-linux-androideabi-ar\", \" arm-linux-androideabi-ld\", \" arm-linux-androideabi-nm\", \" arm-linux-androideabi-objdump\", \" arm-linux-androideabi-ranlib\", \" arm-linux-androideabi-readelf\", \" arm-linux-androideabi-strip\", \" as\", \" c++filt\", \" elfedit\", \" gprof\", \" ld\", \" ldd\", \" nm\", \" objcopy\", \" objdump\", \" ranlib\", \" readelf\", \" size\", \" strings\", \" strip\", \"bison\", \" bison\", \" yacc\", \"blogc\", \" blogc\", \" blogc-make\", \" blogc-runserver\", \"bmon\", \" bmon\", \"brogue\", \" brogue\", \"bs1770gain\", \" bs1770gain\", \"bsdtar\", \" bsdcat\", \" bsdcpio\", \" bsdtar\", \"busybox\", \" busybox\", \" env\", \"bvi\", \" bmore\", \" bvedit\", \" bvi\", \" bview\", \"bzip2\", \" bunzip2\", \" bzcat\", \" bzcmp\", \" bzdiff\", \" bzgrep\", \" bzip2\", \" bzip2recover\", \" bzless\", \" bzmore\", \"cadaver\", \" cadaver\", \"calcurse\", \" calcurse\", \" calcurse-caldav\", \" calcurse-upgrade\", \"cava\", \" cava\", \"cboard\", \" cboard\", \"ccache\", \" ccache\", \"ccrypt\", \" ccat\", \" ccdecrypt\", \" ccencrypt\", \" ccguess\", \" ccrypt\", \"cgdb\", \" cgdb\", \"clang\", \" arm-linux-androideabi-clang\", \" arm-linux-androideabi-clang++\", \" arm-linux-androideabi-cpp\", \" arm-linux-androideabi-g++\", \" arm-linux-androideabi-gcc\", \" c++\", \" cc\", \" clang\", \" clang++\", \" clang-5.0\", \" clang-cl\", \" clang-cpp\", \" clang-format\", \" clang-rename\", \" cpp\", \" g++\", \" gcc\", \"cmake\", \" cmake\", \" cpack\", \" ctest\", \"cmake-curses-gui\", \" ccmake\", \"cmark\", \" cmark\", \"cmatrix\", \" cmatrix\", \"cmus\", \" cmus\", \" cmus-remote\", \"coreutils\", \" [\", \" b2sum\", \" base32\", \" base64\", \" basename\", \" cat\", \" chcon\", \" chgrp\", \" chmod\", \" chown\", \" cksum\", \" comm\", \" coreutils\", \" cp\", \" csplit\", \" cut\", \" date\", \" dd\", \" dir\", \" dircolors\", \" dirname\", \" du\", \" echo\", \" expand\", \" expr\", \" factor\", \" false\", \" fmt\", \" fold\", \" groups\", \" head\", \" id\", \" install\", \" join\", \" kill\", \" link\", \" ln\", \" logname\", \" ls\", \" md5sum\", \" mkdir\", \" mkfifo\", \" mknod\", \" mktemp\", \" mv\", \" nice\", \" nl\", \" nohup\", \" nproc\", \" numfmt\", \" od\", \" paste\", \" pathchk\", \" pr\", \" printenv\", \" printf\", \" ptx\", \" pwd\", \" readlink\", \" realpath\", \" rm\", \" rmdir\", \" runcon\", \" seq\", \" sha1sum\", \" sha224sum\", \" sha256sum\", \" sha384sum\", \" sha512sum\", \" shred\", \" shuf\", \" sleep\", \" sort\", \" split\", \" stat\", \" stdbuf\", \" stty\", \" sum\", \" sync\", \" tac\", \" tail\", \" tee\", \" test\", \" timeout\", \" touch\", \" tr\", \" true\", \" truncate\", \" tsort\", \" tty\", \" uname\", \" unexpand\", \" uniq\", \" unlink\", \" vdir\", \" wc\", \" whoami\", \" yes\", \"corkscrew\", \" corkscrew\", \"cpio\", \" cpio\", \"cppi\", \" cppi\", \"cscope\", \" cscope\", \" ocs\", \"ctags\", \" ctags\", \" readtags\", \"curl\", \" curl\", \"curseofwar\", \" curseofwar\", \"cvs\", \" cvs\", \" rcs2log\", \"daemonize\", \" daemonize\", \"darkhttpd\", \" darkhttpd\", \"dash\", \" dash\", \" sh\", \"datamash\", \" datamash\", \"db\", \" db_archive\", \" db_checkpoint\", \" db_convert\", \" db_deadlock\", \" db_dump\", \" db_hotbackup\", \" db_load\", \" db_log_verify\", \" db_printlog\", \" db_recover\", \" db_replicate\", \" db_stat\", \" db_tuner\", \" db_upgrade\", \" db_verify\", \"dcraw\", \" dcraw\", \"ddrescue\", \" ddrescue\", \" ddrescuelog\", \"debianutils\", \" add-shell\", \" ischroot\", \" remove-shell\", \" run-parts\", \" savelog\", \" tempfile\", \" which\", \"dialog\", \" dialog\", \" whiptail\", \"diffutils\", \" cmp\", \" diff\", \" diff3\", \" sdiff\", \"direvent\", \" direvent\", \"dirmngr\", \" dirmngr\", \" dirmngr-client\", \"dnsutils\", \" dig\", \" host\", \" nslookup\", \" nsupdate\", \"dos2unix\", \" dos2unix\", \" mac2unix\", \" unix2dos\", \" unix2mac\", \"dpkg\", \" dpkg\", \" dpkg-deb\", \" dpkg-divert\", \" dpkg-genbuildinfo\", \" dpkg-query\", \" dpkg-split\", \" dpkg-trigger\", \"dropbear\", \" dbclient\", \" dropbear\", \" dropbearconvert\", \" dropbearkey\", \" dropbearmulti\", \"dvtm\", \" dvtm\", \" dvtm-status\", \"ed\", \" ed\", \" red\", \"elfutils\", \" eu-addr2line\", \" eu-elfcmp\", \" eu-elfcompress\", \" eu-elflint\", \" eu-findtextrel\", \" eu-make-debug-archive\", \" eu-nm\", \" eu-objdump\", \" eu-ranlib\", \" eu-readelf\", \" eu-size\", \" eu-stack\", \" eu-strings\", \" eu-strip\", \" eu-unstrip\", \"elinks\", \" elinks\", \"emacs\", \" ebrowse\", \" emacs\", \" emacs-25.3\", \" emacsclient\", \" etags\", \"erlang\", \" ct_run\", \" dialyzer\", \" epmd\", \" erl\", \" erlc\", \" escript\", \" run_erl\", \" to_erl\", \"espeak\", \" espeak\", \"expect\", \" autoexpect\", \" expect\", \" timed-read\", \" timed-run\", \" unbuffer\", \"fdupes\", \" fdupes\", \"ffmpeg\", \" ffmpeg\", \" ffprobe\", \"fftw-dev\", \" fftw-wisdom\", \" fftw-wisdom-to-conf\", \" fftwf-wisdom\", \" fftwl-wisdom\", \"figlet\", \" chkfont\", \" figlet\", \" figlist\", \" showfigfonts\", \"file\", \" file\", \"finch\", \" finch\", \"findutils\", \" find\", \" xargs\", \"fish\", \" column\", \" fish\", \" fish_indent\", \" fish_key_reader\", \"flac\", \" flac\", \" metaflac\", \"flex\", \" flex\", \" flex++\", \"fontconfig-utils\", \" fc-cache\", \" fc-cat\", \" fc-list\", \" fc-match\", \" fc-pattern\", \" fc-query\", \" fc-scan\", \" fc-validate\", \"fortune\", \" fortune\", \"fossil\", \" fossil\", \"freetype-dev\", \" freetype-config\", \"frobtads\", \" frob\", \" t3make\", \" tadsc\", \"frotz\", \" frotz\", \" zgames\", \"fsmon\", \" fsmon\", \"fwknop\", \" fwknop\", \"fzf\", \" fzf\", \" fzf-tmux\", \"gawk\", \" awk\", \" gawk\", \"gbt\", \" gbt\", \"gcal\", \" gcal\", \" gcal2txt\", \" tcal\", \" txt2gcal\", \"gdb\", \" gcore\", \" gdb\", \" gdbserver\", \"gdbm\", \" gdbm_dump\", \" gdbm_load\", \" gdbmtool\", \"gdk-pixbuf\", \" gdk-pixbuf-csource\", \" gdk-pixbuf-pixdata\", \" gdk-pixbuf-query-loaders\", \"gegl\", \" gcut\", \" gegl\", \" gegl-imgcmp\", \"getconf\", \" getconf\", \"gettext\", \" autopoint\", \" envsubst\", \" gettext\", \" gettext.sh\", \" gettextize\", \" msgattrib\", \" msgcat\", \" msgcmp\", \" msgcomm\", \" msgconv\", \" msgen\", \" msgexec\", \" msgfilter\", \" msgfmt\", \" msggrep\", \" msginit\", \" msgmerge\", \" msgunfmt\", \" msguniq\", \" ngettext\", \" recode-sr-latin\", \" xgettext\", \"ghostscript\", \" dvipdf\", \" eps2eps\", \" gs\", \" gsbj\", \" gsdj\", \" gsdj500\", \" gslj\", \" gslp\", \" gsnd\", \" lprsetup.sh\", \" pdf2dsc\", \" pdf2ps\", \" pf2afm\", \" pfbtopfa\", \" pphs\", \" printafm\", \" ps2ascii\", \" ps2epsi\", \" ps2pdf\", \" ps2pdf12\", \" ps2pdf13\", \" ps2pdf14\", \" ps2pdfwr\", \" ps2ps\", \" ps2ps2\", \" unix-lpr.sh\", \"gifsicle\", \" gifdiff\", \" gifsicle\", \"git\", \" git\", \" git-receive-pack\", \" git-upload-archive\", \" git-upload-pack\", \"glib-bin\", \" gapplication\", \" gdbus\", \" gio\", \" gio-querymodules\", \" glib-compile-resources\", \" glib-compile-schemas\", \" glib-genmarshal\", \" glib-mkenums\", \" gobject-query\", \" gresource\", \" gsettings\", \" gtester\", \"global\", \" global\", \" globash\", \" gozilla\", \" gtags\", \" gtags-cscope\", \" htags\", \" htags-server\", \"glulxe\", \" glulxe\", \"gmic\", \" gmic\", \"gnuchess\", \" gnuchess\", \"gnugo\", \" gnugo\", \"gnuit\", \" .gitaction\", \" gitaction\", \" gitdpkgname\", \" gitfm\", \" gitkeys\", \" gitmkdirs\", \" gitmount\", \" gitps\", \" gitregrep\", \" gitrfgrep\", \" gitrgrep\", \" gitunpack\", \" gitview\", \" gitwhich\", \" gitwipe\", \" gitxgrep\", \"gnupg\", \" gpg\", \" gpg-zip\", \" gpgsplit\", \"gnupg2\", \" addgnupghome\", \" applygnupgdefaults\", \" gpg-agent\", \" gpg-connect-agent\", \" gpg2\", \" gpgconf\", \" gpgparsemail\", \" gpgscm\", \" gpgsm\", \" gpgtar\", \" gpgv2\", \" kbxutil\", \" watchgnupg\", \"gnuplot\", \" gnuplot\", \"gnushogi\", \" gnushogi\", \"gnutls\", \" certtool\", \" gnutls-cli\", \" gnutls-cli-debug\", \" gnutls-serv\", \" ocsptool\", \" psktool\", \" srptool\", \"golang\", \" go\", \" gofmt\", \"gperf\", \" gperf\", \"gpgme\", \" gpgme-tool\", \"gpgme-dev\", \" gpgme-config\", \"gpgv\", \" gpgv\", \"gpsbabel\", \" gpsbabel\", \"graphicsmagick\", \" gm\", \"graphviz\", \" acyclic\", \" bcomps\", \" ccomps\", \" circo\", \" cluster\", \" diffimg\", \" dijkstra\", \" dot\", \" dot2gxl\", \" dot_builtins\", \" edgepaint\", \" fdp\", \" gc\", \" gml2gv\", \" graphml2gv\", \" gv2gml\", \" gv2gxl\", \" gvcolor\", \" gvgen\", \" gvmap\", \" gvmap.sh\", \" gvpack\", \" gvpr\", \" gxl2dot\", \" gxl2gv\", \" mm2gv\", \" neato\", \" nop\", \" osage\", \" patchwork\", \" prune\", \" sccmap\", \" sfdp\", \" tred\", \" twopi\", \" unflatten\", \"greed\", \" greed\", \"grep\", \" egrep\", \" fgrep\", \" grep\", \"gst-plugins-base\", \" gst-device-monitor-1.0\", \" gst-discoverer-1.0\", \" gst-play-1.0\", \"gstreamer\", \" gst-inspect-1.0\", \" gst-launch-1.0\", \" gst-stats-1.0\", \" gst-typefind-1.0\", \"gtypist\", \" gtypist\", \"gzip\", \" gunzip\", \" gzexe\", \" gzip\", \" uncompress\", \" zcat\", \" zcmp\", \" zdiff\", \" zegrep\", \" zfgrep\", \" zforce\", \" zgrep\", \" zless\", \" zmore\", \" znew\", \"harfbuzz-utils\", \" hb-ot-shape-closure\", \" hb-shape\", \" hb-view\", \"hashdeep\", \" hashdeep\", \" md5deep\", \" sha1deep\", \" sha256deep\", \" tigerdeep\", \" whirlpooldeep\", \"hexcurse\", \" hexcurse\", \"heyu\", \" heyu\", \"hfsutils\", \" hattrib\", \" hcd\", \" hcopy\", \" hdel\", \" hdir\", \" hformat\", \" hfsutil\", \" hls\", \" hmkdir\", \" hmount\", \" hpwd\", \" hrename\", \" hrmdir\", \" humount\", \" hvol\", \"htop\", \" htop\", \"httping\", \" httping\", \"hub\", \" hub\", \"hunspell\", \" affixcompress\", \" analyze\", \" chmorph\", \" hunspell\", \" hunzip\", \" hzip\", \" ispellaff2myspell\", \" makealias\", \" munch\", \" unmunch\", \" wordforms\", \" wordlist2hunspell\", \"hydra\", \" dpl4hydra.sh\", \" hydra\", \" hydra-wizard.sh\", \" pw-inspector\", \"icecast\", \" icecast\", \"iconv\", \" iconv\", \"icu-devtools\", \" derb\", \" escapesrc\", \" genbrk\", \" genccode\", \" gencfu\", \" gencmn\", \" gencnval\", \" gendict\", \" gennorm2\", \" genrb\", \" gensprep\", \" icu-config\", \" icuinfo\", \" icupkg\", \" makeconv\", \" pkgdata\", \" uconv\", \"imagemagick\", \" animate\", \" compare\", \" composite\", \" conjure\", \" convert\", \" display\", \" identify\", \" import\", \" magick\", \" magick-script\", \" mogrify\", \" montage\", \" stream\", \"imgflo\", \" imgflo\", \" imgflo-graphinfo\", \" imgflo-runtime\", \"inetutils\", \" dnsdomainname\", \" ftp\", \" logger\", \" telnet\", \" tftp\", \" whois\", \"inotify-tools\", \" inotifywait\", \" inotifywatch\", \"iperf3\", \" iperf3\", \"ired\", \" bdiff\", \" ired\", \" vired\", \"irssi\", \" irssi\", \"jhead\", \" jhead\", \"joe\", \" jmacs\", \" joe\", \" jpico\", \" jstar\", \" rjoe\", \"jq\", \" jq\", \"jupp\", \" jmacs\", \" joe\", \" jpico\", \" jstar\", \" jupp\", \" rjoe\", \"kona\", \" k\", \"krb5\", \" compile_et\", \" gss-client\", \" gss-server\", \" k5srvutil\", \" kadmin\", \" kadmin.local\", \" kadmind\", \" kdb5_util\", \" kdestroy\", \" kinit\", \" klist\", \" kpasswd\", \" kprop\", \" kpropd\", \" kproplog\", \" krb5-config\", \" krb5-send-pr\", \" krb5kdc\", \" ksu\", \" kswitch\", \" ktutil\", \" kvno\", \" sclient\", \" sim_client\", \" sim_server\", \" sserver\", \" uuclient\", \" uuserver\", \"ldc\", \" dub\", \" ldc-build-runtime\", \" ldc2\", \" ldmd2\", \" rdmd\", \"ldns-dev\", \" ldns-config\", \"ledger\", \" ledger\", \"leptonica\", \" convertfilestopdf\", \" convertfilestops\", \" convertformat\", \" convertsegfilestopdf\", \" convertsegfilestops\", \" converttopdf\", \" converttops\", \" fileinfo\", \" xtractprotos\", \"less\", \" less\", \" lessecho\", \" lesskey\", \"lftp\", \" lftp\", \" lftpget\", \"libassuan-dev\", \" libassuan-config\", \"libcaca\", \" caca-config\", \" cacaclock\", \" cacademo\", \" cacafire\", \" cacaplay\", \" cacaserver\", \" cacaview\", \" img2txt\", \"libcairo\", \" cairo-trace\", \"libcroco\", \" croco-0.6-config\", \" csslint-0.6\", \"libcurl-dev\", \" curl-config\", \"libgcrypt\", \" dumpsexp\", \" hmac256\", \" libgcrypt-config\", \" mpicalc\", \"libgd\", \" annotate\", \" bdftogd\", \" gd2copypal\", \" gd2togif\", \" gd2topng\", \" gdcmpgif\", \" gdlib-config\", \" gdparttopng\", \" gdtopng\", \" giftogd2\", \" pngtogd\", \" pngtogd2\", \" webpng\", \"libgpg-error\", \" gpg-error\", \" gpg-error-config\", \"libgrpc\", \" check_epollexclusive\", \" gen_hpack_tables\", \" gen_legal_metadata_characters\", \" gen_percent_encoding_tables\", \" grpc_cpp_plugin\", \" grpc_create_jwt\", \" grpc_csharp_plugin\", \" grpc_node_plugin\", \" grpc_objective_c_plugin\", \" grpc_php_plugin\", \" grpc_print_google_default_creds_token\", \" grpc_python_plugin\", \" grpc_ruby_plugin\", \" grpc_verify_jwt\", \"libjasper-utils\", \" imgcmp\", \" imginfo\", \" jasper\", \"libjpeg-turbo-progs\", \" cjpeg\", \" djpeg\", \" jpegtran\", \" rdjpgcom\", \" tjbench\", \" wrjpgcom\", \"libksba-dev\", \" ksba-config\", \"libnpth\", \" npth-config\", \"liboggz\", \" oggz\", \" oggz-chop\", \" oggz-codecs\", \" oggz-comment\", \" oggz-diff\", \" oggz-dump\", \" oggz-info\", \" oggz-known-codecs\", \" oggz-merge\", \" oggz-rip\", \" oggz-scan\", \" oggz-sort\", \" oggz-validate\", \"libotr\", \" otr_mackey\", \" otr_modify\", \" otr_parse\", \" otr_readforge\", \" otr_remac\", \" otr_sesskeys\", \"libpng-dev\", \" libpng-config\", \" libpng16-config\", \"librsvg\", \" rsvg-convert\", \"libtiff-utils\", \" fax2ps\", \" fax2tiff\", \" pal2rgb\", \" ppm2tiff\", \" raw2tiff\", \" tiff2bw\", \" tiff2pdf\", \" tiff2ps\", \" tiff2rgba\", \" tiffcmp\", \" tiffcp\", \" tiffcrop\", \" tiffdither\", \" tiffdump\", \" tiffinfo\", \" tiffmedian\", \" tiffset\", \" tiffsplit\", \"libtool\", \" libtool\", \" libtoolize\", \"libxapian-dev\", \" xapian-config\", \"libxml2-dev\", \" xml2-config\", \"libxml2-utils\", \" xmlcatalog\", \" xmllint\", \"libxslt-dev\", \" xslt-config\", \"libzmq\", \" curve_keygen\", \"lighttpd\", \" lighttpd\", \"littlecms-utils\", \" jpgicc\", \" linkicc\", \" psicc\", \" tificc\", \" transicc\", \"lld\", \" ld.lld\", \" lld\", \" lld-link\", \"llvm\", \" llc\", \" lli\", \" llvm-ar\", \" llvm-as\", \" llvm-bcanalyzer\", \" llvm-c-test\", \" llvm-cat\", \" llvm-config\", \" llvm-cov\", \" llvm-cvtres\", \" llvm-cxxdump\", \" llvm-cxxfilt\", \" llvm-diff\", \" llvm-dis\", \" llvm-dlltool\", \" llvm-dsymutil\", \" llvm-dwarfdump\", \" llvm-dwp\", \" llvm-extract\", \" llvm-lib\", \" llvm-link\", \" llvm-lto\", \" llvm-lto2\", \" llvm-mc\", \" llvm-mcmarkup\", \" llvm-modextract\", \" llvm-mt\", \" llvm-nm\", \" llvm-objdump\", \" llvm-opt-report\", \" llvm-pdbutil\", \" llvm-profdata\", \" llvm-ranlib\", \" llvm-readelf\", \" llvm-readobj\", \" llvm-rtdyld\", \" llvm-size\", \" llvm-split\", \" llvm-stress\", \" llvm-strings\", \" llvm-symbolizer\", \" llvm-xray\", \" obj2yaml\", \" opt\", \" verify-uselistorder\", \" yaml2obj\", \"ltrace\", \" ltrace\", \"lua\", \" lua\", \" luac\", \"lynx\", \" lynx\", \"lzip\", \" lzip\", \"lzop\", \" lzop\", \"m4\", \" m4\", \"macchanger\", \" macchanger\", \"make\", \" make\", \"man\", \" apropos\", \" demandoc\", \" makewhatis\", \" man\", \" mandoc\", \" soelim\", \" whatis\", \"mariadb\", \" aria_chk\", \" aria_dump_log\", \" aria_ftdump\", \" aria_pack\", \" aria_read_log\", \" innochecksum\", \" mariadb_config\", \" msql2mysql\", \" my_print_defaults\", \" myisam_ftdump\", \" myisamchk\", \" myisamlog\", \" myisampack\", \" mysql\", \" mysql_client_test\", \" mysql_config\", \" mysql_convert_table_format\", \" mysql_find_rows\", \" mysql_fix_extensions\", \" mysql_install_db\", \" mysql_plugin\", \" mysql_secure_installation\", \" mysql_setpermission\", \" mysql_tzinfo_to_sql\", \" mysql_upgrade\", \" mysql_waitpid\", \" mysqlaccess\", \" mysqladmin\", \" mysqlbinlog\", \" mysqlcheck\", \" mysqld\", \" mysqld_multi\", \" mysqld_safe\", \" mysqld_safe_helper\", \" mysqldump\", \" mysqldumpslow\", \" mysqlhotcopy\", \" mysqlimport\", \" mysqlshow\", \" mysqlslap\", \" mytop\", \" perror\", \" replace\", \" resolve_stack_dump\", \" resolveip\", \"mathomatic\", \" mathomatic\", \"mc\", \" mc\", \" mcdiff\", \" mcedit\", \" mcview\", \"megatools\", \" megacopy\", \" megadf\", \" megadl\", \" megaget\", \" megals\", \" megamkdir\", \" megaput\", \" megareg\", \" megarm\", \"memcached\", \" memcached\", \"micro\", \" micro\", \"minicom\", \" ascii-xfr\", \" minicom\", \" runscript\", \" xminicom\", \"mlocate\", \" locate\", \" updatedb\", \"moon-buggy\", \" moon-buggy\", \"moria\", \" moria\", \"mosh\", \" mosh\", \" mosh-client\", \" mosh-server\", \" mosh.pl\", \"mosquitto\", \" mosquitto\", \" mosquitto_passwd\", \" mosquitto_pub\", \" mosquitto_sub\", \"mp3splt\", \" mp3splt\", \"mpc\", \" mpc\", \"mpd\", \" mpd\", \"mpv\", \" mpv\", \"mtools\", \" amuFormat.sh\", \" lz\", \" mattrib\", \" mbadblocks\", \" mcat\", \" mcd\", \" mcheck\", \" mclasserase\", \" mcomp\", \" mcopy\", \" mdel\", \" mdeltree\", \" mdir\", \" mdu\", \" mformat\", \" minfo\", \" mkmanifest\", \" mlabel\", \" mmd\", \" mmount\", \" mmove\", \" mpartition\", \" mrd\", \" mren\", \" mshortname\", \" mshowfat\", \" mtools\", \" mtoolstest\", \" mtype\", \" mxtar\", \" mzip\", \" tgz\", \" uz\", \"multitail\", \" multitail\", \"mutt\", \" mutt\", \" pgpewrap\", \" pgpring\", \" smime_keys\", \"nano\", \" nano\", \"ncdc\", \" ncdc\", \"ncdu\", \" ncdu\", \"ncmpcpp\", \" ncmpcpp\", \"ncurses-dev\", \" ncursesw6-config\", \"ncurses-utils\", \" clear\", \" infocmp\", \" reset\", \" tabs\", \" tic\", \" toe\", \" tput\", \" tset\", \"ne\", \" ne\", \"neovim\", \" nvim\", \"net-tools\", \" arp\", \" ifconfig\", \" ipmaddr\", \" iptunnel\", \" mii-tool\", \" nameif\", \" netstat\", \" plipconfig\", \" rarp\", \" route\", \" slattach\", \"netcat\", \" nc\", \" ncat\", \" netcat\", \"netpbm\", \" 411toppm\", \" anytopnm\", \" asciitopgm\", \" atktopbm\", \" avstopam\", \" bioradtopgm\", \" bmptopnm\", \" bmptoppm\", \" brushtopbm\", \" cameratopam\", \" cistopbm\", \" cmuwmtopbm\", \" ddbugtopbm\", \" escp2topbm\", \" eyuvtoppm\", \" fiascotopnm\", \" fitstopnm\", \" fstopgm\", \" g3topbm\", \" gemtopbm\", \" gemtopnm\", \" giftopnm\", \" gouldtoppm\", \" hdifftopam\", \" hipstopgm\", \" hpcdtoppm\", \" icontopbm\", \" ilbmtoppm\", \" imgtoppm\", \" infotopam\", \" jbigtopnm\", \" jpeg2ktopam\", \" jpegtopnm\", \" leaftoppm\", \" lispmtopgm\", \" macptopbm\", \" manweb\", \" mdatopbm\", \" mgrtopbm\", \" mrftopbm\", \" mtvtoppm\", \" neotoppm\", \" netpbm-config\", \" palmtopnm\", \" pamaddnoise\", \" pamarith\", \" pambackground\", \" pambayer\", \" pamchannel\", \" pamcomp\", \" pamcrater\", \" pamcut\", \" pamdeinterlace\", \" pamdepth\", \" pamdice\", \" pamditherbw\", \" pamedge\", \" pamendian\", \" pamenlarge\", \" pamexec\", \" pamfile\", \" pamfix\", \" pamfixtrunc\", \" pamflip\", \" pamfunc\", \" pamgauss\", \" pamgradient\", \" pamlookup\", \" pammasksharpen\", \" pammixinterlace\", \" pammosaicknit\", \" pamoil\", \" pampaintspill\", \" pamperspective\", \" pampick\", \" pampop9\", \" pamrecolor\", \" pamrgbatopng\", \" pamrubber\", \" pamscale\", \" pamseq\", \" pamshadedrelief\", \" pamsharpmap\", \" pamsharpness\", \" pamsistoaglyph\", \" pamslice\", \" pamsplit\", \" pamstack\", \" pamstereogram\", \" pamstretch\", \" pamstretch-gen\", \" pamsumm\", \" pamsummcol\", \" pamtable\", \" pamthreshold\", \" pamtilt\", \" pamtoavs\", \" pamtodjvurle\", \" pamtofits\", \" pamtogif\", \" pamtohdiff\", \" pamtohtmltbl\", \" pamtojpeg2k\", \" pamtompfont\", \" pamtooctaveimg\", \" pamtopam\", \" pamtopdbimg\", \" pamtopfm\", \" pamtopng\", \" pamtopnm\", \" pamtosrf\", \" pamtosvg\", \" pamtotga\", \" pamtotiff\", \" pamtouil\", \" pamtowinicon\", \" pamtoxvmini\", \" pamundice\", \" pamunlookup\", \" pamvalidate\", \" pamwipeout\", \" pbmclean\", \" pbmlife\", \" pbmmake\", \" pbmmask\", \" pbmminkowski\", \" pbmpage\", \" pbmpscale\", \" pbmreduce\", \" pbmtext\", \" pbmtextps\", \" pbmto10x\", \" pbmto4425\", \" pbmtoascii\", \" pbmtoatk\", \" pbmtobbnbg\", \" pbmtocis\", \" pbmtocmuwm\", \" pbmtodjvurle\", \" pbmtoepsi\", \" pbmtoepson\", \" pbmtoescp2\", \" pbmtog3\", \" pbmtogem\", \" pbmtogo\", \" pbmtoibm23xx\", \" pbmtoicon\", \" pbmtolj\", \" pbmtoln03\", \" pbmtolps\", \" pbmtomacp\", \" pbmtomatrixorbital\", \" pbmtomda\", \" pbmtomgr\", \" pbmtomrf\", \" pbmtonokia\", \" pbmtopgm\", \" pbmtopi3\", \" pbmtopk\", \" pbmtoplot\", \" pbmtoppa\", \" pbmtopsg3\", \" pbmtoptx\", \" pbmtosunicon\", \" pbmtowbmp\", \" pbmtox10bm\", \" pbmtoxbm\", \" pbmtoybm\", \" pbmtozinc\", \" pbmupc\", \" pc1toppm\", \" pcdovtoppm\", \" pcxtoppm\", \" pdbimgtopam\", \" pfmtopam\", \" pgmabel\", \" pgmbentley\", \" pgmcrater\", \" pgmdeshadow\", \" pgmedge\", \" pgmenhance\", \" pgmhist\", \" pgmkernel\", \" pgmmake\", \" pgmmedian\", \" pgmminkowski\", \" pgmmorphconv\", \" pgmnoise\", \" pgmnorm\", \" pgmoil\", \" pgmramp\", \" pgmslice\", \" pgmtexture\", \" pgmtofs\", \" pgmtolispm\", \" pgmtopbm\", \" pgmtopgm\", \" pgmtoppm\", \" pgmtosbig\", \" pgmtost4\", \" pi1toppm\", \" pi3topbm\", \" picttoppm\", \" pjtoppm\", \" pktopbm\", \" pngtopam\", \" pngtopnm\", \" pnmalias\", \" pnmarith\", \" pnmcat\", \" pnmcolormap\", \" pnmcomp\", \" pnmconvol\", \" pnmcrop\", \" pnmcut\", \" pnmdepth\", \" pnmenlarge\", \" pnmfile\", \" pnmflip\", \" pnmgamma\", \" pnmhisteq\", \" pnmhistmap\", \" pnmindex\", \" pnminterp\", \" pnminvert\", \" pnmmargin\", \" pnmmercator\", \" pnmmontage\", \" pnmnlfilt\", \" pnmnoraw\", \" pnmnorm\", \" pnmpad\", \" pnmpaste\", \" pnmpsnr\", \" pnmquant\", \" pnmquantall\", \" pnmremap\", \" pnmrotate\", \" pnmscale\", \" pnmscalefixed\", \" pnmshear\", \" pnmsmooth\", \" pnmsplit\", \" pnmstitch\", \" pnmtile\", \" pnmtoddif\", \" pnmtofiasco\", \" pnmtofits\", \" pnmtojbig\", \" pnmtojpeg\", \" pnmtopalm\", \" pnmtopclxl\", \" pnmtoplainpnm\", \" pnmtopng\", \" pnmtopnm\", \" pnmtops\", \" pnmtorast\", \" pnmtorle\", \" pnmtosgi\", \" pnmtosir\", \" pnmtotiff\", \" pnmtotiffcmyk\", \" pnmtoxwd\", \" ppm3d\", \" ppmbrighten\", \" ppmchange\", \" ppmcie\", \" ppmcolormask\", \" ppmcolors\", \" ppmdcfont\", \" ppmddumpfont\", \" ppmdim\", \" ppmdist\", \" ppmdither\", \" ppmdmkfont\", \" ppmdraw\", \" ppmfade\", \" ppmflash\", \" ppmforge\", \" ppmglobe\", \" ppmhist\", \" ppmlabel\", \" ppmmake\", \" ppmmix\", \" ppmnorm\", \" ppmntsc\", \" ppmpat\", \" ppmquant\", \" ppmquantall\", \" ppmrainbow\", \" ppmrelief\", \" ppmrough\", \" ppmshadow\", \" ppmshift\", \" ppmspread\", \" ppmtoacad\", \" ppmtoapplevol\", \" ppmtoarbtxt\", \" ppmtoascii\", \" ppmtobmp\", \" ppmtoeyuv\", \" ppmtogif\", \" ppmtoicr\", \" ppmtoilbm\", \" ppmtojpeg\", \" ppmtoleaf\", \" ppmtolj\", \" ppmtomap\", \" ppmtomitsu\", \" ppmtompeg\", \" ppmtoneo\", \" ppmtopcx\", \" ppmtopgm\", \" ppmtopi1\", \" ppmtopict\", \" ppmtopj\", \" ppmtopjxl\", \" ppmtoppm\", \" ppmtopuzz\", \" ppmtorgb3\", \" ppmtosixel\", \" ppmtospu\", \" ppmtoterm\", \" ppmtotga\", \" ppmtouil\", \" ppmtowinicon\", \" ppmtoxpm\", \" ppmtoyuv\", \" ppmtoyuvsplit\", \" ppmtv\", \" ppmwheel\", \" psidtopgm\", \" pstopnm\", \" qrttoppm\", \" rasttopnm\", \" rawtopgm\", \" rawtoppm\", \" rgb3toppm\", \" rlatopam\", \" rletopnm\", \" sbigtopgm\", \" sgitopnm\", \" sirtopnm\", \" sldtoppm\", \" spctoppm\", \" spottopgm\", \" sputoppm\", \" srftopam\", \" st4topgm\", \" sunicontopnm\", \" svgtopam\", \" tgatoppm\", \" thinkjettopbm\", \" tifftopnm\", \" wbmptopbm\", \" winicontopam\", \" winicontoppm\", \" xbmtopbm\", \" ximtoppm\", \" xpmtoppm\", \" xvminitoppm\", \" xwdtopnm\", \" ybmtopbm\", \" yuvsplittoppm\", \" yuvtoppm\", \" yuy2topam\", \" zeisstopnm\", \"nettle\", \" nettle-hash\", \" nettle-lfib-stream\", \" nettle-pbkdf2\", \" pkcs1-conv\", \" sexp-conv\", \"newsboat\", \" newsboat\", \" podboat\", \"nginx\", \" nginx\", \"ninja\", \" ninja\", \"nmap\", \" nmap\", \" nping\", \"nodejs\", \" node\", \" npm\", \" npx\", \"nodejs-current\", \" node\", \" npm\", \" npx\", \"notmuch\", \" notmuch\", \"nyancat\", \" nyancat\", \"nzbget\", \" nzbget\", \"oathtool\", \" oathtool\", \" pskctool\", \"ocrad\", \" ocrad\", \"openjpeg-tools\", \" opj_compress\", \" opj_decompress\", \" opj_dump\", \"openssh\", \" scp\", \" sftp\", \" source-ssh-agent\", \" ssh\", \" ssh-add\", \" ssh-agent\", \" ssh-copy-id\", \" ssh-keygen\", \" ssh-keyscan\", \" ssha\", \" sshd\", \"openssl-tool\", \" openssl\", \"optipng\", \" optipng\", \"opus-tools\", \" opusdec\", \" opusenc\", \" opusinfo\", \"p7zip\", \" 7z\", \" 7za\", \" 7zr\", \"pango\", \" pango-view\", \"par2\", \" par2\", \" par2create\", \" par2repair\", \" par2verify\", \"patch\", \" patch\", \"patchelf\", \" patchelf\", \"pcre-dev\", \" pcre-config\", \"pcre2-dev\", \" pcre2-config\", \"perl\", \" corelist\", \" cpan\", \" enc2xs\", \" encguess\", \" h2ph\", \" h2xs\", \" instmodsh\", \" json_pp\", \" libnetcfg\", \" perl\", \" perlbug\", \" perldoc\", \" perlivp\", \" perlthanks\", \" piconv\", \" pl2pm\", \" pod2html\", \" pod2man\", \" pod2text\", \" pod2usage\", \" podchecker\", \" podselect\", \" prove\", \" ptar\", \" ptardiff\", \" ptargrep\", \" shasum\", \" splain\", \" xsubpp\", \" zipdetails\", \"pforth\", \" pforth\", \"php\", \" phar\", \" phar.phar\", \" php\", \" php-cgi\", \" php-config\", \" phpdbg\", \" phpize\", \"php-fpm\", \" php-fpm\", \"pick\", \" pick\", \"picolisp\", \" picolisp\", \" pil\", \"pinentry\", \" pinentry\", \" pinentry-curses\", \"pkg-config\", \" pkg-config\", \"play-audio\", \" play-audio\", \"pngquant\", \" pngquant\", \"poppler\", \" pdfdetach\", \" pdffonts\", \" pdfimages\", \" pdfinfo\", \" pdfseparate\", \" pdftocairo\", \" pdftohtml\", \" pdftoppm\", \" pdftops\", \" pdftotext\", \" pdfunite\", \"postgresql\", \" clusterdb\", \" createdb\", \" createuser\", \" dropdb\", \" dropuser\", \" initdb\", \" pg_archivecleanup\", \" pg_basebackup\", \" pg_config\", \" pg_controldata\", \" pg_ctl\", \" pg_dump\", \" pg_dumpall\", \" pg_isready\", \" pg_receivewal\", \" pg_recvlogical\", \" pg_resetwal\", \" pg_restore\", \" pg_rewind\", \" pg_test_fsync\", \" pg_test_timing\", \" pg_upgrade\", \" pg_waldump\", \" pgbench\", \" postgres\", \" postmaster\", \" psql\", \" reindexdb\", \" vacuumdb\", \"potrace\", \" mkbitmap\", \" potrace\", \"privoxy\", \" privoxy\", \"procps\", \" free\", \" pgrep\", \" pidof\", \" pkill\", \" pmap\", \" ps\", \" pwdx\", \" slabtop\", \" sysctl\", \" tload\", \" top\", \" uptime\", \" vmstat\", \" w\", \" watch\", \"profanity\", \" profanity\", \"proot\", \" proot\", \" termux-chroot\", \"protobuf\", \" protoc\", \"psmisc\", \" fuser\", \" killall\", \" peekfd\", \" prtstat\", \" pstree\", \"pulseaudio\", \" esdcompat\", \" pacat\", \" pacmd\", \" pactl\", \" pasuspender\", \" pulseaudio\", \"pure-ftpd\", \" pure-authd\", \" pure-ftpd\", \" pure-ftpwho\", \" pure-mrtginfo\", \" pure-pw\", \" pure-pwconvert\", \" pure-quotacheck\", \" pure-statsdecode\", \" pure-uploadscript\", \"pv\", \" pv\", \"pwgen\", \" pwgen\", \"python\", \" 2to3\", \" 2to3-3.6\", \" pydoc3\", \" pydoc3.6\", \" python\", \" python3\", \" python3-config\", \" python3.6\", \" python3.6-config\", \" python3.6m-config\", \" pyvenv\", \" pyvenv-3.6\", \"python2\", \" idle\", \" pydoc\", \" python-config\", \" python2\", \" python2-config\", \" python2.7\", \" python2.7-config\", \" smtpd.py\", \"qalc\", \" qalc\", \"qpdf\", \" fix-qdf\", \" qpdf\", \" zlib-flate\", \"radare2\", \" r2\", \" r2agent\", \" r2pm\", \" rabin2\", \" radare2\", \" radiff2\", \" rafind2\", \" ragg2\", \" ragg2-cc\", \" rahash2\", \" rarun2\", \" rasm2\", \" rax2\", \"ragel\", \" ragel\", \"rcs\", \" ci\", \" co\", \" ident\", \" merge\", \" rcs\", \" rcsclean\", \" rcsdiff\", \" rcsmerge\", \" rlog\", \"rdiff\", \" rdiff\", \"redir\", \" redir\", \"redis\", \" redis-benchmark\", \" redis-check-aof\", \" redis-check-rdb\", \" redis-cli\", \" redis-sentinel\", \" redis-server\", \"remind\", \" rem\", \" rem2ps\", \" remind\", \"rgbds\", \" rgbasm\", \" rgbfix\", \" rgbgfx\", \" rgblink\", \"rlwrap\", \" rlwrap\", \"rsync\", \" rsync\", \"rtmpdump\", \" rtmpdump\", \" rtmpgw\", \" rtmpsrv\", \" rtmpsuck\", \"ruby\", \" erb\", \" gem\", \" irb\", \" rake\", \" rdoc\", \" ruby\", \"screen\", \" screen\", \" screen-4.6.2\", \"scrypt\", \" scrypt\", \"sed\", \" sed\", \"sensible-utils\", \" select-editor\", \" sensible-browser\", \" sensible-editor\", \" sensible-pager\", \"sharutils\", \" shar\", \" unshar\", \" uudecode\", \" uuencode\", \"silversearcher-ag\", \" ag\", \"sl\", \" sl\", \"socat\", \" filan\", \" procan\", \" socat\", \"sox\", \" play\", \" rec\", \" sox\", \" soxi\", \"sqlite\", \" sqlite3\", \"squid\", \" purge\", \" squid\", \" squidclient\", \"sshpass\", \" sshpass\", \"sslscan\", \" sslscan\", \"stag\", \" stag\", \"strace\", \" strace\", \" strace-log-merge\", \"stunnel\", \" stunnel\", \"subversion\", \" svn\", \" svnadmin\", \" svnbench\", \" svndumpfilter\", \" svnfsfs\", \" svnlook\", \" svnmucc\", \" svnrdump\", \" svnserve\", \" svnsync\", \" svnversion\", \"syncthing\", \" syncthing\", \"tar\", \" tar\", \"tasksh\", \" tasksh\", \"taskwarrior\", \" task\", \"tcl\", \" sqlite3_analyzer\", \" tclsh\", \" tclsh8.6\", \"tcsh\", \" tcsh\", \"teckit\", \" sfconv\", \" teckit_compile\", \" txtconv\", \"termux-api\", \" termux-audio-info\", \" termux-battery-status\", \" termux-camera-info\", \" termux-camera-photo\", \" termux-clipboard-get\", \" termux-clipboard-set\", \" termux-contact-list\", \" termux-dialog\", \" termux-download\", \" termux-infrared-frequencies\", \" termux-infrared-transmit\", \" termux-location\", \" termux-media-scan\", \" termux-notification\", \" termux-notification-remove\", \" termux-share\", \" termux-sms-inbox\", \" termux-sms-send\", \" termux-storage-get\", \" termux-telephony-call\", \" termux-telephony-cellinfo\", \" termux-telephony-deviceinfo\", \" termux-toast\", \" termux-tts-engines\", \" termux-tts-speak\", \" termux-vibrate\", \" termux-wifi-connectioninfo\", \" termux-wifi-scaninfo\", \"termux-elf-cleaner\", \" termux-elf-cleaner\", \"teseq\", \" reseq\", \" teseq\", \"tesseract\", \" tesseract\", \"texinfo\", \" info\", \" install-info\", \" makeinfo\", \" pdftexi2dvi\", \" pod2texi\", \" texi2any\", \" texi2dvi\", \" texi2pdf\", \" texindex\", \"texlive-bin\", \" a2ping\", \" a5toa4\", \" adhocfilelist\", \" afm2afm\", \" afm2pl\", \" afm2tfm\", \" aleph\", \" allcm\", \" allec\", \" allneeded\", \" arara\", \" arlatex\", \" authorindex\", \" autoinst\", \" autosp\", \" bbl2bib\", \" bbox\", \" bg5+latex\", \" bg5+pdflatex\", \" bg5conv\", \" bg5latex\", \" bg5pdflatex\", \" bibdoiadd\", \" bibexport\", \" bibmradd\", \" bibtex\", \" bibtex8\", \" bibzbladd\", \" bundledoc\", \" cachepic\", \" cef5conv\", \" cef5latex\", \" cef5pdflatex\", \" cefconv\", \" ceflatex\", \" cefpdflatex\", \" cefsconv\", \" cefslatex\", \" cefspdflatex\", \" cfftot1\", \" checkcites\", \" checklistings\", \" chktex\", \" chkweb\", \" cjk-gs-integrate\", \" context\", \" contextjit\", \" convbkmk\", \" ctangle\", \" ctanify\", \" ctanupload\", \" ctie\", \" cweave\", \" de-macro\", \" depythontex\", \" detex\", \" devnag\", \" deweb\", \" diadia\", \" disdvi\", \" dosepsbin\", \" dt2dv\", \" dtxgen\", \" dv2dt\", \" dvi2fax\", \" dvi2tty\", \" dviasm\", \" dvicopy\", \" dvidvi\", \" dvigif\", \" dvihp\", \" dvilj\", \" dvilj2p\", \" dvilj4\", \" dvilj4l\", \" dvilj6\", \" dvipdfm\", \" dvipdfmx\", \" dvipdft\", \" dvipng\", \" dvipos\", \" dvips\", \" dvired\", \" dvitomp\", \" dvitype\", \" e2pall\", \" ebb\", \" ebong\", \" epspdf\", \" epspdftk\", \" epstopdf\", \" eptex\", \" euptex\", \" exceltex\", \" extconv\", \" extractbb\", \" fig4latex\", \" findhyph\", \" fmtutil\", \" fmtutil-sys\", \" fmtutil-user\", \" fontinst\", \" fragmaster\", \" gbklatex\", \" gbkpdflatex\", \" getmapdl\", \" gftodvi\", \" gftopk\", \" gftype\", \" gsftopk\", \" hbf2gf\", \" ht\", \" htcontext\", \" htlatex\", \" htmex\", \" httex\", \" httexi\", \" htxelatex\", \" htxetex\", \" inimf\", \" initex\", \" installfont-tl\", \" jamo-normalize\", \" kanji-config-updmap\", \" kanji-config-updmap-sys\", \" kanji-config-updmap-user\", \" kanji-fontmap-creator\", \" komkindex\", \" kpseaccess\", \" kpsepath\", \" kpsereadlink\", \" kpsestat\", \" kpsetool\", \" kpsewhere\", \" kpsewhich\", \" kpsexpand\", \" lacheck\", \" latex-git-log\", \" latex-papersize\", \" latex2man\", \" latex2nemeth\", \" latexdiff\", \" latexdiff-vc\", \" latexfileversion\", \" latexindent\", \" latexmk\", \" latexpand\", \" latexrevise\", \" lily-glyph-commands\", \" lily-image-commands\", \" lily-rebuild-pdfs\", \" listbib\", \" listings-ext.sh\", \" ltx2crossrefxml\", \" ltxfileinfo\", \" ltximg\", \" lua2dox_filter\", \" luaotfload-tool\", \" luatex\", \" luatools\", \" lwarpmk\", \" m-tx\", \" make4ht\", \" makedtx\", \" makeglossaries\", \" makeglossaries-lite\", \" makeindex\", \" match_parens\", \" mathspic\", \" mf\", \" mf-nowin\", \" mf2pt1\", \" mfplain\", \" mft\", \" mk4ht\", \" mkgrkindex\", \" mkindex\", \" mkjobtexmf\", \" mkocp\", \" mkofm\", \" mkpic\", \" mkt1font\", \" mktexfmt\", \" mktexlsr\", \" mktexmf\", \" mktexpk\", \" mktextfm\", \" mmafm\", \" mmpfb\", \" mpost\", \" mptopdf\", \" mtxrun\", \" mtxrunjit\", \" multibibliography\", \" musixflx\", \" musixtex\", \" odvicopy\", \" odvitype\", \" ofm2opl\", \" omfonts\", \" opl2ofm\", \" ot2kpx\", \" otangle\", \" otfinfo\", \" otftotfm\", \" otp2ocp\", \" outocp\", \" ovf2ovp\", \" ovp2ovf\", \" patgen\", \" pbibtex\", \" pdf180\", \" pdf270\", \" pdf90\", \" pdfannotextractor\", \" pdfatfi\", \" pdfbook\", \" pdfbook2\", \" pdfcrop\", \" pdfflip\", \" pdfjam\", \" pdfjam-pocketmod\", \" pdfjam-slides3up\", \" pdfjam-slides6up\", \" pdfjoin\", \" pdflatexpicscale\", \" pdfnup\", \" pdfpun\", \" pdftex\", \" pdftosrc\", \" pdfxup\", \" pdvitomp\", \" pdvitype\", \" pedigree\", \" perltex\", \" pfarrei\", \" pkfix\", \" pkfix-helper\", \" pktogf\", \" pktype\", \" pltotf\", \" pmpost\", \" pmxchords\", \" pn2pdf\", \" pooltype\", \" ppltotf\", \" prepmx\", \" ps2eps\", \" ps2frag\", \" ps4pdf\", \" pslatex\", \" pst2pdf\", \" ptex\", \" ptex2pdf\", \" ptftopl\", \" purifyeps\", \" pygmentex\", \" pythontex\", \" repstopdf\", \" rpdfcrop\", \" rubibtex\", \" rubikrotation\", \" rumakeindex\", \" rungs\", \" simpdftex\", \" sjisconv\", \" sjislatex\", \" sjispdflatex\", \" splitindex\", \" srcredact\", \" sty2dtx\", \" svn-multi\", \" synctex\", \" t1dotlessj\", \" t1lint\", \" t1rawafm\", \" t1reencode\", \" t1testpage\", \" t4ht\", \" tangle\", \" tex\", \" tex4ebook\", \" tex4ht\", \" texconfig\", \" texconfig-dialog\", \" texconfig-sys\", \" texcount\", \" texdef\", \" texdiff\", \" texdirflatten\", \" texdoc\", \" texdoctk\", \" texexec\", \" texfot\", \" texhash\", \" texlinks\", \" texliveonfly\", \" texloganalyser\", \" texlua\", \" texluac\", \" texmfstart\", \" texosquery\", \" texosquery-jre5\", \" texosquery-jre8\", \" tftopl\", \" thumbpdf\", \" tie\", \" tlmgr\", \" tlmgr.ln\", \" tpic2pdftex\", \" ttf2afm\", \" ttf2kotexfont\", \" ttf2pk\", \" ttf2tfm\", \" ttftotype42\", \" typeoutfileinfo\", \" ulqda\", \" upbibtex\", \" updmap\", \" updmap-sys\", \" updmap-user\", \" updvitomp\", \" updvitype\", \" upmendex\", \" upmpost\", \" uppltotf\", \" uptex\", \" uptftopl\", \" urlbst\", \" vftovp\", \" vlna\", \" vpe\", \" vpl2ovp\", \" vpl2vpl\", \" vptovf\", \" weave\", \" wofm2opl\", \" wopl2ofm\", \" wovf2ovp\", \" wovp2ovf\", \" xdvipdfmx\", \" xetex\", \" xhlatex\", \" yplan\", \"tig\", \" tig\", \"timewarrior\", \" timew\", \"tintin++\", \" tt++\", \"tinyscheme\", \" tinyscheme\", \"tmate\", \" tmate\", \"tmux\", \" tmux\", \"toilet\", \" toilet\", \"tor\", \" tor\", \" tor-gencert\", \" tor-resolve\", \" torify\", \"torsocks\", \" torsocks\", \"tracepath\", \" tracepath\", \" traceroute\", \"transmission\", \" transmission-create\", \" transmission-daemon\", \" transmission-edit\", \" transmission-remote\", \" transmission-show\", \"tree\", \" tree\", \"tsocks\", \" tsocks\", \"tty-clock\", \" tty-clock\", \"tty-solitaire\", \" ttysolitaire\", \"ttyrec\", \" ttyplay\", \" ttyrec\", \" ttytime\", \"units\", \" units\", \" units_cur\", \"unrar\", \" unrar\", \"unzip\", \" funzip\", \" unzip\", \" unzipsfx\", \" zipgrep\", \" zipinfo\", \"utfdecode\", \" utfdecode\", \"util-linux\", \" addpart\", \" blkdiscard\", \" blkid\", \" blkzone\", \" blockdev\", \" cal\", \" chcpu\", \" chrt\", \" col\", \" colcrt\", \" colrm\", \" ctrlaltdel\", \" delpart\", \" dmesg\", \" fallocate\", \" fdformat\", \" fincore\", \" findfs\", \" flock\", \" fsck.cramfs\", \" fsck.minix\", \" fsfreeze\", \" getopt\", \" hexdump\", \" hwclock\", \" ionice\", \" isosize\", \" ldattach\", \" linux32\", \" linux64\", \" look\", \" losetup\", \" lscpu\", \" lsipc\", \" lsns\", \" mcookie\", \" mesg\", \" mkfs\", \" mkfs.bfs\", \" mkfs.cramfs\", \" mkfs.minix\", \" mkswap\", \" more\", \" namei\", \" nologin\", \" nsenter\", \" partx\", \" prlimit\", \" raw\", \" readprofile\", \" rename\", \" renice\", \" resizepart\", \" rev\", \" rtcwake\", \" script\", \" scriptreplay\", \" setarch\", \" setsid\", \" setterm\", \" swaplabel\", \" taskset\", \" ul\", \" uname26\", \" unshare\", \" wdctl\", \" whereis\", \" wipefs\", \" zramctl\", \"valac\", \" vala\", \" vala-0.38\", \" vala-gen-introspect\", \" vala-gen-introspect-0.38\", \" valac\", \" valac-0.38\", \" vapicheck\", \" vapicheck-0.38\", \" vapigen\", \" vapigen-0.38\", \"valadoc\", \" valadoc\", \" valadoc-0.38\", \"valgrind\", \" callgrind_annotate\", \" callgrind_control\", \" cg_annotate\", \" cg_diff\", \" cg_merge\", \" ms_print\", \" valgrind\", \" valgrind-di-server\", \" valgrind-listener\", \" vgdb\", \"vifm\", \" vifm\", \" vifm-convert-dircolors\", \" vifm-pause\", \" vifm-screen-split\", \"vim\", \" vi\", \" view\", \" vim\", \" vimdiff\", \" vimtutor\", \" xxd\", \"vim-python\", \" vi\", \" view\", \" vim\", \" vimdiff\", \" vimtutor\", \" xxd\", \"vorbis-tools\", \" oggdec\", \" oggenc\", \" ogginfo\", \" vcut\", \" vorbiscomment\", \"vttest\", \" vttest\", \"vtutils\", \" vtquery\", \" vtshowkeys\", \" vtsize\", \" vttitle\", \"w3m\", \" w3m\", \" w3mman\", \"wcalc\", \" wcalc\", \"weechat\", \" weechat\", \"wget\", \" wget\", \"wol\", \" wol\", \" wol-bootptab\", \" wol-dhcpdconf\", \"x264\", \" x264\", \"x265\", \" x265\", \"xapian-tools\", \" copydatabase\", \" quest\", \" simpleexpand\", \" simpleindex\", \" simplesearch\", \" xapian-check\", \" xapian-compact\", \" xapian-delve\", \" xapian-metadata\", \" xapian-progsrv\", \" xapian-replicate\", \" xapian-replicate-server\", \" xapian-tcpsrv\", \"xmlsec\", \" xmlsec1\", \" xmlsec1-config\", \"xmlstarlet\", \" xml\", \"xorriso\", \" osirrox\", \" xorrecord\", \" xorriso\", \" xorriso-tcltk\", \" xorrisofs\", \"xsltproc\", \" xsltproc\", \"xz-utils\", \" lzcat\", \" lzcmp\", \" lzdiff\", \" lzegrep\", \" lzfgrep\", \" lzgrep\", \" lzless\", \" lzma\", \" lzmadec\", \" lzmainfo\", \" lzmore\", \" unlzma\", \" unxz\", \" xz\", \" xzcat\", \" xzcmp\", \" xzdec\", \" xzdiff\", \" xzegrep\", \" xzfgrep\", \" xzgrep\", \" xzless\", \" xzmore\", \"yasm\", \" vsyasm\", \" yasm\", \" ytasm\", \"zbar\", \" zbarimg\", \"zile\", \" zile\", \"zip\", \" zip\", \" zipcloak\", \" zipnote\", \" zipsplit\", \"zsh\", \" zsh\", \"zstd\", \" unzstd\", \" zstd\", \" zstdcat\", \" zstdgrep\", \" zstdless\", \" zstdmt\", \"ack-grep\", \" ack\", \"apksigner\", \" apksigner\", \"asciinema\", \" asciinema\", \"autoconf\", \" autoconf\", \" autoheader\", \" autom4te\", \" autoreconf\", \" autoscan\", \" autoupdate\", \" ifnames\", \"automake\", \" aclocal\", \" aclocal-1.15\", \" automake\", \" automake-1.15\", \"byobu\", \" byobu\", \" byobu-config\", \" byobu-ctrl-a\", \" byobu-disable\", \" byobu-disable-prompt\", \" byobu-enable\", \" byobu-enable-prompt\", \" byobu-export\", \" byobu-janitor\", \" byobu-keybindings\", \" byobu-launch\", \" byobu-launcher\", \" byobu-launcher-install\", \" byobu-launcher-uninstall\", \" byobu-layout\", \" byobu-prompt\", \" byobu-quiet\", \" byobu-reconnect-sockets\", \" byobu-screen\", \" byobu-select-backend\", \" byobu-select-profile\", \" byobu-select-session\", \" byobu-shell\", \" byobu-silent\", \" byobu-status\", \" byobu-status-detail\", \" byobu-tmux\", \" byobu-ugraph\", \" byobu-ulevel\", \" col1\", \" ctail\", \" manifest\", \" purge-old-kernels\", \" vigpg\", \" wifi-status\", \"colordiff\", \" colordiff\", \"cowsay\", \" cowsay\", \"debootstrap\", \" debootstrap\", \"dx\", \" dx\", \"ecj\", \" ecj\", \"getmail\", \" getmail\", \" getmail_fetch\", \" getmail_maildir\", \" getmail_mbox\", \"luarocks\", \" luarocks\", \" luarocks-5.3\", \" luarocks-admin\", \" luarocks-admin-5.3\", \"neofetch\", \" neofetch\", \"parallel\", \" env_parallel\", \" env_parallel.ash\", \" env_parallel.bash\", \" env_parallel.csh\", \" env_parallel.dash\", \" env_parallel.fish\", \" env_parallel.ksh\", \" env_parallel.pdksh\", \" env_parallel.sh\", \" env_parallel.tcsh\", \" env_parallel.zsh\", \" niceload\", \" parallel\", \" parcat\", \" sem\", \" sql\", \"pass\", \" pass\", \"pastebinit\", \" pastebinit\", \"pathpicker\", \" fpp\", \"ranger\", \" ranger\", \" rifle\", \"ruby-ri\", \" ri\", \"screenfetch\", \" screenfetch\", \"stow\", \" chkstow\", \" stow\", \"termux-am\", \" am\", \"termux-apt-repo\", \" termux-apt-repo\", \"termux-create-package\", \" termux-create-package\", \"termux-tools\", \" chsh\", \" dalvikvm\", \" df\", \" getprop\", \" ip\", \" logcat\", \" login\", \" ping\", \" ping6\", \" pkg\", \" pm\", \" settings\", \" su\", \" termux-fix-shebang\", \" termux-info\", \" termux-open\", \" termux-open-url\", \" termux-reload-settings\", \" termux-setup-storage\", \" termux-wake-lock\", \" termux-wake-unlock\", \" xdg-open\", \"tsu\", \" tsu\", \"vcsh\", \" vcsh\", \"yarn\", \" yarn\", };  Desktop version Sign out",
+        "url": "https://github.com/CNTRUN/Termux-command",
+        "topics": [],
+        "pushed_at": "2018-04-27T02:06:41Z",
+        "updated_at": "2026-05-04T17:25:11Z"
+      },
+      {
+        "name": "GAIR-NLP/AgencyBench",
+        "stars": 81,
+        "forks": 4,
+        "description": "[ACL2026 Main] AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts",
+        "url": "https://github.com/GAIR-NLP/AgencyBench",
+        "topics": [],
+        "pushed_at": "2026-01-23T04:36:10Z",
+        "updated_at": "2026-05-08T02:29:06Z"
+      },
+      {
+        "name": "kuba-guzik/caveman-micro",
+        "stars": 73,
+        "forks": 1,
+        "description": "6-line caveman micro prompt (85 tokens) that outperformed the original 552-token skill. Benchmark on Claude Sonnet + Opus included.",
+        "url": "https://github.com/kuba-guzik/caveman-micro",
+        "topics": [],
+        "pushed_at": "2026-04-08T10:59:49Z",
+        "updated_at": "2026-05-08T14:19:28Z"
+      },
+      {
+        "name": "mohammadtavakoli78/BEAM",
+        "stars": 61,
+        "forks": 8,
+        "description": "[ICLR 2026] Beyond a Million Tokens: Benchmarking and Enhancing Long-Term Memory in LLMs",
+        "url": "https://github.com/mohammadtavakoli78/BEAM",
+        "topics": [
+          "beam",
+          "beam-benchmark",
+          "benchmark-long-context",
+          "benchmark-long-term-memory",
+          "benchmarking",
+          "light",
+          "light-framework",
+          "llm",
+          "long-context-evaluation",
+          "long-context-evaluation-benchmark",
+          "long-context-llm",
+          "long-context-llms",
+          "long-term-memory",
+          "long-term-memory-benchmark",
+          "long-term-memory-method",
+          "machine-learning",
+          "natural-language-processing",
+          "nlp",
+          "rag",
+          "retrieval-augmented-generation"
+        ],
+        "pushed_at": "2026-02-02T07:43:30Z",
+        "updated_at": "2026-05-09T05:29:22Z"
+      },
+      {
+        "name": "KatarinaYuan/StructTokenBench",
+        "stars": 54,
+        "forks": 13,
+        "description": "A benchmark for comprehensive evaluation on protein structure tokenization methods",
+        "url": "https://github.com/KatarinaYuan/StructTokenBench",
+        "topics": [],
+        "pushed_at": "2025-08-02T05:40:26Z",
+        "updated_at": "2026-05-05T08:14:28Z"
+      },
+      {
+        "name": "BabyJ723/blast-ON",
+        "stars": 43,
+        "forks": 13,
+        "description": "# Awesome Keycloak [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)  # [<img src=\"https://www.keycloak.org/resources/images/keycloak_logo_480x108.png\">](https://github.com/thomasdarimont/awesome-keycloak)  > Carefully curated list of awesome Keycloak resources.  A curated list of resources for learning about the Open Source Identity and Access Management solution Keycloak.  Contains books, websites, blog posts, links to github Repositories.    # Contributing Contributions welcome. Add links through pull requests or create an issue to start a discussion. [Please refer to the contributing guide for details](CONTRIBUTING.md).  # Contents  * [General](#general)   * [Documentation](#docs)     * [Keycloak Website](http://www.keycloak.org)     * [Current Documentation](http://www.keycloak.org/documentation.html)     * [Archived Documentation](http://www.keycloak.org/documentation-archive.html)   * [Mailing Lists](#mailing-lists)     * [User Mailing List](#user-mailing-list)     * [Developer Mailing List](#dev-mailing-list)     * [Mailing List Search](#mailing-list-search) * [Books](#books) * [Articles](#articles) * [Talks](#talks) * [Presentations](#presentations) * [Video Playlists](#video-playlists) * [Community Extensions](#community-extensions) * [Integrations](#integrations) * [Themes](#themes) * [Docker](#docker) * [Deployment Examples](#deployment-examples) * [Example Projects](#example-projects) * [Benchmarks](#benchmarks) * [Help](#help) * [Commercial Offerings](#commercial-offerings) * [Miscellaneous](#miscellaneous)  # General  ## Documentation  *  [Keycloak Website](http://www.keycloak.org/) *  [Current Documentation](http://www.keycloak.org/documentation.html) *  [Archived Documentation](http://www.keycloak.org/documentation-archive.html) *  [Product Documentation for Red Hat Single Sign-On](https://access.redhat.com/documentation/en/red-hat-single-sign-on/)  ## Discussion Groups and Mailing Lists *  [Keycloak Users Google Group](https://groups.google.com/forum/#!forum/keycloak-user) *  [Keycloak Developers Google Group](https://groups.google.com/forum/#!forum/keycloak-dev) *  [Keycloak Discourse Group](https://keycloak.discourse.group/) *  [Keycloak Developer Chat](https://keycloak.zulipchat.com) *  [Inactive - User Mailing List](https://lists.jboss.org/mailman/listinfo/keycloak-user) *  [Inactive - Developer Mailing List](https://lists.jboss.org/mailman/listinfo/keycloak-dev) *  [Mailing List Search](http://www.keycloak.org/search) *  [Keycloak Subreddit](https://www.reddit.com/r/keycloak)  ## Books * [Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)  ## Articles *  [How to get Keycloak working with Docker](https://www.ivonet.nl/2015/05/23/Keycloak-Docker/) *  [Single-Sign-On for Microservices and/or Java EE applications with Keycloak SSO](http://www.n-k.de/2016/06/keycloak-sso-for-microservices.html) *  [Keycloak Admin Client(s) - multiple ways to manage your SSO system](http://www.n-k.de/2016/08/keycloak-admin-client.html) *  [How to get the AccessToken of Keycloak in Spring Boot and/or Java EE](http://www.n-k.de/2016/05/how-to-get-accesstoken-from-keycloak-springboot-javaee.html) *  [JWT authentication with Vert.x, Keycloak and Angular 2](http://paulbakker.io/java/jwt-keycloak-angular2/) *  [Authenticating via Kerberos with Keycloak and Windows 2008 Active Directory](http://matthewcasperson.blogspot.de/2015/07/authenticating-via-kerberos-with.html) *  [Deploying Keycloak with Ansible](https://adam.younglogic.com/2016/01/deploying-keycloak-via-ansible/) *  [Easily secure your Spring Boot applications with Keycloak](https://developers.redhat.com/blog/2017/05/25/easily-secure-your-spring-boot-applications-with-keycloak/) *  [How Red Hat re-designed its Single Sign On (SSO) architecture, and why](https://developers.redhat.com/blog/2016/10/04/how-red-hat-re-designed-its-single-sign-on-sso-architecture-and-why/) *  [OAuth2, JWT, Open-ID Connect and other confusing things](http://giallone.blogspot.de/2017/06/oath2.html) *  [X509 Authentication with Keycloak and JBoss Fuse](https://sjhiggs.github.io/fuse/sso/x509/smartcard/2017/03/29/fuse-hawtio-keycloak.html) *  [Running Keycloak on OpenShift 3](https://medium.com/@sbose78/running-keycloak-on-openshift-3-8d195c0daaf6) *  [Introducing Keycloak for Identity and Access Management](https://www.thomasvitale.com/introducing-keycloak-identity-access-management/) *  [Keycloak Basic Configuration for Authentication and Authorisation](https://www.thomasvitale.com/keycloak-configuration-authentication-authorisation/) *  [Keycloak on OpenShift Origin](https://medium.com/@james_devcomb/keycloak-on-openshift-origin-ee81d01dac97) *  [Identity Management, One-Time-Passwords and Two-Factor-Auth with Spring Boot and Keycloak](http://www.hascode.com/2017/11/identity-management-one-time-passwords-and-two-factor-auth-with-spring-boot-and-keycloak/) *  [Keycloak Identity Brokering with Openshift](https://developers.redhat.com/blog/2017/12/06/keycloak-identity-brokering-openshift/) *  [OpenID Connect Identity Brokering with Red Hat Single Sign-On](https://developers.redhat.com/blog/2017/10/18/openid-connect-identity-brokering-red-hat-single-sign/) *  [Authentication & user management is hard](https://eclipsesource.com/blogs/2018/01/11/authenticating-reverse-proxy-with-keycloak/) *  [Securing Nginx with Keycloak](https://edhull.co.uk/blog/2018-06-06/keycloak-nginx) *  [Secure kibana dashboards using keycloak](https://aboullaite.me/secure-kibana-keycloak/) *  [Configuring NGINX for OAuth/OpenID Connect SSO with Keycloak/Red Hat SSO](https://developers.redhat.com/blog/2018/10/08/configuring-nginx-keycloak-oauth-oidc/) *  [Keycloak Clustering Setup and Configuration Examples](https://github.com/fit2anything/keycloak-cluster-setup-and-configuration) *  [MicroProfile JWT with Keycloak](https://kodnito.com/posts/microprofile-jwt-with-keycloak/) *  [Keycloak Essentials](https://medium.com/keycloak/keycloak-essentials-86254b2f1872) *  [SSO-session failover with Keycloak and AWS S3](https://medium.com/@georgijsr/sso-session-failover-with-keycloak-and-aws-s3-e0b1db985e12) *  [KTOR and Keycloak: authentication with OpenId](https://medium.com/slickteam/ktor-and-keycloak-authentication-with-openid-ecd415d7a62e) * [Keycloak: Core concepts of open source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management) * [Who am I? Keycloak Impersonation API](https://blog.softwaremill.com/who-am-i-keycloak-impersonation-api-bfe7acaf051a) * [Setup Keycloak Server on Ubuntu 18.04](https://medium.com/@hasnat.saeed/setup-keycloak-server-on-ubuntu-18-04-ed8c7c79a2d9) * [Getting started with Keycloak](https://robferguson.org/blog/2019/12/24/getting-started-with-keycloak/) * [Angular, OpenID Connect and Keycloak](https://robferguson.org/blog/2019/12/29/angular-openid-connect-keycloak/) * [Angular, OAuth 2.0 Scopes and Keycloak](https://robferguson.org/blog/2019/12/31/angular-oauth2-keycloak/) * [Keycloak, Flowable and OpenLDAP](https://robferguson.org/blog/2020/01/03/keycloak-flowable-and-openldap/) * [How to exchange token from an external provider to a keycloak token](https://www.mathieupassenaud.fr/token-exchange-keycloak/) * [Building an Event Listener SPI (Plugin) for Keycloak](https://dev.to/adwaitthattey/building-an-event-listener-spi-plugin-for-keycloak-2044) * [Keycloak user migration – connect your legacy authentication system to Keycloak](https://codesoapbox.dev/keycloak-user-migration/) * [Keycloak Authentication and Authorization in GraphQL](https://medium.com/@darahayes/keycloak-authentication-and-authorization-in-graphql-ad0a1685f7da) * [Kong / Konga / Keycloak: securing API through OIDC](https://github.com/d4rkstar/kong-konga-keycloak) * [KeyCloak: Custom Login theme](https://codehumsafar.wordpress.com/2018/09/11/keycloak-custom-login-theme/) * [Keycloak: Use background color instead of background image in Custom Login theme](https://codehumsafar.wordpress.com/2018/09/21/keycloak-use-background-color-instead-of-background-image-in-custom-login-theme/) * [How to turn off the Keycloak theme cache](https://keycloakthemes.com/blog/how-to-turn-off-the-keycloak-theme-cache) * [How to add a custom field to the Keycloak registration page](https://keycloakthemes.com/blog/how-to-add-custom-field-keycloak-registration-page) * [How to setup Sign in with Google using Keycloak](https://keycloakthemes.com/blog/how-to-setup-sign-in-with-google-using-keycloak) * [How to sign in users on Keycloak using Github](https://keycloakthemes.com/blog/how-to-sign-in-users-on-keycloak-using-github) * [Extending Keycloak SSO Capabilities with IBM Security Verify](https://community.ibm.com/community/user/security/blogs/jason-choi1/2020/06/10/extending-keycloak-sso-capabilities-with-ibm-secur) * [AWS SAML based User Federation using Keycloak](https://medium.com/@karanbir.tech/aws-connect-saml-based-identity-provider-using-keycloak-9b3e6d0111e6) * [AWS user account OpenID federation using Keycloak](https://medium.com/@karanbir.tech/aws-account-openid-federation-using-keycloak-40d22b952a43) * [How to Run Keycloak in HA on Kubernetes](https://blog.sighup.io/keycloak-ha-on-kubernetes/) * [How to create a Keycloak authenticator as a microservice?](https://medium.com/application-security/how-to-create-a-keycloak-authenticator-as-a-microservice-ad332e287b58) * [keycloak.ch | Installing & Running Keycloak](https://keycloak.ch/keycloak-tutorials/tutorial-1-installing-and-running-keycloak/) * [keycloak.ch | Configuring Token Exchange using the CLI](https://keycloak.ch/keycloak-tutorials/tutorial-token-exchange/) * [keycloak.ch | Configuring WebAuthn](https://keycloak.ch/keycloak-tutorials/tutorial-webauthn/) * [keycloak.ch | Configuring a SwissID integration](https://keycloak.ch/keycloak-tutorials/tutorial-swissid/) * [Getting Started with Service Accounts in Keycloak](https://medium.com/@mihirrajdixit/getting-started-with-service-accounts-in-keycloak-c8f6798a0675) * [Building cloud native apps: Identity and Access Management](https://dev.to/lukaszbudnik/building-cloud-native-apps-identity-and-access-management-1e5m) * [X.509 user certificate authentication with Red Hat’s single sign-on technology](https://developers.redhat.com/blog/2021/02/19/x-509-user-certificate-authentication-with-red-hats-single-sign-on-technology) * [Grafana OAuth with Keycloak and how to validate a JWT token](https://janikvonrotz.ch/2020/08/27/grafana-oauth-with-keycloak-and-how-to-validate-a-jwt-token/) * [How to setup a Keycloak server with external MySQL database on AWS ECS Fargate in clustered mode](https://jbjerksetmyr.medium.com/how-to-setup-a-keycloak-server-with-external-mysql-database-on-aws-ecs-fargate-in-clustered-mode-9775d01cd317) * [Extending Keycloak: adding API key authentication](http://www.zakariaamine.com/2019-06-14/extending-keycloak) * [Extending Keycloak: using a custom email sender](http://www.zakariaamine.com/2019-07-14/extending-keycloak2) * [Integrating Keycloak and OPA with Confluent](https://goraft.tech/2021/03/17/integrating-keycloak-and-opa-with-confluent.html) * [UMA 2.0 : User Managed Access - how to use it with bash](https://blog.please-open.it/uma/)  ## Talks *  [JDD2015 - Keycloak Open Source Identity and Access Management Solution](https://www.youtube.com/watch?v=TuEkj25lbd0) *  [2015 Using Tomcat and Keycloak in an iFrame](https://www.youtube.com/watch?v=nF_lw7uIxao) *  [2016 You've Got Microservices Now Secure Them](https://www.youtube.com/watch?v=SfVhqf-rMQY) *  [2016 Keycloak: Open Source Single Sign On - Sebastian Rose - AOE conf (german)](https://www.youtube.com/watch?v=wbKw0Bwyne4) *  [2016 Sécuriser ses applications back et front facilement avec Keycloak (french)](https://www.youtube.com/watch?v=bVidgluUcg0) *  [2016 Keycloak and Red Hat Mobile Application Platform](https://www.youtube.com/watch?v=4NBgiHM5aOA) *  [2016 Easily secure your Front and back applications with KeyCloak](https://www.youtube.com/watch?v=RGp4HUKikts) *  [2017 Easily secure your Spring Boot applications with Keycloak - Part 1](https://developers.redhat.com/video/youtube/vpgRTPFDHAw/) *  [2017 Easily secure your Spring Boot applications with Keycloak - Part 2](https://developers.redhat.com/video/youtube/O5ePCWON08Y/) *  [2018 How to secure your Spring Apps with Keycloak by Thomas Darimont @ Spring I/O 2018](https://www.youtube.com/watch?v=haHFoeWUj0w) *  [2018 DevNation Live | A Deep Dive into Keycloak](https://www.youtube.com/watch?v=ZxpY_zZ52kU) *  [2018 IDM Europe: WSO2 Identity Server vs. Keycloak (Dmitry Kann)](https://www.youtube.com/watch?v=hnjBiGsEDoU) *  [2018 JPrime|Building an effective identity and access management architecture with Keycloak (Sebastien Blanc)](https://www.youtube.com/watch?v=bMqcGkCvUVQ) *  [2018 WJAX| Sichere Spring-Anwendungen mit Keycloak](https://www.youtube.com/watch?v=6Z490EMcafs) *  [2019 Spring I/O | Secure your Spring Apps with Keycloak](https://www.youtube.com/watch?v=KrOd5wIkqls) *  [2019 DevoxxFR | Maitriser sa gestion de l'identité avec Keycloak (L. Benoit, T. Recloux, S. Blanc)](https://www.youtube.com/watch?v=0cziL__0-K8) *  [2019 DevConf | Fine - Grained Authorization with Keycloak SSO (Marek Posolda)](https://www.youtube.com/watch?v=yosg4St0iUw) *  [2019 VoxxedDays Minsk | Bilding an effective identity and access management architecture with Keycloak (Sebastien Blanc)](https://www.youtube.com/watch?v=RupQWmYhrLA) *  [2019 Single-Sign-On Authentifizierung mit dem Keycloak Identity Provider | jambit CoffeeTalk](https://www.youtube.com/watch?v=dnY6ORaFNY8) *  [2020 Keycloak Team | Keycloak Pitch](https://www.youtube.com/watch?v=GZTN_VXjoQw) *  [2020 Keycloak Team | Keycloak Overview](https://www.youtube.com/watch?v=duawSV69LDI) *  [2020 Please-open.it : oauth2 dans le monde des ops (french)](https://www.youtube.com/watch?v=S-9X50QajmY)  ## Presentations *  [Keycloak 101](https://stevenolen.github.io/kc101-talk/#1)  ## Video Playlists *  [Keycloak Identity and Access Management by Łukasz Budnik](https://www.youtube.com/playlist?list=PLPZal7ksxNs0mgScrJxrggEayV-TPZ9sA) *  [Keycloak by Niko Köbler](https://www.youtube.com/playlist?list=PLNn3plN7ZiaowUvKzKiJjYfWpp86u98iY) *  [Keycloak Playlist by hexaDefence](https://youtu.be/35bflT_zxXA) *  [Keycloak Tutorial Series by CodeLens](https://www.youtube.com/watch?v=Lr9WeIMtFow&list=PLeGNmkzI56BTjRxNGxUhh4k30FD_gy0pC)  ## Clients *  [Official Keycloak Node.js Admin Client](https://github.com/keycloak/keycloak-admin-client/) (\"Extremely Experimental\") *  [Keycloak Node.js TypeScript Admin Client by Canner](https://github.com/Canner/keycloak-admin/) *  [Keycloak Go Client by Cloudtrust](https://github.com/cloudtrust/keycloak-client) *  [Keycloak Nest.js Admin Client by Relevant Fruit](https://github.com/relevantfruit/nestjs-keycloak-admin)  ## Community Extensions *  [Keycloak Extensions List](https://www.keycloak.org/extensions.html) *  [Keycloak Benchmark Project](https://github.com/keycloak/keycloak-benchmark) *  [Keycloak: Link IdP Login with User Provider](https://github.com/ohioit/keycloak-link-idp-with-user) *  [Client Owner Manager: Control who can edit a client](https://github.com/cyclone-project/cyclone-client-registration) *  [Keyloak Proxy written in Go](https://github.com/gambol99/keycloak-proxy) *  [Script based ProtocolMapper extension for SAML](https://github.com/cloudtrust/keycloak-client-mappers) *  [Realm export REST resource by Cloudtrust](https://github.com/cloudtrust/keycloak-export) *  [Keycloak JDBC Ping Setup by moremagic](https://github.com/moremagic/keycloak-jdbc-ping) *  [SMS 2 Factor Authentication for Keycloak via AWS SNS](https://github.com/nickpack/keycloak-sms-authenticator-sns) *  [SMS 2 Factor Authentiation for Keycloak via SMS by Alliander](https://github.com/Alliander/keycloak-sms-authenticator) *  [Identity Provider for vk.com](https://github.com/mrk08/keycloak-vk) *  [CAS Protocol Support](https://github.com/Doccrazy/keycloak-protocol-cas) *  [WS-FED Support](https://github.com/cloudtrust/keycloak-wsfed) *  [Keycloak Discord Support](https://github.com/wadahiro/keycloak-discord) *  [Keycloak Login with User Attribute](https://github.com/cnieg/keycloak-login-attribute) *  [zonaut/keycloak-extensions](https://github.com/zonaut/keycloak-extensions) *  [leroyguillaume/keycloak-bcrypt](https://github.com/leroyguillaume/keycloak-bcrypt) *  [SPI Authenticator in Nodejs](https://www.npmjs.com/package/keycloak-rest-authenticator) *  [Have I Been Pwned? Keycloak Password Policy](https://github.com/alexashley/keycloak-password-policy-have-i-been-pwned) *  [Keycloak Eventlistener for Google Cloud Pub Sub](https://github.com/acesso-io/keycloak-event-listener-gcpubsub) *  [Enforcing Password policy based on attributes of User Groups](https://github.com/sayedcsekuet/keycloak-user-group-based-password-policy) *  [Verify Email with Link or Code by hokumski](https://github.com/hokumski/keycloak-verifyemailwithcode) *  [Role-based Docker registry authentication](https://github.com/lifs-tools/keycloak-docker-role-mapper) *  [SCIM for keycloak](https://github.com/Captain-P-Goldfish/scim-for-keycloak) *  [Keycloak Kafka Module](https://github.com/SnuK87/keycloak-kafka)   ## Integrations *  [Official Keycloak Node.js Connect Adapter](https://github.com/keycloak/keycloak-nodejs-connect) *  [Keycloak support for Aurelia](https://github.com/waynepennington/aurelia-keycloak) *  [Keycloak OAuth2 Auth for PHP](https://github.com/stevenmaguire/oauth2-keycloak) *  [Jenkins Keycloak Authentication Plugin](https://github.com/jenkinsci/keycloak-plugin) *  [Meteor Keycloak Accounts](https://github.com/mxab/meteor-keycloak) *  [HapiJS Keycloak Auth](https://github.com/felixheck/hapi-auth-keycloak) *  [zmartzone mod_auth_openidc for Apache 2.x](https://github.com/zmartzone/mod_auth_openidc) *  [Duo Security MFA Authentication for Keycloak](https://github.com/mulesoft-labs/keycloak-duo-spi) *  [Extension Keycloak facilitant l'utilisation de FranceConnect](https://github.com/InseeFr/Keycloak-FranceConnect) *  [Ambassador Keycloak Support](https://www.getambassador.io/reference/idp-support/keycloak/) *  [Keycloak Python Client](https://github.com/akhilputhiry/keycloak-client) *  [Keycloak Terraform Provider](https://github.com/mrparkers/terraform-provider-keycloak) *  [Keycloak ADFS OpenID Connect](https://www.michaelboeynaems.com/keycloak-ADFS-OIDC.html) *  [React/NextJS Keycloak Bindings](https://github.com/panz3r/react-keycloak) *  [Keycloak Open-Shift integration](https://github.com/keycloak/openshift-integration) *  [Keycloak, Kong and Konga setup scripts (local development)](https://github.com/JaouherK/Kong-konga-Keycloak) *  [SSO for Keycloak and Nextcloud with SAML](https://stackoverflow.com/questions/48400812/sso-with-saml-keycloak-and-nextcloud) *  [Keycloak Connect GraphQL Adapter for Node.js](https://github.com/aerogear/keycloak-connect-graphql) *  [python-keycloak](https://github.com/marcospereirampj/python-keycloak) *  [Keycloak and PrivacyId3a docker-compose (local development)](https://github.com/JaouherK/keycloak-privacyIdea) *  [Nerzal/gocloak Golang Keycloak API Package](https://github.com/Nerzal/gocloak) *  [Apple Social Identity Provider for Keycloak](https://github.com/BenjaminFavre/keycloak-apple-social-identity-provider)  ## Quick demo Videos * [Keycloak with istio envoy jwt-auth proxy](https://www.youtube.com/watch?v=wscX7JMfuBI)  ## Themes *  [Community Keycloak Ionic Theme](https://github.com/lfryc/keycloak-ionic-theme) *  [A Keycloak theme based on the AdminLTE UI library](https://github.com/MAXIMUS-DeltaWare/adminlte-keycloak-theme) *  [GOV.UK Theme](https://github.com/UKHomeOffice/keycloak-theme-govuk) *  [Carbon Design](https://github.com/httpsOmkar/carbon-keycloak-theme) *  [Modern](https://keycloakthemes.com/themes/modern) *  [Adminlte](https://git.uptic.nl/uptic-public-projects/uptic-keyclock-theme-adminlte) *  [keycloakify: Create Keycloak themes using React](https://github.com/InseeFrLab/keycloakify)  ## Docker *  [Official Keycloak Docker Images](https://github.com/jboss-dockerfiles/keycloak) *  [Keycloak Examples as Docker Image](https://hub.docker.com/r/jboss/keycloak-examples) *  [Keycloak Maven SDK for managing the entire lifecycle of your extensions with Docker](https://github.com/OpenPj/keycloak-docker-quickstart)  ## Kubernetes *  [Deprecated Keycloak Helm Chart](https://github.com/codecentric/helm-charts/tree/master/charts/keycloak) *  [codecentric Keycloak Helm Chart](https://github.com/codecentric/helm-charts/tree/master/charts/keycloak) *  [Import / Export Keycloak Config](https://gist.github.com/unguiculus/19618ef57b1863145262191944565c9d) *  [keycloak-operator](https://github.com/keycloak/keycloak-operator)  ## Tools *  [keycloakmigration: Manage your Keycloak configuration with code](https://github.com/klg71/keycloakmigration) *  [tool to autogenerate an OpenAPI Specification for Keycloak's Admin API](https://github.com/ccouzens/keycloak-openapi) *  [oidc-bash-client](https://github.com/please-openit/oidc-bash-client) *  [louketo-proxy (FKA Gatekeeper)](https://github.com/louketo/louketo-proxy) *  [keycloak-config-cli: Configuration as Code for Keycloak](https://github.com/adorsys/keycloak-config-cli) *  [Keycloak Pulumi](https://github.com/pulumi/pulumi-keycloak) *  [Keycloak on AWS](https://github.com/aws-samples/keycloak-on-aws) *  [aws-cdk construct library that allows you to create KeyCloak on AWS in TypeScript or Python](https://github.com/aws-samples/cdk-keycloak) *  [keycloak-scanner Python CLI](https://github.com/NeuronAddict/keycloak-scanner)  ## Deployment Examples * [Keycloak deployment with CDK on AWS with Fargate](https://github.com/aws-samples/cdk-keycloak)  ## Example Projects *  [Examples from Keycloak Book: Keycloak - Identity and Access Management for Modern Applications](https://github.com/PacktPublishing/Keycloak-Identity-and-Access-Management-for-Modern-Applications) *  [Official Examples](https://github.com/keycloak/keycloak/tree/master/examples) *  [Keycloak Quickstarts](https://github.com/keycloak/keycloak-quickstarts) *  [Drupal 7.0 with Keycloak](https://gist.github.com/thomasdarimont/17fa146c4fb5440d7fc2ee6322ec392d) *  [Securing Realm Resources With Custom Roles](https://github.com/dteleguin/custom-admin-roles) *  [BeerCloak: a comprehensive KeyCloak extension example](https://github.com/dteleguin/beercloak) *  [KeyCloak Extensions: Securing Realm Resources With Custom Roles](https://github.com/dteleguin/custom-admin-roles) *  [Red Hat Single Sign-On Labs](https://github.com/RedHatWorkshops/red-hat-sso) *  [Spring Boot Keycloak Tutorial](https://github.com/sebastienblanc/spring-boot-keycloak-tutorial) *  [Custom Keycloak Docker Image of Computer Science House of RIT](https://github.com/ComputerScienceHouse/keycloak-docker) *  [Example of custom password hash SPI for Keycloak](https://github.com/pavelbogomolenko/keycloak-custom-password-hash) *  [Example for a custom http-client-provider with Proxy support](https://github.com/xiaoyvr/custom-http-client-provider) *  [Monitor your keycloak with prometheus](https://github.com/larscheid-schmitzhermes/keycloak-monitoring-prometheus) *  [Custom User Storage Provider .ear with jboss-cli setup](https://github.com/thomasdarimont/keycloak-user-storage-provider-demo) *  [Keycloak - Experimental extensions by Stian Thorgersen/Keycloak](https://github.com/stianst/keycloak-experimental) *  [Securing Spring Boot Admin & Actuator Endpoints with Keycloak](https://github.com/thomasdarimont/spring-boot-admin-keycloak-example) *  [A Keycloak Mobile Implementation using Angular v4 and Ionic v3](https://github.com/tomjackman/keyonic-v2) *  [Example for Securing Apps with Keycloak on Kubernetes](https://github.com/stianst/demo-kubernetes) *  [Example for Securing AspDotNet Core Apps with Keycloak](https://github.com/thomasdarimont/kc-dnc-demo) *  [Example for passing custom URL parameters to a Keycloak theme for dynamic branding](https://github.com/dteleguin/keycloak-dynamic-branding) *  [Angular Webapp secured with Keycloak](https://github.com/CodepediaOrg/bookmarks.dev) *  [Keycloak Theme Development Kit](https://github.com/anthonny/kit-keycloak-theme) *  [Keycloak Clustering examples](https://github.com/ivangfr/keycloak-clustered) *  [Keycloak Last Login Date Event Listener](https://github.com/ThoreKr/keycloak-last-login-event-listener) *  [Keycloak Project Example (Customizations, Extensions, Configuration)](https://github.com/thomasdarimont/keycloak-project-example) *  [Example of adding API Key authentication to Keycloak](https://github.com/zak905/keycloak-api-key-demo)  ## Benchmarks *  [Gatling based Benchmark by @rvansa](https://github.com/rvansa/keycloak-benchmark)  ## Help * [Keycloak on Stackoverflow](https://stackoverflow.com/questions/tagged/keycloak)  ## Commercial Offerings *  [Red Hat Single Sign-On](https://access.redhat.com/products/red-hat-single-sign-on) *  [INTEGSOFT UNIFIED USER CREDENTIALS WITH KEYCLOAK SSO](https://www.integsoft.cz/en/sso.html#what-is-sso) *  [JIRA SSO Plugin by codecentric](https://marketplace.atlassian.com/plugins/de.codecentric.atlassian.oidc.jira-oidc-plugin/server/overview) *  [Keycloak Competence Center by Inventage AG](https://keycloak.ch/) *  [Keycloak as a Service](https://www.cloud-iam.com)  ## Miscellaneous *  [Find sites using Keycloak with google](https://www.google.de/search?q=inurl%3Aauth+inurl%3Arealms+inurl%3Aprotocol&oq=inurl%3A&client=ubuntu&sourceid=chrome&ie=UTF-8) *  [Keycloak Dev Bookmarks](http://bookmarks.dev/search?q=keycloak) - Use the tag [keycloak](https://www.bookmarks.dev/tagged/keycloak) *  [Use fail2ban to block brute-force attacks to keycloak server](https://gist.github.com/drmalex07/3eba8b98d0ac4a1e821e8e721b3e1816) *  [Pentest-Report Keycloak 8.0 Audit & Pentest 11.2019 by Cure53](https://cure53.de/pentest-report_keycloak.pdf) *  [Keycloak - CNCF Security SIG - Self Assesment](https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit#)  # License  [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)  To the extent possible under law, [Thomas Darimont](https://github.com/thomasdarimont) has waived all copyright and related or neighboring rights to this work.",
+        "url": "https://github.com/BabyJ723/blast-ON",
+        "topics": [],
+        "pushed_at": "2021-09-04T03:48:54Z",
+        "updated_at": "2026-05-05T05:04:47Z"
+      },
+      {
+        "name": "huawei-lin/VTBench",
+        "stars": 35,
+        "forks": 2,
+        "description": "This repository provides the official implementation of VTBench, a benchmark designed to evaluate the performance of visual tokenizers (VTs) in the context of autoregressive (AR) image generation.",
+        "url": "https://github.com/huawei-lin/VTBench",
+        "topics": [],
+        "pushed_at": "2025-07-30T17:40:54Z",
+        "updated_at": "2026-02-13T02:05:42Z"
+      },
+      {
+        "name": "jgravelle/mcp-retrieval-spec",
+        "stars": 34,
+        "forks": 11,
+        "description": "jMRI v1.0 — open specification for token-efficient context retrieval in MCP servers. SDKs, reference server, benchmark.",
+        "url": "https://github.com/jgravelle/mcp-retrieval-spec",
+        "topics": [],
+        "pushed_at": "2026-04-13T21:12:12Z",
+        "updated_at": "2026-04-30T16:25:27Z"
+      }
+    ],
+    "status": 200,
+    "total": 438
+  },
+  {
+    "query": "tokenizer evaluation in:name,description",
+    "results": [
+      {
+        "name": "dub-flow/sessionprobe",
+        "stars": 463,
+        "forks": 37,
+        "description": "SessionProbe is a multi-threaded tool designed for penetration testing and bug bounty hunting. It evaluates user privileges in web applications by taking a session token and checking access across a list of URLs, highlighting potential authorization issues.",
+        "url": "https://github.com/dub-flow/sessionprobe",
+        "topics": [
+          "broken-access-control",
+          "pentesting-tool"
+        ],
+        "pushed_at": "2024-03-28T14:12:01Z",
+        "updated_at": "2026-05-01T21:12:46Z"
+      },
+      {
+        "name": "OpenBMB/InfiniteBench",
+        "stars": 383,
+        "forks": 33,
+        "description": "Codes for the paper \"∞Bench: Extending Long Context Evaluation Beyond 100K Tokens\": https://arxiv.org/abs/2402.13718",
+        "url": "https://github.com/OpenBMB/InfiniteBench",
+        "topics": [
+          "benchmark",
+          "large-language-models",
+          "long-context"
+        ],
+        "pushed_at": "2024-09-25T20:06:30Z",
+        "updated_at": "2026-05-08T06:01:32Z"
+      },
+      {
+        "name": "sgl-project/genai-bench",
+        "stars": 295,
+        "forks": 51,
+        "description": "Genai-bench is a powerful benchmark tool designed for comprehensive token-level performance evaluation of large language model (LLM) serving systems.",
+        "url": "https://github.com/sgl-project/genai-bench",
+        "topics": [],
+        "pushed_at": "2026-05-05T19:40:39Z",
+        "updated_at": "2026-05-07T16:24:05Z"
+      },
+      {
+        "name": "yueliu1999/Awesome-Efficient-Inference-for-LRMs",
+        "stars": 236,
+        "forks": 15,
+        "description": "Awesome-Efficient-Inference-for-LRMs is a collection of state-of-the-art, novel, exciting, token-efficient methods for Large Reasoning Models (LRMs). It contains papers, codes, datasets, evaluations, and analyses. https://arxiv.org/pdf/2503.23077",
+        "url": "https://github.com/yueliu1999/Awesome-Efficient-Inference-for-LRMs",
+        "topics": [],
+        "pushed_at": "2025-06-14T09:31:02Z",
+        "updated_at": "2026-02-24T04:52:33Z"
+      },
+      {
+        "name": "davidsbatista/NER-Evaluation",
+        "stars": 222,
+        "forks": 48,
+        "description": "An implementation of a full named-entity evaluation metrics based on SemEval'13 Task 9 - not at tag/token level but considering all the tokens that are part of the named-entity",
+        "url": "https://github.com/davidsbatista/NER-Evaluation",
+        "topics": [
+          "crfsuite",
+          "evaluation-metrics",
+          "named-entity-recognition",
+          "ner",
+          "ner-evaluation",
+          "notebook-jupyter",
+          "semeval",
+          "semeval-2013"
+        ],
+        "pushed_at": "2024-07-02T08:58:45Z",
+        "updated_at": "2026-05-02T09:51:44Z"
+      },
+      {
+        "name": "MantisAI/nervaluate",
+        "stars": 214,
+        "forks": 27,
+        "description": "Full named-entity (i.e., not tag/token) evaluation metrics based on SemEval’13",
+        "url": "https://github.com/MantisAI/nervaluate",
+        "topics": [
+          "evaluation-metrics",
+          "machine-learning",
+          "named-entity-recognition",
+          "natural-language-processing",
+          "sequence-models"
+        ],
+        "pushed_at": "2026-03-12T19:28:44Z",
+        "updated_at": "2026-05-09T01:08:20Z"
+      },
+      {
+        "name": "DavidGrangier/wikipedia-biography-dataset",
+        "stars": 168,
+        "forks": 30,
+        "description": "This dataset gathers 728,321 biographies from wikipedia. It aims at evaluating text generation algorithms. For each article, we provide the first paragraph and the infobox (both tokenized). ",
+        "url": "https://github.com/DavidGrangier/wikipedia-biography-dataset",
+        "topics": [],
+        "pushed_at": "2016-09-23T15:30:56Z",
+        "updated_at": "2026-03-25T18:01:28Z"
+      },
+      {
+        "name": "NVlabs/TokenBench",
+        "stars": 156,
+        "forks": 12,
+        "description": "A Video Tokenizer Evaluation Dataset",
+        "url": "https://github.com/NVlabs/TokenBench",
+        "topics": [],
+        "pushed_at": "2025-01-13T05:42:51Z",
+        "updated_at": "2026-04-27T09:04:19Z"
+      },
+      {
+        "name": "wjf5203/TokBench",
+        "stars": 141,
+        "forks": 0,
+        "description": "Image and video Tokenizer/VAE selection guide, text and face reconstruction evaluation.",
+        "url": "https://github.com/wjf5203/TokBench",
+        "topics": [
+          "image-reconstruction",
+          "tokenizer",
+          "vae",
+          "video-recons",
+          "visual-tokenizer"
+        ],
+        "pushed_at": "2026-04-09T07:11:03Z",
+        "updated_at": "2026-04-09T07:05:52Z"
+      },
+      {
+        "name": "chaofengc/ITER",
+        "stars": 59,
+        "forks": 0,
+        "description": "PyTorch codes for \"Iterative Token Evaluation and Refinement for Real-World Super-Resolution\", AAAI 2024",
+        "url": "https://github.com/chaofengc/ITER",
+        "topics": [],
+        "pushed_at": "2024-10-23T05:11:35Z",
+        "updated_at": "2026-03-20T12:21:00Z"
+      },
+      {
+        "name": "KatarinaYuan/StructTokenBench",
+        "stars": 54,
+        "forks": 13,
+        "description": "A benchmark for comprehensive evaluation on protein structure tokenization methods",
+        "url": "https://github.com/KatarinaYuan/StructTokenBench",
+        "topics": [],
+        "pushed_at": "2025-08-02T05:40:26Z",
+        "updated_at": "2026-05-05T08:14:28Z"
+      },
+      {
+        "name": "bobmatnyc/ai-code-review",
+        "stars": 52,
+        "forks": 5,
+        "description": "AI-powered code review CLI with multiple providers (Gemini, Claude, OpenAI). Features 95%+ token reduction via semantic chunking, 7 review types (security/performance/evaluation), multi-language support, interactive fixes, and developer skill assessment.",
+        "url": "https://github.com/bobmatnyc/ai-code-review",
+        "topics": [],
+        "pushed_at": "2026-04-15T06:01:43Z",
+        "updated_at": "2026-05-07T18:01:24Z"
+      },
+      {
+        "name": "golsun/NLP-tools",
+        "stars": 45,
+        "forks": 9,
+        "description": "Useful python NLP tools (evaluation, GUI interface, tokenization)",
+        "url": "https://github.com/golsun/NLP-tools",
+        "topics": [
+          "bleu-score",
+          "evaluation",
+          "evaluation-metrics",
+          "gui",
+          "nlp",
+          "nlp-library",
+          "nlp-parsing",
+          "text-processing"
+        ],
+        "pushed_at": "2020-02-18T18:08:20Z",
+        "updated_at": "2026-01-09T23:45:51Z"
+      },
+      {
+        "name": "Jellyfish042/RWKV_Othello",
+        "stars": 44,
+        "forks": 3,
+        "description": "A specialized RWKV-7 model for Othello(a.k.a. Reversi) that predicts legal moves, evaluates positions, and performs in-context search. Its performance scales with the number of test-time tokens.",
+        "url": "https://github.com/Jellyfish042/RWKV_Othello",
+        "topics": [],
+        "pushed_at": "2025-01-25T06:50:08Z",
+        "updated_at": "2026-03-03T15:43:58Z"
+      },
+      {
+        "name": "huawei-lin/VTBench",
+        "stars": 35,
+        "forks": 2,
+        "description": "This repository provides the official implementation of VTBench, a benchmark designed to evaluate the performance of visual tokenizers (VTs) in the context of autoregressive (AR) image generation.",
+        "url": "https://github.com/huawei-lin/VTBench",
+        "topics": [],
+        "pushed_at": "2025-07-30T17:40:54Z",
+        "updated_at": "2026-02-13T02:05:42Z"
+      }
+    ],
+    "status": 200,
+    "total": 1174
+  }
+]

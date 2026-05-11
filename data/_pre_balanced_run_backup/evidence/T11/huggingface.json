@@ -1,0 +1,35 @@
+[
+  {
+    "query": "format sensitivity",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "JSON YAML prose",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "benchmark variance",
+    "results": [
+      {
+        "id": "commotion/Low_Variance_Benchmark_dataset",
+        "downloads": 2,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "format:optimized-parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": ""
+      }
+    ],
+    "status": 200
+  }
+]

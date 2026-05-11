@@ -1,0 +1,12 @@
+[
+  {
+    "query": "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22LLM%20evaluation%20methodology%22+AND+all:%22metadata%22+AND+all:%22systematic%20mapping%22)",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "all:LLM%20evaluation%20methodology",
+    "results": [],
+    "status": 200
+  }
+]

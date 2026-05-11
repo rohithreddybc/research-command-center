@@ -1,0 +1,125 @@
+{
+  "topic": {
+    "topic_id": "T17",
+    "title": "Tokenization-induced leaderboard variance",
+    "category": "eval",
+    "keywords": "tokenizer|BPE|leaderboard variance|evaluation noise",
+    "synonyms": "subword;encoding effects",
+    "negative_keywords": "compiler tokenizers",
+    "target_artifact": "empirical",
+    "prelim_priority": "4"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance",
+      "evaluation noise",
+      "subword",
+      "tokenizer benchmark",
+      "tokenizer evaluation",
+      "tokenizer robustness",
+      "tokenizer reproducibility",
+      "BPE benchmark",
+      "BPE evaluation",
+      "tokenizer limitations",
+      "tokenizer open problems",
+      "tokenizer review",
+      "BPE limitations",
+      "BPE open problems",
+      "BPE review"
+    ],
+    "openalex": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance",
+      "evaluation noise",
+      "subword",
+      "tokenizer benchmark",
+      "tokenizer evaluation",
+      "tokenizer robustness",
+      "tokenizer reproducibility",
+      "BPE benchmark",
+      "BPE evaluation",
+      "tokenizer limitations",
+      "tokenizer open problems",
+      "tokenizer review",
+      "BPE limitations",
+      "BPE open problems"
+    ],
+    "crossref": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance",
+      "evaluation noise"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22tokenizer%22+AND+all:%22BPE%22+AND+all:%22leaderboard%20variance%22)",
+      "all:tokenizer"
+    ],
+    "github": [
+      "tokenizer in:readme,description",
+      "tokenizer benchmark in:name,description",
+      "tokenizer evaluation in:name,description",
+      "BPE in:readme,description",
+      "BPE benchmark in:name,description",
+      "BPE evaluation in:name,description",
+      "leaderboard variance in:readme,description",
+      "leaderboard variance benchmark in:name,description",
+      "leaderboard variance evaluation in:name,description"
+    ],
+    "huggingface": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance",
+      "evaluation noise",
+      "subword",
+      "tokenizer benchmark",
+      "BPE benchmark"
+    ],
+    "doaj": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance"
+    ],
+    "pwc": [
+      "tokenizer",
+      "BPE",
+      "leaderboard variance"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "tokenizer",
+        "url": "https://scholar.google.com/scholar?q=%22tokenizer%22%202024..2026"
+      },
+      {
+        "label": "BPE",
+        "url": "https://scholar.google.com/scholar?q=%22BPE%22%202024..2026"
+      },
+      {
+        "label": "leaderboard variance",
+        "url": "https://scholar.google.com/scholar?q=%22leaderboard%20variance%22%202024..2026"
+      },
+      {
+        "label": "evaluation noise",
+        "url": "https://scholar.google.com/scholar?q=%22evaluation%20noise%22%202024..2026"
+      },
+      {
+        "label": "subword",
+        "url": "https://scholar.google.com/scholar?q=%22subword%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

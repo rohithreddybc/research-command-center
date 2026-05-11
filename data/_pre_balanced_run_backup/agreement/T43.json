@@ -1,0 +1,26 @@
+{
+  "topic_id": "T43",
+  "n_reviews": 8,
+  "providers": {
+    "claude_cli": 8
+  },
+  "scores": {
+    "mean": 2.25,
+    "stdev": 0.66,
+    "n": 8
+  },
+  "decisions": {
+    "NARROW": 6,
+    "DROP": 2
+  },
+  "plurality_decision": "NARROW",
+  "plurality_count": 6,
+  "decision_score_mean_0to3": 1.5,
+  "confidences": {
+    "MEDIUM": 5,
+    "HIGH": 3
+  },
+  "high_confidence_drops": 2,
+  "per_role_disagreements": [],
+  "high_disagreement_flag": false
+}

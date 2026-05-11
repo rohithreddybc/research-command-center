@@ -1,0 +1,137 @@
+{
+  "paper": {
+    "n_papers": 200,
+    "n_papers_24mo": 174,
+    "n_papers_12mo": 124,
+    "median_citations": 0,
+    "top_citation": 2726,
+    "growth_yoy_proxy": 1.48
+  },
+  "saturation": {
+    "saturation_score_0to5": 3,
+    "n_papers": 200,
+    "dominant_tools": 17,
+    "big_datasets": 0
+  },
+  "artifact": {
+    "artifact_opportunity_0to5": 2,
+    "existing_artifact_density": 0.4,
+    "differentiator_required": false,
+    "gap_phrase_hits": 34,
+    "n_existing_pwc_datasets": 0,
+    "n_existing_hf_datasets": 20
+  },
+  "venue": {
+    "venue_signal_0to5": 2,
+    "doaj_no_apc_journals": 0,
+    "crossref_active_venues": 5,
+    "openreview_hits": 0
+  },
+  "risk": {
+    "ip_risk_flags": [],
+    "ip_risk_0to5": 0
+  },
+  "citation_signal_0to5": 5,
+  "niw_0to5": 2,
+  "eb1a_0to5": 4,
+  "career_0to5": 3,
+  "tool_potential_0to5": 2,
+  "relevance_purity": 0.25,
+  "kept_papers": 25,
+  "rubric": {
+    "factors": {
+      "A": 4,
+      "B": 5,
+      "C": 2,
+      "D": 2,
+      "E": 5,
+      "F": 2,
+      "G": 3,
+      "H": 2,
+      "I": 3,
+      "J": 1,
+      "K": 3,
+      "L": 2,
+      "M": 4,
+      "N": 3,
+      "O": 3,
+      "P": 3,
+      "Q": 1,
+      "R": 1,
+      "S": 4,
+      "T": 2,
+      "U": 4,
+      "V": 2,
+      "W": 1,
+      "X": 4
+    },
+    "composites": {
+      "CitationPotential": 24.5,
+      "ExecFeasibility": 16.0,
+      "ImmigrationValue": 12.4,
+      "CareerValue": 8.5,
+      "PublicationPath": 4.5,
+      "RiskPenalty": 11.0,
+      "Overall": 10.38
+    }
+  },
+  "topic_id": "T25",
+  "topic_title": "Hallucination taxonomy: RAG vs no-RAG",
+  "profile_scores": {
+    "blind_citation": {
+      "score": 23.3,
+      "is_personal_goal": false
+    },
+    "academic_long_term": {
+      "score": 23.75,
+      "is_personal_goal": false
+    },
+    "artifact_neutral": {
+      "score": 22.5,
+      "is_personal_goal": false
+    },
+    "healthcare_neutral": {
+      "score": 23.3,
+      "is_personal_goal": false
+    },
+    "llm_eval_neutral": {
+      "score": 19.62,
+      "is_personal_goal": false
+    },
+    "niw_optimized": {
+      "score": 18.1,
+      "is_personal_goal": true
+    },
+    "eb1a_optimized": {
+      "score": 28.05,
+      "is_personal_goal": true
+    },
+    "faang_career": {
+      "score": 26.8,
+      "is_personal_goal": true
+    },
+    "balanced_personal_strategy": {
+      "score": 26.55,
+      "is_personal_goal": true
+    },
+    "immigration_only": {
+      "score": 15.0,
+      "is_personal_goal": true
+    },
+    "career_only": {
+      "score": 10.8,
+      "is_personal_goal": true
+    },
+    "current_strategy": {
+      "score": 22.4,
+      "is_personal_goal": true
+    },
+    "custom": {
+      "score": 0.0,
+      "is_personal_goal": false
+    }
+  },
+  "active_profile": "blind_citation",
+  "active_profile_score": 23.3,
+  "active_profile_is_personal_goal": false
+}

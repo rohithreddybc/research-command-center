@@ -1,0 +1,125 @@
+{
+  "topic": {
+    "topic_id": "T25",
+    "title": "Hallucination taxonomy: RAG vs no-RAG",
+    "category": "rag",
+    "keywords": "retrieval augmented generation|hallucination taxonomy|faithfulness",
+    "synonyms": "grounded generation;citation correctness",
+    "negative_keywords": "unrelated retrieval",
+    "target_artifact": "taxonomy+paper",
+    "prelim_priority": "4"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness",
+      "grounded generation",
+      "citation correctness",
+      "retrieval augmented generation benchmark",
+      "retrieval augmented generation evaluation",
+      "retrieval augmented generation robustness",
+      "retrieval augmented generation reproducibility",
+      "hallucination taxonomy benchmark",
+      "hallucination taxonomy evaluation",
+      "retrieval augmented generation limitations",
+      "retrieval augmented generation open problems",
+      "retrieval augmented generation review",
+      "hallucination taxonomy limitations",
+      "hallucination taxonomy open problems",
+      "hallucination taxonomy review"
+    ],
+    "openalex": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness",
+      "grounded generation",
+      "citation correctness",
+      "retrieval augmented generation benchmark",
+      "retrieval augmented generation evaluation",
+      "retrieval augmented generation robustness",
+      "retrieval augmented generation reproducibility",
+      "hallucination taxonomy benchmark",
+      "hallucination taxonomy evaluation",
+      "retrieval augmented generation limitations",
+      "retrieval augmented generation open problems",
+      "retrieval augmented generation review",
+      "hallucination taxonomy limitations",
+      "hallucination taxonomy open problems"
+    ],
+    "crossref": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness",
+      "grounded generation"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22retrieval%20augmented%20generation%22+AND+all:%22hallucination%20taxonomy%22+AND+all:%22faithfulness%22)",
+      "all:retrieval%20augmented%20generation"
+    ],
+    "github": [
+      "retrieval augmented generation in:readme,description",
+      "retrieval augmented generation benchmark in:name,description",
+      "retrieval augmented generation evaluation in:name,description",
+      "hallucination taxonomy in:readme,description",
+      "hallucination taxonomy benchmark in:name,description",
+      "hallucination taxonomy evaluation in:name,description",
+      "faithfulness in:readme,description",
+      "faithfulness benchmark in:name,description",
+      "faithfulness evaluation in:name,description"
+    ],
+    "huggingface": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness",
+      "grounded generation",
+      "citation correctness",
+      "retrieval augmented generation benchmark",
+      "hallucination taxonomy benchmark"
+    ],
+    "doaj": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness"
+    ],
+    "pwc": [
+      "retrieval augmented generation",
+      "hallucination taxonomy",
+      "faithfulness"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "retrieval augmented generation",
+        "url": "https://scholar.google.com/scholar?q=%22retrieval%20augmented%20generation%22%202024..2026"
+      },
+      {
+        "label": "hallucination taxonomy",
+        "url": "https://scholar.google.com/scholar?q=%22hallucination%20taxonomy%22%202024..2026"
+      },
+      {
+        "label": "faithfulness",
+        "url": "https://scholar.google.com/scholar?q=%22faithfulness%22%202024..2026"
+      },
+      {
+        "label": "grounded generation",
+        "url": "https://scholar.google.com/scholar?q=%22grounded%20generation%22%202024..2026"
+      },
+      {
+        "label": "citation correctness",
+        "url": "https://scholar.google.com/scholar?q=%22citation%20correctness%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

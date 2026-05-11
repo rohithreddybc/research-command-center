@@ -1,0 +1,114 @@
+{
+  "topic": {
+    "topic_id": "T43",
+    "title": "Reproducibility audit of clinical LLM papers",
+    "category": "meta+healthcare",
+    "keywords": "clinical LLM|reproducibility|methodology disclosure",
+    "synonyms": "medical NLP;clinical NLP",
+    "negative_keywords": "drug docking",
+    "target_artifact": "database+paper",
+    "prelim_priority": "5"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure",
+      "medical NLP",
+      "clinical NLP",
+      "clinical LLM benchmark",
+      "clinical LLM evaluation",
+      "clinical LLM robustness",
+      "clinical LLM reproducibility",
+      "reproducibility benchmark",
+      "reproducibility evaluation"
+    ],
+    "openalex": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure",
+      "medical NLP",
+      "clinical NLP",
+      "clinical LLM benchmark",
+      "clinical LLM evaluation",
+      "clinical LLM robustness",
+      "clinical LLM reproducibility",
+      "reproducibility benchmark",
+      "reproducibility evaluation"
+    ],
+    "crossref": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure",
+      "medical NLP"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.AI)+AND+(all:%22clinical%20LLM%22+AND+all:%22reproducibility%22+AND+all:%22methodology%20disclosure%22)",
+      "all:clinical%20LLM"
+    ],
+    "github": [
+      "clinical LLM in:readme,description",
+      "clinical LLM benchmark in:name,description",
+      "clinical LLM evaluation in:name,description",
+      "reproducibility in:readme,description",
+      "reproducibility benchmark in:name,description",
+      "reproducibility evaluation in:name,description",
+      "methodology disclosure in:readme,description",
+      "methodology disclosure benchmark in:name,description",
+      "methodology disclosure evaluation in:name,description"
+    ],
+    "huggingface": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure",
+      "medical NLP",
+      "clinical NLP",
+      "clinical LLM benchmark",
+      "reproducibility benchmark"
+    ],
+    "doaj": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure"
+    ],
+    "pwc": [
+      "clinical LLM",
+      "reproducibility",
+      "methodology disclosure"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "clinical LLM",
+        "url": "https://scholar.google.com/scholar?q=%22clinical%20LLM%22%202024..2026"
+      },
+      {
+        "label": "reproducibility",
+        "url": "https://scholar.google.com/scholar?q=%22reproducibility%22%202024..2026"
+      },
+      {
+        "label": "methodology disclosure",
+        "url": "https://scholar.google.com/scholar?q=%22methodology%20disclosure%22%202024..2026"
+      },
+      {
+        "label": "medical NLP",
+        "url": "https://scholar.google.com/scholar?q=%22medical%20NLP%22%202024..2026"
+      },
+      {
+        "label": "clinical NLP",
+        "url": "https://scholar.google.com/scholar?q=%22clinical%20NLP%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "topic": {
+    "topic_id": "T74",
+    "title": "Open structured-metadata dataset of LLM-eval papers",
+    "category": "meta",
+    "keywords": "LLM evaluation methodology|metadata|systematic mapping",
+    "synonyms": "evaluation survey;benchmarking practices",
+    "negative_keywords": "tutorial",
+    "target_artifact": "dataset",
+    "prelim_priority": "5"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "LLM evaluation methodology evaluation",
+      "LLM evaluation methodology robustness",
+      "LLM evaluation methodology reproducibility",
+      "metadata benchmark",
+      "metadata evaluation",
+      "LLM evaluation methodology limitations",
+      "LLM evaluation methodology open problems",
+      "LLM evaluation methodology review",
+      "metadata limitations",
+      "metadata open problems",
+      "metadata review"
+    ],
+    "openalex": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "LLM evaluation methodology evaluation",
+      "LLM evaluation methodology robustness",
+      "LLM evaluation methodology reproducibility",
+      "metadata benchmark",
+      "metadata evaluation",
+      "LLM evaluation methodology limitations",
+      "LLM evaluation methodology open problems",
+      "LLM evaluation methodology review",
+      "metadata limitations",
+      "metadata open problems"
+    ],
+    "crossref": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping",
+      "evaluation survey"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22LLM%20evaluation%20methodology%22+AND+all:%22metadata%22+AND+all:%22systematic%20mapping%22)",
+      "all:LLM%20evaluation%20methodology"
+    ],
+    "github": [
+      "LLM evaluation methodology in:readme,description",
+      "LLM evaluation methodology benchmark in:name,description",
+      "LLM evaluation methodology evaluation in:name,description",
+      "metadata in:readme,description",
+      "metadata benchmark in:name,description",
+      "metadata evaluation in:name,description",
+      "systematic mapping in:readme,description",
+      "systematic mapping benchmark in:name,description",
+      "systematic mapping evaluation in:name,description"
+    ],
+    "huggingface": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping",
+      "evaluation survey",
+      "benchmarking practices",
+      "LLM evaluation methodology benchmark",
+      "metadata benchmark"
+    ],
+    "doaj": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping"
+    ],
+    "pwc": [
+      "LLM evaluation methodology",
+      "metadata",
+      "systematic mapping"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "LLM evaluation methodology",
+        "url": "https://scholar.google.com/scholar?q=%22LLM%20evaluation%20methodology%22%202024..2026"
+      },
+      {
+        "label": "metadata",
+        "url": "https://scholar.google.com/scholar?q=%22metadata%22%202024..2026"
+      },
+      {
+        "label": "systematic mapping",
+        "url": "https://scholar.google.com/scholar?q=%22systematic%20mapping%22%202024..2026"
+      },
+      {
+        "label": "evaluation survey",
+        "url": "https://scholar.google.com/scholar?q=%22evaluation%20survey%22%202024..2026"
+      },
+      {
+        "label": "benchmarking practices",
+        "url": "https://scholar.google.com/scholar?q=%22benchmarking%20practices%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

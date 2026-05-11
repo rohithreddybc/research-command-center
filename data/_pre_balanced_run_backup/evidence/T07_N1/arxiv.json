@@ -1,0 +1,12 @@
+[
+  {
+    "query": "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22prompt%20injection%22+AND+all:%22LLM%20judge%22+AND+all:%22jailbreak%22)",
+    "results": [],
+    "status": 200
+  },
+  {
+    "query": "all:prompt%20injection",
+    "results": [],
+    "status": 200
+  }
+]

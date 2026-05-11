@@ -1,0 +1,2780 @@
+[
+  {
+    "query": "prompt injection",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "LLM judge",
+    "results": [
+      {
+        "paperId": "a0a79dad89857a96f8f71b14238e5237cbfc4787",
+        "externalIds": {
+          "ArXiv": "2306.05685",
+          "DBLP": "journals/corr/abs-2306-05685",
+          "DOI": "10.52202/075280-2020",
+          "CorpusId": 259129398
+        },
+        "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena",
+        "venue": "Neural Information Processing Systems",
+        "year": 2023,
+        "citationCount": 8288,
+        "influentialCitationCount": 1104,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.05685, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2149970173",
+            "name": "Lianmin Zheng"
+          },
+          {
+            "authorId": "2537924",
+            "name": "Wei-Lin Chiang"
+          },
+          {
+            "authorId": "2209360681",
+            "name": "Ying Sheng"
+          },
+          {
+            "authorId": "92721493",
+            "name": "Siyuan Zhuang"
+          },
+          {
+            "authorId": "1390573666",
+            "name": "Zhanghao Wu"
+          },
+          {
+            "authorId": "2152482391",
+            "name": "Yonghao Zhuang"
+          },
+          {
+            "authorId": "143872641",
+            "name": "Zi Lin"
+          },
+          {
+            "authorId": "2141335450",
+            "name": "Zhuohan Li"
+          },
+          {
+            "authorId": "2117961435",
+            "name": "Dacheng Li"
+          },
+          {
+            "authorId": "143977260",
+            "name": "E. Xing"
+          },
+          {
+            "authorId": "145140331",
+            "name": "Haotong Zhang"
+          },
+          {
+            "authorId": "49988044",
+            "name": "Joseph E. Gonzalez"
+          },
+          {
+            "authorId": "2055174324",
+            "name": "Ion Stoica"
+          }
+        ],
+        "abstract": "Evaluating large language model (LLM) based chat assistants is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences. To address this, we explore using strong LLMs as judges to evaluate these models on more open-ended questions. We examine the usage and limitations of LLM-as-a-judge, including position, verbosity, and self-enhancement biases, as well as limited reasoning ability, and propose solutions to mitigate some of them. We then verify the agreement between LLM judges and human preferences by introducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot Arena, a crowdsourced battle platform. Our results reveal that strong LLM judges like GPT-4 can match both controlled and crowdsourced human preferences well, achieving over 80% agreement, the same level of agreement between humans. Hence, LLM-as-a-judge is a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain. Additionally, we show our benchmark and traditional benchmarks complement each other by evaluating several variants of LLaMA and Vicuna. The MT-bench questions, 3K expert votes, and 30K conversations with human preferences are publicly available at https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge."
+      },
+      {
+        "paperId": "3bdef0d6cf8af968037ffcc4fdc0c052d36ca254",
+        "externalIds": {
+          "ArXiv": "2504.19254",
+          "DBLP": "journals/corr/abs-2504-19254",
+          "DOI": "10.48550/arXiv.2504.19254",
+          "CorpusId": 278166179
+        },
+        "title": "Uncertainty Quantification for Language Models: A Suite of Black-Box, White-Box, LLM Judge, and Ensemble Scorers",
+        "venue": "Trans. Mach. Learn. Res.",
+        "year": 2025,
+        "citationCount": 16,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.19254, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2311436407",
+            "name": "Dylan Bouchard"
+          },
+          {
+            "authorId": "2301355178",
+            "name": "Mohit Singh Chauhan"
+          }
+        ],
+        "abstract": "Hallucinations are a persistent problem with Large Language Models (LLMs). As these models become increasingly used in high-stakes domains, such as healthcare and finance, the need for effective hallucination detection is crucial. To this end, we outline a versatile framework for closed-book hallucination detection that practitioners can apply to real-world use cases. To achieve this, we adapt a variety of existing uncertainty quantification (UQ) techniques, including black-box UQ, white-box UQ, and LLM-as-a-Judge, transforming them as necessary into standardized response-level confidence scores ranging from 0 to 1. To enhance flexibility, we propose a tunable ensemble approach that incorporates any combination of the individual confidence scores. This approach enables practitioners to optimize the ensemble for a specific use case for improved performance. To streamline implementation, the full suite of scorers is offered in this paper's companion Python toolkit, UQLM. To evaluate the performance of the various scorers, we conduct an extensive set of experiments using several LLM question-answering benchmarks. We find that our tunable ensemble typically surpasses its individual components and outperforms existing hallucination detection methods. Our results demonstrate the benefits of customized hallucination detection strategies for improving the accuracy and reliability of LLMs."
+      },
+      {
+        "paperId": "d3ed6a8685b9bcdf12379cb72731ba7a21077a2a",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2510-09738",
+          "ArXiv": "2510.09738",
+          "DOI": "10.48550/arXiv.2510.09738",
+          "CorpusId": 282057941
+        },
+        "title": "Judge's Verdict: A Comprehensive Analysis of LLM Judge Capability Through Human Agreement",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 11,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.09738, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2109490083",
+            "name": "Steve Han"
+          },
+          {
+            "authorId": "2385473177",
+            "name": "Gilberto Titericz Junior"
+          },
+          {
+            "authorId": "2385472085",
+            "name": "Tom Balough"
+          },
+          {
+            "authorId": "2384129178",
+            "name": "Wenfei Zhou"
+          }
+        ],
+        "abstract": "This research introduces the Judge's Verdict Benchmark, a novel two-step methodology to evaluate Large Language Models (LLMs) as judges for response accuracy evaluation tasks. We assess how well 54 LLMs can replicate human judgment when scoring responses from RAG (Retrieval-Augmented Generation) or Agentic pipelines against ground truth answers. Our methodology progresses from traditional correlation analysis to comprehensive Cohen's Kappa analysis that measures actual agreement patterns. The two-step approach includes: (1) a correlation test that filters judges with strong alignment, followed by (2) a human-likeness test using z-scores to identify two distinct judgment patterns: human-like judgment (|z|<1) that mimics natural human variation, and super-consistent judgment (z>1) that exceeds typical human-to-human agreement levels. This methodology reveals that 27 out of 54 tested LLMs achieve Tier 1 performance: 23 models exhibit human-like patterns that preserve the nuances of human judgment, while 4 models demonstrate super-consistent behavior, a pattern that could indicate either enhanced reliability or oversimplification of complex judgments. Testing 43 open-source models (1B-405B parameters) and 11 closed models (GPT, Gemini, Claude variants), we demonstrate that judge excellence is not solely dependent on model size but on specific training strategies. Our key contributions include: (1) establishing that correlation alone is insufficient for judge evaluation, (2) introducing a\"Turing Test for judges\"based on agreement patterns, and (3) providing a standardized benchmark for classifying LLM judges into distinct performance tiers for different evaluation needs."
+      },
+      {
+        "paperId": "e43f9e5479ff63a7445c6c133f9fbeac45167ebd",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2510-20369",
+          "ArXiv": "2510.20369",
+          "DOI": "10.48550/arXiv.2510.20369",
+          "CorpusId": 282304752
+        },
+        "title": "Ask a Strong LLM Judge when Your Reward Model is Uncertain",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.20369, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2261851299",
+            "name": "Zhenghao Xu"
+          },
+          {
+            "authorId": "2365376107",
+            "name": "Qin Lu"
+          },
+          {
+            "authorId": "153441799",
+            "name": "Qingru Zhang"
+          },
+          {
+            "authorId": "2362883194",
+            "name": "Liang Qiu"
+          },
+          {
+            "authorId": "2304751663",
+            "name": "Ilgee Hong"
+          },
+          {
+            "authorId": "2302894470",
+            "name": "Changlong Yu"
+          },
+          {
+            "authorId": "2363427861",
+            "name": "Wenlin Yao"
+          },
+          {
+            "authorId": "2383255977",
+            "name": "Yao Liu"
+          },
+          {
+            "authorId": "2305338470",
+            "name": "Haoming Jiang"
+          },
+          {
+            "authorId": "2362741719",
+            "name": "Lihong Li"
+          },
+          {
+            "authorId": "2310438793",
+            "name": "Hyokun Yun"
+          },
+          {
+            "authorId": "2295682809",
+            "name": "Tuo Zhao"
+          }
+        ],
+        "abstract": "Reward model (RM) plays a pivotal role in reinforcement learning with human feedback (RLHF) for aligning large language models (LLMs). However, classical RMs trained on human preferences are vulnerable to reward hacking and generalize poorly to out-of-distribution (OOD) inputs. By contrast, strong LLM judges equipped with reasoning capabilities demonstrate superior generalization, even without additional training, but incur significantly higher inference costs, limiting their applicability in online RLHF. In this work, we propose an uncertainty-based routing framework that efficiently complements a fast RM with a strong but costly LLM judge. Our approach formulates advantage estimation in policy gradient (PG) methods as pairwise preference classification, enabling principled uncertainty quantification to guide routing. Uncertain pairs are forwarded to the LLM judge, while confident ones are evaluated by the RM. Experiments on RM benchmarks demonstrate that our uncertainty-based routing strategy significantly outperforms random judge calling at the same cost, and downstream alignment results showcase its effectiveness in improving online RLHF."
+      },
+      {
+        "paperId": "c8634d42275eb4cfe11287a7b17af6a936a5155e",
+        "externalIds": {
+          "ArXiv": "2510.11822",
+          "DBLP": "journals/corr/abs-2510-11822",
+          "DOI": "10.48550/arXiv.2510.11822",
+          "CorpusId": 282064676
+        },
+        "title": "Beyond Consensus: Mitigating the Agreeableness Bias in LLM Judge Evaluations",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 8,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.11822, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2385743604",
+            "name": "Suryaansh Jain"
+          },
+          {
+            "authorId": "32269697",
+            "name": "Umair Z. Ahmed"
+          },
+          {
+            "authorId": "2278667294",
+            "name": "Shubham Sahai"
+          },
+          {
+            "authorId": "2278669467",
+            "name": "Ben Leong"
+          }
+        ],
+        "abstract": "New Large Language Models (LLMs) become available every few weeks, and modern application developers confronted with the unenviable task of having to decide if they should switch to a new model. While human evaluation remains the gold standard, it is costly and unscalable. The state-of-the-art approach is to use LLMs as evaluators ( LLM-as-a-judge), but this suffers from a critical flaw: LLMs exhibit a strong positive bias. We provide empirical evidence showing that while LLMs can identify valid outputs with high accuracy (i.e., True Positive Rate 96%), they are remarkably poor at identifying invalid ones (i.e., True Negative Rate<25%). This systematic bias, coupled with class imbalance, often leads to inflated reliability scores. While ensemble-based methods like majority voting can help, we show that they are not good enough. We introduce an optimal minority-veto strategy that is resilient to missing data and mitigates this bias to a large extent. For scenarios requiring even higher precision, we propose a novel regression-based framework that directly models the validator bias using a small set of human-annotated ground truth data. On a challenging code feedback task over 366 high-school Python programs, our regression approach reduces the maximum absolute error to just 1.2%, achieving a 2x improvement over the best-performing ensemble of 14 state-of-the-art LLMs."
+      },
+      {
+        "paperId": "187b28a88d4613b2772d5a47a819bd186405bd05",
+        "externalIds": {
+          "ArXiv": "2501.17178",
+          "DBLP": "conf/icml/SalinasSH25",
+          "CorpusId": 275954407
+        },
+        "title": "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 6,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.17178, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2323376035",
+            "name": "David Salinas"
+          },
+          {
+            "authorId": "2325905522",
+            "name": "Omar Swelam"
+          },
+          {
+            "authorId": "2322438589",
+            "name": "Frank Hutter"
+          }
+        ],
+        "abstract": "Evaluating Large Language Models (LLMs) often requires costly human annotations. To address this, LLM-based judges have been proposed, which compare the outputs of two LLMs enabling the ranking of models without human intervention. While several approaches have been proposed, many confounding factors are present between different papers. For instance the model, the prompt and other hyperparameters are typically changed at the same time making apple-to-apple comparisons challenging. In this paper, we propose to systematically analyze and tune the hyperparameters of LLM judges. To alleviate the high cost of evaluating a judge, we propose to leverage multi-objective multi-fidelity which allows to find judges that trade accuracy for cost and also significantly reduce the cost of the search. Our method identifies judges that not only outperform existing benchmarks in accuracy and cost-efficiency but also utilize open-weight models, ensuring greater accessibility and reproducibility. The code to reproduce our experiments is available at this repository https://github.com/geoalgo/judgetuning ."
+      },
+      {
+        "paperId": "be135c3b7177ea502e6de54adf34fd3dd0dff474",
+        "externalIds": {
+          "ArXiv": "2504.02867",
+          "DBLP": "journals/corr/abs-2504-02867",
+          "DOI": "10.48550/arXiv.2504.02867",
+          "CorpusId": 277596340
+        },
+        "title": "Multi-Agent LLM Judge: automatic personalized LLM judge design for evaluating natural language generation applications",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 5,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.02867, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "3130250",
+            "name": "Hongliu Cao"
+          },
+          {
+            "authorId": "2189304999",
+            "name": "Ilias Driouich"
+          },
+          {
+            "authorId": "2142947573",
+            "name": "Robin-Resham Singh"
+          },
+          {
+            "authorId": "2087735285",
+            "name": "Eoin Thomas"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have demonstrated impressive performance across diverse domains, yet they still encounter challenges such as insufficient domain-specific knowledge, biases, and hallucinations. This underscores the need for robust evaluation methodologies to accurately assess LLM-based applications. Traditional evaluation methods, which rely on word overlap or text embeddings, are inadequate for capturing the nuanced semantic information necessary to evaluate dynamic, open-ended text generation. Recent research has explored leveraging LLMs to mimic human reasoning and decision-making processes for evaluation purposes known as LLM-as-a-judge framework. However, these existing frameworks have two significant limitations. First, they lack the flexibility to adapt to different text styles, including various answer and ground truth styles, thereby reducing their generalization performance. Second, the evaluation scores produced by these frameworks are often skewed and hard to interpret, showing a low correlation with human judgment. To address these challenges, we propose a novel dynamic multi-agent system that automatically designs personalized LLM judges for various natural language generation applications. This system iteratively refines evaluation prompts and balances the trade-off between the adaptive requirements of downstream tasks and the alignment with human perception. Our experimental results show that the proposed multi-agent LLM Judge framework not only enhances evaluation accuracy compared to existing methods but also produces evaluation scores that better align with human perception."
+      },
+      {
+        "paperId": "2d27cd67539d5947458c408f585b7142bce429a8",
+        "externalIds": {
+          "ArXiv": "2510.06538",
+          "DBLP": "journals/corr/abs-2510-06538",
+          "DOI": "10.48550/arXiv.2510.06538",
+          "CorpusId": 281891925
+        },
+        "title": "Auto-Prompt Ensemble for LLM Judge",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 3,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.06538, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2271492968",
+            "name": "Jiajie Li"
+          },
+          {
+            "authorId": "2333401348",
+            "name": "Huayi Zhang"
+          },
+          {
+            "authorId": "2384723030",
+            "name": "Peng Lin"
+          },
+          {
+            "authorId": "2257201414",
+            "name": "Jinjun Xiong"
+          },
+          {
+            "authorId": "2326341171",
+            "name": "Wei Xu"
+          }
+        ],
+        "abstract": "We present a novel framework that improves the reliability of LLM judges by selectively augmenting LLM with auxiliary evaluation dimensions. Existing LLM judges often miss crucial evaluation dimensions because they fail to recognize the implicit standards underlying human assessments. To address this challenge, we propose the Auto-Prompt Ensemble (APE), an adaptive framework that automatically learns evaluation dimensions from its failure cases. APE incorporates a confidence-based ensemble mechanism to decide when to adopt the judgments from additional evaluation dimensions through a novel confidence estimation approach called Collective Confidence. Extensive experiments demonstrate that APE improves the reliability of LLM Judge across diverse standard benchmarks. For instance, APE enhances GPT-4o agreement rate on Reward Bench from 87.2% to 90.5% in the zero-shot setting. Overall, APE provides a principled approach for LLM Judge to leverage test-time computation, and bridge the evaluation gap between human and LLM judges."
+      },
+      {
+        "paperId": "0823483fa9cde0aaa04c1c1ae9696ee0e273430e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2509-20293",
+          "ArXiv": "2509.20293",
+          "DOI": "10.48550/arXiv.2509.20293",
+          "CorpusId": 281505268
+        },
+        "title": "When Judgment Becomes Noise: How Design Failures in LLM Judge Benchmarks Silently Undermine Validity",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 4,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.20293, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "120557092",
+            "name": "Ben Feuer"
+          },
+          {
+            "authorId": "2356855861",
+            "name": "Chiung-Yi Tseng"
+          },
+          {
+            "authorId": "103916438",
+            "name": "A. Lathe"
+          },
+          {
+            "authorId": "147733481",
+            "name": "Oussama Elachqar"
+          },
+          {
+            "authorId": "2282539274",
+            "name": "John P. Dickerson"
+          }
+        ],
+        "abstract": "LLM-judged benchmarks are increasingly used to evaluate complex model behaviors, yet their design introduces failure modes absent in conventional ground-truth based benchmarks. We argue that without tight objectives and verifiable constructions, benchmark rankings can produce high-confidence rankings that are in fact largely noise. We introduce two mechanisms to diagnose these issues. Schematic adherence quantifies how much of a judge's overall verdict is explained by the explicit evaluation schema, revealing unexplained variance when judges deviate from their own rubric. Psychometric validity aggregates internal consistency and discriminant validity signals to quantify irreducible uncertainty in any benchmarking run. Applying these tools to Arena-Hard Auto, we find severe schema incoherence and factor collapse across popular judges: for example, unexplained variance exceeding 90 percent for DeepSeek-R1-32B and factor correlations above 0.93 for most criteria. We also show that the ELO-style aggregation used by Arena-Hard Auto collapses and masks genuine ranking uncertainty. Our results highlight design failures that undermine validity and offer actionable principles for building better-scoped, reliability-aware LLM-judged benchmarks. We released our code and dataset at https://github.com/penfever/judgment-to-noise"
+      },
+      {
+        "paperId": "e24424283c02fbe7f641e5b3490d7bb059f8355a",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2411-15594",
+          "ArXiv": "2411.15594",
+          "DOI": "10.48550/arXiv.2411.15594",
+          "CorpusId": 274234014
+        },
+        "title": "A Survey on LLM-as-a-Judge",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 1293,
+        "influentialCitationCount": 112,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.15594, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2216587705",
+            "name": "Jiawei Gu"
+          },
+          {
+            "authorId": "144267788",
+            "name": "Xuhui Jiang"
+          },
+          {
+            "authorId": "2287881684",
+            "name": "Zhichao Shi"
+          },
+          {
+            "authorId": "2274159320",
+            "name": "Hexiang Tan"
+          },
+          {
+            "authorId": "2332093190",
+            "name": "Xuehao Zhai"
+          },
+          {
+            "authorId": "2250617116",
+            "name": "Chengjin Xu"
+          },
+          {
+            "authorId": "2330714501",
+            "name": "Wei Li"
+          },
+          {
+            "authorId": "1944248313",
+            "name": "Yinghan Shen"
+          },
+          {
+            "authorId": "2311556497",
+            "name": "Shengjie Ma"
+          },
+          {
+            "authorId": "2332306096",
+            "name": "Honghao Liu"
+          },
+          {
+            "authorId": "2257058703",
+            "name": "Yuanzhuo Wang"
+          },
+          {
+            "authorId": "2284217200",
+            "name": "Jian Guo"
+          }
+        ],
+        "abstract": "Accurate and consistent evaluation is crucial for decision-making across numerous fields, yet it remains a challenging task due to inherent subjectivity, variability, and scale. Large Language Models (LLMs) have achieved remarkable success across diverse domains, leading to the emergence of\"LLM-as-a-Judge,\"where LLMs are employed as evaluators for complex tasks. With their ability to process diverse data types and provide scalable, cost-effective, and consistent assessments, LLMs present a compelling alternative to traditional expert-driven evaluations. However, ensuring the reliability of LLM-as-a-Judge systems remains a significant challenge that requires careful design and standardization. This paper provides a comprehensive survey of LLM-as-a-Judge, addressing the core question: How can reliable LLM-as-a-Judge systems be built? We explore strategies to enhance reliability, including improving consistency, mitigating biases, and adapting to diverse assessment scenarios. Additionally, we propose methodologies for evaluating the reliability of LLM-as-a-Judge systems, supported by a novel benchmark designed for this purpose. To advance the development and real-world deployment of LLM-as-a-Judge systems, we also discussed practical applications, challenges, and future directions. This survey serves as a foundational reference for researchers and practitioners in this rapidly evolving field."
+      },
+      {
+        "paperId": "02708d02585ffbbc8a9f0efc4b9d881f88bb8c5e",
+        "externalIds": {
+          "ArXiv": "2602.05125",
+          "DBLP": "journals/corr/abs-2602-05125",
+          "DOI": "10.48550/arXiv.2602.05125",
+          "CorpusId": 285303697
+        },
+        "title": "Rethinking Rubric Generation for Improving LLM Judge and Reward Modeling for Open-ended Tasks",
+        "venue": "arXiv.org",
+        "year": 2026,
+        "citationCount": 9,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.05125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2397566024",
+            "name": "William F. Shen"
+          },
+          {
+            "authorId": "1702997626",
+            "name": "Xinchi Qiu"
+          },
+          {
+            "authorId": "2161240241",
+            "name": "Chenxi Whitehouse"
+          },
+          {
+            "authorId": "2345006111",
+            "name": "Lisa Alazraki"
+          },
+          {
+            "authorId": "2379670450",
+            "name": "S. Goel"
+          },
+          {
+            "authorId": "2401493062",
+            "name": "Francesco Barbieri"
+          },
+          {
+            "authorId": "2397486855",
+            "name": "Timon Willi"
+          },
+          {
+            "authorId": "2408533973",
+            "name": "Akhil Mathur"
+          },
+          {
+            "authorId": "2246915470",
+            "name": "Ilias Leontiadis"
+          }
+        ],
+        "abstract": "Recently, rubrics have been used to guide LLM judges in capturing subjective, nuanced, multi-dimensional human preferences, and have been extended from evaluation to reward signals for reinforcement fine-tuning (RFT). However, rubric generation remains hard to control: rubrics often lack coverage, conflate dimensions, misalign preference direction, and contain redundant or highly correlated criteria, degrading judge accuracy and producing suboptimal rewards during RFT. We propose RRD, a principled framework for rubric refinement built on a recursive decompose-filter cycle. RRD decomposes coarse rubrics into fine-grained, discriminative criteria, expanding coverage while sharpening separation between responses. A complementary filtering mechanism removes misaligned and redundant rubrics, and a correlation-aware weighting scheme prevents over-representing highly correlated criteria, yielding rubric sets that are informative, comprehensive, and non-redundant. Empirically, RRD delivers large, consistent gains across both evaluation and training: it improves preference-judgment accuracy on JudgeBench and PPE for both GPT-4o and Llama3.1-405B judges, achieving top performance in all settings with up to +17.7 points on JudgeBench. When used as the reward source for RFT on WildChat, it yields substantially stronger and more stable learning signals, boosting reward by up to 160% (Qwen3-4B) and 60% (Llama3.1-8B) versus 10-20% for prior rubric baselines, with gains that transfer to HealthBench-Hard and BiGGen Bench. Overall, RRD establishes recursive rubric refinement as a scalable and interpretable foundation for LLM judging and reward modeling in open-ended domains."
+      },
+      {
+        "paperId": "eb16a646377149325b114363472296367d6a0aa9",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2601-22230",
+          "ArXiv": "2601.22230",
+          "DOI": "10.48550/arXiv.2601.22230",
+          "CorpusId": 285240995
+        },
+        "title": "DAJ: Data-Reweighted LLM Judge for Test-Time Scaling in Code Generation",
+        "venue": "arXiv.org",
+        "year": 2026,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.22230, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2325875006",
+            "name": "Peijia Qin"
+          },
+          {
+            "authorId": "2238957617",
+            "name": "Ruiyi Zhang"
+          },
+          {
+            "authorId": "2363908424",
+            "name": "Qi Cao"
+          },
+          {
+            "authorId": "2379664900",
+            "name": "Pengtao Xie"
+          }
+        ],
+        "abstract": "Test-time scaling for code generation commonly relies on Best-of-N selection, in which multiple candidate solutions are sampled from a base model, and the best one is selected by an LLM judge. However, training reliable LLM judges is challenging due to severe distribution shifts, including imbalances between easy and hard problems, mismatches between training tasks and evaluation benchmarks, and trajectory mismatch arising from training data generated by cheaper models whose behavior differs from that of inference-time models. We propose DAJ, a reasoning-based LLM judge trained with verifiable rewards under a bi-level data-reweighted learning framework. The proposed framework learns data-importance weights (either domain-level or instance-level) to optimize generalization performance on a held-out meta set aligned with target benchmarks. To the best of our knowledge, this is the first application of data reweighting to LLM-as-a-Judge training for test-time scaling. Our approach automatically emphasizes hard problems, in-distribution samples, and trajectory-aligned data, without relying on hand-crafted heuristics. Empirically, DAJ achieves state-of-the-art performance on LiveCodeBench and BigCodeBench, outperforming strong test-time scaling baselines as well as leading proprietary models."
+      },
+      {
+        "paperId": "24e8029197b5f99126f0ef4e577d55a275405b36",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-01534",
+          "ArXiv": "2502.01534",
+          "DOI": "10.48550/arXiv.2502.01534",
+          "CorpusId": 276106991
+        },
+        "title": "Preference Leakage: A Contamination Problem in LLM-as-a-judge",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 101,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.01534, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2161635474",
+            "name": "Dawei Li"
+          },
+          {
+            "authorId": "2344419674",
+            "name": "Renliang Sun"
+          },
+          {
+            "authorId": "2324070910",
+            "name": "Yue Huang"
+          },
+          {
+            "authorId": "2316709408",
+            "name": "Ming Zhong"
+          },
+          {
+            "authorId": "2036355404",
+            "name": "Bohan Jiang"
+          },
+          {
+            "authorId": "2343853966",
+            "name": "Jiawei Han"
+          },
+          {
+            "authorId": "2307963162",
+            "name": "Xiangliang Zhang"
+          },
+          {
+            "authorId": "2343828587",
+            "name": "Wei Wang"
+          },
+          {
+            "authorId": "2287545693",
+            "name": "Huan Liu"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) as judges and LLM-based data synthesis have emerged as two fundamental LLM-driven data annotation methods in model development. While their combination significantly enhances the efficiency of model training and evaluation, little attention has been given to the potential contamination brought by this new model development paradigm. In this work, we expose preference leakage, a contamination problem in LLM-as-a-judge caused by the relatedness between the synthetic data generators and LLM-based evaluators. To study this issue, we first define three common relatednesses between the data generator LLM and the judge LLM: being the same model, having an inheritance relationship, and belonging to the same model family. Through extensive experiments, we empirically confirm the bias of judges towards their related student models caused by preference leakage across multiple LLM baselines and benchmarks. Further analysis suggests that preference leakage is a pervasive and real-world problem that is harder to detect compared to previously identified biases in LLM-as-a-judge scenarios. All of these findings imply that preference leakage is a widespread and challenging problem in the area of LLM-as-a-judge. We release all codes and data at: https://github.com/David-Li0406/Preference-Leakage."
+      },
+      {
+        "paperId": "194c271c217d8754c84e3e578224518f80a75799",
+        "externalIds": {
+          "ArXiv": "2502.06193",
+          "DBLP": "journals/corr/abs-2502-06193",
+          "DOI": "10.1145/3728963",
+          "CorpusId": 276249976
+        },
+        "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+        "venue": "Proc. ACM Softw. Eng.",
+        "year": 2025,
+        "citationCount": 102,
+        "influentialCitationCount": 7,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.06193, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2316784028",
+            "name": "Ruiqi Wang"
+          },
+          {
+            "authorId": "2316785910",
+            "name": "Jiyu Guo"
+          },
+          {
+            "authorId": "2296784064",
+            "name": "Cuiyun Gao"
+          },
+          {
+            "authorId": "2237263073",
+            "name": "Guodong Fan"
+          },
+          {
+            "authorId": "2321404933",
+            "name": "Chun Yong Chong"
+          },
+          {
+            "authorId": "2322064741",
+            "name": "X. Xia"
+          }
+        ],
+        "abstract": "Recently, large language models (LLMs) have been deployed to tackle various software engineering (SE) tasks like code generation, significantly advancing the automation of SE tasks. However, assessing the quality of these LLM-generated code and text remains challenging. The commonly used Pass@k metric necessitates extensive unit tests and configured environments, demands a high labor cost, and is not suitable for evaluating LLM-generated text. Conventional metrics like BLEU, which measure only lexical rather than semantic similarity, have also come under scrutiny. In response, a new trend has emerged to employ LLMs for automated evaluation, known as LLM-as-a-judge. These LLM-as-a-judge methods are claimed to better mimic human assessment than conventional metrics without relying on high-quality reference answers. Nevertheless, their exact human alignment in SE tasks remains unexplored. In this paper, we empirically explore LLM-as-a-judge methods for evaluating SE tasks, focusing on their alignment with human judgments. We select seven LLM-as-a-judge methods that utilize general-purpose LLMs, alongside two LLMs specifically fine-tuned for evaluation. After generating and manually scoring LLM responses on three recent SE datasets of code translation, code generation, and code summarization, we then prompt these methods to evaluate each response. Finally, we compare the scores generated by these methods with human evaluation. The results indicate that output-based methods reach the highest Pearson correlation of 81.32 and 68.51 with human scores in code translation and generation, achieving near-human evaluation, noticeably outperforming ChrF++, one of the best conventional metrics, at 34.23 and 64.92. Such output-based methods prompt LLMs to output judgments directly, and exhibit more balanced score distributions that resemble human score patterns. Finally, we provide insights and implications, concluding that current state-of-the-art LLM-as-a-judge methods can potentially replace human evaluations in certain SE tasks."
+      },
+      {
+        "paperId": "1036f6dfe75af06fbcdb3447dbe9be8613bf857c",
+        "externalIds": {
+          "ArXiv": "2402.04788",
+          "DBLP": "conf/icml/ChenCZWLZZ00024",
+          "CorpusId": 267523079
+        },
+        "title": "MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark",
+        "venue": "International Conference on Machine Learning",
+        "year": 2024,
+        "citationCount": 347,
+        "influentialCitationCount": 47,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.04788, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2279219833",
+            "name": "Dongping Chen"
+          },
+          {
+            "authorId": "2283244952",
+            "name": "Ruoxi Chen"
+          },
+          {
+            "authorId": "2283311181",
+            "name": "Shilin Zhang"
+          },
+          {
+            "authorId": "2283150665",
+            "name": "Yinuo Liu"
+          },
+          {
+            "authorId": "2283314623",
+            "name": "Yaochen Wang"
+          },
+          {
+            "authorId": "2283313383",
+            "name": "Huichi Zhou"
+          },
+          {
+            "authorId": "46324457",
+            "name": "Qihui Zhang"
+          },
+          {
+            "authorId": "2221116622",
+            "name": "Pan Zhou"
+          },
+          {
+            "authorId": "2254266993",
+            "name": "Yao Wan"
+          },
+          {
+            "authorId": "2267508610",
+            "name": "Lichao Sun"
+          }
+        ],
+        "abstract": "Multimodal Large Language Models (MLLMs) have gained significant attention recently, showing remarkable potential in artificial general intelligence. However, assessing the utility of MLLMs presents considerable challenges, primarily due to the absence of multimodal benchmarks that align with human preferences. Drawing inspiration from the concept of LLM-as-a-Judge within LLMs, this paper introduces a novel benchmark, termed MLLM-as-a-Judge, to assess the ability of MLLMs in assisting judges across diverse modalities, encompassing three distinct tasks: Scoring Evaluation, Pair Comparison, and Batch Ranking. Our study reveals that, while MLLMs demonstrate remarkable human-like discernment in Pair Comparison, there is a significant divergence from human preferences in Scoring Evaluation and Batch Ranking. Furthermore, a closer examination reveals persistent challenges in the judgment capacities of LLMs, including diverse biases, hallucinatory responses, and inconsistencies in judgment, even in advanced models such as GPT-4V. These findings emphasize the pressing need for enhancements and further research efforts to be undertaken before regarding MLLMs as fully reliable evaluators. In light of this, we advocate for additional efforts dedicated to supporting the continuous development within the domain of MLLM functioning as judges. The code and dataset are publicly available at our project homepage: \\url{https://mllm-judge.github.io/}."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "jailbreak",
+    "results": [
+      {
+        "paperId": "732ce53c573475f2691a7cfc716cf4f568d17360",
+        "externalIds": {
+          "DBLP": "conf/acl/0005LZY0S24",
+          "ArXiv": "2401.06373",
+          "DOI": "10.48550/arXiv.2401.06373",
+          "CorpusId": 266977395
+        },
+        "title": "How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 599,
+        "influentialCitationCount": 73,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2401.06373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2273035656",
+            "name": "Yi Zeng"
+          },
+          {
+            "authorId": "2217403001",
+            "name": "H. Lin"
+          },
+          {
+            "authorId": "2107959264",
+            "name": "Jingwen Zhang"
+          },
+          {
+            "authorId": "2263629011",
+            "name": "Diyi Yang"
+          },
+          {
+            "authorId": "2254249161",
+            "name": "Ruoxi Jia"
+          },
+          {
+            "authorId": "2266973626",
+            "name": "Weiyan Shi"
+          }
+        ],
+        "abstract": "Most traditional AI safety research has approached AI models as machines and centered on algorithm-focused attacks developed by security experts. As large language models (LLMs) become increasingly common and competent, non-expert users can also impose risks during daily interactions. This paper introduces a new perspective to jailbreak LLMs as human-like communicators, to explore this overlooked intersection between everyday language interaction and AI safety. Specifically, we study how to persuade LLMs to jailbreak them. First, we propose a persuasion taxonomy derived from decades of social science research. Then, we apply the taxonomy to automatically generate interpretable persuasive adversarial prompts (PAP) to jailbreak LLMs. Results show that persuasion significantly increases the jailbreak performance across all risk categories: PAP consistently achieves an attack success rate of over $92\\%$ on Llama 2-7b Chat, GPT-3.5, and GPT-4 in $10$ trials, surpassing recent algorithm-focused attacks. On the defense side, we explore various mechanisms against PAP and, found a significant gap in existing defenses, and advocate for more fundamental mitigation for highly interactive LLMs"
+      },
+      {
+        "paperId": "2c4d2d889a1f0ff9598de829a001df11a95d3294",
+        "externalIds": {
+          "ArXiv": "2404.01833",
+          "DBLP": "journals/corr/abs-2404-01833",
+          "DOI": "10.48550/arXiv.2404.01833",
+          "CorpusId": 268856920
+        },
+        "title": "Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack",
+        "venue": "USENIX Security Symposium",
+        "year": 2024,
+        "citationCount": 289,
+        "influentialCitationCount": 36,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.01833, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "3196342",
+            "name": "M. Russinovich"
+          },
+          {
+            "authorId": "2294574172",
+            "name": "Ahmed Salem"
+          },
+          {
+            "authorId": "2315830",
+            "name": "Ronen Eldan"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have risen significantly in popularity and are increasingly being adopted across multiple applications. These LLMs are heavily aligned to resist engaging in illegal or unethical topics as a means to avoid contributing to responsible AI harms. However, a recent line of attacks, known as jailbreaks, seek to overcome this alignment. Intuitively, jailbreak attacks aim to narrow the gap between what the model can do and what it is willing to do. In this paper, we introduce a novel jailbreak attack called Crescendo. Unlike existing jailbreak methods, Crescendo is a simple multi-turn jailbreak that interacts with the model in a seemingly benign manner. It begins with a general prompt or question about the task at hand and then gradually escalates the dialogue by referencing the model's replies progressively leading to a successful jailbreak. We evaluate Crescendo on various public systems, including ChatGPT, Gemini Pro, Gemini-Ultra, LlaMA-2 70b and LlaMA-3 70b Chat, and Anthropic Chat. Our results demonstrate the strong efficacy of Crescendo, with it achieving high attack success rates across all evaluated models and tasks. Furthermore, we present Crescendomation, a tool that automates the Crescendo attack and demonstrate its efficacy against state-of-the-art models through our evaluations. Crescendomation surpasses other state-of-the-art jailbreaking techniques on the AdvBench subset dataset, achieving 29-61% higher performance on GPT-4 and 49-71% on Gemini-Pro. Finally, we also demonstrate Crescendo's ability to jailbreak multimodal models."
+      },
+      {
+        "paperId": "f019c9661b253ddb611e930348e20ddcd350a952",
+        "externalIds": {
+          "ArXiv": "2404.03027",
+          "CorpusId": 268889385
+        },
+        "title": "JailBreakV: A Benchmark for Assessing the Robustness of MultiModal Large Language Models against Jailbreak Attacks",
+        "venue": "",
+        "year": 2024,
+        "citationCount": 219,
+        "influentialCitationCount": 33,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.03027, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2295093334",
+            "name": "Weidi Luo"
+          },
+          {
+            "authorId": "2295006382",
+            "name": "Siyuan Ma"
+          },
+          {
+            "authorId": "2257096300",
+            "name": "Xiaogeng Liu"
+          },
+          {
+            "authorId": "2270693298",
+            "name": "Xiaoyu Guo"
+          },
+          {
+            "authorId": "2273519476",
+            "name": "Chaowei Xiao"
+          }
+        ],
+        "abstract": "With the rapid advancements in Multimodal Large Language Models (MLLMs), securing these models against malicious inputs while aligning them with human values has emerged as a critical challenge. In this paper, we investigate an important and unexplored question of whether techniques that successfully jailbreak Large Language Models (LLMs) can be equally effective in jailbreaking MLLMs. To explore this issue, we introduce JailBreakV-28K, a pioneering benchmark designed to assess the transferability of LLM jailbreak techniques to MLLMs, thereby evaluating the robustness of MLLMs against diverse jailbreak attacks. Utilizing a dataset of 2, 000 malicious queries that is also proposed in this paper, we generate 20, 000 text-based jailbreak prompts using advanced jailbreak attacks on LLMs, alongside 8, 000 image-based jailbreak inputs from recent MLLMs jailbreak attacks, our comprehensive dataset includes 28, 000 test cases across a spectrum of adversarial scenarios. Our evaluation of 10 open-source MLLMs reveals a notably high Attack Success Rate (ASR) for attacks transferred from LLMs, highlighting a critical vulnerability in MLLMs that stems from their text-processing capabilities. Our findings underscore the urgent need for future research to address alignment vulnerabilities in MLLMs from both textual and visual inputs."
+      },
+      {
+        "paperId": "2139e414bdf6a5ea7ec4052d3f65a8d49991494b",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2402-08983",
+          "ArXiv": "2402.08983",
+          "DOI": "10.48550/arXiv.2402.08983",
+          "CorpusId": 267658033
+        },
+        "title": "SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 242,
+        "influentialCitationCount": 37,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.08983, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2268640874",
+            "name": "Zhangchen Xu"
+          },
+          {
+            "authorId": "2268521947",
+            "name": "Fengqing Jiang"
+          },
+          {
+            "authorId": "152145884",
+            "name": "Luyao Niu"
+          },
+          {
+            "authorId": "2256966137",
+            "name": "Jinyuan Jia"
+          },
+          {
+            "authorId": "51583409",
+            "name": "Bill Yuchen Lin"
+          },
+          {
+            "authorId": "144786412",
+            "name": "R. Poovendran"
+          }
+        ],
+        "abstract": "As large language models (LLMs) become increasingly integrated into real-world applications such as code generation and chatbot assistance, extensive efforts have been made to align LLM behavior with human values, including safety. Jailbreak attacks, aiming to provoke unintended and unsafe behaviors from LLMs, remain a significant/leading LLM safety threat. In this paper, we aim to defend LLMs against jailbreak attacks by introducing SafeDecoding, a safety-aware decoding strategy for LLMs to generate helpful and harmless responses to user queries. Our insight in developing SafeDecoding is based on the observation that, even though probabilities of tokens representing harmful contents outweigh those representing harmless responses, safety disclaimers still appear among the top tokens after sorting tokens by probability in descending order. This allows us to mitigate jailbreak attacks by identifying safety disclaimers and amplifying their token probabilities, while simultaneously attenuating the probabilities of token sequences that are aligned with the objectives of jailbreak attacks. We perform extensive experiments on five LLMs using six state-of-the-art jailbreak attacks and four benchmark datasets. Our results show that SafeDecoding significantly reduces the attack success rate and harmfulness of jailbreak attacks without compromising the helpfulness of responses to benign user queries. SafeDecoding outperforms six defense methods."
+      },
+      {
+        "paperId": "0a691e58a36cdcdaaf72294e88420f79e61e85c7",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2402-11753",
+          "ArXiv": "2402.11753",
+          "DOI": "10.48550/arXiv.2402.11753",
+          "CorpusId": 267750708
+        },
+        "title": "ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2024,
+        "citationCount": 237,
+        "influentialCitationCount": 26,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.11753, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2268521947",
+            "name": "Fengqing Jiang"
+          },
+          {
+            "authorId": "2268640874",
+            "name": "Zhangchen Xu"
+          },
+          {
+            "authorId": "152145884",
+            "name": "Luyao Niu"
+          },
+          {
+            "authorId": "2261738344",
+            "name": "Zhen Xiang"
+          },
+          {
+            "authorId": "31306695",
+            "name": "Bhaskar Ramasubramanian"
+          },
+          {
+            "authorId": "2261831004",
+            "name": "Bo Li"
+          },
+          {
+            "authorId": "144786412",
+            "name": "R. Poovendran"
+          }
+        ],
+        "abstract": "Safety is critical to the usage of large language models (LLMs). Multiple techniques such as data filtering and supervised fine-tuning have been developed to strengthen LLM safety. However, currently known techniques presume that corpora used for safety alignment of LLMs are solely interpreted by semantics. This assumption, however, does not hold in real-world applications, which leads to severe vulnerabilities in LLMs. For example, users of forums often use ASCII art, a form of text-based art, to convey image information. In this paper, we propose a novel ASCII art-based jailbreak attack and introduce a comprehensive benchmark Vision-in-Text Challenge (ViTC) to evaluate the capabilities of LLMs in recognizing prompts that cannot be solely interpreted by semantics. We show that five SOTA LLMs (GPT-3.5, GPT-4, Gemini, Claude, and Llama2) struggle to recognize prompts provided in the form of ASCII art. Based on this observation, we develop the jailbreak attack ArtPrompt, which leverages the poor performance of LLMs in recognizing ASCII art to bypass safety measures and elicit undesired behaviors from LLMs. ArtPrompt only requires black-box access to the victim LLMs, making it a practical attack. We evaluate ArtPrompt on five SOTA LLMs, and show that ArtPrompt can effectively and efficiently induce undesired behaviors from all five LLMs. Our code is available at https://github.com/uw-nsl/ArtPrompt."
+      },
+      {
+        "paperId": "f3f23f7f9f5369aade19f20bc5d028cce7b9c9aa",
+        "externalIds": {
+          "ArXiv": "2310.04451",
+          "DBLP": "journals/corr/abs-2310-04451",
+          "DOI": "10.48550/arXiv.2310.04451",
+          "CorpusId": 263831566
+        },
+        "title": "AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models",
+        "venue": "International Conference on Learning Representations",
+        "year": 2023,
+        "citationCount": 722,
+        "influentialCitationCount": 101,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2310.04451",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.04451, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2257096300",
+            "name": "Xiaogeng Liu"
+          },
+          {
+            "authorId": "2257007579",
+            "name": "Nan Xu"
+          },
+          {
+            "authorId": "1998918",
+            "name": "Muhao Chen"
+          },
+          {
+            "authorId": "2256992327",
+            "name": "Chaowei Xiao"
+          }
+        ],
+        "abstract": "The aligned Large Language Models (LLMs) are powerful language understanding and decision-making tools that are created through extensive alignment with human feedback. However, these large models remain susceptible to jailbreak attacks, where adversaries manipulate prompts to elicit malicious outputs that should not be given by aligned LLMs. Investigating jailbreak prompts can lead us to delve into the limitations of LLMs and further guide us to secure them. Unfortunately, existing jailbreak techniques suffer from either (1) scalability issues, where attacks heavily rely on manual crafting of prompts, or (2) stealthiness problems, as attacks depend on token-based algorithms to generate prompts that are often semantically meaningless, making them susceptible to detection through basic perplexity testing. In light of these challenges, we intend to answer this question: Can we develop an approach that can automatically generate stealthy jailbreak prompts? In this paper, we introduce AutoDAN, a novel jailbreak attack against aligned LLMs. AutoDAN can automatically generate stealthy jailbreak prompts by the carefully designed hierarchical genetic algorithm. Extensive evaluations demonstrate that AutoDAN not only automates the process while preserving semantic meaningfulness, but also demonstrates superior attack strength in cross-model transferability, and cross-sample universality compared with the baseline. Moreover, we also compare AutoDAN with perplexity-based defense methods and show that AutoDAN can bypass them effectively."
+      },
+      {
+        "paperId": "7aad17634aa3a04c15c50c368498361ba619def1",
+        "externalIds": {
+          "ArXiv": "2502.12893",
+          "DBLP": "journals/corr/abs-2502-12893",
+          "DOI": "10.48550/arXiv.2502.12893",
+          "CorpusId": 276421687
+        },
+        "title": "H-CoT: Hijacking the Chain-of-Thought Safety Reasoning Mechanism to Jailbreak Large Reasoning Models, Including OpenAI o1/o3, DeepSeek-R1, and Gemini 2.0 Flash Thinking",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 95,
+        "influentialCitationCount": 13,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.12893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2211526996",
+            "name": "Martin Kuo"
+          },
+          {
+            "authorId": "2265652686",
+            "name": "Jianyi Zhang"
+          },
+          {
+            "authorId": "2289480135",
+            "name": "Aolin Ding"
+          },
+          {
+            "authorId": "2327503028",
+            "name": "Qinsi Wang"
+          },
+          {
+            "authorId": "2289515029",
+            "name": "Louis DiValentin"
+          },
+          {
+            "authorId": "2306754738",
+            "name": "Yujia Bao"
+          },
+          {
+            "authorId": "2306480290",
+            "name": "Wei Wei"
+          },
+          {
+            "authorId": "2346061748",
+            "name": "Hai Li"
+          },
+          {
+            "authorId": "2285914051",
+            "name": "Yiran Chen"
+          }
+        ],
+        "abstract": "Large Reasoning Models (LRMs) have recently extended their powerful reasoning capabilities to safety checks-using chain-of-thought reasoning to decide whether a request should be answered. While this new approach offers a promising route for balancing model utility and safety, its robustness remains underexplored. To address this gap, we introduce Malicious-Educator, a benchmark that disguises extremely dangerous or malicious requests beneath seemingly legitimate educational prompts. Our experiments reveal severe security flaws in popular commercial-grade LRMs, including OpenAI o1/o3, DeepSeek-R1, and Gemini 2.0 Flash Thinking. For instance, although OpenAI's o1 model initially maintains a high refusal rate of about 98%, subsequent model updates significantly compromise its safety; and attackers can easily extract criminal strategies from DeepSeek-R1 and Gemini 2.0 Flash Thinking without any additional tricks. To further highlight these vulnerabilities, we propose Hijacking Chain-of-Thought (H-CoT), a universal and transferable attack method that leverages the model's own displayed intermediate reasoning to jailbreak its safety reasoning mechanism. Under H-CoT, refusal rates sharply decline-dropping from 98% to below 2%-and, in some instances, even transform initially cautious tones into ones that are willing to provide harmful content. We hope these findings underscore the urgent need for more robust safety mechanisms to preserve the benefits of advanced reasoning capabilities without compromising ethical standards."
+      },
+      {
+        "paperId": "d4177489596748e43aa571f59556097f2cc4c8be",
+        "externalIds": {
+          "ArXiv": "2309.10253",
+          "DBLP": "journals/corr/abs-2309-10253",
+          "DOI": "10.48550/arXiv.2309.10253",
+          "CorpusId": 262055242
+        },
+        "title": "GPTFUZZER: Red Teaming Large Language Models with Auto-Generated Jailbreak Prompts",
+        "venue": "arXiv.org",
+        "year": 2023,
+        "citationCount": 584,
+        "influentialCitationCount": 90,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2309.10253",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.10253, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "11305882",
+            "name": "Jiahao Yu"
+          },
+          {
+            "authorId": "51465605",
+            "name": "Xingwei Lin"
+          },
+          {
+            "authorId": "2267485418",
+            "name": "Zheng Yu"
+          },
+          {
+            "authorId": "2242944254",
+            "name": "Xinyu Xing"
+          }
+        ],
+        "abstract": "Large language models (LLMs) have recently experienced tremendous popularity and are widely used from casual conversations to AI-driven programming. However, despite their considerable success, LLMs are not entirely reliable and can give detailed guidance on how to conduct harmful or illegal activities. While safety measures can reduce the risk of such outputs, adversarial jailbreak attacks can still exploit LLMs to produce harmful content. These jailbreak templates are typically manually crafted, making large-scale testing challenging. In this paper, we introduce GPTFuzz, a novel black-box jailbreak fuzzing framework inspired by the AFL fuzzing framework. Instead of manual engineering, GPTFuzz automates the generation of jailbreak templates for red-teaming LLMs. At its core, GPTFuzz starts with human-written templates as initial seeds, then mutates them to produce new templates. We detail three key components of GPTFuzz: a seed selection strategy for balancing efficiency and variability, mutate operators for creating semantically equivalent or similar sentences, and a judgment model to assess the success of a jailbreak attack. We evaluate GPTFuzz against various commercial and open-source LLMs, including ChatGPT, LLaMa-2, and Vicuna, under diverse attack scenarios. Our results indicate that GPTFuzz consistently produces jailbreak templates with a high success rate, surpassing human-crafted templates. Remarkably, GPTFuzz achieves over 90% attack success rates against ChatGPT and Llama-2 models, even with suboptimal initial seed templates. We anticipate that GPTFuzz will be instrumental for researchers and practitioners in examining LLM robustness and will encourage further exploration into enhancing LLM safety."
+      },
+      {
+        "paperId": "80a1960dc99a2424273cf38de57f05bf4e896e42",
+        "externalIds": {
+          "DBLP": "conf/uss/ZhangZGHG0Z00025",
+          "ArXiv": "2502.07557",
+          "DOI": "10.48550/arXiv.2502.07557",
+          "CorpusId": 276258640
+        },
+        "title": "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation",
+        "venue": "USENIX Security Symposium",
+        "year": 2025,
+        "citationCount": 43,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.07557, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2145523607",
+            "name": "Shenyi Zhang"
+          },
+          {
+            "authorId": "2344832603",
+            "name": "Yuchen Zhai"
+          },
+          {
+            "authorId": "2165583728",
+            "name": "Keyan Guo"
+          },
+          {
+            "authorId": "2241790138",
+            "name": "Hongxin Hu"
+          },
+          {
+            "authorId": "2345191357",
+            "name": "Shengnan Guo"
+          },
+          {
+            "authorId": "2279920931",
+            "name": "Zheng Fang"
+          },
+          {
+            "authorId": "39704579",
+            "name": "Lingchen Zhao"
+          },
+          {
+            "authorId": "2347007324",
+            "name": "Chao Shen"
+          },
+          {
+            "authorId": "2305534176",
+            "name": "Cong Wang"
+          },
+          {
+            "authorId": "2345198433",
+            "name": "Qian Wang"
+          }
+        ],
+        "abstract": "Despite the implementation of safety alignment strategies, large language models (LLMs) remain vulnerable to jailbreak attacks, which undermine these safety guardrails and pose significant security threats. Some defenses have been proposed to detect or mitigate jailbreaks, but they are unable to withstand the test of time due to an insufficient understanding of jailbreak mechanisms. In this work, we investigate the mechanisms behind jailbreaks based on the Linear Representation Hypothesis (LRH), which states that neural networks encode high-level concepts as subspaces in their hidden representations. We define the toxic semantics in harmful and jailbreak prompts as toxic concepts and describe the semantics in jailbreak prompts that manipulate LLMs to comply with unsafe requests as jailbreak concepts. Through concept extraction and analysis, we reveal that LLMs can recognize the toxic concepts in both harmful and jailbreak prompts. However, unlike harmful prompts, jailbreak prompts activate the jailbreak concepts and alter the LLM output from rejection to compliance. Building on our analysis, we propose a comprehensive jailbreak defense framework, JBShield, consisting of two key components: jailbreak detection JBShield-D and mitigation JBShield-M. JBShield-D identifies jailbreak prompts by determining whether the input activates both toxic and jailbreak concepts. When a jailbreak prompt is detected, JBShield-M adjusts the hidden representations of the target LLM by enhancing the toxic concept and weakening the jailbreak concept, ensuring LLMs produce safe content. Extensive experiments demonstrate the superior performance of JBShield, achieving an average detection accuracy of 0.95 and reducing the average attack success rate of various jailbreak attacks to 2% from 61% across distinct LLMs."
+      },
+      {
+        "paperId": "46a9f0dc9f74bef40c2f860e604c338c8092d30e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2505-04806",
+          "ArXiv": "2505.04806",
+          "DOI": "10.48550/arXiv.2505.04806",
+          "CorpusId": 278394373
+        },
+        "title": "Red Teaming the Mind of the Machine: A Systematic Evaluation of Prompt Injection and Jailbreak Vulnerabilities in LLMs",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 37,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.04806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2359630373",
+            "name": "Chetan Pathade"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) are increasingly integrated into consumer and enterprise applications. Despite their capabilities, they remain susceptible to adversarial attacks such as prompt injection and jailbreaks that override alignment safeguards. This paper provides a systematic investigation of jailbreak strategies against various state-of-the-art LLMs. We categorize over 1,400 adversarial prompts, analyze their success against GPT-4, Claude 2, Mistral 7B, and Vicuna, and examine their generalizability and construction logic. We further propose layered mitigation strategies and recommend a hybrid red-teaming and sandboxing approach for robust LLM security."
+      },
+      {
+        "paperId": "523b8635597d6c0bf05fd0e3f35f3a18d2748a24",
+        "externalIds": {
+          "ArXiv": "2407.04295",
+          "DBLP": "journals/corr/abs-2407-04295",
+          "DOI": "10.48550/arXiv.2407.04295",
+          "CorpusId": 271038633
+        },
+        "title": "Jailbreak Attacks and Defenses Against Large Language Models: A Survey",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 259,
+        "influentialCitationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.04295, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2310316777",
+            "name": "Sibo Yi"
+          },
+          {
+            "authorId": "2310274929",
+            "name": "Yule Liu"
+          },
+          {
+            "authorId": "2310595263",
+            "name": "Zhen Sun"
+          },
+          {
+            "authorId": "2265754853",
+            "name": "Tianshuo Cong"
+          },
+          {
+            "authorId": "2295682129",
+            "name": "Xinlei He"
+          },
+          {
+            "authorId": "2310387656",
+            "name": "Jiaxing Song"
+          },
+          {
+            "authorId": "2307561074",
+            "name": "Ke Xu"
+          },
+          {
+            "authorId": "2305736727",
+            "name": "Qi Li"
+          }
+        ],
+        "abstract": "Large Language Models (LLMs) have performed exceptionally in various text-generative tasks, including question answering, translation, code completion, etc. However, the over-assistance of LLMs has raised the challenge of\"jailbreaking\", which induces the model to generate malicious responses against the usage policy and society by designing adversarial prompts. With the emergence of jailbreak attack methods exploiting different vulnerabilities in LLMs, the corresponding safety alignment measures are also evolving. In this paper, we propose a comprehensive and detailed taxonomy of jailbreak attack and defense methods. For instance, the attack methods are divided into black-box and white-box attacks based on the transparency of the target model. Meanwhile, we classify defense methods into prompt-level and model-level defenses. Additionally, we further subdivide these attack and defense methods into distinct sub-classes and present a coherent diagram illustrating their relationships. We also conduct an investigation into the current evaluation methods and compare them from different perspectives. Our findings aim to inspire future research and practical implementations in safeguarding LLMs against adversarial attacks. Above all, although jailbreak remains a significant concern within the community, we believe that our work enhances the understanding of this domain and provides a foundation for developing more secure LLMs."
+      },
+      {
+        "paperId": "1104d766527dead44a40532e8a89444d9cef5c65",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2308-03825",
+          "ArXiv": "2308.03825",
+          "DOI": "10.1145/3658644.3670388",
+          "CorpusId": 260704242
+        },
+        "title": "\"Do Anything Now\": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models",
+        "venue": "Conference on Computer and Communications Security",
+        "year": 2023,
+        "citationCount": 606,
+        "influentialCitationCount": 58,
+        "openAccessPdf": {
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670388",
+          "status": "BRONZE",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.03825, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2047395411",
+            "name": "Xinyue Shen"
+          },
+          {
+            "authorId": "2111435173",
+            "name": "Zeyuan Chen"
+          },
+          {
+            "authorId": "144588806",
+            "name": "M. Backes"
+          },
+          {
+            "authorId": "2117688523",
+            "name": "Yun Shen"
+          },
+          {
+            "authorId": "2145954003",
+            "name": "Yang Zhang"
+          }
+        ],
+        "abstract": "The misuse of large language models (LLMs) has drawn significant attention from the general public and LLM vendors. One particular type of adversarial prompt, known as jailbreak prompt, has emerged as the main attack vector to bypass the safeguards and elicit harmful content from LLMs. In this paper, employing our new framework JailbreakHub, we conduct a comprehensive analysis of 1,405 jailbreak prompts spanning from December 2022 to December 2023. We identify 131 jailbreak communities and discover unique characteristics of jailbreak prompts and their major attack strategies, such as prompt injection and privilege escalation. We also observe that jailbreak prompts increasingly shift from online Web communities to prompt-aggregation websites and 28 user accounts have consistently optimized jailbreak prompts over 100 days. To assess the potential harm caused by jailbreak prompts, we create a question set comprising 107,250 samples across 13 forbidden scenarios. Leveraging this dataset, our experiments on six popular LLMs show that their safeguards cannot adequately defend jailbreak prompts in all scenarios. Particularly, we identify five highly effective jailbreak prompts that achieve 0.95 attack success rates on ChatGPT (GPT-3.5) and GPT-4, and the earliest one has persisted online for over 240 days. We hope that our study can facilitate the research community and LLM vendors in promoting safer and regulated LLMs."
+      },
+      {
+        "paperId": "e762f92273cd96f63b7788c0173b9b6450adedd7",
+        "externalIds": {
+          "DBLP": "journals/natmi/XieYSCLCXW23",
+          "DOI": "10.1038/s42256-023-00765-8",
+          "CorpusId": 266289038
+        },
+        "title": "Defending ChatGPT against jailbreak attack via self-reminders",
+        "venue": "Nature Machine Intelligence",
+        "year": 2023,
+        "citationCount": 423,
+        "influentialCitationCount": 53,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s42256-023-00765-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s42256-023-00765-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2154871075",
+            "name": "Yueqi Xie"
+          },
+          {
+            "authorId": "2087122322",
+            "name": "Jingwei Yi"
+          },
+          {
+            "authorId": "2302372381",
+            "name": "Jiawei Shao"
+          },
+          {
+            "authorId": "2274637872",
+            "name": "Justin Curl"
+          },
+          {
+            "authorId": "2274346167",
+            "name": "Lingjuan Lyu"
+          },
+          {
+            "authorId": "2261898451",
+            "name": "Qifeng Chen"
+          },
+          {
+            "authorId": "2149195520",
+            "name": "Xing Xie"
+          },
+          {
+            "authorId": "2397264",
+            "name": "Fangzhao Wu"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "a24f21776b0650cc4cbb74d9fe34df3ab6379702",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2502-15806",
+          "ArXiv": "2502.15806",
+          "DOI": "10.48550/arXiv.2502.15806",
+          "CorpusId": 276575310
+        },
+        "title": "A Mousetrap: Fooling Large Reasoning Models for Jailbreak with Chain of Iterative Chaos",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2025,
+        "citationCount": 35,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.15806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2346996394",
+            "name": "Yang Yao"
+          },
+          {
+            "authorId": "2348521434",
+            "name": "Xuan Tong"
+          },
+          {
+            "authorId": "2344865774",
+            "name": "Ruofan Wang"
+          },
+          {
+            "authorId": "2266363141",
+            "name": "Yixu Wang"
+          },
+          {
+            "authorId": "2355632362",
+            "name": "Lujundong Li"
+          },
+          {
+            "authorId": "2117085876",
+            "name": "Liang Liu"
+          },
+          {
+            "authorId": "2266238818",
+            "name": "Yan Teng"
+          },
+          {
+            "authorId": "2266364817",
+            "name": "Yingchun Wang"
+          }
+        ],
+        "abstract": "Large Reasoning Models (LRMs) have significantly advanced beyond traditional Large Language Models (LLMs) with their exceptional logical reasoning capabilities, yet these improvements introduce heightened safety risks. When subjected to jailbreak attacks, their ability to generate more targeted and organized content can lead to greater harm. Although some studies claim that reasoning enables safer LRMs against existing LLM attacks, they overlook the inherent flaws within the reasoning process itself. To address this gap, we propose the first jailbreak attack targeting LRMs, exploiting their unique vulnerabilities stemming from the advanced reasoning capabilities. Specifically, we introduce a Chaos Machine, a novel component to transform attack prompts with diverse one-to-one mappings. The chaos mappings iteratively generated by the machine are embedded into the reasoning chain, which strengthens the variability and complexity and also promotes a more robust attack. Based on this, we construct the Mousetrap framework, which makes attacks projected into nonlinear-like low sample spaces with mismatched generalization enhanced. Also, due to the more competing objectives, LRMs gradually maintain the inertia of unpredictable iterative reasoning and fall into our trap. Success rates of the Mousetrap attacking o1-mini, Claude-Sonnet and Gemini-Thinking are as high as 96%, 86% and 98% respectively on our toxic dataset Trotter. On benchmarks such as AdvBench, StrongREJECT, and HarmBench, attacking Claude-Sonnet, well-known for its safety, Mousetrap can astonishingly achieve success rates of 87.5%, 86.58% and 93.13% respectively. Attention: This paper contains inappropriate, offensive and harmful content."
+      },
+      {
+        "paperId": "142e934dd5d6c53f877c30243d436255e3a0dde7",
+        "externalIds": {
+          "ArXiv": "2306.13213",
+          "DBLP": "conf/aaai/QiHP0WM24",
+          "DOI": "10.1609/aaai.v38i19.30150",
+          "CorpusId": 259244034
+        },
+        "title": "Visual Adversarial Examples Jailbreak Aligned Large Language Models",
+        "venue": "AAAI Conference on Artificial Intelligence",
+        "year": 2023,
+        "citationCount": 344,
+        "influentialCitationCount": 42,
+        "openAccessPdf": {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/download/30150/32038",
+          "status": "GOLD",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.13213, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2111683101",
+            "name": "Xiangyu Qi"
+          },
+          {
+            "authorId": "2112769495",
+            "name": "Kaixuan Huang"
+          },
+          {
+            "authorId": "1816755705",
+            "name": "Ashwinee Panda"
+          },
+          {
+            "authorId": "2257417692",
+            "name": "Mengdi Wang"
+          },
+          {
+            "authorId": "143615345",
+            "name": "Prateek Mittal"
+          }
+        ],
+        "abstract": "Warning: this paper contains data, prompts, and model outputs that are offensive in nature.\n\nRecently, there has been a surge of interest in integrating vision into Large Language Models (LLMs), exemplified by Visual Language Models (VLMs) such as Flamingo and GPT-4. This paper sheds light on the security and safety implications of this trend. First, we underscore that the continuous and high-dimensional nature of the visual input makes it a weak link against adversarial attacks, representing an expanded attack surface of vision-integrated LLMs. Second, we highlight that the versatility of LLMs also presents visual attackers with a wider array of achievable adversarial objectives, extending the implications of security failures beyond mere misclassification. As an illustration, we present a case study in which we exploit visual adversarial examples to circumvent the safety guardrail of aligned LLMs with integrated vision. Intriguingly, we discover that a single visual adversarial example can universally jailbreak an aligned LLM, compelling it to heed a wide range of harmful instructions (that it otherwise would not) and generate harmful content that transcends the narrow scope of a `few-shot' derogatory corpus initially employed to optimize the adversarial example. Our study underscores the escalating adversarial risks associated with the pursuit of multimodality. Our findings also connect the long-studied adversarial vulnerabilities of neural networks to the nascent field of AI alignment. The presented attack suggests a fundamental adversarial challenge for AI alignment, especially in light of the emerging trend toward multimodality in frontier foundation models."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "evaluator manipulation",
+    "results": [
+      {
+        "paperId": "0ac6e9af7417a3a33f2c6cee90fcf26284eff654",
+        "externalIds": {
+          "ArXiv": "2505.19017",
+          "DBLP": "journals/corr/abs-2505-19017",
+          "DOI": "10.48550/arXiv.2505.19017",
+          "CorpusId": 278904398
+        },
+        "title": "WorldEval: World Model as Real-World Robot Policies Evaluator",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 34,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.19017, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2363501851",
+            "name": "Yaxuan Li"
+          },
+          {
+            "authorId": "2275531481",
+            "name": "Yichen Zhu"
+          },
+          {
+            "authorId": "2278247833",
+            "name": "Junjie Wen"
+          },
+          {
+            "authorId": "2335417053",
+            "name": "Chaomin Shen"
+          },
+          {
+            "authorId": "2363513002",
+            "name": "Yi Xu"
+          }
+        ],
+        "abstract": "The field of robotics has made significant strides toward developing generalist robot manipulation policies. However, evaluating these policies in real-world scenarios remains time-consuming and challenging, particularly as the number of tasks scales and environmental conditions change. In this work, we demonstrate that world models can serve as a scalable, reproducible, and reliable proxy for real-world robot policy evaluation. A key challenge is generating accurate policy videos from world models that faithfully reflect the robot actions. We observe that directly inputting robot actions or using high-dimensional encoding methods often fails to generate action-following videos. To address this, we propose Policy2Vec, a simple yet effective approach to turn a video generation model into a world simulator that follows latent action to generate the robot video. We then introduce WorldEval, an automated pipeline designed to evaluate real-world robot policies entirely online. WorldEval effectively ranks various robot policies and individual checkpoints within a single policy, and functions as a safety detector to prevent dangerous actions by newly developed robot models. Through comprehensive paired evaluations of manipulation policies in real-world environments, we demonstrate a strong correlation between policy performance in WorldEval and real-world scenarios. Furthermore, our method significantly outperforms popular methods such as real-to-sim approach."
+      },
+      {
+        "paperId": "38d64919ba526868a850a0e5f6239d4c474b7e7e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2305-17926",
+          "ArXiv": "2305.17926",
+          "DOI": "10.48550/arXiv.2305.17926",
+          "CorpusId": 258960339
+        },
+        "title": "Large Language Models are not Fair Evaluators",
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "year": 2023,
+        "citationCount": 950,
+        "influentialCitationCount": 61,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2305.17926",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.17926, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "144202874",
+            "name": "Peiyi Wang"
+          },
+          {
+            "authorId": "49192881",
+            "name": "Lei Li"
+          },
+          {
+            "authorId": "2146034504",
+            "name": "Liang Chen"
+          },
+          {
+            "authorId": "2116276849",
+            "name": "Dawei Zhu"
+          },
+          {
+            "authorId": "3186130",
+            "name": "Binghuai Lin"
+          },
+          {
+            "authorId": "2154235",
+            "name": "Yunbo Cao"
+          },
+          {
+            "authorId": "2144831944",
+            "name": "Qi Liu"
+          },
+          {
+            "authorId": "1701889",
+            "name": "Tianyu Liu"
+          },
+          {
+            "authorId": "3335836",
+            "name": "Zhifang Sui"
+          }
+        ],
+        "abstract": "In this paper, we uncover a systematic bias in the evaluation paradigm of adopting large language models~(LLMs), e.g., GPT-4, as a referee to score and compare the quality of responses generated by candidate models. We find that the quality ranking of candidate responses can be easily hacked by simply altering their order of appearance in the context. This manipulation allows us to skew the evaluation result, making one model appear considerably superior to the other, e.g., Vicuna-13B could beat ChatGPT on 66 over 80 tested queries with ChatGPT as an evaluator. To address this issue, we propose a calibration framework with three simple yet effective strategies: 1) Multiple Evidence Calibration, which requires the evaluator model to generate multiple evaluation evidence before assigning ratings; 2) Balanced Position Calibration, which aggregates results across various orders to determine the final score; 3) Human-in-the-Loop Calibration, which introduces a balanced position diversity entropy to measure the difficulty of each example and seeks human assistance when needed. We also manually annotate the\"win/tie/lose\"outcomes of responses from ChatGPT and Vicuna-13B in the Vicuna Benchmark's question prompt, and extensive experiments demonstrate that our approach successfully mitigates evaluation bias, resulting in closer alignment with human judgments. We release our code and human annotation at \\url{https://github.com/i-Eval/FairEval} to facilitate future research."
+      },
+      {
+        "paperId": "cb8499a636c325aea0c141eacf6bdeaca842bed0",
+        "externalIds": {
+          "ArXiv": "2505.09723",
+          "DBLP": "journals/corr/abs-2505-09723",
+          "DOI": "10.48550/arXiv.2505.09723",
+          "CorpusId": 278635916
+        },
+        "title": "EnerVerse-AC: Envisioning Embodied Environments with Action Condition",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 31,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.09723, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2361654632",
+            "name": "Yuxin Jiang"
+          },
+          {
+            "authorId": "2339699627",
+            "name": "Shengcong Chen"
+          },
+          {
+            "authorId": "2361492506",
+            "name": "Siyuan Huang"
+          },
+          {
+            "authorId": "2338767348",
+            "name": "Liliang Chen"
+          },
+          {
+            "authorId": "2338818174",
+            "name": "Pengfei Zhou"
+          },
+          {
+            "authorId": "2362056474",
+            "name": "Yue Liao"
+          },
+          {
+            "authorId": "2349803110",
+            "name": "Xindong He"
+          },
+          {
+            "authorId": "2349426158",
+            "name": "Chiming Liu"
+          },
+          {
+            "authorId": "2285017444",
+            "name": "Hongsheng Li"
+          },
+          {
+            "authorId": "2338695140",
+            "name": "Maoqing Yao"
+          },
+          {
+            "authorId": "2338694069",
+            "name": "Guanghui Ren"
+          }
+        ],
+        "abstract": "Robotic imitation learning has advanced from solving static tasks to addressing dynamic interaction scenarios, but testing and evaluation remain costly and challenging due to the need for real-time interaction with dynamic environments. We propose EnerVerse-AC (EVAC), an action-conditional world model that generates future visual observations based on an agent's predicted actions, enabling realistic and controllable robotic inference. Building on prior architectures, EVAC introduces a multi-level action-conditioning mechanism and ray map encoding for dynamic multi-view image generation while expanding training data with diverse failure trajectories to improve generalization. As both a data engine and evaluator, EVAC augments human-collected trajectories into diverse datasets and generates realistic, action-conditioned video observations for policy testing, eliminating the need for physical robots or complex simulations. This approach significantly reduces costs while maintaining high fidelity in robotic manipulation evaluation. Extensive experiments validate the effectiveness of our method. Code, checkpoints, and datasets can be found at."
+      },
+      {
+        "paperId": "dd565137ec79da38bf2d01319bba195c66733212",
+        "externalIds": {
+          "ArXiv": "2407.09811",
+          "DBLP": "journals/corr/abs-2407-09811",
+          "DOI": "10.48550/arXiv.2407.09811",
+          "CorpusId": 269838305
+        },
+        "title": "CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 70,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.09811, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2279458093",
+            "name": "Yihang Xiao"
+          },
+          {
+            "authorId": "2124810107",
+            "name": "Jinyi Liu"
+          },
+          {
+            "authorId": "2256046812",
+            "name": "Yan Zheng"
+          },
+          {
+            "authorId": "2302273614",
+            "name": "Xiaohan Xie"
+          },
+          {
+            "authorId": "2198399020",
+            "name": "Jianye Hao"
+          },
+          {
+            "authorId": "2301886594",
+            "name": "Mingzhi Li"
+          },
+          {
+            "authorId": "2301890550",
+            "name": "Ruitao Wang"
+          },
+          {
+            "authorId": "2253470650",
+            "name": "Fei Ni"
+          },
+          {
+            "authorId": "2302124783",
+            "name": "Yuxiao Li"
+          },
+          {
+            "authorId": "2301950298",
+            "name": "Jintian Luo"
+          },
+          {
+            "authorId": "2293273127",
+            "name": "Shaoqing Jiao"
+          },
+          {
+            "authorId": "2302365690",
+            "name": "Jiajie Peng"
+          }
+        ],
+        "abstract": "Single-cell RNA sequencing (scRNA-seq) data analysis is crucial for biological research, as it enables the precise characterization of cellular heterogeneity. However, manual manipulation of various tools to achieve desired outcomes can be labor-intensive for researchers. To address this, we introduce CellAgent (http://cell.agent4science.cn/), an LLM-driven multi-agent framework, specifically designed for the automatic processing and execution of scRNA-seq data analysis tasks, providing high-quality results with no human intervention. Firstly, to adapt general LLMs to the biological field, CellAgent constructs LLM-driven biological expert roles - planner, executor, and evaluator - each with specific responsibilities. Then, CellAgent introduces a hierarchical decision-making mechanism to coordinate these biological experts, effectively driving the planning and step-by-step execution of complex data analysis tasks. Furthermore, we propose a self-iterative optimization mechanism, enabling CellAgent to autonomously evaluate and optimize solutions, thereby guaranteeing output quality. We evaluate CellAgent on a comprehensive benchmark dataset encompassing dozens of tissues and hundreds of distinct cell types. Evaluation results consistently show that CellAgent effectively identifies the most suitable tools and hyperparameters for single-cell analysis tasks, achieving optimal performance. This automated framework dramatically reduces the workload for science data analyses, bringing us into the\"Agent for Science\"era."
+      },
+      {
+        "paperId": "1002f84d1b487e49d3bc2d353dfb77e1495d3c58",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2506-18088",
+          "ArXiv": "2506.18088",
+          "DOI": "10.48550/arXiv.2506.18088",
+          "CorpusId": 279999539
+        },
+        "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 183,
+        "influentialCitationCount": 65,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.18088, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2316455829",
+            "name": "Tianxing Chen"
+          },
+          {
+            "authorId": "2319612137",
+            "name": "Zanxin Chen"
+          },
+          {
+            "authorId": "2370950715",
+            "name": "Baijun Chen"
+          },
+          {
+            "authorId": "2371244507",
+            "name": "Zijian Cai"
+          },
+          {
+            "authorId": "2370952744",
+            "name": "Yibin Liu"
+          },
+          {
+            "authorId": "2328336134",
+            "name": "Qiwei Liang"
+          },
+          {
+            "authorId": "2371344116",
+            "name": "Zixuan Li"
+          },
+          {
+            "authorId": "2411465527",
+            "name": "XianLian Lin"
+          },
+          {
+            "authorId": "2371004121",
+            "name": "Yiheng Ge"
+          },
+          {
+            "authorId": "2370975408",
+            "name": "Zhenyu Gu"
+          },
+          {
+            "authorId": "2339730556",
+            "name": "Weiliang Deng"
+          },
+          {
+            "authorId": "2370952967",
+            "name": "Yubin Guo"
+          },
+          {
+            "authorId": "2370930623",
+            "name": "Tian Nian"
+          },
+          {
+            "authorId": "2362524657",
+            "name": "Xuanbing Xie"
+          },
+          {
+            "authorId": "2332909061",
+            "name": "Qiangyu Chen"
+          },
+          {
+            "authorId": "2401265108",
+            "name": "Kailun Su"
+          },
+          {
+            "authorId": "2323112448",
+            "name": "Tianling Xu"
+          },
+          {
+            "authorId": "2373681752",
+            "name": "Guodong Liu"
+          },
+          {
+            "authorId": "2166455111",
+            "name": "Mengkang Hu"
+          },
+          {
+            "authorId": "2371219369",
+            "name": "Huan-ang Gao"
+          },
+          {
+            "authorId": "2370941146",
+            "name": "Kaixuan Wang"
+          },
+          {
+            "authorId": "2257485304",
+            "name": "Zhixuan Liang"
+          },
+          {
+            "authorId": "2342469275",
+            "name": "Yusen Qin"
+          },
+          {
+            "authorId": "2362515842",
+            "name": "Xiaokang Yang"
+          },
+          {
+            "authorId": "2257349788",
+            "name": "Ping Luo"
+          },
+          {
+            "authorId": "2348606790",
+            "name": "Yao Mu"
+          }
+        ],
+        "abstract": "Simulation-based data synthesis has emerged as a powerful paradigm for advancing real-world robotic manipulation. Yet existing datasets remain insufficient for robust bimanual manipulation due to (1) the lack of scalable task generation methods and (2) oversimplified simulation environments. We present RoboTwin 2.0, a scalable framework for automated, large-scale generation of diverse and realistic data, together with unified evaluation protocols for dual-arm manipulation. At its core is RoboTwin-OD, an object library of 731 instances across 147 categories with semantic and manipulation-relevant annotations. Building on this, we design an expert data synthesis pipeline that leverages multimodal language models (MLLMs) and simulation-in-the-loop refinement to automatically generate task-level execution code. To improve sim-to-real transfer, RoboTwin 2.0 applies structured domain randomization along five axes: clutter, lighting, background, tabletop height, and language, enhancing data diversity and policy robustness. The framework is instantiated across 50 dual-arm tasks and five robot embodiments. Empirically, it yields a 10.9% gain in code generation success rate. For downstream policy learning, a VLA model trained with synthetic data plus only 10 real demonstrations achieves a 367% relative improvement over the 10-demo baseline, while zero-shot models trained solely on synthetic data obtain a 228% gain. These results highlight the effectiveness of RoboTwin 2.0 in strengthening sim-to-real transfer and robustness to environmental variations. We release the data generator, benchmark, dataset, and code to support scalable research in robust bimanual manipulation. Project Page: https://robotwin-platform.github.io/, Code: https://github.com/robotwin-Platform/robotwin/."
+      },
+      {
+        "paperId": "26c526ac5edfa3e20a50f3479490ff29c8e0d754",
+        "externalIds": {
+          "ArXiv": "2503.02881",
+          "DBLP": "journals/corr/abs-2503-02881",
+          "DOI": "10.48550/arXiv.2503.02881",
+          "CorpusId": 276771847
+        },
+        "title": "Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for Contact-Rich Manipulation",
+        "venue": "Robotics",
+        "year": 2025,
+        "citationCount": 114,
+        "influentialCitationCount": 7,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.02881, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2351107813",
+            "name": "Han Xue"
+          },
+          {
+            "authorId": "2265565097",
+            "name": "Jieji Ren"
+          },
+          {
+            "authorId": "2326063487",
+            "name": "Wendi Chen"
+          },
+          {
+            "authorId": "2291085400",
+            "name": "Gu Zhang"
+          },
+          {
+            "authorId": "2326081245",
+            "name": "Yuan Fang"
+          },
+          {
+            "authorId": "2238185319",
+            "name": "Guoying Gu"
+          },
+          {
+            "authorId": "2386620187",
+            "name": "Huazhe Xu"
+          },
+          {
+            "authorId": "2264977082",
+            "name": "Cewu Lu"
+          }
+        ],
+        "abstract": "Humans can accomplish complex contact-rich tasks using vision and touch, with highly reactive capabilities such as fast response to external changes and adaptive control of contact forces; however, this remains challenging for robots. Existing visual imitation learning (IL) approaches rely on action chunking to model complex behaviors, which lacks the ability to respond instantly to real-time tactile feedback during the chunk execution. Furthermore, most teleoperation systems struggle to provide fine-grained tactile / force feedback, which limits the range of tasks that can be performed. To address these challenges, we introduce TactAR, a low-cost teleoperation system that provides real-time tactile feedback through Augmented Reality (AR), along with Reactive Diffusion Policy (RDP), a novel slow-fast visual-tactile imitation learning algorithm for learning contact-rich manipulation skills. RDP employs a two-level hierarchy: (1) a slow latent diffusion policy for predicting high-level action chunks in latent space at low frequency, (2) a fast asymmetric tokenizer for closed-loop tactile feedback control at high frequency. This design enables both complex trajectory modeling and quick reactive behavior within a unified framework. Through extensive evaluation across three challenging contact-rich tasks, RDP significantly improves performance compared to state-of-the-art visual IL baselines. Furthermore, experiments show that RDP is applicable across different tactile / force sensors. Code and videos are available on https://reactive-diffusion-policy.github.io."
+      },
+      {
+        "paperId": "f2025c3ceb4cf9c2034d62ea583d49a7ba356514",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2505-11709",
+          "ArXiv": "2505.11709",
+          "DOI": "10.48550/arXiv.2505.11709",
+          "CorpusId": 278739529
+        },
+        "title": "EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 99,
+        "influentialCitationCount": 15,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.11709, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2335570611",
+            "name": "Ryan Hoque"
+          },
+          {
+            "authorId": "2328617675",
+            "name": "Peide Huang"
+          },
+          {
+            "authorId": "2351774576",
+            "name": "David J. Yoon"
+          },
+          {
+            "authorId": "3317431",
+            "name": "Mouli Sivapurapu"
+          },
+          {
+            "authorId": "2335574774",
+            "name": "Jian Zhang"
+          }
+        ],
+        "abstract": "Imitation learning for manipulation has a well-known data scarcity problem. Unlike natural language and 2D computer vision, there is no Internet-scale corpus of data for dexterous manipulation. One appealing option is egocentric human video, a passively scalable data source. However, existing large-scale datasets such as Ego4D do not have native hand pose annotations and do not focus on object manipulation. To this end, we use Apple Vision Pro to collect EgoDex: the largest and most diverse dataset of dexterous human manipulation to date. EgoDex has 829 hours of egocentric video with paired 3D hand and finger tracking data collected at the time of recording, where multiple calibrated cameras and on-device SLAM can be used to precisely track the pose of every joint of each hand. The dataset covers a wide range of diverse manipulation behaviors with everyday household objects in 194 different tabletop tasks ranging from tying shoelaces to folding laundry. Furthermore, we train and systematically evaluate imitation learning policies for hand trajectory prediction on the dataset, introducing metrics and benchmarks for measuring progress in this increasingly important area. By releasing this large-scale dataset, we hope to push the frontier of robotics, computer vision, and foundation models. EgoDex is publicly available for download at https://github.com/apple/ml-egodex."
+      },
+      {
+        "paperId": "faf0841c3a78729ee15d469e002843b7901c00a7",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2507-05331",
+          "ArXiv": "2507.05331",
+          "DOI": "10.48550/arXiv.2507.05331",
+          "CorpusId": 280114687
+        },
+        "title": "A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 81,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.05331, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2372326305",
+            "name": "Tri Lbm Team"
+          },
+          {
+            "authorId": "2260336204",
+            "name": "Jose Barreiros"
+          },
+          {
+            "authorId": "82375749",
+            "name": "Andrew Beaulieu"
+          },
+          {
+            "authorId": "2372269786",
+            "name": "Aditya Bhat"
+          },
+          {
+            "authorId": "2372917669",
+            "name": "Rick Cory"
+          },
+          {
+            "authorId": "2090529",
+            "name": "Eric Cousineau"
+          },
+          {
+            "authorId": "2319811942",
+            "name": "Hongkai Dai"
+          },
+          {
+            "authorId": "2181687798",
+            "name": "Ching Fang"
+          },
+          {
+            "authorId": "2321435610",
+            "name": "Kunimatsu Hashimoto"
+          },
+          {
+            "authorId": "147495445",
+            "name": "Muhammad Zubair Irshad"
+          },
+          {
+            "authorId": "30112153",
+            "name": "Masha Itkina"
+          },
+          {
+            "authorId": "2275353318",
+            "name": "Naveen Kuppuswamy"
+          },
+          {
+            "authorId": "2402903611",
+            "name": "Kuan-Hui Lee"
+          },
+          {
+            "authorId": "2268798781",
+            "name": "Katherine Liu"
+          },
+          {
+            "authorId": "9926216",
+            "name": "D. Mcconachie"
+          },
+          {
+            "authorId": "2034746",
+            "name": "I. McMahon"
+          },
+          {
+            "authorId": "2349476640",
+            "name": "Haruki Nishimura"
+          },
+          {
+            "authorId": "1405637919",
+            "name": "Calder Phillips-Grafflin"
+          },
+          {
+            "authorId": "145160705",
+            "name": "Charles Richter"
+          },
+          {
+            "authorId": "2300432426",
+            "name": "Paarth Shah"
+          },
+          {
+            "authorId": "2093939303",
+            "name": "K. Srinivasan"
+          },
+          {
+            "authorId": "9414028",
+            "name": "Blake Wulfe"
+          },
+          {
+            "authorId": "2334916617",
+            "name": "Cheng Xu"
+          },
+          {
+            "authorId": "2260345497",
+            "name": "Mengchao Zhang"
+          },
+          {
+            "authorId": "2980876",
+            "name": "A. Alspach"
+          },
+          {
+            "authorId": "2372919634",
+            "name": "Maya Angeles"
+          },
+          {
+            "authorId": "2284685268",
+            "name": "K. Arora"
+          },
+          {
+            "authorId": "2171907555",
+            "name": "Vitor Guizilini"
+          },
+          {
+            "authorId": "2323354847",
+            "name": "Alejandro M. Castro"
+          },
+          {
+            "authorId": "2281177642",
+            "name": "Dian Chen"
+          },
+          {
+            "authorId": "3381208",
+            "name": "Ting-Sheng Chu"
+          },
+          {
+            "authorId": "1620487062",
+            "name": "S. Creasey"
+          },
+          {
+            "authorId": "144564863",
+            "name": "Sean Curtis"
+          },
+          {
+            "authorId": "2372922391",
+            "name": "Richard Denitto"
+          },
+          {
+            "authorId": "2349538819",
+            "name": "Emma Dixon"
+          },
+          {
+            "authorId": "2181797508",
+            "name": "Eric Dusel"
+          },
+          {
+            "authorId": "2107623258",
+            "name": "M. Ferreira"
+          },
+          {
+            "authorId": "2373647794",
+            "name": "Aimee Goncalves"
+          },
+          {
+            "authorId": "152564676",
+            "name": "Grant E. Gould"
+          },
+          {
+            "authorId": "1790468",
+            "name": "Damrong Guoy"
+          },
+          {
+            "authorId": "2373581765",
+            "name": "Swati Gupta"
+          },
+          {
+            "authorId": "2373052843",
+            "name": "Xuchen Han"
+          },
+          {
+            "authorId": "2328014254",
+            "name": "Kyle Hatch"
+          },
+          {
+            "authorId": "2372917723",
+            "name": "Brendan Hathaway"
+          },
+          {
+            "authorId": "2321766255",
+            "name": "A. Henry"
+          },
+          {
+            "authorId": "2163784051",
+            "name": "Hillel Hochsztein"
+          },
+          {
+            "authorId": "2321406547",
+            "name": "Phoebe Horgan"
+          },
+          {
+            "authorId": "2359630378",
+            "name": "Shun Iwase"
+          },
+          {
+            "authorId": "2292188317",
+            "name": "Donovon Jackson"
+          },
+          {
+            "authorId": "10737060",
+            "name": "Siddharth Karamcheti"
+          },
+          {
+            "authorId": "150299584",
+            "name": "Sedrick Scott Keh"
+          },
+          {
+            "authorId": "2038107",
+            "name": "Joseph Masterjohn"
+          },
+          {
+            "authorId": "72847120",
+            "name": "Jean-Pierre Mercat"
+          },
+          {
+            "authorId": "2292161974",
+            "name": "Patrick Miller"
+          },
+          {
+            "authorId": "3292997",
+            "name": "P. Mitiguy"
+          },
+          {
+            "authorId": "2349547163",
+            "name": "Tony Nguyen"
+          },
+          {
+            "authorId": "1706891",
+            "name": "Jeremy W. Nimmer"
+          },
+          {
+            "authorId": "2292782886",
+            "name": "Yuki Noguchi"
+          },
+          {
+            "authorId": "2372510057",
+            "name": "Reko Ong"
+          },
+          {
+            "authorId": "2782339",
+            "name": "A. Onol"
+          },
+          {
+            "authorId": "2372918868",
+            "name": "Owen Pfannenstiehl"
+          },
+          {
+            "authorId": "80666264",
+            "name": "R. Poyner"
+          },
+          {
+            "authorId": "2373650656",
+            "name": "Leticia Priebe Mendes Rocha"
+          },
+          {
+            "authorId": "2321409651",
+            "name": "Gordon Richardson"
+          },
+          {
+            "authorId": "2349602626",
+            "name": "Christopher Rodriguez"
+          },
+          {
+            "authorId": "2292183089",
+            "name": "Derick Seale"
+          },
+          {
+            "authorId": "2106101345",
+            "name": "Michael Sherman"
+          },
+          {
+            "authorId": "2372918819",
+            "name": "Mariah Smith-Jones"
+          },
+          {
+            "authorId": "2372918858",
+            "name": "David Tago"
+          },
+          {
+            "authorId": "2931554",
+            "name": "P. Tokmakov"
+          },
+          {
+            "authorId": "2054039152",
+            "name": "M. Tran"
+          },
+          {
+            "authorId": "1470838102",
+            "name": "Basile Van Hoorick"
+          },
+          {
+            "authorId": "2291068185",
+            "name": "Igor Vasiljevic"
+          },
+          {
+            "authorId": "2331626375",
+            "name": "Sergey Zakharov"
+          },
+          {
+            "authorId": "10708100",
+            "name": "Mark Zolotas"
+          },
+          {
+            "authorId": "1829964",
+            "name": "Rares Ambrus"
+          },
+          {
+            "authorId": "2372917572",
+            "name": "Kerri Fetzer-Borelli"
+          },
+          {
+            "authorId": "2319412766",
+            "name": "Benjamin Burchfiel"
+          },
+          {
+            "authorId": "1387890355",
+            "name": "H. Kress-Gazit"
+          },
+          {
+            "authorId": "2284620540",
+            "name": "Siyuan Feng"
+          },
+          {
+            "authorId": "2372401572",
+            "name": "Stacie Ford"
+          },
+          {
+            "authorId": "2263905014",
+            "name": "Russ Tedrake"
+          }
+        ],
+        "abstract": "Robot manipulation has seen tremendous progress in recent years, with imitation learning policies enabling successful performance of dexterous and hard-to-model tasks. Concurrently, scaling data and model size has led to the development of capable language and vision foundation models, motivating large-scale efforts to create general-purpose robot foundation models. While these models have garnered significant enthusiasm and investment, meaningful evaluation of real-world performance remains a challenge, limiting both the pace of development and inhibiting a nuanced understanding of current capabilities. In this paper, we rigorously evaluate multitask robot manipulation policies, referred to as Large Behavior Models (LBMs), by extending the Diffusion Policy paradigm across a corpus of simulated and real-world robot data. We propose and validate an evaluation pipeline to rigorously analyze the capabilities of these models with statistical confidence. We compare against single-task baselines through blind, randomized trials in a controlled setting, using both simulation and real-world experiments. We find that multi-task pretraining makes the policies more successful and robust, and enables teaching complex new tasks more quickly, using a fraction of the data when compared to single-task baselines. Moreover, performance predictably increases as pretraining scale and diversity grows. Project page: https://toyotaresearchinstitute.github.io/lbm1/"
+      },
+      {
+        "paperId": "d2524df5ca1e08d990a65bcd077e5f8a31dfb918",
+        "externalIds": {
+          "ArXiv": "2508.19236",
+          "DBLP": "journals/corr/abs-2508-19236",
+          "DOI": "10.48550/arXiv.2508.19236",
+          "CorpusId": 280869931
+        },
+        "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 72,
+        "influentialCitationCount": 8,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.19236, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2366286284",
+            "name": "Hao Shi"
+          },
+          {
+            "authorId": "2387659463",
+            "name": "Bin Xie"
+          },
+          {
+            "authorId": "2282235642",
+            "name": "Yingfei Liu"
+          },
+          {
+            "authorId": "2376007623",
+            "name": "Lin Sun"
+          },
+          {
+            "authorId": "2407971360",
+            "name": "Feng Liu"
+          },
+          {
+            "authorId": "2325923837",
+            "name": "Tiancai Wang"
+          },
+          {
+            "authorId": "2277599907",
+            "name": "Erjin Zhou"
+          },
+          {
+            "authorId": "2326357387",
+            "name": "Haoqiang Fan"
+          },
+          {
+            "authorId": "2156004872",
+            "name": "Xiangyu Zhang"
+          },
+          {
+            "authorId": "2377279521",
+            "name": "Gao Huang"
+          }
+        ],
+        "abstract": "Temporal context is essential for robotic manipulation because such tasks are inherently non-Markovian, yet mainstream VLA models typically overlook it and struggle with long-horizon, temporally dependent tasks. Cognitive science suggests that humans rely on working memory to buffer short-lived representations for immediate control, while the hippocampal system preserves verbatim episodic details and semantic gist of past experience for long-term memory. Inspired by these mechanisms, we propose MemoryVLA, a Cognition-Memory-Action framework for long-horizon robotic manipulation. A pretrained VLM encodes the observation into perceptual and cognitive tokens that form working memory, while a Perceptual-Cognitive Memory Bank stores low-level details and high-level semantics consolidated from it. Working memory retrieves decision-relevant entries from the bank, adaptively fuses them with current tokens, and updates the bank by merging redundancies. Using these tokens, a memory-conditioned diffusion action expert yields temporally aware action sequences. We evaluate MemoryVLA on 150+ simulation and real-world tasks across three robots. On SimplerEnv-Bridge, Fractal, LIBERO-5 suites and Mikasa-Robo, it achieves 71.9%, 72.7%, 96.5%, and 41.2% success rates, respectively, all outperforming state-of-the-art baselines CogACT and pi-0, with a notable +14.6 gain on Bridge and +11.8 gain on Mikasa-Robo. On 12 real-world tasks spanning general skills and long-horizon temporal dependencies, MemoryVLA achieves 84.0% success rate, with long-horizon tasks showing a +26 improvement over state-of-the-art baseline. Project Page: https://shihao1895.github.io/MemoryVLA"
+      },
+      {
+        "paperId": "202cc3fcea588cee37ffabcb0b5e145567109a66",
+        "externalIds": {
+          "DBLP": "conf/corl/LiHGMPWFLSKL0F024",
+          "ArXiv": "2405.05941",
+          "DOI": "10.48550/arXiv.2405.05941",
+          "CorpusId": 269635843
+        },
+        "title": "Evaluating Real-World Robot Manipulation Policies in Simulation",
+        "venue": "Conference on Robot Learning",
+        "year": 2024,
+        "citationCount": 348,
+        "influentialCitationCount": 74,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.05941, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2108263986",
+            "name": "Xuanlin Li"
+          },
+          {
+            "authorId": "2286719009",
+            "name": "Kyle Hsu"
+          },
+          {
+            "authorId": "2256468903",
+            "name": "Jiayuan Gu"
+          },
+          {
+            "authorId": "31719101",
+            "name": "Karl Pertsch"
+          },
+          {
+            "authorId": "7264115",
+            "name": "Oier Mees"
+          },
+          {
+            "authorId": "2029241116",
+            "name": "H. Walke"
+          },
+          {
+            "authorId": "3430433",
+            "name": "Chuyuan Fu"
+          },
+          {
+            "authorId": "2169163717",
+            "name": "Ishikaa Lunawat"
+          },
+          {
+            "authorId": "2297991920",
+            "name": "Isabel Sieh"
+          },
+          {
+            "authorId": "51881277",
+            "name": "Sean Kirmani"
+          },
+          {
+            "authorId": "2249615151",
+            "name": "Sergey Levine"
+          },
+          {
+            "authorId": "2238118897",
+            "name": "Jiajun Wu"
+          },
+          {
+            "authorId": "2257346440",
+            "name": "Chelsea Finn"
+          },
+          {
+            "authorId": "2255041135",
+            "name": "Hao Su"
+          },
+          {
+            "authorId": "144579461",
+            "name": "Q. Vuong"
+          },
+          {
+            "authorId": "9961095",
+            "name": "Ted Xiao"
+          }
+        ],
+        "abstract": "The field of robotics has made significant advances towards generalist robot manipulation policies. However, real-world evaluation of such policies is not scalable and faces reproducibility challenges, which are likely to worsen as policies broaden the spectrum of tasks they can perform. We identify control and visual disparities between real and simulated environments as key challenges for reliable simulated evaluation and propose approaches for mitigating these gaps without needing to craft full-fidelity digital twins of real-world environments. We then employ these approaches to create SIMPLER, a collection of simulated environments for manipulation policy evaluation on common real robot setups. Through paired sim-and-real evaluations of manipulation policies, we demonstrate strong correlation between policy performance in SIMPLER environments and in the real world. Additionally, we find that SIMPLER evaluations accurately reflect real-world policy behavior modes such as sensitivity to various distribution shifts. We open-source all SIMPLER environments along with our workflow for creating new environments at https://simpler-env.github.io to facilitate research on general-purpose manipulation policies and simulated evaluation frameworks."
+      },
+      {
+        "paperId": "cc446fc0a6c6f4f331f7e914f33f2cc42f1d991e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2508-05635",
+          "ArXiv": "2508.05635",
+          "DOI": "10.48550/arXiv.2508.05635",
+          "CorpusId": 280545868
+        },
+        "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 65,
+        "influentialCitationCount": 10,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.05635, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "47303356",
+            "name": "Yue Liao"
+          },
+          {
+            "authorId": "2362056474",
+            "name": "Yue Liao"
+          },
+          {
+            "authorId": "2338818174",
+            "name": "Pengfei Zhou"
+          },
+          {
+            "authorId": "2361492506",
+            "name": "Siyuan Huang"
+          },
+          {
+            "authorId": "2239165347",
+            "name": "Donglin Yang"
+          },
+          {
+            "authorId": "2339699627",
+            "name": "Shengcong Chen"
+          },
+          {
+            "authorId": "2361654632",
+            "name": "Yuxin Jiang"
+          },
+          {
+            "authorId": "2361506430",
+            "name": "Hu Yue"
+          },
+          {
+            "authorId": "2375770066",
+            "name": "Jingbin Cai"
+          },
+          {
+            "authorId": "2291108679",
+            "name": "Si Liu"
+          },
+          {
+            "authorId": "2349439364",
+            "name": "Jianlan Luo"
+          },
+          {
+            "authorId": "2338767348",
+            "name": "Liliang Chen"
+          },
+          {
+            "authorId": "2287697658",
+            "name": "Shuicheng Yan"
+          },
+          {
+            "authorId": "2338695140",
+            "name": "Maoqing Yao"
+          },
+          {
+            "authorId": "2338694069",
+            "name": "Guanghui Ren"
+          }
+        ],
+        "abstract": "We introduce Genie Envisioner (GE), a unified world foundation platform for robotic manipulation that integrates policy learning, evaluation, and simulation within a single video-generative framework. At its core, GE-Base is a large-scale, instruction-conditioned video diffusion model that captures the spatial, temporal, and semantic dynamics of real-world robotic interactions in a structured latent space. Built upon this foundation, GE-Act maps latent representations to executable action trajectories through a lightweight, flow-matching decoder, enabling precise and generalizable policy inference across diverse embodiments with minimal supervision. To support scalable evaluation and training, GE-Sim serves as an action-conditioned neural simulator, producing high-fidelity rollouts for closed-loop policy development. The platform is further equipped with EWMBench, a standardized benchmark suite measuring visual fidelity, physical consistency, and instruction-action alignment. Together, these components establish Genie Envisioner as a scalable and practical foundation for instruction-driven, general-purpose embodied intelligence. All code, models, and benchmarks will be released publicly."
+      },
+      {
+        "paperId": "1c35e2d08c749bea8029a4802270c10c1acbddc0",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2510-10125",
+          "ArXiv": "2510.10125",
+          "DOI": "10.48550/arXiv.2510.10125",
+          "CorpusId": 282057220
+        },
+        "title": "Ctrl-World: A Controllable Generative World Model for Robot Manipulation",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 58,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.10125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2181339548",
+            "name": "Yanjiang Guo"
+          },
+          {
+            "authorId": "2292341452",
+            "name": "L. Shi"
+          },
+          {
+            "authorId": "2280257464",
+            "name": "Jianyu Chen"
+          },
+          {
+            "authorId": "2387218305",
+            "name": "Chelsea Finn"
+          }
+        ],
+        "abstract": "Generalist robot policies can now perform a wide range of manipulation skills, but evaluating and improving their ability with unfamiliar objects and instructions remains a significant challenge. Rigorous evaluation requires a large number of real-world rollouts, while systematic improvement demands additional corrective data with expert labels. Both of these processes are slow, costly, and difficult to scale. World models offer a promising, scalable alternative by enabling policies to rollout within imagination space. However, a key challenge is building a controllable world model that can handle multi-step interactions with generalist robot policies. This requires a world model compatible with modern generalist policies by supporting multi-view prediction, fine-grained action control, and consistent long-horizon interactions, which is not achieved by previous works. In this paper, we make a step forward by introducing a controllable multi-view world model that can be used to evaluate and improve the instruction-following ability of generalist robot policies. Our model maintains long-horizon consistency with a pose-conditioned memory retrieval mechanism and achieves precise action control through frame-level action conditioning. Trained on the DROID dataset (95k trajectories, 564 scenes), our model generates spatially and temporally consistent trajectories under novel scenarios and new camera placements for over 20 seconds. We show that our method can accurately rank policy performance without real-world robot rollouts. Moreover, by synthesizing successful trajectories in imagination and using them for supervised fine-tuning, our approach can improve policy success by 44.7\\%."
+      },
+      {
+        "paperId": "234018fa87b6c649830e1e6274362c58445a9fbc",
+        "externalIds": {
+          "ArXiv": "2509.26633",
+          "DBLP": "journals/corr/abs-2509-26633",
+          "DOI": "10.48550/arXiv.2509.26633",
+          "CorpusId": 281682633
+        },
+        "title": "OmniRetarget: Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 58,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.26633, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2383205600",
+            "name": "Lujie Yang"
+          },
+          {
+            "authorId": "2383100448",
+            "name": "Xiaoyu Huang"
+          },
+          {
+            "authorId": "2308574851",
+            "name": "Zhen Wu"
+          },
+          {
+            "authorId": "20615377",
+            "name": "Angjoo Kanazawa"
+          },
+          {
+            "authorId": "2381724317",
+            "name": "Pieter Abbeel"
+          },
+          {
+            "authorId": "47218071",
+            "name": "Carmelo Sferrazza"
+          },
+          {
+            "authorId": "2376138723",
+            "name": "C. K. Liu"
+          },
+          {
+            "authorId": "2381724728",
+            "name": "Rocky Duan"
+          },
+          {
+            "authorId": "2384824402",
+            "name": "Guanya Shi"
+          }
+        ],
+        "abstract": "A dominant paradigm for teaching humanoid robots complex skills is to retarget human motions as kinematic references to train reinforcement learning (RL) policies. However, existing retargeting pipelines often struggle with the significant embodiment gap between humans and robots, producing physically implausible artifacts like foot-skating and penetration. More importantly, common retargeting methods neglect the rich human-object and human-environment interactions essential for expressive locomotion and loco-manipulation. To address this, we introduce OmniRetarget, an interaction-preserving data generation engine based on an interaction mesh that explicitly models and preserves the crucial spatial and contact relationships between an agent, the terrain, and manipulated objects. By minimizing the Laplacian deformation between the human and robot meshes while enforcing kinematic constraints, OmniRetarget generates kinematically feasible trajectories. Moreover, preserving task-relevant interactions enables efficient data augmentation, from a single demonstration to different robot embodiments, terrains, and object configurations. We comprehensively evaluate OmniRetarget by retargeting motions from OMOMO, LAFAN1, and our in-house MoCap datasets, generating over 8-hour trajectories that achieve better kinematic constraint satisfaction and contact preservation than widely used baselines. Such high-quality data enables proprioceptive RL policies to successfully execute long-horizon (up to 30 seconds) parkour and loco-manipulation skills on a Unitree G1 humanoid, trained with only 5 reward terms and simple domain randomization shared by all tasks, without any learning curriculum."
+      },
+      {
+        "paperId": "54caf5927a6d656bb84d2a16e16fa2b0c5d6f522",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2411-19650",
+          "ArXiv": "2411.19650",
+          "DOI": "10.48550/arXiv.2411.19650",
+          "CorpusId": 274423241
+        },
+        "title": "CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 283,
+        "influentialCitationCount": 36,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.19650, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2322728528",
+            "name": "Qixiu Li"
+          },
+          {
+            "authorId": "2333468608",
+            "name": "Yaobo Liang"
+          },
+          {
+            "authorId": "2343748276",
+            "name": "Zeyu Wang"
+          },
+          {
+            "authorId": "2333975449",
+            "name": "Lin Luo"
+          },
+          {
+            "authorId": "2333485561",
+            "name": "Xi Chen"
+          },
+          {
+            "authorId": "2333239754",
+            "name": "M. Liao"
+          },
+          {
+            "authorId": "2290913195",
+            "name": "Fangyun Wei"
+          },
+          {
+            "authorId": "2111233530",
+            "name": "Yu Deng"
+          },
+          {
+            "authorId": "2110510433",
+            "name": "Sicheng Xu"
+          },
+          {
+            "authorId": "2333252817",
+            "name": "Yizhong Zhang"
+          },
+          {
+            "authorId": "2333328988",
+            "name": "Xiaofan Wang"
+          },
+          {
+            "authorId": "2290519570",
+            "name": "Bei Liu"
+          },
+          {
+            "authorId": "2265967195",
+            "name": "Jianlong Fu"
+          },
+          {
+            "authorId": "2248142348",
+            "name": "Jianmin Bao"
+          },
+          {
+            "authorId": "2333464886",
+            "name": "Dong Chen"
+          },
+          {
+            "authorId": "2333361107",
+            "name": "Yuanchun Shi"
+          },
+          {
+            "authorId": "2237946707",
+            "name": "Jiaolong Yang"
+          },
+          {
+            "authorId": "2238211403",
+            "name": "Baining Guo"
+          }
+        ],
+        "abstract": "The advancement of large Vision-Language-Action (VLA) models has significantly improved robotic manipulation in terms of language-guided task execution and generalization to unseen scenarios. While existing VLAs adapted from pretrained large Vision-Language-Models (VLM) have demonstrated promising generalizability, their task performance is still unsatisfactory as indicated by the low tasks success rates in different environments. In this paper, we present a new advanced VLA architecture derived from VLM. Unlike previous works that directly repurpose VLM for action prediction by simple action quantization, we propose a omponentized VLA architecture that has a specialized action module conditioned on VLM output. We systematically study the design of the action module and demonstrates the strong performance enhancement with diffusion action transformers for action sequence modeling, as well as their favorable scaling behaviors. We also conduct comprehensive experiments and ablation studies to evaluate the efficacy of our models with varied designs. The evaluation on 5 robot embodiments in simulation and real work shows that our model not only significantly surpasses existing VLAs in task performance and but also exhibits remarkable adaptation to new robots and generalization to unseen objects and backgrounds. It exceeds the average success rates of OpenVLA which has similar model size (7B) with ours by over 35% in simulated evaluation and 55% in real robot experiments. It also outperforms the large RT-2-X model (55B) by 18% absolute success rates in simulation. Code and models can be found on our project page (https://cogact.github.io/)."
+      },
+      {
+        "paperId": "e23287fb545329df6391e486bd9eda816c0c492e",
+        "externalIds": {
+          "ArXiv": "2501.18564",
+          "DBLP": "conf/icml/FangGPWFKD25",
+          "DOI": "10.48550/arXiv.2501.18564",
+          "CorpusId": 275994108
+        },
+        "title": "SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation",
+        "venue": "International Conference on Machine Learning",
+        "year": 2025,
+        "citationCount": 51,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.18564, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2343790187",
+            "name": "Haoquan Fang"
+          },
+          {
+            "authorId": "2284774216",
+            "name": "Markus Grotz"
+          },
+          {
+            "authorId": "2283935089",
+            "name": "Wilbert Pumacay"
+          },
+          {
+            "authorId": "2257315331",
+            "name": "Y. Wang"
+          },
+          {
+            "authorId": "2257042516",
+            "name": "Dieter Fox"
+          },
+          {
+            "authorId": "2262217505",
+            "name": "Ranjay Krishna"
+          },
+          {
+            "authorId": "2052092142",
+            "name": "Jiafei Duan"
+          }
+        ],
+        "abstract": "Robotic manipulation systems operating in diverse, dynamic environments must exhibit three critical abilities: multitask interaction, generalization to unseen scenarios, and spatial memory. While significant progress has been made in robotic manipulation, existing approaches often fall short in generalization to complex environmental variations and addressing memory-dependent tasks. To bridge this gap, we introduce SAM2Act, a multi-view robotic transformer-based policy that leverages multi-resolution upsampling with visual representations from large-scale foundation model. SAM2Act achieves a state-of-the-art average success rate of 86.8% across 18 tasks in the RLBench benchmark, and demonstrates robust generalization on The Colosseum benchmark, with only a 4.3% performance gap under diverse environmental perturbations. Building on this foundation, we propose SAM2Act+, a memory-based architecture inspired by SAM2, which incorporates a memory bank, an encoder, and an attention mechanism to enhance spatial memory. To address the need for evaluating memory-dependent tasks, we introduce MemoryBench, a novel benchmark designed to assess spatial memory and action recall in robotic manipulation. SAM2Act+ achieves an average success rate of 94.3% on memory-based tasks in MemoryBench, significantly outperforming existing approaches and pushing the boundaries of memory-based robotic systems. Project page: sam2act.github.io."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "prompt injection benchmark",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "prompt injection evaluation",
+    "results": [],
+    "status": 0,
+    "error": null
+  }
+]

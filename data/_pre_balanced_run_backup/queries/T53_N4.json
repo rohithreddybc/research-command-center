@@ -1,0 +1,131 @@
+{
+  "topic": {
+    "topic_id": "T53_N4",
+    "title": "Test-set contamination audit of healthcare LLM benchmarks — noise-pruned",
+    "category": "methodology",
+    "keywords": "data contamination|benchmark leakage|PubMedQA|MMLU clinical",
+    "synonyms": "training data leakage;memorization;n-gram overlap",
+    "negative_keywords": "unrelated NLP;MedQA",
+    "target_artifact": "empirical+database",
+    "prelim_priority": "5",
+    "parent_topic_id": "T53",
+    "narrowing_type": "noise_pruned",
+    "narrowing_note": "removed noisy secondaries=['MedQA']; added to negatives",
+    "est_relevance_purity": "0.5",
+    "est_kept_papers": "25",
+    "est_hi_papers": "24",
+    "est_citation_signal": "4",
+    "est_artifact": "2",
+    "est_saturation": "3",
+    "est_evidence_quality": "4",
+    "est_niw": "5",
+    "est_eb1a": "4",
+    "est_career": "3",
+    "est_novelty_risk": "HIGH",
+    "est_exec_feasibility": "HIGH",
+    "composite_score": "0.625",
+    "purity_gain_vs_parent": "0.0"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA",
+      "MMLU clinical",
+      "training data leakage",
+      "data contamination benchmark",
+      "data contamination evaluation",
+      "data contamination robustness",
+      "data contamination reproducibility",
+      "benchmark leakage benchmark",
+      "benchmark leakage evaluation"
+    ],
+    "openalex": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA",
+      "MMLU clinical",
+      "training data leakage",
+      "data contamination benchmark",
+      "data contamination evaluation",
+      "data contamination robustness",
+      "data contamination reproducibility",
+      "benchmark leakage benchmark",
+      "benchmark leakage evaluation"
+    ],
+    "crossref": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA",
+      "MMLU clinical"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG)+AND+(all:%22data%20contamination%22+AND+all:%22benchmark%20leakage%22+AND+all:%22PubMedQA%22)",
+      "all:data%20contamination"
+    ],
+    "github": [
+      "data contamination in:readme,description",
+      "data contamination benchmark in:name,description",
+      "data contamination evaluation in:name,description",
+      "benchmark leakage in:readme,description",
+      "benchmark leakage benchmark in:name,description",
+      "benchmark leakage evaluation in:name,description",
+      "PubMedQA in:readme,description",
+      "PubMedQA benchmark in:name,description",
+      "PubMedQA evaluation in:name,description"
+    ],
+    "huggingface": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA",
+      "MMLU clinical",
+      "training data leakage",
+      "data contamination benchmark",
+      "benchmark leakage benchmark"
+    ],
+    "doaj": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA"
+    ],
+    "pwc": [
+      "data contamination",
+      "benchmark leakage",
+      "PubMedQA"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "data contamination",
+        "url": "https://scholar.google.com/scholar?q=%22data%20contamination%22%202024..2026"
+      },
+      {
+        "label": "benchmark leakage",
+        "url": "https://scholar.google.com/scholar?q=%22benchmark%20leakage%22%202024..2026"
+      },
+      {
+        "label": "PubMedQA",
+        "url": "https://scholar.google.com/scholar?q=%22PubMedQA%22%202024..2026"
+      },
+      {
+        "label": "MMLU clinical",
+        "url": "https://scholar.google.com/scholar?q=%22MMLU%20clinical%22%202024..2026"
+      },
+      {
+        "label": "training data leakage",
+        "url": "https://scholar.google.com/scholar?q=%22training%20data%20leakage%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

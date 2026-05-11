@@ -1,0 +1,517 @@
+[
+  {
+    "query": "clinical LLM",
+    "results": [
+      {
+        "id": "ravistech/clinical-trial-llm",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "alexgoodell/llm-as-clinical-calculator",
+        "downloads": 18,
+        "likes": 0,
+        "tags": [
+          "task_categories:question-answering",
+          "language:en",
+          "license:cc-by-nc-sa-4.0",
+          "doi:10.57967/hf/1989",
+          "region:us",
+          "anesthesiology",
+          "medical"
+        ],
+        "description": "\n\t\n\t\t\n\t\tAugmentation of ChatGPT with clinician-informed tools improves performance on medical calculation tasks\n\t\n\nAbstract: Prior work has shown that large language models (LLMs) have the ability to answer expert-level multiple choice questions in medicine, but are limited by both their tendency to hallucinate knowledge and their inherent inadequacy in performing basic mathematical operations. Unsurprisingly, early evidence suggests that LLMs perform poorly when asked to execute common… See the"
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-1k",
+        "downloads": 11,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-1k-v2",
+        "downloads": 6,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-v2",
+        "downloads": 33,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer-v2",
+        "downloads": 4,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer-v3",
+        "downloads": 10,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer-v4",
+        "downloads": 25,
+        "likes": 2,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ritaranx/clinical-synthetic-text-llm",
+        "downloads": 79,
+        "likes": 3,
+        "tags": [
+          "task_categories:text-classification",
+          "task_categories:token-classification",
+          "language:en",
+          "license:mit",
+          "size_categories:1K<n<10K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "arxiv:2311.00287",
+          "region:us",
+          "medical",
+          "clinical",
+          "synthetic",
+          "healthcare",
+          "nlp"
+        ],
+        "description": "\n\t\n\t\t\n\t\tData Description\n\t\n\nWe release the synthetic data generated using the method described in the paper Knowledge-Infused Prompting: Assessing and Advancing Clinical Text Data Generation with Large Language Models\n (ACL 2024 Findings). The external knowledge we use is based on LLM-generated topics and writing styles.\n\n\t\n\t\t\n\t\tGenerated Datasets\n\t\n\nThe original train/validation/test data, and the generated synthetic training data are listed as follows. For each dataset, we generate 5000… See t"
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer-StdName-NCTID-v5",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-cancer-restructure",
+        "downloads": 8,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-CAR-T-CELL-V1",
+        "downloads": 2,
+        "likes": 0,
+        "tags": [
+          "size_categories:n<1K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-CAR-T-CELL_Mix_CANCER_v1",
+        "downloads": 13,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-CAR-T-CELL_Mix_CANCER_Cleaned_dup_NCT_ID",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "size_categories:10K<n<100K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "ravistech/clinical-trial-llm-Open_condition_Cleaned_dup_NCT_ID",
+        "downloads": 8,
+        "likes": 1,
+        "tags": [
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "singhankit16/ICD-10-LLM-generated-Synthetic-Clinical-Note-G00-G99",
+        "downloads": 465,
+        "likes": 0,
+        "tags": [
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tMedGemma ICD-10 Clinical Notes Dataset\n\t\n\nSynthetic clinical notes (english) generated by MedGemma-4B-IT for fine-tuning ICD-10-CM diagnosis code prediction models. Focused on Chapter 6: Diseases of the Nervous System (G00-G99).\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\n\n\t\n\t\t\nSplit\nExamples\nUnique ICD-10 Codes\n\n\n\t\t\nTrain\n3,325\n665\n\n\nEval\n250\n50\n\n\n\t\n\nEach example is a realistic clinical note paired with its ICD-10-CM diagnosis code, formatted as a chat conversation for instruction fine-tuning.… See the "
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "reproducibility",
+    "results": [
+      {
+        "id": "Reproducibility/naacl22_wikitext15M",
+        "downloads": 14,
+        "likes": 0,
+        "tags": [
+          "size_categories:1M<n<10M",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "Reproducibility/naacl22_wikitext15M_eval",
+        "downloads": 10,
+        "likes": 0,
+        "tags": [
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "region:us"
+        ],
+        "description": ""
+      },
+      {
+        "id": "sisinflab-ai/GradeSQL-reproducibility-data",
+        "downloads": 7,
+        "likes": 0,
+        "tags": [
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tData Summary\n\t\n\nThis repository contains the reproducibility data for GradeSQL, a framework for fine-tuning text-to-SQL ORM models. It provides all the data required to reproduce the experiments and fine-tuning setups described in the GradeSQL paper.  \nThe data is intended for researchers and practitioners who want to train, evaluate, or reproduce results from GradeSQL.For details about the methodology, usage, and tutorials, please refer to the main project repository: GradeSQL GitHub.\n"
+      },
+      {
+        "id": "oidaman/pinc_reproducibility",
+        "downloads": 3,
+        "likes": 0,
+        "tags": [
+          "license:mit",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tPINC rebuttal dataset\n\t\n\nSubsampled 5D gyrokinetics dataset to reproduce Table 1 from the ICLR paper: Physics-Preserving Compression of High-Dimensional Plasma Turbulence Simulations.\n01_evaluation_hf.ipynb midified to work with the subsampled dataset. It can be copied in the supplementary materials.\n"
+      },
+      {
+        "id": "orailix/MUCH-trash-only-for-reproducibility",
+        "downloads": 9,
+        "likes": 0,
+        "tags": [
+          "task_categories:token-classification",
+          "language:en",
+          "language:fr",
+          "language:de",
+          "language:es",
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:json",
+          "modality:text",
+          "library:datasets",
+          "library:pandas",
+          "library:mlcroissant",
+          "library:polars",
+          "arxiv:2511.17081",
+          "arxiv:2504.11975",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\t[Trash-only dataset] MUCH: A Multilingual Claim Hallucination Benchmark\n\t\n\nJérémie Dentan1, Alexi Canesse1, Davide Buscaldi1, 2, Aymen Shabou3, Sonia Vanier1\n1LIX (École Polytechnique, IP Paris, CNSR), 2LIPN (Université Sorbonne Paris Nord), 3Crédit Agricole SA\n\n\t\n\t\t\n\t\tImportant Notice: Trash-Only\n\t\n\nThis dataset contains only the samples that were filtered out from the MUCH benchmark due to insufficient quality, referred to as “trash.” It is provided for research reproducibility… See th"
+      },
+      {
+        "id": "bird-of-paradise/muon-distributed-reproducibility",
+        "downloads": 40,
+        "likes": 2,
+        "tags": [
+          "license:mit",
+          "region:us",
+          "benchmark",
+          "systems-ml",
+          "distributed-training",
+          "muon",
+          "optimizer",
+          "performance-analysis"
+        ],
+        "description": "\n\t\n\t\t\n\t\t🔬 Distributed Muon: Field Notes & Reproducibility Artifacts\n\t\n\nCode, Performance Traces, and Analysis Logs\nThis repository contains the raw engineering artifacts for the deep-dive investigation: \"Reproducing and Validating Distributed Muon\".\nIt serves as the proof of work for the performance claims regarding the Muon optimizer's communication efficiency and computational overhead in a distributed setting (Data Parallel + Tensor Parallel).\n📄 Read the Full Report: Reproducing and… See the "
+      },
+      {
+        "id": "AI-EcoNet/HUGO-Bench-Paper-Reproducibility",
+        "downloads": 261,
+        "likes": 0,
+        "tags": [
+          "task_categories:image-classification",
+          "task_categories:zero-shot-classification",
+          "source_datasets:AI-EcoNet/HUGO-Bench",
+          "language:en",
+          "license:cc-by-4.0",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "format:optimized-parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:polars",
+          "library:mlcroissant",
+          "arxiv:2602.03894",
+          "doi:10.57967/hf/8191",
+          "region:us",
+          "biology",
+          "ecology",
+          "wildlife",
+          "camera-traps",
+          "vision-transformers",
+          "clustering",
+          "zero-shot-learning",
+          "biodiversity",
+          "reproducibility",
+          "benchmarking",
+          "embeddings",
+          "dinov3",
+          "dinov2",
+          "bioclip",
+          "clip",
+          "siglip"
+        ],
+        "description": "\n\t\n\t\t\n\t\tHUGO-Bench Paper Reproducibility\n\t\n\nSupplementary data and reproducibility materials for the paper:\n\nVision Transformers for Zero-Shot Clustering of Animal Images: A Comparative Benchmarking Study - https://arxiv.org/abs/2602.03894\nHugo Markoff, Stefan Hein Bengtson, Michael Ørsted\nAalborg University, Denmark\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\nThis repository contains complete experimental results, pre-computed embeddings, and execution logs from our comprehensive benchmarking study… Se"
+      },
+      {
+        "id": "zyzhou110/Squidiff_reproducibility",
+        "downloads": 106,
+        "likes": 0,
+        "tags": [
+          "task_categories:feature-extraction",
+          "task_categories:tabular-regression",
+          "task_categories:tabular-classification",
+          "license:mit",
+          "region:us",
+          "biology",
+          "single-cell",
+          "transcriptomics",
+          "scrna-seq",
+          "reproducibility",
+          "squidiff",
+          "deep-learning",
+          "gene-perturbation",
+          "drug-response",
+          "drug-screening"
+        ],
+        "description": "\n\t\n\t\t\n\t\t🦑 Squidiff Reproducibility (Code + Processed Dataset)\n\t\n\nEnglish | 简体中文\nThis repository is a comprehensive, ready-to-use replication bundle for Squidiff. It contains annotated replication Jupyter notebooks alongside all the heavily processed intermediate .h5ad matrices (approx 22.8 GB in total) required to seamlessly reproduce the figures and model results without wrestling with data wrangling.\n\nNote: This repository is cloned and extended from the official Squidiff reproducibility… See "
+      },
+      {
+        "id": "throwaway-reproducibility-354364563/FinTrain",
+        "downloads": 21,
+        "likes": 0,
+        "tags": [
+          "license:other",
+          "region:us",
+          "finance",
+          "llm",
+          "benchmark",
+          "artifact-store",
+          "heterogeneous"
+        ],
+        "description": "\n\t\n\t\t\n\t\tST312 FinLLM Data Artifact Store\n\t\n\nArtifact repository for the ST312 Applied Statistics project (FinLLM pipeline).\nThis Hugging Face dataset repo stores canonical processed datasets, task request files,\nmanifest snapshots, checksums, and publication bookkeeping artifacts.\nThis is a heterogeneous multi-module artifact store, not a single ordinary dataset repository.\nThe published contents index below is the source of truth for available modules and artifact paths.\n\n\t\n\t\t\n\t\n\t\n\t\tStructure… "
+      },
+      {
+        "id": "anon7f3k2026/neurips_reproducibility_bundle",
+        "downloads": 22,
+        "likes": 0,
+        "tags": [
+          "language:en",
+          "license:other",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tReproducibility Bundle — NeurIPS 2026 Submission\n\t\n\nEvaluation datasets, scripts, and the model checkpoint for the anonymous\nNeurIPS 2026 submission.\n\n\t\n\t\t\n\t\tBundle Layout\n\t\n\n\n\t\n\t\t\nDirectory\nContents\n\n\n\t\t\nexpression_datasets/\nFive .h5ad files (GTEx, GEO, Tabula Sapiens, X-Atlas/Orion, etc.)\n\n\nembeddings/\nPre-computed OmicsLM input vectors (.npz), aligned row-by-row to .h5ad\n\n\ngeo_omics_qa/\nGEO-OmicsQA question files (six .json variants, 3,000 questions)\n\n\nomicslm_checkpoint/\nOmicsLM… See"
+      },
+      {
+        "id": "printf261/certcf-reproducibility",
+        "downloads": 14,
+        "likes": 0,
+        "tags": [
+          "task_categories:tabular-classification",
+          "license:other",
+          "size_categories:100K<n<1M",
+          "format:parquet",
+          "modality:tabular",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:polars",
+          "library:mlcroissant",
+          "region:us"
+        ],
+        "description": "\n\t\n\t\t\n\t\tCertCF Reproducibility Artifacts\n\t\n\nThis dataset repository contains the local artifacts needed to reproduce the CertCF paper experiments from the code repository.\n\n\t\n\t\t\n\t\tContents\n\t\n\n\ndata/: processed tabular benchmark inputs expected by the training configs.\ncheckpoints/: trained tabular classifier checkpoints expected by the benchmark.\nresults/: selected parquet files used by the paper analysis notebooks.\n\nThe artifact paths mirror the code repository layout. To use them, download… Se"
+      },
+      {
+        "id": "cp-bg-bench-anon/reproducibility",
+        "downloads": 9,
+        "likes": 0,
+        "tags": [
+          "language:en",
+          "license:cc-by-nc-sa-4.0",
+          "size_categories:10K<n<100K",
+          "region:us",
+          "cell-painting",
+          "microscopy",
+          "biology",
+          "benchmark",
+          "representation-learning"
+        ],
+        "description": "\n\t\n\t\t\n\t\tcp-bg-bench — embeddings and inference checkpoints\n\t\n\nWell- and cell-resolution embeddings, plus inference checkpoints, for the 36 model configurations evaluated in the cp-bg-bench benchmark (3 datasets × 3 image encoders × 4 input views).\n\n\t\n\t\t\n\t\tLayout\n\t\n\n<config_id>/\n  aggregated.h5ad      # well-resolution: obs join keys + obsm[\"X_pca\"], obsm[\"X_pca_harmony\"]\n  singlecell.h5ad      # per-cell embeddings produced by inference\n  exports/\n    imgenc_finetuned.json   # encoder config… Se"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "methodology disclosure",
+    "results": [],
+    "status": 200
+  }
+]

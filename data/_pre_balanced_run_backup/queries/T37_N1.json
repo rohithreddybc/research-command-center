@@ -1,0 +1,131 @@
+{
+  "topic": {
+    "topic_id": "T37_N1",
+    "title": "Clinical-guideline consistency across LLM versions over time — noise-pruned",
+    "category": "healthcare",
+    "keywords": "clinical guideline|model drift|LLM versioning",
+    "synonyms": "USPSTF;CDC guidelines;NICE;medical advice consistency",
+    "negative_keywords": "drug discovery;longitudinal evaluation",
+    "target_artifact": "empirical",
+    "prelim_priority": "5",
+    "parent_topic_id": "T37",
+    "narrowing_type": "noise_pruned",
+    "narrowing_note": "removed noisy secondaries=['longitudinal evaluation']; added to negatives",
+    "est_relevance_purity": "0.562",
+    "est_kept_papers": "2",
+    "est_hi_papers": "2",
+    "est_citation_signal": "1",
+    "est_artifact": "3",
+    "est_saturation": "2",
+    "est_evidence_quality": "1",
+    "est_niw": "5",
+    "est_eb1a": "4",
+    "est_career": "2",
+    "est_novelty_risk": "LOW",
+    "est_exec_feasibility": "HIGH",
+    "composite_score": "0.5567",
+    "purity_gain_vs_parent": "0.312"
+  },
+  "queries": {
+    "semantic_scholar": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning",
+      "USPSTF",
+      "CDC guidelines",
+      "clinical guideline benchmark",
+      "clinical guideline evaluation",
+      "clinical guideline robustness",
+      "clinical guideline reproducibility",
+      "model drift benchmark",
+      "model drift evaluation"
+    ],
+    "openalex": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning",
+      "USPSTF",
+      "CDC guidelines",
+      "clinical guideline benchmark",
+      "clinical guideline evaluation",
+      "clinical guideline robustness",
+      "clinical guideline reproducibility",
+      "model drift benchmark",
+      "model drift evaluation"
+    ],
+    "crossref": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning",
+      "USPSTF"
+    ],
+    "arxiv": [
+      "(cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.AI)+AND+(all:%22clinical%20guideline%22+AND+all:%22model%20drift%22+AND+all:%22LLM%20versioning%22)",
+      "all:clinical%20guideline"
+    ],
+    "github": [
+      "clinical guideline in:readme,description",
+      "clinical guideline benchmark in:name,description",
+      "clinical guideline evaluation in:name,description",
+      "model drift in:readme,description",
+      "model drift benchmark in:name,description",
+      "model drift evaluation in:name,description",
+      "LLM versioning in:readme,description",
+      "LLM versioning benchmark in:name,description",
+      "LLM versioning evaluation in:name,description"
+    ],
+    "huggingface": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning",
+      "USPSTF",
+      "CDC guidelines",
+      "clinical guideline benchmark",
+      "model drift benchmark"
+    ],
+    "doaj": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning"
+    ],
+    "pwc": [
+      "clinical guideline",
+      "model drift",
+      "LLM versioning"
+    ],
+    "google_scholar_manual": [
+      {
+        "label": "clinical guideline",
+        "url": "https://scholar.google.com/scholar?q=%22clinical%20guideline%22%202024..2026"
+      },
+      {
+        "label": "model drift",
+        "url": "https://scholar.google.com/scholar?q=%22model%20drift%22%202024..2026"
+      },
+      {
+        "label": "LLM versioning",
+        "url": "https://scholar.google.com/scholar?q=%22LLM%20versioning%22%202024..2026"
+      },
+      {
+        "label": "USPSTF",
+        "url": "https://scholar.google.com/scholar?q=%22USPSTF%22%202024..2026"
+      },
+      {
+        "label": "CDC guidelines",
+        "url": "https://scholar.google.com/scholar?q=%22CDC%20guidelines%22%202024..2026"
+      }
+    ],
+    "axis_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "reproducibility",
+      "survey",
+      "taxonomy",
+      "robustness",
+      "calibration",
+      "limitations",
+      "future work"
+    ]
+  }
+}

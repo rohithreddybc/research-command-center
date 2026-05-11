@@ -1,0 +1,2968 @@
+[
+  {
+    "query": "clinical LLM",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "reproducibility",
+    "results": [
+      {
+        "paperId": "aa3517c664890cd36aee3cfff0f09d2645e373b6",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2504-07086",
+          "ArXiv": "2504.07086",
+          "DOI": "10.48550/arXiv.2504.07086",
+          "CorpusId": 277634184
+        },
+        "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 81,
+        "influentialCitationCount": 8,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.07086, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2311885568",
+            "name": "Andreas Hochlehnert"
+          },
+          {
+            "authorId": "2354337076",
+            "name": "Hardik Bhatnagar"
+          },
+          {
+            "authorId": "2345194898",
+            "name": "Vishaal Udandarao"
+          },
+          {
+            "authorId": "7641268",
+            "name": "Samuel Albanie"
+          },
+          {
+            "authorId": "2311885852",
+            "name": "Ameya Prabhu"
+          },
+          {
+            "authorId": "2256998402",
+            "name": "Matthias Bethge"
+          }
+        ],
+        "abstract": "Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices--including decoding parameters, random seeds, prompt formatting, and even hardware and software configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that most reinforcement learning (RL) approaches yield only modest improvements--far below prior claims--and are prone to overfitting, especially on small-scale benchmarks like AIME'24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization in the settings we study. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work."
+      },
+      {
+        "paperId": "7a6d8650b7cc2e5c2ba0862dc73272ab6df24cfd",
+        "externalIds": {
+          "DOI": "10.1038/s41560-025-01791-z",
+          "CorpusId": 279280480
+        },
+        "title": "Fluorinated isopropanol for improved defect passivation and reproducibility in perovskite solar cells",
+        "venue": "Nature Energy",
+        "year": 2025,
+        "citationCount": 25,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41560-025-01791-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41560-025-01791-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2192737235",
+            "name": "Sisi Wang"
+          },
+          {
+            "authorId": "2338817117",
+            "name": "Weizhong Tian"
+          },
+          {
+            "authorId": "2361896177",
+            "name": "Zhendong Cheng"
+          },
+          {
+            "authorId": "2290452658",
+            "name": "Xiaohuo Shi"
+          },
+          {
+            "authorId": "2220402818",
+            "name": "Wei Fan"
+          },
+          {
+            "authorId": "2313082821",
+            "name": "Jingjing Zhou"
+          },
+          {
+            "authorId": "2359233036",
+            "name": "Danyu Gu"
+          },
+          {
+            "authorId": "40145799",
+            "name": "Jingjing Xue"
+          },
+          {
+            "authorId": "2283995296",
+            "name": "Rui Wang"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "128a8fdc8d15dcb2827eb75fab898e260f2e485c",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2503-16974",
+          "ArXiv": "2503.16974",
+          "DOI": "10.48550/arXiv.2503.16974",
+          "CorpusId": 277244909
+        },
+        "title": "Assessing Consistency and Reproducibility in the Outputs of Large Language Models: Evidence Across Diverse Finance and Accounting Tasks",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 24,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.16974, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2333517223",
+            "name": "J. Wang"
+          },
+          {
+            "authorId": "2333422754",
+            "name": "V. X. Wang"
+          }
+        ],
+        "abstract": "This study provides the first comprehensive assessment of consistency and reproducibility in Large Language Model (LLM) outputs in finance and accounting research. We evaluate how consistently LLMs produce outputs given identical inputs through extensive experimentation with 50 independent runs across five common tasks: classification, sentiment analysis, summarization, text generation, and prediction. Using three OpenAI models (GPT-3.5-turbo, GPT-4o-mini, and GPT-4o), we generate over 3.4 million outputs from diverse financial source texts and data, covering MD&As, FOMC statements, finance news articles, earnings call transcripts, and financial statements. Our findings reveal substantial but task-dependent consistency, with binary classification and sentiment analysis achieving near-perfect reproducibility, while complex tasks show greater variability. More advanced models do not consistently demonstrate better consistency and reproducibility, with task-specific patterns emerging. LLMs significantly outperform expert human annotators in consistency and maintain high agreement even where human experts significantly disagree. We further find that simple aggregation strategies across 3-5 runs dramatically improve consistency. We also find that aggregation may come with an additional benefit of improved accuracy for sentiment analysis when using newer models. Simulation analysis reveals that despite measurable inconsistency in LLM outputs, downstream statistical inferences remain remarkably robust. These findings address concerns about what we term\"G-hacking,\"the selective reporting of favorable outcomes from multiple generative AI runs, by demonstrating that such risks are relatively low for finance and accounting tasks."
+      },
+      {
+        "paperId": "fd6fe2474c86aa77983ee45186a390a84c7fc6a6",
+        "externalIds": {
+          "PubMedCentral": "12322209",
+          "DOI": "10.1038/s42003-025-08412-1",
+          "CorpusId": 280524682,
+          "PubMed": "40760004"
+        },
+        "title": "fNIRS reproducibility varies with data quality, analysis pipelines, and researcher experience",
+        "venue": "Communications Biology",
+        "year": 2025,
+        "citationCount": 15,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12322209, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2292015881",
+            "name": "Meryem A. Yücel"
+          },
+          {
+            "authorId": "2300195670",
+            "name": "Robert Luke"
+          },
+          {
+            "authorId": "2181829555",
+            "name": "R. Mesquita"
+          },
+          {
+            "authorId": "31309095",
+            "name": "A. von Lühmann"
+          },
+          {
+            "authorId": "2293868607",
+            "name": "David M. A. Mehler"
+          },
+          {
+            "authorId": "2255465046",
+            "name": "Michael Lührs"
+          },
+          {
+            "authorId": "2267176484",
+            "name": "Jessica Gemignani"
+          },
+          {
+            "authorId": "10723748",
+            "name": "A. Abdalmalak"
+          },
+          {
+            "authorId": "2150807094",
+            "name": "F. Albrecht"
+          },
+          {
+            "authorId": "2374907064",
+            "name": "Iara de Almeida Ivo"
+          },
+          {
+            "authorId": "3767463",
+            "name": "Christina Artemenko"
+          },
+          {
+            "authorId": "52033278",
+            "name": "Kira Ashton"
+          },
+          {
+            "authorId": "5418723",
+            "name": "Paweł Augustynowicz"
+          },
+          {
+            "authorId": "1404702434",
+            "name": "Aahana Bajracharya"
+          },
+          {
+            "authorId": "2366185244",
+            "name": "Elise Bannier"
+          },
+          {
+            "authorId": "1974084",
+            "name": "Beatrix Barth"
+          },
+          {
+            "authorId": "48503461",
+            "name": "L. Bayet"
+          },
+          {
+            "authorId": "2372057100",
+            "name": "Jacqueline Behrendt"
+          },
+          {
+            "authorId": "2372060352",
+            "name": "Hadi Borj Khani"
+          },
+          {
+            "authorId": "40998283",
+            "name": "Lenaic Borot"
+          },
+          {
+            "authorId": "7245827",
+            "name": "J. Borrell"
+          },
+          {
+            "authorId": "2252289382",
+            "name": "Sabrina Brigadoi"
+          },
+          {
+            "authorId": "2372059424",
+            "name": "Kolby Brink"
+          },
+          {
+            "authorId": "2338415189",
+            "name": "C. Bulgarelli"
+          },
+          {
+            "authorId": "2362379303",
+            "name": "Emmanuel Caruyer"
+          },
+          {
+            "authorId": "2372245929",
+            "name": "Hsin-Chin Chen"
+          },
+          {
+            "authorId": "2372044331",
+            "name": "Chris J. Copeland"
+          },
+          {
+            "authorId": "3339006",
+            "name": "I. Corouge"
+          },
+          {
+            "authorId": "2323454807",
+            "name": "Simone Cutini"
+          },
+          {
+            "authorId": "5683593",
+            "name": "R. Di Lorenzo"
+          },
+          {
+            "authorId": "2335116469",
+            "name": "Thomas Dresler"
+          },
+          {
+            "authorId": "2645305",
+            "name": "A. Eggebrecht"
+          },
+          {
+            "authorId": "2132195917",
+            "name": "A. Ehlis"
+          },
+          {
+            "authorId": "2294338336",
+            "name": "S. B. Erdoğan"
+          },
+          {
+            "authorId": "2264966778",
+            "name": "Danielle Evenblij"
+          },
+          {
+            "authorId": "1641745147",
+            "name": "Talukdar Raian Ferdous"
+          },
+          {
+            "authorId": "2372060006",
+            "name": "Victoria Fracalossi"
+          },
+          {
+            "authorId": "2275471648",
+            "name": "E. Franzén"
+          },
+          {
+            "authorId": "2258946112",
+            "name": "Anne Gallagher"
+          },
+          {
+            "authorId": "2255011110",
+            "name": "C. Gerloff"
+          },
+          {
+            "authorId": "2291293693",
+            "name": "J. Gervain"
+          },
+          {
+            "authorId": "2135376401",
+            "name": "N. Goldhamer"
+          },
+          {
+            "authorId": "51501656",
+            "name": "Louisa K. Gossé"
+          },
+          {
+            "authorId": "51884161",
+            "name": "Ségolène M. R. Guérin"
+          },
+          {
+            "authorId": "2301227372",
+            "name": "Edgar Guevara"
+          },
+          {
+            "authorId": "2366028651",
+            "name": "S. H. Hosseini"
+          },
+          {
+            "authorId": "2363461876",
+            "name": "H. Innes-Brown"
+          },
+          {
+            "authorId": "2034224340",
+            "name": "Isabell Int-Veen"
+          },
+          {
+            "authorId": "1403567697",
+            "name": "S. Jaffe-Dax"
+          },
+          {
+            "authorId": "1471829624",
+            "name": "Nolwenn Jegou"
+          },
+          {
+            "authorId": "2372059943",
+            "name": "Hiroshi Kawaguchi"
+          },
+          {
+            "authorId": "2165576256",
+            "name": "C. Kelsey"
+          },
+          {
+            "authorId": "2238567240",
+            "name": "Michaela Kent"
+          },
+          {
+            "authorId": "2325143775",
+            "name": "Roman Kessler"
+          },
+          {
+            "authorId": "2372059595",
+            "name": "Nadeen Kherbawy"
+          },
+          {
+            "authorId": "2305073721",
+            "name": "Franziska Klein"
+          },
+          {
+            "authorId": "2360183211",
+            "name": "Nofar Kochavi"
+          },
+          {
+            "authorId": "2323155701",
+            "name": "M. Kolisnyk"
+          },
+          {
+            "authorId": "38924157",
+            "name": "Y. Koren"
+          },
+          {
+            "authorId": "1836375099",
+            "name": "A. Kroczek"
+          },
+          {
+            "authorId": "2211490603",
+            "name": "Alexander Kvist"
+          },
+          {
+            "authorId": "2266583078",
+            "name": "C. P. Lin"
+          },
+          {
+            "authorId": "2372060165",
+            "name": "Andreas Löw"
+          },
+          {
+            "authorId": "2363018125",
+            "name": "Siying Luan"
+          },
+          {
+            "authorId": "51171932",
+            "name": "D. Mao"
+          },
+          {
+            "authorId": "1834598011",
+            "name": "G. Martins"
+          },
+          {
+            "authorId": "3425869",
+            "name": "E. Middell"
+          },
+          {
+            "authorId": "1404575987",
+            "name": "Samuel Montero-Hernandez"
+          },
+          {
+            "authorId": "49926723",
+            "name": "M. Mutlu"
+          },
+          {
+            "authorId": "2237614051",
+            "name": "S. Novi"
+          },
+          {
+            "authorId": "32716987",
+            "name": "Natacha Paquette"
+          },
+          {
+            "authorId": "3387181",
+            "name": "Ishara Paranawithana"
+          },
+          {
+            "authorId": "1730073",
+            "name": "Y. Parmet"
+          },
+          {
+            "authorId": "2258180000",
+            "name": "Jonathan E. Peelle"
+          },
+          {
+            "authorId": "2372030202",
+            "name": "Ke Peng"
+          },
+          {
+            "authorId": "2273994497",
+            "name": "Tommy Peng"
+          },
+          {
+            "authorId": "2372209373",
+            "name": "J. Pereira"
+          },
+          {
+            "authorId": "2304771297",
+            "name": "P. Pinti"
+          },
+          {
+            "authorId": "2335904613",
+            "name": "Luca Pollonini"
+          },
+          {
+            "authorId": "2023574302",
+            "name": "Ali Rahimpour Jounghani"
+          },
+          {
+            "authorId": "14007229",
+            "name": "Vanessa Reindl"
+          },
+          {
+            "authorId": "2372055966",
+            "name": "W. Ringels"
+          },
+          {
+            "authorId": "7253595",
+            "name": "Betti Schopp"
+          },
+          {
+            "authorId": "2275340459",
+            "name": "Alina Schulte"
+          },
+          {
+            "authorId": "1398001398",
+            "name": "M. Schulte-Rüther"
+          },
+          {
+            "authorId": "2173939537",
+            "name": "Ari Segel"
+          },
+          {
+            "authorId": "40900050",
+            "name": "Tirdad Seifi Ala"
+          },
+          {
+            "authorId": "12476915",
+            "name": "Maureen J. Shader"
+          },
+          {
+            "authorId": "2360183481",
+            "name": "Hadas Shavit"
+          },
+          {
+            "authorId": "103910954",
+            "name": "A. Sherafati"
+          },
+          {
+            "authorId": "6112660",
+            "name": "M. Soltanlou"
+          },
+          {
+            "authorId": "2254783476",
+            "name": "Bettina Sorger"
+          },
+          {
+            "authorId": "2173938931",
+            "name": "Emma Speh"
+          },
+          {
+            "authorId": "2238567187",
+            "name": "Kevin D Stubbs"
+          },
+          {
+            "authorId": "2095403180",
+            "name": "Katharina Stute"
+          },
+          {
+            "authorId": "2155619599",
+            "name": "Eileen F. Sullivan"
+          },
+          {
+            "authorId": "2279127904",
+            "name": "Sungho Tak"
+          },
+          {
+            "authorId": "2297464900",
+            "name": "Zeus Tipado"
+          },
+          {
+            "authorId": "2284462831",
+            "name": "J. Tremblay"
+          },
+          {
+            "authorId": "2238565983",
+            "name": "Homa Vahidi"
+          },
+          {
+            "authorId": "113808502",
+            "name": "Maaike Van Eeckhoutte"
+          },
+          {
+            "authorId": "2591431",
+            "name": "P. Vannasing"
+          },
+          {
+            "authorId": "13255254",
+            "name": "G. Vergotte"
+          },
+          {
+            "authorId": "2372026301",
+            "name": "Marion A. Vincent"
+          },
+          {
+            "authorId": "2372063621",
+            "name": "Eileen Weiss"
+          },
+          {
+            "authorId": "2274968033",
+            "name": "Dalin Yang"
+          },
+          {
+            "authorId": "2125564434",
+            "name": "Gülnaz Yükselen"
+          },
+          {
+            "authorId": "51184519",
+            "name": "Dariusz Zapała"
+          },
+          {
+            "authorId": "2306817565",
+            "name": "Vit Zemanek"
+          }
+        ],
+        "abstract": "As data analysis pipelines grow more complex in brain imaging research, understanding how methodological choices affect results is essential for ensuring reproducibility and transparency. This is especially relevant for functional Near-Infrared Spectroscopy (fNIRS), a rapidly growing technique for assessing brain function in naturalistic settings and across the lifespan, yet one that still lacks standardized analysis approaches. In the fNIRS Reproducibility Study Hub (FRESH) initiative, we asked 38 research teams worldwide to independently analyze the same two fNIRS datasets. Despite using different pipelines, nearly 80% of teams agreed on group-level results, particularly when hypotheses were strongly supported by literature. Teams with higher self-reported analysis confidence, which correlated with years of fNIRS experience, showed greater agreement. At the individual level, agreement was lower but improved with better data quality. The main sources of variability were related to how poor-quality data were handled, how responses were modeled, and how statistical analyses were conducted. These findings suggest that while flexible analytical tools are valuable, clearer methodological and reporting standards could greatly enhance reproducibility. By identifying key drivers of variability, this study highlights current challenges and offers direction for improving transparency and reliability in fNIRS research. FRESH, a multi-lab collaboration, reveals how data quality, analysis pipelines, and researcher expertise influence reproducibility in fNIRS neuroimaging, highlighting key factors driving variability in hypothesis outcomes."
+      },
+      {
+        "paperId": "02882aa74675b324808096609037a2dffb24c713",
+        "externalIds": {
+          "DBLP": "journals/patterns/KapoorN23",
+          "PubMedCentral": "10499856",
+          "DOI": "10.1016/j.patter.2023.100804",
+          "CorpusId": 260663045,
+          "PubMed": "37720327"
+        },
+        "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+        "venue": "Patterns",
+        "year": 2023,
+        "citationCount": 559,
+        "influentialCitationCount": 25,
+        "openAccessPdf": {
+          "url": "http://www.cell.com/article/S2666389923001599/pdf",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "39893263",
+            "name": "Sayash Kapoor"
+          },
+          {
+            "authorId": "47735253",
+            "name": "Arvind Narayanan"
+          }
+        ],
+        "abstract": "Summary Machine-learning (ML) methods have gained prominence in the quantitative sciences. However, there are many known methodological pitfalls, including data leakage, in ML-based science. We systematically investigate reproducibility issues in ML-based science. Through a survey of literature in fields that have adopted ML methods, we find 17 fields where leakage has been found, collectively affecting 294 papers and, in some cases, leading to wildly overoptimistic conclusions. Based on our survey, we introduce a detailed taxonomy of eight types of leakage, ranging from textbook errors to open research problems. We propose that researchers test for each type of leakage by filling out model info sheets, which we introduce. Finally, we conduct a reproducibility study of civil war prediction, where complex ML models are believed to vastly outperform traditional statistical models such as logistic regression (LR). When the errors are corrected, complex ML models do not perform substantively better than decades-old LR models."
+      },
+      {
+        "paperId": "7581930473c96b79249d8a814870995896e3c9f1",
+        "externalIds": {
+          "DOI": "10.1038/s41560-024-01634-3",
+          "CorpusId": 272783388
+        },
+        "title": "Benchmarking the reproducibility of all-solid-state battery cell performance",
+        "venue": "Nature Energy",
+        "year": 2024,
+        "citationCount": 95,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.1038/s41560-024-01634-3",
+          "status": "HYBRID",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41560-024-01634-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41560-024-01634-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2244411305",
+            "name": "Sebastian Puls"
+          },
+          {
+            "authorId": "2276955799",
+            "name": "Elina Nazmutdinova"
+          },
+          {
+            "authorId": "1658989985",
+            "name": "Fariza Kalyk"
+          },
+          {
+            "authorId": "2197395551",
+            "name": "H. M. Woolley"
+          },
+          {
+            "authorId": "2382192019",
+            "name": "Jesper Frost Thomsen"
+          },
+          {
+            "authorId": "2258309059",
+            "name": "Zhu Cheng"
+          },
+          {
+            "authorId": "2249413172",
+            "name": "Adrien Fauchier-Magnan"
+          },
+          {
+            "authorId": "2357414723",
+            "name": "Ajay Gautam"
+          },
+          {
+            "authorId": "26386018",
+            "name": "Michael Gockeln"
+          },
+          {
+            "authorId": "2266087786",
+            "name": "So-Yeon Ham"
+          },
+          {
+            "authorId": "2322660025",
+            "name": "Md Toukir Hasan"
+          },
+          {
+            "authorId": "2301836450",
+            "name": "Min-Gi Jeong"
+          },
+          {
+            "authorId": "2322204689",
+            "name": "Daiki Hiraoka"
+          },
+          {
+            "authorId": "2275839327",
+            "name": "Jong Seok Kim"
+          },
+          {
+            "authorId": "151486981",
+            "name": "Tobias Kutsch"
+          },
+          {
+            "authorId": "2308513528",
+            "name": "Barthélémy Lelotte"
+          },
+          {
+            "authorId": "115996988",
+            "name": "Philip Minnmann"
+          },
+          {
+            "authorId": "94995226",
+            "name": "V. Miss"
+          },
+          {
+            "authorId": "153781357",
+            "name": "K. Motohashi"
+          },
+          {
+            "authorId": "2205932644",
+            "name": "Douglas Lars Nelson"
+          },
+          {
+            "authorId": "15701919",
+            "name": "Frans G B Ooms"
+          },
+          {
+            "authorId": "2322212822",
+            "name": "Francesco Piccolo"
+          },
+          {
+            "authorId": "2196473842",
+            "name": "C. Plank"
+          },
+          {
+            "authorId": "2322165647",
+            "name": "Maria Rosner"
+          },
+          {
+            "authorId": "46317429",
+            "name": "S. Sandoval"
+          },
+          {
+            "authorId": "2222540091",
+            "name": "Eva Schlautmann"
+          },
+          {
+            "authorId": "51136497",
+            "name": "Robin Schuster"
+          },
+          {
+            "authorId": "2209821902",
+            "name": "Dominic Spencer-Jolly"
+          },
+          {
+            "authorId": "2108564789",
+            "name": "Yipeng Sun"
+          },
+          {
+            "authorId": "1659411377",
+            "name": "B. Vishnugopi"
+          },
+          {
+            "authorId": "2110012217",
+            "name": "Ruizhuo Zhang"
+          },
+          {
+            "authorId": "2221783962",
+            "name": "Huang Zheng"
+          },
+          {
+            "authorId": "8635079",
+            "name": "P. Adelhelm"
+          },
+          {
+            "authorId": "2262437374",
+            "name": "T. Brezesinski"
+          },
+          {
+            "authorId": "2241181154",
+            "name": "Peter G. Bruce"
+          },
+          {
+            "authorId": "48548498",
+            "name": "M. Danzer"
+          },
+          {
+            "authorId": "13655458",
+            "name": "Mario El Kazzi"
+          },
+          {
+            "authorId": "2249673829",
+            "name": "H. Gasteiger"
+          },
+          {
+            "authorId": "92357244",
+            "name": "K. Hatzell"
+          },
+          {
+            "authorId": "2132581770",
+            "name": "A. Hayashi"
+          },
+          {
+            "authorId": "11586400",
+            "name": "F. Hippauf"
+          },
+          {
+            "authorId": "2121648038",
+            "name": "J. Janek"
+          },
+          {
+            "authorId": "2256492310",
+            "name": "Y. Jung"
+          },
+          {
+            "authorId": "4184379",
+            "name": "M. Mcdowell"
+          },
+          {
+            "authorId": "2244074511",
+            "name": "Y. S. Meng"
+          },
+          {
+            "authorId": "2244321194",
+            "name": "Partha P. Mukherjee"
+          },
+          {
+            "authorId": "2089042355",
+            "name": "Sanyeuki Ohno"
+          },
+          {
+            "authorId": "2265994194",
+            "name": "Bernhard Roling"
+          },
+          {
+            "authorId": "2132607253",
+            "name": "A. Sakuda"
+          },
+          {
+            "authorId": "15798154",
+            "name": "J. Schwenzel"
+          },
+          {
+            "authorId": "2244577838",
+            "name": "Xueliang Sun"
+          },
+          {
+            "authorId": "5893832",
+            "name": "C. Villevieille"
+          },
+          {
+            "authorId": "6361252",
+            "name": "M. Wagemaker"
+          },
+          {
+            "authorId": "10718542",
+            "name": "W. Zeier"
+          },
+          {
+            "authorId": "1401219044",
+            "name": "N. Vargas‐Barbosa"
+          }
+        ],
+        "abstract": "The interlaboratory comparability and reproducibility of all-solid-state battery cell cycling performance are poorly understood due to the lack of standardized set-ups and assembly parameters. This study quantifies the extent of this variability by providing commercially sourced battery materials—LiNi0.6Mn0.2Co0.2O2 for the positive electrode, Li6PS5Cl as the solid electrolyte and indium for the negative electrode—to 21 research groups. Each group was asked to use their own cell assembly protocol but follow a specific electrochemical protocol. The results show large variability in assembly and electrochemical performance, including differences in processing pressures, pressing durations and In-to-Li ratios. Despite this, an initial open circuit voltage of 2.5 and 2.7 V vs Li+/Li is a good predictor of successful cycling for cells using these electroactive materials. We suggest a set of parameters for reporting all-solid-state battery cycling results and advocate for reporting data in triplicate. More transparent protocol reporting and comprehensive battery cell data are needed. Twenty-one research groups joined forces to assess solid-state battery performance and found considerable differences in assembly protocols that cause variable results."
+      },
+      {
+        "paperId": "d6270740e9868329c7c0e86ff34dee2b886f3e9a",
+        "externalIds": {
+          "PubMedCentral": "11742048",
+          "DOI": "10.1038/s41467-025-56160-x",
+          "CorpusId": 275605336,
+          "PubMed": "39824857"
+        },
+        "title": "Discordance, accuracy and reproducibility study of pathologists’ diagnosis of melanoma and melanocytic tumors",
+        "venue": "Nature Communications",
+        "year": 2025,
+        "citationCount": 17,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11742048, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2094468393",
+            "name": "Sarah Haggenmüller"
+          },
+          {
+            "authorId": "2204068811",
+            "name": "C. Wies"
+          },
+          {
+            "authorId": "2340672216",
+            "name": "Julia Abels"
+          },
+          {
+            "authorId": "1989467542",
+            "name": "J. Winterstein"
+          },
+          {
+            "authorId": "2281036404",
+            "name": "Lukas Heinlein"
+          },
+          {
+            "authorId": "2340674053",
+            "name": "Carina Nogueira Garcia"
+          },
+          {
+            "authorId": "2248245983",
+            "name": "J. Utikal"
+          },
+          {
+            "authorId": "50532344",
+            "name": "S. Wohlfeil"
+          },
+          {
+            "authorId": "2265559495",
+            "name": "Friedegund Meier"
+          },
+          {
+            "authorId": "2072396475",
+            "name": "S. Hobelsberger"
+          },
+          {
+            "authorId": "2083557770",
+            "name": "F. Gellrich"
+          },
+          {
+            "authorId": "4275641",
+            "name": "M. Sergon"
+          },
+          {
+            "authorId": "2239844479",
+            "name": "Axel Hauschild"
+          },
+          {
+            "authorId": "2250538703",
+            "name": "Lars E. French"
+          },
+          {
+            "authorId": "2251269010",
+            "name": "Lucie M. Heinzerling"
+          },
+          {
+            "authorId": "2281036618",
+            "name": "Justin G. Schlager"
+          },
+          {
+            "authorId": "2333189744",
+            "name": "Kamran Ghoreschi"
+          },
+          {
+            "authorId": "2263365678",
+            "name": "Max Schlaak"
+          },
+          {
+            "authorId": "14196480",
+            "name": "F. Hilke"
+          },
+          {
+            "authorId": "47866517",
+            "name": "G. Poch"
+          },
+          {
+            "authorId": "2115005069",
+            "name": "Sören Korsing"
+          },
+          {
+            "authorId": "2340674062",
+            "name": "Cosimo Sarfert"
+          },
+          {
+            "authorId": "2238685199",
+            "name": "C. Berking"
+          },
+          {
+            "authorId": "3938037",
+            "name": "M. Heppt"
+          },
+          {
+            "authorId": "2277698635",
+            "name": "Michael Erdmann"
+          },
+          {
+            "authorId": "3704661",
+            "name": "S. Haferkamp"
+          },
+          {
+            "authorId": "40916832",
+            "name": "K. Drexler"
+          },
+          {
+            "authorId": "2256873817",
+            "name": "Dirk Schadendorf"
+          },
+          {
+            "authorId": "6942354",
+            "name": "W. Sondermann"
+          },
+          {
+            "authorId": "2250528628",
+            "name": "M. Goebeler"
+          },
+          {
+            "authorId": "2137859019",
+            "name": "B. Schilling"
+          },
+          {
+            "authorId": "2262022936",
+            "name": "J. Kather"
+          },
+          {
+            "authorId": "2251753275",
+            "name": "S. Fröhling"
+          },
+          {
+            "authorId": "1396452139",
+            "name": "M. Llamas‐Velasco"
+          },
+          {
+            "authorId": "2250616431",
+            "name": "L. Requena"
+          },
+          {
+            "authorId": "2212460171",
+            "name": "Gerardo Ferrara"
+          },
+          {
+            "authorId": "2250389923",
+            "name": "M. Teresa Fernandez-Figueras"
+          },
+          {
+            "authorId": "2241374259",
+            "name": "Sylvie Fraitag"
+          },
+          {
+            "authorId": "2273683995",
+            "name": "Cornelia S. L. Müller"
+          },
+          {
+            "authorId": "2240011139",
+            "name": "Hans Starz"
+          },
+          {
+            "authorId": "2250618644",
+            "name": "H. Kutzner"
+          },
+          {
+            "authorId": "2265294128",
+            "name": "Raymond L Barnhill"
+          },
+          {
+            "authorId": "2308907546",
+            "name": "Richard M. Carr"
+          },
+          {
+            "authorId": "13884019",
+            "name": "K. Resnik"
+          },
+          {
+            "authorId": "2335849019",
+            "name": "S. A. Braun"
+          },
+          {
+            "authorId": "2247954282",
+            "name": "T. Holland-Letz"
+          },
+          {
+            "authorId": "2250386439",
+            "name": "T. Brinker"
+          }
+        ],
+        "abstract": "Accurate melanoma diagnosis is crucial for patient outcomes and reliability of AI diagnostic tools. We assess interrater variability among eight expert pathologists reviewing histopathological images and clinical metadata of 792 melanoma-suspicious lesions prospectively collected at eight German hospitals. Moreover, we provide access to the largest panel-validated dataset featuring dermoscopic and histopathological images with metadata. Complete agreement is achieved in 53.5% of cases (424/792), and a majority vote ( ≥ five pathologists) in 90.9% (720/792). Considerable discordance is observed for non-invasive melanomas (complete agreement in only 10/73 cases). The expert panel disagrees with the local pathologists’ and dermatologists’ diagnoses in 14.9% and 33.5% of cases, respectively. This variability highlights the diagnostic challenges of early-stage melanomas and the need to reconsider how ground truth is established in routine care and AI research. Including at least two pathologists or virtual panels may contribute to more consistent diagnostic results. The accuracy of melanoma diagnosis can vary considerably among clinicians, impacting both patient outcomes and the performance of related AI tools. Here, the authors systematically assess interrater variability among expert pathologists reviewing histopathological images and clinical metadata of melanoma-suspicious lesions collected at eight German hospitals."
+      },
+      {
+        "paperId": "2f22fc6290522a375602bef57a3a82c4a933123b",
+        "externalIds": {
+          "PubMedCentral": "11979971",
+          "DOI": "10.1098/rsos.242057",
+          "CorpusId": 277663352,
+          "PubMed": "40206851"
+        },
+        "title": "Open science interventions to improve reproducibility and replicability of research: a scoping review",
+        "venue": "Royal Society Open Science",
+        "year": 2025,
+        "citationCount": 14,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11979971, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2273120947",
+            "name": "Leonie A. Dudda"
+          },
+          {
+            "authorId": "2260564418",
+            "name": "Eva Kormann"
+          },
+          {
+            "authorId": "1669512728",
+            "name": "Magdalena Kozula"
+          },
+          {
+            "authorId": "4262386",
+            "name": "N. Devito"
+          },
+          {
+            "authorId": "51924391",
+            "name": "Thomas Klebel"
+          },
+          {
+            "authorId": "2354564290",
+            "name": "A. P. M. Dewi"
+          },
+          {
+            "authorId": "2260564911",
+            "name": "René Spijker"
+          },
+          {
+            "authorId": "2244176771",
+            "name": "I. Stegeman"
+          },
+          {
+            "authorId": "1657333996",
+            "name": "Veerle Van den Eynden"
+          },
+          {
+            "authorId": "1403766183",
+            "name": "Tony Ross-Hellauer"
+          },
+          {
+            "authorId": "2253669279",
+            "name": "M. Leeflang"
+          }
+        ],
+        "abstract": "Various open science practices have been proposed to improve the reproducibility and replicability of scientific research, but not for all practices, there may be evidence they are indeed effective. Therefore, we conducted a scoping review of the literature on interventions to improve reproducibility. We systematically searched Medline, Embase, Web of Science, PsycINFO, Scopus and Eric, on 18 August 2023. Any study empirically evaluating the effectiveness of interventions aimed at improving the reproducibility or replicability of scientific methods and findings was included. We summarized the retrieved evidence narratively and in evidence gap maps. Of the 105 distinct studies we included, 15 directly measured the effect of an intervention on reproducibility or replicability, while the remainder addressed a proxy outcome that might be expected to increase reproducibility or replicability, such as data sharing, methods transparency or pre-registration. Thirty studies were non-comparative and 27 were comparative but cross-sectional observational designs, precluding any causal inference. Despite studies investigating a range of interventions and addressing various outcomes, our findings indicate that in general the evidence base for which various interventions to improve reproducibility of research remains remarkably limited in many respects."
+      },
+      {
+        "paperId": "4c913d59d150fe7581386b87dfd9f90448a9adee",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2409-11363",
+          "ArXiv": "2409.11363",
+          "DOI": "10.48550/arXiv.2409.11363",
+          "CorpusId": 272694423
+        },
+        "title": "CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark",
+        "venue": "Trans. Mach. Learn. Res.",
+        "year": 2024,
+        "citationCount": 61,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.11363, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2274102473",
+            "name": "Zachary S. Siegel"
+          },
+          {
+            "authorId": "39893263",
+            "name": "Sayash Kapoor"
+          },
+          {
+            "authorId": "2321455743",
+            "name": "Nitya Nagdir"
+          },
+          {
+            "authorId": "2309175570",
+            "name": "Benedikt Stroebl"
+          },
+          {
+            "authorId": "2064013115",
+            "name": "Arvind Narayanan"
+          }
+        ],
+        "abstract": "AI agents have the potential to aid users on a variety of consequential tasks, including conducting scientific research. To spur the development of useful agents, we need benchmarks that are challenging, but more crucially, directly correspond to real-world tasks of interest. This paper introduces such a benchmark, designed to measure the accuracy of AI agents in tackling a crucial yet surprisingly challenging aspect of scientific research: computational reproducibility. This task, fundamental to the scientific process, involves reproducing the results of a study using the provided code and data. We introduce CORE-Bench (Computational Reproducibility Agent Benchmark), a benchmark consisting of 270 tasks based on 90 scientific papers across three disciplines (computer science, social science, and medicine). Tasks in CORE-Bench consist of three difficulty levels and include both language-only and vision-language tasks. We provide an evaluation system to measure the accuracy of agents in a fast and parallelizable way, saving days of evaluation time for each run compared to a sequential implementation. We evaluated two baseline agents: the general-purpose AutoGPT and a task-specific agent called CORE-Agent. We tested both variants using two underlying language models: GPT-4o and GPT-4o-mini. The best agent achieved an accuracy of 21% on the hardest task, showing the vast scope for improvement in automating routine scientific tasks. Having agents that can reproduce existing work is a necessary step towards building agents that can conduct novel research and could verify and improve the performance of other research agents. We hope that CORE-Bench can improve the state of reproducibility and spur the development of future research agents."
+      },
+      {
+        "paperId": "b173aa7013912fed7055233be2dea4428f77eceb",
+        "externalIds": {
+          "DBLP": "journals/aim/SemmelrockRKTHTK25",
+          "ArXiv": "2406.14325",
+          "DOI": "10.48550/arXiv.2406.14325",
+          "CorpusId": 270619899
+        },
+        "title": "Reproducibility in Machine Learning-based Research: Overview, Barriers and Drivers",
+        "venue": "The AI Magazine",
+        "year": 2024,
+        "citationCount": 72,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.14325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "48805883",
+            "name": "Harald Semmelrock"
+          },
+          {
+            "authorId": "2277609888",
+            "name": "Tony Ross-Hellauer"
+          },
+          {
+            "authorId": "1689513",
+            "name": "Simone Kopeinik"
+          },
+          {
+            "authorId": "2127270",
+            "name": "Dieter Theiler"
+          },
+          {
+            "authorId": "2181440510",
+            "name": "Armin Haberl"
+          },
+          {
+            "authorId": "2259939451",
+            "name": "Stefan Thalmann"
+          },
+          {
+            "authorId": "2259955606",
+            "name": "Dominik Kowald"
+          }
+        ],
+        "abstract": "Many research fields are currently reckoning with issues of poor levels of reproducibility. Some label it a “crisis,” and research employing or building machine learning (ML) models is no exception. Issues including lack of transparency, data or code, poor adherence to standards, and the sensitivity of ML training conditions mean that many papers are not even reproducible in principle. Where they are, though, reproducibility experiments have found worryingly low degrees of similarity with original results. Despite previous appeals from ML researchers on this topic and various initiatives from conference reproducibility tracks to the ACM's new Emerging Interest Group on Reproducibility and Replicability, we contend that the general community continues to take this issue too lightly. Poor reproducibility threatens trust in and integrity of research results. Therefore, in this article, we lay out a new perspective on the key barriers and drivers (both procedural and technical) to increased reproducibility at various levels (methods, code, data, and experiments). We then map the drivers to the barriers to give concrete advice for strategies for researchers to mitigate reproducibility issues in their own work, to lay out key areas where further research is needed in specific areas, and to further ignite discussion on the threat presented by these urgent issues."
+      },
+      {
+        "paperId": "c426786bcc98f0f5fb7541ef467d6de89909c65d",
+        "externalIds": {
+          "PubMedCentral": "11273742",
+          "DOI": "10.3390/bioengineering11070643",
+          "CorpusId": 270723596,
+          "PubMed": "39061725"
+        },
+        "title": "Radiomics and Deep Features: Robust Classification of Brain Hemorrhages and Reproducibility Analysis Using a 3D Autoencoder Neural Network",
+        "venue": "Bioengineering",
+        "year": 2024,
+        "citationCount": 68,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://www.mdpi.com/2306-5354/11/7/643/pdf?version=1719232156",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11273742, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "66670390",
+            "name": "S. Bijari"
+          },
+          {
+            "authorId": "2283536611",
+            "name": "Sahar Sayfollahi"
+          },
+          {
+            "authorId": "2308179241",
+            "name": "Shiwa Mardokh-Rouhani"
+          },
+          {
+            "authorId": "2313283364",
+            "name": "Sahar Bijari"
+          },
+          {
+            "authorId": "1573492520",
+            "name": "Sadegh Moradian"
+          },
+          {
+            "authorId": "2308178962",
+            "name": "Ziba Zahiri"
+          },
+          {
+            "authorId": "83544268",
+            "name": "S. M. Rezaeijo"
+          }
+        ],
+        "abstract": "This study evaluates the reproducibility of machine learning models that integrate radiomics and deep features (features extracted from a 3D autoencoder neural network) to classify various brain hemorrhages effectively. Using a dataset of 720 patients, we extracted 215 radiomics features (RFs) and 15,680 deep features (DFs) from CT brain images. With rigorous screening based on Intraclass Correlation Coefficient thresholds (>0.75), we identified 135 RFs and 1054 DFs for analysis. Feature selection techniques such as Boruta, Recursive Feature Elimination (RFE), XGBoost, and ExtraTreesClassifier were utilized alongside 11 classifiers, including AdaBoost, CatBoost, Decision Trees, LightGBM, Logistic Regression, Naive Bayes, Neural Networks, Random Forest, Support Vector Machines (SVM), and k-Nearest Neighbors (k-NN). Evaluation metrics included Area Under the Curve (AUC), Accuracy (ACC), Sensitivity (SEN), and F1-score. The model evaluation involved hyperparameter optimization, a 70:30 train–test split, and bootstrapping, further validated with the Wilcoxon signed-rank test and q-values. Notably, DFs showed higher accuracy. In the case of RFs, the Boruta + SVM combination emerged as the optimal model for AUC, ACC, and SEN, while XGBoost + Random Forest excelled in F1-score. Specifically, RFs achieved AUC, ACC, SEN, and F1-scores of 0.89, 0.85, 0.82, and 0.80, respectively. Among DFs, the ExtraTreesClassifier + Naive Bayes combination demonstrated remarkable performance, attaining an AUC of 0.96, ACC of 0.93, SEN of 0.92, and an F1-score of 0.92. Distinguished models in the RF category included SVM with Boruta, Logistic Regression with XGBoost, SVM with ExtraTreesClassifier, CatBoost with XGBoost, and Random Forest with XGBoost, each yielding significant q-values of 42. In the DFs realm, ExtraTreesClassifier + Naive Bayes, ExtraTreesClassifier + Random Forest, and Boruta + k-NN exhibited robustness, with 43, 43, and 41 significant q-values, respectively. This investigation underscores the potential of synergizing DFs with machine learning models to serve as valuable screening tools, thereby enhancing the interpretation of head CT scans for patients with brain hemorrhages."
+      },
+      {
+        "paperId": "943864f7212471732058980fd035aea1b3bf65d2",
+        "externalIds": {
+          "DOI": "10.1002/adma.202407859",
+          "CorpusId": 272335900,
+          "PubMed": "39223852"
+        },
+        "title": "Flexible Temperature Sensor with High Reproducibility and Wireless Closed‐Loop System for Decoupled Multimodal Health Monitoring and Personalized Thermoregulation",
+        "venue": "Advances in Materials",
+        "year": 2024,
+        "citationCount": 57,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/adma.202407859?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/adma.202407859, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1882139658",
+            "name": "Xujing Zhang"
+          },
+          {
+            "authorId": "2282903894",
+            "name": "Jiaxiang Chen"
+          },
+          {
+            "authorId": "2277988345",
+            "name": "Zhihao Zheng"
+          },
+          {
+            "authorId": "2319606255",
+            "name": "Songsong Tang"
+          },
+          {
+            "authorId": "2290746433",
+            "name": "Bin Cheng"
+          },
+          {
+            "authorId": "2317416401",
+            "name": "Zhiwei Zhang"
+          },
+          {
+            "authorId": "66906956",
+            "name": "R. Ma"
+          },
+          {
+            "authorId": "2111435016",
+            "name": "Zetong Chen"
+          },
+          {
+            "authorId": "2005364704",
+            "name": "Jingting Zhuo"
+          },
+          {
+            "authorId": "2178684959",
+            "name": "Lingyun Cao"
+          },
+          {
+            "authorId": "2319383523",
+            "name": "Zhihong Chen"
+          },
+          {
+            "authorId": "2284040867",
+            "name": "Jiangfeng He"
+          },
+          {
+            "authorId": "2277987830",
+            "name": "Xiaofeng Wang"
+          },
+          {
+            "authorId": "2216270632",
+            "name": "Guowei Yang"
+          },
+          {
+            "authorId": "2160123999",
+            "name": "Fang Yi"
+          }
+        ],
+        "abstract": "Temperature and pulse waves are two fundamental indicators of body health. Specifically, thermoresistive flexible temperature sensors are one of the most applied sensors. However, they suffer from poor reproducibility of resistivity; and decoupling temperature from pressure/strain is still challenging. Besides, autonomous thermoregulation by wearable sensory systems is in high demand, but conventional commercial apparatuses are cumbersome and not suitable for long‐term portable use. Here, a material‐design strategy is developed to overcome the problem of poor reproducibility of resistivity by tuning the thermal expansion coefficient to nearly zero, precluding the detriment caused by shape expansion/shrinkage with temperature variation and achieving high reproducibility. The strategy also obtains more reliable sensitivity and higher stability, and the designed thermoresistive fiber has strain‐insensitive sensing performance and fast response/recovery time. A smart textile woven by the thermoresistive fiber can decouple temperature and pulse without crosstalk; and a flexible wireless closed‐loop system comprising the smart textile, a heating textile, a flexible diminutive control patch, and a smartphone is designed and constructed to monitor health status in real‐time and autonomously regulate body temperature. This work offers a new route to circumvent temperature‐sensitive effects for flexible sensors and new insights for personalized thermoregulation."
+      },
+      {
+        "paperId": "e627e71bdbdddd66873d0f97c5b855ad1f4011da",
+        "externalIds": {
+          "PubMedCentral": "12068871",
+          "DOI": "10.1101/2022.05.09.491042",
+          "CorpusId": 260870190,
+          "PubMed": "40354112"
+        },
+        "title": "Reproducibility of in vivo electrophysiological measurements in mice",
+        "venue": "bioRxiv",
+        "year": 2024,
+        "citationCount": 46,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12068871, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2164905075",
+            "name": "Kush Banga"
+          },
+          {
+            "authorId": "2164903254",
+            "name": "Julius Benson"
+          },
+          {
+            "authorId": "1740594061",
+            "name": "Jai Bhagat"
+          },
+          {
+            "authorId": "50733319",
+            "name": "D. Biderman"
+          },
+          {
+            "authorId": "21384801",
+            "name": "D. Birman"
+          },
+          {
+            "authorId": "3401977",
+            "name": "Niccolò Bonacchi"
+          },
+          {
+            "authorId": "41033414",
+            "name": "Sebastian A. Bruijns"
+          },
+          {
+            "authorId": "2252195221",
+            "name": "R. A. Campbell"
+          },
+          {
+            "authorId": "3172042",
+            "name": "M. Carandini"
+          },
+          {
+            "authorId": "46183424",
+            "name": "Gaëlle A. Chapuis"
+          },
+          {
+            "authorId": "3786556",
+            "name": "A. Churchland"
+          },
+          {
+            "authorId": "5259710",
+            "name": "M. F. Davatolhagh"
+          },
+          {
+            "authorId": "2165117158",
+            "name": "Hyun Dong Lee"
+          },
+          {
+            "authorId": "2497451",
+            "name": "Mayo Faulkner"
+          },
+          {
+            "authorId": "91083762",
+            "name": "Berk Gerçek"
+          },
+          {
+            "authorId": "2064993672",
+            "name": "Fei Hu"
+          },
+          {
+            "authorId": "8223789",
+            "name": "Julia M. Huntenburg"
+          },
+          {
+            "authorId": "51251174",
+            "name": "C. Hurwitz"
+          },
+          {
+            "authorId": "2056334075",
+            "name": "Anup Khanal"
+          },
+          {
+            "authorId": "47388085",
+            "name": "Christopher S. Krasniak"
+          },
+          {
+            "authorId": "6482051",
+            "name": "Guido T. Meijer"
+          },
+          {
+            "authorId": "14535921",
+            "name": "Nathaniel J. Miska"
+          },
+          {
+            "authorId": "2164904194",
+            "name": "Zeinab Mohammadi"
+          },
+          {
+            "authorId": "4240259",
+            "name": "Jean-Paul Noel"
+          },
+          {
+            "authorId": "1763504",
+            "name": "L. Paninski"
+          },
+          {
+            "authorId": "1404078942",
+            "name": "Alejandro Pan-Vazquez"
+          },
+          {
+            "authorId": "153882024",
+            "name": "N. Roth"
+          },
+          {
+            "authorId": "2210499944",
+            "name": "Michael M Schartner"
+          },
+          {
+            "authorId": "2099828585",
+            "name": "Karolina Z. Socha"
+          },
+          {
+            "authorId": "2070378",
+            "name": "Nicholas A. Steinmetz"
+          },
+          {
+            "authorId": "49185237",
+            "name": "K. Svoboda"
+          },
+          {
+            "authorId": "40646272",
+            "name": "Marsa Taheri"
+          },
+          {
+            "authorId": "3174285",
+            "name": "Anne E. Urai"
+          },
+          {
+            "authorId": "34476462",
+            "name": "M. Wells"
+          },
+          {
+            "authorId": "50207369",
+            "name": "S. West"
+          },
+          {
+            "authorId": "4963042",
+            "name": "Matthew R Whiteway"
+          },
+          {
+            "authorId": "2095559269",
+            "name": "Olivier Winter"
+          },
+          {
+            "authorId": "6175947",
+            "name": "I. Witten"
+          }
+        ],
+        "abstract": "Understanding brain function relies on the collective work of many labs generating reproducible results. However, reproducibility has not been systematically assessed within the context of electrophysiological recordings during cognitive behaviors. To address this, we formed a multi-lab collaboration using a shared, open-source behavioral task and experimental apparatus. Experimenters in ten laboratories repeatedly targeted Neuropixels probes to the same location (spanning secondary visual areas, hippocampus, and thalamus) in mice making decisions; this generated a total of 121 experimental replicates, a unique dataset for evaluating reproducibility of electrophysiology experiments. Despite standardizing both behavioral and electrophysiological procedures, some experimental outcomes were highly variable. A closer analysis uncovered that variability in electrode targeting hindered reproducibility, as did the limited statistical power of some routinely used electrophysiological analyses, such as single-neuron tests of modulation by individual task parameters. Reproducibility was enhanced by histological and electrophysiological quality-control criteria. Our observations suggest that data from systems neuroscience is vulnerable to a lack of reproducibility, but that across-lab standardization, including metrics we propose, can serve to mitigate this."
+      },
+      {
+        "paperId": "21bbf82630e8353b3facbd1ae5743674649f5af7",
+        "externalIds": {
+          "DOI": "10.1038/d41586-024-04253-w",
+          "CorpusId": 275755874,
+          "PubMed": "39833523"
+        },
+        "title": "'Publish or perish' culture blamed for reproducibility crisis.",
+        "venue": "Nature",
+        "year": 2025,
+        "citationCount": 14,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/d41586-024-04253-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/d41586-024-04253-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2283912854",
+            "name": "Laurie Udesky"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "2e2ca71b9fe364380d6fa25a6492bf827185a632",
+        "externalIds": {
+          "ArXiv": "2403.13784",
+          "CorpusId": 270213510
+        },
+        "title": "The Model Openness Framework: Promoting Completeness and Openness for Reproducibility, Transparency, and Usability in Artificial Intelligence",
+        "venue": "",
+        "year": 2024,
+        "citationCount": 39,
+        "influentialCitationCount": 4,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.13784, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2293236080",
+            "name": "M. White"
+          },
+          {
+            "authorId": "2292261686",
+            "name": "Ibrahim Haddad"
+          },
+          {
+            "authorId": "2295731068",
+            "name": "Cailean Osborne"
+          },
+          {
+            "authorId": "2292348797",
+            "name": "Xiao-Yang Liu"
+          },
+          {
+            "authorId": "2166001598",
+            "name": "Ahmed Abdelmonsef"
+          },
+          {
+            "authorId": "2292261950",
+            "name": "Sachin Varghese"
+          },
+          {
+            "authorId": "1727006",
+            "name": "A. L. Hors"
+          }
+        ],
+        "abstract": "Generative artificial intelligence (AI) offers numerous opportunities for research and innovation, but its commercialization has raised concerns about the transparency and safety of frontier AI models. Most models lack the necessary components for full understanding, auditing, and reproducibility, and some model producers use restrictive licenses whilst claiming that their models are\"open source\". To address these concerns, we introduce the Model Openness Framework (MOF), a three-tiered ranked classification system that rates machine learning models based on their completeness and openness, following open science principles. For each MOF class, we specify code, data, and documentation components of the model development lifecycle that must be released and under which open licenses. In addition, the Model Openness Tool (MOT) provides a user-friendly reference implementation to evaluate the openness and completeness of models against the MOF classification system. Together, the MOF and MOT provide timely practical guidance for (i) model producers to enhance the openness and completeness of their publicly-released models, and (ii) model consumers to identify open models and their constituent components that can be permissively used, studied, modified, and redistributed. Through the MOF, we seek to establish completeness and openness as core tenets of responsible AI research and development, and to promote best practices in the burgeoning open AI ecosystem."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "methodology disclosure",
+    "results": [
+      {
+        "paperId": "b9d034497f69df9f75f919ca08cce3cd1daf3865",
+        "externalIds": {
+          "DBLP": "journals/symmetry/CorreiaRM24",
+          "DOI": "10.3390/sym16101296",
+          "CorpusId": 273056789
+        },
+        "title": "LSTM Gate Disclosure as an Embedded AI Methodology for Wearable Fall-Detection Sensors",
+        "venue": "Symmetry",
+        "year": 2024,
+        "citationCount": 4,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.3390/sym16101296",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/sym16101296?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/sym16101296, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "51474390",
+            "name": "S. D. Correia"
+          },
+          {
+            "authorId": "151174256",
+            "name": "Pedro M. Roque"
+          },
+          {
+            "authorId": "1413070832",
+            "name": "J. Matos-Carvalho"
+          }
+        ],
+        "abstract": "In this paper, the concept of symmetry is used to design the efficient inference of a fall-detection algorithm for elderly people on embedded processors—that is, there is a symmetric relation between the model’s structure and the memory footprint on the embedded processor. Artificial intelligence (AI) and, more particularly, Long Short-Term Memory (LSTM) neural networks are commonly used in the detection of falls in the elderly population based on acceleration measures. Nevertheless, embedded systems that may be utilized on wearable or wireless sensor networks have a hurdle due to the customarily massive dimensions of those networks. Because of this, the algorithms’ most popular implementation relies on edge or cloud computing, which raises privacy concerns and presents challenges since a lot of data need to be sent via a communication channel. The current work proposes a memory occupancy model for LSTM-type networks to pave the way to more efficient embedded implementations. Also, it offers a sensitivity analysis of the network hyper-parameters through a grid search procedure to refine the LSTM topology network under scrutiny. Lastly, it proposes a new methodology that acts over the quantization granularity for the embedded AI implementation on wearable devices. The extensive simulation results demonstrate the effectiveness and feasibility of the proposed methodology. For the embedded implementation of the LSTM for the fall-detection problem on a wearable platform, one can see that an STM8L low-power processor could support a 40-hidden-cell LSTM network with an accuracy of 96.52%."
+      },
+      {
+        "paperId": "c45179d627f9351a94c664d21052fed1be70975a",
+        "externalIds": {
+          "DOI": "10.1089/aut.2022.0090",
+          "CorpusId": 257130295,
+          "PubMed": "38116059"
+        },
+        "title": "Using Experience Sampling Methodology to Capture Disclosure Opportunities for Autistic Adults",
+        "venue": "Autism in Adulthood",
+        "year": 2023,
+        "citationCount": 17,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/aut.2022.0090?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/aut.2022.0090, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "46185273",
+            "name": "Abigail M. A. Love"
+          },
+          {
+            "authorId": "2069860202",
+            "name": "Christopher J. Edwards"
+          },
+          {
+            "authorId": "11450626",
+            "name": "R. Cai"
+          },
+          {
+            "authorId": "46482120",
+            "name": "Vicki Gibbs"
+          }
+        ],
+        "abstract": "Background: Despite a recent surge in literature contributing to our understanding of autistic individuals' disclosure experiences, the findings remain mixed. Research based on autistic people's perspective often indicates negative outcomes, while research that focuses on nonautistic perspectives is more positive. In addition, no disclosure study has used ecologically valid research methods, which help to reduce the risk of memory biases and are more representative of real-world experiences. The aim of this research was to capture outcomes from real-world disclosure opportunities as reported by a diverse range of autistic adults. Methods: Thirty-six autistic adults reported their disclosure opportunities through experience sampling methodology (58% female, 28% male, and 14% nonbinary), multiple times per day or week for 2 months. Importantly, we embedded coproduction from conception to dissemination, ensuring that the outputs are relevant and beneficial for the autistic community. Results: In total, participants recorded 231 disclosure opportunities (M = 6.42, SD = 4.83). Two-thirds of opportunities (n = 153) were categorized as disclosure, where the participants decided to share they were autistic, and 33.8% (n = 78) were labeled nondisclosure, where the participants decided not to share that they were autistic. Qualitative thematic analysis of open responses resulted in five themes that illustrated the thought processes during disclosure opportunities, the reactions of others, and reflections following disclosure for autistic adults in our study. Conclusion: These findings show that disclosure decisions and outcomes are complex and are influenced by both internal and external factors. Both support for autistic adults navigating this process and knowledge for nonautistic individuals on the experiences of their autistic friends, family, and community members will help to alleviate negative experiences and improve the mental well-being of autistic adults who face these decisions daily. Community brief Why is this an important issue? Disclosure is choosing to tell someone that you are autistic. Nondisclosure is choosing not to tell someone you are autistic. This can be difficult for many people and can have a significant impact on their life. What was the purpose of this study? We wanted to explore disclosure opportunities for autistic people. We wanted to know what these experiences looked like over 2 months and on a daily basis. What did the researchers do? The research team asked autistic adults to complete a survey through a smartphone application every time they considered sharing that they were autistic over 2 months. The questions asked participants about their thoughts, feelings, and behaviors right after the experience. What were the results of the study? Our participants shared 231 disclosure opportunities with us over 2 months. Some people shared no experiences, while others shared up to 19 experiences. On average, people shared six experiences. People told us how these opportunities went, and we found five common threads (“themes”) across their experiences. First, when deciding whether to disclose or not, autistic people considered how safe they felt in their environment and with the people around them. Autistic people often thought about what they were hoping to gain by disclosing, and if there was nothing to gain, they decided against it. We learned that disclosure takes a lot of energy. We also learned that other people responded to disclosure in positive, neutral, and negative ways across all contexts. Finally, we found that our participants tried to learn from their experiences before the next time they thought about disclosure. What do these findings add to what was already known? Our findings were similar to previous research that explored how complex autistic disclosure is. However, by gathering information in real time (instead of relying on recall), we learned that a decision to disclose is not only weighing up personal advantages and disadvantages, but also takes into consideration how safe the person feels in a particular environment and how much energy they feel they have at the time. We also learned that sometimes people do not disclose because they are worried about how someone might respond, but other times they simply feel there is no benefit to disclosure. What are the potential weaknesses in the study? We understand that the experiences of our participants may not apply to all autistic people. Also, because participants had to use a computer or smartphone to be in the study, the findings may be different for individuals who were not able to participate. How will these findings help autistic adults now or in the future? The findings help us to listen to autistic voices and learn about their experiences. We have used the results to make resource guides. This includes a guide for autistic people (including an easy English version) and a guide for nonautistic people. These resource guides can be found within the Supplementary Data, on our research website, or by getting in touch with the authorship team. Link to “a guide for autistic people” https://www.autismspectrum.org.au/uploads/documents/Research/Disclosure-opportunities-resource-guide-for-Autistic-people-Easy-English.pdf Link to “easy English version” https://www.autismspectrum.org.au/uploads/documents/Research/Disclosure-opportunities-resource-guide-for-Autistic-people_2022-12-12-005526_vgvt.pdf Link to “non-autistic people” https://www.autismspectrum.org.au/Supporting-Autistic-people-who-may-want-to-disclose"
+      },
+      {
+        "paperId": "fc17dbc8961decfc45c3dfb57471df9b705747ec",
+        "externalIds": {
+          "DOI": "10.26794/2408-9303-2021-8-6-6-20",
+          "CorpusId": 246072811
+        },
+        "title": "Methodology for researching corporate disclosure of business social responsibility: Information base and stages of implementation",
+        "venue": "Accounting Analysis Auditing",
+        "year": 2022,
+        "citationCount": 4,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://accounting.fa.ru/jour/article/download/427/386",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.26794/2408-9303-2021-8-6-6-20?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.26794/2408-9303-2021-8-6-6-20, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "3725477",
+            "name": "O. Efimova"
+          },
+          {
+            "authorId": "123118398",
+            "name": "O. Rozhnova"
+          }
+        ],
+        "abstract": "This article continues a series of publications on the issues of accounting, analysis and assessment of the corporate social responsibility in a rapidly changing environment when society and business face new challenges. The authors provide methodological solutions to the problem of studying the social responsibility of Russian public companies based on the analysis of data disclosed in their financial and non-financial statements. The research uses abduction methods; logical analysis; logical content analysis of financial and non-financial reporting standards in terms of requirements for disclosure of social aspects; expert analysis of social reporting of Russian companies; linguistic analysis in order to identify the practice of using certain terms and concepts in the financial and non-financial reporting. The analysis of corporate reporting standards made it possible to propose a new model for analyzing disclosures in the field of corporate social responsibility. The authors reveal the most important issues of the corporate social responsibility by assessing the trends in the social sphere, identifying opportunities and threats for its further development connected with the evolution of society, economy and ecology, ongoing digitalization processes. Procedures of researching business social responsibility are developed and fully described. The documentary base of the research includes International Financial Reporting Standards, Sustainable Development Reporting Standards, Basic Performance Indicators of the Russian Union of Industrialists and Entrepreneurs (RSPP) as well as financial and non-financial reports of Russian companies operating in production industries. The results of the research are the proposals to apply the multi-stage approach, which makes it possible to assess the social responsibility of certain economic entities through the prism of global tasks the country and the world community face with. The analysis of the complex problems of business and civilization allows us to identify five top problems in the light of which the social responsibility of large companies should be assessed, as well as to build a logical connection between these top problems and the key topics of disclosures in corporate reports."
+      },
+      {
+        "paperId": "f47cf6bae967a5f6fb9ea908055b5ac8503ab6c1",
+        "externalIds": {
+          "DOI": "10.1108/jal-08-2023-0143",
+          "CorpusId": 266829144
+        },
+        "title": "Theories underlying environmental, social and governance (ESG) disclosure: a systematic review of accounting studies",
+        "venue": "Journal of Accounting Literature",
+        "year": 2024,
+        "citationCount": 114,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "https://air.unimi.it/bitstream/2434/1022978/2/Author%20Accepted%20Manuscript.pdf",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/jal-08-2023-0143?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/jal-08-2023-0143, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2278330059",
+            "name": "Carla Del Gesso"
+          },
+          {
+            "authorId": "40994599",
+            "name": "R. Lodhi"
+          }
+        ],
+        "abstract": "PurposeEnvironmental, social and governance (ESG) disclosure has gained momentum in corporate reporting. Addressing a research gap on the subject, this paper aims to explore the theories involved in ESG disclosure studies, thereby shedding light on the dominant theoretical approaches and emerging perspectives that inform this type of disclosure.Design/methodology/approachA systematic review of 142 selected accounting studies published up to June 2023 devoted to ESG – and corporate social responsibility (CSR) – disclosure was conducted. The theories underlying these studies were examined through a descriptive performance analysis complemented by a systematic qualitative text analysis using RStudio and QDA Miner software tools.FindingsThe study reveals that five dominant theories stand out among the overall 32 found: stakeholder theory first, followed by legitimacy, institutional, agency and signaling theories. Theories are often combined into an integrated theoretical framework. The findings also show an array of minor constructs – many of them unconventional – that offer fresh perspectives for studying ESG disclosure, such as upper echelons, stakeholder salience, cognitive cost and reputation theories, among others.Originality/valueThis paper provides an original literature contribution by offering a comprehensive overview of the mainstream and niche theoretical perspectives underpinning accounting studies focused on ESG disclosure, with a nuanced scope of discussion on the use of ESG/CSR terms."
+      },
+      {
+        "paperId": "c6b29892664a2681c4e7ac2aca14ea18bb988824",
+        "externalIds": {
+          "DOI": "10.3390/admsci15040141",
+          "CorpusId": 277814515
+        },
+        "title": "Board Gender Diversity and Environmental, Social, and Governance (ESG) Disclosure in Developed Countries",
+        "venue": "Administrative Sciences",
+        "year": 2025,
+        "citationCount": 23,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.3390/admsci15040141",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/admsci15040141?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/admsci15040141, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "107636637",
+            "name": "C. M. Omenihu"
+          },
+          {
+            "authorId": "2355545013",
+            "name": "Madina Abdrakhmanova"
+          },
+          {
+            "authorId": "2267383382",
+            "name": "Dimitrios N. Koufopoulos"
+          }
+        ],
+        "abstract": "This paper examines the relationship between board gender diversity and Environmental, Social, and Governance (ESG) disclosure in developed economies. Using a sample of forty-five firms across developed countries between 2012 and 2023, the analysis employs Bloomberg’s ESG disclosure score as a proxy. In terms of methodology, both pooled ordinary least squares (OLS) and fixed effects regression models are employed. However, to mitigate potential endogeneity concerns, the study employs an instrumental variable approach and dynamic panel regression techniques to provide robust causal inference. The findings offer two significant insights. In accordance with critical mass theory, firms with a minimum of three female directors demonstrate a significant positive relationship between board gender diversity and ESG disclosure. This indicates that achieving a critical level of female representation is essential for fostering meaningful improvements in ESG disclosure scores. Second, firms with merely one or two female directors, often considered token representation, exhibit a negative significant impact on ESG disclosure. Additionally, within the UK context, board gender diversity is positively associated with ESG disclosure, suggesting that institutional frameworks and regulatory environment shape this relationship."
+      },
+      {
+        "paperId": "7ff33d0c638e4ce1543988ac2996c91c026ae5ee",
+        "externalIds": {
+          "DOI": "10.1108/jed-02-2024-0067",
+          "CorpusId": 277671935
+        },
+        "title": "Corporate social responsibility disclosure and firm value: a signaling theory perspective",
+        "venue": "Journal of economic development",
+        "year": 2025,
+        "citationCount": 20,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/jed-02-2024-0067?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/jed-02-2024-0067, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2309146477",
+            "name": "V. Nguyen"
+          }
+        ],
+        "abstract": "PurposeThis study investigates the impact of corporate social responsibility (CSR) disclosure on firm value and the moderating roles of largely under-examined contextual factors such as mandatory disclosure policy, industry profile and local institutional environment.Design/methodology/approachPanel data techniques are used to investigate the association between CSR disclosure and firm value as well as the roles of such intervening factors.FindingsThe study finds that CSR disclosure is positively related to firm value, indicating the financial benefit of CSR disclosure. Moreover, the positive relationship is more pronounced in the post-mandatory CSRD period, non-high-profile industries and more favorable institutional environment.Practical implicationsThe study provides corporate managers with more insight into the beneficial effects of CSR disclosure and the contingency factors influencing the CSR disclosure–firm value relationship.Originality/valueThis study advances the extant knowledge of contingent effects on the market valuation of CSR reporting from a signaling theory perspective. Developing a theory to explain the relationship between CSR disclosure and firm value, this study adds arguments and empirical evidence to demonstrate that the effectiveness of CSR disclosure as a signal depends on the signaler, the receiver and the signaling environment."
+      },
+      {
+        "paperId": "6ae1c415899afe4d7756f72522a14b541529b6cd",
+        "externalIds": {
+          "DOI": "10.1108/medar-02-2024-2374",
+          "CorpusId": 276954348
+        },
+        "title": "AI adoption, ESG disclosure quality and sustainability committee heterogeneity: evidence from Chinese companies",
+        "venue": "Meditari Accountancy Research",
+        "year": 2025,
+        "citationCount": 18,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/medar-02-2024-2374?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/medar-02-2024-2374, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "70225648",
+            "name": "Khwaja Naveed"
+          },
+          {
+            "authorId": "2317166967",
+            "name": "Muhammad Bilal Farooq"
+          },
+          {
+            "authorId": "1403764787",
+            "name": "M. K. Zahir-ul-Hassan"
+          },
+          {
+            "authorId": "1577507558",
+            "name": "F. Rauf"
+          }
+        ],
+        "abstract": "Purpose\nThe purpose of this study is to examine the impact of adopting artificial intelligence (AI) on the quality of corporate sustainability reporting. The role of sustainability committees, including specialist environmental, social and governance (ESG) committees, in moderating this dynamic is also examined.\n\nDesign/methodology/approach\nRegression analysis is used to analyze the quality of ESG/sustainability disclosures of listed Chinese companies from 2015 to 2022. Robustness is ensured through fixed effects analysis, while endogeneity concerns are addressed using one-year lagged measures and the three-stage least squares (3SLS) approach. Sustainability committees are categorized based on their ESG specific focus areas, and aligned with the corresponding ESG disclosure pillars. In addition, for the governance pillar, the analysis is extended by segmenting the sample based on state ownership status. Stakeholder theory and the dynamic capability view are used to frame the analysis.\n\nFindings\nThe results reveal that AI adoption enhances overall sustainability reporting quality and pillar-specific ESG disclosure quality. This positive effect is amplified by the presence of sustainability committees. Examining the heterogeneous impact of these committees revealed stronger associations between sustainability committee specialization and relevant ESG pillar disclosure quality (except for governance), suggesting that use of specialist committees can improve disclosure outcomes. Notably, within non-state-owned enterprises, governance-focused committees positively moderate the AI−disclosure relationship, highlighting a nuanced effect based on ownership structure.\n\nPractical implications\nThe findings offer empirical support for companies to leverage AI in sustainability reporting. This study finds evidence to support the creation of sustainability committees, as a key corporate governance mechanism to drive corporate sustainability reporting. The use of specialist sustainability committees can drive improvements in disclosure quality relating to specific ESG pillars. The research indicates that disclosure over governance remains poor and will require additional regulatory effort to encourage entities to provide higher quality governance-related disclosures. In terms of ownership structure, the study found that non-state-owned enterprises are more efficient in using specialist sustainability committees to improve disclosure quality.\n\nSocial implications\nThe findings highlight the potential of AI in supporting high-quality sustainability reporting and the strategic role of sustainability committees in this dynamic. The publication of high-quality sustainability reports is critical in meeting stakeholder demands for transparency and corporate accountability on sustainability.\n\nOriginality/value\nThe findings offer insights into AI’s role in supporting high-quality sustainability reporting. By examining the moderating effects of sustainability committees, the research goes beyond examining a general impact to exploring how corporate governance mechanisms impact this relationship. In addition, the unique data on Chinese companies highlights differences between state-owned and non-state-owned enterprises, with the latter exhibiting greater potential to leverage specialist sustainability committees for improving sustainability reporting.\n"
+      },
+      {
+        "paperId": "aad70cf807131f3f2bf70f5edc5891a499476989",
+        "externalIds": {
+          "DBLP": "journals/oir/MengL25",
+          "DOI": "10.1108/oir-06-2024-0375",
+          "CorpusId": 276651509
+        },
+        "title": "\"Talk to me, I'm secure\": investigating information disclosure to AI chatbots in the context of privacy calculus",
+        "venue": "Online information review (Print)",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/oir-06-2024-0375?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/oir-06-2024-0375, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2150589108",
+            "name": "Xiaoxiao Meng"
+          },
+          {
+            "authorId": "2284938021",
+            "name": "Jiaxin Liu"
+          }
+        ],
+        "abstract": "PurposeThis study aims to explain the privacy paradox, wherein individuals, despite privacy concerns, are willing to share personal information while using AI chatbots. Departing from previous research that primarily viewed AI chatbots from a non-anthropomorphic approach, this paper contends that AI chatbots are taking on an emotional component for humans. This study thus explores this topic by considering both rational and non-rational perspectives, thereby providing a more comprehensive understanding of user behavior in digital environments.Design/methodology/approachEmploying a questionnaire survey (N = 480), this research focuses on young users who regularly engage with AI chatbots. Drawing upon the parasocial interaction theory and privacy calculus theory, the study elucidates the mechanisms governing users’ willingness to disclose information.FindingsFindings show that cognitive, emotional and behavioral dimensions all positively influence perceived benefits of using ChatGPT, which in turn enhances privacy disclosure. While cognitive, emotional and behavioral dimensions negatively impact perceived risks, only the emotional and behavioral dimensions significantly affect perceived risk, which in turn negatively influences privacy disclosure. Notably, the cognitive dimension’s lack of significant mediating effect suggests that users’ awareness of privacy risks does not deter disclosure. Instead, emotional factors drive privacy decisions, with users more likely to disclose personal information based on positive experiences and engagement with ChatGPT. This confirms the existence of the privacy paradox.Research limitations/implicationsThis study acknowledges several limitations. While the sample was adequately stratified, the focus was primarily on young users in China. Future research should explore broader demographic groups, including elderly users, to understand how different age groups engage with AI chatbots. Additionally, although the study was conducted within the Chinese context, the findings have broader applicability, highlighting the potential for cross-cultural comparisons. Differences in user attitudes toward AI chatbots may arise due to cultural variations, with East Asian cultures typically exhibiting a more positive attitude toward social AI systems compared to Western cultures. This cultural distinction—rooted in Eastern philosophies such as animism in Shintoism and Buddhism—suggests that East Asians are more likely to anthropomorphize technology, unlike their Western counterparts (Yam et al., 2023; Folk et al., 2023).Practical implicationsThe findings of this study offer valuable insights for developers, policymakers and educators navigating the rapidly evolving landscape of intelligent technologies. First, regarding technology design, the study suggests that AI chatbot developers should not focus solely on functional aspects but also consider emotional and social dimensions in user interactions. By enhancing emotional connection and ensuring transparent privacy communication, developers can significantly improve user experiences (Meng and Dai, 2021). Second, there is a pressing need for comprehensive user education programs. As users tend to prioritize perceived benefits over risks, it is essential to raise awareness about privacy risks while also emphasizing the positive outcomes of responsible information sharing. This can help foster a more informed and balanced approach to user engagement (Vimalkumar et al., 2021). Third, cultural and ethical considerations must be incorporated into AI chatbot design. In collectivist societies like China, users may prioritize emotional satisfaction and societal harmony over privacy concerns (Trepte, 2017; Johnston, 2009). Developers and policymakers should account for these cultural factors when designing AI systems. Furthermore, AI systems should communicate privacy policies clearly to users, addressing potential vulnerabilities and ensuring that users are aware of the extent to which their data may be exposed (Wu et al., 2024). Lastly, as AI chatbots become deeply integrated into daily life, there is a growing need for societal discussions on privacy norms and trust in AI systems. This research prompts a reflection on the evolving relationship between technology and personal privacy, especially in societies where trust is shaped by cultural and emotional factors. Developing frameworks to ensure responsible AI practices while fostering user trust is crucial for the long-term societal integration of AI technologies (Nah et al., 2023).Originality/valueThe study’s findings not only draw deeper theoretical insights into the role of emotions in generative artificial intelligence (gAI) chatbot engagement, enriching the emotional research orientation and framework concerning chatbots, but they also contribute to the literature on human–computer interaction and technology acceptance within the framework of the privacy calculus theory, providing practical insights for developers, policymakers and educators navigating the evolving landscape of intelligent technologies."
+      },
+      {
+        "paperId": "c4b662d04e9657a1e4e24987a55706d99f9f4e6a",
+        "externalIds": {
+          "DOI": "10.1007/s43621-025-00930-6",
+          "CorpusId": 276713974
+        },
+        "title": "Dictionary-based assessment of European Sustainability Reporting Standard (ESRS) disclosure topics",
+        "venue": "Discover Sustainability",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.1007/s43621-025-00930-6",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s43621-025-00930-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s43621-025-00930-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1664865302",
+            "name": "A. Suta"
+          },
+          {
+            "authorId": "2277566035",
+            "name": "Péter Molnár"
+          },
+          {
+            "authorId": "2348015086",
+            "name": "Zétény Limbach"
+          },
+          {
+            "authorId": "2054379682",
+            "name": "Árpád Tóth"
+          }
+        ],
+        "abstract": "As the imperative for sustainable business practices and corporate responsibility has grown, the analysis and integration of Environmental, Social, and Governance (ESG) issues into corporate strategies has become a crucial aspect of business strategy. The paper assesses the ESG reporting preparedness of companies in the Central and Eastern European (CEE) region by analyzing their compliance with the European Sustainability Reporting Standards (ESRS). The study assesses the variability in disclosures across ESG pillars and examines their relationship with financial metrics using a test of independence and bootstrapped multiple regression. By employing an automated text analysis methodology on sustainability reports from top-performing companies, including Hungary, the Czech Republic, Poland, Austria, Slovenia, and Romania, the research identifies significant differences in reporting scores across various ESG disclosure topics. The results indicate that Climate Change (E1) scores are higher than those of other topics, suggesting an uneven emphasis on different aspects of sustainability. Furthermore, the analysis reveals that larger companies tend to achieve higher ESG scores, reflecting their greater resources for comprehensive and transparent reporting practices. The research contributes to the understanding of ESG reporting practices in the CEE region and highlights the importance of improvement in sustainability reporting to foster greater transparency and comparability. The findings suggest policy initiatives to encourage balanced reporting across all ESG topics and that companies, particularly smaller ones, could benefit from capacity-building efforts to enhance their reporting capabilities."
+      },
+      {
+        "paperId": "edf4e3e7f5e2ebe229d4fc95761f49474f3100c4",
+        "externalIds": {
+          "DOI": "10.1108/md-10-2024-2480",
+          "CorpusId": 279848376
+        },
+        "title": "The effect of ESG disclosure on firm value in the European context",
+        "venue": "Management Decision",
+        "year": 2025,
+        "citationCount": 10,
+        "influentialCitationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/md-10-2024-2480?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/md-10-2024-2480, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "47466712",
+            "name": "A. Mahmood"
+          },
+          {
+            "authorId": "2064257261",
+            "name": "Asad Mehmood"
+          },
+          {
+            "authorId": "2362784305",
+            "name": "Simone Terzani"
+          },
+          {
+            "authorId": "1738387057",
+            "name": "Francesco De Luca"
+          },
+          {
+            "authorId": "2570657",
+            "name": "H. Djajadikerta"
+          }
+        ],
+        "abstract": "PurposeThe environmental, social and governance (ESG) topic has recently received increasing attention from scholars due to increasing regulations for firms’ non-financial disclosure with respect to environmental and social issues. For instance, the European Union (EU) recently issued the Corporate Sustainability Reporting Directive (CSRD) in December 2022 and implemented it starting in 2024 in member states. Non-financial disclosure is relevant for various stakeholders and could affect firm value. Therefore, this study aims to examine the effect of ESG disclosure on firm value in the EU context.Design/methodology/approachThis study uses panel data on listed EU firms extracted from the Bloomberg database from 2014 to 2024. The final sample comprises 11,003 firm-year observations. The ordinary least squares method is used as a baseline regression. This study addresses the endogeneity issues by applying instrumental variable and two-step system dynamic panel generalised method of moments approaches.FindingsThe results of the univariate tests, including the mean-difference comparison test based on pre-CSRD and CSRD issuance periods, reveal a significant decrease in the average ESG disclosure score in the CSRD issuance period. These results are similar for individual ESG pillars. Further, the results show a significant reduction in average firm value in the CSRD issuance period. The regression results report a significant and positive effect of ESG disclosure on firm value.Practical implicationsThis study provides practical implications for policymakers, firms and stakeholders. Based on the findings and the contexts of signalling and institutional theories, regulatory requirements for non-financial reporting on environmental and social issues affect a firm’s sustainable behaviour. This directly impacts various stakeholders, including market participants, and eventually affects market value.Originality/valueThis study contributes to the literature on the relationship between ESG disclosure and firm value in the context of the transition from the non-financial reporting directive to CSRD."
+      },
+      {
+        "paperId": "35bde0b4f651fc9b055ac8582864a6073dda8fdf",
+        "externalIds": {
+          "DOI": "10.1080/23311975.2024.2322027",
+          "CorpusId": 268303368
+        },
+        "title": "Environmental social and governance (ESG) disclosure motives for environmentally sensitive industry: an emerging economy perspective",
+        "venue": "Cogent Business &amp; Management",
+        "year": 2024,
+        "citationCount": 50,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/23311975.2024.2322027?needAccess=true",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/23311975.2024.2322027?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/23311975.2024.2322027, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2287411142",
+            "name": "Muhammad Sani Khamisu"
+          },
+          {
+            "authorId": "120994640",
+            "name": "R. Paluri"
+          },
+          {
+            "authorId": "113701571",
+            "name": "Vandana Sonwaney"
+          }
+        ],
+        "abstract": "Abstract Organizations disclose environmental, social, and governance (ESG) information for various reasons, including mandatory reporting regulations. However, for environmentally sensitive corporations, ESG disclosure is not only a regulatory obligation. It also has the potential to promote corporate reputation. This study aims to uncover the motivating factors behind ESG disclosures in an emerging economy. The research methodology employed in the study includes (i) systematically reviewing literature following the PRISMA protocol to identify ESG disclosure motives, (ii) integrating fuzzy set theory with interpretive structural modelling (FISM) for developing a structural hierarchical model to understand the interactions between the motives, (iii) applying a fuzzy Matrice d’impacts croisés multiplication appliquée á un classment (Fuzzy MICMAC) approach to categorize the motives. The FISM model shows that organizations primarily disclose ESG information in response to regulatory and stakeholders’ pressures. The results further highlight the role of corporate ‘greenwashing’ behaviour and ethical considerations in ESG. The findings recommend that feasible regulations are crucial in improving ESG reporting quantity and quality. This research is one of the very few examining the motives behind ESG disclosures and a ‘stepping-stone’ to implementing mandatory ESG disclosure regulations. Understanding ESG disclosure motives will enable policymakers to draft policies that promote greater sustainability commitment."
+      },
+      {
+        "paperId": "1134e47f9679cc761b3ff5eb67f40c2e1f129df4",
+        "externalIds": {
+          "DOI": "10.1007/s10668-024-04551-3",
+          "CorpusId": 268310521
+        },
+        "title": "The impacts of urban development orientation of resource-based cities on environmental information disclosure and greenwashing behavior of listed firms in China",
+        "venue": "Environment, Development and Sustainability",
+        "year": 2024,
+        "citationCount": 37,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10668-024-04551-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10668-024-04551-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2121444726",
+            "name": "Abd Alwahed Dagestani"
+          },
+          {
+            "authorId": "2261464758",
+            "name": "Pengyu Chen"
+          },
+          {
+            "authorId": "47622224",
+            "name": "L. Du"
+          },
+          {
+            "authorId": "2193889346",
+            "name": "Jin Hu"
+          },
+          {
+            "authorId": "2290577431",
+            "name": "Yuriy Bilan"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "293cb41d845b3fb119a906e062ee0262b9a5c677",
+        "externalIds": {
+          "DOI": "10.1108/jaar-06-2023-0164",
+          "CorpusId": 276800919
+        },
+        "title": "Does stakeholder and media attention influence climate change disclosure? Evidence from mining industry",
+        "venue": "Journal of Applied Accounting Research",
+        "year": 2025,
+        "citationCount": 11,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1108/jaar-06-2023-0164?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1108/jaar-06-2023-0164, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2305931481",
+            "name": "Muhammad Fadhly Rizky Octavio"
+          },
+          {
+            "authorId": "2244313352",
+            "name": "Doddy Setiawan"
+          }
+        ],
+        "abstract": "PurposeThis research explores the influence of stakeholders and public attention through the media on disclosures related to climate change in the industry most sensitive to climate change, namely the mining industry.Design/methodology/approachThis study employs panel data obtained from the financial and sustainability reports of 142 mining companies over the period 2017–2021. The analysis was conducted using the STATA software.FindingsThe findings of this study indicate that government ownership, creditor power and public attention through the internet had a significant positive impact on climate change disclosures among mining companies in the ASEAN region. In contrast, institutional ownership exhibited a negative effect on these disclosures. These results suggest that companies’ disclosures are primarily driven by external pressures from government authorities, creditors and heightened public scrutiny via online media platforms. Furthermore, the statistical analysis indicates that the overall level of climate change disclosure by mining companies in the ASEAN region remains relatively low.Research limitations/implicationsThe limitations of this research. This research manually inputted data from sustainability reports and annual reports, so there were companies whose reports could not be found, and there were language barriers in several countries.Practical implicationsThe implications of this research investigated climate change disclosure by companies considered sensitive to climate change, namely companies in the mining industry. This research suggests that company managers disclose climate change. It happens because the government, as the guarantor of the sustainability and welfare of the community, has encouraged disclosures responsible for climate change.Originality/valueThis study investigates the role of public attention, as measured by Google Trends, in influencing climate change disclosures within industrial sectors that are particularly sensitive to climate change."
+      },
+      {
+        "paperId": "7852b2b6fce6f18afe88486a4384cec534fc59cf",
+        "externalIds": {
+          "DOI": "10.21511/bbs.19(1).2024.18",
+          "CorpusId": 268647199
+        },
+        "title": "ESG disclosure and financial performance: Empirical study of Vietnamese commercial banks",
+        "venue": "Banks and Bank Systems",
+        "year": 2024,
+        "citationCount": 33,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://www.businessperspectives.org/images/pdf/applications/publishing/templates/article/assets/19813/BBS_2024_01_Loan.pdf",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21511/bbs.19(1).2024.18?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21511/bbs.19(1).2024.18, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2293048824",
+            "name": "Bui Thi Thu Loan"
+          },
+          {
+            "authorId": "2293051965",
+            "name": "Tran Thi Lan Anh"
+          },
+          {
+            "authorId": "2348106208",
+            "name": "T. Hoang"
+          }
+        ],
+        "abstract": "Environmental, social, and governance (ESG) disclosure becomes vital for banks to be transparent and accountable for their investments and lending decisions to shareholders, regulators, and society. The potential enhancement of shareholder value through ESG disclosure is still inconsistent. Empirical studies on the association between ESG disclosure and financial performance are mixed and limited in emerging economies. This study aims to examine whether ESG disclosure impacts the financial performance of 24 Vietnamese commercial banks in terms of return on assets (ROA), return on equity (ROE), and net interest margin (NIM). The study uses the feasible generalized least squares estimation method based on panel data from 2018 to 2022. The study employs content analysis on 12 themes related to environmental, social, and governance pillars to score policy disclosure based on the Fair Finance Guide Methodology. The results highlight the positive effects of ESG policy disclosure, individual environment disclosure (E), and individual governance disclosure (G) on bank financial performance. Notably, ESG, E, and G have the largest influence on ROE, with coefficients of 0.051, 0.036, and 0.027, respectively, at a 5% significance level. However, the study does not provide evidence of a statistically significant association between social disclosure and financial performance. These results provide empirical evidence for regulators and bank managers to shape ESG policies and practices aligning with international standards.\nAcknowledgmentESG disclosure score of 11 banks as primary data in this study is conducted under the project coordinated by the Fair Finance Vietnam coalition, as part of Fair Finance International."
+      },
+      {
+        "paperId": "03c9a1b608527e3fab5800ff69ded68ced8cd3b2",
+        "externalIds": {
+          "DOI": "10.26437/ajar.v11i1.847",
+          "CorpusId": 275367326
+        },
+        "title": "The Impact of Firm Age on Independent Audit Committee and Voluntary Disclosure Quality",
+        "venue": "African Journal Of Applied Research",
+        "year": 2025,
+        "citationCount": 7,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.26437/ajar.v11i1.847?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.26437/ajar.v11i1.847, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2339065462",
+            "name": "R. B. Amanamah"
+          },
+          {
+            "authorId": "2339275321",
+            "name": "Std. Deviation"
+          }
+        ],
+        "abstract": "Purpose: This research explores to what extent Independent Audit Committees impact Voluntary Disclosure and studies whether a firm's age moderates this relationship in developing economies. \nDesign/Methodology/Approach: The research employs a longitudinal approach, examining data from 2009 to 2021. The Durbin-Wu-Hausman test was used to assess the existence of endogeneity in the regression model, and a multicollinearity test was conducted to evaluate the level of correlation between independent variables in regression models to ensure the validity and stability of the results. \nFindings: The regression analysis demonstrates a positive and significant relationship between the existence of Independent Audit Committees (IAC) and Voluntary Disclosure (VD). However, the study outcome showed that the interlinkage term between IAC and a firm's age was not statistically significant, implying that firm age immaterially alters the importance of audit committees in voluntary disclosure practices. \nResearch Limitation: The study focused only on three African countries. Future research might look at other African countries \nPractical Implication: The study highlights the important function of IACs in improving transparency and promoting trust in financial reporting, particularly in markets with less regulatory oversight. Understanding factors that increase a company’s disclosure is crucial for the success of the global market and economy. \nSocial Implication: This research's findings will support transparency in reporting, reduce information asymmetry, increase sustainability reporting, and increase investors' confidence in a company’s financial and social reporting. \nOriginality/ Value: The research's novelty is bridging the gap in the literature by studying the influence of firm age on voluntary disclosure."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "medical NLP",
+    "results": [],
+    "status": 0,
+    "error": null
+  },
+  {
+    "query": "clinical NLP",
+    "results": [
+      {
+        "paperId": "f5d0767859d62d15896180ae73356133c0a67c5e",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2506-10896",
+          "ArXiv": "2506.10896",
+          "DOI": "10.48550/arXiv.2506.10896",
+          "CorpusId": 279318927
+        },
+        "title": "BioClinical ModernBERT: A State-of-the-Art Long-Context Encoder for Biomedical and Clinical NLP",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 26,
+        "influentialCitationCount": 6,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.10896, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2304553537",
+            "name": "Thomas Sounack"
+          },
+          {
+            "authorId": "2281327364",
+            "name": "Joshua Davis"
+          },
+          {
+            "authorId": "2076369223",
+            "name": "B. Durieux"
+          },
+          {
+            "authorId": "2322445069",
+            "name": "Antoine Chaffin"
+          },
+          {
+            "authorId": "2256721395",
+            "name": "Tom J. Pollard"
+          },
+          {
+            "authorId": "51172373",
+            "name": "Eric P. Lehman"
+          },
+          {
+            "authorId": "2361884236",
+            "name": "Alistair E. W. Johnson"
+          },
+          {
+            "authorId": "2256387869",
+            "name": "Matthew B. A. McDermott"
+          },
+          {
+            "authorId": "2256655984",
+            "name": "T. Naumann"
+          },
+          {
+            "authorId": "47619785",
+            "name": "C. Lindvall"
+          }
+        ],
+        "abstract": "Encoder-based transformer models are central to biomedical and clinical Natural Language Processing (NLP), as their bidirectional self-attention makes them well-suited for efficiently extracting structured information from unstructured text through discriminative tasks. However, encoders have seen slower development compared to decoder models, leading to limited domain adaptation in biomedical and clinical settings. We introduce BioClinical ModernBERT, a domain-adapted encoder that builds on the recent ModernBERT release, incorporating long-context processing and substantial improvements in speed and performance for biomedical and clinical NLP. BioClinical ModernBERT is developed through continued pretraining on the largest biomedical and clinical corpus to date, with over 53.5 billion tokens, and addresses a key limitation of prior clinical encoders by leveraging 20 datasets from diverse institutions, domains, and geographic regions, rather than relying on data from a single source. It outperforms existing biomedical and clinical encoders on four downstream tasks spanning a broad range of use cases. We release both base (150M parameters) and large (396M parameters) versions of BioClinical ModernBERT, along with training checkpoints to support further research."
+      },
+      {
+        "paperId": "b0171dd14d49298f85c5137ba6489aca0a1fcaa0",
+        "externalIds": {
+          "PubMedCentral": "12084576",
+          "DBLP": "journals/npjdm/BosmaDBARFNNLAGESSWHAST25",
+          "DOI": "10.1038/s41746-025-01626-x",
+          "CorpusId": 278713187,
+          "PubMed": "40379835"
+        },
+        "title": "The DRAGON benchmark for clinical NLP",
+        "venue": "npj Digital Medicine",
+        "year": 2025,
+        "citationCount": 11,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12084576, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2135021225",
+            "name": "J. Bosma"
+          },
+          {
+            "authorId": "2362060913",
+            "name": "Koen Dercksen"
+          },
+          {
+            "authorId": "2350000834",
+            "name": "Luc Builtjes"
+          },
+          {
+            "authorId": "2362060668",
+            "name": "Romain André"
+          },
+          {
+            "authorId": "146424040",
+            "name": "Christian Roest"
+          },
+          {
+            "authorId": "2186502520",
+            "name": "S. Fransen"
+          },
+          {
+            "authorId": "2253506339",
+            "name": "C. R. Noordman"
+          },
+          {
+            "authorId": "2362070908",
+            "name": "Mar Navarro-Padilla"
+          },
+          {
+            "authorId": "2183622202",
+            "name": "Judith Lefkes"
+          },
+          {
+            "authorId": "2281810655",
+            "name": "N. Alves"
+          },
+          {
+            "authorId": "2362059604",
+            "name": "Max J. J. de Grauw"
+          },
+          {
+            "authorId": "2140077669",
+            "name": "L. van Eekelen"
+          },
+          {
+            "authorId": "2159101865",
+            "name": "J. Spronck"
+          },
+          {
+            "authorId": "2004254995",
+            "name": "M. Schuurmans"
+          },
+          {
+            "authorId": "2327504365",
+            "name": "Bram de Wilde"
+          },
+          {
+            "authorId": "1844322840",
+            "name": "Ward Hendrix"
+          },
+          {
+            "authorId": "3256558",
+            "name": "W. Aswolinskiy"
+          },
+          {
+            "authorId": "1720661298",
+            "name": "A. Saha"
+          },
+          {
+            "authorId": "2106645880",
+            "name": "Jasper J. Twilt"
+          },
+          {
+            "authorId": "9942032",
+            "name": "D. Geijs"
+          },
+          {
+            "authorId": "2294175053",
+            "name": "Jeroen Veltman"
+          },
+          {
+            "authorId": "49143266",
+            "name": "Derya Yakar"
+          },
+          {
+            "authorId": "49221256",
+            "name": "M. de Rooij"
+          },
+          {
+            "authorId": "2255880476",
+            "name": "Francesco Ciompi"
+          },
+          {
+            "authorId": "2315970832",
+            "name": "Alessa Hering"
+          },
+          {
+            "authorId": "2295006266",
+            "name": "Jeroen Geerdink"
+          },
+          {
+            "authorId": "2275450757",
+            "name": "Henkjan Huisman"
+          },
+          {
+            "authorId": null,
+            "name": "Joeran S. Koen Luc Romain Christian Stefan J. Constant R. Bosma Dercksen Builtjes André Roest Fransen Noordm"
+          },
+          {
+            "authorId": "2297095520",
+            "name": "Q. van Lohuizen"
+          },
+          {
+            "authorId": "2266248412",
+            "name": "Michelle Stegeman"
+          },
+          {
+            "authorId": "2297175239",
+            "name": "Karlijn Rutten"
+          },
+          {
+            "authorId": "2362070107",
+            "name": "Inge M. E. Smit"
+          },
+          {
+            "authorId": "2362059801",
+            "name": "Gijs Stultiens"
+          },
+          {
+            "authorId": "14879360",
+            "name": "C. Overduin"
+          },
+          {
+            "authorId": "2307759987",
+            "name": "Matthieu Rutten"
+          },
+          {
+            "authorId": "152867460",
+            "name": "E. Scholten"
+          },
+          {
+            "authorId": "8233611",
+            "name": "R. S. van der Post"
+          },
+          {
+            "authorId": "2888785",
+            "name": "K. Grünberg"
+          },
+          {
+            "authorId": "2321256617",
+            "name": "Shoko Vos"
+          },
+          {
+            "authorId": "2362070270",
+            "name": "Elise M. G. Taken"
+          },
+          {
+            "authorId": "2291301186",
+            "name": "Iris D. Nagtegaal"
+          },
+          {
+            "authorId": "114550400",
+            "name": "Anne Mickan"
+          },
+          {
+            "authorId": "1844316831",
+            "name": "Miriam Groeneveld"
+          },
+          {
+            "authorId": "16752360",
+            "name": "P. K. Gerke"
+          },
+          {
+            "authorId": "2278610733",
+            "name": "James Meakin"
+          },
+          {
+            "authorId": "1399090754",
+            "name": "M. Looijen-Salamon"
+          },
+          {
+            "authorId": "2362060979",
+            "name": "Tijmen L. M. de Haas"
+          },
+          {
+            "authorId": "2347218197",
+            "name": "Fabian R. Hoitsma"
+          },
+          {
+            "authorId": "2316765269",
+            "name": "Marina D’Amato"
+          }
+        ],
+        "abstract": "Artificial Intelligence can mitigate the global shortage of medical diagnostic personnel but requires large-scale annotated datasets to train clinical algorithms. Natural Language Processing (NLP), including Large Language Models (LLMs), shows great potential for annotating clinical data to facilitate algorithm development but remains underexplored due to a lack of public benchmarks. This study introduces the DRAGON challenge, a benchmark for clinical NLP with 28 tasks and 28,824 annotated medical reports from five Dutch care centers. It facilitates automated, large-scale, cost-effective data annotation. Foundational LLMs were pretrained using four million clinical reports from a sixth Dutch care center. Evaluations showed the superiority of domain-specific pretraining (DRAGON 2025 test score of 0.770) and mixed-domain pretraining (0.756), compared to general-domain pretraining (0.734, p < 0.005). While strong performance was achieved on 18/28 tasks, performance was subpar on 10/28 tasks, uncovering where innovations are needed. Benchmark, code, and foundational LLMs are publicly available."
+      },
+      {
+        "paperId": "d2c0e7e2f2c889c436b6f4510098cfae1d287f60",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2507-01437",
+          "ArXiv": "2507.01437",
+          "DOI": "10.1109/RAIIC65850.2025.11170309",
+          "CorpusId": 280148189
+        },
+        "title": "Clinical NLP with Attention-Based Deep Learning for Multi-Disease Prediction",
+        "venue": "2025 4th International Conference on Robotics, Artificial Intelligence and Intelligent Control (RAIIC)",
+        "year": 2025,
+        "citationCount": 12,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.01437, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2374431779",
+            "name": "Ting Xu"
+          },
+          {
+            "authorId": "2404969178",
+            "name": "Xiaoxiao Deng"
+          },
+          {
+            "authorId": "2372188293",
+            "name": "Xiandong Meng"
+          },
+          {
+            "authorId": "2373734311",
+            "name": "Haifeng Yang"
+          },
+          {
+            "authorId": "2374829781",
+            "name": "Yan Wu"
+          }
+        ],
+        "abstract": "This paper addresses the challenges posed by the unstructured nature and high-dimensional semantic complexity of electronic health record texts. A deep learning method based on attention mechanisms is proposed to achieve unified modeling for information extraction and multi-label disease prediction. The study is conducted on the MIMIC-IV dataset. A Transformer-based architecture is used to perform representation learning over clinical text. Multi-layer self-attention mechanisms are employed to capture key medical entities and their contextual relationships. A Sigmoid-based multi-label classifier is then applied to predict multiple disease labels. The model incorporates a context-aware semantic alignment mechanism, enhancing its representational capacity in typical medical scenarios such as label co-occurrence and sparse information. To comprehensively evaluate model performance, a series of experiments were conducted, including baseline comparisons, hyperparameter sensitivity analysis, data perturbation studies, and noise injection tests. Results demonstrate that the proposed method consistently outperforms representative existing approaches across multiple performance metrics. The model maintains strong generalization under varying data scales, interference levels, and model depth configurations. The framework developed in this study offers an efficient algorithmic foundation for processing real-world clinical texts and presents practical significance for multi-label medical text modeling tasks."
+      },
+      {
+        "paperId": "cbf78dbb6ac139200eae132a5403d8bcf54ade18",
+        "externalIds": {
+          "ArXiv": "2507.11052",
+          "DBLP": "journals/corr/abs-2507-11052",
+          "DOI": "10.1109/CME67420.2025.11239360",
+          "CorpusId": 280277730
+        },
+        "title": "LLM-Augmented Symptom Analysis for Cardiovascular Disease Risk Prediction: A Clinical NLP Approach",
+        "venue": "2025 19th International Conference on Complex Medical Engineering (CME)",
+        "year": 2025,
+        "citationCount": 5,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.11052, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2302372513",
+            "name": "Haowei Yang"
+          },
+          {
+            "authorId": "2376153193",
+            "name": "Ziyu Shen"
+          },
+          {
+            "authorId": "2367560097",
+            "name": "Junli Shao"
+          },
+          {
+            "authorId": "2372411981",
+            "name": "Luyao Men"
+          },
+          {
+            "authorId": "2372712572",
+            "name": "Xinyue Han"
+          },
+          {
+            "authorId": "2372532594",
+            "name": "Jing Dong"
+          }
+        ],
+        "abstract": "Timely identification and accurate risk stratification of cardiovascular disease (CVD) remain essential for reducing global mortality. While existing prediction models primarily leverage structured data, unstructured clinical notes contain valuable early indicators. This study introduces a novel LLMaugmented clinical NLP pipeline that employs domain-adapted large language models for symptom extraction, contextual reasoning, and correlation from free-text reports. Our approach integrates cardiovascular-specific fine-tuning, prompt-based inference, and entity-aware reasoning. Evaluations on MIMIC-III and CARDIO-NLP datasets demonstrate improved performance in precision, recall, F1-score, and AUROC, with high clinical relevance ($\\mathbf{k a p p a} \\boldsymbol{=} \\mathbf{0. 8 2}$) assessed by cardiologists. Challenges such as contextual hallucination, which occurs when plausible information contracts with provided source, and temporal ambiguity, which is related with models struggling with chronological ordering of events are addressed using prompt engineering and hybrid rule-based verification. This work underscores the potential of LLMs in clinical decision support systems (CDSS), advancing early warning systems and enhancing the translation of patient narratives into actionable risk assessments."
+      },
+      {
+        "paperId": "fb0adf1aa81ceda7ccb4f65df84df46be33d200c",
+        "externalIds": {
+          "ArXiv": "2503.18594",
+          "DBLP": "journals/corr/abs-2503-18594",
+          "DOI": "10.48550/arXiv.2503.18594",
+          "CorpusId": 277272353
+        },
+        "title": "ClinText-SP and RigoBERTa Clinical: a new set of open resources for Spanish Clinical NLP",
+        "venue": "arXiv.org",
+        "year": 2025,
+        "citationCount": 1,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.18594, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2130035017",
+            "name": "G. G. Subies"
+          },
+          {
+            "authorId": "2347873507",
+            "name": "Álvaro Barbero Jiménez"
+          },
+          {
+            "authorId": "2320870168",
+            "name": "Paloma Martínez"
+          }
+        ],
+        "abstract": "We present a novel contribution to Spanish clinical natural language processing by introducing the largest publicly available clinical corpus, ClinText-SP, along with a state-of-the-art clinical encoder language model, RigoBERTa Clinical. Our corpus was meticulously curated from diverse open sources, including clinical cases from medical journals and annotated corpora from shared tasks, providing a rich and diverse dataset that was previously difficult to access. RigoBERTa Clinical, developed through domain-adaptive pretraining on this comprehensive dataset, significantly outperforms existing models on multiple clinical NLP benchmarks. By publicly releasing both the dataset and the model, we aim to empower the research community with robust resources that can drive further advancements in clinical NLP and ultimately contribute to improved healthcare applications."
+      },
+      {
+        "paperId": "16c19645c9c1d318f567aa86dd34fb0fa4e1bcd9",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2503-17425",
+          "ArXiv": "2503.17425",
+          "DOI": "10.48550/arXiv.2503.17425",
+          "CorpusId": 277271810
+        },
+        "title": "Beyond Negation Detection: Comprehensive Assertion Detection Models for Clinical NLP",
+        "venue": "Text2Story@ECIR",
+        "year": 2025,
+        "citationCount": 2,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.17425, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2008821796",
+            "name": "V. Kocaman"
+          },
+          {
+            "authorId": "2351805149",
+            "name": "Yigit Gul"
+          },
+          {
+            "authorId": "2351781999",
+            "name": "M. A. Kaya"
+          },
+          {
+            "authorId": "73097272",
+            "name": "H. Haq"
+          },
+          {
+            "authorId": "2351808087",
+            "name": "Mehmet Butgul"
+          },
+          {
+            "authorId": "2187454394",
+            "name": "Cabir Celik"
+          },
+          {
+            "authorId": "1761395",
+            "name": "D. Talby"
+          }
+        ],
+        "abstract": "Assertion status detection is a critical yet often overlooked component of clinical NLP, essential for accurately attributing extracted medical facts. Past studies have narrowly focused on negation detection, leading to underperforming commercial solutions such as AWS Medical Comprehend, Azure AI Text Analytics, and GPT-4o due to their limited domain adaptation. To address this gap, we developed state-of-the-art assertion detection models, including fine-tuned LLMs, transformer-based classifiers, few-shot classifiers, and deep learning (DL) approaches. We evaluated these models against cloud-based commercial API solutions, the legacy rule-based NegEx approach, and GPT-4o. Our fine-tuned LLM achieves the highest overall accuracy (0.962), outperforming GPT-4o (0.901) and commercial APIs by a notable margin, particularly excelling in Present (+4.2%), Absent (+8.4%), and Hypothetical (+23.4%) assertions. Our DL-based models surpass commercial solutions in Conditional (+5.3%) and Associated-with-Someone-Else (+10.1%) categories, while the few-shot classifier offers a lightweight yet highly competitive alternative (0.929), making it ideal for resource-constrained environments. Integrated within Spark NLP, our models consistently outperform black-box commercial solutions while enabling scalable inference and seamless integration with medical NER, Relation Extraction, and Terminology Resolution. These results reinforce the importance of domain-adapted, transparent, and customizable clinical NLP solutions over general-purpose LLMs and proprietary APIs."
+      },
+      {
+        "paperId": "b93fdc45061f9c415ad96c99e1d3198756c50d37",
+        "externalIds": {
+          "DBLP": "conf/coling/LiW024",
+          "ACL": "2024.lrec-main.930",
+          "DOI": "10.63317/2tpe9brgzmcg",
+          "CorpusId": 269804667
+        },
+        "title": "LlamaCare: An Instruction Fine-Tuned Large Language Model for Clinical NLP",
+        "venue": "International Conference on Language Resources and Evaluation",
+        "year": 2024,
+        "citationCount": 28,
+        "influentialCitationCount": 3,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/2024.lrec-main.930, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2237106751",
+            "name": "Rumeng Li"
+          },
+          {
+            "authorId": "2221230794",
+            "name": "Xun Wang"
+          },
+          {
+            "authorId": "2273658683",
+            "name": "Hong Yu"
+          }
+        ],
+        "abstract": "Large language models (LLMs) have shown remarkable abilities in generating natural texts for various tasks across different domains. However, applying LLMs to clinical settings still poses significant challenges, as it requires specialized knowledge, vocabulary, as well as reliability. In this work, we propose a novel method of instruction fine-tuning for adapting LLMs to the clinical domain, which leverages the instruction-following capabilities of LLMs and the availability of diverse real-world data sources. We generate instructions, inputs, and outputs covering a wide spectrum of clinical services, from primary cares to nursing, radiology, physician, and social work, and use them to fine-tune LLMs. We evaluated the fine-tuned LLM, LlamaCare, on various clinical tasks, such as generating discharge summaries, predicting mortality and length of stay, and more. Using both automatic and human metrics, we demonstrated that LlamaCare surpasses other LLM baselines in predicting clinical outcomes and producing more accurate and coherent clinical texts. We also discuss the challenges and limitations of LLMs that need to be addressed before they can be widely adopted in clinical settings."
+      },
+      {
+        "paperId": "b651d67502790e1d6d41c589e1d93e996ba7b935",
+        "externalIds": {
+          "ACL": "2022.bionlp-1.19",
+          "DBLP": "conf/bionlp/CarrinoLPGASVGV22",
+          "DOI": "10.18653/v1/2022.bionlp-1.19",
+          "CorpusId": 248780390
+        },
+        "title": "Pretrained Biomedical Language Models for Clinical NLP in Spanish",
+        "venue": "Workshop on Biomedical Natural Language Processing",
+        "year": 2022,
+        "citationCount": 92,
+        "influentialCitationCount": 9,
+        "openAccessPdf": {
+          "url": "https://aclanthology.org/2022.bionlp-1.19.pdf",
+          "status": "HYBRID",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/2022.bionlp-1.19, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "1416319999",
+            "name": "C. Carrino"
+          },
+          {
+            "authorId": "2165226605",
+            "name": "Joan Llop"
+          },
+          {
+            "authorId": "1850527789",
+            "name": "M. Pàmies"
+          },
+          {
+            "authorId": "2078772072",
+            "name": "Asier Gutiérrez-Fandiño"
+          },
+          {
+            "authorId": "1405319696",
+            "name": "Jordi Armengol-Estap'e"
+          },
+          {
+            "authorId": "2119543279",
+            "name": "Joaquín Silveira-Ocampo"
+          },
+          {
+            "authorId": "2168853963",
+            "name": "A. Valencia"
+          },
+          {
+            "authorId": "1403836100",
+            "name": "Aitor Gonzalez-Agirre"
+          },
+          {
+            "authorId": "2066499928",
+            "name": "Marta Villegas"
+          }
+        ],
+        "abstract": "This work presents the first large-scale biomedical Spanish language models trained from scratch, using large biomedical corpora consisting of a total of 1.1B tokens and an EHR corpus of 95M tokens. We compared them against general-domain and other domain-specific models for Spanish on three clinical NER tasks. As main results, our models are superior across the NER tasks, rendering them more convenient for clinical NLP applications. Furthermore, our findings indicate that when enough data is available, pre-training from scratch is better than continual pre-training when tested on clinical tasks, raising an exciting research question about which approach is optimal. Our models and fine-tuning scripts are publicly available at HuggingFace and GitHub."
+      },
+      {
+        "paperId": "c2e454563642161746afcb8c4a2ecbf188e5fabd",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2407-19299",
+          "DOI": "10.48550/arXiv.2407.19299",
+          "CorpusId": 271534499
+        },
+        "title": "The Impact of LoRA Adapters for LLMs on Clinical NLP Classification Under Data Limitations",
+        "venue": "arXiv.org",
+        "year": 2024,
+        "citationCount": 9,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2407.19299?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2407.19299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2313698837",
+            "name": "Thanh-Dung Le"
+          },
+          {
+            "authorId": "31537741",
+            "name": "T. Nguyen"
+          },
+          {
+            "authorId": "2257223889",
+            "name": "Vu Nguyen Ha"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "2c9eceb362ddf6f95cf650a66486f17bbb3f9859",
+        "externalIds": {
+          "DBLP": "journals/corr/abs-2404-00484",
+          "ArXiv": "2404.00484",
+          "ACL": "2024.semeval-1.265",
+          "DOI": "10.48550/arXiv.2404.00484",
+          "CorpusId": 268820173
+        },
+        "title": "Edinburgh Clinical NLP at SemEval-2024 Task 2: Fine-tune your model unless you have access to GPT-4",
+        "venue": "International Workshop on Semantic Evaluation",
+        "year": 2024,
+        "citationCount": 6,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.00484, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "27080447",
+            "name": "Aryo Pradipta Gema"
+          },
+          {
+            "authorId": "2294364793",
+            "name": "Giwon Hong"
+          },
+          {
+            "authorId": "2294362638",
+            "name": "Pasquale Minervini"
+          },
+          {
+            "authorId": "2268785466",
+            "name": "Luke Daines"
+          },
+          {
+            "authorId": "2280904644",
+            "name": "Beatrice Alex"
+          }
+        ],
+        "abstract": "The NLI4CT task assesses Natural Language Inference systems in predicting whether hypotheses entail or contradict evidence from Clinical Trial Reports. In this study, we evaluate various Large Language Models (LLMs) with multiple strategies, including Chain-of-Thought, In-Context Learning, and Parameter-Efficient Fine-Tuning (PEFT). We propose a PEFT method to improve the consistency of LLMs by merging adapters that were fine-tuned separately using triplet and language modelling objectives. We found that merging the two PEFT adapters improves the F1 score (+0.0346) and consistency (+0.152) of the LLMs. However, our novel methods did not produce more accurate results than GPT-4 in terms of faithfulness and consistency. Averaging the three metrics, GPT-4 ranks joint-first in the competition with 0.8328. Finally, our contamination analysis with GPT-4 indicates that there was no test data leakage. Our code is available at https://github.com/EdinburghClinicalNLP/semeval_nli4ct."
+      },
+      {
+        "paperId": "0a04b92ddbce6b65c7cce36c7fae483bca793eeb",
+        "externalIds": {
+          "ACL": "2024.clinicalnlp-1.49",
+          "DBLP": "conf/acl-clinicalnlp/GemaLMDSA24",
+          "ArXiv": "2405.18028",
+          "DOI": "10.48550/arXiv.2405.18028",
+          "CorpusId": 270067959
+        },
+        "title": "Edinburgh Clinical NLP at MEDIQA-CORR 2024: Guiding Large Language Models with Hints",
+        "venue": "Clinical Natural Language Processing Workshop",
+        "year": 2024,
+        "citationCount": 2,
+        "influentialCitationCount": 1,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.18028, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "27080447",
+            "name": "Aryo Pradipta Gema"
+          },
+          {
+            "authorId": "2303516520",
+            "name": "Chaeeun Lee"
+          },
+          {
+            "authorId": "2294362638",
+            "name": "Pasquale Minervini"
+          },
+          {
+            "authorId": "2268785466",
+            "name": "Luke Daines"
+          },
+          {
+            "authorId": "2303465769",
+            "name": "T. I. Simpson"
+          },
+          {
+            "authorId": "2280904644",
+            "name": "Beatrice Alex"
+          }
+        ],
+        "abstract": "The MEDIQA-CORR 2024 shared task aims to assess the ability of Large Language Models (LLMs) to identify and correct medical errors in clinical notes. In this study, we evaluate the capability of general LLMs, specifically GPT-3.5 and GPT-4, to identify and correct medical errors with multiple prompting strategies. Recognising the limitation of LLMs in generating accurate corrections only via prompting strategies, we propose incorporating error-span predictions from a smaller, fine-tuned model in two ways: 1) by presenting it as a hint in the prompt and 2) by framing it as multiple-choice questions from which the LLM can choose the best correction. We found that our proposed prompting strategies significantly improve the LLM’s ability to generate corrections. Our best-performing solution with 8-shot + CoT + hints ranked sixth in the shared task leaderboard. Additionally, our comprehensive analyses show the impact of the location of the error sentence, the prompted role, and the position of the multiple-choice option on the accuracy of the LLM. This prompts further questions about the readiness of LLM to be implemented in real-world clinical settings."
+      },
+      {
+        "paperId": "4eb76abd426f12045bb2f145e49052033f9244cd",
+        "externalIds": {
+          "DBLP": "phd/us/Lehman24",
+          "CorpusId": 271970584
+        },
+        "title": "Practical Considerations For the Deployment of Clinical NLP Systems",
+        "venue": "",
+        "year": 2024,
+        "citationCount": 0,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://hdl.handle.net/1721.1/156307, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "51172373",
+            "name": "Eric P. Lehman"
+          }
+        ],
+        "abstract": null
+      },
+      {
+        "paperId": "86e14ee18d99d5877a9ea168019fd4ccdd40db1a",
+        "externalIds": {
+          "DBLP": "conf/eacl/AracenaD23",
+          "ACL": "2023.eacl-srw.5",
+          "DOI": "10.18653/v1/2023.eacl-srw.5",
+          "CorpusId": 258378257
+        },
+        "title": "Development of pre-trained language models for clinical NLP in Spanish",
+        "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+        "year": 2023,
+        "citationCount": 3,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://aclanthology.org/2023.eacl-srw.5.pdf",
+          "status": "HYBRID",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://aclanthology.org/2023.eacl-srw.5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2219359",
+            "name": "Claudio Aracena"
+          },
+          {
+            "authorId": "121936601",
+            "name": "J. Dunstan"
+          }
+        ],
+        "abstract": "Clinical natural language processing aims to tackle language and prediction tasks using text from medical practice, such as clinical notes, prescriptions, and discharge summaries. Several approaches have been tried to deal with these tasks. Since 2017, pre-trained language models (PLMs) have achieved state-of-the-art performance in many tasks. However, most works have been developed in English. This PhD research proposal addresses the development of PLMs for clinical NLP in Spanish. To carry out this study, we will build a clinical corpus big enough to implement a functional PLM. We will test several PLM architectures and evaluate them with language and prediction tasks. The novelty of this work lies in the use of only clinical text, while previous clinical PLMs have used a mix of general, biomedical, and clinical text."
+      },
+      {
+        "paperId": "ff4bf05757a17d0cc79c53d19a30234f52a002b3",
+        "externalIds": {
+          "DBLP": "journals/midm/VillenaBD25",
+          "PubMedCentral": "11889813",
+          "DOI": "10.1186/s12911-025-02948-2",
+          "CorpusId": 276869027,
+          "PubMed": "40055634"
+        },
+        "title": "NLP modeling recommendations for restricted data availability in clinical settings",
+        "venue": "BMC Medical Informatics and Decision Making",
+        "year": 2025,
+        "citationCount": 6,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.1186/s12911-025-02948-2",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11889813, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "146758940",
+            "name": "F. Villena"
+          },
+          {
+            "authorId": "2998375",
+            "name": "Felipe Bravo-Marquez"
+          },
+          {
+            "authorId": "2309601392",
+            "name": "Jocelyn Dunstan"
+          }
+        ],
+        "abstract": "Clinical decision-making in healthcare often relies on unstructured text data, which can be challenging to analyze using traditional methods. Natural Language Processing (NLP) has emerged as a promising solution, but its application in clinical settings is hindered by restricted data availability and the need for domain-specific knowledge. We conducted an experimental analysis to evaluate the performance of various NLP modeling paradigms on multiple clinical NLP tasks in Spanish. These tasks included referral prioritization and referral specialty classification. We simulated three clinical settings with varying levels of data availability and evaluated the performance of four foundation models. Clinical-specific pre-trained language models (PLMs) achieved the highest performance across tasks. For referral prioritization, Clinical PLMs attained an 88.85 % macro F1 score when fine-tuned. In referral specialty classification, the same models achieved a 53.79 % macro F1 score, surpassing domain-agnostic models. Continuing pre-training with environment-specific data improved model performance, but the gains were marginal compared to the computational resources required. Few-shot learning with large language models (LLMs) demonstrated lower performance but showed potential in data-scarce scenarios. Our study provides evidence-based recommendations for clinical NLP practitioners on selecting modeling paradigms based on data availability. We highlight the importance of considering data availability, task complexity, and institutional maturity when designing and training clinical NLP models. Our findings can inform the development of effective clinical NLP solutions in real-world settings."
+      },
+      {
+        "paperId": "df2c1c1201578a7e7ec7a1e6d34bae0ad6a7eba2",
+        "externalIds": {
+          "DBLP": "journals/ijmi/LiuMCW26",
+          "DOI": "10.1016/j.ijmedinf.2025.106104",
+          "CorpusId": 281208403,
+          "PubMed": "40925145"
+        },
+        "title": "Integrating rule-based NLP and large language models for statin information extraction from clinical notes",
+        "venue": "Int. J. Medical Informatics",
+        "year": 2025,
+        "citationCount": 5,
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ijmedinf.2025.106104?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ijmedinf.2025.106104, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "authors": [
+          {
+            "authorId": "2284995577",
+            "name": "Siru Liu"
+          },
+          {
+            "authorId": "2290265261",
+            "name": "Allison B. McCoy"
+          },
+          {
+            "authorId": "2256591935",
+            "name": "Qingyu Chen"
+          },
+          {
+            "authorId": "2290260931",
+            "name": "Adam Wright"
+          }
+        ],
+        "abstract": "BACKGROUND\nIdentifying patient-specific barriers to statin therapy, such as intolerance or deferral, from clinical notes is a major challenge for improving cardiovascular care. Automating this process could enable targeted interventions and improve clinical decision support (CDS).\n\n\nOBJECTIVE\nTo develop and evaluate a novel hybrid artificial intelligence (AI) framework for accurately and efficiently extracting information on statin therapy barriers from large volumes of clinical notes.\n\n\nMETHODS\nThe hybrid AI framework consisted of a rule-based natural language processing (NLP) filter, an LLM-based refinement filter, and an LLM-based multi-category classifier. The framework was developed on 2000 clinical notes and then retrospectively applied to a dataset of 197,761 notes from 47,192 patients at an academic medical center. Performance was evaluated against manual chart review for classifying statin intolerance, contraindications, and patient deferral.\n\n\nRESULTS\nThe framework was efficient, with the initial filter removing over 77 % of irrelevant notes while achieving a recall of 1.0 to ensure no relevant information was lost. The final classifier accurately categorized patient-level barriers with high F1 scores for intolerance (0.99), contraindications (0.81), and patient deferral (0.86). On the large dataset, the framework identified that 6.4 % of patients (n = 3,027) had documented intolerance, 0.7 % (n = 310) had contraindications, and 2.9 % (n = 1,391) had deferred therapy.\n\n\nCONCLUSION\nThe hybrid AI framework provides an efficient, scalable, and trustworthy solution for processing clinical notes. It has the potential to enhance clinical decision support (CDS) systems by integrating detailed patient-level insights, improving adherence to clinical guidelines, and reducing provider burden. Future research should focus on implementing CDS tools that leverage extracted information to address barriers to statin therapy and optimize patient outcomes."
+      }
+    ],
+    "status": 200
+  },
+  {
+    "query": "clinical LLM benchmark",
+    "results": [],
+    "status": 0,
+    "error": null
+  }
+]
