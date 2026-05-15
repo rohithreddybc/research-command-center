@@ -1,0 +1,54 @@
+{
+  "_comment": "Configuration for scripts/15_arxiv_watch.py. Each entry defines a topic-scoped arXiv query; new papers matching the query trigger a SCOOP_WATCH alert. Edit relevance_keywords to tune precision; remove a topic by deleting its entry.",
+  "_format_version": 1,
+  "queries": [
+    {
+      "id": "T02_position_bias",
+      "topic_id": "T02",
+      "title": "Position-bias quantification across judge models",
+      "arxiv_query": "abs:\"position bias\" AND (abs:\"LLM judge\" OR abs:\"language model judge\" OR abs:\"LLM-as-a-judge\")",
+      "categories": ["cs.CL", "cs.AI", "cs.LG"],
+      "relevance_keywords": ["position bias", "ordering bias", "judge", "evaluator", "preference"],
+      "min_relevance": 0.4,
+      "kill_threshold_keywords": ["benchmark", "harness", "released code", "open-source"],
+      "watch_priority": "HIGH",
+      "rationale": "Bridge paper. Any new paper with a quantification + released harness is a hard scoop signal (KILL_CRITERIA K1)."
+    },
+    {
+      "id": "T07_judge_injection",
+      "topic_id": "T07",
+      "title": "Judge robustness to candidate-side prompt injection",
+      "arxiv_query": "(abs:\"prompt injection\" OR abs:\"adversarial prompt\") AND (abs:\"LLM judge\" OR abs:\"evaluator\" OR abs:\"LLM-as-a-judge\" OR abs:\"reward model\")",
+      "categories": ["cs.CL", "cs.AI", "cs.CR"],
+      "relevance_keywords": ["judge", "evaluator", "prompt injection", "adversarial", "reward model"],
+      "min_relevance": 0.4,
+      "kill_threshold_keywords": ["candidate-side", "judge as target", "evaluator vulnerability"],
+      "watch_priority": "HIGH",
+      "rationale": "Long-term paper. The 'Red Teaming the Mind of the Machine' arXiv 2025 paper is the known blocker."
+    },
+    {
+      "id": "T01_cross_judge_long_context",
+      "topic_id": "T01",
+      "title": "Cross-judge agreement on long-context QA",
+      "arxiv_query": "(abs:\"inter-judge\" OR abs:\"cross-judge\" OR abs:\"judge agreement\") AND (abs:\"long context\" OR abs:\"long-context\")",
+      "categories": ["cs.CL", "cs.AI"],
+      "relevance_keywords": ["judge agreement", "long context", "QA", "inter-annotator"],
+      "min_relevance": 0.35,
+      "kill_threshold_keywords": ["benchmark", "released"],
+      "watch_priority": "MEDIUM",
+      "rationale": "Third paper in the cluster."
+    },
+    {
+      "id": "B05_synthetic_data_quality",
+      "topic_id": "B05",
+      "title": "Synthetic data quality evaluation metrics",
+      "arxiv_query": "(abs:\"synthetic data\") AND (abs:\"quality evaluation\" OR abs:\"fidelity\" OR abs:\"evaluation framework\")",
+      "categories": ["cs.LG", "cs.AI"],
+      "relevance_keywords": ["synthetic data", "fidelity", "quality evaluation", "framework"],
+      "min_relevance": 0.4,
+      "kill_threshold_keywords": ["framework", "open-source"],
+      "watch_priority": "LOW",
+      "rationale": "Second-tier candidate. Watch monthly, not weekly."
+    }
+  ]
+}

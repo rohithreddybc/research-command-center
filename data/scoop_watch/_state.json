@@ -1,0 +1,9 @@
+{
+  "queries": {
+    "T02_position_bias": {},
+    "T07_judge_injection": {},
+    "T01_cross_judge_long_context": {},
+    "B05_synthetic_data_quality": {}
+  },
+  "_format_version": 1
+}

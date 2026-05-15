@@ -1521,5 +1521,326 @@ class TestBiasAuditOutputs(unittest.TestCase):
                         f"profile_rankings.csv missing expected rank_* columns; got {list(first.keys())[:6]}")
 
 
+class TestArxivWatch(unittest.TestCase):
+    """Tests for scripts/15_arxiv_watch.py.
+
+    These tests cover the pure (non-network) helpers — relevance scoring,
+    Atom-feed parsing, diff state-tracking, and report rendering — because
+    network-based tests would be flaky.
+    """
+
+    def setUp(self):
+        self.mod = _load("15_arxiv_watch")
+
+    def test_relevance_score_full_match(self):
+        score = self.mod.relevance_score(
+            title="Position bias in LLM judges",
+            summary="We measure ordering effects in evaluator models",
+            keywords=["position bias", "judge", "LLM"],
+        )
+        self.assertAlmostEqual(score, 1.0, places=2)
+
+    def test_relevance_score_partial_match(self):
+        score = self.mod.relevance_score(
+            title="Image classification benchmark",
+            summary="A new dataset for vision",
+            keywords=["position bias", "judge", "LLM"],
+        )
+        self.assertEqual(score, 0.0)
+
+    def test_relevance_score_case_insensitive(self):
+        score = self.mod.relevance_score(
+            title="POSITION BIAS in JUDGES",
+            summary="",
+            keywords=["position bias", "judge"],
+        )
+        self.assertAlmostEqual(score, 1.0, places=2)
+
+    def test_kill_signal_detection(self):
+        flag, kws = self.mod.kill_signal(
+            title="LLM judge benchmark released",
+            summary="We release an open-source harness for evaluating",
+            kill_keywords=["benchmark", "released code", "harness"],
+        )
+        self.assertTrue(flag)
+        self.assertIn("benchmark", kws)
+        self.assertIn("harness", kws)
+
+    def test_kill_signal_negative(self):
+        flag, kws = self.mod.kill_signal(
+            title="Theory of pre-training optima",
+            summary="We prove convergence properties",
+            kill_keywords=["benchmark", "harness"],
+        )
+        self.assertFalse(flag)
+        self.assertEqual(kws, [])
+
+    def test_diff_new_ids_first_run(self):
+        new = self.mod.diff_new_ids(["a", "b", "c"], [])
+        self.assertEqual(set(new), {"a", "b", "c"})
+
+    def test_diff_new_ids_no_change(self):
+        new = self.mod.diff_new_ids(["a", "b"], ["a", "b"])
+        self.assertEqual(new, [])
+
+    def test_diff_new_ids_partial(self):
+        new = self.mod.diff_new_ids(["a", "b", "c", "d"], ["a", "c"])
+        self.assertEqual(set(new), {"b", "d"})
+
+    def test_parse_atom_feed_minimal(self):
+        # Minimal Atom feed with one entry
+        xml = """<?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <id>http://arxiv.org/abs/2501.01234v2</id>
+            <title>Position bias in LLM judges</title>
+            <summary>We quantify position bias across five judges.</summary>
+            <published>2025-01-15T00:00:00Z</published>
+            <updated>2025-01-20T00:00:00Z</updated>
+            <author><name>Jane Doe</name></author>
+            <author><name>John Smith</name></author>
+            <category term="cs.CL"/>
+            <category term="cs.AI"/>
+            <link rel="alternate" href="https://arxiv.org/abs/2501.01234"/>
+          </entry>
+        </feed>
+        """
+        papers = self.mod.parse_atom_feed(xml)
+        self.assertEqual(len(papers), 1)
+        p = papers[0]
+        self.assertEqual(p["arxiv_id"], "2501.01234")
+        self.assertIn("Position bias", p["title"])
+        self.assertEqual(p["authors"], ["Jane Doe", "John Smith"])
+        self.assertEqual(set(p["categories"]), {"cs.CL", "cs.AI"})
+
+    def test_parse_atom_feed_empty(self):
+        xml = """<?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom"></feed>"""
+        papers = self.mod.parse_atom_feed(xml)
+        self.assertEqual(papers, [])
+
+    def test_render_report_no_results_no_kill(self):
+        # Empty results list still produces valid markdown
+        md = self.mod.render_report([])
+        self.assertIn("# arXiv Scoop Watch", md)
+        self.assertIn("Queries run: **0**", md)
+
+    def test_render_report_kill_signal_surfaces_first(self):
+        results = [{
+            "query_id": "T02_position_bias",
+            "topic_id": "T02",
+            "title": "Position-bias",
+            "watch_priority": "HIGH",
+            "n_fetched": 5,
+            "n_new": 1,
+            "n_relevant": 1,
+            "n_kill_signal": 1,
+            "new_papers": [{
+                "arxiv_id": "2501.99999",
+                "title": "Cross-model position bias benchmark with released harness",
+                "summary": "We release a new harness.",
+                "published": "2025-01-15T00:00:00Z",
+                "link": "https://arxiv.org/abs/2501.99999",
+                "authors": ["A Researcher"],
+                "categories": ["cs.CL"],
+                "relevance_score": 0.95,
+                "kill_signal": True,
+                "kill_keywords": ["benchmark", "harness"],
+            }],
+            "kill_papers": [{
+                "arxiv_id": "2501.99999",
+                "title": "Cross-model position bias benchmark with released harness",
+                "summary": "We release a new harness.",
+                "published": "2025-01-15T00:00:00Z",
+                "link": "https://arxiv.org/abs/2501.99999",
+                "authors": ["A Researcher"],
+                "categories": ["cs.CL"],
+                "relevance_score": 0.95,
+                "kill_signal": True,
+                "kill_keywords": ["benchmark", "harness"],
+            }],
+            "error": None,
+        }]
+        md = self.mod.render_report(results)
+        self.assertIn("KILL SIGNAL", md)
+        # Kill section must appear before per-query results
+        kill_idx = md.find("KILL SIGNAL")
+        per_q_idx = md.find("Per-query results")
+        self.assertGreater(per_q_idx, kill_idx)
+
+
+class TestExtractBibtex(unittest.TestCase):
+    """Tests for scripts/16_extract_bibtex.py."""
+
+    def setUp(self):
+        self.mod = _load("16_extract_bibtex")
+
+    def test_cite_key_basic(self):
+        k = self.mod.cite_key(
+            authors="Wang Yifan; Doe Jane",
+            year="2023",
+            title="Large Language Models are not Robust Multiple Choice Selectors",
+        )
+        # First author last name + year + first significant word
+        self.assertEqual(k, "yifan2023large")
+
+    def test_split_authors_pipe(self):
+        out = self.mod._split_authors("A B|C D|E F")
+        self.assertEqual(out, ["A B", "C D", "E F"])
+
+    def test_split_authors_semicolon(self):
+        out = self.mod._split_authors("A B; C D")
+        self.assertEqual(out, ["A B", "C D"])
+
+    def test_split_authors_and(self):
+        out = self.mod._split_authors("A B and C D and E F")
+        self.assertEqual(out, ["A B", "C D", "E F"])
+
+    def test_split_authors_single(self):
+        out = self.mod._split_authors("A B")
+        self.assertEqual(out, ["A B"])
+
+    def test_split_authors_empty(self):
+        self.assertEqual(self.mod._split_authors(""), [])
+        self.assertEqual(self.mod._split_authors("   "), [])
+
+    def test_cite_key_no_year(self):
+        k = self.mod.cite_key(authors="Smith Jane", year="", title="A paper")
+        self.assertIn("nd", k)
+
+    def test_cite_key_no_authors(self):
+        k = self.mod.cite_key(authors="", year="2024", title="A title")
+        self.assertTrue(k.startswith("anonymous2024"))
+
+    def test_to_bibtex_article(self):
+        row = {
+            "title":   "Position Bias",
+            "authors": "Wang Y; Doe J",
+            "year":    "2023",
+            "venue":   "Journal of ML Research",
+            "doi":     "10.1/xyz",
+            "url":     "https://example.com/paper",
+            "relevance_score": "0.85",
+            "citations": "42",
+        }
+        bib = self.mod.to_bibtex(row)
+        self.assertIn("@article{", bib)
+        self.assertIn("title = {Position Bias}", bib)
+        self.assertIn("journal = {Journal of ML Research}", bib)
+        self.assertIn("doi = {10.1/xyz}", bib)
+        self.assertIn("note = {relevance=0.85; citations=42}", bib)
+
+    def test_to_bibtex_arxiv_misc(self):
+        row = {
+            "title": "Some preprint",
+            "authors": "Smith J",
+            "year": "2024",
+            "venue": "arXiv",
+            "doi": "",
+            "url": "https://arxiv.org/abs/2401.12345",
+        }
+        bib = self.mod.to_bibtex(row)
+        self.assertIn("@misc{", bib)
+        self.assertIn("eprint = {2401.12345}", bib)
+        self.assertIn("archivePrefix = {arXiv}", bib)
+
+    def test_to_bibtex_inproceedings(self):
+        row = {
+            "title": "X",
+            "authors": "A B",
+            "year": "2025",
+            "venue": "Proceedings of NeurIPS",
+            "doi": "",
+            "url": "",
+        }
+        bib = self.mod.to_bibtex(row)
+        self.assertIn("@inproceedings{", bib)
+        self.assertIn("booktitle = {Proceedings of NeurIPS}", bib)
+
+    def test_bibtex_special_chars_escaped(self):
+        row = {
+            "title": "Models & Methods: 100% accuracy_test",
+            "authors": "X",
+            "year": "2024",
+            "venue": "v",
+            "doi": "", "url": "",
+        }
+        bib = self.mod.to_bibtex(row)
+        self.assertIn(r"\&", bib)
+        self.assertIn(r"\%", bib)
+        self.assertIn(r"\_", bib)
+
+    def test_deduplicate_keys(self):
+        e1 = "@article{wang2023position,\n  title = {A}\n}\n"
+        e2 = "@article{wang2023position,\n  title = {B}\n}\n"
+        e3 = "@article{wang2023position,\n  title = {C}\n}\n"
+        out = self.mod.deduplicate_keys([e1, e2, e3])
+        keys = []
+        import re as _re
+        for x in out:
+            m = _re.match(r"^@\w+\{([^,]+),", x)
+            if m:
+                keys.append(m.group(1))
+        self.assertEqual(keys, ["wang2023position", "wang2023positiona", "wang2023positionb"])
+
+    def test_arxiv_id_from_url(self):
+        f = self.mod._arxiv_id_from_url
+        self.assertEqual(f("https://arxiv.org/abs/2401.12345"), "2401.12345")
+        self.assertEqual(f("https://arxiv.org/abs/2401.12345v2"), "2401.12345")
+        self.assertEqual(f("https://arxiv.org/pdf/2401.12345.pdf"), "2401.12345")
+        self.assertIsNone(f("https://example.com/paper"))
+        self.assertIsNone(f(""))
+
+    def test_process_topic_end_to_end(self):
+        import csv as _csv
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            tdp = Path(td)
+            dedup_dir = tdp / "dedup"
+            dedup_dir.mkdir()
+            out_dir = tdp / "out"
+            csv_path = dedup_dir / "TEST.csv"
+            with csv_path.open("w", encoding="utf-8", newline="") as f:
+                w = _csv.DictWriter(f, fieldnames=[
+                    "title", "authors", "year", "venue", "doi", "url",
+                    "relevance_score", "citations",
+                ])
+                w.writeheader()
+                w.writerow({
+                    "title": "First paper",
+                    "authors": "Wang Y; Doe J",
+                    "year": "2023",
+                    "venue": "JMLR",
+                    "doi": "10.1/a",
+                    "url": "",
+                    "relevance_score": "0.9",
+                    "citations": "10",
+                })
+                w.writerow({
+                    "title": "Second paper",
+                    "authors": "Smith J",
+                    "year": "2024",
+                    "venue": "arXiv",
+                    "doi": "",
+                    "url": "https://arxiv.org/abs/2401.99999",
+                    "relevance_score": "0.3",
+                    "citations": "0",
+                })
+            # Patch DEDUP_DIR
+            orig_dedup = self.mod.DEDUP_DIR
+            self.mod.DEDUP_DIR = dedup_dir
+            try:
+                n, out_path = self.mod.process_topic(
+                    "TEST", min_relevance=0.0, out_dir=out_dir,
+                )
+            finally:
+                self.mod.DEDUP_DIR = orig_dedup
+            self.assertEqual(n, 2)
+            text = out_path.read_text(encoding="utf-8")
+            self.assertIn("First paper", text)
+            self.assertIn("Second paper", text)
+            self.assertIn("eprint = {2401.99999}", text)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
