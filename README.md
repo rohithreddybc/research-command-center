@@ -25,17 +25,47 @@ python scripts\00_setup_repo.py
 # 2) One-time auth so the LLM panel can run on your Max plan (no API charges)
 claude auth login
 
-# 3) Full pipeline with iterative verification
-python scripts\10_run_pipeline.py --max-rounds 3
+# 3) Full pipeline with iterative verification (default profile = blind_citation)
+python scripts\10_run_pipeline.py --topics data\topics_seed_balanced.csv --max-rounds 3 --llm-review
+
+# 4) Bias audit (negative-control sentinel + 13-profile rank stability)
+python scripts\13_bias_audit.py
+
+# 5) Personal-goal overlay on the neutral baseline (selection aid only)
+python scripts\14_personal_overlay.py
+
+# 6) Weekly arXiv scoop watch (alerts on new papers in active topic spaces)
+python scripts\15_arxiv_watch.py
+
+# 7) Generate BibTeX for a topic when starting to write a paper
+python scripts\16_extract_bibtex.py --topic T02
 ```
 
 Key outputs:
 
-- `reports/final_decision_report.md` — the master report
+- `reports/final_decision_report.md` — master per-topic report
+- `reports/BIAS_AUDIT_REPORT.md` — anti-bias audit + negative-control sentinel
+- `reports/PERSONAL_OVERLAY_REPORT.md` — safe vs risky personal-goal choices
+- `reports/BRIDGE_PUBLICATION_STRATEGY.md` — bridge-paper analysis
+- `reports/SCOOP_WATCH.md` — arXiv scoop monitor (kill-signal alerts)
 - `data/scores/scores.csv` — evidence-derived scores per topic
 - `data/decisions/decisions.csv` — final per-topic decisions
 - `reports/llm_review_errors.md` — written only if LLM calls failed
 - `reports/audit_notes.md` — append-only run log
+- `DECISIONS.md` — append-only commitment log
+- `references/<topic>.bib` — BibTeX for paper writing
+
+## Current state (2026-05-12)
+
+The most recent balanced pipeline run (commit `c805933`, 36 topics) produced:
+- 6 topics passing `blind_citation_acceptable=True`: B05, B12, T07, T01, B11, T02
+- 0 topics meeting the strict GO threshold
+- Bridge paper selected: **T02 (position-bias quantification)** — see
+  `06_paper_pipeline/T02_position_bias/PROTOCOL.md` for the execution plan.
+- Long-term paper queued: **T07 (judge prompt injection)** — see
+  `06_paper_pipeline/T07_judge_injection/PRE_EXECUTION_CHECKLIST.md` first.
+
+See `DECISIONS.md` for the running rationale.
 
 ---
 
@@ -68,9 +98,10 @@ This system **does not use the Anthropic API**.
 ## Pipeline
 
 ```
-data/topics_seed.csv
+data/topics_seed_balanced.csv  (or topics_seed.csv)
    ↓
-01_generate_queries.py             per-source synonym-expanded queries
+01_generate_queries.py             per-source synonym-expanded queries;
+                                   conditional axis injection by target_artifact
    ↓
 02_collect_topic_evidence.py       Semantic Scholar, OpenAlex, Crossref, arXiv
                                    (relevance-scored + threshold-filtered dedup)
@@ -79,21 +110,34 @@ data/topics_seed.csv
    ↓
 04_collect_venue_evidence.py       DOAJ, OpenReview, Crossref journals
    ↓
-05_score_topics.py                 7 evidence-derived signals + topic-aware
-                                   NIW / EB-1A / Career + artifact density
+05_score_topics.py                 18-component scoring under all 13 profiles;
+                                   sorts by active profile (default blind_citation)
    ↓
-06_llm_review_topics.py            Claude CLI panel; bounded OpenAI tiebreaker
+12_detect_existing_work.py         Paper vs artifact overlap distinction;
+                                   per-source EW report + summary
+   ↓
+06_llm_review_topics.py            8 neutral reviewers (default);
+                                   --include-personal-goals for niw_eb1a + faang
    ↓
 07_compare_reviewers.py            agreement + per-role disagreement
    ↓
 08_confidence_gate.py              GO / NARROW / DROP / NEEDS_MORE_EVIDENCE
-                                   + completeness + status banner
+                                   + blind_citation gate + NC sentinel + EW gate
    ↓ (loop back to 03 if NEEDS_MORE_EVIDENCE and rounds remain)
    ↓
-09_generate_final_report.py        reports/final_decision_report.md
+09_generate_final_report.py        reports/final_decision_report.md (with
+                                   active profile + 13-profile rank stability
+                                   + personal-goal overlay)
+
+Auxiliary (on-demand, not in pipeline loop):
+  13_bias_audit.py        anti-bias audit, negative-control sentinel, 13 profiles
+  14_personal_overlay.py  selection aid: safe vs risky personal-goal choices
+  15_arxiv_watch.py       weekly arXiv scoop monitor with kill-signal alerts
+  16_extract_bibtex.py    convert dedup CSV -> references/<topic>.bib
 ```
 
-`scripts/10_run_pipeline.py` orchestrates the loop with `--max-rounds`.
+`scripts/10_run_pipeline.py` orchestrates the main loop with `--max-rounds`,
+`--profile`, and `--include-personal-goals`.
 
 ---
 
@@ -124,13 +168,17 @@ config, README, and (optionally) the latest `reports/final_decision_report.md`.
 ## Testing
 
 ```powershell
-python scripts\tests\test_pipeline.py
+python -m pytest scripts\tests\test_pipeline.py -q
 ```
 
-Unit-tested: query generation, deduplication, relevance filtering,
-scoring rubric monotonicity, topic-aware NIW/EB-1A/Career variation,
-artifact-density penalty, confidence-gate decision rules, final-report
-warning when LLM did not run.
+90 tests covering: query generation (incl. conditional axis injection by target
+artifact), deduplication, relevance filtering, scoring rubric monotonicity,
+topic-aware NIW/EB-1A/Career variation, artifact-density penalty, confidence-gate
+decision rules, final-report warning when LLM did not run, neutral-reviewer panel
+defaults, profile system (13 profiles + custom weight overrides), seed keyword
+cap, negative-control sentinel, personal-goal-only-weak gating, blind-citation
+gate enforcement, bias audit outputs, paper-vs-artifact existing-work detection
+(8 tests), arXiv scoop watch helpers (11 tests), and BibTeX extraction (10 tests).
 
 ---
 
@@ -162,3 +210,41 @@ warning when LLM did not run.
 
 All claims marked **VERIFY** are time-sensitive and must be re-checked
 before any commitment of more than 30 days of work.
+
+---
+
+## Bias-resistance design
+
+The pipeline was redesigned in May 2026 to be academically neutral by default.
+See `reports/BIAS_AUDIT_REPORT.md` for the full audit. Highlights:
+
+- **Default scoring profile**: `blind_citation` (citation/novelty/gap-clarity
+  driven; all NIW/EB1A/career weights = 0).
+- **13 weight profiles** in `config/weight_profiles.yaml`; each topic carries
+  scores under all 13. Run `13_bias_audit.py` to see rank stability per topic.
+- **8 neutral LLM reviewers** by default; personal-goal reviewers (niw_eb1a,
+  career_faang) only included when `--include-personal-goals` is passed.
+- **Negative-control sentinel**: 7 deliberately-vague topics seeded into the
+  CSV (`is_negative_control=true`); if any rank in the top half under the
+  active profile, GO is blocked and the pipeline reports SCORING_LEAK_DETECTED.
+- **Paper vs artifact existing-work distinction**: `12_detect_existing_work.py`
+  separates peer-reviewed paper overlap from GitHub/HF/PWC artifact overlap;
+  GO is only blocked by paper overlap.
+- **Personal-goal overlay**: `14_personal_overlay.py` is a selection aid that
+  runs AFTER the neutral ranking; it cannot promote a topic that fails
+  `blind_citation_acceptable`.
+- **Conditional axis-term injection**: `01_generate_queries.py` only injects
+  benchmark/evaluation axis terms for benchmark-target topics.
+- **Seed keyword cap**: `common/seed_audit.py` flags overrepresented exact
+  keywords (>3 across topics) in `reports/seed_bias_warnings.md`.
+
+---
+
+## Active paper projects
+
+| Topic | Status | Folder |
+|---|---|---|
+| **T02** — Position-bias quantification | Bridge paper, in execution | `06_paper_pipeline/T02_position_bias/` |
+| **T07** — Judge prompt injection | Pre-execution checklist pending | `06_paper_pipeline/T07_judge_injection/` |
+
+Each project folder contains: PROTOCOL, PAPER_OUTLINE, CODE_SCAFFOLD, KILL_CRITERIA.
