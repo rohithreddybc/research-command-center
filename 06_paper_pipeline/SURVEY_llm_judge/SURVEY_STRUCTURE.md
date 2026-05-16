@@ -1,7 +1,7 @@
 # Survey Structure — Section-by-Section Plan
 
-*Working title*: **"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"**
-*(updated 2026-05-16; see `reports/VENUE_REOPTIMIZATION.md` for rationale)*
+*Working title*: **"Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences"**
+*(v3; updated 2026-05-16 after empirical title check found WEAK-ECHO on prior "Judging the Judges" version)*
 *Target length*: 60–80 pages (TMLR survey certification)
 
 The structure below is the citation-magnet template from `HIGH_CITATION_STRATEGY.md` §3.3:

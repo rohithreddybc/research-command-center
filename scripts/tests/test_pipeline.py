@@ -2210,5 +2210,131 @@ Other content.
         self.assertIn("UNCLASSIFIED", action_text)
 
 
+class TestTitleCheck(unittest.TestCase):
+    """Tests for scripts/19_title_check.py (proposed-title verification)."""
+
+    def setUp(self):
+        self.mod = _load("19_title_check")
+
+    def test_normalize_title_lowercases_and_strips_punct(self):
+        out = self.mod.normalize_title("Judging the Judges: A Survey!")
+        self.assertEqual(out, "judging the judges a survey")
+
+    def test_normalize_title_collapses_whitespace(self):
+        out = self.mod.normalize_title("  multi   space\n\ntitle  ")
+        self.assertEqual(out, "multi space title")
+
+    def test_tokenize_removes_stopwords(self):
+        toks = self.mod.tokenize("A Survey of LLM-as-Judge")
+        # "a", "of" removed
+        self.assertNotIn("a", toks)
+        self.assertNotIn("of", toks)
+        self.assertIn("survey", toks)
+
+    def test_jaccard_identical(self):
+        v = self.mod.jaccard_similarity(
+            "A Survey of LLM-as-Judge", "a survey of llm as judge")
+        self.assertGreaterEqual(v, 0.7)
+
+    def test_jaccard_disjoint(self):
+        v = self.mod.jaccard_similarity(
+            "Position bias in LLM judges",
+            "Image classification with CNNs")
+        self.assertEqual(v, 0.0)
+
+    def test_jaccard_partial(self):
+        v = self.mod.jaccard_similarity(
+            "Position bias in LLM judges",
+            "Position bias in multiple choice")
+        # 3 shared (position, bias, llm/multiple, judges/choice in)
+        # tokens: {position, bias, llm, judges} vs {position, bias, multiple, choice}
+        # intersection = {position, bias} = 2; union = 6; jaccard = 2/6 = 0.33
+        self.assertGreater(v, 0.2)
+        self.assertLess(v, 0.5)
+
+    def test_normalized_overlap_substring(self):
+        # Query is fully contained in a longer candidate
+        v = self.mod.normalized_overlap(
+            "LLM-as-Judge survey",
+            "A Comprehensive LLM-as-Judge survey of methods")
+        self.assertGreaterEqual(v, 0.95)  # all query tokens present
+
+    def test_normalized_overlap_empty_query(self):
+        v = self.mod.normalized_overlap("", "anything")
+        self.assertEqual(v, 0.0)
+
+    def test_verdict_taken(self):
+        self.assertEqual(self.mod.verdict(0.9, 0.9, 1), "TAKEN")
+
+    def test_verdict_likely_taken(self):
+        self.assertEqual(self.mod.verdict(0.72, 0.72, 1), "LIKELY-TAKEN")
+
+    def test_verdict_strong_echo(self):
+        # High overlap (query is substring) but lower similarity
+        self.assertEqual(self.mod.verdict(0.55, 0.9, 1), "STRONG-ECHO")
+
+    def test_verdict_near_match(self):
+        self.assertEqual(self.mod.verdict(0.55, 0.55, 1), "NEAR-MATCH")
+
+    def test_verdict_near_match_by_count(self):
+        # Even with lower top sim, many results above 0.5 → NEAR-MATCH
+        self.assertEqual(self.mod.verdict(0.45, 0.45, 3), "NEAR-MATCH")
+
+    def test_verdict_weak_echo(self):
+        self.assertEqual(self.mod.verdict(0.4, 0.4, 1), "WEAK-ECHO")
+
+    def test_verdict_clear(self):
+        self.assertEqual(self.mod.verdict(0.1, 0.1, 0), "CLEAR")
+
+    def test_score_results_sorts_by_similarity(self):
+        results = [
+            {"title": "Quantum networks", "source": "x"},
+            {"title": "Position bias in LLM judges", "source": "y"},
+            {"title": "Some other paper on judges", "source": "z"},
+        ]
+        scored = self.mod.score_results("position bias LLM judges", results)
+        # First should be the closest match
+        self.assertEqual(scored[0]["title"], "Position bias in LLM judges")
+        self.assertGreater(scored[0]["similarity"], scored[-1]["similarity"])
+
+    def test_score_results_dedupes(self):
+        results = [
+            {"title": "Same paper", "source": "x"},
+            {"title": "Same paper", "source": "y"},   # same title; should dedupe
+            {"title": "Different paper", "source": "z"},
+        ]
+        scored = self.mod.score_results("query", results)
+        titles = [r["title"] for r in scored]
+        self.assertEqual(len(titles), 2)
+
+    def test_score_results_propagates_errors(self):
+        results = [
+            {"_error": "rate-limited"},
+            {"title": "OK paper", "source": "x"},
+        ]
+        scored = self.mod.score_results("query", results)
+        # Error entries are not scored or sorted; they're filtered out in
+        # score_results' output (only non-error get appended)
+        # Wait: re-read implementation — score_results actually appends errors
+        # back in. Let me check the implementation expectation.
+        # Implementation: error rows are appended back via `if r.get("_error"): out.append(r); continue`
+        kinds = [bool(r.get("_error")) for r in scored]
+        self.assertTrue(any(kinds))
+
+    def test_suggest_rephrasings_with_colon(self):
+        out = self.mod.suggest_rephrasings(
+            "Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge",
+            conflicts=[{"title": "A Survey on LLM-as-a-Judge"}])
+        self.assertTrue(any("Rethinking" in s or "Revisited" in s for s in out))
+        self.assertLessEqual(len(out), 5)
+
+    def test_suggest_rephrasings_for_survey(self):
+        out = self.mod.suggest_rephrasings(
+            "A Comprehensive Survey of X", conflicts=[])
+        # Should suggest renaming "Survey" to alternatives
+        self.assertTrue(any("Systematic Review" in s or "Taxonomy" in s
+                            or "Comprehensive Analysis" in s for s in out))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

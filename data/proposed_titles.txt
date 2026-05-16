@@ -1,0 +1,18 @@
+# Proposed paper titles to verify against existing literature.
+# One title per line. Lines starting with # are ignored.
+
+# === Survey (high-citation paper) ===
+Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge
+On the Reliability of LLM-as-a-Judge: A Comprehensive Survey
+A Survey of LLM-as-a-Judge: Methods, Failure Modes, and Defences
+Trustworthy LLM-as-a-Judge: A Comprehensive Survey
+
+# === T02 (bridge paper, position bias) ===
+Position Bias in LLM Judges: A Cross-Model Quantification
+Quantifying Position Bias Across LLM Judges
+A Cross-Model Study of Position Bias in LLM-as-a-Judge
+
+# === T07 (judge prompt injection) ===
+LLM Judges as Attack Surface: A Threat Model for Candidate-Side Prompt Injection
+When the Judge Is the Victim: Candidate-Side Prompt Injection in LLM-as-Judge Pipelines
+Candidate-Side Prompt Injection: A New Attack Surface for LLM Judges

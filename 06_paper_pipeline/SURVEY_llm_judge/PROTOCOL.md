@@ -9,21 +9,48 @@
 
 ## 1. The deliverable
 
-**Working title** (updated 2026-05-16 — citation-optimised):
-*"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"*
+**Working title** (updated 2026-05-16, post-empirical-title-check):
+*"Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences"*
 
-Title rationale (`reports/VENUE_REOPTIMIZATION.md` §Part 2 — Title re-optimization):
-- "Judging the Judges" is a memorable hook (alliteration + concept inversion)
-  → quoted and shared more easily → higher citation discovery
-- "Comprehensive Survey" signals completeness → reviewers and readers expect a definitive reference
-- 11 words → fits citation manager truncation behaviour
-- Topic keyword "LLM-as-a-Judge" present → search discoverability
+### Title evolution log
 
-Fallback title if reviewers object to the catchy phrasing as unscientific:
-*"On the Reliability of LLM-as-a-Judge: A Comprehensive Survey"*
+| Version | Title | Verdict | Reason changed |
+|---|---|---|---|
+| v1 | LLM-as-Judge: A Comprehensive Survey of Methods, Failure Modes, and Evaluation Frameworks | (not checked) | Initial draft; verbose |
+| v2 | Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge | **WEAK-ECHO** (0.5 sim to Gu 2024) | Catchy but echoes Zheng 2023 "Judging LLM-as-a-Judge" famous paper AND Gu 2024 survey |
+| **v3 (current)** | **Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences** | **CLEAR** (0.11 sim) | Distinct angle ("Trustworthy"); concrete promise (Methods + Failures + Defences); verified clear via `scripts/19_title_check.py` |
 
-Previous working title (now deprecated):
-*"LLM-as-Judge: A Comprehensive Survey of Methods, Failure Modes, and Evaluation Frameworks"*
+Fallback titles (all CLEAR per `reports/TITLE_CHECK.md`):
+- *"A Survey of LLM-as-a-Judge: Methods, Failure Modes, and Defences"* — simpler
+- *"Trustworthy LLM-as-a-Judge: A Comprehensive Survey"* — shorter
+
+**Hard rule**: re-run `python scripts/19_title_check.py --title "<title>"` before
+final submission. If verdict drops below CLEAR (e.g., a new arXiv preprint
+appears), pick from the fallback list or revise.
+
+### Why the title changed (post-empirical check)
+
+Three existing arXiv surveys were discovered via the title-check that I did
+not previously list:
+
+| Existing survey | Year | Cit |
+|---|---|---|
+| A Survey on LLM-as-a-Judge (Gu et al.) | 2024 | 23 |
+| LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods | 2024 | 24 |
+| From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge | 2024 | 11 |
+
+The arXiv space is more crowded than initially represented in
+`HIGH_CITATION_STRATEGY.md` v1.0. The "no top-venue survey" gap is still real
+(none of the three are at TMLR / JMLR / ACM CS), but the differentiator must
+be sharper than just "comprehensive." Our distinguishing angles:
+
+1. **"Trustworthy" framing** — none of the three existing surveys position
+   themselves in the AI-safety / reliability frame
+2. **"Defences" coverage** — none of the three deep-dive on mitigations
+3. **Top-venue peer review** at TMLR — none of the three has that yet
+4. **Empirical case studies** from T02 + T07 — none of the three include
+   first-party empirical validation
+5. **Newer cut-off** — submit Feb 2027 captures 12+ months of post-Gu work
 
 **Format**: 60–100 page comprehensive survey + companion GitHub repo + supplementary website
 

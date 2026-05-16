@@ -144,6 +144,11 @@ Auxiliary (on-demand, not in pipeline loop):
   18_survey_progress.py   reports/SURVEY_PROGRESS.md — corpus size vs target,
                           section coverage, read-status, draft pages,
                           quality-rubric completion, kill-criteria sign-off
+  19_title_check.py       verify a proposed paper title against existing
+                          literature (Semantic Scholar + arXiv + OpenAlex);
+                          outputs reports/TITLE_CHECK.md with similarity
+                          scores and verdicts (CLEAR / WEAK-ECHO / NEAR-MATCH /
+                          STRONG-ECHO / LIKELY-TAKEN / TAKEN)
 ```
 
 `scripts/10_run_pipeline.py` orchestrates the main loop with `--max-rounds`,
@@ -255,7 +260,7 @@ See `reports/BIAS_AUDIT_REPORT.md` for the full audit. Highlights:
 | Project | Role | Venue | Submit / Publish | Folder |
 |---|---|---|---|---|
 | **T02** — Position-bias quantification | **Bridge** (fastest sub→pub, ~3.5 mo) | EMNLP 2026 Workshop (Eval4NLP) | 2026-08-15 / 2026-12 | `06_paper_pipeline/T02_position_bias/` |
-| **SURVEY** — *"Judging the Judges"* | **High-citation primary** (target 500+) | TMLR Survey Certification | 2027-02-15 / 2027-08 | `06_paper_pipeline/SURVEY_llm_judge/` |
+| **SURVEY** — *"Trustworthy LLM-as-a-Judge: Methods, Failure Modes, and Defences"* | **High-citation primary** (target 500+) | TMLR Survey Certification | 2027-02-15 / 2027-08 | `06_paper_pipeline/SURVEY_llm_judge/` |
 | **T07** — Judge prompt injection | Companion + Survey §6.3 case study (if executed) | TBD (post blocking-paper read) | TBD | `06_paper_pipeline/T07_judge_injection/` |
 
 Each project folder contains: PROTOCOL, PAPER_OUTLINE / SURVEY_STRUCTURE,

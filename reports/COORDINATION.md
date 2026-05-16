@@ -18,7 +18,7 @@ work feeds the survey.
 |---|---|---|
 | **Role** | Publication-count starter; first-ever peer-reviewed | The big citation play (target 500+) |
 | **Type** | Empirical paper, 8 pages (workshop format) | Comprehensive survey, ~70 pages |
-| **Title** | *Position Bias in LLM Judges: A Cross-Model Quantification* | *"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"* |
+| **Title** | *Position Bias in LLM Judges: A Cross-Model Quantification* | *"Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences"* |
 | **Primary venue** | **EMNLP 2026 Workshop** (Eval4NLP) | **TMLR** (Survey Certification) |
 | **Backup venues** | NeurIPS 2026 Safety Workshop → TMLR → ICLR 2027 Workshop | ACM Computing Surveys → JMLR → CL journal |
 | **Sub→Pub time** | ~3.5 months | 3–6 months |
