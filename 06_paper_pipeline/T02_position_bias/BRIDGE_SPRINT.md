@@ -1,10 +1,13 @@
-# T02 — 9-Week Bridge Sprint Checklist
+# T02 — 13-Week Bridge Sprint Checklist
 
-*Source*: `06_paper_pipeline/T02_position_bias/PROTOCOL.md` v1.1 (timeline §8)
-*Target*: TMLR submission + arXiv preprint by **2026-07-15**
-*Publication target*: December 2026
+*Source*: `06_paper_pipeline/T02_position_bias/PROTOCOL.md` v1.2 (timeline §8)
+*Target*: **EMNLP 2026 Workshop** (Eval4NLP) submission + arXiv preprint by **2026-08-15**
+*Publication target*: December 2026 (sub→pub ~3.5 months)
 
 Print this. Tape it to the monitor. Tick weekly.
+
+**Why workshop over TMLR**: faster sub→pub (~3.5 vs 3-5 months), 8-page hard
+limit (less drafting), same publication month. See `reports/VENUE_REOPTIMIZATION.md`.
 
 ---
 
@@ -125,27 +128,74 @@ Print this. Tape it to the monitor. Tick weekly.
 
 ---
 
-## Week 9 — July 11–15, 2026 (submission week)
+## Week 9 — July 11–17, 2026 (internal critique)
 
-- [ ] Mon-Tue: final revisions per self-review notes
-- [ ] Wed: format check — TMLR LaTeX template compiles cleanly
-- [ ] Wed: companion GitHub repo public release — `judge-bias-eval` v0.1
-- [ ] Thu: arXiv submission (cs.CL primary, cs.AI secondary)
-- [ ] Fri (2026-07-15): **TMLR submission via OpenReview**
-- [ ] Fri: log submission in `DECISIONS.md`
-- [ ] Fri: tweet thread announcing arXiv preprint + repo
-- [ ] **Gate**: submission confirmed; arXiv ID received
+- [ ] Read the full draft end-to-end as a hostile reviewer would
+- [ ] Mark every TODO / unclear claim / missing citation
+- [ ] If possible, send draft to 1 external reader; give them 1 week
+- [ ] **Gate**: critique notes complete; revision plan written
+
+**Estimated hours**: 8 (T02) + 12 (survey) = 20
+
+---
+
+## Week 10 — July 18–24, 2026 (revisions)
+
+- [ ] Address every self-review note from week 9
+- [ ] Tighten claims; remove any unsupported statements
+- [ ] Refine abstract — 200 words max for workshop
+- [ ] **Gate**: revised draft v3 complete
 
 **Estimated hours**: 12 (T02) + 8 (survey) = 20
 
 ---
 
-## After submission (weeks 10+)
+## Week 11 — July 25–31, 2026 (format polish)
 
-- T02 enters TMLR review cycle (3–5 months)
+- [ ] Convert to EMNLP workshop LaTeX template
+- [ ] Verify 8-page hard limit (long paper format)
+- [ ] Refit any over-length sections
+- [ ] All figures embed at 300+ DPI; greyscale-printable
+- [ ] All tables fit page width
+- [ ] **Gate**: PDF compiles cleanly under EMNLP workshop template; under page limit
+
+**Estimated hours**: 8 (T02) + 12 (survey) = 20
+
+---
+
+## Week 12 — August 1–7, 2026 (final pass + reproducibility)
+
+- [ ] Final figure regeneration (latest data)
+- [ ] Reproducibility appendix complete
+- [ ] Companion GitHub repo `judge-bias-eval` public; CITATION.cff added
+- [ ] BibTeX file complete; verify every citation resolves
+- [ ] **Gate**: paper + repo + bibliography all ready for submission
+
+**Estimated hours**: 10 (T02) + 10 (survey) = 20
+
+---
+
+## Week 13 — August 8–15, 2026 (submission week)
+
+- [ ] Mon: verify which EMNLP 2026 workshop is the best fit (Eval4NLP first)
+- [ ] Mon: read workshop's specific submission instructions; format any final tweaks
+- [ ] Tue–Wed: final read-through; spot-fix anything
+- [ ] Thu: arXiv submission (cs.CL primary, cs.AI secondary)
+- [ ] Fri (2026-08-15): **EMNLP 2026 Workshop submission via OpenReview / Softconf**
+- [ ] Fri: log submission in `DECISIONS.md`
+- [ ] Fri: tweet thread announcing arXiv preprint + repo
+- [ ] **Gate**: submission confirmed; arXiv ID received; repo public
+
+**Estimated hours**: 12 (T02) + 8 (survey) = 20
+
+---
+
+## After submission (weeks 14+)
+
+- T02 enters workshop review (notification ~2026-10-15, 8 weeks)
 - Full bandwidth shifts to survey (16 hr/week survey, 4 hr/week T02 response)
-- Monitor for reviewer assignment within 2–3 weeks of submission
-- Maintain arXiv preprint visibility (cite from survey, share at workshops)
+- Monitor for any reviewer questions on arXiv preprint
+- Workshop notification → camera-ready (~2 weeks) → publication at EMNLP (~Dec 2026)
 
 ---
 
@@ -170,7 +220,11 @@ From `KILL_CRITERIA.md`:
 - K1 (scoop): another paper publishes cross-model PBI + harness
 - K2 (no effect): pilot shows PBI < 0.02 with overlapping CIs across all judges
 - K3 (cost): spend > $1,500 with < 80% complete
-- K4 (calendar): no submission by 2026-08-15 (13 weeks)
+- K4 (calendar): no workshop submission by 2026-08-15
 
-If any trigger fires, follow the action plan in `KILL_CRITERIA.md` and document
-the decision in `DECISIONS.md`.
+If K4 triggers, fall back to:
+1. **TMLR direct** (~Aug 20–30 submission; Jan–Feb 2027 publication)
+2. **ICLR 2027 workshop** (~Feb 2027 submission; April 2027 publication)
+3. **NeurIPS 2026 Safety Workshop** (~Sep 2026 if scheduled; check at week 12)
+
+Document any fall-back decision in `DECISIONS.md`.

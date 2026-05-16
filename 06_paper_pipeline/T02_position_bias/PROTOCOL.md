@@ -150,20 +150,22 @@ when the same item is scored after seeing different "preceding" examples in the 
 
 ---
 
-## 8. Timeline (9 weeks → submission — accelerated 2026-05-16 per user reconfirmation)
+## 8. Timeline (13 weeks → workshop submission — re-targeted 2026-05-16)
 
-**Original 16-week plan deprecated**. The user reconfirmed (2026-05-16) that
-the bridge needs to be **fast** with quality maintained, at a free venue.
-The ARR June 2026 cycle is dead (deadline 30 days from re-plan, would have
-needed scaffold 30 days earlier). The two realistic fast paths both publish
-in December 2026:
+**Bridge metric is sub→pub time.** The user clarified (2026-05-16) the bridge's
+optimization target: shortest time from submission to peer-reviewed publication
+at a free venue. Re-analysis in `reports/VENUE_REOPTIMIZATION.md` ranked free
+venues on this metric; the winner for an empirical paper is a top-conference
+workshop.
 
-- **Primary: TMLR direct submission by 2026-07-15** (9 weeks from today; no
-  deadline pressure; review 3–5 months; publish Dec 2026)
-- **Backup: ARR August 2026 → EMNLP Findings** (13 weeks to deadline; tighter
-  margin; same Dec 2026 publication if commitment hits)
+**Venue change**: TMLR-direct → **EMNLP 2026 Workshop** (Eval4NLP target).
+- TMLR sub→pub: 3–5 months
+- EMNLP workshop sub→pub: ~3.5 months
+- Workshop also requires shorter draft (8 pages, hard limit) — less drafting effort
+- Both publish December 2026 — same calendar outcome with lower drafting cost
+- TMLR remains backup if workshop deadline missed
 
-This tightened timeline targets the primary path:
+Tightened plan to hit 2026-08-15 EMNLP workshop deadline:
 
 | Week | Date | Milestone | Deliverable |
 |---|---|---|---|
@@ -175,15 +177,22 @@ This tightened timeline targets the primary path:
 | 6 | Jun 20–26 | Cleaning + initial analysis | PBI per (model, task); Kendall τ; bootstrap CIs |
 | 7 | Jun 27 – Jul 3 | Draft v1 | §1 Intro + §2 Related + §3 Method + §4 Experiments + §5 Results (first pass) |
 | 8 | Jul 4–10 | Draft v2 + figures | §6 Discussion + §7 Conclusion; all figures finalised; tables resolved |
-| 9 | Jul 11–15 | **Submit** | arXiv preprint + TMLR submission on Jul 15 |
+| 9 | Jul 11–17 | Internal critique | Self-review; 1 external reader if possible; address blockers |
+| 10 | Jul 18–24 | Revisions | Address self-review notes; tighten claims |
+| 11 | Jul 25–31 | Format polish | EMNLP workshop LaTeX template; 8-page hard limit check |
+| 12 | Aug 1–7 | Final pass + figures | Final figure regeneration; reproducibility appendix; companion repo public |
+| 13 | Aug 8–15 | **Submit** | arXiv preprint + EMNLP 2026 Workshop submission by 2026-08-15 |
 
-**Total elapsed**: 9 weeks (60 days) from re-plan to submission.
-**Decision date**: October–November 2026 (TMLR review 3–5 months).
-**Publication target**: December 2026.
+**Total elapsed**: 13 weeks (91 days) from re-plan to submission.
+**Decision date**: ~2026-10-15 (workshop notification typically 8 weeks).
+**Camera-ready**: ~2026-11-15.
+**Publication**: December 2026 (at EMNLP).
+**Sub → Pub time**: ~3.5 months (the user's bridge metric).
 
-**Hard kill date for the FAST path**: if no submission by 2026-08-15 (13 weeks),
-the August ARR cycle is also missed → publication slips to mid-2027. Trigger
-KILL_CRITERIA review.
+**Hard kill date**: if no workshop submission by 2026-08-15:
+- Fall back to TMLR direct (submit Aug 20–30; publish Jan–Feb 2027)
+- Or wait for ICLR 2027 workshop (submit ~Feb 2027; publish Apr 2027)
+- Trigger KILL_CRITERIA K4 review either way
 
 ### Scope reductions if behind
 
@@ -222,38 +231,53 @@ Document any scope reduction in `06_paper_pipeline/T02_position_bias/CHANGES.md`
 
 ---
 
-## 11. Submission Strategy (updated 2026-05-16 — TMLR-direct is now primary)
+## 11. Submission Strategy (updated 2026-05-16 — EMNLP workshop is now primary)
 
-**Primary**: **TMLR (direct submission)** — self-targeted 2026-07-15
-- No deadline; submit when ready
-- Rolling review; 3–5 months typical
-- $0 APC; DBLP + Google Scholar indexed; USCIS-recognised
-- Open review (less anonymous but faster turnaround than ARR)
-- Up to 12 pages allowed (we target ~8 + appendix)
+**Primary**: **EMNLP 2026 Workshop** (Eval4NLP target; alternatives: BlackboxNLP,
+GenBench, TrustNLP, Workshop on Bias in NLP)
+- Submission deadline: ~2026-08-15
+- Notification: ~2026-10-15
+- Camera-ready: ~2026-11-15
+- Conference / publication: December 2026
+- **Sub → Pub time**: ~3.5 months (fastest free peer-reviewed for empirical work)
+- 8-page hard limit (long paper) or 4-page (short paper); we target long
+- $0 APC; peer-reviewed; ACL Anthology indexed; USCIS-recognised
 - arXiv preprint posted concurrent with submission
 
-**Backup 1**: ARR August 2026 → EMNLP 2026 Findings
-- ARR deadline ~2026-08-15
-- EMNLP commitment ~October 2026
-- Publication December 2026 (same window as TMLR)
-- Anonymous double-blind via ARR
+**Backup 1**: NeurIPS 2026 Safety / Evaluation Workshop
+- Submission ~September 2026; publication December 2026
+- Similar timeline; alternative venue if Eval4NLP rejected
 
-**Backup 2**: NAACL 2027 or EACL 2027 (via later ARR cycles)
+**Backup 2**: TMLR direct
+- No deadline; submit anytime
+- 3–5 months sub→pub
+- Higher per-paper prestige; slightly longer review
+- Backup if both workshops reject or deadlines missed
+
+**Backup 3**: ICLR 2027 workshop
+- Submission ~February 2027; publication April 2027
+- Total elapsed longer, but useful if everything 2026 misses
+
+**Backup 4**: NAACL 2027 / EACL 2027 (via later ARR cycles)
 - Pushes publication to mid-2027
 
-**Backup 3**: TMLR resubmission with revisions
-- TMLR supports a single revise-and-resubmit cycle
-- Resubmission decision typically within 2 months
-
 **Never**: IEEE Access, PLOS ONE, Frontiers, MDPI, any Springer paid-OA route.
-APC violation + reviewer-perception risk.
 
-### Why TMLR-direct over ARR for the bridge
-- No deadline pressure → no last-minute compromise on quality
-- Faster individual review (3–5 mo vs ARR's 2 mo + EMNLP's 4 mo = 6 mo total to publication)
-- Same publication date target (Dec 2026)
-- HELM at TMLR has 1,500+ citations — venue is cite-able
-- TMLR is explicitly not author-status-gated
+### Why workshop over TMLR for the bridge (post 2026-05-16 user clarification)
+- ~1 month faster sub→pub (3.5 vs 3-5 mo)
+- 8-page hard limit → less drafting time vs 12-page TMLR
+- Same publication month (Dec 2026)
+- ACL Anthology indexed → equivalent NIW/EB-1A weight
+- Trade-off accepted: ~50 fewer expected citations on T02 (workshop ceiling 80,
+  TMLR ceiling 150) — but T02's citations come from the survey §6.1 reference
+  loop regardless
+- See `reports/VENUE_REOPTIMIZATION.md` for the full analysis
+
+### Why NOT TMLR for the bridge
+- The user's bridge metric is sub→pub time. TMLR loses on that metric.
+- The user's high-citation paper is the SURVEY at TMLR. T02 doesn't need to
+  carry citation weight; the survey does.
+- Workshop publication is recognised by USCIS as peer-reviewed (criterion vi).
 
 ---
 
@@ -278,12 +302,14 @@ this file or in `06_paper_pipeline/T02_position_bias/CHANGES.md`.
 
 | Field | Value |
 |---|---|
-| Protocol version | 1.1 (timeline + venue updated 2026-05-16) |
-| Protocol date | 2026-05-12 (v1.0); 2026-05-16 (v1.1) |
+| Protocol version | 1.2 (venue re-optimized 2026-05-16 second pass) |
+| Protocol date | 2026-05-12 (v1.0); 2026-05-16 (v1.1, v1.2) |
 | Author | rohithreddybc |
 | Reviewer | (none — single-author project) |
 | Pre-registration link | TBD (OSF pending) |
 | Repo | TBD (`github.com/rohithreddybc/judge-bias-eval`) |
-| Primary venue | TMLR (changed from ARR→EMNLP per user reconfirmation 2026-05-16) |
-| Submission target | 2026-07-15 |
+| Primary venue | **EMNLP 2026 Workshop** (Eval4NLP) |
+| Backup venues | NeurIPS 2026 Safety Workshop → TMLR → ICLR 2027 Workshop |
+| Submission target | 2026-08-15 |
 | Publication target | December 2026 |
+| Sub→Pub target | ~3.5 months |

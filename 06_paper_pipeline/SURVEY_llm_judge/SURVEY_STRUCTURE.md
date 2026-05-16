@@ -1,6 +1,7 @@
 # Survey Structure — Section-by-Section Plan
 
-*Working title*: *LLM-as-Judge: A Comprehensive Survey of Methods, Failure Modes, and Evaluation Frameworks*
+*Working title*: **"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"**
+*(updated 2026-05-16; see `reports/VENUE_REOPTIMIZATION.md` for rationale)*
 *Target length*: 60–80 pages (TMLR survey certification)
 
 The structure below is the citation-magnet template from `HIGH_CITATION_STRATEGY.md` §3.3:

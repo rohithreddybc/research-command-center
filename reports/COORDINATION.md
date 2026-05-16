@@ -17,15 +17,17 @@ work feeds the survey.
 | | T02 (BRIDGE) | SURVEY (PRIMARY) |
 |---|---|---|
 | **Role** | Publication-count starter; first-ever peer-reviewed | The big citation play (target 500+) |
-| **Type** | Empirical paper, ~8 pages | Comprehensive survey, ~70 pages |
-| **Primary venue** | **TMLR** (rolling, no deadline) | **TMLR** (Survey Certification) |
-| **Backup venues** | ARR Aug 2026 → EMNLP Findings → NAACL 2027 | ACM Computing Surveys → JMLR → CL journal |
+| **Type** | Empirical paper, 8 pages (workshop format) | Comprehensive survey, ~70 pages |
+| **Title** | *Position Bias in LLM Judges: A Cross-Model Quantification* | *"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"* |
+| **Primary venue** | **EMNLP 2026 Workshop** (Eval4NLP) | **TMLR** (Survey Certification) |
+| **Backup venues** | NeurIPS 2026 Safety Workshop → TMLR → ICLR 2027 Workshop | ACM Computing Surveys → JMLR → CL journal |
+| **Sub→Pub time** | ~3.5 months | 3–6 months |
 | **Cost ($)** | ~$1,500 API budget | <$200 (mostly reading time) |
-| **Calendar effort** | 8–12 weeks active | 10–12 months |
+| **Calendar effort** | 13 weeks active | 10–12 months |
 | **Cognitive mode** | Experiments + analysis + writing | Reading + synthesis + writing |
 | **USCIS role** | Publication #1 (basic peer-reviewed evidence) | Strongest single EB-1A exhibit (criterion vi) |
 | **APC** | $0 | $0 |
-| **Citation ceiling** | 80–150 | 300–800 (with luck, 500+) |
+| **Citation ceiling** | 30–80 | 500–1500 (target 500+) |
 
 ---
 
@@ -83,11 +85,12 @@ OTHER
 ```
 
 **Key milestones**:
-- 2026-06-15: T02 pilot complete
-- 2026-07-15: T02 paper submitted to TMLR + arXiv preprint posted
-- 2026-12-15: T02 published at TMLR (target)
-- 2027-02-15: Survey submitted to TMLR + arXiv preprint posted
-- 2027-08-15: Survey published at TMLR (target)
+- 2026-06-05: T02 pilot complete
+- 2026-08-15: T02 paper submitted to EMNLP 2026 Workshop + arXiv preprint
+- 2026-10-15: T02 workshop notification
+- 2026-12-10: T02 published at EMNLP 2026 (publication #1)
+- 2027-02-15: Survey submitted to TMLR Survey Certification + arXiv preprint
+- 2027-08-15: Survey published at TMLR (publication #2; the citation engine)
 
 ---
 

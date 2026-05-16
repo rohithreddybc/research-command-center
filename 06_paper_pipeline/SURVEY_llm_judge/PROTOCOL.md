@@ -9,7 +9,21 @@
 
 ## 1. The deliverable
 
-**Working title**: *LLM-as-Judge: A Comprehensive Survey of Methods, Failure Modes, and Evaluation Frameworks*
+**Working title** (updated 2026-05-16 — citation-optimised):
+*"Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge"*
+
+Title rationale (`reports/VENUE_REOPTIMIZATION.md` §Part 2 — Title re-optimization):
+- "Judging the Judges" is a memorable hook (alliteration + concept inversion)
+  → quoted and shared more easily → higher citation discovery
+- "Comprehensive Survey" signals completeness → reviewers and readers expect a definitive reference
+- 11 words → fits citation manager truncation behaviour
+- Topic keyword "LLM-as-a-Judge" present → search discoverability
+
+Fallback title if reviewers object to the catchy phrasing as unscientific:
+*"On the Reliability of LLM-as-a-Judge: A Comprehensive Survey"*
+
+Previous working title (now deprecated):
+*"LLM-as-Judge: A Comprehensive Survey of Methods, Failure Modes, and Evaluation Frameworks"*
 
 **Format**: 60–100 page comprehensive survey + companion GitHub repo + supplementary website
 
