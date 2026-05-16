@@ -150,30 +150,49 @@ when the same item is scored after seeing different "preceding" examples in the 
 
 ---
 
-## 8. Timeline (16 weeks → submission)
+## 8. Timeline (9 weeks → submission — accelerated 2026-05-16 per user reconfirmation)
 
-| Week | Milestone | Deliverable |
-|---|---|---|
-| 1 | Literature lock + protocol freeze | This document signed off; pre-registration on OSF |
-| 1 | Code scaffold | `judge-bias-eval` repo skeleton (see CODE_SCAFFOLD.md) |
-| 2 | Dataset preparation | 200 items × 3 tasks loaded with calibration metadata |
-| 2 | API key acquisition | OpenAI, Anthropic, Together, Google AI Studio keys obtained |
-| 3 | Pilot: 50 items × 2 judges × 1 task | Pilot results inspected; protocol refined if needed |
-| 4–6 | Full data collection | All 12,000 judge calls completed; raw logs in `data/runs/` |
-| 7 | Cleaning + initial analysis | Cleaned data; PBI computed per (model, task) |
-| 8 | Statistical analysis | Bootstrap CIs, Kendall τ, BH correction; tables and plots |
-| 9–10 | Paper draft v1 | Sections 1–5 (intro, related, method, results) |
-| 11 | Paper draft v2 | Sections 6–7 (discussion, conclusion); figures finalised |
-| 12 | Internal review | Send to 1–2 trusted readers for feedback |
-| 13 | Revisions | Address feedback; tighten claims; finalise abstract |
-| 14 | arXiv preprint | Submit to arXiv (cs.CL primary, cs.AI secondary) |
-| 15 | ARR submission | Submit to current ARR cycle |
-| 16 | Buffer | Slack for unexpected delays |
+**Original 16-week plan deprecated**. The user reconfirmed (2026-05-16) that
+the bridge needs to be **fast** with quality maintained, at a free venue.
+The ARR June 2026 cycle is dead (deadline 30 days from re-plan, would have
+needed scaffold 30 days earlier). The two realistic fast paths both publish
+in December 2026:
 
-**Total elapsed**: 4 months (16 weeks) from week-1 commit to ARR submission.
-**Realistic with daytime job**: 5–6 months. Add 2-month buffer.
+- **Primary: TMLR direct submission by 2026-07-15** (9 weeks from today; no
+  deadline pressure; review 3–5 months; publish Dec 2026)
+- **Backup: ARR August 2026 → EMNLP Findings** (13 weeks to deadline; tighter
+  margin; same Dec 2026 publication if commitment hits)
 
-**Hard kill date**: if no submission by week 24 (6 months), reassess (see KILL_CRITERIA.md).
+This tightened timeline targets the primary path:
+
+| Week | Date | Milestone | Deliverable |
+|---|---|---|---|
+| 1 | May 16–22 | Sprint kickoff | Protocol re-signed; code scaffold started (clients/, judge.py, conditions.py) |
+| 2 | May 23–29 | Dataset prep + API keys | 200 items × 3 tasks loaded; OpenAI + Anthropic + Together + Google keys verified |
+| 3 | May 30 – Jun 5 | Pilot | 50 items × 2 judges × 1 task = 100 calls; outputs manually inspected; protocol refined if needed |
+| 4 | Jun 6–12 | Data collection part 1 | T-Sum cohort: 200 × 5 × 4 = 4,000 calls completed |
+| 5 | Jun 13–19 | Data collection part 2 | T-QA + T-Code cohorts: 8,000 calls completed |
+| 6 | Jun 20–26 | Cleaning + initial analysis | PBI per (model, task); Kendall τ; bootstrap CIs |
+| 7 | Jun 27 – Jul 3 | Draft v1 | §1 Intro + §2 Related + §3 Method + §4 Experiments + §5 Results (first pass) |
+| 8 | Jul 4–10 | Draft v2 + figures | §6 Discussion + §7 Conclusion; all figures finalised; tables resolved |
+| 9 | Jul 11–15 | **Submit** | arXiv preprint + TMLR submission on Jul 15 |
+
+**Total elapsed**: 9 weeks (60 days) from re-plan to submission.
+**Decision date**: October–November 2026 (TMLR review 3–5 months).
+**Publication target**: December 2026.
+
+**Hard kill date for the FAST path**: if no submission by 2026-08-15 (13 weeks),
+the August ARR cycle is also missed → publication slips to mid-2027. Trigger
+KILL_CRITERIA review.
+
+### Scope reductions if behind
+
+If at week 5 (Jun 19) data collection is < 60% done:
+- Drop T-Code task (the pointwise one) → 8,000 calls instead of 12,000
+- Drop Mistral-Large-2 → 4 models instead of 5
+- Combined: 6,400 calls instead of 12,000 — still publishable, less comprehensive
+
+Document any scope reduction in `06_paper_pipeline/T02_position_bias/CHANGES.md`.
 
 ---
 
@@ -203,20 +222,38 @@ when the same item is scored after seeing different "preceding" examples in the 
 
 ---
 
-## 11. Submission Strategy
+## 11. Submission Strategy (updated 2026-05-16 — TMLR-direct is now primary)
 
-**Primary**: ARR → EMNLP 2026 Findings
-- Deadline: per ARR rolling cycle (check `05_venue_selection/SUBMISSION_CALENDAR_2026-2027.md`)
-- Format: 8 pages + unlimited references + appendix
-- Anonymous
+**Primary**: **TMLR (direct submission)** — self-targeted 2026-07-15
+- No deadline; submit when ready
+- Rolling review; 3–5 months typical
+- $0 APC; DBLP + Google Scholar indexed; USCIS-recognised
+- Open review (less anonymous but faster turnaround than ARR)
+- Up to 12 pages allowed (we target ~8 + appendix)
+- arXiv preprint posted concurrent with submission
 
-**If ARR rejects or timeline slips**: Submit directly to **TMLR**
-- Rolling submission, no deadline
-- Open review (less anonymous but faster turnaround)
-- Same paper, slight format adjustment (TMLR allows up to 12 pages)
+**Backup 1**: ARR August 2026 → EMNLP 2026 Findings
+- ARR deadline ~2026-08-15
+- EMNLP commitment ~October 2026
+- Publication December 2026 (same window as TMLR)
+- Anonymous double-blind via ARR
 
-**If both decline**: Submit to **NAACL 2027** or **EACL 2027** (whichever is next).
-Avoid: IEEE Access, PLOS ONE, any Springer/Frontiers journal — APC + reviewer skepticism risk.
+**Backup 2**: NAACL 2027 or EACL 2027 (via later ARR cycles)
+- Pushes publication to mid-2027
+
+**Backup 3**: TMLR resubmission with revisions
+- TMLR supports a single revise-and-resubmit cycle
+- Resubmission decision typically within 2 months
+
+**Never**: IEEE Access, PLOS ONE, Frontiers, MDPI, any Springer paid-OA route.
+APC violation + reviewer-perception risk.
+
+### Why TMLR-direct over ARR for the bridge
+- No deadline pressure → no last-minute compromise on quality
+- Faster individual review (3–5 mo vs ARR's 2 mo + EMNLP's 4 mo = 6 mo total to publication)
+- Same publication date target (Dec 2026)
+- HELM at TMLR has 1,500+ citations — venue is cite-able
+- TMLR is explicitly not author-status-gated
 
 ---
 
@@ -241,9 +278,12 @@ this file or in `06_paper_pipeline/T02_position_bias/CHANGES.md`.
 
 | Field | Value |
 |---|---|
-| Protocol version | 1.0 |
-| Protocol date | 2026-05-12 |
+| Protocol version | 1.1 (timeline + venue updated 2026-05-16) |
+| Protocol date | 2026-05-12 (v1.0); 2026-05-16 (v1.1) |
 | Author | rohithreddybc |
 | Reviewer | (none — single-author project) |
 | Pre-registration link | TBD (OSF pending) |
 | Repo | TBD (`github.com/rohithreddybc/judge-bias-eval`) |
+| Primary venue | TMLR (changed from ARR→EMNLP per user reconfirmation 2026-05-16) |
+| Submission target | 2026-07-15 |
+| Publication target | December 2026 |
