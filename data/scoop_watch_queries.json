@@ -49,6 +49,30 @@
       "kill_threshold_keywords": ["framework", "open-source"],
       "watch_priority": "LOW",
       "rationale": "Second-tier candidate. Watch monthly, not weekly."
+    },
+    {
+      "id": "SURVEY_competing_llm_judge",
+      "topic_id": "SURVEY_llm_judge",
+      "title": "Competing comprehensive surveys on LLM-as-Judge",
+      "arxiv_query": "(abs:\"survey\" OR abs:\"systematic review\" OR abs:\"comprehensive review\") AND (abs:\"LLM-as-a-judge\" OR abs:\"LLM judge\" OR abs:\"language model judge\" OR abs:\"automatic evaluator\")",
+      "categories": ["cs.CL", "cs.AI", "cs.LG"],
+      "relevance_keywords": ["survey", "review", "judge", "evaluator", "LLM", "language model"],
+      "min_relevance": 0.4,
+      "kill_threshold_keywords": ["TMLR", "JMLR", "ACM Computing Surveys", "Foundations and Trends", "comprehensive survey", "taxonomy"],
+      "watch_priority": "HIGH",
+      "rationale": "Primary high-citation paper is the LLM-as-Judge survey. A competing survey at TMLR/JMLR/ACM CS is K1 in SURVEY_llm_judge/KILL_CRITERIA.md."
+    },
+    {
+      "id": "SURVEY_llm_evaluation_general",
+      "topic_id": "SURVEY_llm_judge",
+      "title": "General LLM evaluation surveys (adjacency check)",
+      "arxiv_query": "(abs:\"survey\" OR abs:\"comprehensive review\") AND abs:\"LLM evaluation\" AND (abs:\"benchmark\" OR abs:\"metric\" OR abs:\"evaluator\")",
+      "categories": ["cs.CL", "cs.AI"],
+      "relevance_keywords": ["survey", "evaluation", "LLM", "benchmark", "evaluator"],
+      "min_relevance": 0.35,
+      "kill_threshold_keywords": ["TMLR", "JMLR", "ACM Computing Surveys"],
+      "watch_priority": "MEDIUM",
+      "rationale": "Even an adjacent survey could absorb cite share. Watch but lower urgency."
     }
   ]
 }

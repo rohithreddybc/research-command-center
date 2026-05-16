@@ -242,9 +242,16 @@ See `reports/BIAS_AUDIT_REPORT.md` for the full audit. Highlights:
 
 ## Active paper projects
 
-| Topic | Status | Folder |
-|---|---|---|
-| **T02** — Position-bias quantification | Bridge paper, in execution | `06_paper_pipeline/T02_position_bias/` |
-| **T07** — Judge prompt injection | Pre-execution checklist pending | `06_paper_pipeline/T07_judge_injection/` |
+| Project | Role | Status | Folder |
+|---|---|---|---|
+| **SURVEY** — LLM-as-Judge comprehensive survey | **Primary high-citation paper** (target 500+ citations at TMLR / ACM CS / JMLR) | Just started 2026-05-16 | `06_paper_pipeline/SURVEY_llm_judge/` |
+| **T02** — Position-bias quantification | Companion empirical paper + Survey §6.1 case study | In execution | `06_paper_pipeline/T02_position_bias/` |
+| **T07** — Judge prompt injection | Companion + Survey §6.3 case study (if executed) | Pre-execution checklist pending | `06_paper_pipeline/T07_judge_injection/` |
 
-Each project folder contains: PROTOCOL, PAPER_OUTLINE, CODE_SCAFFOLD, KILL_CRITERIA.
+Each project folder contains: PROTOCOL, PAPER_OUTLINE / SURVEY_STRUCTURE,
+KILL_CRITERIA, and project-specific supporting documents.
+
+**Strategy pivot 2026-05-16**: from a "fast bridge paper" strategy to a
+"high-citation survey" strategy. See `reports/HIGH_CITATION_STRATEGY.md` for
+the honest probability analysis and venue waterfall. Both strategies coexist
+under Option B (parallel execution) — see `DECISIONS.md` 2026-05-16 entries.
