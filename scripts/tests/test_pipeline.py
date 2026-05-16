@@ -1842,5 +1842,373 @@ class TestExtractBibtex(unittest.TestCase):
             self.assertIn("eprint = {2401.99999}", text)
 
 
+class TestSurveyCorpus(unittest.TestCase):
+    """Tests for scripts/17_survey_corpus.py (LLM-as-Judge survey corpus builder)."""
+
+    def setUp(self):
+        self.mod = _load("17_survey_corpus")
+
+    def test_classify_in_scope_yes(self):
+        v = self.mod.classify_in_scope(
+            "LLM-as-a-judge for code generation",
+            "We use GPT-4 as a judge to evaluate code outputs.",
+        )
+        self.assertEqual(v, "yes")
+
+    def test_classify_in_scope_partial(self):
+        v = self.mod.classify_in_scope(
+            "Evaluating large language models on summarization",
+            "We measure GPT-4 performance using metrics like BLEU.",
+        )
+        # Has LLM + eval but not judge → partial
+        self.assertEqual(v, "partial")
+
+    def test_classify_in_scope_no(self):
+        v = self.mod.classify_in_scope(
+            "Image classification with convolutional networks",
+            "We train a ResNet on ImageNet.",
+        )
+        self.assertEqual(v, "no")
+
+    def test_classify_section_failure_modes(self):
+        sec = self.mod.classify_section(
+            "Position bias in LLM-as-a-judge",
+            "We show systematic position bias and prompt injection vulnerability.",
+        )
+        self.assertEqual(sec, "4_failure_modes")
+
+    def test_classify_section_methods(self):
+        sec = self.mod.classify_section(
+            "Pairwise comparison with chain-of-thought for LLM judges",
+            "We compare pointwise and pairwise judging methods using ensemble.",
+        )
+        self.assertEqual(sec, "3_methods")
+
+    def test_classify_section_defences(self):
+        sec = self.mod.classify_section(
+            "Calibration of LLM judges via consensus",
+            "We propose a mitigation using dual-judge consensus and structured output.",
+        )
+        self.assertEqual(sec, "5_defences")
+
+    def test_classify_section_unclassified(self):
+        sec = self.mod.classify_section(
+            "An unrelated topic about quantum computing",
+            "We discuss qubits and entanglement.",
+        )
+        self.assertEqual(sec, "UNCLASSIFIED")
+
+    def test_detect_failure_modes_multi(self):
+        tags = self.mod.detect_failure_modes(
+            "Adversarial study",
+            "We analyse position bias and length bias and prompt injection.",
+        )
+        self.assertIn("position_bias", tags)
+        self.assertIn("length_bias", tags)
+        self.assertIn("prompt_injection", tags)
+
+    def test_detect_method_type_pairwise(self):
+        v = self.mod.detect_method_type(
+            "Pairwise preference learning",
+            "We use pairwise comparisons.",
+        )
+        self.assertEqual(v, "pairwise")
+
+    def test_detect_method_type_panel(self):
+        v = self.mod.detect_method_type(
+            "Judge panels for safety",
+            "We aggregate via a panel of judges.",
+        )
+        self.assertEqual(v, "panel")
+
+    def test_derive_paper_id_stable(self):
+        pid1 = self.mod.derive_paper_id(
+            "Position Bias in LLM Judges",
+            "Wang Yifan|Doe Jane",
+            "2023",
+        )
+        pid2 = self.mod.derive_paper_id(
+            "Position Bias in LLM Judges",
+            "Wang Yifan|Doe Jane",
+            "2023",
+        )
+        self.assertEqual(pid1, pid2)
+        self.assertIn("2023", pid1)
+        self.assertIn("yifan", pid1.lower())
+
+    def test_arxiv_id_extraction(self):
+        f = self.mod.arxiv_id_from_url
+        self.assertEqual(f("https://arxiv.org/abs/2501.01234"), "2501.01234")
+        self.assertEqual(f("https://arxiv.org/abs/2501.01234v3"), "2501.01234")
+        self.assertEqual(f("https://example.com/paper"), "")
+
+    def test_detect_code_dataset_github(self):
+        code, data = self.mod.detect_code_dataset(
+            "https://github.com/example/repo",
+            "Some abstract",
+        )
+        self.assertEqual(code, "yes")
+
+    def test_detect_code_dataset_huggingface(self):
+        code, data = self.mod.detect_code_dataset(
+            "https://huggingface.co/datasets/example",
+            "Some abstract",
+        )
+        self.assertEqual(data, "yes")
+
+    def test_row_from_dedup_full(self):
+        rec = {
+            "title":    "LLM-as-a-judge survey",
+            "authors":  "Wang Y|Doe J",
+            "year":     "2024",
+            "venue":    "ACL",
+            "doi":      "10.1/x",
+            "url":      "https://arxiv.org/abs/2401.12345",
+            "abstract": "We survey LLM-as-a-judge methods and position bias.",
+        }
+        row = self.mod.row_from_dedup(rec, "T02")
+        self.assertEqual(row["source_topic"], "T02")
+        self.assertEqual(row["in_scope"], "yes")
+        self.assertEqual(row["arxiv_id"], "2401.12345")
+        self.assertIn("position_bias", row["failure_mode_addressed"])
+
+    def test_merge_rows_preserves_manual_edits(self):
+        existing = [{
+            "paper_id": "wang2023position",
+            "title":    "Position bias",
+            "authors":  "Wang Y",
+            "year":     "2023",
+            "venue":    "ACL",
+            "in_scope": "yes",
+            "section":  "4_failure_modes",
+            "read_status": "deep",          # manual: user has read it
+            "my_notes":     "Foundational. Cite in §4.1.",  # manual
+            "relevance_to_us": "High",      # manual
+            "key_contribution": "First study of position bias",  # manual
+            "failure_mode_addressed": "position_bias",
+            "method_type": "pairwise",
+            "has_code":    "yes",
+            "has_dataset": "no",
+            "source_topic": "T02",
+            "last_seen":   "2026-01-01T00:00:00Z",
+        }]
+        new = [{
+            "paper_id": "wang2023position",
+            "title":    "Position bias",  # same
+            "authors":  "Wang Y",
+            "year":     "2023",
+            "venue":    "ACL",
+            "in_scope": "yes",  # auto re-classifies the same
+            "section":  "4_failure_modes",
+            "read_status": "unread",  # auto default — should NOT overwrite
+            "my_notes":     "",       # auto default — should NOT overwrite
+            "relevance_to_us": "",
+            "key_contribution": "",
+            "failure_mode_addressed": "position_bias",
+            "method_type": "pairwise",
+            "has_code":    "yes",
+            "has_dataset": "no",
+            "source_topic": "T07",   # appearing under a new source
+        }]
+        merged = self.mod.merge_rows(existing, new)
+        self.assertEqual(len(merged), 1)
+        r = merged[0]
+        # Manual fields preserved
+        self.assertEqual(r["read_status"], "deep")
+        self.assertEqual(r["my_notes"], "Foundational. Cite in §4.1.")
+        self.assertEqual(r["relevance_to_us"], "High")
+        self.assertEqual(r["key_contribution"], "First study of position bias")
+        # source_topic merged
+        self.assertIn("T02", r["source_topic"])
+        self.assertIn("T07", r["source_topic"])
+
+    def test_merge_rows_adds_new(self):
+        existing = []
+        new = [{"paper_id": "abc2024new", "title": "x", "year": "2024", "authors": "A B"}]
+        merged = self.mod.merge_rows(existing, new)
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["paper_id"], "abc2024new")
+
+    def test_parse_arxiv_atom_to_rows(self):
+        xml = """<?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <id>http://arxiv.org/abs/2501.99999v1</id>
+            <title>LLM-as-a-judge survey</title>
+            <summary>We survey position bias and prompt injection.</summary>
+            <published>2025-01-15T00:00:00Z</published>
+            <author><name>A Researcher</name></author>
+            <link rel="alternate" href="https://arxiv.org/abs/2501.99999"/>
+          </entry>
+        </feed>
+        """
+        rows = self.mod.parse_arxiv_atom_to_rows(xml)
+        self.assertEqual(len(rows), 1)
+        r = rows[0]
+        self.assertEqual(r["arxiv_id"], "2501.99999")
+        self.assertEqual(r["in_scope"], "yes")
+        # Section classification: paper mentions position bias + prompt injection
+        # → should land in failure_modes
+        self.assertEqual(r["section"], "4_failure_modes")
+
+
+class TestSurveyProgress(unittest.TestCase):
+    """Tests for scripts/18_survey_progress.py."""
+
+    def setUp(self):
+        self.mod = _load("18_survey_progress")
+
+    def test_count_checkboxes(self):
+        md = """
+        - [ ] item one
+        - [x] item two
+        - [X] item three
+        - [ ] item four
+        """
+        checked, total = self.mod.count_checkboxes(md)
+        self.assertEqual(checked, 2)
+        self.assertEqual(total, 4)
+
+    def test_count_checkboxes_empty(self):
+        self.assertEqual(self.mod.count_checkboxes(""), (0, 0))
+        self.assertEqual(self.mod.count_checkboxes("no checkboxes here"), (0, 0))
+
+    def test_word_count_strips_code(self):
+        text = """
+        Some words here.
+        ```
+        code block ignored
+        ```
+        More words.
+        """
+        wc = self.mod.word_count(text)
+        # "Some words here" + "More words" = 5 words
+        self.assertEqual(wc, 5)
+
+    def test_word_count_strips_urls(self):
+        text = "See https://example.com/page for details."
+        wc = self.mod.word_count(text)
+        # "See for details" = 3 words
+        self.assertEqual(wc, 3)
+
+    def test_word_count_keeps_link_text(self):
+        text = "Per [Wang et al](https://example.com) 2023."
+        wc = self.mod.word_count(text)
+        # "Per Wang et al 2023" = 5 words
+        self.assertEqual(wc, 5)
+
+    def test_summarise_corpus_empty(self):
+        s = self.mod.summarise_corpus([])
+        self.assertEqual(s["n_total"], 0)
+        self.assertEqual(s["by_in_scope"], {})
+
+    def test_summarise_corpus_populated(self):
+        rows = [
+            {"in_scope": "yes", "section": "4_failure_modes", "read_status": "deep",
+             "year": "2024", "has_code": "yes", "has_dataset": "no",
+             "failure_mode_addressed": "position_bias;length_bias"},
+            {"in_scope": "partial", "section": "3_methods", "read_status": "unread",
+             "year": "2023", "has_code": "no", "has_dataset": "no",
+             "failure_mode_addressed": ""},
+            {"in_scope": "yes", "section": "4_failure_modes", "read_status": "read",
+             "year": "2024", "has_code": "yes", "has_dataset": "yes",
+             "failure_mode_addressed": "position_bias"},
+        ]
+        s = self.mod.summarise_corpus(rows)
+        self.assertEqual(s["n_total"], 3)
+        self.assertEqual(s["by_in_scope"]["yes"], 2)
+        self.assertEqual(s["by_section"]["4_failure_modes"], 2)
+        self.assertEqual(s["by_read"]["deep"], 1)
+        self.assertEqual(s["n_with_code"], 2)
+        self.assertEqual(s["n_with_data"], 1)
+        self.assertEqual(s["failure_modes"]["position_bias"], 2)
+        self.assertEqual(s["failure_modes"]["length_bias"], 1)
+
+    def test_progress_against_targets(self):
+        summary = {
+            "n_total": 100,
+            "by_in_scope": {"yes": 80, "partial": 15, "no": 5},
+            "by_read":     {"unread": 60, "skimmed": 20, "read": 15, "deep": 5},
+        }
+        targets = {"month_1_indexed": 150, "month_1_stretch": 200, "month_6_deeply_read": 100}
+        out = self.mod.progress_against_targets(summary, targets)
+        # 80/150 = 53%, 80/200 = 40%, (5+15)/100 = 20%
+        by_name = {p["name"]: p for p in out}
+        self.assertEqual(by_name["month_1_indexed"]["actual"], 80)
+        self.assertEqual(by_name["month_1_indexed"]["pct"], 53)
+        self.assertEqual(by_name["month_1_stretch"]["pct"], 40)
+        self.assertEqual(by_name["month_6_deeply_read"]["actual"], 20)
+
+    def test_scan_draft_sections_missing(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            tdp = Path(td) / "drafts"
+            tdp.mkdir()
+            out = self.mod.scan_draft_sections(tdp)
+            # All sections should be reported as missing (0 pages, "(missing)" path)
+            self.assertTrue(all(s["actual_pages"] == 0 for s in out))
+            self.assertTrue(any(s["path"] == "(missing)" for s in out))
+
+    def test_scan_draft_sections_with_content(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            tdp = Path(td) / "drafts"
+            tdp.mkdir()
+            # Create a 1_introduction.md with ~500 words
+            words = " ".join(["word"] * 500)
+            (tdp / "1_introduction.md").write_text(f"# Intro\n\n{words}\n", encoding="utf-8")
+            out = self.mod.scan_draft_sections(tdp)
+            by_section = {s["section"]: s for s in out}
+            self.assertEqual(by_section["1_introduction"]["words"], 501)  # 500 + "Intro"
+            self.assertGreater(by_section["1_introduction"]["actual_pages"], 1.5)
+
+    def test_parse_kill_signoff(self):
+        md = """
+Some preamble.
+
+| Checkpoint | Date | K1 | K2 | K3 | K4 | Action taken |
+|---|---|---|---|---|---|---|
+| Month 1 | 2026-06-15 | ✅ | ✅ | ✅ | ✅ | None |
+| Month 3 | TBD | | | | | |
+
+Other content.
+        """
+        rows = self.mod.parse_kill_signoff(md)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["checkpoint"], "Month 1")
+        self.assertEqual(rows[0]["date"], "2026-06-15")
+        self.assertEqual(rows[1]["checkpoint"], "Month 3")
+
+    def test_render_report_empty(self):
+        md = self.mod.render_report(
+            corpus_summary={"n_total": 0, "by_in_scope": {}, "by_section": {},
+                            "by_read": {}, "by_year": {}, "n_with_code": 0,
+                            "n_with_data": 0, "failure_modes": {}},
+            target_progress=[],
+            section_drafts=[],
+            rubric_checked=0,
+            rubric_total=0,
+            kill_rows=[],
+        )
+        self.assertIn("Survey Progress Report", md)
+        self.assertIn("Corpus size: **0**", md)
+
+    def test_derive_actions_low_corpus(self):
+        summary = {
+            "n_total": 50,
+            "by_in_scope": {"yes": 30, "partial": 20},
+            "by_section":  {"UNCLASSIFIED": 30},
+            "by_read":     {"unread": 50},
+        }
+        targets = []
+        drafts = [{"section": s, "actual_pages": 0, "target_pages": 5, "pct": 0, "words": 0, "path": "(missing)"}
+                  for s in self.mod.SECTION_PAGE_TARGETS]
+        actions = self.mod.derive_actions(summary, targets, drafts, 0, 60)
+        # Should suggest more corpus, hand-edit unclassified, begin §1
+        action_text = "\n".join(actions)
+        self.assertIn("17_survey_corpus.py", action_text)
+        self.assertIn("UNCLASSIFIED", action_text)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

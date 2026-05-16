@@ -1,0 +1,48 @@
+{
+  "_comment": "arXiv fetch queries for scripts/17_survey_corpus.py --fetch-arxiv. Hand-tuned to maximise recall of LLM-as-Judge papers without runaway false positives. Categories restrict to ML / NLP / AI.",
+  "_format_version": 1,
+  "queries": [
+    {
+      "id": "core_llm_judge",
+      "arxiv_query": "abs:\"LLM-as-a-judge\" OR abs:\"LLM as a judge\" OR abs:\"language model judge\"",
+      "categories": ["cs.CL", "cs.AI", "cs.LG"],
+      "max_results": 50,
+      "rationale": "Canonical phrasing; highest precision."
+    },
+    {
+      "id": "evaluator_llm",
+      "arxiv_query": "(abs:\"evaluator LLM\" OR abs:\"automatic evaluator\" OR abs:\"judge model\") AND (abs:\"large language model\" OR abs:\"LLM\")",
+      "categories": ["cs.CL", "cs.AI"],
+      "max_results": 40,
+      "rationale": "Catches papers that don't use 'judge' nomenclature."
+    },
+    {
+      "id": "reward_model_as_judge",
+      "arxiv_query": "abs:\"reward model\" AND (abs:\"RLHF\" OR abs:\"preference\") AND abs:\"evaluation\"",
+      "categories": ["cs.CL", "cs.LG"],
+      "max_results": 30,
+      "rationale": "Reward models are a special case of judges; include for completeness."
+    },
+    {
+      "id": "judge_failure_modes",
+      "arxiv_query": "(abs:\"position bias\" OR abs:\"self-preference\" OR abs:\"prompt injection\") AND (abs:\"judge\" OR abs:\"evaluator\" OR abs:\"LLM\")",
+      "categories": ["cs.CL", "cs.AI", "cs.CR"],
+      "max_results": 40,
+      "rationale": "Failure-mode subliterature; central to §4 of the survey."
+    },
+    {
+      "id": "judge_defences",
+      "arxiv_query": "(abs:\"mitigat\" OR abs:\"calibration\" OR abs:\"ensemble\" OR abs:\"consensus\") AND (abs:\"LLM judge\" OR abs:\"evaluator\" OR abs:\"reward model\")",
+      "categories": ["cs.CL", "cs.AI"],
+      "max_results": 30,
+      "rationale": "Defences and mitigations; central to §5."
+    },
+    {
+      "id": "llm_evaluation_general",
+      "arxiv_query": "(abs:\"LLM evaluation\" OR abs:\"large language model evaluation\") AND (abs:\"benchmark\" OR abs:\"metric\" OR abs:\"scoring\")",
+      "categories": ["cs.CL", "cs.AI"],
+      "max_results": 30,
+      "rationale": "Broader context; partial-relevance papers for citation completeness."
+    }
+  ]
+}

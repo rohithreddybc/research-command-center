@@ -14,6 +14,12 @@ data/agreement/
 data/decisions/
 data/round_log/
 
+# survey-corpus mechanical backups (created on --rebuild; can be regenerated)
+data/survey_corpus_backups/
+
+# scoop watch raw Atom feeds (can be re-fetched)
+data/scoop_watch/raw/
+
 # logs
 logs/
 

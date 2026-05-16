@@ -39,6 +39,10 @@ python scripts\15_arxiv_watch.py
 
 # 7) Generate BibTeX for a topic when starting to write a paper
 python scripts\16_extract_bibtex.py --topic T02
+
+# 8) SURVEY support — seed corpus from existing topics, then track progress
+python scripts\17_survey_corpus.py --seed-from-dedup
+python scripts\18_survey_progress.py
 ```
 
 Key outputs:
@@ -134,6 +138,12 @@ Auxiliary (on-demand, not in pipeline loop):
   14_personal_overlay.py  selection aid: safe vs risky personal-goal choices
   15_arxiv_watch.py       weekly arXiv scoop monitor with kill-signal alerts
   16_extract_bibtex.py    convert dedup CSV -> references/<topic>.bib
+  17_survey_corpus.py     build/maintain LLM-as-Judge survey corpus
+                          (data/survey_corpus.csv) — auto-classifies in-scope
+                          and section; preserves manual edits on re-run
+  18_survey_progress.py   reports/SURVEY_PROGRESS.md — corpus size vs target,
+                          section coverage, read-status, draft pages,
+                          quality-rubric completion, kill-criteria sign-off
 ```
 
 `scripts/10_run_pipeline.py` orchestrates the main loop with `--max-rounds`,

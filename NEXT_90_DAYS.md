@@ -43,9 +43,15 @@ on track. If fewer than 3, escalate per kill criteria.
 - [ ] **Week 1**: Disagree with anything? Document in `DECISIONS.md` before continuing.
 - [ ] **Week 1**: Red-team self-check from `KILL_CRITERIA.md` "Red-team self-check" section
 - [ ] **Week 1**: Read Gu et al. 2024 *"A Survey on LLM-as-a-Judge"* in full; identify ≥ 5 specific gaps in `06_paper_pipeline/SURVEY_llm_judge/GAPS.md`
-- [ ] **Week 2**: Build initial corpus — run targeted queries via `scripts/02_collect_topic_evidence.py` adapted for the survey topic. Target: 100 papers indexed.
-- [ ] **Week 3**: Hand-augment corpus from ACL Anthology, OpenReview, top survey bibliographies. Target: 150 papers.
-- [ ] **Week 4**: Initial taxonomy draft in `06_paper_pipeline/SURVEY_llm_judge/TAXONOMY.md`. Compare to Gu et al. 2024.
+- [ ] **Week 2**: Build initial corpus —
+  ```powershell
+  python scripts\17_survey_corpus.py --seed-from-dedup
+  python scripts\18_survey_progress.py
+  ```
+  Then hand-edit `data/survey_corpus.csv` to reclassify UNCLASSIFIED rows. Target after seeding: ~50 in-scope, climbing toward 100.
+- [ ] **Week 2 (parallel)**: Try `python scripts\17_survey_corpus.py --fetch-arxiv` off-peak hours to add fresh papers. Target: 150 papers total.
+- [ ] **Week 3**: Hand-augment corpus from ACL Anthology, OpenReview, top survey bibliographies (add rows manually to `data/survey_corpus.csv`). Re-run `scripts\18_survey_progress.py` weekly.
+- [ ] **Week 4**: Initial taxonomy draft in `06_paper_pipeline/SURVEY_llm_judge/TAXONOMY.md`. Compare to Gu et al. 2024. Copy `templates/21_survey_section.md` into `06_paper_pipeline/SURVEY_llm_judge/drafts/1_introduction.md` to start the introduction.
 
 ### T02 — pilot phase
 
