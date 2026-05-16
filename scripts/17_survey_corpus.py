@@ -583,6 +583,24 @@ def main(argv: list[str] | None = None) -> int:
     n_partial  = sum(1 for r in merged if r.get("in_scope") == "partial")
     n_unread   = sum(1 for r in merged if (r.get("read_status") or "unread") == "unread")
     print(f"[summary] in_scope=yes: {n_in_scope} | partial: {n_partial} | unread: {n_unread}")
+
+    # Staleness warning — if all rows are old, warn
+    if merged:
+        most_recent = None
+        for r in merged:
+            ls = r.get("last_seen", "")
+            m = re.match(r"(\d{4})-(\d{2})-(\d{2})", ls)
+            if m:
+                try:
+                    d = _dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                    age = (_dt.date.today() - d).days
+                    if most_recent is None or age < most_recent:
+                        most_recent = age
+                except ValueError:
+                    pass
+        if most_recent is not None and most_recent > 30:
+            print(f"[stale-warning] most recent row is {most_recent} days old "
+                  f"(>30); consider --fetch-arxiv to refresh", file=sys.stderr)
     return 0
 
 

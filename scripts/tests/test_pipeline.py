@@ -17,8 +17,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 def _load(stem: str):
     matches = list((ROOT / "scripts").glob(f"{stem}*.py"))
-    spec = importlib.util.spec_from_file_location(f"_t_{stem}", matches[0])
+    name = f"_t_{stem}"
+    spec = importlib.util.spec_from_file_location(name, matches[0])
     mod = importlib.util.module_from_spec(spec)  # type: ignore
+    # Register in sys.modules BEFORE exec so @dataclass can resolve cls.__module__
+    sys.modules[name] = mod
     spec.loader.exec_module(mod)  # type: ignore
     return mod
 
@@ -2334,6 +2337,314 @@ class TestTitleCheck(unittest.TestCase):
         # Should suggest renaming "Survey" to alternatives
         self.assertTrue(any("Systematic Review" in s or "Taxonomy" in s
                             or "Comprehensive Analysis" in s for s in out))
+
+
+class TestStateValidator(unittest.TestCase):
+    """Tests for scripts/20_validate_state.py."""
+
+    def setUp(self):
+        self.mod = _load("20_validate_state")
+
+    def test_days_since_recent(self):
+        import datetime as _dt
+        today = _dt.date(2026, 6, 15)
+        self.assertEqual(self.mod.days_since("2026-06-10", today), 5)
+
+    def test_days_since_unparseable(self):
+        self.assertIsNone(self.mod.days_since(""))
+        self.assertIsNone(self.mod.days_since("not-a-date"))
+        self.assertIsNone(self.mod.days_since("2026-13-99"))
+
+    def test_extract_titles_italic_quoted(self):
+        text = '**Working title**: *"Trustworthy LLM-as-a-Judge: A Survey"*'
+        titles = self.mod.extract_titles_from_protocol(text)
+        self.assertIn("Trustworthy LLM-as-a-Judge: A Survey", titles)
+
+    def test_extract_titles_plain(self):
+        text = 'Working title: "My Paper Title Here Long Enough"'
+        titles = self.mod.extract_titles_from_protocol(text)
+        self.assertTrue(any("My Paper Title" in t for t in titles))
+
+    def test_extract_titles_skips_short(self):
+        text = '*"Hi"*'
+        titles = self.mod.extract_titles_from_protocol(text)
+        self.assertEqual(titles, [])
+
+    def test_extract_venues(self):
+        text = "We will submit to TMLR or fall back to EMNLP Findings. IEEE Access is not allowed."
+        venues = self.mod.extract_venues_from_protocol(text)
+        self.assertIn("TMLR", venues)
+        self.assertIn("EMNLP", venues)
+        self.assertIn("IEEE Access", venues)
+
+    def test_find_dates_past_and_future(self):
+        import datetime as _dt
+        today = _dt.date(2026, 6, 15)
+        text = "Submission by 2026-08-15, but past deadline 2026-04-01."
+        dates = self.mod.find_dates_in_text(text, today=today)
+        # 2026-08-15 is future (-61 days)
+        # 2026-04-01 is past (75 days)
+        days = {d_str: days_until for d_str, _, days_until in dates}
+        self.assertEqual(days["2026-08-15"], -61)
+        self.assertEqual(days["2026-04-01"], 75)
+
+    def test_check_result_helpers(self):
+        # Smoke test the dataclass constructors
+        r = self.mod.pass_("name", "OK")
+        self.assertEqual(r.status, "PASS")
+        r = self.mod.fail_("name", "BAD", "fix it")
+        self.assertEqual(r.status, "FAIL")
+        self.assertEqual(r.fix_hint, "fix it")
+        r = self.mod.warn_("n", "soft")
+        self.assertEqual(r.status, "WARN")
+
+
+class TestCostTracker(unittest.TestCase):
+    """Tests for scripts/21_cost_tracker.py."""
+
+    def setUp(self):
+        self.mod = _load("21_cost_tracker")
+
+    def test_parse_jsonl_line_valid(self):
+        v = self.mod.parse_jsonl_line('{"cost_usd": 0.05}')
+        self.assertEqual(v, {"cost_usd": 0.05})
+
+    def test_parse_jsonl_line_blank(self):
+        self.assertIsNone(self.mod.parse_jsonl_line(""))
+        self.assertIsNone(self.mod.parse_jsonl_line("   \n"))
+
+    def test_parse_jsonl_line_malformed(self):
+        self.assertIsNone(self.mod.parse_jsonl_line("{not valid json"))
+
+    def test_aggregate_calls_basic(self):
+        recs = [
+            {"model": "gpt-4o", "task": "T-Sum", "condition": "C1", "cost_usd": 0.5, "timestamp": "2026-06-01T12:00:00Z"},
+            {"model": "gpt-4o", "task": "T-Sum", "condition": "C2", "cost_usd": 0.5, "timestamp": "2026-06-01T13:00:00Z"},
+            {"model": "claude", "task": "T-QA", "condition": "C1", "cost_usd": 1.0, "timestamp": "2026-06-02T10:00:00Z"},
+        ]
+        agg = self.mod.aggregate_calls(recs)
+        self.assertEqual(agg["n_calls"], 3)
+        self.assertEqual(agg["total_usd"], 2.0)
+        self.assertEqual(agg["per_model"]["gpt-4o"], 1.0)
+        self.assertEqual(agg["per_model"]["claude"], 1.0)
+        self.assertEqual(agg["per_task"]["T-Sum"], 1.0)
+        self.assertEqual(agg["per_day"]["2026-06-01"], 1.0)
+        self.assertEqual(agg["per_day"]["2026-06-02"], 1.0)
+
+    def test_aggregate_calls_missing_cost(self):
+        recs = [
+            {"model": "x"},
+            {"model": "y", "cost_usd": "not a number"},
+            {"model": "z", "cost_usd": 0.5},
+        ]
+        agg = self.mod.aggregate_calls(recs)
+        self.assertEqual(agg["n_calls"], 3)
+        self.assertEqual(agg["n_with_cost"], 1)
+        self.assertEqual(agg["n_with_no_cost"], 2)
+        self.assertEqual(agg["total_usd"], 0.5)
+
+    def test_aggregate_calls_ignores_non_dict(self):
+        recs = [None, "string", 42, {"cost_usd": 1.0, "model": "x"}]
+        agg = self.mod.aggregate_calls(recs)
+        # Only the dict counts toward n_calls
+        self.assertEqual(agg["n_calls"], 1)
+        self.assertEqual(agg["total_usd"], 1.0)
+
+    def test_daily_rate_empty(self):
+        out = self.mod.daily_rate_and_projection({})
+        self.assertEqual(out["days_active"], 0)
+        self.assertEqual(out["avg_daily_usd"], 0.0)
+
+    def test_daily_rate_basic(self):
+        per_day = {"2026-06-01": 10.0, "2026-06-02": 20.0, "2026-06-03": 30.0}
+        out = self.mod.daily_rate_and_projection(per_day)
+        self.assertEqual(out["days_active"], 3)
+        self.assertAlmostEqual(out["avg_daily_usd"], 20.0, places=4)
+        self.assertEqual(out["first_day"], "2026-06-01")
+        self.assertEqual(out["last_day"], "2026-06-03")
+        self.assertAlmostEqual(out["projected_30d_usd"], 600.0, places=2)
+
+    def test_daily_rate_ignores_unknown_and_zero(self):
+        per_day = {"unknown": 999.0, "2026-06-01": 0.0, "2026-06-02": 10.0}
+        out = self.mod.daily_rate_and_projection(per_day)
+        # Only 2026-06-02 counts (unknown and zero excluded)
+        self.assertEqual(out["days_active"], 1)
+        self.assertEqual(out["avg_daily_usd"], 10.0)
+
+    def test_status_vs_budget_ok(self):
+        s, frac = self.mod.status_vs_budget(100, 1500)
+        self.assertEqual(s, "OK")
+
+    def test_status_vs_budget_warn(self):
+        s, frac = self.mod.status_vs_budget(1300, 1500)
+        self.assertEqual(s, "WARN")
+
+    def test_status_vs_budget_fail(self):
+        s, frac = self.mod.status_vs_budget(1600, 1500)
+        self.assertEqual(s, "FAIL")
+
+    def test_status_vs_budget_zero_budget(self):
+        s, frac = self.mod.status_vs_budget(100, 0)
+        self.assertEqual(s, "WARN")
+
+
+class TestPreflight(unittest.TestCase):
+    """Tests for scripts/22_preflight.py."""
+
+    def setUp(self):
+        self.mod = _load("22_preflight")
+
+    def test_title_check_status_found(self):
+        md = """
+# Title Check Report
+
+## Some Other Title
+
+- Verdict: **CLEAR**
+- Top similarity: 0.1
+
+## My Target Title Here
+
+- Verdict: **WEAK-ECHO**
+- Top similarity: 0.5 (overlap 0.5)
+        """
+        result = self.mod.title_check_status("My Target Title Here", md)
+        self.assertIsNotNone(result)
+        verdict, sim = result
+        self.assertEqual(verdict, "WEAK-ECHO")
+        self.assertEqual(sim, 0.5)
+
+    def test_title_check_status_not_found(self):
+        md = "## Different Title\n- Verdict: **CLEAR**\n"
+        result = self.mod.title_check_status("My Title Not Present", md)
+        self.assertIsNone(result)
+
+    def test_title_check_status_empty(self):
+        self.assertIsNone(self.mod.title_check_status("any", ""))
+        self.assertIsNone(self.mod.title_check_status("", "report"))
+
+    def test_scoop_kill_count_zero(self):
+        md = """
+- Queries run: **5**
+- New papers fetched: **20**
+- Papers with kill-signal keywords: **0**
+        """
+        self.assertEqual(self.mod.scoop_kill_count(md), 0)
+
+    def test_scoop_kill_count_nonzero(self):
+        md = "Papers with kill-signal keywords: **3**"
+        self.assertEqual(self.mod.scoop_kill_count(md), 3)
+
+    def test_scoop_kill_count_missing(self):
+        self.assertIsNone(self.mod.scoop_kill_count("no count here"))
+
+    def test_days_since(self):
+        import datetime as _dt
+        today = _dt.date(2026, 6, 15)
+        self.assertEqual(self.mod.days_since("2026-06-10T12:00:00Z", today), 5)
+
+    def test_gate_dataclass(self):
+        g = self.mod.pass_("name", "msg")
+        self.assertEqual(g.status, "PASS")
+        g = self.mod.fail_("name", "bad", "fix")
+        self.assertEqual(g.status, "FAIL")
+        self.assertEqual(g.fix_hint, "fix")
+
+
+class TestVenueVerify(unittest.TestCase):
+    """Tests for scripts/23_venue_verify.py."""
+
+    def setUp(self):
+        self.mod = _load("23_venue_verify")
+
+    def test_is_valid_url_true(self):
+        self.assertTrue(self.mod.is_valid_url("https://example.com/page"))
+        self.assertTrue(self.mod.is_valid_url("http://www.jmlr.org/tmlr/"))
+
+    def test_is_valid_url_false(self):
+        self.assertFalse(self.mod.is_valid_url(""))
+        self.assertFalse(self.mod.is_valid_url("not a url"))
+        self.assertFalse(self.mod.is_valid_url("example.com"))    # missing scheme
+
+    def test_validate_venue_complete(self):
+        import datetime as _dt
+        today = _dt.date(2026, 6, 1)
+        v = {
+            "name": "TMLR",
+            "has_apc": False,
+            "apc_usd": None,
+            "free_for_author": True,
+            "typical_review_time_months": 4,
+            "url": "https://example.com/tmlr",
+            "last_verified_iso": "2026-05-01",
+        }
+        issues = self.mod.validate_venue(v, today=today)
+        self.assertEqual(issues, [])
+
+    def test_validate_venue_missing_field(self):
+        v = {"name": "Some Venue"}
+        issues = self.mod.validate_venue(v)
+        # Multiple required fields missing
+        self.assertTrue(len(issues) >= 3)
+        self.assertTrue(any(i.severity == "FAIL" for i in issues))
+
+    def test_validate_venue_apc_contradiction(self):
+        v = {
+            "name": "IEEE Access",
+            "has_apc": True,
+            "apc_usd": 1995,
+            "free_for_author": True,    # CONTRADICTION
+            "typical_review_time_months": 2,
+            "url": "https://ieeeaccess.ieee.org/",
+            "last_verified_iso": "2026-05-01",
+        }
+        issues = self.mod.validate_venue(v)
+        # Should catch the free=true vs apc=1995 contradiction
+        self.assertTrue(any(i.field == "free_for_author" and i.severity == "FAIL"
+                            for i in issues))
+
+    def test_validate_venue_apc_zero_with_has_apc_true(self):
+        v = {
+            "name": "X", "has_apc": True, "apc_usd": 0, "free_for_author": False,
+            "typical_review_time_months": 1, "url": "https://x.com",
+            "last_verified_iso": "2026-05-01",
+        }
+        issues = self.mod.validate_venue(v)
+        self.assertTrue(any(i.field == "apc_usd" and i.severity == "WARN"
+                            for i in issues))
+
+    def test_validate_venue_stale_verification(self):
+        import datetime as _dt
+        today = _dt.date(2026, 12, 1)
+        v = {
+            "name": "X", "has_apc": False, "apc_usd": None, "free_for_author": True,
+            "typical_review_time_months": 4, "url": "https://x.com",
+            "last_verified_iso": "2026-01-01",   # 11 months stale
+        }
+        issues = self.mod.validate_venue(v, today=today)
+        self.assertTrue(any(i.field == "last_verified_iso" and i.severity == "WARN"
+                            for i in issues))
+
+    def test_validate_venue_malformed_url(self):
+        v = {
+            "name": "X", "has_apc": False, "apc_usd": None, "free_for_author": True,
+            "typical_review_time_months": 4, "url": "not a url",
+            "last_verified_iso": "2026-05-01",
+        }
+        issues = self.mod.validate_venue(v)
+        self.assertTrue(any(i.field == "url" and i.severity == "FAIL"
+                            for i in issues))
+
+    def test_summarise_counts(self):
+        from dataclasses import is_dataclass
+        v1 = self.mod.VenueIssue("A", "url", "FAIL", "m")
+        v2 = self.mod.VenueIssue("A", "apc_usd", "WARN", "m")
+        v3 = self.mod.VenueIssue("B", "url", "FAIL", "m")
+        summary = self.mod.summarise([v1, v2, v3])
+        self.assertEqual(summary["n_fail"], 2)
+        self.assertEqual(summary["n_warn"], 1)
+        self.assertEqual(len(summary["by_venue"]["A"]), 2)
+        self.assertEqual(len(summary["by_venue"]["B"]), 1)
 
 
 if __name__ == "__main__":

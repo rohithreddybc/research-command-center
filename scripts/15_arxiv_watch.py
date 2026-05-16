@@ -73,6 +73,7 @@ RAW_DIR       = STATE_DIR / "raw"
 REPORT_FILE   = ROOT / "reports" / "SCOOP_WATCH.md"
 
 ARXIV_API = "http://export.arxiv.org/api/query"
+OPENALEX_API = "https://api.openalex.org/works"
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 ARXIV_NS = "{http://arxiv.org/schemas/atom}"
 
@@ -165,8 +166,14 @@ def parse_atom_feed(xml_text: str) -> list[dict]:
 def fetch_arxiv(arxiv_query: str, categories: list[str],
                 max_results: int = 50,
                 start: int = 0,
-                timeout: float = 30.0) -> str:
-    """Fetch raw Atom feed from arXiv API. Returns XML text."""
+                timeout: float = 30.0,
+                max_retries: int = 3,
+                retry_delay: float = 10.0) -> str:
+    """Fetch raw Atom feed from arXiv API. Returns XML text.
+
+    Retries on 429 (rate-limit) and network timeouts with exponential backoff.
+    Raises on persistent failure so caller can fall back to alternate source.
+    """
     cat_filter = " OR ".join(f"cat:{c}" for c in categories)
     if cat_filter:
         full_query = f"({arxiv_query}) AND ({cat_filter})"
@@ -183,8 +190,82 @@ def fetch_arxiv(arxiv_query: str, categories: list[str],
     req = urllib.request.Request(url, headers={
         "User-Agent": "research-command-center/scoop-watch/1.0 (mailto:rohithreddybc@gmail.com)",
     })
+    last_err: Exception | None = None
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code == 429 and attempt < max_retries - 1:
+                time.sleep(retry_delay * (2 ** attempt))
+                continue
+            raise
+        except Exception as e:
+            last_err = e
+            if attempt < max_retries - 1:
+                time.sleep(retry_delay * (2 ** attempt))
+                continue
+            raise
+    if last_err:
+        raise last_err
+    raise RuntimeError("fetch_arxiv: exhausted retries with no exception")
+
+
+def fetch_openalex_as_papers(query: str, max_results: int = 50,
+                              timeout: float = 30.0) -> list[dict]:
+    """Fallback search via OpenAlex when arXiv is rate-limited.
+
+    Returns papers in the same dict format as parse_atom_feed() output, so
+    downstream processing is uniform.
+    """
+    params = {
+        "search":   query,
+        "per-page": str(min(max_results, 50)),
+        "sort":     "publication_date:desc",
+    }
+    url = f"{OPENALEX_API}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "research-command-center/scoop-watch/1.0 (mailto:rohithreddybc@gmail.com)",
+    })
+    out: list[dict] = []
     with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+        data = json.loads(resp.read())
+    for w in data.get("results", []):
+        arxiv_id = ""
+        # OpenAlex includes external ids; check for arxiv
+        ext = (w.get("ids") or {})
+        for v in ext.values():
+            if isinstance(v, str) and "arxiv.org/abs/" in v:
+                m = re.search(r"arxiv\.org/abs/([\w.\-]+?)(?:v\d+)?$", v)
+                if m:
+                    arxiv_id = m.group(1)
+                    break
+        if not arxiv_id:
+            arxiv_id = (w.get("id") or "").split("/")[-1] or "openalex"
+        authors = []
+        for au in (w.get("authorships") or [])[:5]:
+            n = (au.get("author") or {}).get("display_name", "")
+            if n:
+                authors.append(n)
+        primary_loc = w.get("primary_location") or {}
+        loc_source = primary_loc.get("source") or {}
+        venue = (
+            (w.get("host_venue") or {}).get("display_name")
+            or loc_source.get("display_name")
+            or ""
+        )
+        out.append({
+            "arxiv_id":   arxiv_id,
+            "title":      (w.get("display_name") or "").strip(),
+            "summary":    (w.get("abstract") or w.get("title") or "")[:600],
+            "published":  str(w.get("publication_date") or ""),
+            "updated":    str(w.get("publication_date") or ""),
+            "authors":    authors,
+            "categories": [venue] if venue else [],
+            "link":       w.get("doi") or w.get("id") or "",
+        })
+    return out
 
 
 # ----------------------------------------------------------------------------
@@ -242,6 +323,8 @@ def process_query(qspec: dict, state: dict, *,
         "error":          None,
     }
 
+    papers: list[dict] = []
+
     if dry_run:
         # Use cached raw if available
         raw_path = RAW_DIR / f"{query_id}_latest.xml"
@@ -249,22 +332,45 @@ def process_query(qspec: dict, state: dict, *,
             result["error"] = "dry-run requested but no cached raw feed available"
             return result
         xml_text = raw_path.read_text(encoding="utf-8")
+        try:
+            papers = parse_atom_feed(xml_text)
+        except Exception as e:
+            result["error"] = f"parse failed: {e}"
+            return result
     else:
+        # Try arXiv first; on persistent failure, fall back to OpenAlex
+        arxiv_err: str | None = None
         try:
             xml_text = fetch_arxiv(qspec["arxiv_query"],
                                    qspec.get("categories", []),
                                    max_results=max_results)
             RAW_DIR.mkdir(parents=True, exist_ok=True)
             (RAW_DIR / f"{query_id}_latest.xml").write_text(xml_text, encoding="utf-8")
+            try:
+                papers = parse_atom_feed(xml_text)
+            except Exception as e:
+                arxiv_err = f"parse failed: {e}"
+                papers = []
         except Exception as e:
-            result["error"] = f"fetch failed: {e}"
-            return result
+            arxiv_err = f"arxiv fetch failed: {e}"
 
-    try:
-        papers = parse_atom_feed(xml_text)
-    except Exception as e:
-        result["error"] = f"parse failed: {e}"
-        return result
+        if not papers:
+            # Fallback to OpenAlex with the same query (best-effort)
+            try:
+                fallback_query = qspec["arxiv_query"]
+                # Strip arXiv-specific syntax (abs:, ti:, cat:)
+                fallback_query = re.sub(r"\b(abs|ti|cat):", "", fallback_query)
+                fallback_query = fallback_query.replace('"', "").strip()
+                papers = fetch_openalex_as_papers(fallback_query,
+                                                   max_results=max_results)
+                if papers:
+                    result["error"] = f"arxiv failed ({arxiv_err}); used OpenAlex fallback ({len(papers)} papers)"
+                else:
+                    result["error"] = f"arxiv failed ({arxiv_err}); OpenAlex returned no papers"
+                    return result
+            except Exception as oae:
+                result["error"] = f"{arxiv_err}; openalex fallback also failed: {oae}"
+                return result
 
     result["n_fetched"] = len(papers)
     current_ids = [p["arxiv_id"] for p in papers]

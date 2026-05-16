@@ -43,7 +43,13 @@ python scripts\16_extract_bibtex.py --topic T02
 # 8) SURVEY support — seed corpus from existing topics, then track progress
 python scripts\17_survey_corpus.py --seed-from-dedup
 python scripts\18_survey_progress.py
+
+# 9) Project-state validator + preflight (guardrails)
+python scripts\20_validate_state.py
+python scripts\22_preflight.py --project SURVEY_llm_judge --title "Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences"
 ```
+
+See `reports/CODE_GUARDRAILS.md` for the full list of what the guardrails catch.
 
 Key outputs:
 
@@ -149,6 +155,18 @@ Auxiliary (on-demand, not in pipeline loop):
                           outputs reports/TITLE_CHECK.md with similarity
                           scores and verdicts (CLEAR / WEAK-ECHO / NEAR-MATCH /
                           STRONG-ECHO / LIKELY-TAKEN / TAKEN)
+  20_validate_state.py    meta-validator — checks the whole project for
+                          internal consistency, stale data, broken references,
+                          deprecated venue claims; outputs
+                          reports/STATE_VALIDATION.md
+  21_cost_tracker.py      aggregate API spend from data/runs/*.jsonl, compare
+                          to budget cap; outputs reports/T02_COST.md
+  22_preflight.py         pre-submission gate runner — runs every guardrail
+                          and refuses to clear submission until all pass;
+                          outputs reports/PREFLIGHT.md
+  23_venue_verify.py      validate data/venue_registry.json claims;
+                          enforces 180-day re-verification window per venue;
+                          outputs reports/VENUE_VERIFICATION.md
 ```
 
 `scripts/10_run_pipeline.py` orchestrates the main loop with `--max-rounds`,

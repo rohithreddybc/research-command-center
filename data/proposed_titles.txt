@@ -2,10 +2,14 @@
 # One title per line. Lines starting with # are ignored.
 
 # === Survey (high-citation paper) ===
-Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge
-On the Reliability of LLM-as-a-Judge: A Comprehensive Survey
+# v3 (current, after empirical check 2026-05-16): the title we will actually use
+Trustworthy LLM-as-a-Judge: A Comprehensive Survey of Methods, Failure Modes, and Defences
+# Fallbacks (also CLEAR per title check)
 A Survey of LLM-as-a-Judge: Methods, Failure Modes, and Defences
 Trustworthy LLM-as-a-Judge: A Comprehensive Survey
+# Earlier candidates (deprecated; keep for tracking)
+Judging the Judges: A Comprehensive Survey of LLM-as-a-Judge
+On the Reliability of LLM-as-a-Judge: A Comprehensive Survey
 
 # === T02 (bridge paper, position bias) ===
 Position Bias in LLM Judges: A Cross-Model Quantification
